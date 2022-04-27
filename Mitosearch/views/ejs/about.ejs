@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MitoSearch</title>
+    <link rel="stylesheet" href='stylesheets/main.css'>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <meta name="google-site-verification" content="99fifQZxW5GTQS0H1k0Pqa0hO9tvWhuBFxvjhC1z1qg" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSBFZZQ0RX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JSBFZZQ0RX');
+    </script>
+</head>
+<body>
+    <header>
+        <p>MitoSearch</p>
+        <ul id="nav">
+            <li><a href="./">Top</a></li>
+            <li class="disabled"><a href="#">About</a></li>
+            <li></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="about-main">
+            <p><%= __('We constructed MitoSearch, a fish species composition database, using 4355 sequence data of 12S ribosomal RNA genes obtained by amplifying eDNA (environmental DNA) with MiFish primers in order to understand fish species composition around the world.') %></p>
+            
+            <h1><%= __('Overview of MitoSearch') %></h1>
+
+            <ol>
+                <li><%= __('The fish species composition of each eDNA sample is displayed as a pie chart at the sampling point on the map.') %></li>
+                <img src="img/tooltip.png" style="height: 80%; width: 80%;">
+                <li><%= __('Display a composition pie chart that merges samples that are geographically close by shrinking the map.') %></li>
+                <img src="img/cluster.png" style="height: 80%; width: 80%;">
+                <li><%= __('By dragging or zooming the map, the time transition of the composition of fish species in the map area is displayed as a ledger line.') %></li>
+                <img src="img/riddge.png" style="height: 80%; width: 80%;">
+                <li><%= __('You can display a composition pie chart or ridge line by filtering by specific fish species (enter the fish species name in the text box and click "Filter").') %></li>
+                <img src="img/filtering.png" style="height: 80%; width: 80%;">
+            </ol>
+
+        </div>
+    </main>
+</body>
+</html>

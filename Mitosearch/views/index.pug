@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  
+  #mapid(style="height: 800px")
+
+  script.
+        function onLoad() {
+            var mymap = L.map('mapid').setView([35, 135], 10);
+
+            L.tileLayer('OSMPublicTransport/{z}/{x}/{y}.png',{minZoom:2,maxZoom:8}).addTo(mymap);
+
+
+            console.log({dataList})
+
+        }
+
+  
+
+  

@@ -1,0 +1,9 @@
+{
+  "We constructed MitoSearch, a fish species composition database, using 4355 sequence data of 12S ribosomal RNA genes obtained by amplifying eDNA (environmental DNA) with MiFish primers in order to understand fish species composition around the world.": "We constructed MitoSearch, a fish species composition database, using 4355 sequence data of 12S ribosomal RNA genes obtained by amplifying eDNA (environmental DNA) with MiFish primers in order to understand fish species composition around the world.",
+  "Overview of MitoSearch": "Overview of MitoSearch",
+  "The fish species composition of each eDNA sample is displayed as a pie chart at the sampling point on the map.": "The fish species composition of each eDNA sample is displayed as a pie chart at the sampling point on the map.",
+  "Display a composition pie chart that merges samples that are geographically close by shrinking the map.": "Display a composition pie chart that merges samples that are geographically close by shrinking the map.",
+  "By dragging or zooming the map, the time transition of the composition of fish species in the map area is displayed as a ledger line.": "By dragging or zooming the map, the time transition of the composition of fish species in the map area is displayed as a ledger line.",
+  "You can display a composition pie chart or ridge line by filtering by specific fish species (enter the fish species name in the text box and click \"Filter\").": "You can display a composition pie chart or ridge line by filtering by specific fish species (enter the fish species name in the text box and click \"Filter\")."
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="99fifQZxW5GTQS0H1k0Pqa0hO9tvWhuBFxvjhC1z1qg" />
+
+    <title>MitoSearch</title>
+    <link rel="stylesheet" href='stylesheets/main.css'>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href='leaflet/leaflet.css'>
+    <script src='leaflet/leaflet.js'></script>
+
+    <script src='javascripts/jquery-3.6.0.js'></script>
+    <script src="d3/d3.js"></script>
+
+    <!-- markerClusterGroup -->
+    <script src="markerClusterGroup/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="markerClusterGroup/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="markerClusterGroup/dist/MarkerCluster.Default.css" />
+
+    <!-- Select2.css -->
+    <link rel="stylesheet" href="select2/dist/css/select2.min.css">
+
+    <!-- Select2–{‘Ì -->
+    <script src="select2/dist/js/select2.min.js"></script>
+
+    <!-- Select2“ú–{Œê‰» -->
+    <script src="select2/dist/js/i18n/ja.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSBFZZQ0RX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JSBFZZQ0RX');
+    </script>
+
+</head>
+
+<body>
+    <header id="top-header">
+        <p>MitoSearch</p>
+        <p id="explain">We constructed MitoSearch, a fish species composition database, using 4355 sequence data of 12S ribosomal RNA genes obtained by amplifying eDNA (environmental DNA) with MiFish primers in order to understand fish species composition around the world.</p>
+        <ul id="nav">
+            <li class="disabled"><a href="./">Top</a></li>
+            <li><a href="./about">About</a></li>
+            <li></li>
+        </ul>
+    </header>
+    <main>
+        <div id="img" style="height: 80%; width: 100%;">
+            <p>Click Image To Close</p>
+            <img src="img/Taxonomy.png" style="height: 80%; width: 80%;">
+        </div>
+        <div id="form">
+            <form>
+                <select id="filter" class="test-select2" multiple="multiple">
+                  <% AllFishList.forEach(fishName => { %>
+                    <option><%= fishName %></option>
+                  <% }) %>
+                </select>
+                <input id="button" type="button" value="Filter">
+            </form>
+        </div>
+        <div id="btnArea">
+            <button id="taxonomyShow">Display Color Classification Info</button>
+            <button id="hideRiddgeLine" class="hide">Hide Riddge Graph</button>
+            <button id="changeRidgeGraph" class="alltime">Monthly ---> All time</button>
+        </div>
+        <div id="content" style="height: 75%; width: 100%;">
+            <div id="map" style="height: 1000px; width: 40%;"></div>
+            <div id="graph" style="height: 700px; width: 60%;"></div>
+        </div>
+        
+        <div id="tmp"></div>
+    </main>
+    <script>
+        let sampleDataSet =  <%-JSON.stringify(sampleDataObjList)%>;
+        let fishClassifyDataObj =  <%-JSON.stringify(fishClassifyDataObj)%>;
+        const sampleLen = sampleDataSet.length;
+        console.log(sampleLen);
+        var map;
+    </script>
+    <script src="javascripts/drawSelectbox.js"></script>
+    <script src="javascripts/drawPie.js"></script>
+    <script src="javascripts/drawLiddgeLine.js"></script>
+    <script src="javascripts/showLegend.js"></script>
+</body>
+
+
+</html>

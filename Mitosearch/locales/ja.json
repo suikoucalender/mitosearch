@@ -1,0 +1,11 @@
+{
+  "We constructed MitoSearch, a fish species composition database, using 4355 sequence data of 12S ribosomal RNA genes obtained by amplifying eDNA (environmental DNA) with MiFish primers in order to understand fish species composition around the world.": "世界の魚種組成を把握するため、eDNA（環境DNA）をMiFishプライマーで増幅して得られた12SリボソームRNA遺伝子4355個の配列データを用いて、魚種組成データベース「MitoSearch」を構築しました。",
+  "Overview of MitoSearch": "Mitosearchの概要",
+  "The fish species composition of each eDNA sample is displayed as a pie chart at the sampling point on the map.": "各eDNAサンプルの魚種構成は、地図上のサンプリング地点に円グラフで表示されます。",
+  "Display a composition pie chart that merges samples that are geographically close by shrinking the map.": "地図を縮小することにより、地理的に近いサンプルを統合した構成円グラフを表示します。",
+  "By dragging or zooming the map, the time transition of the composition of fish species in the map area is displayed as a ledger line.": "地図をドラッグしたりズームしたりすることで、地図上の魚種構成の時間推移を表示します。",
+  "You can display a composition pie chart or ridge line by filtering by specific fish species (enter the fish species name in the text box and click \"Filter\").": "特定の魚種でフィルタリング（テキストボックスに魚種名を入力し、「フィルタリング」をクリック）することで、構成円グラフや時間変化を表示することができます。"
+
+
+
+}
