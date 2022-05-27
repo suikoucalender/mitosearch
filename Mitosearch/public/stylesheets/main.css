@@ -67,9 +67,7 @@ input {
     font-size: 20px;
 }
 
-#btnArea {
-    margin-bottom: 0.5%;
-}
+
 
 #img {
     text-align: center;
@@ -98,12 +96,57 @@ button {
     font-size: 20px;
 }
 
+
+
+.icon {
+    position: absolute;
+    background: #f5f5f5;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+.icon:hover {
+        background-image: linear-gradient(45deg, #9ebaff 0%, #9dffbf 100%);
+}
+
+#help {
+    border-radius: 50%;
+
+    z-index: 500;
+}
+
+#expansion {
+    left: 38%;
+    z-index: 500;
+}
+
+#restore {
+    display: none;
+    left: 95%;
+    z-index: 500;
+}
+
+#alltime {
+    display: block;
+    left: 80%;
+}
+
+#monthly {
+    display: none;
+    left: 80%;
+}
+
+
 #map {
     float: left;
+    z-index: 400;
 }
 
 #graph {
     float: right;
+    z-index: 300;
 }
 
 .about-main {

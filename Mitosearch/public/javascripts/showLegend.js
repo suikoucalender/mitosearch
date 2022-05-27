@@ -18,8 +18,8 @@ taxonomyLegend.addEventListener("click", e => {
 hideBtn.addEventListener("click", e => {
     if (hideBtn.classList.value == "hide") {
         mapArea.style.width = "100%";
-        liddgeArea.style.display = "none";
-        changeRidgeGraph.style.display = "none";
+        //liddgeArea.style.display = "none";
+        //changeRidgeGraph.style.display = "none";
 
         map.remove();
 
@@ -32,8 +32,8 @@ hideBtn.addEventListener("click", e => {
 
     } else if (hideBtn.classList.value == "show") {
         mapArea.style.width = "40%";
-        liddgeArea.style.display = "block";
-        changeRidgeGraph.style.display = "block";
+        //liddgeArea.style.display = "block"; 
+        //changeRidgeGraph.style.display = "block";
 
         map.remove();
 
