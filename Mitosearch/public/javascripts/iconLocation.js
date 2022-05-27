@@ -45,7 +45,7 @@ function iconLocation() {
     }
  
 
-    var restoreLeft = 0.91 * window.innerWidth
+    var restoreLeft = window.innerWidth - mapLeft - 80
     restoreBtn.style.left = restoreLeft + "px";
     var alltimeLeft = graphLeft + 0.90 * graphWidth;
     alltimeBtn.style.left = alltimeLeft + "px";
