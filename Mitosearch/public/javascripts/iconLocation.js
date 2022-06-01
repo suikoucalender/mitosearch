@@ -34,7 +34,7 @@ function iconLocation() {
     var helpLeft = mapLeft + 50;
     helpBtn.style.left = helpLeft + "px";
 
-    //adjust with the map expansion
+    //adjust the expention icon position with the map expansion, prevent icon position errors caused by window size changes
     var triger = window.innerWidth - 2 * mapWidth
     if (triger > 1) {
         var expensionLeft = mapLeft + mapWidth - 50;
@@ -53,7 +53,7 @@ function iconLocation() {
     monthlyBtn.style.left = monthlyLeft + "px";
 };
 
-//dicide icons' position when all content loaded
+//decide icons' position when all content loaded
 window.addEventListener("load", function () {
     iconLocation();
 });
