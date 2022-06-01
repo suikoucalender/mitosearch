@@ -65,10 +65,13 @@
                 <input id="button" type="button" value="Filter">
             </form>
         </div>
-        <div id="btnArea">
-            <button id="taxonomyShow">Display Color Classification Info</button>
-            <button id="hideRiddgeLine" class="hide">Hide Riddge Graph</button>
-            <button id="changeRidgeGraph" class="alltime">Monthly ---> All time</button>
+
+        <div>
+            <button class="icon round" id="help"><img src="img/help.png"></button>
+            <button class="icon square" id="expansion"><img src="img/expansion.png"></button>
+            <button class="icon round" id="restore"><img src="img/restore.png"></button>
+            <button class="icon round alltime" id="alltime"><img src="img/alltime.png"></button>
+            <button class="icon round monthly" id="monthly"><img src="img/monthly.png"></button>
         </div>
         <div id="content" style="height: 75%; width: 100%;">
             <div id="map" style="height: 1000px; width: 40%;"></div>
@@ -83,11 +86,14 @@
         const sampleLen = sampleDataSet.length;
         console.log(sampleLen);
         var map;
+
     </script>
     <script src="javascripts/drawSelectbox.js"></script>
     <script src="javascripts/drawPie.js"></script>
-    <script src="javascripts/drawLiddgeLine.js"></script>
-    <script src="javascripts/showLegend.js"></script>
+    <script src="javascripts/drawLiddgeLineWithIcon.js"></script>
+    <!-- <script src="javascripts/showLegend.js"></script> -->
+    <script src="javascripts/showLegendWithIcon.js"></script>
+    <script src="javascripts/iconLocation.js"></script>
 </body>
 
 

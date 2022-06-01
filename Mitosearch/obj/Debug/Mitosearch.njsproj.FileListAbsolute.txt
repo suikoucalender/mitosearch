@@ -1,0 +1,3 @@
+C:\Users\12343\Source\Repos\mitosearch\Mitosearch\obj\Debug\Mitosearch.njsproj.AssemblyReference.cache
+C:\Users\12343\Source\Repos\mitosearch\Mitosearch\obj\Debug\Mitosearch.njsproj.CoreCompileInputs.cache
+C:\Users\12343\Source\Repos\mitosearch\Mitosearch\bin\Microsoft.NodejsTools.WebRole.dll
