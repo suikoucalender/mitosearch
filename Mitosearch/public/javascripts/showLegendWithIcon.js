@@ -51,7 +51,6 @@ restoreBtn.addEventListener("click", e => {
 
 
 alltimeBtn.addEventListener("click", e => {
-    let clickcheker = "alltime"
     appendScript("javascripts/drawLiddgeLineWithIcon.js");
     alltimeBtn.style.display = "none"
     monthlyBtn.style.display = "block"
