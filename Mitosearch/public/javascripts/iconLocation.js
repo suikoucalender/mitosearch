@@ -7,7 +7,6 @@ function iconLocation() {
     var monthlyBtn = document.getElementById("monthly");
     var map = document.getElementById("map");
     var graph = document.getElementById("graph");
-    var pixelRatiopixelRatioBox = document.querySelector(".pixel-ratio")
 
 
 
@@ -46,7 +45,7 @@ function iconLocation() {
     }
  
 
-    var restoreLeft = window.innerWidth - mapLeft - 80
+    var restoreLeft = mapLeft + (mapWidth/0.4) - 50
     restoreBtn.style.left = restoreLeft + "px";
     var alltimeLeft = graphLeft + 0.90 * graphWidth;
     alltimeBtn.style.left = alltimeLeft + "px";
