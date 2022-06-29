@@ -11,17 +11,19 @@ const liddgeArea = document.getElementById("graph");
 
 helpBtn.addEventListener("click", e => {
     taxonomyLegend.style.display = "block";
-    helpBtn.style.display = "none"
+    helpBtn.style.display = "none";
+    liddgeArea.style.display = "none";
 });
 
 taxonomyLegend.addEventListener("click", e => {
     taxonomyLegend.style.display = "none";
-    helpBtn.style.display = "block"
+    helpBtn.style.display = "block";
+    liddgeArea.style.display = "block";
 });
 
 
 
-document.getElementById("expansion").addEventListener("click", e => {
+expansionBtn.addEventListener("click", e => {
     mapArea.style.width = "100%";
     //liddgeArea.style.display = "none";
     //changeRidgeGraph.style.display = "none";
@@ -32,6 +34,7 @@ document.getElementById("expansion").addEventListener("click", e => {
 
     expansionBtn.style.display = "none"
     restoreBtn.style.display = "block"
+    liddgeArea.style.display = "none";
 });
 
 restoreBtn.addEventListener("click", e => {
@@ -47,6 +50,7 @@ restoreBtn.addEventListener("click", e => {
 
     restoreBtn.style.display = "none"
     expansionBtn.style.display = "block"
+    liddgeArea.style.display = "block";
 });
 
 
