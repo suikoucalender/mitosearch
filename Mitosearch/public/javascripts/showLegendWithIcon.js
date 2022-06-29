@@ -7,6 +7,7 @@ const monthlyBtn = document.getElementById("monthly");
 const taxonomyLegend = document.getElementById("img");
 const mapArea = document.getElementById("map");
 const liddgeArea = document.getElementById("graph");
+var timeBtnChecker = "alltimeBtn"
 
 
 helpBtn.addEventListener("click", e => {
@@ -36,11 +37,11 @@ expansionBtn.addEventListener("click", e => {
     restoreBtn.style.display = "block"
     liddgeArea.style.display = "none";
 
-    if (monthlyBtn.style.display == "block") {
-        monthlyBtn.style.display == "none"
-    }
-    else{
+    if (timeBtnChecker == "alltimeBtn") {
         alltimeBtn.style.display == "none"
+    }
+    else {
+        monthlyBtn.style.display == "none"
     }
 });
 
@@ -59,11 +60,11 @@ restoreBtn.addEventListener("click", e => {
     expansionBtn.style.display = "block"
     liddgeArea.style.display = "block";
 
-    if (monthlyBtn.style.display == "none") {
-        monthlyBtn.style.display == "block"
-    }
-    else{
+    if (timeBtnChecker == "alltimeBtn") {
         alltimeBtn.style.display == "block"
+    }
+    else {
+        monthlyBtn.style.display == "block"
     }
 });
 
@@ -72,6 +73,7 @@ alltimeBtn.addEventListener("click", e => {
     appendScript("javascripts/drawLiddgeLineWithIcon.js");
     alltimeBtn.style.display = "none"
     monthlyBtn.style.display = "block"
+    timeBtnChecker == "monthlyBtn"
 
 });
 
@@ -79,5 +81,6 @@ monthlyBtn.addEventListener("click", e => {
     appendScript("javascripts/drawLiddgeLineWithIcon.js");
     monthlyBtn.style.display = "none";
     alltimeBtn.style.display = "block"
+    timeBtnChecker == "alltimeBtn"
 });
 
