@@ -7,6 +7,7 @@ function iconLocation() {
     var monthlyBtn = document.getElementById("monthly");
     var map = document.getElementById("map");
     var graph = document.getElementById("graph");
+    var pixelRatiopixelRatioBox = document.querySelector(".pixel-ratio")
 
 
 
