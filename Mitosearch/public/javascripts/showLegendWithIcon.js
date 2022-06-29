@@ -33,15 +33,15 @@ expansionBtn.addEventListener("click", e => {
 
     appendScript("javascripts/drawPie.js");
 
-    expansionBtn.style.display = "none"
-    restoreBtn.style.display = "block"
+    expansionBtn.style.display = "none";
+    restoreBtn.style.display = "block";
     liddgeArea.style.display = "none";
 
     if (timeBtnChecker == "alltimeBtn") {
-        alltimeBtn.style.display = "none"
+        alltimeBtn.style.display = "none";
     }
     else {
-        monthlyBtn.style.display = "none"
+        monthlyBtn.style.display = "none";
     }
 });
 
