@@ -56,31 +56,31 @@ restoreBtn.addEventListener("click", e => {
     //appendScript("javascripts/drawPie.js");
     //appendScript("javascripts/drawLiddgeLine.js");
 
-    restoreBtn.style.display = "none"
-    expansionBtn.style.display = "block"
+    restoreBtn.style.display = "none";
+    expansionBtn.style.display = "block";
     liddgeArea.style.display = "block";
 
     if (timeBtnChecker == "alltimeBtn") {
-        alltimeBtn.style.display == "block"
+        alltimeBtn.style.display == "block";
     }
     else {
-        monthlyBtn.style.display == "block"
+        monthlyBtn.style.display == "block";
     }
 });
 
 
 alltimeBtn.addEventListener("click", e => {
     appendScript("javascripts/drawLiddgeLineWithIcon.js");
-    alltimeBtn.style.display = "none"
-    monthlyBtn.style.display = "block"
-    timeBtnChecker == "monthlyBtn"
+    alltimeBtn.style.display = "none";
+    monthlyBtn.style.display = "block";
+    timeBtnChecker == "monthlyBtn";
 
 });
 
 monthlyBtn.addEventListener("click", e => {
     appendScript("javascripts/drawLiddgeLineWithIcon.js");
     monthlyBtn.style.display = "none";
-    alltimeBtn.style.display = "block"
-    timeBtnChecker == "alltimeBtn"
+    alltimeBtn.style.display = "block";
+    timeBtnChecker == "alltimeBtn";
 });
 
