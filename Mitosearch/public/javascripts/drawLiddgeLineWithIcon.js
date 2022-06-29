@@ -195,7 +195,7 @@ function drawLiddgeLine(capturedSampleList) {
     var mapLeft = map.offsetLeft;
     var mapWidth = map.offsetWidth;
 
-    var margin = { top: 100, right: mapLeft, bottom: 30, left: 250 },
+    var margin = { top: 110, right: mapLeft, bottom: 30, left: 250 },
         width = window.innerWidth - mapWidth - mapLeft - margin.left - margin.right,
         height = 40 * fishList.length;
 
@@ -301,6 +301,7 @@ function drawLiddgeLine(capturedSampleList) {
                 .call(
                     d3.axisTop(xScale)
                         .tickFormat(d3.timeFormat("%y/%m"))
+
                 )
         }
     }
