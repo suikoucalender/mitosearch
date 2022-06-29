@@ -35,6 +35,13 @@ expansionBtn.addEventListener("click", e => {
     expansionBtn.style.display = "none"
     restoreBtn.style.display = "block"
     liddgeArea.style.display = "none";
+
+    if (monthlyBtn.style.display == "block") {
+        monthlyBtn.style.display == "none"
+    }
+    else{
+        alltimeBtn.style.display == "none"
+    }
 });
 
 restoreBtn.addEventListener("click", e => {
@@ -51,6 +58,13 @@ restoreBtn.addEventListener("click", e => {
     restoreBtn.style.display = "none"
     expansionBtn.style.display = "block"
     liddgeArea.style.display = "block";
+
+    if (monthlyBtn.style.display == "none") {
+        monthlyBtn.style.display == "block"
+    }
+    else{
+        alltimeBtn.style.display == "block"
+    }
 });
 
 
