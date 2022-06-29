@@ -38,10 +38,10 @@ expansionBtn.addEventListener("click", e => {
     liddgeArea.style.display = "none";
 
     if (timeBtnChecker == "alltimeBtn") {
-        alltimeBtn.style.display == "none"
+        alltimeBtn.style.display = "none"
     }
     else {
-        monthlyBtn.style.display == "none"
+        monthlyBtn.style.display = "none"
     }
 });
 
@@ -61,10 +61,10 @@ restoreBtn.addEventListener("click", e => {
     liddgeArea.style.display = "block";
 
     if (timeBtnChecker == "alltimeBtn") {
-        alltimeBtn.style.display == "block";
+        alltimeBtn.style.display = "block";
     }
     else {
-        monthlyBtn.style.display == "block";
+        monthlyBtn.style.display = "block";
     }
 });
 
