@@ -166,18 +166,37 @@ button {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution :2dppx) {
-    button {
-        width: 5%;
-        margin-right: 1.5%;
-        font-size: 20px;
-    }
-
     .icon {
         position: absolute;
         background: #f5f5f5;
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         border: none;
         border-radius: 5px;
+    }
+    #help {
+        border-radius: 50%;
+        z-index: 500;
+    }
+
+    #expansion {
+        left: 35%;
+        z-index: 500;
+    }
+
+    #restore {
+        display: none;
+        left: 80%;
+        z-index: 500;
+    }
+
+    #alltime {
+        display: block;
+        left: 80%;
+    }
+
+    #monthly {
+        display: none;
+        left: 80%;
     }
 }
