@@ -1,3 +1,5 @@
+
+
 function iconLocation() {
     //read the elements
     var helpBtn = document.getElementById("help");
@@ -23,7 +25,8 @@ function iconLocation() {
     while (mapTop > 370) {
         mapTop = 320;
     }
-    var iconTop = mapTop + 0.02 * mapHeight;
+    var iconTop = mapTop + 30
+        //0.02 * mapHeight;
     helpBtn.style.top = iconTop + "px";
     expansionBtn.style.top = iconTop + "px";
     restoreBtn.style.top = iconTop + "px";
@@ -43,9 +46,8 @@ function iconLocation() {
         var expensionLeft = mapLeft + 0.37 * window.innerWidth - 50;
         expansionBtn.style.left = expensionLeft + "px";
     }
-
-
-    var restoreLeft = mapLeft + (mapWidth / 0.4) - 80
+    mapWidth = map.offsetWidth;
+    var restoreLeft = window.innerWidth - mapLeft - 80
     restoreBtn.style.left = restoreLeft + "px";
     var alltimeLeft = graphLeft + 0.90 * graphWidth;
     alltimeBtn.style.left = alltimeLeft + "px";
@@ -64,3 +66,4 @@ window
 window.addEventListener('resize', function () {
     iconLocation();
 });
+
