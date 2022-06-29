@@ -43,6 +43,7 @@ function drawLiddgeLine(capturedSampleList) {
         clickchecker = "monthly";
     }
 
+
     //svgタグを追加し、幅と高さを設定
     var graph = d3.select("#graph");
 
@@ -190,19 +191,28 @@ function drawLiddgeLine(capturedSampleList) {
     });
 
     //グラフ全体のサイズとマージンを設定
-    var margin = { top: 100, right: 10, bottom: 30, left: 250 },
-        width = 1000 - margin.left - margin.right,
+    var map = document.getElementById("map");
+    var mapLeft = map.offsetLeft;
+    var mapWidth = map.offsetWidth;
+
+    var margin = { top: 100, right: mapLeft, bottom: 30, left: 250 },
+        width = window.innerWidth - mapWidth - mapLeft - margin.left - margin.right,
         height = 40 * fishList.length;
+
 
     //svgタグを削除
     graph.select("svg").remove();
 
+
+    //var svg = graph.append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom)
     var svg = graph.append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom)
         .append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+ 
+
     //x軸のスケールを作成
     var xScale = d3.scaleTime()
-        .domain([scaleMin,scaleMax])
+        .domain([scaleMin, scaleMax])
         .range([0, width]);
 
     //x軸を追加する
@@ -232,6 +242,8 @@ function drawLiddgeLine(capturedSampleList) {
     svg.append("g")
         .attr("transform", "translate(0, 0)")
         .call(d3.axisLeft(fishScale));
+
+
 
     //半メモリ分の長さを取得
     var betweenlen;
