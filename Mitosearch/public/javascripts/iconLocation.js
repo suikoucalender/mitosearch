@@ -40,7 +40,7 @@ function iconLocation() {
     //adjust the expention icon position with the map expansion, prevent icon position errors caused by window size changes
     var triger = window.innerWidth - 2 * mapWidth
     if (triger > 1) {
-        var expensionLeft = mapLeft + mapWidth - 50;
+        var expensionLeft = mapLeft + mapWidth - 55;
         expansionBtn.style.left = expensionLeft + "px";
     } else {
         var expensionLeft = mapLeft + 0.37 * window.innerWidth - 50;
