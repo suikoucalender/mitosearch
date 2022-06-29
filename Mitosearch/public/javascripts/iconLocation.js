@@ -43,9 +43,9 @@ function iconLocation() {
         var expensionLeft = mapLeft + 0.37 * window.innerWidth - 50;
         expansionBtn.style.left = expensionLeft + "px";
     }
- 
 
-    var restoreLeft = mapLeft + (mapWidth/0.4) - 80
+
+    var restoreLeft = mapLeft + (mapWidth / 0.4) - 80
     restoreBtn.style.left = restoreLeft + "px";
     var alltimeLeft = graphLeft + 0.90 * graphWidth;
     alltimeBtn.style.left = alltimeLeft + "px";
