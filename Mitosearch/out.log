@@ -2626,3 +2626,31 @@
 [0mGET /javascripts/drawPie.js [36m304[0m 0.423 ms - -[0m
 [0mGET /javascripts/drawPie.js [36m304[0m 0.482 ms - -[0m
 [0mGET /javascripts/drawLiddgeLine.js [36m304[0m 0.541 ms - -[0m
+
+> mitosearch@0.0.0 start /home/yoshitake/mitosearch_dev/mitosearch/Mitosearch
+> node app "/home/yoshitake/mitosearch_dev/mitosearch/Mitosearch/" "./"
+
+[0mGET / [32m200[0m 183.124 ms - 1857842[0m
+[0mGET /stylesheets/main.css [32m200[0m 1.717 ms - 2313[0m
+[0mGET /bootstrap-4.5.0-dist/css/bootstrap.min.css [32m200[0m 1.304 ms - 160403[0m
+[0mGET /markerClusterGroup/dist/MarkerCluster.css [32m200[0m 2.097 ms - 872[0m
+[0mGET /leaflet/leaflet.css [32m200[0m 2.272 ms - 13632[0m
+[0mGET /markerClusterGroup/dist/MarkerCluster.Default.css [32m200[0m 1.522 ms - 1287[0m
+[0mGET /select2/dist/css/select2.min.css [32m200[0m 0.477 ms - 14966[0m
+[0mGET /leaflet/leaflet.js [32m200[0m 0.874 ms - 141941[0m
+[0mGET /javascripts/jquery-3.6.0.js [32m200[0m 0.800 ms - 288580[0m
+[0mGET /d3/d3.js [32m200[0m 0.497 ms - 515704[0m
+[0mGET /markerClusterGroup/dist/leaflet.markercluster.js [32m200[0m 0.536 ms - 33724[0m
+[0mGET /select2/dist/js/select2.min.js [32m200[0m 0.509 ms - 70891[0m
+[0mGET /select2/dist/js/i18n/ja.js [32m200[0m 0.467 ms - 862[0m
+[0mGET /img/Taxonomy.png [32m200[0m 0.547 ms - 166503[0m
+[0mGET /img/help.png [32m200[0m 1.168 ms - 15657[0m
+[0mGET /img/expansion.png [32m200[0m 1.225 ms - 8668[0m
+[0mGET /img/restore.png [32m200[0m 1.323 ms - 9109[0m
+[0mGET /img/alltime.png [32m200[0m 0.700 ms - 18083[0m
+[0mGET /img/monthly.png [32m200[0m 0.762 ms - 18155[0m
+[0mGET /javascripts/drawSelectbox.js [32m200[0m 0.510 ms - 1792[0m
+[0mGET /javascripts/drawPie.js [32m200[0m 0.615 ms - 7269[0m
+[0mGET /javascripts/drawLiddgeLineWithIcon.js [32m200[0m 1.324 ms - 10952[0m
+[0mGET /javascripts/showLegendWithIcon.js [32m200[0m 1.078 ms - 2407[0m
+[0mGET /javascripts/iconLocation.js [32m200[0m 1.161 ms - 2178[0m
