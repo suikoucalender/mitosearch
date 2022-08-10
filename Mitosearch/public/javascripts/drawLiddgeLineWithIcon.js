@@ -106,7 +106,6 @@ function drawLiddgeLine(capturedSampleList) {
         //グラフの左側端点のデータを追加
         densityData.density.push([scaleMin, 0]);
 
-        console.log(clickchecker);
         //月ごとor日付ごとにデータを作成
         if (clickchecker == "alltime") {
             dateList.forEach(date => {
@@ -117,7 +116,7 @@ function drawLiddgeLine(capturedSampleList) {
                 if (date2monthstr.length == 1)
                     date2monthstr = "0" + date2monthstr;
 
-                var newdate = "2017-" + String(date2.getMonth() + 1) + "-01";
+                var newdate = "2017-" + date2monthstr + "-01";
                 var newdate2 = new Date(newdate);
                 var densityOfDate = [newdate2, 0];
 

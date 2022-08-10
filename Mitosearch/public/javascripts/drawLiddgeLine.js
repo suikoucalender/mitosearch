@@ -1,3 +1,5 @@
+const { Console } = require("console");
+
 //window.onload = getCapturedSampleList;
 getCapturedSampleList();
 map.on("move", getCapturedSampleList);
@@ -95,6 +97,7 @@ function drawLiddgeLine(capturedSampleList) {
         densityData.density.push([scaleMin, 0]);
 
         console.log(changeRidgeGraph.classList.value);
+        console.log("abc");
         //月ごとor日付ごとにデータを作成
         if (changeRidgeGraph.classList.value == "alltime") {
             dateList.forEach(date => {
@@ -136,6 +139,7 @@ function drawLiddgeLine(capturedSampleList) {
             //グラフの両側端点のデータを作成
             densityData.density.unshift([new Date("2016-12-01"), 0]);
             densityData.density.push([new Date("2018-01-01"), 0]);
+
         }
         else if (changeRidgeGraph.classList.value == "monthly") {
             dateList.forEach(date => {
