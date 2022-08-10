@@ -1,5 +1,3 @@
-
-
 function iconLocation() {
     //read the elements
     var helpBtn = document.getElementById("help");
@@ -20,11 +18,6 @@ function iconLocation() {
     var graphLeft = graph.offsetLeft;
     var graphWidth = graph.offsetWidth;
 
-
-    //dicide icons' position
-    while (mapTop > 370) {
-        mapTop = 320;
-    }
     var iconTop = mapTop + 30
         //0.02 * mapHeight;
     helpBtn.style.top = iconTop + "px";
@@ -60,7 +53,7 @@ window.addEventListener("load", function () {
     iconLocation();
 });
 
-window
+
 
 //dicide icons' position when window size changed
 window.addEventListener('resize', function () {
