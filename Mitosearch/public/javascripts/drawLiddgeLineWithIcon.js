@@ -109,7 +109,7 @@ function drawLiddgeLine(capturedSampleList) {
     var maxDate = new Date(dateList[dateList.length - 1]);
 
     //x軸の端点の日付を取得
-    var scaleMax = new Date("2018-01-01");
+    var scaleMax = new Date("2017-12-31");
     var scaleMin = new Date("2016-12-01");
 
     if (timemode == "alltime") {
