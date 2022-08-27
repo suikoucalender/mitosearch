@@ -1,9 +1,14 @@
 //window.onload = getCapturedSampleList;
 getCapturedSampleList();
-map.on("move", getCapturedSampleList);
+map.on("mouseup", getCapturedSampleList);
+document.querySelector('#map').onwheel = getCapturedSampleList;
 
 //キャプチャエリア内のサンプルの組成を取得
 function getCapturedSampleList() {
+    var pos = map.getCenter();
+    var zoom = map.getZoom();
+    console.log(pos);
+    console.log(zoom);
     //マップの移動・拡大・縮小時に4隅の緯度経度を取得
     var bounds = map.getBounds();
     var north = bounds._northEast.lat;
