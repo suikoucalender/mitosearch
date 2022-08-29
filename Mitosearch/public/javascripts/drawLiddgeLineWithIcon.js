@@ -8,8 +8,10 @@ map.on("move", getCapturedSampleList);
 
 function setMoveFlag(){isMove = true}
 function removeMoveFlagAndDraw(){
-    isMove = false;
-    getCapturedSampleList();
+    if(isMove){
+        isMove = false;
+        getCapturedSampleList();
+    }
 }
 //キャプチャエリア内のサンプルの組成を取得
 function getCapturedSampleList() {
