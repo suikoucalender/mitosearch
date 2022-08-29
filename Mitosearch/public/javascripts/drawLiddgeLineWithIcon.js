@@ -1,4 +1,4 @@
-let isMove = false;
+var isMove = false;
 //window.onload = getCapturedSampleList;
 getCapturedSampleList();
 map.on("mouseup", removeMoveFlagAndDraw);
@@ -191,7 +191,7 @@ function drawLiddgeLine(capturedSampleList) {
         .range([0, width]);
 
     //x軸を追加する
-    if (timemode == "alltime") {
+    if (timemode == "monthly") {
         svg.append("g")
             .attr("transform", "translate(0," + height + ")")
             .call(
