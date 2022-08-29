@@ -1,10 +1,19 @@
+let isMove = false;
 //window.onload = getCapturedSampleList;
 getCapturedSampleList();
-map.on("mouseup", getCapturedSampleList);
-document.querySelector('#map').onwheel = getCapturedSampleList;
+map.on("mouseup", removeMoveFlagAndDraw);
+map.on("mousedown", setMoveFlag);
+map.on("move", getCapturedSampleList);
+//document.querySelector('#map').onwheel = getCapturedSampleList;
 
+function setMoveFlag(){isMove = true}
+function removeMoveFlagAndDraw(){
+    isMove = false;
+    getCapturedSampleList();
+}
 //キャプチャエリア内のサンプルの組成を取得
 function getCapturedSampleList() {
+    if(isMove){return}
     var pos = map.getCenter();
     var zoom = map.getZoom();
     console.log(pos);
