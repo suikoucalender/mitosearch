@@ -286,10 +286,14 @@ function drawLiddgeLine(capturedSampleList) {
                         .range([0, width]);
     
     //y軸のスケールを作成
-    var baryScale = d3.scaleLog()
-        .domain([numDataInDaymax, 1])
-        .range([0, barheight]);
+    var superscript = "⁰¹²³⁴⁵⁶⁷⁸⁹",
+    formatPower = function(d) { return (d + "").split("").map(function(c) { return superscript[c]; }).join(""); },
+    formatTick = function(d) { return 10 + formatPower(Math.round(Math.log(d) / Math.LN10)); };
 
+    var baryScale = d3.scaleLog()
+        .domain([numDataInDaymax, 0.90000000001])
+        .range([0, barheight]);
+    
     //バーの表示
     svgbar.append("g")
             .selectAll("rect")
@@ -323,7 +327,7 @@ function drawLiddgeLine(capturedSampleList) {
     //y軸を追加する
     svgbar.append("g")
         .attr("transform", "translate(0, 0)")
-        .call(d3.axisLeft(baryScale));
+        .call(d3.axisLeft(baryScale).ticks(10,0));
 }
 
 function drawScale(timemode, svg, xScale) {
