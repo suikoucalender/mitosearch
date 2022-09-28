@@ -59,13 +59,16 @@ function drawLiddgeLine(capturedSampleList) {
 
     //svgタグを追加し、幅と高さを設定
     var graph = d3.select("#graph");
+    var bargraph = d3.select("#bargraph")
 
     //サンプルが存在しないときは、グラフを描画しない
     if (capturedSampleList.length == 0) {
         //svgタグを削除
         graph.select("svg").remove();
+        bargraph.select("svg").remove();
         return;
     }
+
 
     //魚種リストと日付のリストを取得
     capturedSampleList.forEach(sampleData => {
@@ -98,7 +101,17 @@ function drawLiddgeLine(capturedSampleList) {
             }
         });
     });
+
+    var numDataInDaymax = 0;
+    let numDataInDayList = [];
+
+    for(var key in numDataInDay){
+        numDataInDaymax = Math.max(numDataInDaymax, numDataInDay[key]);
+        numDataInDayList.push({"date": new Date(key), "value": numDataInDay[key]});
+    }
     //console.log(numDataInDay);
+    //console.log(numDataInDaymax);
+    //console.log(numDataInDayList);
     //console.log(timelineData);
     //console.log(numtimelineData);
 
@@ -106,6 +119,7 @@ function drawLiddgeLine(capturedSampleList) {
     if (dateList.length == 0) {
         //svgタグを削除
         graph.select("svg").remove();
+        bargraph.select("svg").remove();
         return;
     }
 
@@ -159,6 +173,7 @@ function drawLiddgeLine(capturedSampleList) {
     });
     //console.log(fastdensityList);
 
+
     //グラフ描画用リストをMaxでソート
     densityList = object_array_sort(fastdensityList, "max");
 
@@ -172,20 +187,23 @@ function drawLiddgeLine(capturedSampleList) {
     var mapLeft = map.offsetLeft;
     var mapWidth = map.offsetWidth;
 
-    var margin = { top: 110, right: mapLeft, bottom: 30, left: 250 },
+    var margin = { top: 75, right: mapLeft, bottom: 30, left: 250 },
         width = window.innerWidth - mapWidth - mapLeft - margin.left - margin.right,
-        height = 40 * fishList.length;
+        height = 40 * fishList.length,
+        barmargin = { top: 10, right: mapLeft, bottom: margin.bottom, left: margin.left},
+        barheight = 100,
+        barwidth = 50;
 
+    if(timemode == "alltime")
+        barwidth = 5;
 
     //svgタグを削除
+    bargraph.select("svg").remove();
     graph.select("svg").remove();
-
 
     //var svg = graph.append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom)
     var svg = graph.append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom)
         .append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
- 
 
     //x軸のスケールを作成
     var xScale = d3.scaleTime()
@@ -248,64 +266,112 @@ function drawLiddgeLine(capturedSampleList) {
             .y(function (d) { return (- d[1]); })
     )
 
-    drawScale()
+    drawScale(timemode, svg, xScale)
 
     window.addEventListener("scroll", function () {
-        drawScale();
+        drawScale(timemode, svg, xScale);
     })
 
     window.addEventListener("onresize", function () {
-        drawScale();
+        drawScale(timemode, svg, xScale);
     })
+    
+    //SVG領域の設定
+    var svgbar = bargraph.append("svg").attr("width", width + barmargin.left + barmargin.right).attr("height", barheight + barmargin.top + barmargin.bottom)
+            .append("g").attr("transform", "translate(" + barmargin.left + "," + barmargin.top + ")");
 
-    function drawScale() {
-        //x軸を追加する
-        d3.select(".xaxis").remove();
+    //x軸のスケールを作成
+    var barxScale = d3.scaleTime()
+                        .domain([scaleMin, scaleMax])
+                        .range([0, width]);
+    
+    //y軸のスケールを作成
+    var baryScale = d3.scaleLog()
+        .domain([numDataInDaymax, 1])
+        .range([0, barheight]);
 
-        if (timemode == "monthly") {
-            svg.append("g")
-                .attr("class", "xaxis")
-                .attr("transform", "translate(0," + ($(window).scrollTop()) + ")")
+    //バーの表示
+    svgbar.append("g")
+            .selectAll("rect")
+            .data(numDataInDayList)
+            .enter()
+            .append("rect")
+            .attr("x", function(d){return barxScale(d.date) - barwidth/2;})
+            .attr("y", function(d){return baryScale(d.value);})
+            .attr("width", barwidth)
+            .attr("height", function(d){return barheight - baryScale(d.value);})
+            .attr("fill", "steelBlue");
+
+    //x軸を追加する
+    if (timemode == "monthly") {
+        svgbar.append("g")
+                .attr("transform", "translate(0," + barheight + ")")
                 .call(
-                    d3.axisTop(xScale)
-                        .tickFormat(d3.timeFormat("%B"))
-                )
-        }
-        else{
-            svg.append("g")
-                .attr("class", "xaxis")
-                .attr("transform", "translate(0," + ($(window).scrollTop()) + ")")
+                   d3.axisTop(barxScale)
+                       .tickFormat(d3.timeFormat("%B"))
+                    )
+    }
+    else{
+        svgbar.append("g")
+                .attr("transform", "translate(0," + barheight + ")")
                 .call(
-                    d3.axisTop(xScale)
+                    d3.axisTop(barxScale)
                         .tickFormat(d3.timeFormat("%y/%m"))
-
-                )
-        }
+                    )
     }
 
+    //y軸を追加する
+    svgbar.append("g")
+        .attr("transform", "translate(0, 0)")
+        .call(d3.axisLeft(baryScale));
+}
+
+function drawScale(timemode, svg, xScale) {
+    //x軸を追加する
+    d3.select(".xaxis").remove();
+
+    if (timemode == "monthly") {
+        svg.append("g")
+            .attr("class", "xaxis")
+            .attr("transform", "translate(0," + ($(window).scrollTop()) + ")")
+            .call(
+                d3.axisTop(xScale)
+                    .tickFormat(d3.timeFormat("%B"))
+            )
+    }
+    else{
+        svg.append("g")
+            .attr("class", "xaxis")
+            .attr("transform", "translate(0," + ($(window).scrollTop()) + ")")
+            .call(
+                d3.axisTop(xScale)
+                    .tickFormat(d3.timeFormat("%y/%m"))
+
+            )
+    }
 }
 
 function object_array_sort(data, key, order) {
-    //デフォは降順(DESC)
-    var num_a = -1;
-    var num_b = 1;
+//デフォは降順(DESC)
+var num_a = -1;
+var num_b = 1;
 
-    if (order === 'asc') {//指定があれば昇順(ASC)
-        num_a = 1;
-        num_b = -1;
-    }
+if (order === 'asc') {//指定があれば昇順(ASC)
+    num_a = 1;
+    num_b = -1;
+}
 
-    data = data.sort(function (a, b) {
-        var x = a[key];
-        var y = b[key];
-        if (x > y) return num_a;
-        if (x < y) return num_b;
-        return 0;
-    });
+data = data.sort(function (a, b) {
+    var x = a[key];
+    var y = b[key];
+    if (x > y) return num_a;
+    if (x < y) return num_b;
+    return 0;
+});
 
-    return data; // ソート後の配列を返す
+return data; // ソート後の配列を返す
 }
 
 function isInvalidDate(date) {
-    return Number.isNaN(new Date(date).getTime());
+return Number.isNaN(new Date(date).getTime());
 }

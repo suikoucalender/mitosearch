@@ -56,25 +56,27 @@
             <img src="img/Taxonomy.png" style="height: 80%; width: 80%;">
         </div>
         <div id="form">
-            <form>
-                <select id="filter" class="test-select2" multiple="multiple" style="height: 35px">
+            <form style="width: 95%; float: left;">
+                <select id="filter" class="test-select2" multiple="multiple" style="height: 35px;">
                   <% AllFishList.forEach(fishName => { %>
                     <option><%= fishName %></option>
                   <% }) %>
                 </select>
                 <input id="button" type="button" value="Filter">
             </form>
+            <button class="icon2" id="alltime"><img src="img/alltime.png"></button>
+            <button class="icon2" id="monthly"><img src="img/monthly.png"></button>
         </div>
 
         <div>
             <button class="icon" id="help"><img src="img/help.png"></button>
             <button class="icon" id="expansion"><img src="img/expansion.png"></button>
             <button class="icon" id="restore"><img src="img/restore.png"></button>
-            <button class="icon" id="alltime"><img src="img/alltime.png"></button>
-            <button class="icon" id="monthly"><img src="img/monthly.png"></button>
         </div>
         <div id="content" style="height: 75%; width: 100%;">
             <div id="map" style="height: 1000px; width: 40%;"></div>
+            <p style="width: 60%; float:right; text-align: right;">Number of Samples</p>
+            <div id="bargraph" style="height: 80px; width: 60%;"></div>
             <div id="graph" style="height: 700px; width: 60%;"></div>
         </div>
         
