@@ -192,10 +192,10 @@ function drawLiddgeLine(capturedSampleList) {
         height = 40 * fishList.length,
         barmargin = { top: 10, right: mapLeft, bottom: margin.bottom, left: margin.left},
         barheight = 100,
-        barwidth = 50;
+        barwidth = width / 20;
 
     if(timemode == "alltime")
-        barwidth = 5;
+        barwidth = width / 300;
 
     //svgタグを削除
     bargraph.select("svg").remove();
