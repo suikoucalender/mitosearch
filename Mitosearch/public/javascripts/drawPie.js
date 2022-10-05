@@ -1,51 +1,50 @@
-//åœ°å›³ã‚’æç”»ã™ã‚‹DOMè¦ç´ ã‚’é¸æŠã—ã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ç·¯åº¦çµŒåº¦ã€ç¸®å°ºã‚’è¨­å®šã€‚
+//’n}‚ğ•`‰æ‚·‚éDOM—v‘f‚ğ‘I‘ğ‚µAƒfƒtƒHƒ‹ƒg‚ÌˆÜ“xŒo“xAkÚ‚ğİ’èB
+var map = L.map("map").setView([latitude, longitude], ratio);
 
-var map = L.map("map").setView([35.7, 139.7], 5);
-
-//åœ°å›³ãƒ‡ãƒ¼ã‚¿ã®å–å¾—å…ƒã¨Zoomç¯„å›²ã‚’è¨­å®šã™ã‚‹ã€‚
+//’n}ƒf[ƒ^‚Ìæ“¾Œ³‚ÆZoom”ÍˆÍ‚ğİ’è‚·‚éB
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { minZoom: 2, maxZoom: 18 }).addTo(map);
 
-//å††ã‚°ãƒ©ãƒ•ã‚’ä¸€æ™‚çš„ã«æç”»ã™ã‚‹ãŸã‚ã®é ˜åŸŸã‚’å–å¾—(å®Ÿéš›ã«ã¯è¡¨ç¤ºã•ã‚Œãªã„)
+//‰~ƒOƒ‰ƒt‚ğˆê“I‚É•`‰æ‚·‚é‚½‚ß‚Ì—Ìˆæ‚ğæ“¾(ÀÛ‚É‚Í•\¦‚³‚ê‚È‚¢)
 var tmp = d3.select("#tmp");
 
-//MarkerClusterGroupã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã€‚ã‚°ãƒ©ãƒ•ã®ã‚¢ã‚¤ã‚³ãƒ³ã¯defineClusterIconé–¢æ•°ã§æç”»ã™ã‚‹
+//MarkerClusterGroupƒIƒuƒWƒFƒNƒg‚ğì¬BƒOƒ‰ƒt‚ÌƒAƒCƒRƒ“‚ÍdefineClusterIconŠÖ”‚Å•`‰æ‚·‚é
 var markers = L.markerClusterGroup({ iconCreateFunction: defineClusterIcon });
 
 var radius = 25;
 
-//pieãƒãƒ£ãƒ¼ãƒˆãƒ‡ãƒ¼ã‚¿ã‚»ãƒƒãƒˆç”¨é–¢æ•°ã®è¨­å®š
+//pieƒ`ƒƒ[ƒgƒf[ƒ^ƒZƒbƒg—pŠÖ”‚Ìİ’è
 var pie = d3.pie()
     .value(function (d) { return d.value; })
     .sort(null);
 
 sampleDataSet.forEach(sampleData => {
-    //å„ã‚µãƒ³ãƒ—ãƒ«ã®å††ã‚°ãƒ©ãƒ•ãŒæç”»ã•ã‚ŒãŸãƒãƒ¼ã‚«ãƒ¼ã‚¢ã‚¤ã‚³ãƒ³ã‚’å–å¾—
+    //ŠeƒTƒ“ƒvƒ‹‚Ì‰~ƒOƒ‰ƒt‚ª•`‰æ‚³‚ê‚½ƒ}[ƒJ[ƒAƒCƒRƒ“‚ğæ“¾
     var myIcon = drawPieIcon(radius, sampleData);
 
     var marker1 = L.marker([sampleData.latitude, sampleData.longitude], { icon: myIcon });
-    //marker1ã ã‘ã ã¨åœ°å›³å·¦å´ã®ã‚¢ãƒ¡ãƒªã‚«å¤§é™¸ã«ãƒãƒ¼ã‚«ãƒ¼ãŒãƒãƒƒãƒ”ãƒ³ã‚°ã•ã‚Œã¦ã—ã¾ã†ã®ã§ã€æ—¥æœ¬ã‚ˆã‚Šå³å´ã«è¦‹ãˆã‚‹ã‚¢ãƒ¡ãƒªã‚«å¤§é™¸ã«ã‚‚ãƒãƒ¼ã‚«ãƒ¼ã‚’ãƒãƒƒãƒ”ãƒ³ã‚°ã™ã‚‹å‡¦ç†
+    //marker1‚¾‚¯‚¾‚Æ’n}¶‘¤‚ÌƒAƒƒŠƒJ‘å—¤‚Éƒ}[ƒJ[‚ªƒ}ƒbƒsƒ“ƒO‚³‚ê‚Ä‚µ‚Ü‚¤‚Ì‚ÅA“ú–{‚æ‚è‰E‘¤‚ÉŒ©‚¦‚éƒAƒƒŠƒJ‘å—¤‚É‚àƒ}[ƒJ[‚ğƒ}ƒbƒsƒ“ƒO‚·‚éˆ—
     var marker2 = L.marker([sampleData.latitude, sampleData.longitude + 360], { icon: myIcon }); 
 
-    //popupè¡¨ç¤ºã‚’ä½œæˆã™ã‚‹ãŸã‚ã«å††ã‚°ãƒ©ãƒ•ã‚’æç”»ç”¨ãƒ‡ãƒ¼ã‚¿
+    //popup•\¦‚ğì¬‚·‚é‚½‚ß‚É‰~ƒOƒ‰ƒt‚ğ•`‰æ—pƒf[ƒ^
     var pieInputList = createPieInput(sampleData);
 
-    //popupè¡¨ç¤ºã§ä½¿ç”¨ã™ã‚‹HTMLã‚’ä½œæˆ
+    //popup•\¦‚Åg—p‚·‚éHTML‚ğì¬
     var popupContent = "<table><tr><td><u>sample</u></td><td><a target='_blank' href='https://www.ncbi.nlm.nih.gov/sra/?term=" + sampleData.sample + "'><u>" + sampleData.sample + "</u></a></td></tr><tr><td><u>date</u></td><td><u>" + sampleData.date + "</u></td></tr>";
     pieInputList.forEach(fishData => {
         popupContent = popupContent + "<tr><td>" + fishData.name + "</td><td>" + fishData.value.toFixed(2) + "</td></tr>";
     })
     popupContent = popupContent + "</table>"
 
-    //tooltipã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã—ã€ãƒãƒ¼ã‚«ãƒ¼ã«ãƒã‚¤ãƒ³ãƒ‰
+    //tooltipƒIƒuƒWƒFƒNƒg‚ğì¬‚µAƒ}[ƒJ[‚ÉƒoƒCƒ“ƒh
     marker1.bindTooltip(popupContent, { direction: 'bottom' }).openTooltip();
     marker2.bindTooltip(popupContent, { direction: 'bottom' }).openTooltip();
 
-    //popupã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä½œæˆã—ã€ãƒãƒ¼ã‚«ã«ãƒã‚¤ãƒ³ãƒ‰
+    //popupƒIƒuƒWƒFƒNƒg‚ğì¬‚µAƒ}[ƒJ‚ÉƒoƒCƒ“ƒh
     var popup = L.popup().setContent(popupContent);
     marker1.bindPopup(popup);
     marker2.bindPopup(popup);
 
-    //ãƒãƒ¼ã‚«ãƒ¼ã‚’MarkerClusterGroupã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãƒ¬ã‚¤ãƒ¤ãƒ¼ã«è¿½åŠ ã™ã‚‹
+    //ƒ}[ƒJ[‚ğMarkerClusterGroupƒIƒuƒWƒFƒNƒgƒŒƒCƒ„[‚É’Ç‰Á‚·‚é
     markers.addLayer(marker1);
     markers.addLayer(marker2);
 
@@ -53,21 +52,21 @@ sampleDataSet.forEach(sampleData => {
 
 markers.on('clustermouseover', function (e) { drawClusterPopup(e) }); 
 
-//MarkerClusterGroupã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’ãƒãƒƒãƒ—ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãƒ¬ã‚¤ãƒ¤ãƒ¼ã«è¿½åŠ ã™ã‚‹
+//MarkerClusterGroupƒIƒuƒWƒFƒNƒgƒŒƒCƒ„[‚ğƒ}ƒbƒvƒIƒuƒWƒFƒNƒgƒŒƒCƒ„[‚É’Ç‰Á‚·‚é
 map.addLayer(markers);
 
 
-//åŠå¾„ã®æƒ…å ±ã¨ã‚µãƒ³ãƒ—ãƒ«ã®ãƒ‡ãƒ¼ã‚¿ã‚’å¼•æ•°ã¨ã—ã¦ã€å††ã‚°ãƒ©ãƒ•ã‚’æç”»ã™ã‚‹SVGè¦ç´ ã‚’è¨˜è¿°ã—ã€Leafletã®ãƒãƒ¼ã‚«ãƒ¼ã‚¢ã‚¤ã‚³ãƒ³ã¨ã—ã¦è¿”å€¤ã™ã‚‹é–¢æ•°ã€‚
+//”¼Œa‚Ìî•ñ‚ÆƒTƒ“ƒvƒ‹‚Ìƒf[ƒ^‚ğˆø”‚Æ‚µ‚ÄA‰~ƒOƒ‰ƒt‚ğ•`‰æ‚·‚éSVG—v‘f‚ğ‹Lq‚µALeaflet‚Ìƒ}[ƒJ[ƒAƒCƒRƒ“‚Æ‚µ‚Ä•Ô’l‚·‚éŠÖ”B
 function drawPieIcon(radius, sampleData) {
-    //ã‚°ãƒ©ãƒ•æç”»ç”¨ã®ãƒ‡ãƒ¼ã‚¿ã«å¤‰æ›
+    //ƒOƒ‰ƒt•`‰æ—p‚Ìƒf[ƒ^‚É•ÏŠ·
     var pieInputList = createPieInput(sampleData);
 
-    //å††å¼§ã‚’æç”»ã™ã‚‹
+    //‰~ŒÊ‚ğ•`‰æ‚·‚é
     var arc = d3.arc()
         .outerRadius(radius)
         .innerRadius(radius / 3);
 
-    //pieãƒãƒ£ãƒ¼ãƒˆSVGè¦ç´ ã®è¨­å®š
+    //pieƒ`ƒƒ[ƒgSVG—v‘f‚Ìİ’è
     tmp.append("svg").attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")").attr("height", 2 * radius).attr("width", 2 * radius)
         .append("g").attr("transform", "translate(" + radius + "," + radius + ")")
         .selectAll(".pie")
@@ -78,13 +77,13 @@ function drawPieIcon(radius, sampleData) {
         .append("path")
         .attr("d", arc)
         .attr("fill", function (d) { return selectColor(d) })
-        .attr("opacity", 0.9) //é€éã‚’æŒ‡å®šã™ã‚‹ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
-        .attr("stroke", "white"); //ã‚¢ã‚¦ãƒˆãƒ©ã‚¤ãƒ³ã®è‰²ã‚’æŒ‡å®šã™ã‚‹ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£
+        .attr("opacity", 0.9) //“§‰ß‚ğw’è‚·‚éƒvƒƒpƒeƒB
+        .attr("stroke", "white"); //ƒAƒEƒgƒ‰ƒCƒ“‚ÌF‚ğw’è‚·‚éƒvƒƒpƒeƒB
 
-    //ãƒãƒ¼ã‚«ç”¨ã®divIconã‚’ä½œæˆã™ã‚‹ã€‚
+    //ƒ}[ƒJ—p‚ÌdivIcon‚ğì¬‚·‚éB
     var myIcon = L.divIcon({ html: tmp.html(), className: 'marker-cluster' });
 
-    //ä¸€æ™‚æç”»é ˜åŸŸã«æç”»ã—ãŸSVGè¦ç´ ã‚’å‰Šé™¤
+    //ˆê•`‰æ—Ìˆæ‚É•`‰æ‚µ‚½SVG—v‘f‚ğíœ
     tmp.select("svg").remove();
 
     return myIcon;
@@ -97,7 +96,7 @@ function selectColor(d) {
     return color(fishClassifyDataObj[d.data.name]);
 }
 
-//å„ã‚µãƒ³ãƒ—ãƒ«ã®ãƒ‡ãƒ¼ã‚¿ã‚’å¼•æ•°ã¨æ¸¡ã™ã“ã¨ã§ã‚°ãƒ©ãƒ•æç”»ç”¨ã®ãƒ‡ãƒ¼ã‚¿ã«å¤‰æ›ã™ã‚‹é–¢æ•°
+//ŠeƒTƒ“ƒvƒ‹‚Ìƒf[ƒ^‚ğˆø”‚Æ“n‚·‚±‚Æ‚ÅƒOƒ‰ƒt•`‰æ—p‚Ìƒf[ƒ^‚É•ÏŠ·‚·‚éŠÖ”
 function createPieInput(sampleData) {
     var fishData = sampleData["fish"];
     var fishNameList = Object.keys(fishData);
@@ -110,11 +109,11 @@ function createPieInput(sampleData) {
     return pieInputList;
 }
 
-//markerClusterGroupç”¨ã®ã‚¢ã‚¤ã‚³ãƒ³ã®ä½œæˆ
+//markerClusterGroup—p‚ÌƒAƒCƒRƒ“‚Ìì¬
 function defineClusterIcon(cluster) {
     let { iconRadius, clusterData } = calc_clusterComp(cluster)
 
-    //ã‚¯ãƒ©ã‚¹ã‚¿ãƒ¼å†…ã®é­šç¨®çµ„æˆã®å††ã‚°ãƒ©ãƒ•ãŒæç”»ã•ã‚ŒãŸãƒãƒ¼ã‚«ãƒ¼ã‚¢ã‚¤ã‚³ãƒ³ã‚’å–å¾—
+    //ƒNƒ‰ƒXƒ^[“à‚Ì‹›í‘g¬‚Ì‰~ƒOƒ‰ƒt‚ª•`‰æ‚³‚ê‚½ƒ}[ƒJ[ƒAƒCƒRƒ“‚ğæ“¾
     var myClusterIcon = drawPieIcon(iconRadius, clusterData);
 
     return myClusterIcon;
@@ -140,13 +139,13 @@ function drawClusterPopup(e) {
 }
 
 function calc_clusterComp(cluster) {
-    //ã‚¯ãƒ©ã‚¹ã‚¿ãƒ¼ã®å­è¦ç´ ã‚’å–å¾—
+    //ƒNƒ‰ƒXƒ^[‚Ìq—v‘f‚ğæ“¾
     var children = cluster.getAllChildMarkers();
 
-    //ã‚¢ã‚¤ã‚³ãƒ³ã®åŠå¾„ã‚’ç®—å‡º
-    var iconRadius = radius + 10*Math.log10(children.length);
+    //ƒAƒCƒRƒ“‚Ì”¼Œa‚ğZo
+    var iconRadius = radius + 0.05 * children.length;
 
-    //ã‚¯ãƒ©ã‚¹ã‚¿ãƒ¼å†…ã®é­šç¨®çµ„æˆã‚’é›†è¨ˆ(ãƒ‡ãƒ¼ã‚¿ã¯å„ã‚µãƒ³ãƒ—ãƒ«ã®popupã‹ã‚‰å–å¾—ã—ã¦ã„ã‚‹)
+    //ƒNƒ‰ƒXƒ^[“à‚Ì‹›í‘g¬‚ğWŒv(ƒf[ƒ^‚ÍŠeƒTƒ“ƒvƒ‹‚Ìpopup‚©‚çæ“¾‚µ‚Ä‚¢‚é)
     var clusterData = { fish: {} };
     var total = 0;
 
@@ -166,7 +165,7 @@ function calc_clusterComp(cluster) {
         }
     })
 
-    //çµ„æˆã‚’Total100ã«ãªã‚‹ã‚ˆã†ã«èª¿æ•´
+    //‘g¬‚ğTotal100‚É‚È‚é‚æ‚¤‚É’²®
     var magnification = 100 / total;
 
     Object.keys(clusterData.fish).forEach(fishName => {
@@ -177,11 +176,11 @@ function calc_clusterComp(cluster) {
 }
 
 function object_array_sort(data, key, order) {
-    //ãƒ‡ãƒ•ã‚©ã¯é™é †(DESC)
+    //ƒfƒtƒH‚Í~‡(DESC)
     var num_a = -1;
     var num_b = 1;
 
-    if (order === 'asc') {//æŒ‡å®šãŒã‚ã‚Œã°æ˜‡é †(ASC)
+    if (order === 'asc') {//w’è‚ª‚ ‚ê‚Î¸‡(ASC)
         num_a = 1;
         num_b = -1;
     }
@@ -194,5 +193,5 @@ function object_array_sort(data, key, order) {
         return 0;
     });
 
-    return data; // ã‚½ãƒ¼ãƒˆå¾Œã®é…åˆ—ã‚’è¿”ã™
+    return data; // ƒ\[ƒgŒã‚Ì”z—ñ‚ğ•Ô‚·
 }

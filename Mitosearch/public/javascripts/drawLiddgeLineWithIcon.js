@@ -18,8 +18,11 @@ function getCapturedSampleList() {
     if(isMove){return}
     var pos = map.getCenter();
     var zoom = map.getZoom();
-    console.log(pos);
+    console.log(pos.lat);
     console.log(zoom);
+    var coordination="/?lat="+pos.lat+"&long="+pos.lng+"&ratio="+zoom
+    console.log(coordination)
+    history.replaceState(null,"",coordination)
     //マップの移動・拡大・縮小時に4隅の緯度経度を取得
     var bounds = map.getBounds();
     var north = bounds._northEast.lat;

@@ -3,11 +3,11 @@ var express = require('express');
 var router = express.Router();
 var app = express();
 
-//’Ç‰Áƒ‚ƒWƒ…[ƒ‹
+//ï¿½Ç‰ï¿½ï¿½ï¿½ï¿½Wï¿½ï¿½ï¿½[ï¿½ï¿½
 const fs = require("fs");
 const { route } = require('./users');
 
-//view‚ğejs‚É•ÏX
+//viewï¿½ï¿½ejsï¿½É•ÏX
 app.set('view engine', 'ejs');
 
 let taxo;
@@ -18,14 +18,38 @@ router.get('/', function (req, res) {
     let sampleDataObjList = getSampleDataObjList(taxo);
     let allFishList = getAllFishList(sampleDataObjList);
     let fishClassifyDataObj = fishClassify(taxo);
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj });
+    let latitude=req.query.lat;
+    let longitude=req.query.long;
+    let ratio=req.query.ratio;
+    if(latitude==undefined || latitude==""){
+        latitude=35.7
+    }
+    if (longitude==undefined || longitude==""){
+        longitude=139.7
+    }
+    if (ratio==undefined || ratio==""){
+        ratio=5
+    }
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio });
 });
 
 router.post('/', function (req, res) {
     taxo = "fish";
     let selectedFishList = req.body.fishList;
     let { new_sampleDataObjList, new_fishClassifyDataObj } = filterBySelectFish(selectedFishList, taxo);
-    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj });
+    let latitude=req.query.lat;
+    let longitude=req.query.long;
+    let ratio=req.query.ratio;
+    if(latitude==undefined || latitude==""){
+        latitude=35.7
+    }
+    if (longitude==undefined || longitude==""){
+        longitude=139.7
+    }
+    if (ratio==undefined || ratio==""){
+        ratio=5
+    }
+    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio });
 });
 
 router.get('/about', function (req, res) {
@@ -35,7 +59,7 @@ router.get('/about', function (req, res) {
 module.exports = router;
 
 function getSampleList(taxo) {
-    //ˆÜ“xŒo“xî•ñ‚Ìƒtƒ@ƒCƒ‹‚ğ“Ç‚İ‚İ
+    //ï¿½Ü“xï¿½oï¿½xï¿½ï¿½ï¿½Ìƒtï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½Ç‚İï¿½ï¿½ï¿½
     let sampleList;
     sampleList = fs.readFileSync("data/" + taxo + "/lat-long-date.txt", "utf-8");
     sampleList = sampleList.split("\n");
@@ -55,14 +79,14 @@ function getSampleDataObjList(taxo) {
     let sampleLng;
     let waterlist = { ID: "water" };
 
-    // ƒTƒ“ƒvƒ‹ƒƒ^ƒf[ƒ^ˆê——‚ğæ“¾
+    // ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½^ï¿½fï¿½[ï¿½^ï¿½ê——ï¿½ï¿½ï¿½æ“¾
     let sampleList = getSampleList(taxo);
 
-    //…—¤”»’èƒf[ƒ^‚Ìæ‚è‚İ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^ï¿½Ìï¿½èï¿½ï¿½
     let waterornot = fs.readFileSync("data/" + taxo + "/mapwater.result.txt", "utf-8");
     waterornot = waterornot.split("\n");
 
-    //…—¤”»’èƒf[ƒ^‚©‚ç˜A‘z”z—ñ‚ğì¬
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½Aï¿½zï¿½zï¿½ï¿½ï¿½ï¿½ì¬
     for (let i = 0; i < waterornot.length; i++) {
         if (waterornot[i] != undefined) {
             let waterornot2 = waterornot[i].split("\t");
@@ -70,20 +94,20 @@ function getSampleDataObjList(taxo) {
         }
     }
 
-    //ƒTƒ“ƒvƒ‹ˆê——î•ñ‚ÌŠes‚É‘Î‚µ‚Äˆ—‚ğs‚¤
+    //ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ê——ï¿½ï¿½ï¿½ÌŠeï¿½sï¿½É‘Î‚ï¿½ï¿½Äï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½
     sampleList.forEach(sampleMetaData => {
-        //Šes‚ğƒ^ƒu‚Å•ªŠ„‚µAƒTƒ“ƒvƒ‹ID‚ğæ“¾‚·‚éB
+        //ï¿½eï¿½sï¿½ï¿½ï¿½^ï¿½uï¿½Å•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½IDï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½B
         sampleMetaData = sampleMetaData.split("\t");
         sampleID = sampleMetaData[0];
 
-        //ƒTƒ“ƒvƒ‹‚Ì‹›í‘g¬‚ğ‰Šú‰»
+        //ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Ì‹ï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         sampleFishCompObj = {};
 
         if (waterlist[sampleID] == "1") {
             try {
                 sampleLatLng = sampleMetaData[1];
 
-                //ˆÜ“xŒo“x‚Ìî•ñ‚ª‘¶İ‚µ‚È‚¢ƒTƒ“ƒvƒ‹‚Å‚Íˆ—‚ğs‚í‚È‚¢
+                //ï¿½Ü“xï¿½oï¿½xï¿½Ìï¿½ñ‚ª‘ï¿½ï¿½İ‚ï¿½ï¿½È‚ï¿½ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½Å‚Íï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½È‚ï¿½
                 if (sampleLatLng.includes("not applicable")) {
                     return;
                 }
@@ -91,30 +115,30 @@ function getSampleDataObjList(taxo) {
                 sampleLatLng = sampleLatLng.split(' ');
 
                 sampleLat = parseFloat(sampleLatLng[0]);
-                //ˆÜ“xŒo“x‚ªNaN‚Ìƒf[ƒ^‚ğœ‹
+                //ï¿½Ü“xï¿½oï¿½xï¿½ï¿½NaNï¿½Ìƒfï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 if (isNaN(sampleLat)) {
                     return
                 }
-                //“ìˆÜ‚Í•‰‚Ì”‚É•ÏŠ·
+                //ï¿½ï¿½Ü‚Í•ï¿½ï¿½Ìï¿½ï¿½É•ÏŠï¿½
                 if (sampleLatLng[1] == "S") {
                     sampleLat = sampleLat * -1;
                 }
 
-                //¼Œo‚Í•‰‚Ì”‚É•ÏŠ·
+                //ï¿½ï¿½ï¿½oï¿½Í•ï¿½ï¿½Ìï¿½ï¿½É•ÏŠï¿½
                 sampleLng = parseFloat(sampleLatLng[2]);
                 if (sampleLatLng[3] == "W") {
                     sampleLng = sampleLng * -1;
                 }
 
-                //inputƒtƒ@ƒCƒ‹‚©‚çƒTƒ“ƒvƒ‹î•ñ‚ğ“Ç‚İæ‚è
+                //inputï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚İï¿½ï¿½
                 sampleFishCompList = fs.readFileSync("db_" + taxo + "/" + sampleID + ".input", "utf-8");
                 sampleFishCompList = sampleFishCompList.split("\n");
 
-                //Header‚ğœ‚­Šes‚©‚ç‹›í‘g¬‚ğæ“¾
+                //Headerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½eï¿½sï¿½ï¿½ï¿½ç‹›ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
                 for (let i = 1; i < sampleFishCompList.length; i++) {
                     sampleFishComp = sampleFishCompList[i].split("\t");
 
-                    //ˆÙí’l‚ğœ‹
+                    //ï¿½Ùï¿½lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                     if (sampleFishComp.length == 1) {
                         continue;
                     }
@@ -151,7 +175,7 @@ function fishClassify(taxo) {
 }
 
 function getAllFishList(sampleDataObjList) {
-    //‘S‹›íˆê——
+    //ï¿½Sï¿½ï¿½ï¿½ï¿½ê——
     let allFishList = [];
 
     sampleDataObjList.forEach(sampleDataObj => {
