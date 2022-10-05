@@ -14,7 +14,50 @@ let taxo;
 
 /* GET home page. */
 router.get('/', function (req, res) {
+    taxo = req.query.taxo;
+    if (taxo==undefined || taxo==""){
+        taxo="fish"
+    }
+    let sampleDataObjList = getSampleDataObjList(taxo);
+    let allFishList = getAllFishList(sampleDataObjList);
+    let fishClassifyDataObj = fishClassify(taxo);
+    let latitude=req.query.lat;
+    let longitude=req.query.long;
+    let ratio=req.query.ratio;
+    if(latitude==undefined || latitude==""){
+        latitude=35.7
+    }
+    if (longitude==undefined || longitude==""){
+        longitude=139.7
+    }
+    if (ratio==undefined || ratio==""){
+        ratio=5
+    }
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio });
+});
+
+router.get('/fish', function (req, res) {
     taxo = "fish";
+    let sampleDataObjList = getSampleDataObjList(taxo);
+    let allFishList = getAllFishList(sampleDataObjList);
+    let fishClassifyDataObj = fishClassify(taxo);
+    let latitude=req.query.lat;
+    let longitude=req.query.long;
+    let ratio=req.query.ratio;
+    if(latitude==undefined || latitude==""){
+        latitude=35.7
+    }
+    if (longitude==undefined || longitude==""){
+        longitude=139.7
+    }
+    if (ratio==undefined || ratio==""){
+        ratio=5
+    }
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio });
+});
+
+router.get('/mollusk', function (req, res) {
+    taxo = "mollusk";
     let sampleDataObjList = getSampleDataObjList(taxo);
     let allFishList = getAllFishList(sampleDataObjList);
     let fishClassifyDataObj = fishClassify(taxo);
