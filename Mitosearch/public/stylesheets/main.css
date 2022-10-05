@@ -147,6 +147,9 @@ img {
 .icon:hover {
         background-image: linear-gradient(45deg, #9ebaff 0%, #9dffbf 100%);
 }
+.icon2:hover {
+    background-image: linear-gradient(45deg, #9ebaff 0%, #9dffbf 100%);
+}
 
 #help {
     border-radius: 50%;
