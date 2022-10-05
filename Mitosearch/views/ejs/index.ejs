@@ -22,10 +22,10 @@
     <!-- Select2.css -->
     <link rel="stylesheet" href="select2/dist/css/select2.min.css">
 
-    <!-- Select2�{�� -->
+    <!-- Select2�ｿｽ{�ｿｽ�ｿｽ -->
     <script src="select2/dist/js/select2.min.js"></script>
 
-    <!-- Select2���{�ꉻ -->
+    <!-- Select2�ｿｽ�ｿｽ�ｿｽ{�ｿｽ皷ｻ -->
     <script src="select2/dist/js/i18n/ja.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,13 +48,25 @@
             <li class="disabled"><a href="./">Top</a></li>
             <li><a href="./about">About</a></li>
             <li></li>
+            <td><div class="btn-separator"></div></td>
+            <div>
+            <% if (taxo === 'fish') { %>
+            <button class="data_changer_off" id="fish" disabled="true">Fish</button>
+            <button class="data_changer_on" id="mollusk">Mollusk</button>
+            <% } else if (taxo === 'mollusk') { %>
+            <button class="data_changer_on" id="fish" >Fish</button>
+            <button class="data_changer_off" id="mollusk" disabled="true">Mollusk</button>
+            <% } %>
+            </div>
         </ul>
+
     </header>
     <main>
         <div id="img" style="height: 80%; width: 100%;">
             <p>Click Image To Close</p>
             <img src="img/Taxonomy.png" style="height: 80%; width: 80%;">
         </div>
+
         <div id="form">
             <form>
                 <select id="filter" class="test-select2" multiple="multiple">
@@ -67,11 +79,11 @@
         </div>
 
         <div>
-            <button class="icon" id="help"><img src="img/help.png"></button>
-            <button class="icon" id="expansion"><img src="img/expansion.png"></button>
-            <button class="icon" id="restore"><img src="img/restore.png"></button>
-            <button class="icon" id="alltime"><img src="img/alltime.png"></button>
-            <button class="icon" id="monthly"><img src="img/monthly.png"></button>
+            <button title="Legend" class="icon" id="help"><img src="img/help.png"></button>
+            <button title="Expension" class="icon" id="expansion"><img src="img/expansion.png"></button>
+            <button title="Restore" class="icon" id="restore"><img src="img/restore.png"></button>
+            <button title="All time data" class="icon" id="alltime"><img src="img/alltime.png"></button>
+            <button title="Monthly data" class="icon" id="monthly"><img src="img/monthly.png"></button>
         </div>
         <div id="content" style="height: 75%; width: 100%;">
             <div id="map" style="height: 1000px; width: 40%;"></div>
@@ -83,6 +95,7 @@
     <script>
         let sampleDataSet =  <%-JSON.stringify(sampleDataObjList)%>;
         let fishClassifyDataObj =  <%-JSON.stringify(fishClassifyDataObj)%>;
+        let taxo =  <%-JSON.stringify(taxo)%>;
         const sampleLen = sampleDataSet.length;
         console.log(sampleLen);
         var map;
@@ -94,6 +107,7 @@
     <!-- <script src="javascripts/showLegend.js"></script> -->
     <script src="javascripts/showLegendWithIcon.js"></script>
     <script src="javascripts/iconLocation.js"></script>
+    <script src="javascripts/changeSpecies"></script>
 </body>
 
 

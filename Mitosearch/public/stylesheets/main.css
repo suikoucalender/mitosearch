@@ -90,13 +90,41 @@ img {
     width: 100%;
 }
 
-button {
-    width: 15%;
-    margin-right: 1.5%;
-    font-size: 20px;
+.data_changer_on {
+    color: rgb(52, 52, 52);
+    border: 3px solid #fff;
+    background: rgb(197, 197, 197);
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: not-allowed;
 }
 
+.data_changer_on:hover {
+    background: rgb(58, 77, 93);
+    color: #fff;
+}
 
+.data_changer_off {
+    color: white;
+    border: 3px solid #fff;
+    background: rgb(2, 25, 41);
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn-separator {
+    float: left;
+    height: 30px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    margin: 0px 50px;
+}
 
 .icon {
     position: absolute;
