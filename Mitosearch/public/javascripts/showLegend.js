@@ -1,68 +1,86 @@
-const taxonomyShowBtn = document.getElementById("taxonomyShow");
-const hideBtn = document.getElementById("hideRiddgeLine");
+const helpBtn = document.getElementById("help");
+const expansionBtn = document.getElementById("expansion");
+const restoreBtn = document.getElementById("restore")
+const alltimeBtn = document.getElementById("alltime");
+const monthlyBtn = document.getElementById("monthly");
 
 const taxonomyLegend = document.getElementById("img");
 const mapArea = document.getElementById("map");
 const liddgeArea = document.getElementById("graph");
-const changeRidgeGraph = document.getElementById("changeRidgeGraph");
+var timeBtnChecker = "alltimeBtn"
 
-taxonomyShowBtn.addEventListener("click", e => {
+
+helpBtn.addEventListener("click", e => {
     taxonomyLegend.style.display = "block";
-})
+    helpBtn.style.display = "none";
+    liddgeArea.style.display = "none";
+});
 
 taxonomyLegend.addEventListener("click", e => {
     taxonomyLegend.style.display = "none";
+    helpBtn.style.display = "block";
+    liddgeArea.style.display = "block";
 });
 
 
-hideBtn.addEventListener("click", e => {
-    if (hideBtn.classList.value == "hide") {
-        mapArea.style.width = "100%";
-        //liddgeArea.style.display = "none";
-        //changeRidgeGraph.style.display = "none";
 
-        map.remove();
+expansionBtn.addEventListener("click", e => {
+    mapArea.style.width = "100%";
+    //liddgeArea.style.display = "none";
+    //changeRidgeGraph.style.display = "none";
 
-        appendScript("javascripts/drawPie.js");
+    map.remove();
 
-        hideBtn.classList.remove("hide");
-        hideBtn.classList.add("show");
+    appendScript("javascripts/drawPie.js");
 
-        hideBtn.textContent = "Show Liddge Line";
+    expansionBtn.style.display = "none";
+    restoreBtn.style.display = "block";
+    liddgeArea.style.display = "none";
 
-    } else if (hideBtn.classList.value == "show") {
-        mapArea.style.width = "40%";
-        //liddgeArea.style.display = "block"; 
-        //changeRidgeGraph.style.display = "block";
-
-        map.remove();
-
-        load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
-        //appendScript("javascripts/drawPie.js");
-        //appendScript("javascripts/drawLiddgeLine.js");
-
-        hideBtn.classList.remove("show");
-        hideBtn.classList.add("hide");
-
-        hideBtn.textContent = "Hide Liddge Line";
+    if (timeBtnChecker == "alltimeBtn") {
+        alltimeBtn.style.display = "none";
+    }
+    else {
+        monthlyBtn.style.display = "none";
     }
 });
 
-changeRidgeGraph.addEventListener("click", e => {
-    if (changeRidgeGraph.classList.value == "alltime") {
-        changeRidgeGraph.classList.remove("alltime");
-        changeRidgeGraph.classList.add("monthly");
+restoreBtn.addEventListener("click", e => {
+    mapArea.style.width = "40%";
+    //liddgeArea.style.display = "block";
+    //changeRidgeGraph.style.display = "block";
 
-        appendScript("javascripts/drawLiddgeLine.js");
+    map.remove();
 
-        changeRidgeGraph.textContent = "All time ---> Monthly";
+    load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
+    //appendScript("javascripts/drawPie.js");
+    //appendScript("javascripts/drawLiddgeLine.js");
+
+    restoreBtn.style.display = "none";
+    expansionBtn.style.display = "block";
+    liddgeArea.style.display = "block";
+
+    if (timeBtnChecker == "alltimeBtn") {
+        alltimeBtn.style.display = "block";
     }
-    else if (changeRidgeGraph.classList.value == "monthly") {
-        changeRidgeGraph.classList.remove("monthly");
-        changeRidgeGraph.classList.add("alltime");
-
-        appendScript("javascripts/drawLiddgeLine.js");
-
-        changeRidgeGraph.textContent = "Monthly ---> All time";
+    else {
+        monthlyBtn.style.display = "block";
     }
-})
+});
+
+
+alltimeBtn.addEventListener("click", e => {
+    appendScript("javascripts/drawLiddgeLine.js");
+    alltimeBtn.style.display = "none";
+    monthlyBtn.style.display = "block";
+    timeBtnChecker = "monthlyBtn";
+
+});
+
+monthlyBtn.addEventListener("click", e => {
+    appendScript("javascripts/drawLiddgeLine.js");
+    monthlyBtn.style.display = "none";
+    alltimeBtn.style.display = "block";
+    timeBtnChecker = "alltimeBtn";
+});
+
