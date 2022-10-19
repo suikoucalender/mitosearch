@@ -70,7 +70,7 @@ restoreBtn.addEventListener("click", e => {
 
 
 alltimeBtn.addEventListener("click", e => {
-    appendScript("javascripts/drawLiddgeLineWithIcon.js");
+    appendScript("javascripts/drawLiddgeLine.js");
     alltimeBtn.style.display = "none";
     monthlyBtn.style.display = "block";
     timeBtnChecker = "monthlyBtn";
@@ -78,7 +78,7 @@ alltimeBtn.addEventListener("click", e => {
 });
 
 monthlyBtn.addEventListener("click", e => {
-    appendScript("javascripts/drawLiddgeLineWithIcon.js");
+    appendScript("javascripts/drawLiddgeLine.js");
     monthlyBtn.style.display = "none";
     alltimeBtn.style.display = "block";
     timeBtnChecker = "alltimeBtn";
