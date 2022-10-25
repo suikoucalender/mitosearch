@@ -153,9 +153,19 @@ img {
     border-radius: 5px;
     z-index: 500;
 }
+
+.iconPolygonon {
+    position: absolute;
+    background: #ffdede;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    z-index: 500;
+}
 .iconPolygonoff {
     position: absolute;
-    background: #f5f5f5;
+    background: #d9d8d8;
     width: 35px;
     height: 35px;
     border: none;
@@ -173,7 +183,7 @@ img {
 }
 .iconPolygon2off {
     position: absolute;
-    background: #f5f5f5;
+    background: #d9d8d8;
     width: 35px;
     height: 35px;
     border: none;

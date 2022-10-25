@@ -7,8 +7,7 @@ function iconLocation() {
     var monthlyBtn = document.getElementById("monthly");
     var polygonBtn = document.getElementById("polygon");
     var undoBtn = document.getElementById("undo");
-    var eraserBtn = document.getElementById("eraser");
-    var trBtn = document.getElementById("tr");
+    var pointBtn = document.getElementById("point");
 
     var map = document.getElementById("map");
     var graph = document.getElementById("graph");
@@ -36,9 +35,14 @@ function iconLocation() {
     var helpLeft = mapLeft + 50;
     helpBtn.style.left = helpLeft + "px";
 
+    var pointLeft= mapLeft + 10;
+    pointBtn.style.left = pointLeft + "px";
+    var pointTop = mapTop + 80;
+    pointBtn.style.top = pointTop + "px";
+
     var polygonLeft=mapLeft + 10;
     polygonBtn.style.left = polygonLeft + "px";
-    var polygonTop = mapTop + 80;
+    var polygonTop = pointTop + 40;
     polygonBtn.style.top = polygonTop + "px";
 
     var undoLeft= mapLeft + 10;
@@ -46,15 +50,6 @@ function iconLocation() {
     var undoTop = polygonTop + 40;
     undoBtn.style.top = undoTop + "px";
 
-    var eraserLeft= mapLeft + 10;
-    eraserBtn.style.left = eraserLeft + "px";
-    var eraserTop = undoTop + 40;
-    eraserBtn.style.top = eraserTop + "px";
-
-    var trLeft= mapLeft + 10;
-    trBtn.style.left = trLeft + "px";
-    var trTop = eraserTop + 40;
-    trBtn.style.top = trTop + "px";
 
 
     //adjust the expention icon position with the map expansion, prevent icon position errors caused by window size changes

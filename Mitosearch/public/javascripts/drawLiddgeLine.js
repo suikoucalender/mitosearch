@@ -18,8 +18,6 @@ function getCapturedSampleList() {
     if(isMove){return}
     var pos = map.getCenter();
     var zoom = map.getZoom();
-    console.log(pos.lat);
-    console.log(zoom);
     var coordination="?taxo="+taxo+"&lat="+pos.lat+"&long="+pos.lng+"&ratio="+zoom
     history.replaceState(null,"",coordination)
     //マップの移動・拡大・縮小時に4隅の緯度経度を取得
@@ -31,15 +29,41 @@ function getCapturedSampleList() {
 
     //キャプチャエリア内のサンプル情報を取得
     let capturedSampleList = [];
+    
+    if (polygoncheker=="exist"){
+        var sampledotlayer=L.layerGroup().addTo(map)
+        sampledotlayer.eachLayer(function (layer) {
+            layer._path.id = 'sampledotlayer';
+          });
+        var newpolygon = L.polygon(polygonCoordinate.coordinates[0][0]);
+        sampleDataSet.forEach(sampleData => {
+            var sampleCoTmp=[];
+            sampleCoTmp.push(sampleData.longitude)
+            sampleCoTmp.push(sampleData.latitude)
+            var samplePoint= L.marker(sampleCoTmp);
+            //console.log("hayeswise=" (L.polygon(polygonCoordinate)).contains(L.marker(sampleCoTmp).getLatLng()))
+            //console.log("mapbox="leafletPip.pointInLayer(sampleCoTmp,(L.geoJson(polygonCoordinate))))
 
-    sampleDataSet.forEach(sampleData => {
-        if (south < sampleData.latitude && sampleData.latitude < north) {
-            //日本の左右のアメリカ大陸両方にマーカーを表示するため、重複してマーカーを描画していることに注意
-            if ((west < sampleData.longitude && sampleData.longitude < east) || (west < sampleData.longitude + 360 && sampleData.longitude + 360 < east)) {
+            if (newpolygon.contains(samplePoint.getLatLng())){
+                //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'red',fillColor:'red',fillOpacity:1}).addTo(sampledotlayer);
                 capturedSampleList.push(sampleData);
+                //console.log(sampleData)
+            }else{
+                //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'black',fillColor:'black',fillOpacity:1}).addTo(sampledotlayer);
             }
-        }
-    })
+        })
+
+    }else{
+        sampleDataSet.forEach(sampleData => {
+            if (south < sampleData.latitude && sampleData.latitude < north) {
+                //日本の左右のアメリカ大陸両方にマーカーを表示するため、重複してマーカーを描画していることに注意
+                if ((west < sampleData.longitude && sampleData.longitude < east) || (west < sampleData.longitude + 360 && sampleData.longitude + 360 < east)) {
+                    capturedSampleList.push(sampleData);
+                }
+            }
+        })
+    }
+
 
     drawLiddgeLine(capturedSampleList);
 }
@@ -56,7 +80,7 @@ function drawLiddgeLine(capturedSampleList) {
     let numDataInDay = {};
     let numtimelineData = {};
 
-    console.log(alltimeBtnStyleDisplay);
+    //console.log(alltimeBtnStyleDisplay);
     if(alltimeBtnStyleDisplay === "none"){timemode = "alltime"}
 
     //svgタグを追加し、幅と高さを設定
