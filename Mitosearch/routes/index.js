@@ -3,11 +3,11 @@ var express = require('express');
 var router = express.Router();
 var app = express();
 
-//�ǉ����W���[��
+//追加モジュール
 const fs = require("fs");
 const { route } = require('./users');
 
-//view��ejs�ɕύX
+//viewをejsに変更
 app.set('view engine', 'ejs');
 
 let taxo;
@@ -102,7 +102,7 @@ router.get('/about', function (req, res) {
 module.exports = router;
 
 function getSampleList(taxo) {
-    //�ܓx�o�x���̃t�@�C����ǂݍ���
+    //緯度経度情報のファイルを読み込み
     let sampleList;
     sampleList = fs.readFileSync("data/" + taxo + "/lat-long-date.txt", "utf-8");
     sampleList = sampleList.split("\n");
@@ -122,14 +122,14 @@ function getSampleDataObjList(taxo) {
     let sampleLng;
     let waterlist = { ID: "water" };
 
-    // �T���v�����^�f�[�^�ꗗ���擾
+    // サンプルメタデータ一覧を取得
     let sampleList = getSampleList(taxo);
 
-    //��������f�[�^�̎�荞��
+    //水陸判定データの取り込み
     let waterornot = fs.readFileSync("data/" + taxo + "/mapwater.result.txt", "utf-8");
     waterornot = waterornot.split("\n");
 
-    //��������f�[�^����A�z�z����쐬
+    //水陸判定データから連想配列を作成
     for (let i = 0; i < waterornot.length; i++) {
         if (waterornot[i] != undefined) {
             let waterornot2 = waterornot[i].split("\t");
@@ -137,20 +137,20 @@ function getSampleDataObjList(taxo) {
         }
     }
 
-    //�T���v���ꗗ���̊e�s�ɑ΂��ď������s��
+    //サンプル一覧情報の各行に対して処理を行う
     sampleList.forEach(sampleMetaData => {
-        //�e�s���^�u�ŕ������A�T���v��ID���擾����B
+        //各行をタブで分割し、サンプルIDを取得する。
         sampleMetaData = sampleMetaData.split("\t");
         sampleID = sampleMetaData[0];
 
-        //�T���v���̋���g����������
+        //サンプルの魚種組成を初期化
         sampleFishCompObj = {};
 
         if (waterlist[sampleID] == "1") {
             try {
                 sampleLatLng = sampleMetaData[1];
 
-                //�ܓx�o�x�̏�񂪑��݂��Ȃ��T���v���ł͏������s��Ȃ�
+                //緯度経度の情報が存在しないサンプルでは処理を行わない
                 if (sampleLatLng.includes("not applicable")) {
                     return;
                 }
@@ -158,30 +158,30 @@ function getSampleDataObjList(taxo) {
                 sampleLatLng = sampleLatLng.split(' ');
 
                 sampleLat = parseFloat(sampleLatLng[0]);
-                //�ܓx�o�x��NaN�̃f�[�^������
+                //緯度経度がNaNのデータを除去
                 if (isNaN(sampleLat)) {
                     return
                 }
-                //��܂͕��̐��ɕϊ�
+                //南緯は負の数に変換
                 if (sampleLatLng[1] == "S") {
                     sampleLat = sampleLat * -1;
                 }
 
-                //���o�͕��̐��ɕϊ�
+                //西経は負の数に変換
                 sampleLng = parseFloat(sampleLatLng[2]);
                 if (sampleLatLng[3] == "W") {
                     sampleLng = sampleLng * -1;
                 }
 
-                //input�t�@�C������T���v������ǂݎ��
+                //inputファイルからサンプル情報を読み取り
                 sampleFishCompList = fs.readFileSync("db_" + taxo + "/" + sampleID + ".input", "utf-8");
                 sampleFishCompList = sampleFishCompList.split("\n");
 
-                //Header�������e�s���狛��g�����擾
+                //Headerを除く各行から魚種組成を取得
                 for (let i = 1; i < sampleFishCompList.length; i++) {
                     sampleFishComp = sampleFishCompList[i].split("\t");
 
-                    //�ُ�l������
+                    //異常値を除去
                     if (sampleFishComp.length == 1) {
                         continue;
                     }
@@ -218,7 +218,7 @@ function fishClassify(taxo) {
 }
 
 function getAllFishList(sampleDataObjList) {
-    //�S����ꗗ
+    //全魚種一覧
     let allFishList = [];
 
     sampleDataObjList.forEach(sampleDataObj => {

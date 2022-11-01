@@ -55,6 +55,7 @@ markers.on('clustermouseover', function (e) { drawClusterPopup(e) });
 //MarkerClusterGroupオブジェクトレイヤーをマップオブジェクトレイヤーに追加する
 map.addLayer(markers);
 
+redrawPolygon();
 
 //半径の情報とサンプルのデータを引数として、円グラフを描画するSVG要素を記述し、Leafletのマーカーアイコンとして返値する関数。
 function drawPieIcon(radius, sampleData) {
@@ -194,4 +195,14 @@ function object_array_sort(data, key, order) {
     });
 
     return data; // ソート後の配列を返す
+}
+
+function redrawPolygon(){
+    if(polygoncheker=="exist"){
+        var geoJsonLayer = L.geoJSON(polygonCoordinate).addTo(map);
+        geoJsonLayer.eachLayer(function (layer) {
+          layer._path.id = 'polygonlayer';
+        });
+        polygoncheker="exist"
+    }
 }

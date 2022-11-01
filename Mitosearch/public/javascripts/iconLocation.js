@@ -5,7 +5,6 @@ function iconLocation() {
     var restoreBtn = document.getElementById("restore");
     var alltimeBtn = document.getElementById("alltime");
     var monthlyBtn = document.getElementById("monthly");
-    var polygonBtn = document.getElementById("polygon");
     var undoBtn = document.getElementById("undo");
     var pointBtn = document.getElementById("point");
 
@@ -29,7 +28,6 @@ function iconLocation() {
     restoreBtn.style.top = iconTop + "px";
     alltimeBtn.style.top = iconTop + "px";
     monthlyBtn.style.top = iconTop + "px";
-    polygonBtn.style.top = iconTop + "px";
 
 
     var helpLeft = mapLeft + 50;
@@ -40,16 +38,11 @@ function iconLocation() {
     var pointTop = mapTop + 80;
     pointBtn.style.top = pointTop + "px";
 
-    var polygonLeft=mapLeft + 10;
-    polygonBtn.style.left = polygonLeft + "px";
-    var polygonTop = pointTop + 40;
-    polygonBtn.style.top = polygonTop + "px";
 
     var undoLeft= mapLeft + 10;
     undoBtn.style.left = undoLeft + "px";
-    var undoTop = polygonTop + 40;
+    var undoTop = pointTop + 40;
     undoBtn.style.top = undoTop + "px";
-
 
 
     //adjust the expention icon position with the map expansion, prevent icon position errors caused by window size changes

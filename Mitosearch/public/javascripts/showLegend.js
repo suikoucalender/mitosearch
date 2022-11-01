@@ -26,6 +26,8 @@ taxonomyLegend.addEventListener("click", e => {
 
 expansionBtn.addEventListener("click", e => {
     mapArea.style.width = "100%";
+    pointBtn.className="iconPolygon";
+    functioncheker="off";
     //liddgeArea.style.display = "none";
     //changeRidgeGraph.style.display = "none";
 
@@ -43,10 +45,13 @@ expansionBtn.addEventListener("click", e => {
     else {
         monthlyBtn.style.display = "none";
     }
+
 });
 
 restoreBtn.addEventListener("click", e => {
     mapArea.style.width = "40%";
+    pointBtn.className="iconPolygon";
+    functioncheker="off";
     //liddgeArea.style.display = "block";
     //changeRidgeGraph.style.display = "block";
 
@@ -83,4 +88,3 @@ monthlyBtn.addEventListener("click", e => {
     alltimeBtn.style.display = "block";
     timeBtnChecker = "alltimeBtn";
 });
-
