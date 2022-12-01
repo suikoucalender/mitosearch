@@ -11,6 +11,10 @@
     <link rel="stylesheet" href='leaflet/leaflet.css'>
     <script src='leaflet/leaflet.js'></script>
 
+    <link href="noUiSlider-15.6.1/dist/nouislider.css" rel="stylesheet">
+    <script src="noUiSlider-15.6.1/dist/nouislider.js"></script>
+    <script src="wnumb-1.2.0/wNumb.js"></script>
+
     <script src='javascripts/jquery-3.6.0.js'></script>
     <script src="d3/d3.js"></script>
 
@@ -38,6 +42,15 @@
 
         gtag('config', 'G-JSBFZZQ0RX');
     </script>
+
+    <style>
+        div.parent{
+            float: right;
+        }
+        div.son{
+            width:100%;
+        }
+    </style>
 
 </head>
 
@@ -93,11 +106,20 @@
         <div id="content" style="height: 75%; width: 100%;">
             <div id="map" style="height: 1000px; width: 40%;"></div>
             <p style="width: 60%; float:right; text-align: right;">Number of Samples</p>
+            <div id="bargraphAlltime" style="height: 100px; width: 60%;"></div>
+            <div class="parent" style="height: 60px;">
+                <div class="son" id="slider"></div>
+                <span id="event-start"></span>
+                <span id="event-end"></span>
+                <div id="lowerHandleNumber" class="handleNumber"></div>
+                <div id="upperHandleNumber" class="handleNumber"></div>
+            </div>
             <div id="bargraph" style="height: 80px; width: 60%;"></div>
             <div id="graph" style="height: 700px; width: 60%;"></div>
         </div>
-        
+
         <div id="tmp"></div>
+        
     </main>
     <script>
         let sampleDataSet =  <%-JSON.stringify(sampleDataObjList)%>;
@@ -111,13 +133,14 @@
         var map;
 
     </script>
+    <script src="javascripts/timePicker.js"></script>
     <script src="javascripts/drawSelectbox.js"></script>
     <script src="javascripts/polygon.js"></script>
     <script src="javascripts/drawPie.js"></script>
     <script src="javascripts/drawLiddgeLine.js"></script>
     <script src="javascripts/showLegend.js"></script>
     <script src="javascripts/iconLocation.js"></script>
-    <!-- <script src="javascripts/changeSpecies"></script> -->
+    <script src="javascripts/timechange.js"></script>
 </body>
 
 
