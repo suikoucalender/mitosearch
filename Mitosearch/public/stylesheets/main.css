@@ -68,7 +68,6 @@ input {
 }
 
 
-
 #img {
     text-align: center;
     z-index: 10000;
@@ -208,9 +207,6 @@ img {
     border-radius: 50%;
 }
 
-#polygon {
-
-}
 
 #expansion {
     left: 38%;
@@ -233,6 +229,13 @@ img {
     left: 95%;
 }
 
+#event-start {
+    display: none;
+}
+#event-end {
+    display: none;
+}
+
 
 #map {
     float: left;
@@ -244,7 +247,35 @@ img {
     z-index: 300;
 }
 
+#slider {
+    float:right;
+    z-index: 300;
+    margin-left: 250px;
+    top: 40px;
+}
+
+
+#lowerHandleNumber {
+    float: left;
+    z-index:300;
+    font-size: small;
+    color:#6e6e6e;
+}
+#upperHandleNumber {
+    float: right;
+    z-index: 300;
+    font-size: small;
+    color: #6e6e6e;
+}
+
+
 #bargraph {
+    margin-left: 250;
+    margin-bottom: 30;
+    float: right;
+    z-index: 300;
+}
+#bargraphAlltime {
     float: right;
     z-index: 300;
 }
