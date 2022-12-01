@@ -9,7 +9,10 @@ const mapArea = document.getElementById("map");
 const liddgeArea = document.getElementById("graph");
 const bargraphAlltimeArea = document.getElementById("bargraphAlltime")
 const bargraphArea = document.getElementById("bargraph")
-const sliderArea = document.getElementById("sliderArea")
+const sliderArea = document.getElementById("slider")
+const lowerHandleNumber = document.getElementById("lowerHandleNumber")
+const upperHandleNumber = document.getElementById("upperHandleNumber")
+const graphName = document.getElementById("graphName")
 var timeBtnChecker = "alltimeBtn"
 
 
@@ -20,6 +23,9 @@ helpBtn.addEventListener("click", e => {
     bargraphAlltimeArea.style.display = "none";
     bargraphArea.style.display = "none";
     sliderArea.style.display = "none";
+    lowerHandleNumber.style.display = "none";
+    upperHandleNumber.style.display = "none";
+    graphName.style.display = "none";
 });
 
 taxonomyLegend.addEventListener("click", e => {
@@ -29,6 +35,9 @@ taxonomyLegend.addEventListener("click", e => {
     bargraphAlltimeArea.style.display = "block";
     bargraphArea.style.display = "block";
     sliderArea.style.display = "block";
+    lowerHandleNumber.style.display = "block";
+    upperHandleNumber.style.display = "block";
+    graphName.style.display = "block";
 });
 
 
@@ -50,6 +59,9 @@ expansionBtn.addEventListener("click", e => {
     bargraphAlltimeArea.style.display = "none";
     bargraphArea.style.display = "none";
     sliderArea.style.display = "none";
+    lowerHandleNumber.style.display = "none";
+    upperHandleNumber.style.display = "none";
+    graphName.style.display = "none";
 
     if (timeBtnChecker == "alltimeBtn") {
         alltimeBtn.style.display = "none";
@@ -79,6 +91,9 @@ restoreBtn.addEventListener("click", e => {
     bargraphAlltimeArea.style.display = "block";
     bargraphArea.style.display = "block";
     sliderArea.style.display = "block";
+    lowerHandleNumber.style.display = "block";
+    upperHandleNumber.style.display = "block";
+    graphName.style.display = "block";
 
     if (timeBtnChecker == "alltimeBtn") {
         alltimeBtn.style.display = "block";
