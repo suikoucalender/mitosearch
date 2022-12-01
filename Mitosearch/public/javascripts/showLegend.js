@@ -7,6 +7,9 @@ const monthlyBtn = document.getElementById("monthly");
 const taxonomyLegend = document.getElementById("img");
 const mapArea = document.getElementById("map");
 const liddgeArea = document.getElementById("graph");
+const bargraphAlltimeArea = document.getElementById("bargraphAlltime")
+const bargraphArea = document.getElementById("bargraph")
+const sliderArea = document.getElementById("sliderArea")
 var timeBtnChecker = "alltimeBtn"
 
 
@@ -14,12 +17,18 @@ helpBtn.addEventListener("click", e => {
     taxonomyLegend.style.display = "block";
     helpBtn.style.display = "none";
     liddgeArea.style.display = "none";
+    bargraphAlltimeArea.style.display = "none";
+    bargraphArea.style.display = "none";
+    sliderArea.style.display = "none";
 });
 
 taxonomyLegend.addEventListener("click", e => {
     taxonomyLegend.style.display = "none";
     helpBtn.style.display = "block";
     liddgeArea.style.display = "block";
+    bargraphAlltimeArea.style.display = "block";
+    bargraphArea.style.display = "block";
+    sliderArea.style.display = "block";
 });
 
 
@@ -38,6 +47,9 @@ expansionBtn.addEventListener("click", e => {
     expansionBtn.style.display = "none";
     restoreBtn.style.display = "block";
     liddgeArea.style.display = "none";
+    bargraphAlltimeArea.style.display = "none";
+    bargraphArea.style.display = "none";
+    sliderArea.style.display = "none";
 
     if (timeBtnChecker == "alltimeBtn") {
         alltimeBtn.style.display = "none";
@@ -64,6 +76,9 @@ restoreBtn.addEventListener("click", e => {
     restoreBtn.style.display = "none";
     expansionBtn.style.display = "block";
     liddgeArea.style.display = "block";
+    bargraphAlltimeArea.style.display = "block";
+    bargraphArea.style.display = "block";
+    sliderArea.style.display = "block";
 
     if (timeBtnChecker == "alltimeBtn") {
         alltimeBtn.style.display = "block";
