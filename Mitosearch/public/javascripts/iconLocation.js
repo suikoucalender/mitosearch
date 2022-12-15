@@ -7,6 +7,8 @@ function iconLocation() {
     var monthlyBtn = document.getElementById("monthly");
     var undoBtn = document.getElementById("undo");
     var pointBtn = document.getElementById("point");
+    var timeFilterOnBtn = document.getElementById("timeFilterOnBtn");
+    var timeFilterOffBtn = document.getElementById("timeFilterOffBtn");
 
     var map = document.getElementById("map");
     var graph = document.getElementById("graph");
@@ -26,9 +28,13 @@ function iconLocation() {
     helpBtn.style.top = iconTop + "px";
     expansionBtn.style.top = iconTop + "px";
     restoreBtn.style.top = iconTop + "px";
-    alltimeBtn.style.top = iconTop + "px";
-    monthlyBtn.style.top = iconTop + "px";
-
+    if (timeBtnChecker=="monthlyBtn"){
+        var timeFilterBtnTop = monthlyBtn.offsetTop + "px";
+    } else if (timeBtnChecker=="alltimeBtn"){
+        var timeFilterBtnTop = alltimeBtn.offsetTop + "px";
+    }
+    timeFilterOnBtn.style.top = timeFilterBtnTop + "px";
+    timeFilterOffBtn.style.top = timeFilterBtnTop + "px";
 
     var helpLeft = mapLeft + 50;
     helpBtn.style.left = helpLeft + "px";
@@ -61,6 +67,9 @@ function iconLocation() {
     alltimeBtn.style.left = alltimeLeft + "px";
     var monthlyLeft = graphLeft + 0.90 * graphWidth;
     monthlyBtn.style.left = monthlyLeft + "px";
+    var timeFilterBtnLeft= alltimeLeft-0
+    timeFilterOnBtn.style.left = timeFilterBtnLeft + "px";
+    timeFilterOffBtn.style.left = timeFilterBtnLeft + "px";
 };
 
 //decide icons' position when all content loaded

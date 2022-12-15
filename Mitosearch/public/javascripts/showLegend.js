@@ -3,17 +3,21 @@ const expansionBtn = document.getElementById("expansion");
 const restoreBtn = document.getElementById("restore")
 const alltimeBtn = document.getElementById("alltime");
 const monthlyBtn = document.getElementById("monthly");
+const timeFilterOnBtn = document.getElementById("timeFilterOnBtn")
+const timeFilterOffBtn = document.getElementById("timeFilterOffBtn")
 
 const taxonomyLegend = document.getElementById("img");
 const mapArea = document.getElementById("map");
 const liddgeArea = document.getElementById("graph");
 const bargraphAlltimeArea = document.getElementById("bargraphAlltime")
 const bargraphArea = document.getElementById("bargraph")
-const sliderArea = document.getElementById("slider")
+const sliderArea = document.getElementById("sliderArea")
+const slider = document.getElementById("slider")
 const lowerHandleNumber = document.getElementById("lowerHandleNumber")
 const upperHandleNumber = document.getElementById("upperHandleNumber")
 const graphName = document.getElementById("graphName")
 var timeBtnChecker = "alltimeBtn"
+var sliderStatusChecker = "non-exist"
 
 
 helpBtn.addEventListener("click", e => {
@@ -108,13 +112,37 @@ alltimeBtn.addEventListener("click", e => {
     appendScript("javascripts/drawLiddgeLine.js");
     alltimeBtn.style.display = "none";
     monthlyBtn.style.display = "block";
+    //sliderDisplay();
     timeBtnChecker = "monthlyBtn";
-
 });
 
 monthlyBtn.addEventListener("click", e => {
     appendScript("javascripts/drawLiddgeLine.js");
     monthlyBtn.style.display = "none";
     alltimeBtn.style.display = "block";
+    //sliderDisplay();
     timeBtnChecker = "alltimeBtn";
+});
+
+
+timeFilterOnBtn.addEventListener("click", e => {
+    timeFilterOnBtn.style.display = "none";
+    timeFilterOffBtn.style.display = "block";
+    //bargraphArea.style.display = "block";
+    sliderArea.style.display = "block";
+    lowerHandleNumber.style.display = "block";
+    upperHandleNumber.style.display = "block";
+    sliderStatusChecker = "exist"
+});
+
+timeFilterOffBtn.addEventListener("click", e => {
+    timeFilterOnBtn.style.display = "block";
+    timeFilterOffBtn.style.display = "none";
+    slider.noUiSlider.reset();
+    sliderStatusChecker="non-exist"
+    setTimeout(function(){
+        //bargraphArea.style.display = "none";
+        sliderArea.style.display = "none";
+        lowerHandleNumber.style.display = "none";
+        upperHandleNumber.style.display = "none";},150)
 });

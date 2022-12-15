@@ -1,4 +1,4 @@
-var isMove = false;
+
 var dateRangeCheker = false;
 upperHandle=new Date(upperHandle);
 lowerHandle=new Date(lowerHandle);
@@ -7,6 +7,7 @@ getCapturedSampleList();
 map.on("mouseup", removeMoveFlagAndDraw);
 map.on("mousedown", setMoveFlag);
 map.on("move", getCapturedSampleList);
+map.on("move", sliderUpdating);
 //document.querySelector('#map').onwheel = getCapturedSampleList;
 
 function setMoveFlag(){isMove = true}
@@ -14,6 +15,7 @@ function removeMoveFlagAndDraw(){
     if(isMove){
         isMove = false;
         getCapturedSampleList();
+        sliderUpdating();
     }
 }
 
@@ -39,7 +41,7 @@ function getCapturedSampleList() {
     var west = bounds._southWest.lng;
 
     //キャプチャエリア内のサンプル情報を取得
-    let capturedSampleList = [];
+    capturedSampleList = [];
     
     if (polygoncheker=="exist"){
         var sampledotlayer=L.layerGroup().addTo(map)
@@ -74,10 +76,10 @@ function getCapturedSampleList() {
             }
         })
     }
-
     drawLiddgeLineChangeable(capturedSampleList)
     drawLiddgeLine(capturedSampleList);
     slidersize();
+    sliderDisplay();
 }
 
 
@@ -114,6 +116,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
         //svgタグを削除
         graph.select("svg").remove();
         bargraph.select("svg").remove();
+        graphChecker="nonexist"
         return;
     }
 
@@ -125,7 +128,6 @@ function drawLiddgeLineChangeable(capturedSampleList){
         }
         let tempdate = sampleData.date;
         let tempdateTrans=new Date(tempdate);
-
 
 
         //Determine if the sample is within the date range
@@ -395,6 +397,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
         .call(d3.axisLeft(baryScale).ticks(10,0));
     //console.log(numDataInDayList)
     numDataInDayList=[]
+    graphChecker="exist"
 }
 
 
@@ -420,7 +423,7 @@ function drawLiddgeLine(capturedSampleList) {
     var dateList = [];
     var fishList = [];
     var densityList = [];
-    let timemode = "monthly";
+    let timemode = "alltime";
     var alltimeBtn = document.getElementById("alltime");
     var alltimeBtnStyle = alltimeBtn.style;
     var alltimeBtnStyleDisplay = alltimeBtnStyle.getPropertyValue('display');
@@ -429,15 +432,15 @@ function drawLiddgeLine(capturedSampleList) {
     let numtimelineData = {};
 
     //console.log(alltimeBtnStyleDisplay);
-    if(alltimeBtnStyleDisplay === "none"){timemode = "alltime"}
+    //if(alltimeBtnStyleDisplay === "none"){timemode = "alltime"}
 
     //svgタグを追加し、幅と高さを設定
-    var bargraph = d3.select("#bargraphAlltime")
+    var bargraphAlltime = d3.select("#bargraphAlltime")
 
     //サンプルが存在しないときは、グラフを描画しない
     if (capturedSampleList.length == 0) {
         //svgタグを削除
-        bargraph.select("svg").remove();
+        bargraphAlltime.select("svg").remove();
         return;
     }
 
@@ -490,7 +493,7 @@ function drawLiddgeLine(capturedSampleList) {
 
     if (dateList.length == 0) {
         //svgタグを削除
-        bargraph.select("svg").remove();
+        bargraphAlltime.select("svg").remove();
         return;
     }
 
@@ -569,10 +572,10 @@ function drawLiddgeLine(capturedSampleList) {
         barwidth = width / 300;
 
     //svgタグを削除
-    bargraph.select("svg").remove();
+    bargraphAlltime.select("svg").remove();
     
     //SVG領域の設定
-    var svgbar = bargraph.append("svg").attr("width", width + barmargin.left + barmargin.right).attr("height", barheight + barmargin.top + barmargin.bottom)
+    var svgbar = bargraphAlltime.append("svg").attr("width", width + barmargin.left + barmargin.right).attr("height", barheight + barmargin.top + barmargin.bottom)
             .append("g").attr("transform", "translate(" + barmargin.left + "," + barmargin.top + ")");
 
     //x軸のスケールを作成
@@ -689,4 +692,26 @@ return data; // ソート後の配列を返す
 
 function isInvalidDate(date) {
 return Number.isNaN(new Date(date).getTime());
+}
+
+function sliderDisplay(){
+    if (sliderStatusChecker=="non-exist"){
+        if(timeBtnChecker=="monthlyBtn"){
+            bargraphArea.style.display = "none";
+        }else{
+            bargraphArea.style.display = "block"
+        }
+        sliderArea.style.display = "none";
+        lowerHandleNumber.style.display = "none";
+        upperHandleNumber.style.display = "none";
+    } else if (sliderStatusChecker=="exist"){
+        if(timeBtnChecker=="monthlyBtn"){
+            bargraphArea.style.display = "none";
+        }else{
+            bargraphArea.style.display = "block"
+        } 
+        sliderArea.style.display = "block";
+        lowerHandleNumber.style.display = "block";
+        upperHandleNumber.style.display = "block";
+    }
 }

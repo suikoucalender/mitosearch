@@ -40,7 +40,8 @@ pointBtn.addEventListener("click", e => {
           layer._path.id = 'polygonlayer';
         });
         polygoncheker="exist"
-        getCapturedSampleList()
+        getCapturedSampleList();
+        sliderUpdating();
       }else{
         polygonCoordinate.coordinates[0][0].push(tempco);
       }
@@ -65,6 +66,7 @@ undoBtn.addEventListener("click", e =>{
   polygoncheker="nonexist"
   //map.off('click');
   getCapturedSampleList();
+  sliderUpdating();
 })
 
 
