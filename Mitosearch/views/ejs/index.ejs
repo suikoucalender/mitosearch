@@ -42,7 +42,6 @@
 
         gtag('config', 'G-JSBFZZQ0RX');
     </script>
-
     <style>
         div.parent{
             float: right;
@@ -51,7 +50,6 @@
             width:100%;
         }
     </style>
-
 </head>
 
 <body>
@@ -92,6 +90,8 @@
             </form>
             <button title="Show the full period of records" class="icon2" id="alltime"><img src="img/alltime.png"></button>
             <button title="Show recent records by month" class="icon2" id="monthly"><img src="img/monthly.png"></button>
+            <button title="Turn on the time filter" class="icon3" id="timeFilterOnBtn"><img src="img/timeFilterOn.png"></button>
+            <button title="Turn off the time filter" class="icon3" id="timeFilterOffBtn"><img src="img/timeFilterOff.png"></button>
         </div>
 
         <div>
@@ -102,6 +102,7 @@
             <button title="Reset of button status" class="iconPolygon2on" id="undo"><img src="img/reset.png"></button>
             <button title="Vertex point addition" class="iconPolygon" id="point"><img src="img/marker.png"></button>
 
+         
         </div>
         <div id="content" style="height: 75%; width: 100%;">
             <div id="map" style="height: 1000px; width: 40%;"></div>
@@ -122,6 +123,7 @@
         
     </main>
     <script>
+        let capturedSampleList = [];
         let sampleDataSet =  <%-JSON.stringify(sampleDataObjList)%>;
         let fishClassifyDataObj =  <%-JSON.stringify(fishClassifyDataObj)%>;
         let taxo =  <%-JSON.stringify(taxo)%>;
@@ -131,16 +133,21 @@
         var longitude = <%-JSON.stringify(longitude)%>;
         var ratio = <%-JSON.stringify(ratio)%>;
         var map;
+        var isMove = false;
 
+    </script>
+    <script>
+        var sliderStatusChecker = "non-exist";
     </script>
     <script src="javascripts/timePicker.js"></script>
     <script src="javascripts/drawSelectbox.js"></script>
     <script src="javascripts/polygon.js"></script>
     <script src="javascripts/drawPie.js"></script>
-    <script src="javascripts/drawLiddgeLine.js"></script>
     <script src="javascripts/showLegend.js"></script>
+    <script src="javascripts/drawLiddgeLine.js"></script>
     <script src="javascripts/iconLocation.js"></script>
     <script src="javascripts/timechange.js"></script>
+
 </body>
 
 
