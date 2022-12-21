@@ -27,9 +27,12 @@ function setMoveFlag(){isMove = true}
 function removeMoveFlagAndDraw(){
     if(isMove){
         isMove = false;
-        getCapturedSampleList();
-        sliderUpdating();
+        //getCapturedSampleList();
+        sliderUpdating;
+        slider.noUiSlider.reset();
     }
+    //sliderUpdating();
+    //
 }
 
 
@@ -96,8 +99,6 @@ function getCapturedSampleList() {
     if(graphChecker!=="nonexist"){
         sliderDisplay();
     }
-    
-    
 }
 
 
@@ -629,7 +630,7 @@ function drawLiddgeLine(capturedSampleList) {
             .attr("y", function(d){return baryScale(d.value);})
             .attr("width", barwidth)
             .attr("height", function(d){return barheight - baryScale(d.value);})
-            .attr("fill", "#15594F");
+            .attr("fill", "#8C4522");
 
     //x軸を追加する
     if (timemode == "monthly") {

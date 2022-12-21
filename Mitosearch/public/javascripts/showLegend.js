@@ -164,12 +164,7 @@ timeFilterOnBtn.addEventListener("click", e => {
 timeFilterOffBtn.addEventListener("click", e => {
     timeFilterOnBtn.style.display = "block";
     timeFilterOffBtn.style.display = "none";
-    slider.noUiSlider.reset();
     sliderStatusChecker="non-exist"
-    //setTimeout(function(){
-        //bargraphArea.style.display = "none";
-        //sliderArea.style.display = "none";
-        //lowerHandleNumber.style.display = "none";
-        //upperHandleNumber.style.display = "none";
-        sliderDisplay()//},150)
+    slider.noUiSlider.reset();
+    sliderDisplay()
 });

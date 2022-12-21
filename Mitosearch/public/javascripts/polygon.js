@@ -38,18 +38,22 @@ pointBtn.addEventListener("click", e => {
         var geoJsonLayer = L.geoJSON(polygonCoordinate).addTo(map);
         geoJsonLayer.eachLayer(function (layer) {
           layer._path.id = 'polygonlayer';
+          
         });
         polygoncheker="exist"
-        getCapturedSampleList();
-        sliderUpdating();
+
       }else{
         polygonCoordinate.coordinates[0][0].push(tempco);
       }
+      sliderUpdating();
+      slider.noUiSlider.reset();
+      //getCapturedSampleList();
     })
   } else if (functioncheker=="on"){
     map.off('click');
     functioncheker="off"
     pointBtn.className="iconPolygon";
+    
   }
 });
 
@@ -64,9 +68,12 @@ undoBtn.addEventListener("click", e =>{
     ]
   }
   polygoncheker="nonexist"
+  
   //map.off('click');
   getCapturedSampleList();
   sliderUpdating();
+  slider.noUiSlider.reset();
+  
 })
 
 
