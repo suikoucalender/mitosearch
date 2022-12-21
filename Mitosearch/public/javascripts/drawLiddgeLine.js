@@ -128,7 +128,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
     //svgタグを追加し、幅と高さを設定
     var graph = d3.select("#graph");
     var bargraph = d3.select("#bargraph")
-
+    graphName.style.display = "block";
     //サンプルが存在しないときは、グラフを描画しない
     if (capturedSampleList.length == 0) {
         //svgタグを削除
@@ -459,7 +459,7 @@ function drawLiddgeLine(capturedSampleList) {
 
     //svgタグを追加し、幅と高さを設定
     var bargraphAlltime = d3.select("#bargraphAlltime")
-
+    graphName.style.display = "block";
     //サンプルが存在しないときは、グラフを描画しない
     if (capturedSampleList.length == 0) {
         //svgタグを削除

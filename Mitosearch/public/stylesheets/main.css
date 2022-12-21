@@ -271,8 +271,8 @@ img {
 }
 #graphName {
     position: absolute;
-    writing-mode: vertical-rl;
-    z-index:300;
+    writing-mode: vertical-lr;
+    z-index:500;
     top: 350px;
     left: 50%;
 }
