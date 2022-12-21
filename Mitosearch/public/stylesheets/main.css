@@ -273,8 +273,7 @@ img {
     position: absolute;
     writing-mode: vertical-lr;
     z-index:500;
-    top: 350px;
-    left: 50%;
+
 }
 
 #slider {
@@ -336,6 +335,7 @@ img {
     font-size: 18px;
 }
 
+/*
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .icon {
         position: absolute;
@@ -392,3 +392,4 @@ img {
         z-index: 500;
     }
 }
+*/

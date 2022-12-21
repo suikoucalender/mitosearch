@@ -14,6 +14,8 @@ function iconLocation() {
     var graph = document.getElementById("graph");
     var bargraphx = document.querySelector("#bargraph > svg > g > g:nth-child(3)")
     var bargraphAlltimex = document.querySelector("#bargraphAlltime > svg > g > g:nth-child(2)")
+    var bargraphxLeft = bargraphx.getBoundingClientRect().left;
+    var bargraphAlltimexLeft = bargraphAlltimex.getBoundingClientRect().left;
     var graphName = document.getElementById("graphName");
 
 
@@ -82,8 +84,18 @@ function iconLocation() {
     //var timeFilterBtnLeft= alltimeLeft-0
     //timeFilterOnBtn.style.left = timeFilterBtnLeft + "px";
     //timeFilterOffBtn.style.left = timeFilterBtnLeft + "px";
-    var graphNameTop=mapTop+30
+
+    var graphNameTop=mapTop+30;
     graphName.style.top=graphNameTop + "px";
+    console.log(bargraphAlltimexLeft)
+    console.log(bargraphxLeft)
+    if(bargraphxLeft>0){
+        var graphNameLeft=bargraphxLeft-40; 
+    }else{
+        var graphNameLeft=bargraphAlltimexLeft-40; 
+    }
+   
+    graphName.style.left=graphNameLeft+"px";
 
 };
 
