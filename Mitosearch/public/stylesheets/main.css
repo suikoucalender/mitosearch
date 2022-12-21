@@ -382,4 +382,13 @@ img {
         border-radius: 5px;
         z-index: 500;
     }
+    .iconPolygon {
+        position: absolute;
+        background: #d9d8d8;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        z-index: 500;
+    }
 }
