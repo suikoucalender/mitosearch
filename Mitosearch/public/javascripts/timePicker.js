@@ -2,6 +2,7 @@ var lowerHandle
 var upperHandle
 var graphChecker
 
+
 function slidersize(){
     if(graphChecker=="exist"){
         sliderArea.style.display = "block";

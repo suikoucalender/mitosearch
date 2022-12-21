@@ -45,9 +45,10 @@ pointBtn.addEventListener("click", e => {
       }else{
         polygonCoordinate.coordinates[0][0].push(tempco);
       }
-      sliderUpdating();
-      slider.noUiSlider.reset();
+      //sliderUpdating();
+      //slider.noUiSlider.reset();
       //getCapturedSampleList();
+      appendScript("javascripts/drawLiddgeLine.js")
     })
   } else if (functioncheker=="on"){
     map.off('click');

@@ -2,9 +2,8 @@
 var dateRangeCheker = false;
 upperHandle=timestamp(upperHandle);
 lowerHandle=timestamp(lowerHandle);
-if (upperHandle==lowerHandle){
-    upperHandle=upperHandle+86399000;
-}
+
+upperHandle=upperHandle+86399000;
 
 upperHandle=new Date(upperHandle);
 lowerHandle=new Date(lowerHandle);
@@ -99,6 +98,7 @@ function getCapturedSampleList() {
     if(graphChecker!=="nonexist"){
         sliderDisplay();
     }
+
 }
 
 

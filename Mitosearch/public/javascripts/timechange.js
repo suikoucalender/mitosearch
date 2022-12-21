@@ -4,5 +4,5 @@ slider.noUiSlider.on('update', function (values, handle) {
     upperHandle=document.getElementById('event-end').innerHTML
     document.getElementById('lowerHandleNumber').innerHTML=lowerHandle
     document.getElementById('upperHandleNumber').innerHTML=upperHandle
-    appendScript("javascripts/drawLiddgeLine.js");
+    appendScript("javascripts/drawLiddgeLine.js")
 });
