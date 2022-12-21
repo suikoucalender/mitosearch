@@ -16,6 +16,7 @@ const slider = document.getElementById("slider")
 const lowerHandleNumber = document.getElementById("lowerHandleNumber")
 const upperHandleNumber = document.getElementById("upperHandleNumber")
 const graphName = document.getElementById("graphName")
+
 var timeBtnChecker = "alltimeBtn"
 var sliderStatusChecker = "non-exist"
 
@@ -30,6 +31,8 @@ helpBtn.addEventListener("click", e => {
     lowerHandleNumber.style.display = "none";
     upperHandleNumber.style.display = "none";
     graphName.style.display = "none";
+    timeFilterOnBtn.style.display = "none"
+    timeFilterOffBtn.style.display = "none"
 });
 
 taxonomyLegend.addEventListener("click", e => {
@@ -42,6 +45,8 @@ taxonomyLegend.addEventListener("click", e => {
     lowerHandleNumber.style.display = "block";
     upperHandleNumber.style.display = "block";
     graphName.style.display = "block";
+    timeFilterOnBtn.style.display = "block"
+    timeFilterOffBtn.style.display = "block"
 });
 
 
@@ -66,6 +71,13 @@ expansionBtn.addEventListener("click", e => {
     lowerHandleNumber.style.display = "none";
     upperHandleNumber.style.display = "none";
     graphName.style.display = "none";
+
+    if (sliderStatusChecker=="non-exist"){
+        timeFilterOnBtn.style.display="none"
+    }else{
+        timeFilterOffBtn.style.display="none"
+    }
+
 
     if (timeBtnChecker == "alltimeBtn") {
         alltimeBtn.style.display = "none";
@@ -99,6 +111,12 @@ restoreBtn.addEventListener("click", e => {
     upperHandleNumber.style.display = "block";
     graphName.style.display = "block";
 
+    if (sliderStatusChecker=="non-exist"){
+        timeFilterOnBtn.style.display="block"
+    }else{
+        timeFilterOffBtn.style.display="block"
+    }
+
     if (timeBtnChecker == "alltimeBtn") {
         alltimeBtn.style.display = "block";
     }
@@ -128,10 +146,18 @@ monthlyBtn.addEventListener("click", e => {
 timeFilterOnBtn.addEventListener("click", e => {
     timeFilterOnBtn.style.display = "none";
     timeFilterOffBtn.style.display = "block";
-    //bargraphArea.style.display = "block";
+    if (timeBtnChecker=="monthlyBtn"){
+        bargraphArea.style.display = "none";
+    }else if (timeBtnChecker=="alltimeBtn"){
+        bargraphArea.style.display = "block";
+    }
+    
+    bargraphAlltimeArea.style.display = "block"
     sliderArea.style.display = "block";
     lowerHandleNumber.style.display = "block";
     upperHandleNumber.style.display = "block";
+    
+    slidersize();  
     sliderStatusChecker = "exist"
 });
 
@@ -140,9 +166,10 @@ timeFilterOffBtn.addEventListener("click", e => {
     timeFilterOffBtn.style.display = "none";
     slider.noUiSlider.reset();
     sliderStatusChecker="non-exist"
-    setTimeout(function(){
+    //setTimeout(function(){
         //bargraphArea.style.display = "none";
-        sliderArea.style.display = "none";
-        lowerHandleNumber.style.display = "none";
-        upperHandleNumber.style.display = "none";},150)
+        //sliderArea.style.display = "none";
+        //lowerHandleNumber.style.display = "none";
+        //upperHandleNumber.style.display = "none";
+        sliderDisplay()//},150)
 });

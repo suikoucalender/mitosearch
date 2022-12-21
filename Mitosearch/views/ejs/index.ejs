@@ -80,18 +80,22 @@
         </div>
 
         <div id="form">
-            <form style="width: 95%; float: left;">
-                <select id="filter" class="test-select2" multiple="multiple" style="height: 35px;">
+            <form style="width: 100%; float: left;">
+                <select id="filter" class="test-select2" multiple="multiple" style="height: 35px;width: 70%">
                   <% AllFishList.forEach(fishName => { %>
                     <option><%= fishName %></option>
                   <% }) %>
                 </select>
                 <input id="button" type="button" value="Filter">
+                <button title="Turn on the time filter" class="icon3" id="timeFilterOnBtn"><img src="img/timeFilterOn.png"></button>
+                <button title="Turn off the time filter" class="icon3" id="timeFilterOffBtn"><img src="img/timeFilterOff.png"></button>
+                <button title="Show the full period of records" class="icon2" id="alltime"><img src="img/alltime.png"></button>
+                <button title="Show recent records by month" class="icon2" id="monthly"><img src="img/monthly.png"></button> 
             </form>
-            <button title="Show the full period of records" class="icon2" id="alltime"><img src="img/alltime.png"></button>
-            <button title="Show recent records by month" class="icon2" id="monthly"><img src="img/monthly.png"></button>
-            <button title="Turn on the time filter" class="icon3" id="timeFilterOnBtn"><img src="img/timeFilterOn.png"></button>
-            <button title="Turn off the time filter" class="icon3" id="timeFilterOffBtn"><img src="img/timeFilterOff.png"></button>
+           
+
+
+
         </div>
 
         <div>
@@ -106,7 +110,7 @@
         </div>
         <div id="content" style="height: 75%; width: 100%;">
             <div id="map" style="height: 1000px; width: 40%;"></div>
-            <p style="width: 60%; float:right; text-align: right;" id="graphName">Number of Samples</p>
+           
             <div id="bargraphAlltime" style="height: 100px; width: 60%;"></div>
             <div class="parent" id="sliderArea" style="height: 60px;">
                 <div class="son" id="slider"></div>
@@ -118,7 +122,7 @@
             <div id="bargraph" style="height: 80px; width: 60%;"></div>
             <div id="graph" style="height: 700px; width: 60%;"></div>
         </div>
-
+        <p style="width: 60%; float:right; text-align: right;" id="graphName">#Samples</p>
         <div id="tmp"></div>
         
     </main>

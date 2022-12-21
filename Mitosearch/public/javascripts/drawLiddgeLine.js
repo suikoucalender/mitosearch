@@ -1,7 +1,20 @@
 
 var dateRangeCheker = false;
+upperHandle=timestamp(upperHandle);
+lowerHandle=timestamp(lowerHandle);
+if (upperHandle==lowerHandle){
+    upperHandle=upperHandle+86399000;
+}
+
 upperHandle=new Date(upperHandle);
 lowerHandle=new Date(lowerHandle);
+
+console.log(timestamp(upperHandle));
+console.log(timestamp(lowerHandle));
+console.log(upperHandle);
+console.log(lowerHandle);
+
+
 //window.onload = getCapturedSampleList;
 getCapturedSampleList();
 map.on("mouseup", removeMoveFlagAndDraw);
@@ -76,10 +89,15 @@ function getCapturedSampleList() {
             }
         })
     }
+
     drawLiddgeLineChangeable(capturedSampleList)
     drawLiddgeLine(capturedSampleList);
     slidersize();
-    sliderDisplay();
+    if(graphChecker!=="nonexist"){
+        sliderDisplay();
+    }
+    
+    
 }
 
 
@@ -116,6 +134,10 @@ function drawLiddgeLineChangeable(capturedSampleList){
         //svgタグを削除
         graph.select("svg").remove();
         bargraph.select("svg").remove();
+        sliderArea.style.display = "none";
+        lowerHandleNumber.style.display = "none";
+        upperHandleNumber.style.display = "none";
+        graphName.style.display = "none";
         graphChecker="nonexist"
         return;
     }
@@ -323,7 +345,8 @@ function drawLiddgeLineChangeable(capturedSampleList){
         .enter()
         .append("path")
         .attr("transform", function (d) { return ("translate(0," + (fishScale(d.fish) + betweenlen) + ")") })
-        .attr("fill", function (d) { return "rgb(255,255," + ((100 - d.max) * 2) + ")" })
+        //.attr("fill", function (d) { return "rgb(255,255," + ((100 - d.max) * 2) + ")" })
+        .attr("fill", function (d) { return "rgb(225,235,202)" })
         .datum(function (d) { return d.density })
         .attr("stroke", "#000")
         .attr("stroke-width", 1)
@@ -371,7 +394,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
             .attr("y", function(d){return baryScale(d.value);})
             .attr("width", barwidth)
             .attr("height", function(d){return barheight - baryScale(d.value);})
-            .attr("fill", "steelBlue");
+            .attr("fill", "#27A391");
 
     //x軸を追加する
     if (timemode == "monthly") {
@@ -441,6 +464,10 @@ function drawLiddgeLine(capturedSampleList) {
     if (capturedSampleList.length == 0) {
         //svgタグを削除
         bargraphAlltime.select("svg").remove();
+        sliderArea.style.display = "none";
+        lowerHandleNumber.style.display = "none";
+        upperHandleNumber.style.display = "none";
+        graphName.style.display = "none";
         return;
     }
 
@@ -602,7 +629,7 @@ function drawLiddgeLine(capturedSampleList) {
             .attr("y", function(d){return baryScale(d.value);})
             .attr("width", barwidth)
             .attr("height", function(d){return barheight - baryScale(d.value);})
-            .attr("fill", "steelBlue");
+            .attr("fill", "#15594F");
 
     //x軸を追加する
     if (timemode == "monthly") {
@@ -698,8 +725,10 @@ function sliderDisplay(){
     if (sliderStatusChecker=="non-exist"){
         if(timeBtnChecker=="monthlyBtn"){
             bargraphArea.style.display = "none";
+            bargraphAlltimeArea.style.display = "block";
         }else{
-            bargraphArea.style.display = "block"
+            bargraphArea.style.display = "block";
+            bargraphAlltimeArea.style.display = "none";
         }
         sliderArea.style.display = "none";
         lowerHandleNumber.style.display = "none";
@@ -707,8 +736,10 @@ function sliderDisplay(){
     } else if (sliderStatusChecker=="exist"){
         if(timeBtnChecker=="monthlyBtn"){
             bargraphArea.style.display = "none";
+            bargraphAlltimeArea.style.display = "block"
         }else{
             bargraphArea.style.display = "block"
+            bargraphAlltimeArea.style.display = "block"
         } 
         sliderArea.style.display = "block";
         lowerHandleNumber.style.display = "block";

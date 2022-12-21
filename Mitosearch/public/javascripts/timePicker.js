@@ -26,11 +26,12 @@ function timestamp(str){
 
 
 
-console.log(sampleDataSet[0]['date'])
-
 function sliderUpdating(){
     if(isMove){return};
     //get min and max value of sample
+    if (capturedSampleList.length == 0) {
+        return;
+    }
     var tempdateAll=capturedSampleList[0]['date'];
     var maxTime=tempdateAll;
     var minTime=tempdateAll;
@@ -48,6 +49,10 @@ function sliderUpdating(){
     }
     var minTimestamp=timestamp(minTime)
     var maxTimestamp=timestamp(maxTime)
+    console.log(maxTime)
+    console.log(maxTimestamp)
+    console.log(minTime)
+    console.log(minTimestamp)
 
     //Update slider
     slider.noUiSlider.updateOptions({
@@ -55,7 +60,7 @@ function sliderUpdating(){
             min: minTimestamp,
             max: maxTimestamp
         },
-        start: [minTimestamp, maxTimestamp],
+        //start: [minTimestamp, maxTimestamp],
     });
 }
 
@@ -69,9 +74,9 @@ for (var i=1;i<sampleDataSet.length;i++){
     if(isNaN(Date.parse(tempdateAll))){
         console.log('date missing '+i)
     }else{
-        if (tempdateAll>maxTime){
+        if (tempdateAll>=maxTime){
             maxTime=tempdateAll
-        }else if(tempdateAll<minTime){
+        }else if(tempdateAll<=minTime){
             minTime=tempdateAll
         }
         console.log(tempdateAll)
@@ -79,8 +84,11 @@ for (var i=1;i<sampleDataSet.length;i++){
 }
 var minTimestamp=timestamp(minTime)
 var maxTimestamp=timestamp(maxTime)
-console.log(minTimestamp)
-console.log(maxTimestamp)
+    console.log(maxTime)
+    console.log(maxTimestamp)
+    console.log(minTime)
+    console.log(minTimestamp)
+
 
 
 //create slider
@@ -94,7 +102,8 @@ noUiSlider.create(slider, {
         min: minTimestamp,
         max: maxTimestamp
     },
-    step: 7 * 24 * 60 * 60 * 1000,
+    step: 1 * 24 * 60 * 60 * 1000,
+    behaviour: 'tap',
     format:wNumb({
         decimals: 0
     }),
@@ -104,5 +113,3 @@ var dateValues = [
     document.getElementById('event-start'),
     document.getElementById('event-end')
 ];
-
-
