@@ -272,7 +272,7 @@ img {
 #graphName {
     position: absolute;
     writing-mode: vertical-lr;
-    z-index:500;
+    z-index:300;
 
 }
 
