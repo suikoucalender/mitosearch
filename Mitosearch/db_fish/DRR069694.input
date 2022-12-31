@@ -1,9 +1,8 @@
-id	DRR069694.fastq
-クロヨシノボリ:Rhinogobius brunneus 	46.47
-ハス:Opsariichthys uncirostris 	17.63
-カワムツ:Nipponocypris temminckii 	11.22
-Zacco platypus 	8.97
-Tribolodon hakonensis 	6.09
-Phoxinus steindachneri 	4.49
-アユ:Plecoglossus altivelis 	3.85
-Engraulis japonicus 	1.28
+144	クロヨシノボリ:Rhinogobius brunneus
+55	ハス:Opsariichthys uncirostris
+35	カワムツ:Nipponocypris temminckii
+28	Zacco platypus
+19	Tribolodon hakonensis
+14	Phoxinus steindachneri
+12	アユ:Plecoglossus altivelis
+4	カタクチイワシ科:Engraulis japonicus

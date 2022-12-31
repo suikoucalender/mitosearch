@@ -1,9 +1,8 @@
-id	DRR057696.fastq
-Engraulis japonicus 	47.44
-クサフグ:Takifugu alboplumbeus 	23.56
-ヒガンフグ:Takifugu pardalis 	8.62
-Parambassis lala 	5.59
-サケ:Oncorhynchus keta 	4.85
-クロダイ:Acanthopagrus schlegelii 	3.9
-ボラ:Mugil cephalus 	3.37
-ホソトビウオ:Cypselurus hiraii 	2.66
+14859	カタクチイワシ科:Engraulis japonicus
+7298	クサフグ:Takifugu alboplumbeus
+2703	フグ科:Takifugu fasciatus
+1848	Parambassis lala
+1520	サケ:Oncorhynchus keta
+1126	クロダイ:Acanthopagrus schlegelii
+1056	ボラ:Mugil cephalus
+833	ホソトビウオ:Cypselurus hiraii

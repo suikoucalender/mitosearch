@@ -1,10 +1,9 @@
-id	DRR069577.fastq
-カワヨシノボリ:Rhinogobius flumineus 	36.6
-Niwaella delicata 	32.28
-カジカ:Cottus pollux 	9.51
-Tribolodon hakonensis 	9.28
-ムギツク:Pungtungia herzi 	4.09
-カワムツ:Nipponocypris temminckii 	3.92
-カマツカ:Pseudogobio esocinus 	1.9
-アカザ:Liobagrus reinii 	1.33
-Phoxinus oxycephalus jouyi 	1.1
+640	カワヨシノボリ:Rhinogobius flumineus
+560	Niwaella delicata
+165	カジカ:Cottus pollux
+161	Tribolodon hakonensis
+71	ムギツク:Pungtungia herzi
+68	カワムツ:Nipponocypris temminckii
+33	カマツカ:Pseudogobio esocinus
+23	アカザ:Liobagrus reinii
+19	コイ科:Rhynchocypris jouyi

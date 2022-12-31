@@ -1,8 +1,7 @@
-id	DRR249660.fastq
-コノシロ:Konosirus punctatus 	52.25
-マアジ:Trachurus japonicus 	13.29
-サヨリ:Hyporhamphus sajori 	8.9
-Sardinops sagax 	7.75
-Engraulis japonicus 	7.31
-シロサバフグ:Lagocephalus spadiceus 	6.75
-マサバ:Scomber japonicus 	3.75
+3539	コノシロ:Konosirus punctatus
+905	マアジ:Trachurus japonicus
+607	サヨリ:Hyporhamphus sajori
+524	ニシン科:Sardinops sagax
+496	カタクチイワシ科:Engraulis japonicus
+453	シロサバフグ:Lagocephalus spadiceus
+253	マサバ:Scomber japonicus

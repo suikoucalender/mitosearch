@@ -1,9 +1,7 @@
-id	DRR125628.fastq
-Tribolodon sachalinensis 	25.24
-ドジョウ:Misgurnus anguillicaudatus 	17.3
-ギンブナ:Carassius sp. 'Ginbuna' 	15.64
-エゾホトケドジョウ:Lefua nikkonis 	13.48
-トミヨ属淡水型:Pungitius sp. Brackish type 	10.8
-フクドジョウ:Barbatula oreas 	9.71
-Tribolodon hakonensis 	5.85
-サンマ:Cololabis saira 	1.97
+895	Tribolodon ezoe
+204	Tribolodon hakonensis
+172	ギンブナ:Carassius langsdorfii
+66	ドジョウ:Misgurnus anguillicaudatus
+60	エゾホトケドジョウ:Lefua nikkonis
+37	フクドジョウ:Barbatula oreas
+29	コイ科:Rhynchocypris percnurus sachalinensis

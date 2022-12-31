@@ -1,13 +1,12 @@
-id	SRR12008463.fastq
-Sebastes fasciatus 	69.11
-Sebastes mentella 	10.29
-ヤマトヒゲダラ:Enchelyopus cimbrius 	3.29
-Clupea harengus 	3.23
-ヤセギンポ:Leptoclinus maculatus 	2.34
-Lycodes esmarkii 	2.13
-Gadus morhua 	2.04
-Glyptocephalus cynoglossus 	1.99
-Pseudopleuronectes americanus 	1.65
-Thunnus thynnus thynnus 	1.46
-Urophycis tenuis 	1.23
-カラスガレイ:Reinhardtius hippoglossoides 	1.23
+208143	メバル科:Sebastes fasciatus
+30933	メバル科:Sebastes mentella
+9902	ヤマトヒゲダラ:Enchelyopus cimbrius
+9669	ニシン科:Clupea harengus
+6977	ヤセギンポ:Leptoclinus maculatus
+6412	ゲンゲ科:Lycodes vahlii
+6090	タラ科:Gadus morhua
+5904	カレイ科:Glyptocephalus cynoglossus
+4930	カレイ科:Pseudopleuronectes americanus
+4397	サバ科:Thunnus thynnus thynnus
+3708	Urophycis tenuis
+3677	カラスガレイ:Reinhardtius hippoglossoides

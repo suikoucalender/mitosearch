@@ -1,10 +1,11 @@
-id	DRR169764.fastq
-クロヨシノボリ:Rhinogobius brunneus 	37.18
-チチブ:Tridentiger obscurus 	17.32
-カワムツ:Nipponocypris temminckii 	12.61
-ニゴイ:Hemibarbus maculatus 	12.12
-Zacco platypus 	9.7
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	3.77
-アユ:Plecoglossus altivelis 	3.13
-ムギツク:Pungtungia herzi 	2.24
-Tribolodon hakonensis 	1.93
+8624	クロヨシノボリ:Rhinogobius brunneus
+7023	ヌマチチブ:Tridentiger brevispinis
+6445	シマヨシノボリ:Rhinogobius nagoyae
+5136	カワムツ:Nipponocypris temminckii
+4932	コイ科:Hemibarbus maculatus
+3951	Zacco platypus
+1529	コイ:Cyprinus carpio
+1271	アユ:Plecoglossus altivelis
+917	ドンコ科:Odontobutis obscura
+908	ムギツク:Pungtungia herzi
+779	Tribolodon hakonensis

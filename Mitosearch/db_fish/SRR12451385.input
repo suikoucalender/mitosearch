@@ -1,6 +1,5 @@
-id	SRR12451385.fastq
-Neogobius melanostomus 	81.26
-Perca flavescens 	10.14
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	5.01
-Ctenopharyngodon idellus x Elopichthys bambusa 	2.16
-ハクレン:Hypophthalmichthys molitrix 	1.43
+24559	Neogobius melanostomus
+3066	Perca flavescens
+1530	コイ:Cyprinus carpio
+657	ソウギョ:Ctenopharyngodon idella
+433	ハクレン:Hypophthalmichthys molitrix

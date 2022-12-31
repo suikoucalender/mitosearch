@@ -1,18 +1,17 @@
-id	SRR18077932.fastq
-アカエイ:Hemitrygon akajei 	27.939999999999998
-テナガミズテング:Harpadon nehereus 	11.48
-Pampus argenteus 	8.19
-カンダリ:Collichthys lucidus 	7.24
-Larimichthys crocea 	6.45
-ホンニベ:Miichthys miiuy 	6.419999999999999
-アカハゼ:Amblychaeturichthys hexanema 	5.609999999999999
-ボラ:Mugil cephalus 	5.19
-イワハダカ:Benthosema pterotum 	4.590000000000001
-サッパ:Sardinella zunasi 	3.32
-カサゴ:Sebastiscus marmoratus 	2.53
-ヒラメ:Paralichthys olivaceus 	2.3
-Argyrosomus amoyensis 	2.04
-Eleutheronema tetradactylum 	1.97
-ハモ:Muraenesox cinereus 	1.83
-マサバ:Scomber japonicus 	1.58
-ヒラスズキ:Lateolabrax maculatus 	1.3
+1584	アカエイ:Hemitrygon akajei
+651	テナガミズテング:Harpadon nehereus
+463	マナガツオ科:Pampus sp. LY-2009
+412	カンダリ:Collichthys lucidus
+367	ニベ科:Larimichthys crocea
+365	ホンニベ:Miichthys miiuy
+319	ハゼ科:Chaeturichthys stigmatias
+295	ボラ:Mugil cephalus
+261	イワハダカ:Benthosema pterotum
+189	サッパ:Sardinella zunasi
+144	カサゴ:Sebastiscus marmoratus
+130	ヒラメ:Paralichthys olivaceus
+116	オオニベ:Argyrosomus japonicus
+112	ツバメコノシロ科:Eleutheronema tetradactylum
+104	ハモ:Muraenesox cinereus
+90	マサバ:Scomber japonicus
+74	スズキ科:Lateolabrax maculatus

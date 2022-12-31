@@ -1,9 +1,8 @@
-id	DRR249925.fastq
-コノシロ:Konosirus punctatus 	41.14
-サッパ:Sardinella zunasi 	22.97
-スズキ:Lateolabrax japonicus 	18.49
-Engraulis japonicus 	6.95
-ボラ:Mugil cephalus 	4.4
-クロダイ:Acanthopagrus schlegelii 	2.06
-ギマ:Triacanthus biaculeatus 	2.01
-Parambassis lala 	1.98
+8987	コノシロ:Konosirus punctatus
+5036	サッパ:Sardinella zunasi
+4052	スズキ:Lateolabrax japonicus
+1519	カタクチイワシ科:Engraulis japonicus
+963	ボラ:Mugil cephalus
+454	クロダイ:Acanthopagrus schlegelii
+440	ギマ:Triacanthus biaculeatus
+436	Parambassis lala

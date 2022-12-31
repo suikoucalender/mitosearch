@@ -1,11 +1,10 @@
-id	DRR069618.fastq
-ニゴイ:Hemibarbus maculatus 	30.0
-Phoxinus oxycephalus jouyi 	18.0
-カワヨシノボリ:Rhinogobius flumineus 	14.0
-カジカ:Cottus pollux 	10.0
-ニゴイ:Hemibarbus labeo 	8.0
-Niwaella delicata 	7.0
-Zacco platypus 	5.0
-ハス:Opsariichthys uncirostris 	3.0
-アカザ:Liobagrus reinii 	3.0
-カワムツ:Nipponocypris temminckii 	2.0
+30	コイ科:Hemibarbus maculatus
+18	コイ科:Rhynchocypris jouyi
+14	カワヨシノボリ:Rhinogobius flumineus
+11	カジカ:Cottus pollux
+9	コウライニゴイ:Hemibarbus labeo
+7	Niwaella delicata
+5	Zacco platypus
+3	ハス:Opsariichthys uncirostris
+3	アカザ:Liobagrus reinii
+2	カワムツ:Nipponocypris temminckii

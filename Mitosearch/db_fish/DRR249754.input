@@ -1,12 +1,11 @@
-id	DRR249754.fastq
-コノシロ:Konosirus punctatus 	40.82
-スズキ:Lateolabrax japonicus 	14.84
-Engraulis japonicus 	12.5
-サッパ:Sardinella zunasi 	10.99
-マハゼ:Acanthogobius flavimanus 	4.59
-ギマ:Triacanthus biaculeatus 	4.3
-アカエイ:Hemitrygon akajei 	3.56
-Parambassis lala 	2.69
-サヨリ:Hyporhamphus sajori 	2.15
-ボラ:Mugil cephalus 	2.0
-クロダイ:Acanthopagrus schlegelii 	1.56
+817	コノシロ:Konosirus punctatus
+303	スズキ:Lateolabrax japonicus
+252	カタクチイワシ科:Engraulis japonicus
+219	サッパ:Sardinella zunasi
+93	マハゼ:Acanthogobius flavimanus
+86	ギマ:Triacanthus biaculeatus
+73	アカエイ:Hemitrygon akajei
+58	Parambassis lala
+42	サヨリ:Hyporhamphus sajori
+41	ボラ:Mugil cephalus
+27	クロダイ:Acanthopagrus schlegelii

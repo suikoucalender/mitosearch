@@ -1,6 +1,4 @@
-id	SRR15710221.fastq
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	44.73
-Oreochromis sp. 'red tilapia' 	20.94
-アンピンボラ:Planiliza subviridis 	12.87
-Planiliza macrolepis 	11.29
-ボラ:Mugil cephalus 	10.17
+179337	ナイルティラピア:Oreochromis niloticus
+35299	アンピンボラ:Planiliza subviridis
+30948	コボラ:Planiliza macrolepis
+27892	ボラ:Mugil cephalus

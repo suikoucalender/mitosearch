@@ -1,11 +1,10 @@
-id	DRR231501.fastq
-チチブ:Tridentiger obscurus 	79.11
-ウキゴリ:Gymnogobius urotaenia 	4.0
-Carassius langsdorfii 	3.16
-コイ:Cyprinus carpio 	2.59
-キンギョ:Carassius auratus x Megalobrama amblycephala pentaploid hybrid 	2.33
-ヌマチチブ:Tridentiger brevispinis 	2.22
-アユ:Plecoglossus altivelis 	2.11
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.6
-カジカ:Cottus pollux 	1.6
-ニゴイ:Hemibarbus barbus 	1.28
+55911	ヌマチチブ:Tridentiger brevispinis
+2836	ウキゴリ:Gymnogobius urotaenia
+2247	ギンブナ:Carassius langsdorfii
+2175	コイ:Cyprinus carpio
+1657	ゲンゴロウブナ:Carassius cuvieri
+1573	チチブ:Tridentiger obscurus
+1491	アユ:Plecoglossus altivelis
+1129	カジカ:Cottus pollux
+916	ニゴイ:Hemibarbus barbus
+808	コイ科:Cyprinus carpio (triploid)

@@ -1,9 +1,9 @@
-id	DRR159100.fastq
-ボラ:Mugil cephalus 	29.34
-トウヨシノボリ:Rhinogobius sp. BB 	26.94
-ゴクラクハゼ:Rhinogobius similis 	16.49
-ボウズハゼ:Sicyopterus japonicus 	10.16
-Awaous banana 	7.19
-ギンユゴイ:Kuhlia mugil 	5.08
-オオウナギ:Anguilla marmorata 	3.16
-ナガノゴリ:Tridentiger kuroiwae 	1.63
+306	ボラ:Mugil cephalus
+204	シマヨシノボリ:Rhinogobius nagoyae
+172	ゴクラクハゼ:Rhinogobius similis
+151	ギンユゴイ:Kuhlia mugil
+106	ボウズハゼ:Sicyopterus japonicus
+106	ミナミハゼ:Awaous ocellaris
+78	アヤヨシノボリ:Rhinogobius sp. MO
+33	オオウナギ:Anguilla marmorata
+17	ナガノゴリ:Tridentiger kuroiwae

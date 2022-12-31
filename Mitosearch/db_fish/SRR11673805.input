@@ -1,13 +1,12 @@
-id	SRR11673805.fastq
-コノシロ:Konosirus punctatus 	17.17
-スズキ:Lateolabrax japonicus 	16.1
-シマイサキ:Rhynchopelates oxyrhynchus 	15.49
-Engraulis japonicus 	15.01
-ボラ:Mugil cephalus 	14.63
-クサフグ:Takifugu alboplumbeus 	5.31
-シロギス:Sillago japonica 	4.95
-Parambassis lala 	3.53
-ヒイラギ:Nuchequula nuchalis 	3.43
-Eutrigla gurnardus 	1.69
-メジナ:Girella punctata 	1.57
-Tribolodon hakonensis 	1.14
+45311	コノシロ:Konosirus punctatus
+43441	スズキ:Lateolabrax japonicus
+40864	シマイサキ:Rhynchopelates oxyrhynchus
+39574	カタクチイワシ科:Engraulis japonicus
+38575	ボラ:Mugil cephalus
+13210	クサフグ:Takifugu alboplumbeus
+13057	シロギス:Sillago japonica
+9297	Parambassis lala
+9046	ヒイラギ:Nuchequula nuchalis
+4428	Eutrigla gurnardus
+4109	セトダイ:Hapalogenys analis
+3008	Tribolodon hakonensis

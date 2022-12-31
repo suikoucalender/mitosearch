@@ -1,6 +1,5 @@
-id	SRR12008487.fastq
-カラスガレイ:Reinhardtius hippoglossoides 	43.45
-Sebastes fasciatus 	24.93
-Gadus morhua 	12.51
-Ammodytes dubius 	9.94
-Clupea harengus 	9.17
+3616	カラスガレイ:Reinhardtius hippoglossoides
+2083	メバル科:Sebastes fasciatus
+1052	タラ科:Gadus morhua
+836	イカナゴ科:Ammodytes dubius
+767	ニシン科:Clupea harengus

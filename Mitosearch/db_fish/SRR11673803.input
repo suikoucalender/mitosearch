@@ -1,8 +1,7 @@
-id	SRR11673803.fastq
-ボラ:Mugil cephalus 	42.51
-ヌマチチブ:Tridentiger brevispinis 	32.02
-コノシロ:Konosirus punctatus 	12.83
-ニゴイ:Hemibarbus labeo 	5.75
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	4.12
-キンギョ:Carassius auratus 	1.52
-クロヨシノボリ:Rhinogobius brunneus 	1.25
+110908	ボラ:Mugil cephalus
+84562	チチブ:Tridentiger obscurus
+33504	コノシロ:Konosirus punctatus
+15117	コウライニゴイ:Hemibarbus labeo
+10975	コイ:Cyprinus carpio
+3947	キンギョ:Carassius auratus
+3153	クロヨシノボリ:Rhinogobius brunneus

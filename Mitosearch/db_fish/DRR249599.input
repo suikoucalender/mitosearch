@@ -1,12 +1,12 @@
-id	DRR249599.fastq
-コノシロ:Konosirus punctatus 	42.45
-Engraulis japonicus 	20.57
-スズキ:Lateolabrax japonicus 	12.51
-サケ:Oncorhynchus keta 	8.2
-ハタタテヌメリ:Callionymus valenciennei 	3.87
-Parambassis lala 	3.54
-ヒガンフグ:Takifugu pardalis 	2.09
-ホシザメ:Mustelus manazo 	2.05
-クロダイ:Acanthopagrus schlegelii 	1.85
-マコガレイ:Pseudopleuronectes yokohamae 	1.58
-ボラ:Mugil cephalus 	1.28
+6082	コノシロ:Konosirus punctatus
+2945	カタクチイワシ科:Engraulis japonicus
+1794	スズキ:Lateolabrax japonicus
+1169	サケ:Oncorhynchus keta
+948	スジハゼ:Acentrogobius virgatulus
+556	ハタタテヌメリ:Callionymus valenciennei
+541	Parambassis lala
+299	フグ科:Takifugu fasciatus
+296	ホシザメ:Mustelus manazo
+228	クロダイ:Acanthopagrus schlegelii
+227	マガレイ:Pseudopleuronectes herzensteini
+184	ボラ:Mugil cephalus

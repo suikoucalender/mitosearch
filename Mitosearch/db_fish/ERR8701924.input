@@ -1,9 +1,7 @@
-id	ERR8701924.fastq
-ブラウントラウト:Salmo trutta 	39.53
-ニジマス:Oncorhynchus mykiss 	25.39
-Perca fluviatilis 	16.27
-Tinca tinca 	6.619999999999999
-Lepomis gibbosus 	5.6899999999999995
-ブラウントラウト:Salmo trutta fario 	2.6
-Salmo salar 	2.52
-ベニザケ・ヒメマス:Oncorhynchus nerka 	1.38
+32437	ブラウントラウト:Salmo trutta
+11871	Perca fluviatilis
+11585	サケ科:Oncorhynchus mykiss newberrii
+5776	サケ科:Oncorhynchus mykiss irideus
+4815	Tinca tinca
+3748	サンフィッシュ科:Lepomis gibbosus
+1733	ニジマス:Oncorhynchus mykiss

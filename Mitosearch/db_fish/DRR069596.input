@@ -1,13 +1,12 @@
-id	DRR069596.fastq
-カワヨシノボリ:Rhinogobius flumineus 	32.33
-カワムツ:Nipponocypris temminckii 	18.05
-Tribolodon hakonensis 	10.53
-Phoxinus steindachneri 	9.02
-Zacco platypus 	6.02
-カマツカ:Pseudogobio esocinus 	6.02
-Phoxinus oxycephalus jouyi 	5.26
-イトモロコ:Squalidus gracilis gracilis 	5.26
-カジカ:Cottus pollux 	3.01
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.5
-ドジョウ:Misgurnus anguillicaudatus 	1.5
-ムギツク:Pungtungia herzi 	1.5
+43	カワヨシノボリ:Rhinogobius flumineus
+24	カワムツ:Nipponocypris temminckii
+14	Tribolodon hakonensis
+12	Phoxinus steindachneri
+8	Zacco platypus
+8	カマツカ:Pseudogobio esocinus
+7	イトモロコ:Squalidus gracilis gracilis
+7	コイ科:Rhynchocypris jouyi
+4	カジカ:Cottus pollux
+2	ドジョウ:Misgurnus anguillicaudatus
+2	ムギツク:Pungtungia herzi
+2	コイ:Cyprinus carpio

@@ -1,11 +1,10 @@
-id	DRR069614.fastq
-クロヨシノボリ:Rhinogobius brunneus 	27.32
-アユ:Plecoglossus altivelis 	24.59
-Zacco platypus 	20.22
-Phoxinus steindachneri 	9.29
-サツキマス・アマゴ:Oncorhynchus masou 'Biwa' 	5.46
-Phoxinus oxycephalus jouyi 	4.92
-Engraulis japonicus 	3.28
-ヌマチチブ:Tridentiger brevispinis 	2.19
-カワムツ:Nipponocypris temminckii 	1.64
-アユ:Plecoglossus altivelis ryukyuensis 	1.09
+48	クロヨシノボリ:Rhinogobius brunneus
+47	アユ:Plecoglossus altivelis
+37	Zacco platypus
+17	Phoxinus steindachneri
+10	サケ科:Oncorhynchus masou 'Biwa'
+9	コイ科:Rhynchocypris jouyi
+6	カタクチイワシ科:Engraulis japonicus
+4	チチブ:Tridentiger obscurus
+3	カワムツ:Nipponocypris temminckii
+2	シマヨシノボリ:Rhinogobius nagoyae

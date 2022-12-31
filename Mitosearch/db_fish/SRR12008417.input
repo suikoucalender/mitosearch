@@ -1,6 +1,5 @@
-id	SRR12008417.fastq
-Clupea harengus 	62.17
-Glyptocephalus cynoglossus 	18.21
-カラスガレイ:Reinhardtius hippoglossoides 	7.66
-Lophius americanus 	6.95
-Sebastes fasciatus 	5.01
+14717	ニシン科:Clupea harengus
+4311	カレイ科:Glyptocephalus cynoglossus
+1825	カラスガレイ:Reinhardtius hippoglossoides
+1661	アンコウ科:Lophius americanus
+1184	メバル科:Sebastes fasciatus

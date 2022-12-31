@@ -1,12 +1,12 @@
-id	SRR12008554.fastq
-Sebastes fasciatus 	49.38
-Gadus morhua 	18.96
-Lycodes esmarkii 	6.77
-オヒョウ:Hippoglossus stenolepis 	5.89
-Sebastes mentella 	5.38
-ヤマトヒゲダラ:Enchelyopus cimbrius 	3.83
-Pseudopleuronectes americanus 	2.82
-Glyptocephalus cynoglossus 	2.0
-Cyclopterus lumpus 	1.82
-Lumpenus lampretaeformis 	1.73
-ヤセギンポ:Leptoclinus maculatus 	1.41
+94669	メバル科:Sebastes fasciatus
+36068	タラ科:Gadus morhua
+11248	オヒョウ:Hippoglossus stenolepis
+10287	メバル科:Sebastes mentella
+9472	ゲンゲ科:Lycodes vahlii
+7362	ヤマトヒゲダラ:Enchelyopus cimbrius
+5371	カレイ科:Pseudopleuronectes americanus
+3745	カレイ科:Glyptocephalus cynoglossus
+3578	ゲンゲ科:Lycodes esmarkii
+3480	Cyclopterus lumpus
+3294	タウエガジ科:Lumpenus lampretaeformis
+2706	ヤセギンポ:Leptoclinus maculatus

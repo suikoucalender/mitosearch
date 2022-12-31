@@ -1,8 +1,7 @@
-id	DRR249655.fastq
-Engraulis japonicus 	46.73
-コノシロ:Konosirus punctatus 	43.21
-メジナ:Girella punctata 	2.62
-イシダイ:Oplegnathus fasciatus 	2.35
-ボラ:Mugil cephalus 	2.03
-ヒメ:Hime japonica 	1.54
-スズキ:Lateolabrax japonicus 	1.51
+7640	カタクチイワシ科:Engraulis japonicus
+7056	コノシロ:Konosirus punctatus
+431	セトダイ:Hapalogenys analis
+389	イシダイ:Oplegnathus fasciatus
+334	ボラ:Mugil cephalus
+253	ヒメ:Hime japonica
+249	スズキ:Lateolabrax japonicus

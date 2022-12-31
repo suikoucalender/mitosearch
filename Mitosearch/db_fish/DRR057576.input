@@ -1,7 +1,6 @@
-id	DRR057576.fastq
-マアジ:Trachurus japonicus 	84.98
-スズキ:Lateolabrax japonicus 	5.01
-Engraulis japonicus 	3.6
-ハオコゼ:Paracentropogon rubripinnis 	3.44
-マハゼ:Acanthogobius flavimanus 	1.72
-メジナ:Girella punctata 	1.25
+543	マアジ:Trachurus japonicus
+32	スズキ:Lateolabrax japonicus
+23	カタクチイワシ科:Engraulis japonicus
+22	ハオコゼ:Paracentropogon rubripinnis
+11	マハゼ:Acanthogobius flavimanus
+8	セトダイ:Hapalogenys analis

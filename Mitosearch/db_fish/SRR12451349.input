@@ -1,8 +1,7 @@
-id	SRR12451349.fastq
-チャネルキャットフィッシュ:Ictalurus punctatus 	55.59
-Dorosoma cepedianum 	30.35
-Cyprinella spiloptera 	4.91
-Pimephales notatus 	3.17
-Ictiobus niger 	2.71
-Aplodinotus grunniens 	1.73
-Notropis stramineus 	1.54
+2281	チャネルキャットフィッシュ:Ictalurus punctatus
+1241	Dorosoma cepedianum
+201	Cyprinella spiloptera
+140	Ictiobus niger
+130	Pimephales notatus
+71	Aplodinotus grunniens
+63	Notropis stramineus

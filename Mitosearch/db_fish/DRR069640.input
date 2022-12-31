@@ -1,9 +1,7 @@
-id	DRR069640.fastq
-カワヨシノボリ:Rhinogobius flumineus 	42.0
-カワムツ:Nipponocypris temminckii 	22.75
-コイ:Cyprinus carpio 	10.0
-Phoxinus oxycephalus jouyi 	7.75
-ムギツク:Pungtungia herzi 	7.25
-Kichulchoia multifasciata 	6.0
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	2.75
-Zacco platypus 	1.5
+169	カワヨシノボリ:Rhinogobius flumineus
+91	カワムツ:Nipponocypris temminckii
+48	コイ:Cyprinus carpio
+31	コイ科:Rhynchocypris jouyi
+29	ムギツク:Pungtungia herzi
+27	ニシシマドジョウ:Cobitis sp. BIWAE type B
+6	Zacco platypus

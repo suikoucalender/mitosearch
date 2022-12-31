@@ -1,13 +1,12 @@
-id	DRR057723.fastq
-Engraulis japonicus 	30.55
-コノシロ:Konosirus punctatus 	11.94
-ホソトビウオ:Cypselurus hiraii 	11.38
-ブリ:Seriola quinqueradiata 	9.33
-Cheilopogon doederleinii 	7.49
-シロギス:Sillago japonica 	6.3
-カワムツ:Nipponocypris temminckii 	5.94
-Parambassis lala 	5.11
-マアジ:Trachurus japonicus 	4.72
-クロダイ:Acanthopagrus schlegelii 	3.69
-イマイトビウオ:Cheilopogon arcticeps 	2.41
-Tribolodon hakonensis 	1.14
+17618	カタクチイワシ科:Engraulis japonicus
+6887	コノシロ:Konosirus punctatus
+6562	ホソトビウオ:Cypselurus hiraii
+5383	ブリ:Seriola quinqueradiata
+4320	トビウオ科:Cheilopogon doederleinii
+3632	シロギス:Sillago japonica
+3427	カワムツ:Nipponocypris temminckii
+3101	Parambassis lala
+2719	マアジ:Trachurus japonicus
+1975	クロダイ:Acanthopagrus schlegelii
+1421	イマイトビウオ:Cheilopogon arcticeps
+657	Tribolodon hakonensis

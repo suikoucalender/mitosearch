@@ -1,12 +1,11 @@
-id	DRR057479.fastq
-Engraulis japonicus 	34.84
-コノシロ:Konosirus punctatus 	12.28
-スズキ:Lateolabrax japonicus 	11.66
-ヒガンフグ:Takifugu pardalis 	10.81
-Parambassis lala 	6.09
-Dictyosoma burgeri 	5.76
-クサフグ:Takifugu alboplumbeus 	5.41
-クロダイ:Acanthopagrus schlegelii 	3.99
-Parajulis poecilepterus 	3.12
-ボラ:Mugil cephalus 	3.09
-ウルメイワシ:Etrumeus micropus 	2.95
+12889	カタクチイワシ科:Engraulis japonicus
+4547	コノシロ:Konosirus punctatus
+4319	スズキ:Lateolabrax japonicus
+4000	フグ科:Takifugu fasciatus
+2370	Parambassis lala
+2131	タウエガジ科:Dictyosoma burgeri
+1961	クサフグ:Takifugu alboplumbeus
+1360	クロダイ:Acanthopagrus schlegelii
+1156	ベラ科:Parajulis poecilepterus
+1143	ボラ:Mugil cephalus
+1093	ウルメイワシ:Etrumeus micropus

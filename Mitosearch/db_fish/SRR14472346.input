@@ -1,12 +1,14 @@
-id	SRR14472346.fastq
-カラフトマス:Oncorhynchus gorbuscha 	33.91
-ゴマフエダイ:Lutjanus argentimaculatus 	19.16
-Mugil curema 	15.27
-Clupea harengus 	10.35
-Scomber scombrus 	6.45
-Ammodytes tobianus 	3.82
-Abudefduf saxatilis 	2.4
-Gerres cinereus 	2.4
-ノトイスズミ:Kyphosus bigibbus 	2.23
-Thysochromis ansorgii 	2.02
-スギ:Rachycentron canadum 	1.99
+24518	カラフトマス:Oncorhynchus gorbuscha
+12905	フエダイ科:Lutjanus griseus
+11144	ボラ科:Mugil curema
+7506	ニシン科:Clupea harengus
+7107	Eucinostomus gula
+4677	アジ科:Scomber scombrus
+4588	Haemulon plumierii
+3295	Centropomus undecimalis
+1902	トウゴロウイワシ科:Atherinomorus stipes
+1735	クロサギ科:Gerres cinereus
+1710	スズメダイ科:Abudefduf saxatilis
+1583	イスズミ:Kyphosus vaigiensis
+1421	スギ:Rachycentron canadum
+1195	フエダイ科:Lutjanus jocu

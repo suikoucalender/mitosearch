@@ -1,8 +1,10 @@
-id	SRR12451393.fastq
-Dorosoma cepedianum 	61.78
-Pimephales notatus 	18.56
-Cyprinella spiloptera 	7.77
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	6.4
-Aplodinotus grunniens 	3.11
-Lepomis cyanellus 	1.24
-Fundulus notatus 	1.14
+5871	コイ:Cyprinus carpio
+1053	Fundulus notatus
+579	Dorosoma cepedianum
+568	Pimephales notatus
+355	Carpiodes cyprinus
+295	キンギョ:Carassius auratus
+156	Rhinichthys osculus
+130	Notropis blennius
+113	Cyprinella spiloptera
+109	Pylodictis olivaris

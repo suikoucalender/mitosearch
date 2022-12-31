@@ -1,11 +1,9 @@
-id	SRR12451352.fastq
-Dorosoma cepedianum 	60.52
-Pimephales notatus 	10.61
-Cyprinella spiloptera 	8.08
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	7.01
-Ictiobus cyprinellus 	3.86
-Aplodinotus grunniens 	2.62
-Ictiobus bubalus 	2.11
-コイ:Cyprinus carpio 	2.04
-Lepomis cyanellus 	1.74
-Ictalurus lupus 	1.41
+44255	Dorosoma cepedianum
+7791	Pimephales notatus
+6644	コイ:Cyprinus carpio
+5935	Cyprinella spiloptera
+2824	Ictiobus niger
+1929	Aplodinotus grunniens
+1550	Ictiobus bubalus
+1276	サンフィッシュ科:Lepomis cyanellus
+1004	アメリカナマズ科:Ictalurus australis

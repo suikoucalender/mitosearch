@@ -1,8 +1,5 @@
-id	SRR15710248.fastq
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	34.92
-ナイルティラピア:Oreochromis niloticus 	32.98
-Oreochromis sp. 'red tilapia' 	21.96
-ボラ:Mugil cephalus 	3.45
-ゴクラクハゼ:Rhinogobius similis 	2.76
-Pseudogobius taijiangensis 	2.34
-キンギョ:Carassius auratus 	1.59
+472634	ナイルティラピア:Oreochromis niloticus
+18198	ボラ:Mugil cephalus
+14542	ゴクラクハゼ:Rhinogobius similis
+12335	ハゼ科:Pseudogobius taijiangensis
+8389	キンギョ:Carassius auratus

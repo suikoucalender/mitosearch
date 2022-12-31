@@ -1,10 +1,9 @@
-id	SRR12008485.fastq
-Sebastes fasciatus 	57.69
-Glyptocephalus cynoglossus 	9.23
-ゴマギンポ:Stichaeopsis nana 	8.95
-Sebastes mentella 	6.86
-ヤマトヒゲダラ:Enchelyopus cimbrius 	4.32
-Melanostigma atlanticum 	4.31
-Microgadus proximus 	4.16
-カラスガレイ:Reinhardtius hippoglossoides 	2.6
-Pseudopleuronectes americanus 	1.88
+89133	メバル科:Sebastes fasciatus
+13935	カレイ科:Glyptocephalus cynoglossus
+13926	ドロギンポ:Askoldia variegata
+10539	メバル科:Sebastes mentella
+6655	ヤマトヒゲダラ:Enchelyopus cimbrius
+6647	Microgadus tomcod
+6639	ゲンゲ科:Melanostigma atlanticum
+3977	カラスガレイ:Reinhardtius hippoglossoides
+2872	カレイ科:Pseudopleuronectes americanus

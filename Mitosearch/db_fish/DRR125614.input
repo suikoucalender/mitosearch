@@ -1,12 +1,8 @@
-id	DRR125614.fastq
-Tribolodon sachalinensis 	34.97
-Tribolodon brandtii brandtii 	12.61
-コイ:Cyprinus carpio 	10.88
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	10.72
-ニッポンバラタナゴ:Rhodeus ocellatus ocellatus 	10.28
-Tribolodon hakonensis 	6.35
-ドジョウ:Misgurnus anguillicaudatus 	4.25
-モツゴ:Pseudorasbora parva 	3.62
-キンギョ:Carassius auratus x Megalobrama amblycephala pentaploid hybrid 	3.1
-フクドジョウ:Barbatula oreas 	2.08
-タモロコ:Gnathopogon elongatus elongatus 	1.15
+8554	Tribolodon ezoe
+3136	Tribolodon brandtii
+2527	コイ科:Acheilognathus chankaensis
+1706	コイ:Cyprinus carpio
+1553	Tribolodon hakonensis
+889	モツゴ:Pseudorasbora parva
+283	タモロコ:Gnathopogon elongatus elongatus
+268	ゲンゴロウブナ:Carassius cuvieri

@@ -1,9 +1,7 @@
-id	ERR3514734.fastq
-Oreochromis sp. 'red tilapia' 	57.26
-ナイルティラピア:Oreochromis niloticus 	11.34
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	8.32
-Yasuhikotakia eos 	6.51
-Barbonymus gonionotus 	6.41
-Osteochilus hasseltii 	4.34
-Channa micropeltes 	2.97
-Hypsibarbus salweenensis 	2.85
+32084	ナイルティラピア:Oreochromis niloticus
+27390	カワスズメ科:Oreochromis sp. 'red tilapia'
+5043	Yasuhikotakia eos
+4967	Barbonymus gonionotus
+3363	Osteochilus hasseltii
+2303	タイワンドジョウ科:Channa micropeltes
+2202	Hypsibarbus salweenensis

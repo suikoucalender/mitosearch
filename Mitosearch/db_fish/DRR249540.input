@@ -1,14 +1,13 @@
-id	DRR249540.fastq
-コノシロ:Konosirus punctatus 	30.6
-アカアマダイ:Branchiostegus japonicus 	18.96
-Engraulis japonicus 	18.38
-サッパ:Sardinella zunasi 	9.13
-ハタタテヌメリ:Callionymus valenciennei 	4.41
-シログチ:Pennahia argentata 	4.31
-スズキ:Lateolabrax japonicus 	3.54
-ブリ:Seriola quinqueradiata 	3.17
-サワラ:Scomberomorus niphonius 	1.8
-シロギス:Sillago japonica 	1.48
-メジナ:Girella punctata 	1.47
-アカハゼ:Amblychaeturichthys hexanema 	1.43
-サヨリ:Hyporhamphus sajori 	1.32
+4645	コノシロ:Konosirus punctatus
+2886	アカアマダイ:Branchiostegus japonicus
+2802	カタクチイワシ科:Engraulis japonicus
+1391	サッパ:Sardinella zunasi
+672	ハタタテヌメリ:Callionymus valenciennei
+656	シログチ:Pennahia argentata
+540	スズキ:Lateolabrax japonicus
+435	ブリ:Seriola quinqueradiata
+278	サワラ:Scomberomorus niphonius
+227	シロギス:Sillago japonica
+225	セトダイ:Hapalogenys analis
+215	ハゼ科:Chaeturichthys stigmatias
+202	サヨリ:Hyporhamphus sajori

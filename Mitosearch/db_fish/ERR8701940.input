@@ -1,17 +1,15 @@
-id	ERR8701940.fastq
-Clupea harengus 	30.0
-Perca fluviatilis 	13.669999999999998
-バラヒメダイ:Pristipomoides typus 	13.33
-ブラウントラウト:Salmo trutta 	10.67
-Esox lucius 	6.0
-Rutilus rutilus 	3.6700000000000004
-Pungitius pungitius 	3.3300000000000005
-Tinca tinca 	3.3300000000000005
-Oxyeleotris lineolata 	2.67
-カワマス:Salvelinus fontinalis 	2.67
-Squalius cephalus 	2.33
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	2.0
-Chelon richardsonii 	2.0
-Marcusenius stanleyanus 	1.67
-Hemigrammocharax uniocellatus 	1.3299999999999998
-Petrocephalus soudanensis 	1.3299999999999998
+88	ニシン科:Clupea harengus
+40	バラヒメダイ:Pristipomoides typus
+39	Perca fluviatilis
+29	ブラウントラウト:Salmo trutta
+17	Esox lucius
+10	Rutilus rutilus
+9	Tinca tinca
+8	カワマス:Salvelinus fontinalis
+8	Squalius cephalus
+8	コイ:Cyprinus carpio
+7	Oxyeleotris lineolata
+7	ミナミトミヨ:Pungitius kaibarae
+6	Hyperopisus bebe
+5	フグ科:Chelon richardsonii
+4	Hemigrammocharax uniocellatus

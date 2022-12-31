@@ -1,11 +1,10 @@
-id	SRR12008497.fastq
-Sebastes fasciatus 	33.05
-カラスガレイ:Reinhardtius hippoglossoides 	27.12
-カラフトシシャモ:Mallotus villosus 	12.71
-Sebastes mentella 	7.63
-Melanostigma atlanticum 	4.66
-Glyptocephalus cynoglossus 	4.66
-Pseudopleuronectes americanus 	4.24
-ヤマトヒゲダラ:Enchelyopus cimbrius 	2.54
-Urophycis tenuis 	2.12
-Clupea harengus 	1.27
+52	メバル科:Sebastes fasciatus
+33	カラスガレイ:Reinhardtius hippoglossoides
+27	カラフトシシャモ:Mallotus villosus
+9	メバル科:Sebastes mentella
+9	ゲンゲ科:Melanostigma atlanticum
+7	カレイ科:Pseudopleuronectes americanus
+5	カレイ科:Glyptocephalus cynoglossus
+5	ヤマトヒゲダラ:Enchelyopus cimbrius
+3	Urophycis tenuis
+3	ニシン科:Clupea harengus

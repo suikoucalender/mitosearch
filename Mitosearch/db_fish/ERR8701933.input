@@ -1,14 +1,13 @@
-id	ERR8701933.fastq
-Perca fluviatilis 	18.14
-ブラウントラウト:Salmo trutta 	17.98
-Esox lucius 	14.000000000000002
-Squalius cephalus 	11.84
-カワマス:Salvelinus fontinalis 	9.629999999999999
-Abramis brama 	7.249999999999999
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	6.7299999999999995
-Salmo labrax 	3.64
-Coregonus autumnalis 	3.5900000000000003
-Leuciscus idus 	2.8400000000000003
-Coregonus clupeaformis 	1.95
-Silurus glanis 	1.32
-ゴギ:Salvelinus leucomaenis 	1.09
+14129	ブラウントラウト:Salmo trutta
+14008	Perca fluviatilis
+10787	Esox lucius
+9209	Squalius cephalus
+7440	カワマス:Salvelinus fontinalis
+5543	Abramis brama
+5190	コイ:Cyprinus carpio
+2577	Coregonus sp. 'cluncaformis'
+2195	Leuciscus idus
+1507	サケ科:Salmo labrax
+1440	サケ科:Salvelinus levanidovi
+1329	Coregonus clupeaformis
+1184	ナマズ科:Silurus glanis

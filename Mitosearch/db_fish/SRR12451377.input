@@ -1,7 +1,6 @@
-id	SRR12451377.fastq
-ハクレン:Hypophthalmichthys molitrix 	86.04
-オオクチバス:Micropterus salmoides 	7.44
-Carpiodes cyprinus 	2.43
-Moxostoma erythrurum 	1.52
-Carpiodes velifer 	1.37
-Dorosoma cepedianum 	1.21
+567	ハクレン:Hypophthalmichthys molitrix
+49	サンフィッシュ科:Micropterus salmoides
+16	Carpiodes cyprinus
+10	Moxostoma erythrurum
+9	Carpiodes velifer
+8	Dorosoma cepedianum

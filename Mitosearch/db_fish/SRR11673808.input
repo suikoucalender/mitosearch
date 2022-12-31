@@ -1,10 +1,11 @@
-id	SRR11673808.fastq
-Zacco platypus 	55.17
-Odontobutis interrupta 	14.34
-キンギョ:Carassius auratus 	11.87
-カワムツ:Nipponocypris temminckii 	8.1
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	3.36
-ブルーギル:Lepomis macrochirus 	2.85
-ムギツク:Pungtungia herzi 	1.54
-アブラハヤ:Rhynchocypris lagowskii 	1.5
-クロヨシノボリ:Rhinogobius brunneus 	1.28
+125565	Zacco platypus
+32723	ドンコ科:Odontobutis interrupta
+26930	キンギョ:Carassius auratus
+17195	カワムツ:Nipponocypris temminckii
+7833	コイ:Cyprinus carpio
+6465	サンフィッシュ科:Lepomis cyanellus
+3880	モツゴ:Pseudorasbora parva
+3248	アブラハヤ:Rhynchocypris lagowskii
+2858	クロヨシノボリ:Rhinogobius brunneus
+2697	ドジョウ:Misgurnus anguillicaudatus
+2673	コイ科:Rhynchocypris oxycephalus

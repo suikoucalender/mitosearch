@@ -1,26 +1,27 @@
-id	SRR18568758.fastq
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	11.76
-Leuciscus idus 	8.64
-Capoeta capoeta sevangi 	8.5
-Alburnus tarichi 	7.08
-キンギョ:Carassius auratus 	7.01
-Squalius cephalus 	5.72
-Atherina boyeri 	5.71
-Neogobius melanostomus 	5.11
-モツゴ:Pseudorasbora parva 	4.38
-Alburnus chalcoides aralensis 	3.01
-Pomatoschistus minutus 	3.0
-Sarotherodon galilaeus 	2.92
-Rutilus rutilus 	2.82
-Oxynoemacheilus angorae 	2.69
-ニジマス:Oncorhynchus mykiss 	2.62
-ボラ:Mugil cephalus 	2.58
-Capoeta damascina 	2.44
-Chelon ramada 	2.12
-Gambusia holbrooki 	1.9900000000000002
-Vimba melanops 	1.92
-Alburnus alburnus 	1.76
-Rhodeus sericeus 	1.76
-Gobio macrocephalus 	1.72
-Planiliza abu 	1.44
-Labeobarbus caudovittatus 	1.31
+427503	コイ:Cyprinus carpio
+285484	Capoeta damascina
+258935	Alburnus tarichi
+247504	キンギョ:Carassius auratus
+243057	Chondrostoma nasus
+206406	Atherina boyeri
+206052	Squalius cephalus
+178389	Luciobarbus capito
+161194	モツゴ:Pseudorasbora parva
+139046	Neogobius fluviatilis
+108048	Pomatoschistus minutus
+107842	Sarotherodon galilaeus
+103467	Oxynoemacheilus insignis
+101423	Rutilus rutilus
+98370	Alburnus chalcoides aralensis
+96413	Leuciscus idus
+93418	ボラ:Mugil cephalus
+83878	サケ科:Oncorhynchus mykiss newberrii
+76011	フグ科:Chelon ramada
+71574	カダヤシ科:Gambusia holbrooki
+69199	Vimba melanops
+65065	コイ科:Rhodeus sericeus
+62196	Alburnus alburnus
+56252	ハゼ科:Gobio macrocephalus
+51945	Neogobius melanostomus
+51554	ボラ科:Planiliza abu
+48640	Carasobarbus canis

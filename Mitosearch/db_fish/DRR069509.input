@@ -1,10 +1,9 @@
-id	DRR069509.fastq
-ニゴイ:Hemibarbus maculatus 	32.22
-カワヨシノボリ:Rhinogobius flumineus 	17.68
-Phoxinus oxycephalus jouyi 	13.64
-Niwaella delicata 	10.9
-Zacco platypus 	8.62
-ニゴイ:Hemibarbus labeo 	6.96
-ハス:Opsariichthys uncirostris 	5.32
-カワムツ:Nipponocypris temminckii 	3.36
-カジカ:Cottus pollux 	1.29
+9523	コイ科:Hemibarbus maculatus
+5231	カワヨシノボリ:Rhinogobius flumineus
+4022	コイ科:Rhynchocypris jouyi
+3220	Niwaella delicata
+2548	Zacco platypus
+2118	コウライニゴイ:Hemibarbus labeo
+1571	ハス:Opsariichthys uncirostris
+993	カワムツ:Nipponocypris temminckii
+381	カジカ:Cottus pollux

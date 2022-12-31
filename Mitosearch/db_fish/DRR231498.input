@@ -1,10 +1,8 @@
-id	DRR231498.fastq
-チチブ:Tridentiger obscurus 	69.76
-ヌマチチブ:Tridentiger brevispinis 	9.46
-Zacco platypus 	4.84
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	4.64
-Tribolodon hakonensis 	3.04
-Carassius langsdorfii 	2.7
-マハゼ:Acanthogobius flavimanus 	2.16
-アユ:Plecoglossus altivelis 	1.77
-コイ:Cyprinus carpio 	1.64
+68009	ヌマチチブ:Tridentiger brevispinis
+9212	チチブ:Tridentiger obscurus
+6151	コイ:Cyprinus carpio
+4747	Zacco platypus
+2973	Tribolodon hakonensis
+2640	ギンブナ:Carassius langsdorfii
+2086	マハゼ:Acanthogobius flavimanus
+1727	アユ:Plecoglossus altivelis

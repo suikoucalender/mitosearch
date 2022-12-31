@@ -1,18 +1,8 @@
-id	SRR13249222.fastq
-Urophycis tenuis 	22.98
-Clupea harengus 	22.12
-Melanogrammus aeglefinus 	12.44
-Ammodytes tobianus 	11.81
-ヤマトヒゲダラ:Enchelyopus cimbrius 	5.64
-Gadus morhua 	4.49
-Peprilus burti 	4.27
-Ammodytes dubius 	2.72
-Ammodytes americanus 	2.13
-Pseudopleuronectes americanus 	2.03
-Sarotherodon melanotheron 	1.83
-Ammodytes personatus 	1.8
-Scomber scombrus 	1.35
-Hyperoplus immaculatus 	1.14
-Alosa aestivalis 	1.09
-Pollachius virens 	1.09
-Lumpenus lampretaeformis 	1.07
+27	ニシン科:Clupea harengus
+9	Urophycis tenuis
+5	Melanogrammus aeglefinus
+1	Pollachius virens
+1	ギンユゴイ:Kuhlia mugil
+1	Alosa aestivalis
+1	ニシン:Clupea pallasii
+1	イカナゴ科:Ammodytes marinus

@@ -1,16 +1,15 @@
-id	DRR249968.fastq
-コノシロ:Konosirus punctatus 	31.94
-Engraulis japonicus 	12.43
-ボラ:Mugil cephalus 	10.31
-アカオビシマハゼ:Tridentiger trigonocephalus 	8.42
-コクレン:Hypophthalmichthys nobilis 	8.2
-スズキ:Lateolabrax japonicus 	7.21
-サケ:Oncorhynchus keta 	3.45
-チチブ:Tridentiger obscurus 	3.24
-ハクレン:Hypophthalmichthys molitrix 	2.82
-マハゼ:Acanthogobius flavimanus 	2.4
-クロダイ:Acanthopagrus schlegelii 	2.31
-ニホンウナギ:Anguilla japonica 	2.16
-Parambassis lala 	2.09
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.75
-シログチ:Pennahia argentata 	1.27
+6073	コノシロ:Konosirus punctatus
+2369	カタクチイワシ科:Engraulis japonicus
+1957	ボラ:Mugil cephalus
+1614	シモフリシマハゼ:Tridentiger bifasciatus
+1565	コクレン:Hypophthalmichthys nobilis
+1371	スズキ:Lateolabrax japonicus
+659	サクラマス・ヤマメ:Oncorhynchus masou masou
+620	ヌマチチブ:Tridentiger brevispinis
+521	ハクレン:Hypophthalmichthys molitrix
+453	マハゼ:Acanthogobius flavimanus
+437	クロダイ:Acanthopagrus schlegelii
+408	ニホンウナギ:Anguilla japonica
+398	Parambassis lala
+332	コイ:Cyprinus carpio
+241	シログチ:Pennahia argentata

@@ -1,10 +1,9 @@
-id	DRR057724.fastq
-Engraulis japonicus 	59.38
-ブリ:Seriola quinqueradiata 	10.83
-サワラ:Scomberomorus niphonius 	6.99
-Pseudopleuronectes americanus 	6.67
-マアジ:Trachurus japonicus 	5.86
-ホソトビウオ:Cypselurus hiraii 	4.06
-ヒガンフグ:Takifugu pardalis 	2.98
-ウロハゼ:Glossogobius olivaceus 	2.17
-アカオビシマハゼ:Tridentiger trigonocephalus 	1.06
+42218	カタクチイワシ科:Engraulis japonicus
+7700	ブリ:Seriola quinqueradiata
+4966	サワラ:Scomberomorus niphonius
+4741	カレイ科:Pseudopleuronectes americanus
+4164	マアジ:Trachurus japonicus
+2888	ホソトビウオ:Cypselurus hiraii
+2120	フグ科:Takifugu fasciatus
+1544	ウロハゼ:Glossogobius olivaceus
+756	アカオビシマハゼ:Tridentiger trigonocephalus

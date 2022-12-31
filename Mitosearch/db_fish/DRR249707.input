@@ -1,8 +1,7 @@
-id	DRR249707.fastq
-コノシロ:Konosirus punctatus 	54.4
-ボラ:Mugil cephalus 	21.67
-コクレン:Hypophthalmichthys nobilis 	12.54
-サッパ:Sardinella zunasi 	5.53
-アカエイ:Hemitrygon akajei 	2.24
-ギマ:Triacanthus biaculeatus 	2.11
-スズキ:Lateolabrax japonicus 	1.5
+7805	コノシロ:Konosirus punctatus
+3103	ボラ:Mugil cephalus
+1805	コクレン:Hypophthalmichthys nobilis
+789	サッパ:Sardinella zunasi
+324	アカエイ:Hemitrygon akajei
+307	ギマ:Triacanthus biaculeatus
+212	スズキ:Lateolabrax japonicus

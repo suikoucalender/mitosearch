@@ -1,22 +1,21 @@
-id	DRR057727.fastq
-Engraulis japonicus 	28.04
-ホソトビウオ:Cypselurus hiraii 	10.11
-ブリ:Seriola quinqueradiata 	9.45
-サワラ:Scomberomorus niphonius 	8.76
-コノシロ:Konosirus punctatus 	4.78
-クサフグ:Takifugu alboplumbeus 	4.32
-アカカマス:Sphyraena pinguis 	3.46
-シマイサキ:Rhynchopelates oxyrhynchus 	3.1
-メジナ:Girella punctata 	2.92
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	2.78
-マタナゴ:Ditrema temminckii 	2.51
-ダツ:Strongylura anastomella 	2.48
-スズキ:Lateolabrax japonicus 	2.32
-マアジ:Trachurus japonicus 	2.14
-ハガツオ:Sarda orientalis 	2.12
-ヌマチチブ:Tridentiger brevispinis 	2.1
-Tribolodon hakonensis 	2.01
-ボラ:Mugil cephalus 	1.8
-マハゼ:Acanthogobius flavimanus 	1.74
-アカオビシマハゼ:Tridentiger trigonocephalus 	1.62
-イサキ:Parapristipoma trilineatum 	1.44
+27193	カタクチイワシ科:Engraulis japonicus
+9800	ホソトビウオ:Cypselurus hiraii
+9164	ブリ:Seriola quinqueradiata
+8499	サワラ:Scomberomorus niphonius
+4637	コノシロ:Konosirus punctatus
+4160	クサフグ:Takifugu alboplumbeus
+3353	アカカマス:Sphyraena pinguis
+3008	シマイサキ:Rhynchopelates oxyrhynchus
+2834	セトダイ:Hapalogenys analis
+2694	コイ:Cyprinus carpio
+2433	マタナゴ:Ditrema temminckii pacificum
+2401	ダツ:Strongylura anastomella
+2248	スズキ:Lateolabrax japonicus
+2079	マアジ:Trachurus japonicus
+2073	ハガツオ:Sarda orientalis
+2041	チチブ:Tridentiger obscurus
+1948	Tribolodon hakonensis
+1745	ボラ:Mugil cephalus
+1691	マハゼ:Acanthogobius flavimanus
+1567	アカオビシマハゼ:Tridentiger trigonocephalus
+1395	イサキ:Parapristipoma trilineatum

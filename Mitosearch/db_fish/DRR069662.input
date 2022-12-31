@@ -1,9 +1,8 @@
-id	DRR069662.fastq
-クロヨシノボリ:Rhinogobius brunneus 	36.7
-Phoxinus steindachneri 	23.41
-Zacco platypus 	13.44
-サツキマス・アマゴ:Oncorhynchus masou 'Biwa' 	13.01
-カワムツ:Nipponocypris temminckii 	8.77
-アユ:Plecoglossus altivelis 	1.63
-ドジョウ:Misgurnus anguillicaudatus 	1.56
-カワヨシノボリ:Rhinogobius flumineus 	1.49
+513	クロヨシノボリ:Rhinogobius brunneus
+331	Phoxinus steindachneri
+190	Zacco platypus
+184	サケ科:Oncorhynchus masou 'Biwa'
+124	カワムツ:Nipponocypris temminckii
+23	アユ:Plecoglossus altivelis
+22	ドジョウ:Misgurnus anguillicaudatus
+21	カワヨシノボリ:Rhinogobius flumineus

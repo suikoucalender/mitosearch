@@ -1,11 +1,11 @@
-id	DRR249571.fastq
-コノシロ:Konosirus punctatus 	54.06
-スズキ:Lateolabrax japonicus 	18.83
-Engraulis japonicus 	10.17
-Parambassis lala 	4.42
-アカハゼ:Amblychaeturichthys hexanema 	2.93
-マタナゴ:Ditrema temminckii 	2.75
-クロダイ:Acanthopagrus schlegelii 	2.21
-ボラ:Mugil cephalus 	1.68
-ハタタテヌメリ:Callionymus valenciennei 	1.65
-メイタガレイ:Pleuronichthys lighti 	1.29
+4571	コノシロ:Konosirus punctatus
+1591	スズキ:Lateolabrax japonicus
+866	カタクチイワシ科:Engraulis japonicus
+866	スジハゼ:Acentrogobius virgatulus
+402	Parambassis lala
+378	ハゼ科:Chaeturichthys stigmatias
+234	マタナゴ:Ditrema temminckii pacificum
+165	クロダイ:Acanthopagrus schlegelii
+141	ハタタテヌメリ:Callionymus valenciennei
+141	ボラ:Mugil cephalus
+110	ナガレメイタガレイ:Pleuronichthys cornutus

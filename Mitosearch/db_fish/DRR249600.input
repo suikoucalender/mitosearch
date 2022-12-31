@@ -1,8 +1,7 @@
-id	DRR249600.fastq
-コノシロ:Konosirus punctatus 	74.82
-スズキ:Lateolabrax japonicus 	6.9
-Engraulis japonicus 	6.4
-Parambassis lala 	5.06
-クロダイ:Acanthopagrus schlegelii 	2.5
-ボラ:Mugil cephalus 	2.32
-クサフグ:Takifugu alboplumbeus 	1.99
+12231	コノシロ:Konosirus punctatus
+1129	スズキ:Lateolabrax japonicus
+1043	カタクチイワシ科:Engraulis japonicus
+872	Parambassis lala
+382	ボラ:Mugil cephalus
+365	クロダイ:Acanthopagrus schlegelii
+326	クサフグ:Takifugu alboplumbeus

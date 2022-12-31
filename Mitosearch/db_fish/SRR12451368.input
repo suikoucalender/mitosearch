@@ -1,14 +1,12 @@
-id	SRR12451368.fastq
-Ictiobus cyprinellus 	37.05
-Carpiodes cyprinus 	15.13
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	14.65
-Ictiobus bubalus 	5.33
-Dorosoma cepedianum 	5.08
-ブルーギル:Lepomis macrochirus 	4.6
-Carpiodes velifer 	4.36
-Carassius gibelio 	4.24
-Minytrema melanops 	2.66
-キンギョ:Carassius auratus 	2.54
-オオクチバス:Micropterus salmoides 	2.06
-Moxostoma macrolepidotum 	1.21
-Carpiodes cf. cyprinus HLB-2010 	1.09
+300	Ictiobus cyprinellus
+126	コイ:Cyprinus carpio
+81	Carpiodes velifer
+81	Carpiodes cyprinus
+57	キンギョ:Carassius auratus
+45	Ictiobus bubalus
+38	ブルーギル:Lepomis macrochirus
+38	Dorosoma cepedianum
+22	Minytrema melanops
+17	サンフィッシュ科:Micropterus salmoides
+11	Moxostoma macrolepidotum
+9	Carpiodes cf. cyprinus HLB-2010

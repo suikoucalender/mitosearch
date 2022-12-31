@@ -1,11 +1,10 @@
-id	DRR057506.fastq
-コノシロ:Konosirus punctatus 	21.56
-アカハゼ:Amblychaeturichthys hexanema 	14.93
-Parambassis lala 	13.31
-Engraulis japonicus 	12.78
-クロダイ:Acanthopagrus schlegelii 	9.22
-ヒイラギ:Nuchequula nuchalis 	7.31
-ボラ:Mugil cephalus 	6.92
-スズキ:Lateolabrax japonicus 	6.56
-クサフグ:Takifugu alboplumbeus 	6.11
-アカオビシマハゼ:Tridentiger trigonocephalus 	1.3
+4565	コノシロ:Konosirus punctatus
+3143	ハゼ科:Chaeturichthys stigmatias
+2955	Parambassis lala
+2705	カタクチイワシ科:Engraulis japonicus
+1816	クロダイ:Acanthopagrus schlegelii
+1548	ヒイラギ:Nuchequula nuchalis
+1465	ボラ:Mugil cephalus
+1389	スズキ:Lateolabrax japonicus
+1285	クサフグ:Takifugu alboplumbeus
+275	アカオビシマハゼ:Tridentiger trigonocephalus

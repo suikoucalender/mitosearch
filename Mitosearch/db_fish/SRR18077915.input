@@ -1,24 +1,24 @@
-id	SRR18077915.fastq
-テナガミズテング:Harpadon nehereus 	25.900000000000002
-キグチ:Larimichthys polyactis 	8.74
-ハモ:Muraenesox cinereus 	8.14
-Larimichthys crocea 	7.07
-Eleutheronema tetradactylum 	5.75
-アカエイ:Hemitrygon akajei 	5.47
-Pampus argenteus 	5.25
-アカハゼ:Amblychaeturichthys hexanema 	4.54
-カンダリ:Collichthys lucidus 	2.92
-イワハダカ:Benthosema pterotum 	2.79
-カサゴ:Sebastiscus marmoratus 	2.4899999999999998
-ホンニベ:Miichthys miiuy 	2.4699999999999998
-Pennahia macrocephalus 	2.4
-ヒガンフグ:Takifugu pardalis 	1.97
-ツマリエツ:Setipinna tenuifilis 	1.8599999999999999
-Odontamblyopus sp. ZL-2016 	1.8499999999999999
-Thryssa kammalensis 	1.8499999999999999
-マアナゴ:Conger myriaster 	1.83
-サッパ:Sardinella zunasi 	1.66
-ボラ:Mugil cephalus 	1.3299999999999998
-タチウオ:Trichiurus japonicus 	1.26
-ヒラスズキ:Lateolabrax maculatus 	1.26
-Trypauchen vagina 	1.18
+4077	テナガミズテング:Harpadon nehereus
+1375	キグチ:Larimichthys polyactis
+1280	ハモ:Muraenesox cinereus
+1113	ニベ科:Larimichthys crocea
+905	ツバメコノシロ科:Eleutheronema tetradactylum
+859	アカエイ:Hemitrygon akajei
+827	マナガツオ科:Pampus sp. LY-2009
+718	ハゼ科:Chaeturichthys stigmatias
+462	カンダリ:Collichthys lucidus
+440	イワハダカ:Benthosema pterotum
+391	カサゴ:Sebastiscus marmoratus
+390	ホンニベ:Miichthys miiuy
+379	ニベ科:Pennahia macrocephalus
+310	フグ科:Takifugu fasciatus
+293	Thryssa kammalensis
+292	ツマリエツ:Setipinna tenuifilis
+291	ハゼ科:Odontamblyopus sp. ZL-2016
+286	マアナゴ:Conger myriaster
+276	メガネウオ:Uranoscopus bicinctus
+262	サッパ:Sardinella zunasi
+208	ボラ:Mugil cephalus
+200	タチウオ:Trichiurus japonicus
+197	スズキ科:Lateolabrax maculatus
+186	ハゼ科:Trypauchen vagina

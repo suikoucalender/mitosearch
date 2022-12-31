@@ -1,13 +1,14 @@
-id	DRR249891.fastq
-Siganus canaliculatus 	46.23
-コノシロ:Konosirus punctatus 	20.04
-マサバ:Scomber japonicus 	8.1
-Engraulis japonicus 	7.72
-スズキ:Lateolabrax japonicus 	3.65
-サッパ:Sardinella zunasi 	3.5
-アカカマス:Sphyraena pinguis 	2.7
-マルアジ:Decapterus maruadsi 	2.12
-アカハゼ:Amblychaeturichthys hexanema 	2.0
-タイワンアイノコイワシ:Encrasicholina punctifer 	1.47
-Sardinops sagax 	1.25
-クロダイ:Acanthopagrus schlegelii 	1.21
+2870	アイゴ:Siganus fuscescens
+1245	コノシロ:Konosirus punctatus
+504	マサバ:Scomber japonicus
+481	カタクチイワシ科:Engraulis japonicus
+228	スズキ:Lateolabrax japonicus
+218	サッパ:Sardinella zunasi
+165	アカカマス:Sphyraena pinguis
+140	オキヒイラギ:Equulites rivulatus
+130	マルアジ:Decapterus maruadsi
+122	ハゼ科:Chaeturichthys stigmatias
+101	スジハゼ:Acentrogobius virgatulus
+91	タイワンアイノコイワシ:Encrasicholina punctifer
+77	ニシン科:Sardinops sagax
+73	クロダイ:Acanthopagrus schlegelii

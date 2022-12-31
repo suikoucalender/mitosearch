@@ -1,6 +1,5 @@
-id	SRR15710126.fastq
-ボラ:Mugil cephalus 	53.93
-アンピンボラ:Planiliza subviridis 	15.86
-Planiliza macrolepis 	15.23
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	8.06
-Pseudogobius taijiangensis 	6.92
+159518	ボラ:Mugil cephalus
+46892	アンピンボラ:Planiliza subviridis
+45035	コボラ:Planiliza macrolepis
+23681	ナイルティラピア:Oreochromis niloticus
+20463	ハゼ科:Pseudogobius taijiangensis

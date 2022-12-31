@@ -1,9 +1,8 @@
-id	DRR069593.fastq
-Phoxinus oxycephalus jouyi 	39.48
-カワムツ:Nipponocypris temminckii 	15.02
-カワヨシノボリ:Rhinogobius flumineus 	13.73
-Phoxinus steindachneri 	13.3
-サケ:Oncorhynchus keta 	12.45
-クロヨシノボリ:Rhinogobius brunneus 	2.58
-カジカ:Cottus pollux 	2.15
-ゴギ:Salvelinus leucomaenis leucomaenis 	1.29
+91	コイ科:Rhynchocypris jouyi
+35	カワムツ:Nipponocypris temminckii
+33	カワヨシノボリ:Rhinogobius flumineus
+31	Phoxinus steindachneri
+28	サクラマス・ヤマメ:Oncorhynchus masou masou
+5	カジカ:Cottus pollux
+5	クロヨシノボリ:Rhinogobius brunneus
+3	ゴギ:Salvelinus leucomaenis

@@ -1,8 +1,6 @@
-id	ERR3514597.fastq
-Oreochromis sp. 'red tilapia' 	66.82
-ナイルティラピア:Oreochromis niloticus 	12.32
-Channa striata 	7.9
-Cyclocheilichthys apogon 	5.39
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	3.64
-Yasuhikotakia eos 	2.24
-チャネルキャットフィッシュ:Ictalurus punctatus 	1.7
+41324	ナイルティラピア:Oreochromis niloticus
+23009	カワスズメ科:Oreochromis sp. 'red tilapia'
+6127	タイワンドジョウ科:Channa striata
+3936	Cyclocheilichthys armatus
+1737	Yasuhikotakia eos
+1319	チャネルキャットフィッシュ:Ictalurus punctatus

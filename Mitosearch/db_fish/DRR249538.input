@@ -1,10 +1,9 @@
-id	DRR249538.fastq
-アカアマダイ:Branchiostegus japonicus 	32.04
-ブリ:Seriola quinqueradiata 	18.83
-コノシロ:Konosirus punctatus 	17.41
-Engraulis japonicus 	10.25
-スズキ:Lateolabrax japonicus 	10.0
-マサバ:Scomber japonicus 	4.51
-マコガレイ:Pseudopleuronectes yokohamae 	4.23
-サンマ:Cololabis saira 	1.65
-ヒメコダイ:Chelidoperca hirundinacea 	1.07
+6713	アカアマダイ:Branchiostegus japonicus
+3627	コノシロ:Konosirus punctatus
+3486	ブリ:Seriola quinqueradiata
+2160	カタクチイワシ科:Engraulis japonicus
+2098	スズキ:Lateolabrax japonicus
+950	マサバ:Scomber japonicus
+891	マガレイ:Pseudopleuronectes herzensteini
+344	サンマ:Cololabis saira
+225	ヒメコダイ:Chelidoperca hirundinacea

@@ -1,8 +1,7 @@
-id	SRR12008407.fastq
-オヒョウ:Hippoglossus stenolepis 	55.82
-Clupea harengus 	15.17
-Gadus morhua 	10.85
-Glyptocephalus cynoglossus 	7.47
-Pseudopleuronectes americanus 	4.91
-Sebastes fasciatus 	3.7
-Ammodytes dubius 	2.08
+25696	オヒョウ:Hippoglossus stenolepis
+6958	ニシン科:Clupea harengus
+4983	タラ科:Gadus morhua
+3402	カレイ科:Glyptocephalus cynoglossus
+2265	カレイ科:Pseudopleuronectes americanus
+1702	メバル科:Sebastes fasciatus
+958	イカナゴ科:Ammodytes dubius

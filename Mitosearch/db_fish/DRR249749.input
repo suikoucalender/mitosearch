@@ -1,13 +1,14 @@
-id	DRR249749.fastq
-Engraulis japonicus 	41.28
-コノシロ:Konosirus punctatus 	23.89
-キンメダイ:Beryx splendens 	8.01
-タチウオ:Trichiurus japonicus 	4.58
-シロギス:Sillago japonica 	4.15
-アミメハギ:Rudarius ercodes 	3.38
-ヒイラギ:Nuchequula nuchalis 	3.36
-テンジクダイ:Jaydia lineata 	3.0
-アカカマス:Sphyraena pinguis 	2.7
-マサバ:Scomber japonicus 	2.2
-マルアジ:Decapterus maruadsi 	1.85
-シログチ:Pennahia argentata 	1.59
+6217	カタクチイワシ科:Engraulis japonicus
+3589	コノシロ:Konosirus punctatus
+2488	スジハゼ:Acentrogobius virgatulus
+1205	キンメダイ:Beryx splendens
+692	タチウオ:Trichiurus japonicus
+620	シロギス:Sillago japonica
+549	オキヒイラギ:Equulites rivulatus
+506	アミメハギ:Rudarius ercodes
+502	ヒイラギ:Nuchequula nuchalis
+452	テンジクダイ:Jaydia lineata
+401	アカカマス:Sphyraena pinguis
+328	マサバ:Scomber japonicus
+279	マルアジ:Decapterus maruadsi
+241	シログチ:Pennahia argentata

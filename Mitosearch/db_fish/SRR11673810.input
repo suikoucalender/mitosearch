@@ -1,10 +1,9 @@
-id	SRR11673810.fastq
-Pseudogobio vaillanti 	56.95
-ヌマチチブ:Tridentiger brevispinis 	12.66
-ニゴイ:Hemibarbus labeo 	7.6
-ブルーギル:Lepomis macrochirus 	6.02
-Culter alburnus 	5.68
-ゴクラクハゼ:Rhinogobius similis 	5.58
-オオクチバス:Micropterus salmoides 	2.18
-クロヨシノボリ:Rhinogobius brunneus 	1.69
-キンギョ:Carassius auratus 	1.62
+196126	コイ科:Pseudogobio vaillanti
+43916	チチブ:Tridentiger obscurus
+26101	コウライニゴイ:Hemibarbus labeo
+20567	サンフィッシュ科:Lepomis cyanellus
+19467	Culter alburnus
+19159	ゴクラクハゼ:Rhinogobius similis
+7764	サンフィッシュ科:Micropterus salmoides
+5822	クロヨシノボリ:Rhinogobius brunneus
+5587	キンギョ:Carassius auratus

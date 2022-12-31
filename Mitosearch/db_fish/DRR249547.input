@@ -1,14 +1,13 @@
-id	DRR249547.fastq
-Engraulis japonicus 	24.11
-アカアマダイ:Branchiostegus japonicus 	22.35
-コノシロ:Konosirus punctatus 	15.3
-ブリ:Seriola quinqueradiata 	14.91
-スズキ:Lateolabrax japonicus 	3.75
-シログチ:Pennahia argentata 	3.36
-ヒメ:Hime japonica 	3.28
-サワラ:Scomberomorus niphonius 	3.26
-Parambassis lala 	3.1
-ボラ:Mugil cephalus 	2.16
-クロダイ:Acanthopagrus schlegelii 	1.58
-アカエイ:Hemitrygon akajei 	1.46
-ヒメコダイ:Chelidoperca hirundinacea 	1.39
+3588	カタクチイワシ科:Engraulis japonicus
+3343	アカアマダイ:Branchiostegus japonicus
+2278	コノシロ:Konosirus punctatus
+1967	ブリ:Seriola quinqueradiata
+559	スズキ:Lateolabrax japonicus
+502	シログチ:Pennahia argentata
+490	ヒメ:Hime japonica
+486	Parambassis lala
+484	サワラ:Scomberomorus niphonius
+321	ボラ:Mugil cephalus
+216	アカエイ:Hemitrygon akajei
+215	クロダイ:Acanthopagrus schlegelii
+207	ヒメコダイ:Chelidoperca hirundinacea

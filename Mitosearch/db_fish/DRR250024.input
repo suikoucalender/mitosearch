@@ -1,8 +1,7 @@
-id	DRR250024.fastq
-コノシロ:Konosirus punctatus 	36.78
-Engraulis japonicus 	35.59
-サッパ:Sardinella zunasi 	8.91
-ボラ:Mugil cephalus 	8.44
-キダイ:Dentex hypselosomus 	4.2
-コイ:Cyprinus carpio 	3.73
-アカアマダイ:Branchiostegus japonicus 	2.35
+5430	コノシロ:Konosirus punctatus
+5250	カタクチイワシ科:Engraulis japonicus
+1313	サッパ:Sardinella zunasi
+1253	ボラ:Mugil cephalus
+621	チダイ:Evynnis tumifrons
+550	コイ:Cyprinus carpio
+346	アカアマダイ:Branchiostegus japonicus

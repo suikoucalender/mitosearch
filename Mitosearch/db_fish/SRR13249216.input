@@ -1,8 +1,3 @@
-id	SRR13249216.fastq
-ホシハゼ:Asterropteryx semipunctata 	41.76
-ボラ:Mugil cephalus 	21.87
-ロクセンスズメダイ:Abudefduf sexfasciatus 	12.77
-クロハギ:Acanthurus xanthopterus 	9.2
-カスミアジ:Caranx melampygus 	7.72
-チチブモドキ:Eleotris acanthopoma 	4.64
-オニカマス:Sphyraena barracuda 	2.04
+1	クロハギ:Acanthurus xanthopterus
+1	カスミアジ:Caranx melampygus
+1	ホシハゼ:Asterropteryx semipunctata

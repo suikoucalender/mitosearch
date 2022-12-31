@@ -1,19 +1,18 @@
-id	ERR8701941.fastq
-Perca fluviatilis 	19.3
-ブラウントラウト:Salmo trutta 	17.54
-Esox lucius 	9.36
-バラヒメダイ:Pristipomoides typus 	7.6
-Rutilus rutilus 	6.43
-Tinca tinca 	5.8500000000000005
-Pungitius pungitius 	4.68
-Abramis brama 	3.51
-ニジマス:Oncorhynchus mykiss x Salmo salar 	3.51
-Chelon richardsonii 	3.51
-Squalius cephalus 	3.51
-Coregonus autumnalis 	2.92
-ニジマス:Oncorhynchus mykiss 	2.92
-コガネガレイ:Limanda aspera 	2.34
-Salmo salar 	1.7500000000000002
-Salmo labrax 	1.7500000000000002
-カワマス:Salvelinus fontinalis 	1.7500000000000002
-Clupea harengus 	1.7500000000000002
+36	Perca fluviatilis
+31	ブラウントラウト:Salmo trutta
+16	Esox lucius
+13	バラヒメダイ:Pristipomoides typus
+11	Rutilus rutilus
+9	Tinca tinca
+8	サケ科:Oncorhynchus mykiss newberrii
+6	Squalius cephalus
+6	Abramis brama
+4	ニジマス:Oncorhynchus mykiss
+4	フグ科:Chelon richardsonii
+4	Coregonus sp. 'cluncaformis'
+4	カレイ科:Limanda limanda
+4	ミナミトミヨ:Pungitius kaibarae
+3	ニシン科:Clupea harengus
+3	カワマス:Salvelinus fontinalis
+3	サケ科:Salmo labrax
+3	イソギンポ科:Salaria fluviatilis

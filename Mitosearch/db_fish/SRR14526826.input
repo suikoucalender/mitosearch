@@ -1,10 +1,9 @@
-id	SRR14526826.fastq
-Semotilus atromaculatus 	45.0
-Catostomus commersonii 	28.000000000000004
-カワマス:Salvelinus fontinalis 	7.93
-Luxilus cornutus 	5.33
-Ameiurus nebulosus 	4.21
-Rhinichthys cataractae 	3.8699999999999997
-Esox lucius 	2.15
-コクチバス:Micropterus dolomieu 	2.08
-Lepomis gibbosus 	1.4200000000000002
+91801	Semotilus atromaculatus
+57256	Catostomus commersonii
+16078	カワマス:Salvelinus fontinalis
+10722	Luxilus cornutus
+8630	Ameiurus nebulosus
+7790	Rhinichthys cataractae
+4588	サンフィッシュ科:Micropterus treculii
+4398	Esox lucius
+2880	サンフィッシュ科:Lepomis gibbosus

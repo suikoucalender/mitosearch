@@ -1,12 +1,11 @@
-id	SRR12008483.fastq
-Sebastes fasciatus 	49.85
-Gadus morhua 	27.75
-Ammodytes dubius 	4.16
-Alosa sapidissima 	3.86
-Eumesogrammus praecisus 	3.07
-Sebastes mentella 	2.97
-Lycodes esmarkii 	1.92
-オヒョウ:Hippoglossus stenolepis 	1.72
-Pseudopleuronectes americanus 	1.69
-Lumpenus lampretaeformis 	1.59
-カラスガレイ:Reinhardtius hippoglossoides 	1.42
+144095	メバル科:Sebastes fasciatus
+79485	タラ科:Gadus morhua
+11930	イカナゴ科:Ammodytes dubius
+10818	Alosa sapidissima
+8662	Eumesogrammus praecisus
+8572	メバル科:Sebastes mentella
+5553	ゲンゲ科:Lycodes vahlii
+4922	オヒョウ:Hippoglossus stenolepis
+4869	カレイ科:Pseudopleuronectes americanus
+4559	タウエガジ科:Lumpenus lampretaeformis
+4047	カラスガレイ:Reinhardtius hippoglossoides

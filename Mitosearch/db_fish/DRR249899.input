@@ -1,11 +1,10 @@
-id	DRR249899.fastq
-コノシロ:Konosirus punctatus 	40.76
-Engraulis japonicus 	27.97
-サッパ:Sardinella zunasi 	7.66
-Sardinops sagax 	6.17
-カサゴ:Sebastiscus marmoratus 	5.87
-タイワンアイノコイワシ:Encrasicholina punctifer 	3.39
-ボラ:Mugil cephalus 	2.52
-シログチ:Pennahia argentata 	2.39
-マルアジ:Decapterus maruadsi 	2.13
-イワハダカ:Benthosema pterotum 	1.13
+2126	コノシロ:Konosirus punctatus
+1457	カタクチイワシ科:Engraulis japonicus
+401	サッパ:Sardinella zunasi
+323	ニシン科:Sardinops sagax
+309	カサゴ:Sebastiscus marmoratus
+176	タイワンアイノコイワシ:Encrasicholina punctifer
+131	ボラ:Mugil cephalus
+124	シログチ:Pennahia argentata
+110	マルアジ:Decapterus maruadsi
+58	イワハダカ:Benthosema pterotum

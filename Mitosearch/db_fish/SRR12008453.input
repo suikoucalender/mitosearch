@@ -1,11 +1,10 @@
-id	SRR12008453.fastq
-Pseudopleuronectes americanus 	50.98
-Sebastes fasciatus 	23.86
-Ammodytes americanus 	5.69
-カラフトシシャモ:Mallotus villosus 	4.47
-Lumpenus lampretaeformis 	4.35
-Ammodytes dubius 	3.55
-Scomber scombrus 	2.91
-Triglops murrayi 	2.03
-Glyptocephalus cynoglossus 	1.11
-カラスガレイ:Reinhardtius hippoglossoides 	1.05
+65049	カレイ科:Pseudopleuronectes americanus
+30496	メバル科:Sebastes fasciatus
+7277	イカナゴ科:Ammodytes americanus
+5710	カラフトシシャモ:Mallotus villosus
+5552	タウエガジ科:Lumpenus lampretaeformis
+4513	イカナゴ科:Ammodytes dubius
+3687	アジ科:Scomber scombrus
+2577	カジカ科:Triglops murrayi
+1397	カレイ科:Glyptocephalus cynoglossus
+1345	カラスガレイ:Reinhardtius hippoglossoides

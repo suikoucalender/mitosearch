@@ -1,13 +1,10 @@
-id	ERR3514699.fastq
-コクレン:Hypophthalmichthys nobilis 	25.75
-Oreochromis sp. 'red tilapia' 	12.2
-Cyclocheilichthys enoplos 	11.77
-Rastrelliger brachysoma 	9.18
-ナイルティラピア:Oreochromis niloticus 	8.42
-Labeo rohita 	7.91
-Channa striata 	7.89
-Barbonymus gonionotus 	5.42
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	4.83
-Puntioplites proctozystron 	3.3
-Anabas testudineus 	2.06
-Hemibagrus spilopterus 	1.27
+21262	コクレン:Hypophthalmichthys nobilis
+21010	ナイルティラピア:Oreochromis niloticus
+9709	Cyclocheilichthys enoplos
+7612	サバ科:Rastrelliger brachysoma
+6542	Labeo rohita
+6512	タイワンドジョウ科:Channa striata
+4376	Barbonymus gonionotus
+2720	Puntioplites proctozystron
+1699	Anabas testudineus
+1046	Hemibagrus spilopterus
