@@ -1,7 +1,8 @@
-380	Hypsoblennius ionthas
-82	ドチザメ:Triakis scyllium
-81	エビスザメ:Notorynchus cepedianus
-57	Paralabrax clathratus
-44	トビエイ科:Myliobatis californica
-14	Gibbonsia montereyensis
-8	Conodon nobilis
+id	SRR12791253.fastq
+Hypsoblennius ionthas	57.0571
+ドチザメ:Triakis scyllium	12.3123
+エビスザメ:Notorynchus cepedianus	12.1622
+Paralabrax clathratus	8.55856
+トビエイ科:Myliobatis californica	6.60661
+Gibbonsia montereyensis	2.1021
+Conodon nobilis	1.2012

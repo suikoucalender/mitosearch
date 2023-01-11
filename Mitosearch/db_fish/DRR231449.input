@@ -1,13 +1,14 @@
-51562	ヌマチチブ:Tridentiger brevispinis
-3908	チチブ:Tridentiger obscurus
-3187	Zacco platypus
-2514	ニゴイ:Hemibarbus barbus
-2442	コイ:Cyprinus carpio
-1741	ゲンゴロウブナ:Carassius cuvieri
-1539	カワムツ:Nipponocypris temminckii
-1167	クロヨシノボリ:Rhinogobius brunneus
-1149	コイ科:Hemibarbus maculatus
-1133	マハゼ:Acanthogobius flavimanus
-1055	ギンブナ:Carassius langsdorfii
-990	ウキゴリ:Gymnogobius urotaenia
-773	サンフィッシュ科:Micropterus salmoides
+id	DRR231449.fastq
+ヌマチチブ:Tridentiger brevispinis	70.4784
+チチブ:Tridentiger obscurus	5.34172
+Zacco platypus	4.35621
+ニゴイ:Hemibarbus barbus	3.4363
+コイ:Cyprinus carpio	3.33789
+ゲンゴロウブナ:Carassius cuvieri	2.37972
+カワムツ:Nipponocypris temminckii	2.10361
+クロヨシノボリ:Rhinogobius brunneus	1.59513
+コイ科:Hemibarbus maculatus	1.57053
+マハゼ:Acanthogobius flavimanus	1.54866
+ギンブナ:Carassius langsdorfii	1.44204
+ウキゴリ:Gymnogobius urotaenia	1.3532
+サンフィッシュ科:Micropterus salmoides	1.05659

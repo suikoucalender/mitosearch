@@ -1,6 +1,7 @@
-4807	カタクチイワシ科:Engraulis japonicus
-3416	サケ:Oncorhynchus keta
-2961	サワラ:Scomberomorus niphonius
-1391	ハオコゼ:Paracentropogon rubripinnis
-1027	マアジ:Trachurus japonicus
-659	セトダイ:Hapalogenys analis
+id	DRR057543.fastq
+カタクチイワシ科:Engraulis japonicus	33.7073
+サケ:Oncorhynchus keta	23.9534
+サワラ:Scomberomorus niphonius	20.7629
+ハオコゼ:Paracentropogon rubripinnis	9.75387
+マアジ:Trachurus japonicus	7.20146
+セトダイ:Hapalogenys analis	4.62099

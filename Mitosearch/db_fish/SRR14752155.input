@@ -1,8 +1,9 @@
-16396	クサビフグ:Ranzania laevis
-10595	ウツボ:Gymnothorax kidako
-9530	クラカケウツボ:Gymnothorax rueppellii
-7963	サザナミハギ:Ctenochaetus striatus
-7596	クマドリ:Balistapus undulatus
-6179	キハダ:Thunnus albacares
-3291	カスミアジ:Caranx melampygus
-1655	ミノカエルウオ:Cirripectes polyzona
+id	SRR14752155.fastq
+クサビフグ:Ranzania laevis	25.941
+ウツボ:Gymnothorax kidako	16.7629
+クラカケウツボ:Gymnothorax rueppellii	15.0779
+サザナミハギ:Ctenochaetus striatus	12.5987
+クマドリ:Balistapus undulatus	12.018
+キハダ:Thunnus albacares	9.77613
+カスミアジ:Caranx melampygus	5.20687
+ミノカエルウオ:Cirripectes polyzona	2.61846

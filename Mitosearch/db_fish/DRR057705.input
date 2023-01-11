@@ -1,4 +1,5 @@
-45750	カタクチイワシ科:Engraulis japonicus
-2960	フグ科:Takifugu fasciatus
-2346	サワラ:Scomberomorus niphonius
-741	ホンベラ:Halichoeres tenuispinis
+id	DRR057705.fastq
+カタクチイワシ科:Engraulis japonicus	88.3256
+フグ科:Takifugu fasciatus	5.71462
+サワラ:Scomberomorus niphonius	4.52922
+ホンベラ:Halichoeres tenuispinis	1.43058

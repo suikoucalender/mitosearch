@@ -1,9 +1,10 @@
-77	トビエイ科:Myliobatis californica
-39	エソ科:Synodus lucioceps
-14	ドチザメ:Triakis scyllium
-14	Chilara taylori
-13	マオナガ:Alopias vulpinus
-11	カスザメ科:Squatina dumeril
-10	Gibbonsia montereyensis
-7	ウチワザメ科:Platyrhina sinensis
-6	ヒガシホウライエソ:Chauliodus macouni
+id	SRR12791289.fastq
+トビエイ科:Myliobatis californica	40.3141
+エソ科:Synodus lucioceps	20.4188
+ドチザメ:Triakis scyllium	7.32984
+Chilara taylori	7.32984
+マオナガ:Alopias vulpinus	6.80628
+カスザメ科:Squatina dumeril	5.75916
+Gibbonsia montereyensis	5.2356
+ウチワザメ科:Platyrhina sinensis	3.66492
+ヒガシホウライエソ:Chauliodus macouni	3.14136

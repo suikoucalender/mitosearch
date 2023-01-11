@@ -1,12 +1,13 @@
-63	コボラ:Planiliza macrolepis
-18	ナンヨウチヌ:Acanthopagrus pacificus
-13	ギンユゴイ:Kuhlia mugil
-11	オオウナギ:Anguilla marmorata
-10	ゴマフエダイ:Lutjanus argentimaculatus
-4	ハゼ科:Yongeichthys criniger
-3	タネハゼ:Callogobius tanegasimae
-3	サヨリ科:Zenarchopterus dispar
-3	カワアナゴ科:Ophiocara porocephala
-3	クロヨシノボリ:Rhinogobius brunneus
-2	ゴマアイゴ:Siganus guttatus
-2	サルハゼ:Oxyurichthys saru
+id	DRR301679.fastq
+コボラ:Planiliza macrolepis	46.6667
+ナンヨウチヌ:Acanthopagrus pacificus	13.3333
+ギンユゴイ:Kuhlia mugil	9.62963
+オオウナギ:Anguilla marmorata	8.14815
+ゴマフエダイ:Lutjanus argentimaculatus	7.40741
+ハゼ科:Yongeichthys criniger	2.96296
+タネハゼ:Callogobius tanegasimae	2.22222
+サヨリ科:Zenarchopterus dispar	2.22222
+カワアナゴ科:Ophiocara porocephala	2.22222
+クロヨシノボリ:Rhinogobius brunneus	2.22222
+ゴマアイゴ:Siganus guttatus	1.48148
+サルハゼ:Oxyurichthys saru	1.48148

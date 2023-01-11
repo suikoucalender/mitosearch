@@ -1,18 +1,19 @@
-17215	グルクマ:Rastrelliger kanagurta
-16705	メアジ:Selar crumenophthalmus
-15554	Mystacoleucus marginatus
-12737	Hypsibarbus salweenensis
-5367	Barbonymus schwanefeldii
-3493	Clupeichthys perakensis
-2342	タイワンドジョウ科:Channa striata
-2152	Pristolepis rubripinnis
-1765	Achiroides leucorhynchos
-1712	Barbonymus gonionotus
-1684	Puntioplites proctozystron
-1620	カワスズメ科:Oreochromis sp. 'red tilapia'
-1460	Hampala macrolepidota
-1426	Cyclocheilichthys armatus
-1419	Yasuhikotakia eos
-1400	ナイルティラピア:Oreochromis niloticus
-1245	Hemibagrus sp. RCH-2015
-1145	Raiamas guttatus
+id	ERR3514704.fastq
+グルクマ:Rastrelliger kanagurta	19.0345
+メアジ:Selar crumenophthalmus	18.4706
+Mystacoleucus marginatus	17.198
+Hypsibarbus salweenensis	14.0832
+Barbonymus schwanefeldii	5.93426
+Clupeichthys perakensis	3.86219
+タイワンドジョウ科:Channa striata	2.58953
+Pristolepis rubripinnis	2.37945
+Achiroides leucorhynchos	1.95155
+Barbonymus gonionotus	1.89295
+Puntioplites proctozystron	1.86199
+カワスズメ科:Oreochromis sp. 'red tilapia'	1.79122
+Hampala macrolepidota	1.61431
+Cyclocheilichthys armatus	1.57672
+Yasuhikotakia eos	1.56898
+ナイルティラピア:Oreochromis niloticus	1.54797
+Hemibagrus sp. RCH-2015	1.37659
+Raiamas guttatus	1.26602

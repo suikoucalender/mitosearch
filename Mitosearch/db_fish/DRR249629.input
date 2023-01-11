@@ -1,6 +1,7 @@
-9030	カタクチイワシ科:Engraulis japonicus
-6958	コノシロ:Konosirus punctatus
-985	ニシン科:Sardinops sagax
-382	スズキ:Lateolabrax japonicus
-332	スジハゼ:Acentrogobius virgatulus
-241	ハタタテヌメリ:Callionymus valenciennei
+id	DRR249629.fastq
+カタクチイワシ科:Engraulis japonicus	50.3681
+コノシロ:Konosirus punctatus	38.8108
+ニシン科:Sardinops sagax	5.4942
+スズキ:Lateolabrax japonicus	2.13075
+スジハゼ:Acentrogobius virgatulus	1.85185
+ハタタテヌメリ:Callionymus valenciennei	1.34427

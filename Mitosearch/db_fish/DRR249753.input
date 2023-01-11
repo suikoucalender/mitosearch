@@ -1,9 +1,10 @@
-6366	コノシロ:Konosirus punctatus
-6307	カタクチイワシ科:Engraulis japonicus
-2164	サッパ:Sardinella zunasi
-1340	キンメダイ:Beryx splendens
-627	サワラ:Scomberomorus niphonius
-465	シログチ:Pennahia argentata
-463	シモフリシマハゼ:Tridentiger bifasciatus
-430	スズキ:Lateolabrax japonicus
-365	マサバ:Scomber japonicus
+id	DRR249753.fastq
+コノシロ:Konosirus punctatus	34.3607
+カタクチイワシ科:Engraulis japonicus	34.0422
+サッパ:Sardinella zunasi	11.6803
+キンメダイ:Beryx splendens	7.23269
+サワラ:Scomberomorus niphonius	3.38425
+シログチ:Pennahia argentata	2.50985
+シモフリシマハゼ:Tridentiger bifasciatus	2.49906
+スズキ:Lateolabrax japonicus	2.32094
+マサバ:Scomber japonicus	1.9701

@@ -1,7 +1,8 @@
-2582	ホソトビウオ:Cypselurus hiraii
-2498	カタクチイワシ科:Engraulis japonicus
-2224	サワラ:Scomberomorus niphonius
-1688	ニシン科:Sardinops sagax
-1060	Parambassis lala
-718	クロダイ:Acanthopagrus schlegelii
-231	マアジ:Trachurus japonicus
+id	DRR057758.fastq
+ホソトビウオ:Cypselurus hiraii	23.4706
+カタクチイワシ科:Engraulis japonicus	22.707
+サワラ:Scomberomorus niphonius	20.2163
+ニシン科:Sardinops sagax	15.3441
+Parambassis lala	9.63549
+クロダイ:Acanthopagrus schlegelii	6.52668
+マアジ:Trachurus japonicus	2.09981

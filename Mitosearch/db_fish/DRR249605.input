@@ -1,10 +1,11 @@
-912	コノシロ:Konosirus punctatus
-878	シログチ:Pennahia argentata
-523	アカエイ:Hemitrygon akajei
-306	マダイ:Pagrus major
-135	スズキ:Lateolabrax japonicus
-113	ドチザメ:Triakis scyllium
-112	Parambassis lala
-103	アカカマス:Sphyraena pinguis
-45	ガンギエイ科:Dipturus kwangtungensis
-38	クロダイ:Acanthopagrus schlegelii
+id	DRR249605.fastq
+コノシロ:Konosirus punctatus	28.8152
+シログチ:Pennahia argentata	27.7409
+アカエイ:Hemitrygon akajei	16.5245
+マダイ:Pagrus major	9.66825
+スズキ:Lateolabrax japonicus	4.2654
+ドチザメ:Triakis scyllium	3.5703
+Parambassis lala	3.5387
+アカカマス:Sphyraena pinguis	3.25434
+ガンギエイ科:Dipturus kwangtungensis	1.4218
+クロダイ:Acanthopagrus schlegelii	1.20063

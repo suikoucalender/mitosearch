@@ -1,11 +1,12 @@
-1068	スズキ:Lateolabrax japonicus
-381	イワハダカ:Benthosema pterotum
-349	ニシン科:Sardinops sagax
-311	ナガレメイタガレイ:Pleuronichthys cornutus
-310	Eutrigla gurnardus
-199	イズヒメエイ:Hemitrygon izuensis
-166	ホウボウ:Chelidonichthys spinosus
-90	カンパチ:Seriola dumerili
-70	トビエイ科:Myliobatis aquila
-34	ホシエイ:Bathytoshia brevicaudata
-31	タチウオ:Trichiurus japonicus
+id	DRR249785.fastq
+スズキ:Lateolabrax japonicus	35.4935
+イワハダカ:Benthosema pterotum	12.662
+ニシン科:Sardinops sagax	11.5985
+ナガレメイタガレイ:Pleuronichthys cornutus	10.3357
+Eutrigla gurnardus	10.3024
+イズヒメエイ:Hemitrygon izuensis	6.61349
+ホウボウ:Chelidonichthys spinosus	5.51678
+カンパチ:Seriola dumerili	2.99103
+トビエイ科:Myliobatis aquila	2.32635
+ホシエイ:Bathytoshia brevicaudata	1.12994
+タチウオ:Trichiurus japonicus	1.03024

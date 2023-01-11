@@ -1,10 +1,11 @@
-5979	カタクチイワシ科:Engraulis japonicus
-3688	シログチ:Pennahia argentata
-3227	スズキ:Lateolabrax japonicus
-2778	コノシロ:Konosirus punctatus
-1413	サッパ:Sardinella zunasi
-1203	テンジクダイ:Jaydia lineata
-1137	チダイ:Evynnis tumifrons
-1100	ハゼ科:Chaeturichthys stigmatias
-302	タチウオ:Trichiurus japonicus
-282	ホシザメ:Mustelus manazo
+id	DRR249954.fastq
+カタクチイワシ科:Engraulis japonicus	28.3244
+シログチ:Pennahia argentata	17.4712
+スズキ:Lateolabrax japonicus	15.2873
+コノシロ:Konosirus punctatus	13.1603
+サッパ:Sardinella zunasi	6.69383
+テンジクダイ:Jaydia lineata	5.69899
+チダイ:Evynnis tumifrons	5.38633
+ハゼ科:Chaeturichthys stigmatias	5.21105
+タチウオ:Trichiurus japonicus	1.43067
+ホシザメ:Mustelus manazo	1.33592

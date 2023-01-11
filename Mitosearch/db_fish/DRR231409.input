@@ -1,10 +1,11 @@
-53656	ヌマチチブ:Tridentiger brevispinis
-8180	ゲンゴロウブナ:Carassius cuvieri
-5613	コイ:Cyprinus carpio
-4515	Zacco platypus
-3330	チチブ:Tridentiger obscurus
-2843	Tribolodon hakonensis
-2725	マハゼ:Acanthogobius flavimanus
-2304	ウキゴリ:Gymnogobius urotaenia
-1545	ミナミメダカ:Oryzias latipes
-1445	ギンブナ:Carassius langsdorfii
+id	DRR231409.fastq
+ヌマチチブ:Tridentiger brevispinis	62.2777
+ゲンゴロウブナ:Carassius cuvieri	9.49441
+コイ:Cyprinus carpio	6.51493
+Zacco platypus	5.24049
+チチブ:Tridentiger obscurus	3.86508
+Tribolodon hakonensis	3.29983
+マハゼ:Acanthogobius flavimanus	3.16287
+ウキゴリ:Gymnogobius urotaenia	2.67422
+ミナミメダカ:Oryzias latipes	1.79326
+ギンブナ:Carassius langsdorfii	1.67719

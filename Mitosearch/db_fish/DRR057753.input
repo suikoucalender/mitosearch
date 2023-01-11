@@ -1,10 +1,11 @@
-10799	Parambassis lala
-8963	カタクチイワシ科:Engraulis japonicus
-6572	クロダイ:Acanthopagrus schlegelii
-1872	シマイサキ:Rhynchopelates oxyrhynchus
-1812	ブリ:Seriola quinqueradiata
-974	シロメバル:Sebastes cheni
-744	サワラ:Scomberomorus niphonius
-658	クサフグ:Takifugu alboplumbeus
-498	ニシン科:Sardinops sagax
-447	マアジ:Trachurus japonicus
+id	DRR057753.fastq
+Parambassis lala	32.3915
+カタクチイワシ科:Engraulis japonicus	26.8844
+クロダイ:Acanthopagrus schlegelii	19.7126
+シマイサキ:Rhynchopelates oxyrhynchus	5.61505
+ブリ:Seriola quinqueradiata	5.43508
+シロメバル:Sebastes cheni	2.9215
+サワラ:Scomberomorus niphonius	2.23162
+クサフグ:Takifugu alboplumbeus	1.97366
+ニシン科:Sardinops sagax	1.49375
+マアジ:Trachurus japonicus	1.34077

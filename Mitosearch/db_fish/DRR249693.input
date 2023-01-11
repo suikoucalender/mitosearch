@@ -1,8 +1,9 @@
-2123	カタクチイワシ科:Engraulis japonicus
-2121	コノシロ:Konosirus punctatus
-673	サッパ:Sardinella zunasi
-601	ギマ:Triacanthus biaculeatus
-148	アカエイ:Hemitrygon akajei
-117	ブリ:Seriola quinqueradiata
-97	スズキ:Lateolabrax japonicus
-89	シログチ:Pennahia argentata
+id	DRR249693.fastq
+カタクチイワシ科:Engraulis japonicus	35.5671
+コノシロ:Konosirus punctatus	35.5336
+サッパ:Sardinella zunasi	11.2749
+ギマ:Triacanthus biaculeatus	10.0687
+アカエイ:Hemitrygon akajei	2.47948
+ブリ:Seriola quinqueradiata	1.96013
+スズキ:Lateolabrax japonicus	1.62506
+シログチ:Pennahia argentata	1.49104

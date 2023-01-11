@@ -1,8 +1,9 @@
-8583	カタクチイワシ科:Engraulis japonicus
-2670	Tribolodon hakonensis
-2121	マアジ:Trachurus japonicus
-1759	コノシロ:Konosirus punctatus
-1717	シマイサキ:Rhynchopelates oxyrhynchus
-1498	ナンカイウマヅラハギ:Thamnaconus septentrionalis
-1256	アベハゼ:Mugilogobius abei
-989	ホソトビウオ:Cypselurus hiraii
+id	DRR057643.fastq
+カタクチイワシ科:Engraulis japonicus	41.6792
+Tribolodon hakonensis	12.9656
+マアジ:Trachurus japonicus	10.2996
+コノシロ:Konosirus punctatus	8.54174
+シマイサキ:Rhynchopelates oxyrhynchus	8.33778
+ナンカイウマヅラハギ:Thamnaconus septentrionalis	7.27432
+アベハゼ:Mugilogobius abei	6.09916
+ホソトビウオ:Cypselurus hiraii	4.8026

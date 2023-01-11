@@ -1,8 +1,9 @@
-49872	Dorosoma cepedianum
-37538	Ictiobus niger
-14945	Ictiobus bubalus
-6708	ブルーギル:Lepomis macrochirus
-6659	Aplodinotus grunniens
-2567	サンフィッシュ科:Lepomis gibbosus
-2356	コイ:Cyprinus carpio
-2029	Carpiodes cyprinus
+id	SRR12451354.fastq
+Dorosoma cepedianum	40.6541
+Ictiobus niger	30.5998
+Ictiobus bubalus	12.1827
+ブルーギル:Lepomis macrochirus	5.46815
+Aplodinotus grunniens	5.42821
+サンフィッシュ科:Lepomis gibbosus	2.09254
+コイ:Cyprinus carpio	1.92054
+Carpiodes cyprinus	1.65398

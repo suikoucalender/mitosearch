@@ -1,8 +1,9 @@
-3300	Parambassis lala
-2216	シロウオ:Leucopsarion petersii
-2084	クロダイ:Acanthopagrus schlegelii
-1782	ダツ:Strongylura anastomella
-650	ブリ:Seriola quinqueradiata
-394	スジハゼ:Acentrogobius virgatulus
-333	マダイ:Pagrus major
-285	ビンナガ:Thunnus alalunga
+id	DRR057564.fastq
+Parambassis lala	29.8805
+シロウオ:Leucopsarion petersii	20.0652
+クロダイ:Acanthopagrus schlegelii	18.87
+ダツ:Strongylura anastomella	16.1355
+ブリ:Seriola quinqueradiata	5.88555
+スジハゼ:Acentrogobius virgatulus	3.56755
+マダイ:Pagrus major	3.01521
+ビンナガ:Thunnus alalunga	2.58059

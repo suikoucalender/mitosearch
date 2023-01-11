@@ -1,8 +1,9 @@
-646	スジハゼ:Acentrogobius virgatulus
-558	マアジ:Trachurus japonicus
-360	オオメハタ:Malakichthys griseus
-278	リュウグウハゼ:Pterogobius zacalles
-262	ホシザメ:Mustelus manazo
-236	スズキ:Lateolabrax japonicus
-137	タチウオ:Trichiurus japonicus
-71	トラギス:Parapercis pulchella
+id	DRR249712.fastq
+スジハゼ:Acentrogobius virgatulus	25.3532
+マアジ:Trachurus japonicus	21.8995
+オオメハタ:Malakichthys griseus	14.1287
+リュウグウハゼ:Pterogobius zacalles	10.9105
+ホシザメ:Mustelus manazo	10.2826
+スズキ:Lateolabrax japonicus	9.26217
+タチウオ:Trichiurus japonicus	5.37677
+トラギス:Parapercis pulchella	2.7865

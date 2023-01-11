@@ -1,9 +1,10 @@
-40571	ボラ:Mugil cephalus
-12750	カタクチイワシ科:Engraulis japonicus
-3070	コノシロ:Konosirus punctatus
-2776	ギマ:Triacanthus biaculeatus
-1841	スズキ:Lateolabrax japonicus
-1218	サッパ:Sardinella zunasi
-907	アカエイ:Hemitrygon akajei
-849	Parambassis lala
-740	キチヌ:Acanthopagrus latus
+id	DRR249702.fastq
+ボラ:Mugil cephalus	62.685
+カタクチイワシ科:Engraulis japonicus	19.6996
+コノシロ:Konosirus punctatus	4.74336
+ギマ:Triacanthus biaculeatus	4.28911
+スズキ:Lateolabrax japonicus	2.84447
+サッパ:Sardinella zunasi	1.88189
+アカエイ:Hemitrygon akajei	1.40138
+Parambassis lala	1.31176
+キチヌ:Acanthopagrus latus	1.14335

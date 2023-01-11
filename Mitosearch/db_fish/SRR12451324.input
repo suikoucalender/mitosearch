@@ -1,9 +1,10 @@
-159	ハクレン:Hypophthalmichthys molitrix
-44	コイ:Cyprinus carpio
-35	ソウギョ:Ctenopharyngodon idella
-20	Catostomus columbianus
-18	Notropis atherinoides
-14	Notropis volucellus
-12	Catostomus commersonii
-8	Ictiobus cyprinellus
-5	Notropis buchanani
+id	SRR12451324.fastq
+ハクレン:Hypophthalmichthys molitrix	50.4762
+コイ:Cyprinus carpio	13.9683
+ソウギョ:Ctenopharyngodon idella	11.1111
+Catostomus columbianus	6.34921
+Notropis atherinoides	5.71429
+Notropis volucellus	4.44444
+Catostomus commersonii	3.80952
+Ictiobus cyprinellus	2.53968
+Notropis buchanani	1.5873

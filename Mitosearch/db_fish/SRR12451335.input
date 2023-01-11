@@ -1,6 +1,7 @@
-14570	Moxostoma cervinum
-9890	Moxostoma macrolepidotum
-9369	Moxostoma anisurum
-7469	Ictiobus bubalus
-4065	Notropis heterolepis
-4050	Hiodon alosoides
+id	SRR12451335.fastq
+Moxostoma cervinum	29.4862
+Moxostoma macrolepidotum	20.015
+Moxostoma anisurum	18.9606
+Ictiobus bubalus	15.1155
+Notropis heterolepis	8.22658
+Hiodon alosoides	8.19622

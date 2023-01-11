@@ -1,7 +1,8 @@
-31812	カワムツ:Nipponocypris temminckii
-12367	Zacco platypus
-11853	クロヨシノボリ:Rhinogobius brunneus
-4391	ヌマムツ:Nipponocypris sieboldii
-1660	ドジョウ:Misgurnus anguillicaudatus
-1566	アユ:Plecoglossus altivelis
-1312	ウキゴリ:Gymnogobius urotaenia
+id	DRR069548.fastq
+カワムツ:Nipponocypris temminckii	48.9709
+Zacco platypus	19.0376
+クロヨシノボリ:Rhinogobius brunneus	18.2463
+ヌマムツ:Nipponocypris sieboldii	6.75944
+ドジョウ:Misgurnus anguillicaudatus	2.55538
+アユ:Plecoglossus altivelis	2.41068
+ウキゴリ:Gymnogobius urotaenia	2.01967

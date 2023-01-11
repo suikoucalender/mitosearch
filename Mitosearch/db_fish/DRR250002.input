@@ -1,8 +1,9 @@
-2186	カタクチイワシ科:Engraulis japonicus
-366	コノシロ:Konosirus punctatus
-312	キハダ:Thunnus albacares
-130	アカエイ:Hemitrygon akajei
-108	サヨリ:Hyporhamphus sajori
-100	ハゼ科:Chaeturichthys stigmatias
-62	コチ科:Platycephalus sp. 2 LL-2021
-38	サッパ:Sardinella zunasi
+id	DRR250002.fastq
+カタクチイワシ科:Engraulis japonicus	66.2023
+コノシロ:Konosirus punctatus	11.0842
+キハダ:Thunnus albacares	9.44882
+アカエイ:Hemitrygon akajei	3.93701
+サヨリ:Hyporhamphus sajori	3.27075
+ハゼ科:Chaeturichthys stigmatias	3.02847
+コチ科:Platycephalus sp. 2 LL-2021	1.87765
+サッパ:Sardinella zunasi	1.15082

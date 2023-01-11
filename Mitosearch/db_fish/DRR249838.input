@@ -1,5 +1,6 @@
-4684	スズキ:Lateolabrax japonicus
-3500	カタクチイワシ科:Engraulis japonicus
-1702	クサフグ:Takifugu alboplumbeus
-754	カサゴ:Sebastiscus marmoratus
-724	コノシロ:Konosirus punctatus
+id	DRR249838.fastq
+スズキ:Lateolabrax japonicus	41.2179
+カタクチイワシ科:Engraulis japonicus	30.799
+クサフグ:Takifugu alboplumbeus	14.9771
+カサゴ:Sebastiscus marmoratus	6.63499
+コノシロ:Konosirus punctatus	6.371

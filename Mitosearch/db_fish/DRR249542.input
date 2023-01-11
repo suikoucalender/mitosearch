@@ -1,8 +1,9 @@
-4310	カタクチイワシ科:Engraulis japonicus
-3574	アカアマダイ:Branchiostegus japonicus
-2378	コノシロ:Konosirus punctatus
-1012	ブリ:Seriola quinqueradiata
-921	スズキ:Lateolabrax japonicus
-566	サワラ:Scomberomorus niphonius
-319	ハゼ科:Chaeturichthys stigmatias
-148	ゴンズイ:Plotosus japonicus
+id	DRR249542.fastq
+カタクチイワシ科:Engraulis japonicus	32.5824
+アカアマダイ:Branchiostegus japonicus	27.0184
+コノシロ:Konosirus punctatus	17.977
+ブリ:Seriola quinqueradiata	7.65044
+スズキ:Lateolabrax japonicus	6.9625
+サワラ:Scomberomorus niphonius	4.2788
+ハゼ科:Chaeturichthys stigmatias	2.41155
+ゴンズイ:Plotosus japonicus	1.11884

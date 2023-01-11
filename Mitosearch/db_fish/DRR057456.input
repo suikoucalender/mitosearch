@@ -1,10 +1,11 @@
-8566	カタクチイワシ科:Engraulis japonicus
-8492	スジハゼ:Acentrogobius virgatulus
-6802	ヒイラギ:Nuchequula nuchalis
-3985	Parambassis lala
-3018	ハゼ科:Chaeturichthys stigmatias
-2984	ホソトビウオ:Cypselurus hiraii
-2381	クロダイ:Acanthopagrus schlegelii
-2230	スズキ:Lateolabrax japonicus
-1486	ホンベラ:Halichoeres tenuispinis
-1169	マアジ:Trachurus japonicus
+id	DRR057456.fastq
+カタクチイワシ科:Engraulis japonicus	20.8353
+スジハゼ:Acentrogobius virgatulus	20.6553
+ヒイラギ:Nuchequula nuchalis	16.5446
+Parambassis lala	9.6928
+ハゼ科:Chaeturichthys stigmatias	7.34074
+ホソトビウオ:Cypselurus hiraii	7.25804
+クロダイ:Acanthopagrus schlegelii	5.79136
+スズキ:Lateolabrax japonicus	5.42408
+ホンベラ:Halichoeres tenuispinis	3.61443
+マアジ:Trachurus japonicus	2.84338

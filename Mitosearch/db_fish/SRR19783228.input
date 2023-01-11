@@ -1,9 +1,10 @@
-3648	Paralabrax nebulifer
-1851	Hypsoblennius ionthas
-569	Paralabrax maculatofasciatus
-517	エソ科:Synodus lucioceps
-498	Paralabrax clathratus
-287	キハダ:Thunnus albacares
-210	ウシノシタ科:Symphurus atricaudus
-170	Larimus fasciatus
-102	Seriphus politus
+id	SRR19783228.fastq
+Paralabrax nebulifer	46.4595
+Hypsoblennius ionthas	23.5736
+Paralabrax maculatofasciatus	7.24656
+エソ科:Synodus lucioceps	6.58431
+Paralabrax clathratus	6.34233
+キハダ:Thunnus albacares	3.65512
+ウシノシタ科:Symphurus atricaudus	2.67448
+Larimus fasciatus	2.16505
+Seriphus politus	1.29903

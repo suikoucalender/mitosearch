@@ -1,7 +1,8 @@
-8561	コノシロ:Konosirus punctatus
-3977	マアジ:Trachurus japonicus
-1648	サッパ:Sardinella zunasi
-1290	スジハゼ:Acentrogobius virgatulus
-1117	クロダイ:Acanthopagrus schlegelii
-1020	Parambassis lala
-345	ホシザメ:Mustelus manazo
+id	DRR249944.fastq
+コノシロ:Konosirus punctatus	47.6723
+マアジ:Trachurus japonicus	22.1461
+サッパ:Sardinella zunasi	9.17697
+スジハゼ:Acentrogobius virgatulus	7.18343
+クロダイ:Acanthopagrus schlegelii	6.22007
+Parambassis lala	5.67992
+ホシザメ:Mustelus manazo	1.92115

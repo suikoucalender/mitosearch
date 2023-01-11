@@ -1,4 +1,5 @@
-2063	ブルーギル:Lepomis macrochirus
-525	ソウギョ:Ctenopharyngodon idella
-162	キンギョ:Carassius auratus
-38	Perca flavescens
+id	SRR12534660.fastq
+ブルーギル:Lepomis macrochirus	73.9957
+ソウギョ:Ctenopharyngodon idella	18.8307
+キンギョ:Carassius auratus	5.81062
+Perca flavescens	1.36298

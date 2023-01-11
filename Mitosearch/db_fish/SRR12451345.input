@@ -1,8 +1,9 @@
-16388	Pomoxis annularis
-1746	Morone chrysops
-1105	サンフィッシュ科:Micropterus salmoides
-1025	Ictiobus niger
-339	Notropis atherinoides
-254	Pomoxis nigromaculatus
-226	Sander vitreus
-225	Brevoortia patronus
+id	SRR12451345.fastq
+Pomoxis annularis	76.9101
+Morone chrysops	8.19411
+サンフィッシュ科:Micropterus salmoides	5.18585
+Ictiobus niger	4.8104
+Notropis atherinoides	1.59095
+Pomoxis nigromaculatus	1.19204
+Sander vitreus	1.06063
+Brevoortia patronus	1.05594

@@ -1,7 +1,8 @@
-170	クロヨシノボリ:Rhinogobius brunneus
-43	ハス:Opsariichthys uncirostris
-15	Zacco platypus
-8	カワムツ:Nipponocypris temminckii
-4	Tribolodon hakonensis
-3	ウツセミカジカ:Cottus reinii
-3	アユ:Plecoglossus altivelis
+id	DRR069676.fastq
+クロヨシノボリ:Rhinogobius brunneus	69.1057
+ハス:Opsariichthys uncirostris	17.4797
+Zacco platypus	6.09756
+カワムツ:Nipponocypris temminckii	3.25203
+Tribolodon hakonensis	1.62602
+ウツセミカジカ:Cottus reinii	1.21951
+アユ:Plecoglossus altivelis	1.21951

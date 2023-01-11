@@ -1,5 +1,6 @@
-1440	ニシン科:Sardinops sagax
-771	マサバ:Scomber japonicus
-542	コノシロ:Konosirus punctatus
-215	シログチ:Pennahia argentata
-165	カタクチイワシ科:Engraulis japonicus
+id	DRR249609.fastq
+ニシン科:Sardinops sagax	45.9623
+マサバ:Scomber japonicus	24.609
+コノシロ:Konosirus punctatus	17.2997
+シログチ:Pennahia argentata	6.86243
+カタクチイワシ科:Engraulis japonicus	5.26652

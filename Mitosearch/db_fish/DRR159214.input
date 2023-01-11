@@ -1,6 +1,7 @@
-157	オオウナギ:Anguilla marmorata
-22	アヤヨシノボリ:Rhinogobius sp. MO
-12	クロヨシノボリ:Rhinogobius brunneus
-10	シマヨシノボリ:Rhinogobius nagoyae
-5	ボウズハゼ:Sicyopterus japonicus
-5	ボラ:Mugil cephalus
+id	DRR159214.fastq
+オオウナギ:Anguilla marmorata	74.4076
+アヤヨシノボリ:Rhinogobius sp. MO	10.4265
+クロヨシノボリ:Rhinogobius brunneus	5.6872
+シマヨシノボリ:Rhinogobius nagoyae	4.73934
+ボウズハゼ:Sicyopterus japonicus	2.36967
+ボラ:Mugil cephalus	2.36967

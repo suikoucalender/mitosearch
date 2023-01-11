@@ -1,10 +1,11 @@
-18322	カタクチイワシ科:Engraulis japonicus
-5742	マハゼ:Acanthogobius flavimanus
-2425	スズキ:Lateolabrax japonicus
-2327	ニシン科:Sardinops sagax
-1835	ブリ:Seriola quinqueradiata
-1062	チダイ:Evynnis tumifrons
-1056	マアジ:Trachurus japonicus
-849	アイナメ:Hexagrammos otakii
-438	イサキ:Parapristipoma trilineatum
-378	ボラ:Mugil cephalus
+id	DRR057683.fastq
+カタクチイワシ科:Engraulis japonicus	53.209
+マハゼ:Acanthogobius flavimanus	16.6754
+スズキ:Lateolabrax japonicus	7.04246
+ニシン科:Sardinops sagax	6.75786
+ブリ:Seriola quinqueradiata	5.32904
+チダイ:Evynnis tumifrons	3.08416
+マアジ:Trachurus japonicus	3.06674
+アイナメ:Hexagrammos otakii	2.46559
+イサキ:Parapristipoma trilineatum	1.272
+ボラ:Mugil cephalus	1.09775

@@ -1,8 +1,9 @@
-54161	Dorosoma cepedianum
-17961	Ictiobus niger
-10742	Ictiobus bubalus
-3978	Aplodinotus grunniens
-3724	Pimephales promelas
-2517	Notemigonus crysoleucas
-2500	コイ:Cyprinus carpio
-2370	Sander vitreus
+id	SRR12451353.fastq
+Dorosoma cepedianum	55.2928
+Ictiobus niger	18.3363
+Ictiobus bubalus	10.9665
+Aplodinotus grunniens	4.06113
+Pimephales promelas	3.80182
+Notemigonus crysoleucas	2.5696
+コイ:Cyprinus carpio	2.55224
+Sander vitreus	2.41953

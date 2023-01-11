@@ -1,8 +1,9 @@
-36723	Perca fluviatilis
-17764	Rutilus rutilus
-11859	Tinca tinca
-6556	Esox lucius
-3249	Coregonus sp. 'cluncaformis'
-2208	サンフィッシュ科:Lepomis gibbosus
-1816	ナマズ科:Silurus glanis
-973	コイ:Cyprinus carpio
+id	ERR8701918.fastq
+Perca fluviatilis	45.2544
+Rutilus rutilus	21.8909
+Tinca tinca	14.614
+Esox lucius	8.07907
+Coregonus sp. 'cluncaformis'	4.0038
+サンフィッシュ科:Lepomis gibbosus	2.72095
+ナマズ科:Silurus glanis	2.23789
+コイ:Cyprinus carpio	1.19904

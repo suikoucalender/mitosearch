@@ -1,20 +1,21 @@
-26	ベラ科\nHypsigenyini:Semicossyphus pulcher
-20	ヒラメ科:Paralichthys californicus
-15	Medialuna californiensis
-15	Serranidae sp. JL-2015
-14	Embiotoca lateralis
-12	ベラ科\nJuilidini:Halichoeres californicus
-12	メジナ科:Girella simplicidens
-11	Serranus scriba
-10	メバル科:Sebastes caurinus
-9	Scorpaenichthys marmoratus
-8	シロメバル:Sebastes cheni
-6	Phanerodon vacca
-6	ニシン科:Sardinops sagax
-5	カタクチイワシ科:Engraulis mordax
-5	ネッタイスズメダイ:Pomacentrus moluccensis
-4	Hypsoblennius ionthas
-4	クサビフグ:Ranzania laevis
-3	Paralabrax maculatofasciatus
-3	クロソラスズメダイ:Stegastes nigricans
-3	マサバ:Scomber japonicus
+id	SRR14752159.fastq
+ベラ科\nHypsigenyini:Semicossyphus pulcher	13.6126
+ヒラメ科:Paralichthys californicus	10.4712
+Medialuna californiensis	7.8534
+Serranidae sp. JL-2015	7.8534
+Embiotoca lateralis	7.32984
+ベラ科\nJuilidini:Halichoeres californicus	6.28272
+メジナ科:Girella simplicidens	6.28272
+Serranus scriba	5.75916
+メバル科:Sebastes caurinus	5.2356
+Scorpaenichthys marmoratus	4.71204
+シロメバル:Sebastes cheni	4.18848
+Phanerodon vacca	3.14136
+ニシン科:Sardinops sagax	3.14136
+カタクチイワシ科:Engraulis mordax	2.6178
+ネッタイスズメダイ:Pomacentrus moluccensis	2.6178
+Hypsoblennius ionthas	2.09424
+クサビフグ:Ranzania laevis	2.09424
+Paralabrax maculatofasciatus	1.57068
+クロソラスズメダイ:Stegastes nigricans	1.57068
+マサバ:Scomber japonicus	1.57068

@@ -1,6 +1,7 @@
-183308	イカナゴ:Ammodytes japonicus
-49920	コブシカジカ:Malacocottus zonurus
-36816	ツマグロカジカ:Gymnocanthus herzensteini
-8922	アイカジカ:Gymnocanthus intermedius
-4251	ハタハタ:Arctoscopus japonicus
-3022	イカナゴ科:Ammodytes tobianus
+id	SRR13205760.fastq
+イカナゴ:Ammodytes japonicus	64.0402
+コブシカジカ:Malacocottus zonurus	17.44
+ツマグロカジカ:Gymnocanthus herzensteini	12.862
+アイカジカ:Gymnocanthus intermedius	3.11698
+ハタハタ:Arctoscopus japonicus	1.48512
+イカナゴ科:Ammodytes tobianus	1.05576

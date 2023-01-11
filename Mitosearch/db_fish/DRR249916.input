@@ -1,21 +1,22 @@
-3095	カタクチイワシ科:Engraulis japonicus
-1652	スジハゼ:Acentrogobius virgatulus
-1467	ハタタテヌメリ:Callionymus valenciennei
-1451	コノシロ:Konosirus punctatus
-1054	マアジ:Trachurus japonicus
-430	シロギス:Sillago japonica
-417	ハゼ科:Chaeturichthys stigmatias
-321	サッパ:Sardinella zunasi
-318	シログチ:Pennahia argentata
-317	スズキ:Lateolabrax japonicus
-248	アカエイ:Hemitrygon akajei
-232	イボダイ:Psenopsis anomala
-220	アカカマス:Sphyraena pinguis
-207	コチ科:Platycephalus sp. 2 LL-2021
-171	マダイ:Pagrus major
-166	テンジクダイ:Jaydia lineata
-165	サビハゼ:Sagamia geneionema
-163	マルアジ:Decapterus maruadsi
-152	ヒイラギ:Nuchequula nuchalis
-148	イトヒキハゼ:Myersina filifer
-143	キチヌ:Acanthopagrus latus
+id	DRR249916.fastq
+カタクチイワシ科:Engraulis japonicus	24.6869
+スジハゼ:Acentrogobius virgatulus	13.177
+ハタタテヌメリ:Callionymus valenciennei	11.7014
+コノシロ:Konosirus punctatus	11.5737
+マアジ:Trachurus japonicus	8.40711
+シロギス:Sillago japonica	3.42985
+ハゼ科:Chaeturichthys stigmatias	3.32615
+サッパ:Sardinella zunasi	2.56042
+シログチ:Pennahia argentata	2.53649
+スズキ:Lateolabrax japonicus	2.52852
+アカエイ:Hemitrygon akajei	1.97814
+イボダイ:Psenopsis anomala	1.85052
+アカカマス:Sphyraena pinguis	1.75481
+コチ科:Platycephalus sp. 2 LL-2021	1.65111
+マダイ:Pagrus major	1.36396
+テンジクダイ:Jaydia lineata	1.32408
+サビハゼ:Sagamia geneionema	1.3161
+マルアジ:Decapterus maruadsi	1.30015
+ヒイラギ:Nuchequula nuchalis	1.21241
+イトヒキハゼ:Myersina filifer	1.18051
+キチヌ:Acanthopagrus latus	1.14062

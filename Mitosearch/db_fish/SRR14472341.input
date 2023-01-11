@@ -1,13 +1,14 @@
-23107	カラフトマス:Oncorhynchus gorbuscha
-13715	フエダイ科:Lutjanus griseus
-9464	ニシン科:Clupea harengus
-7718	ボラ科:Mugil curema
-6435	Eucinostomus gula
-5894	Haemulon plumierii
-4410	アジ科:Scomber scombrus
-1902	クロサギ科:Gerres cinereus
-1783	スズメダイ科:Abudefduf saxatilis
-1646	Harengula jaguana
-1339	スギ:Rachycentron canadum
-1172	トウゴロウイワシ科:Atherinomorus stipes
-913	Acanthostracion quadricornis
+id	SRR14472341.fastq
+カラフトマス:Oncorhynchus gorbuscha	29.0661
+フエダイ科:Lutjanus griseus	17.252
+ニシン科:Clupea harengus	11.9047
+ボラ科:Mugil curema	9.70842
+Eucinostomus gula	8.09454
+Haemulon plumierii	7.41402
+アジ科:Scomber scombrus	5.54731
+クロサギ科:Gerres cinereus	2.39251
+スズメダイ科:Abudefduf saxatilis	2.24282
+Harengula jaguana	2.07049
+スギ:Rachycentron canadum	1.68432
+トウゴロウイワシ科:Atherinomorus stipes	1.47425
+Acanthostracion quadricornis	1.14846

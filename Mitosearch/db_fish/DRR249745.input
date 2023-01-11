@@ -1,17 +1,18 @@
-3754	カタクチイワシ科:Engraulis japonicus
-3122	スズキ:Lateolabrax japonicus
-2134	コノシロ:Konosirus punctatus
-975	Parambassis lala
-816	コチ科:Platycephalus sp. 2 LL-2021
-622	アカエイ:Hemitrygon akajei
-552	ゴマフグ:Takifugu stictonotus
-528	ギマ:Triacanthus biaculeatus
-492	シログチ:Pennahia argentata
-445	クロダイ:Acanthopagrus schlegelii
-421	キンメダイ:Beryx splendens
-360	スジハゼ:Acentrogobius virgatulus
-335	シロギス:Sillago japonica
-330	カマス科:Sphyraena japonica
-285	サワラ:Scomberomorus niphonius
-200	ササウシノシタ:Heteromycteris japonicus
-159	ハタタテヌメリ:Callionymus valenciennei
+id	DRR249745.fastq
+カタクチイワシ科:Engraulis japonicus	24.1726
+スズキ:Lateolabrax japonicus	20.103
+コノシロ:Konosirus punctatus	13.7411
+Parambassis lala	6.27817
+コチ科:Platycephalus sp. 2 LL-2021	5.25435
+アカエイ:Hemitrygon akajei	4.00515
+ゴマフグ:Takifugu stictonotus	3.55441
+ギマ:Triacanthus biaculeatus	3.39987
+シログチ:Pennahia argentata	3.16806
+クロダイ:Acanthopagrus schlegelii	2.86542
+キンメダイ:Beryx splendens	2.71088
+スジハゼ:Acentrogobius virgatulus	2.31809
+シロギス:Sillago japonica	2.15712
+カマス科:Sphyraena japonica	2.12492
+サワラ:Scomberomorus niphonius	1.83516
+ササウシノシタ:Heteromycteris japonicus	1.28783
+ハタタテヌメリ:Callionymus valenciennei	1.02382

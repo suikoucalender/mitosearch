@@ -1,6 +1,7 @@
-114363	カワヨシノボリ:Rhinogobius flumineus
-61251	コイ科:Hemigrammocypris neglectus
-33400	ミナミメダカ:Oryzias latipes
-25886	カワムツ:Nipponocypris temminckii
-5770	ギギ:Tachysurus nudiceps
-5756	サンフィッシュ科:Lepomis cyanellus
+id	DRR221518.fastq
+カワヨシノボリ:Rhinogobius flumineus	46.4087
+コイ科:Hemigrammocypris neglectus	24.8557
+ミナミメダカ:Oryzias latipes	13.5538
+カワムツ:Nipponocypris temminckii	10.5046
+ギギ:Tachysurus nudiceps	2.34147
+サンフィッシュ科:Lepomis cyanellus	2.33579

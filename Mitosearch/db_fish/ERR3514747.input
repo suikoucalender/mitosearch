@@ -1,11 +1,12 @@
-55926	ナイルティラピア:Oreochromis niloticus
-15394	Barbonymus gonionotus
-14435	Mystacoleucus marginatus
-9271	タイワンドジョウ科:Channa striata
-5878	Notopterus notopterus
-5139	タイワンドジョウ科:Channa micropeltes
-2555	Pristolepis rubripinnis
-2282	Trichopodus leerii
-2230	Anabas testudineus
-1870	Mystus sp. EM2
-1394	Parambassis ranga
+id	ERR3514747.fastq
+ナイルティラピア:Oreochromis niloticus	48.0571
+Barbonymus gonionotus	13.228
+Mystacoleucus marginatus	12.404
+タイワンドジョウ科:Channa striata	7.96656
+Notopterus notopterus	5.05096
+タイワンドジョウ科:Channa micropeltes	4.41593
+Pristolepis rubripinnis	2.19551
+Trichopodus leerii	1.96092
+Anabas testudineus	1.91624
+Mystus sp. EM2	1.60689
+Parambassis ranga	1.19786

@@ -1,8 +1,9 @@
-100430	サンフィッシュ科:Lepomis cyanellus
-66243	サンフィッシュ科:Micropterus salmoides
-40686	コイ:Cyprinus carpio
-24280	チチブ:Tridentiger obscurus
-13710	コイ科:Sarcocheilichthys nigripinnis morii
-3973	クロヨシノボリ:Rhinogobius brunneus
-3638	キンギョ:Carassius auratus
-3613	コイ科:Sarcocheilichthys davidi
+id	SRR11673807.fastq
+サンフィッシュ科:Lepomis cyanellus	39.1429
+サンフィッシュ科:Micropterus salmoides	25.8184
+コイ:Cyprinus carpio	15.8575
+チチブ:Tridentiger obscurus	9.46319
+コイ科:Sarcocheilichthys nigripinnis morii	5.34351
+クロヨシノボリ:Rhinogobius brunneus	1.54849
+キンギョ:Carassius auratus	1.41792
+コイ科:Sarcocheilichthys davidi	1.40818

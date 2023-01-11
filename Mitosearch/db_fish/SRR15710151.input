@@ -1,6 +1,7 @@
-23319	ボラ:Mugil cephalus
-21062	ボラ科:Planiliza affinis
-10022	コボラ:Planiliza macrolepis
-4910	アンピンボラ:Planiliza subviridis
-1171	メナダ:Planiliza haematocheilus
-999	Valamugil formosae
+id	SRR15710151.fastq
+ボラ:Mugil cephalus	37.9276
+ボラ科:Planiliza affinis	34.2566
+コボラ:Planiliza macrolepis	16.3004
+アンピンボラ:Planiliza subviridis	7.98595
+メナダ:Planiliza haematocheilus	1.90459
+Valamugil formosae	1.62484

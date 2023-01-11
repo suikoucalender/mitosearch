@@ -1,6 +1,7 @@
-2571	スズキ:Lateolabrax japonicus
-1354	ニシン科:Sardinops sagax
-648	カサゴ:Sebastiscus marmoratus
-553	アカエイ:Hemitrygon akajei
-461	コモンカスベ:Okamejei kenojei
-203	ドチザメ:Triakis scyllium
+id	DRR249784.fastq
+スズキ:Lateolabrax japonicus	44.4041
+ニシン科:Sardinops sagax	23.3851
+カサゴ:Sebastiscus marmoratus	11.1917
+アカエイ:Hemitrygon akajei	9.55095
+コモンカスベ:Okamejei kenojei	7.962
+ドチザメ:Triakis scyllium	3.50604

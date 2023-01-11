@@ -1,7 +1,8 @@
-2267	マサバ:Scomber japonicus
-1622	コノシロ:Konosirus punctatus
-989	ニシン科:Sardinops sagax
-947	ボラ:Mugil cephalus
-836	スズキ:Lateolabrax japonicus
-781	メカジキ:Xiphias gladius
-461	タチウオ:Trichiurus japonicus
+id	DRR249824.fastq
+マサバ:Scomber japonicus	28.6853
+コノシロ:Konosirus punctatus	20.5239
+ニシン科:Sardinops sagax	12.5142
+ボラ:Mugil cephalus	11.9828
+スズキ:Lateolabrax japonicus	10.5783
+メカジキ:Xiphias gladius	9.88232
+タチウオ:Trichiurus japonicus	5.83323

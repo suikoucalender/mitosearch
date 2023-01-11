@@ -1,11 +1,12 @@
-4605	コノシロ:Konosirus punctatus
-1746	シロメバル:Sebastes cheni
-989	スズキ:Lateolabrax japonicus
-821	カタクチイワシ科:Engraulis japonicus
-757	コチ科:Platycephalus sp. 2 LL-2021
-676	ヨウジウオ:Syngnathus schlegeli
-532	ハタタテヌメリ:Callionymus valenciennei
-476	アヤメカサゴ:Sebastiscus albofasciatus
-446	チダイ:Evynnis tumifrons
-273	ヒメコダイ:Chelidoperca hirundinacea
-208	シキシマハナダイ:Callanthias japonicus
+id	DRR249887.fastq
+コノシロ:Konosirus punctatus	39.9428
+シロメバル:Sebastes cheni	15.1444
+スズキ:Lateolabrax japonicus	8.57837
+カタクチイワシ科:Engraulis japonicus	7.12117
+コチ科:Platycephalus sp. 2 LL-2021	6.56605
+ヨウジウオ:Syngnathus schlegeli	5.86347
+ハタタテヌメリ:Callionymus valenciennei	4.61445
+アヤメカサゴ:Sebastiscus albofasciatus	4.12872
+チダイ:Evynnis tumifrons	3.86851
+ヒメコダイ:Chelidoperca hirundinacea	2.36794
+シキシマハナダイ:Callanthias japonicus	1.80415

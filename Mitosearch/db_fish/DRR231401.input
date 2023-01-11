@@ -1,11 +1,12 @@
-56580	ヌマチチブ:Tridentiger brevispinis
-4518	チチブ:Tridentiger obscurus
-3436	クロヨシノボリ:Rhinogobius brunneus
-3074	ゲンゴロウブナ:Carassius cuvieri
-2712	コイ:Cyprinus carpio
-1989	マハゼ:Acanthogobius flavimanus
-1871	サンフィッシュ科:Lepomis cyanellus
-1068	ニゴイ:Hemibarbus barbus
-1049	Tribolodon hakonensis
-962	ウキゴリ:Gymnogobius urotaenia
-833	カワムツ:Nipponocypris temminckii
+id	DRR231401.fastq
+ヌマチチブ:Tridentiger brevispinis	72.453
+チチブ:Tridentiger obscurus	5.78548
+クロヨシノボリ:Rhinogobius brunneus	4.39994
+ゲンゴロウブナ:Carassius cuvieri	3.93638
+コイ:Cyprinus carpio	3.47283
+マハゼ:Acanthogobius flavimanus	2.547
+サンフィッシュ科:Lepomis cyanellus	2.39589
+ニゴイ:Hemibarbus barbus	1.36762
+Tribolodon hakonensis	1.34329
+ウキゴリ:Gymnogobius urotaenia	1.23188
+カワムツ:Nipponocypris temminckii	1.06669

@@ -1,9 +1,10 @@
-26941	カタクチイワシ科:Engraulis japonicus
-5905	コノシロ:Konosirus punctatus
-4623	ブリ:Seriola quinqueradiata
-3922	マアジ:Trachurus japonicus
-3220	ニシン科:Sardinops sagax
-1421	フグ科:Takifugu fasciatus
-1302	イマイトビウオ:Cheilopogon arcticeps
-836	Parambassis lala
-628	サワラ:Scomberomorus niphonius
+id	DRR057672.fastq
+カタクチイワシ科:Engraulis japonicus	55.2092
+コノシロ:Konosirus punctatus	12.1009
+ブリ:Seriola quinqueradiata	9.47375
+マアジ:Trachurus japonicus	8.03721
+ニシン科:Sardinops sagax	6.59863
+フグ科:Takifugu fasciatus	2.912
+イマイトビウオ:Cheilopogon arcticeps	2.66814
+Parambassis lala	1.71318
+サワラ:Scomberomorus niphonius	1.28694

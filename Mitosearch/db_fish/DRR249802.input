@@ -1,7 +1,8 @@
-214	ボラ:Mugil cephalus
-77	イソギンポ:Parablennius yatabei
-75	コチ科:Platycephalus sp. 2 LL-2021
-71	Parambassis lala
-68	スジハゼ:Acentrogobius virgatulus
-52	アカカマス:Sphyraena pinguis
-45	クロダイ:Acanthopagrus schlegelii
+id	DRR249802.fastq
+ボラ:Mugil cephalus	35.5482
+イソギンポ:Parablennius yatabei	12.7907
+コチ科:Platycephalus sp. 2 LL-2021	12.4585
+Parambassis lala	11.794
+スジハゼ:Acentrogobius virgatulus	11.2957
+アカカマス:Sphyraena pinguis	8.63787
+クロダイ:Acanthopagrus schlegelii	7.47508

@@ -1,8 +1,9 @@
-55975	サンフィッシュ科:Micropterus salmoides
-9411	Neogobius melanostomus
-4426	Proterorhinus semilunaris
-3617	サンフィッシュ科:Micropterus floridanus
-2514	Brevoortia patronus
-1524	Brevoortia tyrannus
-1089	Pomoxis annularis
-963	Proterorhinus marmoratus
+id	SRR12451344.fastq
+サンフィッシュ科:Micropterus salmoides	70.392
+Neogobius melanostomus	11.8349
+Proterorhinus semilunaris	5.56597
+サンフィッシュ科:Micropterus floridanus	4.5486
+Brevoortia patronus	3.16151
+Brevoortia tyrannus	1.91652
+Pomoxis annularis	1.36948
+Proterorhinus marmoratus	1.21103

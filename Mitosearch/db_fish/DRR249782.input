@@ -1,8 +1,9 @@
-13703	カタクチイワシ科:Engraulis japonicus
-2747	コノシロ:Konosirus punctatus
-1569	スズキ:Lateolabrax japonicus
-1284	サワラ:Scomberomorus niphonius
-583	ブリ:Seriola quinqueradiata
-422	ボラ:Mugil cephalus
-318	ウルメイワシ:Etrumeus micropus
-304	アカエイ:Hemitrygon akajei
+id	DRR249782.fastq
+カタクチイワシ科:Engraulis japonicus	65.4706
+コノシロ:Konosirus punctatus	13.1247
+スズキ:Lateolabrax japonicus	7.49642
+サワラ:Scomberomorus niphonius	6.13473
+ブリ:Seriola quinqueradiata	2.78548
+ボラ:Mugil cephalus	2.01624
+ウルメイワシ:Etrumeus micropus	1.51935
+アカエイ:Hemitrygon akajei	1.45246

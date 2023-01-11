@@ -1,16 +1,17 @@
-144	ナイルティラピア:Oreochromis niloticus
-124	カワスズメ科:Oreochromis sp. 'red tilapia'
-21	Mystacoleucus marginatus
-19	Barbonymus gonionotus
-15	タイワンドジョウ科:Channa striata
-12	バラヒメダイ:Pristipomoides typus
-11	Hypsibarbus vernayi
-9	Clupeichthys goniognathus
-8	Pristolepis rubripinnis
-8	Puntioplites proctozystron
-7	Systomus orphoides
-6	Polynemus dubius
-6	Cyclocheilichthys armatus
-6	Hypsibarbus salweenensis
-6	Anabas testudineus
-5	Barbonymus altus
+id	ERR3514671.fastq
+ナイルティラピア:Oreochromis niloticus	35.3808
+カワスズメ科:Oreochromis sp. 'red tilapia'	30.4668
+Mystacoleucus marginatus	5.15971
+Barbonymus gonionotus	4.6683
+タイワンドジョウ科:Channa striata	3.6855
+バラヒメダイ:Pristipomoides typus	2.9484
+Hypsibarbus vernayi	2.7027
+Clupeichthys goniognathus	2.2113
+Pristolepis rubripinnis	1.9656
+Puntioplites proctozystron	1.9656
+Systomus orphoides	1.7199
+Polynemus dubius	1.4742
+Cyclocheilichthys armatus	1.4742
+Hypsibarbus salweenensis	1.4742
+Anabas testudineus	1.4742
+Barbonymus altus	1.2285

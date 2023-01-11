@@ -1,6 +1,7 @@
-10332	カタクチイワシ科:Engraulis japonicus
-5629	クサフグ:Takifugu alboplumbeus
-2444	ヒイラギ:Nuchequula nuchalis
-842	Parambassis lala
-677	フグ科:Takifugu fasciatus
-458	クロダイ:Acanthopagrus schlegelii
+id	DRR057702.fastq
+カタクチイワシ科:Engraulis japonicus	50.6918
+クサフグ:Takifugu alboplumbeus	27.6175
+ヒイラギ:Nuchequula nuchalis	11.991
+Parambassis lala	4.1311
+フグ科:Takifugu fasciatus	3.32156
+クロダイ:Acanthopagrus schlegelii	2.24708

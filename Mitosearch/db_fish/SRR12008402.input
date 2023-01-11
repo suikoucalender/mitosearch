@@ -1,10 +1,11 @@
-82038	メバル科:Sebastes fasciatus
-11345	ニシン科:Clupea harengus
-9207	タラ科:Gadus morhua
-5776	オオカミウオ科:Anarhichas denticulatus
-5352	メバル科:Sebastes mentella
-5075	カレイ科:Glyptocephalus cynoglossus
-3009	カレイ科:Pseudopleuronectes americanus
-2155	Boreogadus saida
-1621	ヤマトヒゲダラ:Enchelyopus cimbrius
-1552	カジカ科:Artediellus uncinatus
+id	SRR12008402.fastq
+メバル科:Sebastes fasciatus	64.5308
+ニシン科:Clupea harengus	8.92394
+タラ科:Gadus morhua	7.24219
+オオカミウオ科:Anarhichas denticulatus	4.54338
+メバル科:Sebastes mentella	4.20986
+カレイ科:Glyptocephalus cynoglossus	3.99198
+カレイ科:Pseudopleuronectes americanus	2.36687
+Boreogadus saida	1.69512
+ヤマトヒゲダラ:Enchelyopus cimbrius	1.27507
+カジカ科:Artediellus uncinatus	1.2208

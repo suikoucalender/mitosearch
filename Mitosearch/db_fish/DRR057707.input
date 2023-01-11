@@ -1,13 +1,14 @@
-10754	ハゼ科:Chaeturichthys stigmatias
-3539	カタクチイワシ科:Engraulis japonicus
-1493	サワラ:Scomberomorus niphonius
-997	コノシロ:Konosirus punctatus
-926	ナンカイウマヅラハギ:Thamnaconus septentrionalis
-914	Parambassis lala
-819	サヨリ:Hyporhamphus sajori
-685	Eutrigla gurnardus
-615	マアジ:Trachurus japonicus
-550	クロダイ:Acanthopagrus schlegelii
-474	ニシン科:Sardinops sagax
-377	ホウボウ:Chelidonichthys spinosus
-226	スジハゼ:Acentrogobius virgatulus
+id	DRR057707.fastq
+ハゼ科:Chaeturichthys stigmatias	48.0755
+カタクチイワシ科:Engraulis japonicus	15.821
+サワラ:Scomberomorus niphonius	6.67442
+コノシロ:Konosirus punctatus	4.45706
+ナンカイウマヅラハギ:Thamnaconus septentrionalis	4.13966
+Parambassis lala	4.08601
+サヨリ:Hyporhamphus sajori	3.66132
+Eutrigla gurnardus	3.06227
+マアジ:Trachurus japonicus	2.74934
+クロダイ:Acanthopagrus schlegelii	2.45876
+ニシン科:Sardinops sagax	2.119
+ホウボウ:Chelidonichthys spinosus	1.68537
+スジハゼ:Acentrogobius virgatulus	1.01033

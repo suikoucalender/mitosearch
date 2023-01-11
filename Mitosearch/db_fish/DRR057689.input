@@ -1,9 +1,10 @@
-2149	ヒイラギ:Nuchequula nuchalis
-1964	ドジョウ:Misgurnus anguillicaudatus
-1166	ブリ:Seriola quinqueradiata
-1113	Tribolodon hakonensis
-1043	チダイ:Evynnis tumifrons
-891	サワラ:Scomberomorus niphonius
-409	Parambassis lala
-236	クロダイ:Acanthopagrus schlegelii
-125	シロギス:Sillago japonica
+id	DRR057689.fastq
+ヒイラギ:Nuchequula nuchalis	23.6258
+ドジョウ:Misgurnus anguillicaudatus	21.5919
+ブリ:Seriola quinqueradiata	12.8188
+Tribolodon hakonensis	12.2361
+チダイ:Evynnis tumifrons	11.4666
+サワラ:Scomberomorus niphonius	9.79551
+Parambassis lala	4.49648
+クロダイ:Acanthopagrus schlegelii	2.59455
+シロギス:Sillago japonica	1.37423

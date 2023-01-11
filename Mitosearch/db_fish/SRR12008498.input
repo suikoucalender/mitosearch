@@ -1,5 +1,6 @@
-314143	メバル科:Sebastes fasciatus
-19451	メバル科:Sebastes mentella
-15204	カレイ科:Glyptocephalus cynoglossus
-5492	オオカミウオ科:Anarhichas denticulatus
-4852	カラスガレイ:Reinhardtius hippoglossoides
+id	SRR12008498.fastq
+メバル科:Sebastes fasciatus	87.4704
+メバル科:Sebastes mentella	5.41596
+カレイ科:Glyptocephalus cynoglossus	4.23342
+オオカミウオ科:Anarhichas denticulatus	1.5292
+カラスガレイ:Reinhardtius hippoglossoides	1.351

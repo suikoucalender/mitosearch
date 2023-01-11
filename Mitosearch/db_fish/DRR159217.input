@@ -1,7 +1,8 @@
-109	オオウナギ:Anguilla marmorata
-82	シマヨシノボリ:Rhinogobius nagoyae
-66	アヤヨシノボリ:Rhinogobius sp. MO
-24	クロヨシノボリ:Rhinogobius brunneus
-15	コイ:Cyprinus carpio
-9	ルリボウズハゼ:Sicyopterus lagocephalus
-6	ヌマチチブ:Tridentiger brevispinis
+id	DRR159217.fastq
+オオウナギ:Anguilla marmorata	35.0482
+シマヨシノボリ:Rhinogobius nagoyae	26.3666
+アヤヨシノボリ:Rhinogobius sp. MO	21.2219
+クロヨシノボリ:Rhinogobius brunneus	7.71704
+コイ:Cyprinus carpio	4.82315
+ルリボウズハゼ:Sicyopterus lagocephalus	2.89389
+ヌマチチブ:Tridentiger brevispinis	1.92926

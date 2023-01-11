@@ -1,11 +1,12 @@
-8578	カタクチイワシ科:Engraulis japonicus
-4541	サヨリ:Hyporhamphus sajori
-4421	クサフグ:Takifugu alboplumbeus
-2082	フグ科:Takifugu fasciatus
-1760	ヒイラギ:Nuchequula nuchalis
-1721	アカカマス:Sphyraena pinguis
-1389	アイナメ:Hexagrammos otakii
-1301	コノシロ:Konosirus punctatus
-1211	オオカズナギ:Zoarchias major
-952	タウエガジ科:Dictyosoma burgeri
-743	アカオビシマハゼ:Tridentiger trigonocephalus
+id	DRR057654.fastq
+カタクチイワシ科:Engraulis japonicus	29.8895
+サヨリ:Hyporhamphus sajori	15.8229
+クサフグ:Takifugu alboplumbeus	15.4047
+フグ科:Takifugu fasciatus	7.25461
+ヒイラギ:Nuchequula nuchalis	6.13262
+アカカマス:Sphyraena pinguis	5.99672
+アイナメ:Hexagrammos otakii	4.83989
+コノシロ:Konosirus punctatus	4.53326
+オオカズナギ:Zoarchias major	4.21966
+タウエガジ科:Dictyosoma burgeri	3.31719
+アカオビシマハゼ:Tridentiger trigonocephalus	2.58894

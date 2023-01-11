@@ -1,11 +1,12 @@
-671	コノシロ:Konosirus punctatus
-381	カタクチイワシ科:Engraulis japonicus
-235	スズキ:Lateolabrax japonicus
-117	クサフグ:Takifugu alboplumbeus
-100	ハタタテヌメリ:Callionymus valenciennei
-85	ボラ:Mugil cephalus
-75	シロギス:Sillago japonica
-70	Eutrigla gurnardus
-54	ハゼ科:Chaeturichthys stigmatias
-45	ブリ:Seriola quinqueradiata
-38	ホウボウ:Chelidonichthys spinosus
+id	DRR249580.fastq
+コノシロ:Konosirus punctatus	35.8632
+カタクチイワシ科:Engraulis japonicus	20.3634
+スズキ:Lateolabrax japonicus	12.5601
+クサフグ:Takifugu alboplumbeus	6.25334
+ハタタテヌメリ:Callionymus valenciennei	5.34474
+ボラ:Mugil cephalus	4.54303
+シロギス:Sillago japonica	4.00855
+Eutrigla gurnardus	3.74131
+ハゼ科:Chaeturichthys stigmatias	2.88616
+ブリ:Seriola quinqueradiata	2.40513
+ホウボウ:Chelidonichthys spinosus	2.031

@@ -1,7 +1,8 @@
-790	Phoxinus steindachneri
-339	コイ科:Rhynchocypris jouyi
-136	カワムツ:Nipponocypris temminckii
-42	ドジョウ:Misgurnus anguillicaudatus
-38	ドンコ科:Odontobutis obscura
-20	ギンブナ:Carassius langsdorfii
-19	ニシシマドジョウ:Cobitis sp. BIWAE type B
+id	DRR069570.fastq
+Phoxinus steindachneri	57.0809
+コイ科:Rhynchocypris jouyi	24.4942
+カワムツ:Nipponocypris temminckii	9.82659
+ドジョウ:Misgurnus anguillicaudatus	3.03468
+ドンコ科:Odontobutis obscura	2.74566
+ギンブナ:Carassius langsdorfii	1.44509
+ニシシマドジョウ:Cobitis sp. BIWAE type B	1.37283

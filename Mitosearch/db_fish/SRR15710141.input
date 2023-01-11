@@ -1,6 +1,7 @@
-188362	ボラ:Mugil cephalus
-51408	ハゼ科:Pseudogobius taijiangensis
-35384	ナイルティラピア:Oreochromis niloticus
-19034	Hemigobius hoevenii
-18153	Alburnus alburnus
-15723	アベハゼ:Mugilogobius abei
+id	SRR15710141.fastq
+ボラ:Mugil cephalus	57.4162
+ハゼ科:Pseudogobius taijiangensis	15.6701
+ナイルティラピア:Oreochromis niloticus	10.7857
+Hemigobius hoevenii	5.80192
+Alburnus alburnus	5.53337
+アベハゼ:Mugilogobius abei	4.79266

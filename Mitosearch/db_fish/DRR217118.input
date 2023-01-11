@@ -1,6 +1,7 @@
-119	Lepidocephalichthys sp. CBM-ZF-14149
-46	Devario sp. CBM:ZF:11302
-25	Devario devario
-21	タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950
-7	Beaufortia szechuanensis
-3	コウタイ:Channa asiatica
+id	DRR217118.fastq
+Lepidocephalichthys sp. CBM-ZF-14149	53.8462
+Devario sp. CBM:ZF:11302	20.8145
+Devario devario	11.3122
+タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950	9.50226
+Beaufortia szechuanensis	3.16742
+コウタイ:Channa asiatica	1.35747

@@ -1,7 +1,8 @@
-1211	ボラ:Mugil cephalus
-932	コノシロ:Konosirus punctatus
-643	スズキ:Lateolabrax japonicus
-559	コクレン:Hypophthalmichthys nobilis
-387	メカジキ:Xiphias gladius
-377	マサバ:Scomber japonicus
-249	コケギンポ:Neoclinus bryope
+id	DRR249786.fastq
+ボラ:Mugil cephalus	27.788
+コノシロ:Konosirus punctatus	21.386
+スズキ:Lateolabrax japonicus	14.7545
+コクレン:Hypophthalmichthys nobilis	12.827
+メカジキ:Xiphias gladius	8.88022
+マサバ:Scomber japonicus	8.65076
+コケギンポ:Neoclinus bryope	5.71363

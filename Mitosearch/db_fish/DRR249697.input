@@ -1,10 +1,11 @@
-9910	カタクチイワシ科:Engraulis japonicus
-5617	コノシロ:Konosirus punctatus
-2039	サッパ:Sardinella zunasi
-1329	コクレン:Hypophthalmichthys nobilis
-1048	アラ:Niphon spinosus
-661	ニシン科:Sardinops sagax
-648	スズキ:Lateolabrax japonicus
-522	ボラ:Mugil cephalus
-473	ヒイラギ:Nuchequula nuchalis
-467	ギマ:Triacanthus biaculeatus
+id	DRR249697.fastq
+カタクチイワシ科:Engraulis japonicus	43.6295
+コノシロ:Konosirus punctatus	24.7292
+サッパ:Sardinella zunasi	8.97684
+コクレン:Hypophthalmichthys nobilis	5.85102
+アラ:Niphon spinosus	4.61389
+ニシン科:Sardinops sagax	2.9101
+スズキ:Lateolabrax japonicus	2.85287
+ボラ:Mugil cephalus	2.29814
+ヒイラギ:Nuchequula nuchalis	2.08242
+ギマ:Triacanthus biaculeatus	2.056

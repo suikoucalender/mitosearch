@@ -1,11 +1,12 @@
-142613	メバル科:Sebastes fasciatus
-65975	タラ科:Gadus morhua
-50730	メバル科:Sebastes mentella
-16456	Cyclopterus lumpus
-8658	ゲンゲ科:Lycodes vahlii
-7269	ヤマトヒゲダラ:Enchelyopus cimbrius
-5834	カレイ科:Glyptocephalus cynoglossus
-5433	カレイ科:Pseudopleuronectes americanus
-4476	カラスガレイ:Reinhardtius hippoglossoides
-4330	イカナゴ科:Ammodytes tobianus
-4067	オオカミウオ科:Anarhichas denticulatus
+id	SRR12008562.fastq
+メバル科:Sebastes fasciatus	45.1534
+タラ科:Gadus morhua	20.8887
+メバル科:Sebastes mentella	16.0619
+Cyclopterus lumpus	5.21022
+ゲンゲ科:Lycodes vahlii	2.74125
+ヤマトヒゲダラ:Enchelyopus cimbrius	2.30147
+カレイ科:Glyptocephalus cynoglossus	1.84713
+カレイ科:Pseudopleuronectes americanus	1.72017
+カラスガレイ:Reinhardtius hippoglossoides	1.41717
+イカナゴ科:Ammodytes tobianus	1.37094
+オオカミウオ科:Anarhichas denticulatus	1.28767

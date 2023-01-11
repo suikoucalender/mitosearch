@@ -1,8 +1,9 @@
-2766	フグ科:Takifugu fasciatus
-2318	Parambassis lala
-1730	セトダイ:Hapalogenys analis
-1478	クロダイ:Acanthopagrus schlegelii
-1478	タウエガジ科:Dictyosoma burgeri
-1466	ヒイラギ:Nuchequula nuchalis
-484	ハモ:Muraenesox cinereus
-349	スジハゼ:Acentrogobius virgatulus
+id	DRR057572.fastq
+フグ科:Takifugu fasciatus	22.9182
+Parambassis lala	19.2062
+セトダイ:Hapalogenys analis	14.3342
+クロダイ:Acanthopagrus schlegelii	12.2463
+タウエガジ科:Dictyosoma burgeri	12.2463
+ヒイラギ:Nuchequula nuchalis	12.1468
+ハモ:Muraenesox cinereus	4.01027
+スジハゼ:Acentrogobius virgatulus	2.89171

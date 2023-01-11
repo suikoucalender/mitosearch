@@ -1,7 +1,8 @@
-44	トビエイ科:Myliobatis californica
-42	Paralabrax clathratus
-41	Hypsoblennius ionthas
-21	Gibbonsia montereyensis
-18	カスザメ科:Squatina dumeril
-10	ウシノシタ科:Symphurus atricaudus
-2	Conodon nobilis
+id	SRR12791280.fastq
+トビエイ科:Myliobatis californica	24.7191
+Paralabrax clathratus	23.5955
+Hypsoblennius ionthas	23.0337
+Gibbonsia montereyensis	11.7978
+カスザメ科:Squatina dumeril	10.1124
+ウシノシタ科:Symphurus atricaudus	5.61798
+Conodon nobilis	1.1236

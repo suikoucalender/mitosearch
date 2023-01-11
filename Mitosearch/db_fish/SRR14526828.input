@@ -1,6 +1,7 @@
-114362	Semotilus atromaculatus
-50857	Catostomus commersonii
-31105	Luxilus cornutus
-22549	サンフィッシュ科:Micropterus treculii
-16749	Esox lucius
-15536	Ameiurus nebulosus
+id	SRR14526828.fastq
+Semotilus atromaculatus	45.5339
+Catostomus commersonii	20.249
+Luxilus cornutus	12.3846
+サンフィッシュ科:Micropterus treculii	8.97801
+Esox lucius	6.66871
+Ameiurus nebulosus	6.18575

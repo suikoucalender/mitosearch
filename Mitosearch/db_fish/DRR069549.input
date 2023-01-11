@@ -1,11 +1,12 @@
-25538	Zacco platypus
-8968	カワヨシノボリ:Rhinogobius flumineus
-7741	カワムツ:Nipponocypris temminckii
-5276	ドンコ科:Odontobutis obscura
-4627	ムギツク:Pungtungia herzi
-4236	アカザ:Liobagrus reinii
-2825	ヌマムツ:Nipponocypris sieboldii
-1624	イトモロコ:Squalidus gracilis gracilis
-1615	ギンブナ:Carassius langsdorfii
-1370	オヤニラミ:Coreoperca kawamebari
-1236	コイ:Cyprinus carpio
+id	DRR069549.fastq
+Zacco platypus	39.2554
+カワヨシノボリ:Rhinogobius flumineus	13.785
+カワムツ:Nipponocypris temminckii	11.899
+ドンコ科:Odontobutis obscura	8.10994
+ムギツク:Pungtungia herzi	7.11233
+アカザ:Liobagrus reinii	6.51131
+ヌマムツ:Nipponocypris sieboldii	4.34241
+イトモロコ:Squalidus gracilis gracilis	2.49631
+ギンブナ:Carassius langsdorfii	2.48248
+オヤニラミ:Coreoperca kawamebari	2.10588
+コイ:Cyprinus carpio	1.8999

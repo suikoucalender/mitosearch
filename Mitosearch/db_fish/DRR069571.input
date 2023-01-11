@@ -1,7 +1,8 @@
-931	コイ科:Rhynchocypris jouyi
-104	カジカ:Cottus pollux
-79	コイ:Cyprinus carpio
-58	サクラマス・ヤマメ:Oncorhynchus masou masou
-35	コイ科:Cyprinus carpio (triploid)
-19	Niwaella delicata
-15	Phoxinus steindachneri
+id	DRR069571.fastq
+コイ科:Rhynchocypris jouyi	75.0201
+カジカ:Cottus pollux	8.38034
+コイ:Cyprinus carpio	6.36583
+サクラマス・ヤマメ:Oncorhynchus masou masou	4.67365
+コイ科:Cyprinus carpio (triploid)	2.82031
+Niwaella delicata	1.53102
+Phoxinus steindachneri	1.2087

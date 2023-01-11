@@ -1,6 +1,7 @@
-14207	カラスガレイ:Reinhardtius hippoglossoides
-12700	メバル科:Sebastes fasciatus
-3976	ゲンゲ科:Lycodes lavalaei
-2034	ニセタウエガジ:Stichaeus punctatus
-1863	オヒョウ:Hippoglossus stenolepis
-1568	カラフトシシャモ:Mallotus villosus
+id	SRR12008475.fastq
+カラスガレイ:Reinhardtius hippoglossoides	39.0861
+メバル科:Sebastes fasciatus	34.94
+ゲンゲ科:Lycodes lavalaei	10.9387
+ニセタウエガジ:Stichaeus punctatus	5.59591
+オヒョウ:Hippoglossus stenolepis	5.12545
+カラフトシシャモ:Mallotus villosus	4.31385

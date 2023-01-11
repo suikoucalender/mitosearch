@@ -1,4 +1,5 @@
-7308	メバル科:Sebastes fasciatus
-3839	カラフトシシャモ:Mallotus villosus
-3002	イカナゴ科:Ammodytes dubius
-822	メバル科:Sebastes mentella
+id	SRR12008452.fastq
+メバル科:Sebastes fasciatus	48.8144
+カラフトシシャモ:Mallotus villosus	25.6429
+イカナゴ科:Ammodytes dubius	20.0521
+メバル科:Sebastes mentella	5.49062

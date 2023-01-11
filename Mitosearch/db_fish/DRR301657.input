@@ -1,10 +1,11 @@
-101976	ギンユゴイ:Kuhlia mugil
-32686	コボラ:Planiliza macrolepis
-30049	カワアナゴ科:Ophieleotris sp. TAMETOMO-HAZE
-15641	オオウナギ:Anguilla marmorata
-13768	ゴマフエダイ:Lutjanus argentimaculatus
-12436	カワアナゴ科:Ophiocara porocephala
-9428	ヒナハゼ:Redigobius bikolanus
-5020	チチブモドキ:Eleotris acanthopoma
-4209	アンピンボラ:Planiliza subviridis
-2677	クロホシマンジュウダイ:Scatophagus argus
+id	DRR301657.fastq
+ギンユゴイ:Kuhlia mugil	44.7479
+コボラ:Planiliza macrolepis	14.3429
+カワアナゴ科:Ophieleotris sp. TAMETOMO-HAZE	13.1857
+オオウナギ:Anguilla marmorata	6.8634
+ゴマフエダイ:Lutjanus argentimaculatus	6.04151
+カワアナゴ科:Ophiocara porocephala	5.45702
+ヒナハゼ:Redigobius bikolanus	4.13708
+チチブモドキ:Eleotris acanthopoma	2.20282
+アンピンボラ:Planiliza subviridis	1.84694
+クロホシマンジュウダイ:Scatophagus argus	1.17469

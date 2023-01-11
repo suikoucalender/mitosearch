@@ -1,7 +1,8 @@
-645	エソ科:Synodus lucioceps
-93	トビエイ科:Myliobatis californica
-60	カスザメ科:Squatina dumeril
-39	ドチザメ:Triakis scyllium
-27	カレイ科:Pleuronichthys decurrens
-26	エソ科:Synodus foetens
-14	Etropus crossotus
+id	SRR12791259.fastq
+エソ科:Synodus lucioceps	71.3496
+トビエイ科:Myliobatis californica	10.2876
+カスザメ科:Squatina dumeril	6.63717
+ドチザメ:Triakis scyllium	4.31416
+カレイ科:Pleuronichthys decurrens	2.98673
+エソ科:Synodus foetens	2.87611
+Etropus crossotus	1.54867

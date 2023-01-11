@@ -1,8 +1,9 @@
-31246	Tribolodon hakonensis
-17719	ボラ:Mugil cephalus
-7357	ゲンゴロウブナ:Carassius cuvieri
-6894	Zacco platypus
-4387	コイ:Cyprinus carpio
-4317	ギンブナ:Carassius langsdorfii
-2109	ヌマチチブ:Tridentiger brevispinis
-1131	モツゴ:Pseudorasbora parva
+id	DRR231523.fastq
+Tribolodon hakonensis	41.5726
+ボラ:Mugil cephalus	23.575
+ゲンゴロウブナ:Carassius cuvieri	9.78845
+Zacco platypus	9.17243
+コイ:Cyprinus carpio	5.83688
+ギンブナ:Carassius langsdorfii	5.74375
+ヌマチチブ:Tridentiger brevispinis	2.80601
+モツゴ:Pseudorasbora parva	1.50479

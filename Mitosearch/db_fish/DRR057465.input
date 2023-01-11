@@ -1,6 +1,7 @@
-7696	カタクチイワシ科:Engraulis japonicus
-3959	コノシロ:Konosirus punctatus
-3580	マアジ:Trachurus japonicus
-2610	ヒイラギ:Nuchequula nuchalis
-1725	スズキ:Lateolabrax japonicus
-213	マダイ:Pagrus major
+id	DRR057465.fastq
+カタクチイワシ科:Engraulis japonicus	38.9021
+コノシロ:Konosirus punctatus	20.0121
+マアジ:Trachurus japonicus	18.0963
+ヒイラギ:Nuchequula nuchalis	13.1931
+スズキ:Lateolabrax japonicus	8.71961
+マダイ:Pagrus major	1.07668

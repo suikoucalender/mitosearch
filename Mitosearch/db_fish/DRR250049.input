@@ -1,8 +1,9 @@
-11241	コノシロ:Konosirus punctatus
-529	カタクチイワシ科:Engraulis japonicus
-262	オキヒイラギ:Equulites rivulatus
-245	スズキ:Lateolabrax japonicus
-214	マサバ:Scomber japonicus
-161	シログチ:Pennahia argentata
-156	アカカマス:Sphyraena pinguis
-140	イワハダカ:Benthosema pterotum
+id	DRR250049.fastq
+コノシロ:Konosirus punctatus	86.8165
+カタクチイワシ科:Engraulis japonicus	4.08557
+オキヒイラギ:Equulites rivulatus	2.02348
+スズキ:Lateolabrax japonicus	1.89218
+マサバ:Scomber japonicus	1.65276
+シログチ:Pennahia argentata	1.24344
+アカカマス:Sphyraena pinguis	1.20482
+イワハダカ:Benthosema pterotum	1.08125

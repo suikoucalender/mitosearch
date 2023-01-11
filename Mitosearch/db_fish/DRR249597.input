@@ -1,11 +1,12 @@
-3795	コノシロ:Konosirus punctatus
-2302	カタクチイワシ科:Engraulis japonicus
-841	スズキ:Lateolabrax japonicus
-448	サッパ:Sardinella zunasi
-398	ホシザメ:Mustelus manazo
-385	アカエイ:Hemitrygon akajei
-254	ハタタテヌメリ:Callionymus valenciennei
-197	ヒイラギ:Nuchequula nuchalis
-196	スジハゼ:Acentrogobius virgatulus
-131	サワラ:Scomberomorus niphonius
-119	マハゼ:Acanthogobius flavimanus
+id	DRR249597.fastq
+コノシロ:Konosirus punctatus	41.8597
+カタクチイワシ科:Engraulis japonicus	25.3916
+スズキ:Lateolabrax japonicus	9.27642
+サッパ:Sardinella zunasi	4.94154
+ホシザメ:Mustelus manazo	4.39003
+アカエイ:Hemitrygon akajei	4.24664
+ハタタテヌメリ:Callionymus valenciennei	2.80168
+ヒイラギ:Nuchequula nuchalis	2.17295
+スジハゼ:Acentrogobius virgatulus	2.16192
+サワラ:Scomberomorus niphonius	1.44496
+マハゼ:Acanthogobius flavimanus	1.3126

@@ -1,6 +1,7 @@
-58964	ヌマチチブ:Tridentiger brevispinis
-2886	Tribolodon hakonensis
-2003	カワムツ:Nipponocypris temminckii
-1083	コイ:Cyprinus carpio
-974	アユ:Plecoglossus altivelis
-903	ウキゴリ:Gymnogobius urotaenia
+id	DRR231480.fastq
+ヌマチチブ:Tridentiger brevispinis	88.2523
+Tribolodon hakonensis	4.31952
+カワムツ:Nipponocypris temminckii	2.99792
+コイ:Cyprinus carpio	1.62094
+アユ:Plecoglossus altivelis	1.4578
+ウキゴリ:Gymnogobius urotaenia	1.35153

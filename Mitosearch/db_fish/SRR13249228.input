@@ -1,8 +1,9 @@
-64	ニシン科:Clupea harengus
-17	Urophycis tenuis
-12	Melanogrammus aeglefinus
-9	Alosa aestivalis
-2	Pollachius virens
-2	タラ科:Gadus morhua
-2	イカナゴ科:Ammodytes marinus
-2	イカナゴ:Ammodytes japonicus
+id	SRR13249228.fastq
+ニシン科:Clupea harengus	58.1818
+Urophycis tenuis	15.4545
+Melanogrammus aeglefinus	10.9091
+Alosa aestivalis	8.18182
+Pollachius virens	1.81818
+タラ科:Gadus morhua	1.81818
+イカナゴ科:Ammodytes marinus	1.81818
+イカナゴ:Ammodytes japonicus	1.81818

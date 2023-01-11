@@ -1,9 +1,10 @@
-8098	Tribolodon brandtii
-5933	モツゴ:Pseudorasbora parva
-5790	コイ科:Acheilognathus chankaensis
-3630	Tribolodon hakonensis
-1764	Tribolodon ezoe
-1455	ゲンゴロウブナ:Carassius cuvieri
-1073	ギンブナ:Carassius langsdorfii
-626	コイ:Cyprinus carpio
-317	タモロコ:Gnathopogon elongatus elongatus
+id	DRR125608.fastq
+Tribolodon brandtii	28.2298
+モツゴ:Pseudorasbora parva	20.6826
+コイ科:Acheilognathus chankaensis	20.1841
+Tribolodon hakonensis	12.6543
+Tribolodon ezoe	6.14934
+ゲンゴロウブナ:Carassius cuvieri	5.07216
+ギンブナ:Carassius langsdorfii	3.7405
+コイ:Cyprinus carpio	2.18225
+タモロコ:Gnathopogon elongatus elongatus	1.10507

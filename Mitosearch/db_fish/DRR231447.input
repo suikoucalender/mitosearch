@@ -1,10 +1,11 @@
-68536	ヌマチチブ:Tridentiger brevispinis
-8441	チチブ:Tridentiger obscurus
-5081	コイ:Cyprinus carpio
-3035	カマツカ:Pseudogobio esocinus
-2549	ゲンゴロウブナ:Carassius cuvieri
-1495	アユ:Plecoglossus altivelis
-1426	ニゴイ:Hemibarbus barbus
-1385	カムルチー:Channa argus
-1316	Tribolodon hakonensis
-1292	ゴクラクハゼ:Rhinogobius similis
+id	DRR231447.fastq
+ヌマチチブ:Tridentiger brevispinis	72.4819
+チチブ:Tridentiger obscurus	8.92699
+コイ:Cyprinus carpio	5.37354
+カマツカ:Pseudogobio esocinus	3.20974
+ゲンゴロウブナ:Carassius cuvieri	2.69576
+アユ:Plecoglossus altivelis	1.58107
+ニゴイ:Hemibarbus barbus	1.5081
+カムルチー:Channa argus	1.46474
+Tribolodon hakonensis	1.39177
+ゴクラクハゼ:Rhinogobius similis	1.36639

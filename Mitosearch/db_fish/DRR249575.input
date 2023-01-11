@@ -1,9 +1,10 @@
-1721	カタクチイワシ科:Engraulis japonicus
-243	マサバ:Scomber japonicus
-224	ヒメ:Hime japonica
-218	コノシロ:Konosirus punctatus
-217	スズキ:Lateolabrax japonicus
-165	スジハゼ:Acentrogobius virgatulus
-132	ヒイラギ:Nuchequula nuchalis
-105	Alburnus alburnus
-54	Parambassis lala
+id	DRR249575.fastq
+カタクチイワシ科:Engraulis japonicus	55.8948
+マサバ:Scomber japonicus	7.89217
+ヒメ:Hime japonica	7.27509
+コノシロ:Konosirus punctatus	7.08022
+スズキ:Lateolabrax japonicus	7.04774
+スジハゼ:Acentrogobius virgatulus	5.35888
+ヒイラギ:Nuchequula nuchalis	4.28711
+Alburnus alburnus	3.4102
+Parambassis lala	1.75382

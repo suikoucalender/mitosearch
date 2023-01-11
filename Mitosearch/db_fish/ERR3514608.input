@@ -1,9 +1,10 @@
-44376	カワスズメ科:Oreochromis sp. 'red tilapia'
-12647	ナイルティラピア:Oreochromis niloticus
-9169	グルクマ:Rastrelliger kanagurta
-8050	Barbonymus gonionotus
-6957	Pristolepis rubripinnis
-3920	Osphronemus goramy
-2948	Rasbora dusonensis
-1633	Clupeichthys goniognathus
-1030	メアジ:Selar crumenophthalmus
+id	ERR3514608.fastq
+カワスズメ科:Oreochromis sp. 'red tilapia'	48.91
+ナイルティラピア:Oreochromis niloticus	13.9392
+グルクマ:Rastrelliger kanagurta	10.1058
+Barbonymus gonionotus	8.87248
+Pristolepis rubripinnis	7.66781
+Osphronemus goramy	4.32051
+Rasbora dusonensis	3.2492
+Clupeichthys goniognathus	1.79985
+メアジ:Selar crumenophthalmus	1.13524

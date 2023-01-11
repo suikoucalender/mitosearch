@@ -1,6 +1,7 @@
-59900	カワヨシノボリ:Rhinogobius flumineus
-17413	コイ科:Rhynchocypris jouyi
-16783	カワムツ:Nipponocypris temminckii
-5458	ドンコ科:Odontobutis obscura
-5265	ムギツク:Pungtungia herzi
-3034	コイ:Cyprinus carpio
+id	DRR149223.fastq
+カワヨシノボリ:Rhinogobius flumineus	55.5386
+コイ科:Rhynchocypris jouyi	16.1451
+カワムツ:Nipponocypris temminckii	15.561
+ドンコ科:Odontobutis obscura	5.06059
+ムギツク:Pungtungia herzi	4.88164
+コイ:Cyprinus carpio	2.81309

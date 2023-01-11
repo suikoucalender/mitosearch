@@ -1,9 +1,10 @@
-109	カワヨシノボリ:Rhinogobius flumineus
-105	カワムツ:Nipponocypris temminckii
-19	コイ科:Hemibarbus maculatus
-13	Zacco platypus
-9	コウライニゴイ:Hemibarbus labeo
-8	カジカ:Cottus pollux
-7	ニシシマドジョウ:Cobitis sp. BIWAE type B
-6	クロヨシノボリ:Rhinogobius brunneus
-3	ハス:Opsariichthys uncirostris
+id	DRR069630.fastq
+カワヨシノボリ:Rhinogobius flumineus	39.0681
+カワムツ:Nipponocypris temminckii	37.6344
+コイ科:Hemibarbus maculatus	6.81004
+Zacco platypus	4.6595
+コウライニゴイ:Hemibarbus labeo	3.22581
+カジカ:Cottus pollux	2.86738
+ニシシマドジョウ:Cobitis sp. BIWAE type B	2.50896
+クロヨシノボリ:Rhinogobius brunneus	2.15054
+ハス:Opsariichthys uncirostris	1.07527

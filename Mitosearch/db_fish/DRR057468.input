@@ -1,12 +1,13 @@
-3422	Parambassis lala
-2948	コノシロ:Konosirus punctatus
-2688	ヒイラギ:Nuchequula nuchalis
-2207	クロダイ:Acanthopagrus schlegelii
-1940	スズキ:Lateolabrax japonicus
-1451	カタクチイワシ科:Engraulis japonicus
-1373	ハモ:Muraenesox cinereus
-1002	ハゼ科:Chaeturichthys stigmatias
-914	シロギス:Sillago japonica
-778	スジハゼ:Acentrogobius virgatulus
-500	アカオビシマハゼ:Tridentiger trigonocephalus
-207	イトヒキハゼ:Myersina filifer
+id	DRR057468.fastq
+Parambassis lala	17.6119
+コノシロ:Konosirus punctatus	15.1724
+ヒイラギ:Nuchequula nuchalis	13.8343
+クロダイ:Acanthopagrus schlegelii	11.3587
+スズキ:Lateolabrax japonicus	9.98456
+カタクチイワシ科:Engraulis japonicus	7.46783
+ハモ:Muraenesox cinereus	7.06639
+ハゼ科:Chaeturichthys stigmatias	5.15697
+シロギス:Sillago japonica	4.70407
+スジハゼ:Acentrogobius virgatulus	4.00412
+アカオビシマハゼ:Tridentiger trigonocephalus	2.57334
+イトヒキハゼ:Myersina filifer	1.06536

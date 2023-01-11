@@ -1,10 +1,11 @@
-69295	ヌマチチブ:Tridentiger brevispinis
-3606	ドンコ科:Odontobutis obscura
-3406	チチブ:Tridentiger obscurus
-3254	クロヨシノボリ:Rhinogobius brunneus
-3117	ギンブナ:Carassius langsdorfii
-2584	Zacco platypus
-1811	マハゼ:Acanthogobius flavimanus
-1777	カジカ:Cottus pollux
-1754	コイ:Cyprinus carpio
-1446	コイ科:Hemibarbus maculatus
+id	DRR231410.fastq
+ヌマチチブ:Tridentiger brevispinis	75.2797
+ドンコ科:Odontobutis obscura	3.91744
+チチブ:Tridentiger obscurus	3.70016
+クロヨシノボリ:Rhinogobius brunneus	3.53504
+ギンブナ:Carassius langsdorfii	3.3862
+Zacco platypus	2.80717
+マハゼ:Acanthogobius flavimanus	1.96741
+カジカ:Cottus pollux	1.93047
+コイ:Cyprinus carpio	1.90549
+コイ科:Hemibarbus maculatus	1.57089

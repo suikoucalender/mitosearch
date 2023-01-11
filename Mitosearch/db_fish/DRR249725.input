@@ -1,6 +1,7 @@
-2534	ボラ:Mugil cephalus
-1249	カタクチイワシ科:Engraulis japonicus
-292	サッパ:Sardinella zunasi
-173	シログチ:Pennahia argentata
-101	コノシロ:Konosirus punctatus
-60	Parambassis lala
+id	DRR249725.fastq
+ボラ:Mugil cephalus	57.4733
+カタクチイワシ科:Engraulis japonicus	28.3284
+サッパ:Sardinella zunasi	6.62282
+シログチ:Pennahia argentata	3.92379
+コノシロ:Konosirus punctatus	2.29077
+Parambassis lala	1.36085

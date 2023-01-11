@@ -1,4 +1,5 @@
-8976	ブラウントラウト:Salmo trutta
-5665	Galaxias sp. 'southern'
-3047	ウナギ科:Anguilla dieffenbachii
-2021	Galaxias fasciatus
+id	SRR14531907.fastq
+ブラウントラウト:Salmo trutta	45.5426
+Galaxias sp. 'southern'	28.7432
+ウナギ科:Anguilla dieffenbachii	15.4599
+Galaxias fasciatus	10.2542

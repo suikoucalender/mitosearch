@@ -1,15 +1,16 @@
-10592	カタクチイワシ科:Engraulis japonicus
-7054	マアジ:Trachurus japonicus
-5054	ブリ:Seriola quinqueradiata
-4239	クサフグ:Takifugu alboplumbeus
-4019	ホソトビウオ:Cypselurus hiraii
-3504	コノシロ:Konosirus punctatus
-3172	マタナゴ:Ditrema temminckii pacificum
-2755	フグ科:Takifugu fasciatus
-2593	セトダイ:Hapalogenys analis
-1609	Parambassis lala
-1290	カレイ科:Pseudopleuronectes americanus
-1182	ボラ:Mugil cephalus
-997	クロダイ:Acanthopagrus schlegelii
-894	サワラ:Scomberomorus niphonius
-555	アカオビシマハゼ:Tridentiger trigonocephalus
+id	DRR057616.fastq
+カタクチイワシ科:Engraulis japonicus	21.3941
+マアジ:Trachurus japonicus	14.2479
+ブリ:Seriola quinqueradiata	10.2082
+クサフグ:Takifugu alboplumbeus	8.56208
+ホソトビウオ:Cypselurus hiraii	8.11772
+コノシロ:Konosirus punctatus	7.0775
+マタナゴ:Ditrema temminckii pacificum	6.40692
+フグ科:Takifugu fasciatus	5.56464
+セトダイ:Hapalogenys analis	5.23743
+Parambassis lala	3.24991
+カレイ科:Pseudopleuronectes americanus	2.60559
+ボラ:Mugil cephalus	2.38744
+クロダイ:Acanthopagrus schlegelii	2.01378
+サワラ:Scomberomorus niphonius	1.80573
+アカオビシマハゼ:Tridentiger trigonocephalus	1.12101

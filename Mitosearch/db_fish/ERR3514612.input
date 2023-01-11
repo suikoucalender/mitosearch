@@ -1,21 +1,22 @@
-15124	ナイルティラピア:Oreochromis niloticus
-6495	アカメ:Lates japonicus
-6095	Cyclocheilichthys enoplos
-5233	Barbonymus gonionotus
-5196	タイワンドジョウ科:Channa striata
-3334	サバ科:Rastrelliger brachysoma
-2634	カダヤシ:Gambusia affinis
-2620	サヨリ科:Zenarchopterus dispar
-2614	ボラ:Mugil cephalus
-2409	Puntioplites proctozystron
-1889	Chitala ornata
-1875	Cirrhinus mrigala
-1721	ヒレナマズ科:Clarias macrocephalus
-1595	Trichopodus pectoralis
-1570	Hemibagrus sp. MP3
-1532	カワスズメ科:Oreochromis sp. 'red tilapia'
-1531	オキイワシ科:Chirocentrus nudus
-1225	トカゲゴチ:Inegocia japonica
-1201	ヒレナマズ科:Clarias gariepinus
-992	Hemibagrus nemurus
-887	Hemibagrus sp. RCH-2015
+id	ERR3514612.fastq
+ナイルティラピア:Oreochromis niloticus	22.316
+アカメ:Lates japonicus	9.5836
+Cyclocheilichthys enoplos	8.99339
+Barbonymus gonionotus	7.72148
+タイワンドジョウ科:Channa striata	7.66688
+サバ科:Rastrelliger brachysoma	4.91944
+カダヤシ:Gambusia affinis	3.88656
+サヨリ科:Zenarchopterus dispar	3.8659
+ボラ:Mugil cephalus	3.85705
+Puntioplites proctozystron	3.55457
+Chitala ornata	2.78729
+Cirrhinus mrigala	2.76663
+ヒレナマズ科:Clarias macrocephalus	2.5394
+Trichopodus pectoralis	2.35348
+Hemibagrus sp. MP3	2.31659
+カワスズメ科:Oreochromis sp. 'red tilapia'	2.26052
+オキイワシ科:Chirocentrus nudus	2.25905
+トカゲゴチ:Inegocia japonica	1.80753
+ヒレナマズ科:Clarias gariepinus	1.77212
+Hemibagrus nemurus	1.46373
+Hemibagrus sp. RCH-2015	1.3088

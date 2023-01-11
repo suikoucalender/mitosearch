@@ -1,11 +1,12 @@
-20007	Rhinichthys cataractae
-18843	Catostomus commersonii
-18778	Etheostoma flabellare
-9714	Catostomus catostomus
-7313	Rhinichthys atratulus
-7053	Etheostoma olmstedi
-5660	Luxilus cornutus
-4343	Semotilus atromaculatus
-2751	Perca flavescens
-2207	Notemigonus crysoleucas
-1086	カワマス:Salvelinus fontinalis
+id	SRR14526823.fastq
+Rhinichthys cataractae	20.4665
+Catostomus commersonii	19.2757
+Etheostoma flabellare	19.2092
+Catostomus catostomus	9.93709
+Rhinichthys atratulus	7.48095
+Etheostoma olmstedi	7.21498
+Luxilus cornutus	5.78999
+Semotilus atromaculatus	4.44274
+Perca flavescens	2.81418
+Notemigonus crysoleucas	2.25769
+カワマス:Salvelinus fontinalis	1.11094

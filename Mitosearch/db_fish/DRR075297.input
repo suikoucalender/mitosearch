@@ -1,6 +1,7 @@
-5182	スマ:Euthynnus affinis
-315	ジンベエザメ:Rhincodon typus
-85	トラフザメ科:Stegostoma fasciatum
-72	オオテンジクザメ:Nebrius ferrugineus
-70	タカサゴ:Pterocaesio digramma
-64	ウシバナトビエイ科:Rhinoptera brasiliensis
+id	DRR075297.fastq
+スマ:Euthynnus affinis	89.5301
+ジンベエザメ:Rhincodon typus	5.44229
+トラフザメ科:Stegostoma fasciatum	1.46856
+オオテンジクザメ:Nebrius ferrugineus	1.24395
+タカサゴ:Pterocaesio digramma	1.2094
+ウシバナトビエイ科:Rhinoptera brasiliensis	1.10574

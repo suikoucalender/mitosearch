@@ -1,15 +1,16 @@
-7107	カタクチイワシ科:Engraulis japonicus
-2595	ハガツオ:Sarda orientalis
-2522	クサフグ:Takifugu alboplumbeus
-2389	イソギンポ:Parablennius yatabei
-1700	ホソトビウオ:Cypselurus hiraii
-1508	マタナゴ:Ditrema temminckii pacificum
-1178	ブリ:Seriola quinqueradiata
-1045	スズキ:Lateolabrax japonicus
-930	マハゼ:Acanthogobius flavimanus
-795	ボラ:Mugil cephalus
-741	スジハゼ:Acentrogobius virgatulus
-498	Eutrigla gurnardus
-478	マアジ:Trachurus japonicus
-375	Parambassis lala
-285	クロダイ:Acanthopagrus schlegelii
+id	DRR057573.fastq
+カタクチイワシ科:Engraulis japonicus	29.4334
+ハガツオ:Sarda orientalis	10.7471
+クサフグ:Takifugu alboplumbeus	10.4448
+イソギンポ:Parablennius yatabei	9.89398
+ホソトビウオ:Cypselurus hiraii	7.0405
+マタナゴ:Ditrema temminckii pacificum	6.24534
+ブリ:Seriola quinqueradiata	4.87865
+スズキ:Lateolabrax japonicus	4.32784
+マハゼ:Acanthogobius flavimanus	3.85157
+ボラ:Mugil cephalus	3.29247
+スジハゼ:Acentrogobius virgatulus	3.06883
+Eutrigla gurnardus	2.06245
+マアジ:Trachurus japonicus	1.97962
+Parambassis lala	1.55305
+クロダイ:Acanthopagrus schlegelii	1.18032

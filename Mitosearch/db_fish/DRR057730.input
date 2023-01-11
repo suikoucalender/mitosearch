@@ -1,9 +1,10 @@
-33444	カタクチイワシ科:Engraulis japonicus
-3728	スズキ:Lateolabrax japonicus
-2375	クサフグ:Takifugu alboplumbeus
-1558	ホソトビウオ:Cypselurus hiraii
-1284	Parambassis lala
-1202	ヒイラギ:Nuchequula nuchalis
-1158	マアジ:Trachurus japonicus
-918	ブリ:Seriola quinqueradiata
-738	クロダイ:Acanthopagrus schlegelii
+id	DRR057730.fastq
+カタクチイワシ科:Engraulis japonicus	72.0698
+スズキ:Lateolabrax japonicus	8.03362
+クサフグ:Takifugu alboplumbeus	5.11798
+ホソトビウオ:Cypselurus hiraii	3.3574
+Parambassis lala	2.76694
+ヒイラギ:Nuchequula nuchalis	2.59024
+マアジ:Trachurus japonicus	2.49542
+ブリ:Seriola quinqueradiata	1.97824
+クロダイ:Acanthopagrus schlegelii	1.59035

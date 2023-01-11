@@ -1,8 +1,9 @@
-2219	カタクチイワシ科:Engraulis japonicus
-1942	マダイ:Pagrus major
-1194	コチ科:Platycephalus sp. 2 LL-2021
-983	Parambassis lala
-983	マアジ:Trachurus japonicus
-644	ウルメイワシ:Etrumeus micropus
-608	クロダイ:Acanthopagrus schlegelii
-498	ヒイラギ:Nuchequula nuchalis
+id	DRR057578.fastq
+カタクチイワシ科:Engraulis japonicus	24.4626
+マダイ:Pagrus major	21.4089
+コチ科:Platycephalus sp. 2 LL-2021	13.1628
+Parambassis lala	10.8367
+マアジ:Trachurus japonicus	10.8367
+ウルメイワシ:Etrumeus micropus	7.09955
+クロダイ:Acanthopagrus schlegelii	6.70268
+ヒイラギ:Nuchequula nuchalis	5.49002

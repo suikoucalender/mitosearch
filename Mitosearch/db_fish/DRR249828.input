@@ -1,9 +1,10 @@
-10694	カタクチイワシ科:Engraulis japonicus
-4159	コノシロ:Konosirus punctatus
-1777	サッパ:Sardinella zunasi
-897	シログチ:Pennahia argentata
-610	ハタタテヌメリ:Callionymus valenciennei
-491	ハゼ科:Chaeturichthys stigmatias
-453	スズキ:Lateolabrax japonicus
-252	シロギス:Sillago japonica
-251	アカエイ:Hemitrygon akajei
+id	DRR249828.fastq
+カタクチイワシ科:Engraulis japonicus	54.6058
+コノシロ:Konosirus punctatus	21.2367
+サッパ:Sardinella zunasi	9.07373
+シログチ:Pennahia argentata	4.58027
+ハタタテヌメリ:Callionymus valenciennei	3.11479
+ハゼ科:Chaeturichthys stigmatias	2.50715
+スズキ:Lateolabrax japonicus	2.31311
+シロギス:Sillago japonica	1.28676
+アカエイ:Hemitrygon akajei	1.28166

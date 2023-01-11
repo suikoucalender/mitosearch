@@ -1,9 +1,10 @@
-13106	カタクチイワシ科:Engraulis japonicus
-3497	キハダ:Thunnus albacares
-1830	チダイ:Evynnis tumifrons
-1066	アカアマダイ:Branchiostegus japonicus
-870	Eutrigla gurnardus
-858	ビンナガ:Thunnus alalunga
-412	サッパ:Sardinella zunasi
-397	マサバ:Scomber japonicus
-297	コノシロ:Konosirus punctatus
+id	DRR249940.fastq
+カタクチイワシ科:Engraulis japonicus	58.6845
+キハダ:Thunnus albacares	15.6584
+チダイ:Evynnis tumifrons	8.19415
+アカアマダイ:Branchiostegus japonicus	4.77321
+Eutrigla gurnardus	3.89558
+ビンナガ:Thunnus alalunga	3.84185
+サッパ:Sardinella zunasi	1.8448
+マサバ:Scomber japonicus	1.77764
+コノシロ:Konosirus punctatus	1.32987

@@ -1,6 +1,7 @@
-45323	ナイルティラピア:Oreochromis niloticus
-34916	カワスズメ科:Oreochromis sp. 'red tilapia'
-3425	Yasuhikotakia eos
-3175	Anabas testudineus
-2933	Amblyrhynchichthys truncatus
-2369	Trichopodus pectoralis
+id	ERR3514601.fastq
+ナイルティラピア:Oreochromis niloticus	49.1887
+カワスズメ科:Oreochromis sp. 'red tilapia'	37.8941
+Yasuhikotakia eos	3.71713
+Anabas testudineus	3.44581
+Amblyrhynchichthys truncatus	3.18316
+Trichopodus pectoralis	2.57106

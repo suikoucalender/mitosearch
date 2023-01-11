@@ -1,11 +1,12 @@
-83199	ヌマチチブ:Tridentiger brevispinis
-4803	Tribolodon hakonensis
-4671	クロヨシノボリ:Rhinogobius brunneus
-4375	コイ:Cyprinus carpio
-4078	ニゴイ:Hemibarbus barbus
-4058	ギンブナ:Carassius langsdorfii
-3088	チチブ:Tridentiger obscurus
-2252	アユ:Plecoglossus altivelis
-1754	キンギョ:Carassius auratus
-1741	ゴクラクハゼ:Rhinogobius similis
-1645	ボラ:Mugil cephalus
+id	DRR231448.fastq
+ヌマチチブ:Tridentiger brevispinis	71.9316
+Tribolodon hakonensis	4.15255
+クロヨシノボリ:Rhinogobius brunneus	4.03842
+コイ:Cyprinus carpio	3.78251
+ニゴイ:Hemibarbus barbus	3.52573
+ギンブナ:Carassius langsdorfii	3.50844
+チチブ:Tridentiger obscurus	2.6698
+アユ:Plecoglossus altivelis	1.94702
+キンギョ:Carassius auratus	1.51646
+ゴクラクハゼ:Rhinogobius similis	1.50522
+ボラ:Mugil cephalus	1.42222

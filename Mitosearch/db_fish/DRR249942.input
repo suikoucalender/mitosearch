@@ -1,11 +1,12 @@
-2821	チダイ:Evynnis tumifrons
-2796	サッパ:Sardinella zunasi
-1473	マサバ:Scomber japonicus
-1200	シログチ:Pennahia argentata
-1131	テンジクダイ:Jaydia lineata
-1051	スズキ:Lateolabrax japonicus
-866	スジハゼ:Acentrogobius virgatulus
-509	マアジ:Trachurus japonicus
-437	カタクチイワシ科:Engraulis japonicus
-364	ハゼ科:Chaeturichthys stigmatias
-245	ハタタテヌメリ:Callionymus valenciennei
+id	DRR249942.fastq
+チダイ:Evynnis tumifrons	21.8801
+サッパ:Sardinella zunasi	21.6862
+マサバ:Scomber japonicus	11.4248
+シログチ:Pennahia argentata	9.30738
+テンジクダイ:Jaydia lineata	8.7722
+スズキ:Lateolabrax japonicus	8.15171
+スジハゼ:Acentrogobius virgatulus	6.71682
+マアジ:Trachurus japonicus	3.94788
+カタクチイワシ科:Engraulis japonicus	3.38944
+ハゼ科:Chaeturichthys stigmatias	2.82324
+ハタタテヌメリ:Callionymus valenciennei	1.90026

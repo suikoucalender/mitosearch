@@ -1,7 +1,8 @@
-18395	ハタタテヌメリ:Callionymus valenciennei
-4416	カタクチイワシ科:Engraulis japonicus
-990	サワラ:Scomberomorus niphonius
-881	コノシロ:Konosirus punctatus
-479	ギマ:Triacanthus biaculeatus
-428	マアジ:Trachurus japonicus
-327	サッパ:Sardinella zunasi
+id	DRR249936.fastq
+ハタタテヌメリ:Callionymus valenciennei	70.9793
+カタクチイワシ科:Engraulis japonicus	17.0397
+サワラ:Scomberomorus niphonius	3.82003
+コノシロ:Konosirus punctatus	3.39944
+ギマ:Triacanthus biaculeatus	1.84828
+マアジ:Trachurus japonicus	1.65149
+サッパ:Sardinella zunasi	1.26177

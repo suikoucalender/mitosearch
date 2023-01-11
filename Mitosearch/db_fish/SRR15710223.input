@@ -1,6 +1,7 @@
-365248	ボラ:Mugil cephalus
-27413	アンピンボラ:Planiliza subviridis
-24772	ハゼ科:Glossogobius giuris
-18990	ナイルティラピア:Oreochromis niloticus
-18525	Hemigobius hoevenii
-13282	モトギス:Sillago sihama
+id	SRR15710223.fastq
+ボラ:Mugil cephalus	78.0061
+アンピンボラ:Planiliza subviridis	5.8546
+ハゼ科:Glossogobius giuris	5.29056
+ナイルティラピア:Oreochromis niloticus	4.0557
+Hemigobius hoevenii	3.95639
+モトギス:Sillago sihama	2.83664

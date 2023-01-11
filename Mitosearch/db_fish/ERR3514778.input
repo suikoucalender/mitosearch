@@ -1,9 +1,10 @@
-24578	ナイルティラピア:Oreochromis niloticus
-7851	カワスズメ科:Oreochromis sp. 'red tilapia'
-6229	Polynemus dubius
-4420	Osphronemus goramy
-3844	Barbonymus gonionotus
-3263	Chitala ornata
-2721	Trichopodus leerii
-2636	Clupeichthys goniognathus
-958	Hemibagrus nemurus
+id	ERR3514778.fastq
+ナイルティラピア:Oreochromis niloticus	43.5009
+カワスズメ科:Oreochromis sp. 'red tilapia'	13.8956
+Polynemus dubius	11.0248
+Osphronemus goramy	7.82301
+Barbonymus gonionotus	6.80354
+Chitala ornata	5.77522
+Trichopodus leerii	4.81593
+Clupeichthys goniognathus	4.66549
+Hemibagrus nemurus	1.69558

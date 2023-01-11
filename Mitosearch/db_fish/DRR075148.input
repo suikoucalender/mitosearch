@@ -1,4 +1,5 @@
-11011	スマ:Euthynnus affinis
-179	タカサゴ:Pterocaesio digramma
-161	ジンベエザメ:Rhincodon typus
-135	グルクマ:Rastrelliger kanagurta
+id	DRR075148.fastq
+スマ:Euthynnus affinis	95.8645
+タカサゴ:Pterocaesio digramma	1.55842
+ジンベエザメ:Rhincodon typus	1.40171
+グルクマ:Rastrelliger kanagurta	1.17534

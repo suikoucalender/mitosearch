@@ -1,8 +1,9 @@
-4542	カタクチイワシ科:Engraulis japonicus
-2104	ヌノサラシ:Grammistes sexlineatus
-1936	ヒイラギ:Nuchequula nuchalis
-1052	スジハゼ:Acentrogobius virgatulus
-1001	ブリ:Seriola quinqueradiata
-736	ネズミゴチ:Repomucenus curvicornis
-536	ボラ:Mugil cephalus
-339	イトヒキハゼ:Myersina filifer
+id	DRR057527.fastq
+カタクチイワシ科:Engraulis japonicus	37.0897
+ヌノサラシ:Grammistes sexlineatus	17.1811
+ヒイラギ:Nuchequula nuchalis	15.8092
+スジハゼ:Acentrogobius virgatulus	8.59056
+ブリ:Seriola quinqueradiata	8.1741
+ネズミゴチ:Repomucenus curvicornis	6.01013
+ボラ:Mugil cephalus	4.37694
+イトヒキハゼ:Myersina filifer	2.76825

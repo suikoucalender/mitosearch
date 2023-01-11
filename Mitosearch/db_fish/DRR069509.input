@@ -1,9 +1,10 @@
-9523	コイ科:Hemibarbus maculatus
-5231	カワヨシノボリ:Rhinogobius flumineus
-4022	コイ科:Rhynchocypris jouyi
-3220	Niwaella delicata
-2548	Zacco platypus
-2118	コウライニゴイ:Hemibarbus labeo
-1571	ハス:Opsariichthys uncirostris
-993	カワムツ:Nipponocypris temminckii
-381	カジカ:Cottus pollux
+id	DRR069509.fastq
+コイ科:Hemibarbus maculatus	32.1647
+カワヨシノボリ:Rhinogobius flumineus	17.6681
+コイ科:Rhynchocypris jouyi	13.5846
+Niwaella delicata	10.8758
+Zacco platypus	8.60607
+コウライニゴイ:Hemibarbus labeo	7.15371
+ハス:Opsariichthys uncirostris	5.30618
+カワムツ:Nipponocypris temminckii	3.35394
+カジカ:Cottus pollux	1.28686

@@ -1,5 +1,6 @@
-6093	スマ:Euthynnus affinis
-391	ジンベエザメ:Rhincodon typus
-141	オオテンジクザメ:Nebrius ferrugineus
-129	タカサゴ:Pterocaesio digramma
-84	グルクマ:Rastrelliger kanagurta
+id	DRR075228.fastq
+スマ:Euthynnus affinis	89.105
+ジンベエザメ:Rhincodon typus	5.71805
+オオテンジクザメ:Nebrius ferrugineus	2.06201
+タカサゴ:Pterocaesio digramma	1.88652
+グルクマ:Rastrelliger kanagurta	1.22843

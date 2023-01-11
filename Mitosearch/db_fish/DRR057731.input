@@ -1,10 +1,11 @@
-3206	コノシロ:Konosirus punctatus
-2088	カタクチイワシ科:Engraulis japonicus
-1609	ブリ:Seriola quinqueradiata
-1502	サヨリ:Hyporhamphus sajori
-1085	タモロコ:Gnathopogon elongatus elongatus
-1020	フグ科:Takifugu fasciatus
-853	クサフグ:Takifugu alboplumbeus
-727	マダイ:Pagrus major
-542	Parambassis lala
-322	クロダイ:Acanthopagrus schlegelii
+id	DRR057731.fastq
+コノシロ:Konosirus punctatus	24.7491
+カタクチイワシ科:Engraulis japonicus	16.1186
+ブリ:Seriola quinqueradiata	12.4209
+サヨリ:Hyporhamphus sajori	11.5949
+タモロコ:Gnathopogon elongatus elongatus	8.37579
+フグ科:Takifugu fasciatus	7.87402
+クサフグ:Takifugu alboplumbeus	6.58484
+マダイ:Pagrus major	5.61217
+Parambassis lala	4.18404
+クロダイ:Acanthopagrus schlegelii	2.48572

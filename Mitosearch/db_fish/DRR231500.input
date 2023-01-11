@@ -1,6 +1,7 @@
-90647	ヌマチチブ:Tridentiger brevispinis
-3911	チチブ:Tridentiger obscurus
-3454	Tribolodon hakonensis
-3230	コイ:Cyprinus carpio
-2317	ウキゴリ:Gymnogobius urotaenia
-1446	アユ:Plecoglossus altivelis
+id	DRR231500.fastq
+ヌマチチブ:Tridentiger brevispinis	86.3264
+チチブ:Tridentiger obscurus	3.72458
+Tribolodon hakonensis	3.28937
+コイ:Cyprinus carpio	3.07604
+ウキゴリ:Gymnogobius urotaenia	2.20656
+アユ:Plecoglossus altivelis	1.37708

@@ -1,12 +1,13 @@
-289	シマヨシノボリ:Rhinogobius nagoyae
-182	ギンユゴイ:Kuhlia mugil
-171	アヤヨシノボリ:Rhinogobius sp. MO
-103	ボラ:Mugil cephalus
-88	ボウズハゼ:Sicyopterus japonicus
-64	ゴクラクハゼ:Rhinogobius similis
-57	ミナミハゼ:Awaous ocellaris
-57	ナガノゴリ:Tridentiger kuroiwae
-44	オオウナギ:Anguilla marmorata
-27	ヌマチチブ:Tridentiger brevispinis
-26	テンジクカワアナゴ:Eleotris fusca
-17	グッピー:Poecilia reticulata
+id	DRR159108.fastq
+シマヨシノボリ:Rhinogobius nagoyae	25.6889
+ギンユゴイ:Kuhlia mugil	16.1778
+アヤヨシノボリ:Rhinogobius sp. MO	15.2
+ボラ:Mugil cephalus	9.15556
+ボウズハゼ:Sicyopterus japonicus	7.82222
+ゴクラクハゼ:Rhinogobius similis	5.68889
+ミナミハゼ:Awaous ocellaris	5.06667
+ナガノゴリ:Tridentiger kuroiwae	5.06667
+オオウナギ:Anguilla marmorata	3.91111
+ヌマチチブ:Tridentiger brevispinis	2.4
+テンジクカワアナゴ:Eleotris fusca	2.31111
+グッピー:Poecilia reticulata	1.51111

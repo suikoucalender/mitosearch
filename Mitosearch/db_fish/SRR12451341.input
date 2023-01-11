@@ -1,7 +1,8 @@
-7588	Proterorhinus semilunaris
-5225	Neogobius melanostomus
-820	Neogobius pallasi
-770	Sander vitreus
-325	Neogobius fluviatilis
-271	Ponticola kessleri
-156	Babka gymnotrachelus
+id	SRR12451341.fastq
+Proterorhinus semilunaris	50.0693
+Neogobius melanostomus	34.4771
+Neogobius pallasi	5.41076
+Sander vitreus	5.08083
+Neogobius fluviatilis	2.14451
+Ponticola kessleri	1.78819
+Babka gymnotrachelus	1.02936

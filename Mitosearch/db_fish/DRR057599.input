@@ -1,7 +1,8 @@
-2289	ヒイラギ:Nuchequula nuchalis
-1522	カタクチイワシ科:Engraulis japonicus
-1456	マハゼ:Acanthogobius flavimanus
-1441	スジハゼ:Acentrogobius virgatulus
-235	Parambassis lala
-181	マルアジ:Decapterus maruadsi
-147	クロダイ:Acanthopagrus schlegelii
+id	DRR057599.fastq
+ヒイラギ:Nuchequula nuchalis	31.4812
+カタクチイワシ科:Engraulis japonicus	20.9325
+マハゼ:Acanthogobius flavimanus	20.0248
+スジハゼ:Acentrogobius virgatulus	19.8185
+Parambassis lala	3.23202
+マルアジ:Decapterus maruadsi	2.48934
+クロダイ:Acanthopagrus schlegelii	2.02173

@@ -1,4 +1,5 @@
-156153	メバル科:Sebastes fasciatus
-8737	メバル科:Sebastes mentella
-8576	Urophycis tenuis
-2067	Gaidropsarus ensis
+id	SRR12008428.fastq
+メバル科:Sebastes fasciatus	88.9593
+メバル科:Sebastes mentella	4.97741
+Urophycis tenuis	4.88569
+Gaidropsarus ensis	1.17756

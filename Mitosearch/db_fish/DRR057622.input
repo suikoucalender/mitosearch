@@ -1,9 +1,10 @@
-13792	カタクチイワシ科:Engraulis japonicus
-3003	ブリ:Seriola quinqueradiata
-2739	マアジ:Trachurus japonicus
-2606	コノシロ:Konosirus punctatus
-1805	サワラ:Scomberomorus niphonius
-1370	Tribolodon hakonensis
-1322	マルアジ:Decapterus maruadsi
-729	ボラ:Mugil cephalus
-381	ホソトビウオ:Cypselurus hiraii
+id	DRR057622.fastq
+カタクチイワシ科:Engraulis japonicus	49.7063
+ブリ:Seriola quinqueradiata	10.8228
+マアジ:Trachurus japonicus	9.87134
+コノシロ:Konosirus punctatus	9.39201
+サワラ:Scomberomorus niphonius	6.50521
+Tribolodon hakonensis	4.93747
+マルアジ:Decapterus maruadsi	4.76448
+ボラ:Mugil cephalus	2.62731
+ホソトビウオ:Cypselurus hiraii	1.37312

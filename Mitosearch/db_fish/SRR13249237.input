@@ -1,6 +1,7 @@
-102	ニシン科:Clupea harengus
-25	Urophycis tenuis
-13	Melanogrammus aeglefinus
-11	Alosa aestivalis
-4	イカナゴ科:Ammodytes dubius
-2	タラ科:Gadus morhua
+id	SRR13249237.fastq
+ニシン科:Clupea harengus	64.9682
+Urophycis tenuis	15.9236
+Melanogrammus aeglefinus	8.28025
+Alosa aestivalis	7.00637
+イカナゴ科:Ammodytes dubius	2.54777
+タラ科:Gadus morhua	1.27389

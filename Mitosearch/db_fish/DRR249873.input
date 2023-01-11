@@ -1,7 +1,8 @@
-5947	スズキ:Lateolabrax japonicus
-4840	カタクチイワシ科:Engraulis japonicus
-4339	コノシロ:Konosirus punctatus
-827	ボラ:Mugil cephalus
-799	ハタタテヌメリ:Callionymus valenciennei
-479	アカエイ:Hemitrygon akajei
-451	シログチ:Pennahia argentata
+id	DRR249873.fastq
+スズキ:Lateolabrax japonicus	33.6331
+カタクチイワシ科:Engraulis japonicus	27.3725
+コノシロ:Konosirus punctatus	24.5391
+ボラ:Mugil cephalus	4.67707
+ハタタテヌメリ:Callionymus valenciennei	4.51872
+アカエイ:Hemitrygon akajei	2.70897
+シログチ:Pennahia argentata	2.55062

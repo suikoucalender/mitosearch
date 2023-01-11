@@ -1,6 +1,7 @@
-49437	カタクチイワシ科:Engraulis japonicus
-31152	コノシロ:Konosirus punctatus
-4079	ハタタテヌメリ:Callionymus valenciennei
-3207	アカアマダイ:Branchiostegus japonicus
-2285	ニシン科:Sardinops sagax
-2276	ヒメ:Hime japonica
+id	DRR249647.fastq
+カタクチイワシ科:Engraulis japonicus	53.4824
+コノシロ:Konosirus punctatus	33.7012
+ハタタテヌメリ:Callionymus valenciennei	4.41278
+アカアマダイ:Branchiostegus japonicus	3.46943
+ニシン科:Sardinops sagax	2.47198
+ヒメ:Hime japonica	2.46224

@@ -1,10 +1,11 @@
-59	Heteropneustes fossilis
-25	タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950
-22	Lepidocephalichthys sp. CBM-ZF-14149
-16	Aplocheilus lineatus
-13	Devario sp. CBM:ZF:11302
-13	Rasbora myersi
-12	コウタイ:Channa asiatica
-9	Enteromius eburneensis
-8	タイワンドジョウ科:Channa striata
-6	Mystus vittatus
+id	DRR217071.fastq
+Heteropneustes fossilis	32.2404
+タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950	13.6612
+Lepidocephalichthys sp. CBM-ZF-14149	12.0219
+Aplocheilus lineatus	8.74317
+Devario sp. CBM:ZF:11302	7.10383
+Rasbora myersi	7.10383
+コウタイ:Channa asiatica	6.55738
+Enteromius eburneensis	4.91803
+タイワンドジョウ科:Channa striata	4.37158
+Mystus vittatus	3.27869

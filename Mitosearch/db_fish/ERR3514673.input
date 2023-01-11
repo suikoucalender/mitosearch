@@ -1,22 +1,23 @@
-146	ナイルティラピア:Oreochromis niloticus
-82	カワスズメ科:Oreochromis sp. 'red tilapia'
-45	Pristolepis rubripinnis
-39	Mystacoleucus marginatus
-28	Clupeichthys goniognathus
-27	Cyclocheilichthys enoplos
-23	Barbonymus gonionotus
-23	Mastacembelus favus
-16	Hypsibarbus vernayi
-16	Clupeichthys perakensis
-13	Polynemus dubius
-12	Puntioplites proctozystron
-12	Cyclocheilichthys armatus
-12	Barbonymus altus
-11	Osphronemus goramy
-11	Yasuhikotakia eos
-9	Rasbora dusonensis
-9	タイワンドジョウ科:Channa striata
-9	Systomus orphoides
-7	Hemibagrus sp. RCH-2015
-7	Hypsibarbus salweenensis
-7	Labeo rohita
+id	ERR3514673.fastq
+ナイルティラピア:Oreochromis niloticus	25.8865
+カワスズメ科:Oreochromis sp. 'red tilapia'	14.539
+Pristolepis rubripinnis	7.97872
+Mystacoleucus marginatus	6.91489
+Clupeichthys goniognathus	4.96454
+Cyclocheilichthys enoplos	4.78723
+Barbonymus gonionotus	4.07801
+Mastacembelus favus	4.07801
+Hypsibarbus vernayi	2.83688
+Clupeichthys perakensis	2.83688
+Polynemus dubius	2.30496
+Puntioplites proctozystron	2.12766
+Cyclocheilichthys armatus	2.12766
+Barbonymus altus	2.12766
+Osphronemus goramy	1.95035
+Yasuhikotakia eos	1.95035
+Rasbora dusonensis	1.59574
+タイワンドジョウ科:Channa striata	1.59574
+Systomus orphoides	1.59574
+Hemibagrus sp. RCH-2015	1.24113
+Hypsibarbus salweenensis	1.24113
+Labeo rohita	1.24113

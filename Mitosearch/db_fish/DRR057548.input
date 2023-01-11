@@ -1,6 +1,7 @@
-4264	カナガシラ:Lepidotrigla microptera
-3806	スズキ:Lateolabrax japonicus
-3371	ヒイラギ:Nuchequula nuchalis
-1917	シログチ:Pennahia argentata
-1708	マアジ:Trachurus japonicus
-1286	ヒラメ:Paralichthys olivaceus
+id	DRR057548.fastq
+カナガシラ:Lepidotrigla microptera	26.0763
+スズキ:Lateolabrax japonicus	23.2754
+ヒイラギ:Nuchequula nuchalis	20.6152
+シログチ:Pennahia argentata	11.7233
+マアジ:Trachurus japonicus	10.4452
+ヒラメ:Paralichthys olivaceus	7.86448

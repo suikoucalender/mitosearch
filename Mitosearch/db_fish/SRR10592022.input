@@ -1,4 +1,5 @@
-625205	モツゴ:Pseudorasbora parva
-208827	コクレン:Hypophthalmichthys nobilis
-42606	カダヤシ:Gambusia affinis
-18043	ハクレン:Hypophthalmichthys molitrix
+id	SRR10592022.fastq
+モツゴ:Pseudorasbora parva	69.8802
+コクレン:Hypophthalmichthys nobilis	23.3409
+カダヤシ:Gambusia affinis	4.76214
+ハクレン:Hypophthalmichthys molitrix	2.0167

@@ -1,7 +1,8 @@
-38340	メバル科:Sebastes fasciatus
-37406	カラスガレイ:Reinhardtius hippoglossoides
-9859	ヤマトヒゲダラ:Enchelyopus cimbrius
-6811	カレイ科:Pseudopleuronectes americanus
-2674	カレイ科:Glyptocephalus cynoglossus
-1811	メバル科:Sebastes mentella
-1273	ゲンゲ科:Melanostigma atlanticum
+id	SRR12008491.fastq
+メバル科:Sebastes fasciatus	39.0531
+カラスガレイ:Reinhardtius hippoglossoides	38.1017
+ヤマトヒゲダラ:Enchelyopus cimbrius	10.0424
+カレイ科:Pseudopleuronectes americanus	6.93768
+カレイ科:Glyptocephalus cynoglossus	2.72374
+メバル科:Sebastes mentella	1.84468
+ゲンゲ科:Melanostigma atlanticum	1.29668

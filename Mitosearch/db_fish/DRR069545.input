@@ -1,6 +1,7 @@
-2943	コイ科:Rhynchocypris jouyi
-2744	Tribolodon hakonensis
-932	カジカ:Cottus pollux
-847	サクラマス・ヤマメ:Oncorhynchus masou masou
-560	サケ科:Oncorhynchus mykiss newberrii
-262	アカザ:Liobagrus reinii
+id	DRR069545.fastq
+コイ科:Rhynchocypris jouyi	35.5092
+Tribolodon hakonensis	33.1081
+カジカ:Cottus pollux	11.2452
+サクラマス・ヤマメ:Oncorhynchus masou masou	10.2196
+サケ科:Oncorhynchus mykiss newberrii	6.75676
+アカザ:Liobagrus reinii	3.1612

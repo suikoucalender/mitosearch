@@ -1,13 +1,14 @@
-12203	ニシン科:Sardinops sagax
-10775	Serranidae sp. JL-2015
-6778	ベラ科\nJuilidini:Halichoeres californicus
-6648	Medialuna californiensis
-3951	Embiotoca lateralis
-3552	メバル科:Sebastes caurinus
-3014	ヒラメ科:Paralichthys californicus
-3005	Paralabrax maculatofasciatus
-2791	メジナ科:Girella simplicidens
-2605	Scorpaenichthys marmoratus
-1555	ベラ科\nHypsigenyini:Semicossyphus pulcher
-804	シロメバル:Sebastes cheni
-776	マサバ:Scomber japonicus
+id	SRR14752160.fastq
+ニシン科:Sardinops sagax	20.8752
+Serranidae sp. JL-2015	18.4324
+ベラ科\nJuilidini:Halichoeres californicus	11.5948
+Medialuna californiensis	11.3725
+Embiotoca lateralis	6.75881
+メバル科:Sebastes caurinus	6.07626
+ヒラメ科:Paralichthys californicus	5.15593
+Paralabrax maculatofasciatus	5.14053
+メジナ科:Girella simplicidens	4.77445
+Scorpaenichthys marmoratus	4.45627
+ベラ科\nHypsigenyini:Semicossyphus pulcher	2.66007
+シロメバル:Sebastes cheni	1.37537
+マサバ:Scomber japonicus	1.32747

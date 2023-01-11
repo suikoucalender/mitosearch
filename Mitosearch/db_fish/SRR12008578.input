@@ -1,4 +1,5 @@
-36352	メバル科:Sebastes fasciatus
-3342	ゲンゲ科:Lycodes lavalaei
-752	メバル科:Sebastes norvegicus
-652	カラフトシシャモ:Mallotus villosus
+id	SRR12008578.fastq
+メバル科:Sebastes fasciatus	88.452
+ゲンゲ科:Lycodes lavalaei	8.13178
+メバル科:Sebastes norvegicus	1.82977
+カラフトシシャモ:Mallotus villosus	1.58645

@@ -1,8 +1,9 @@
-18794	カタクチイワシ科:Engraulis japonicus
-6824	サワラ:Scomberomorus niphonius
-1536	Parambassis lala
-1199	イダテンギンポ:Omobranchus punctatus
-1054	メナダ:Planiliza haematocheilus
-971	コウカイトカゲエソ:Saurida microlepis
-957	クロダイ:Acanthopagrus schlegelii
-333	フグ科:Takifugu fasciatus
+id	DRR057755.fastq
+カタクチイワシ科:Engraulis japonicus	59.347
+サワラ:Scomberomorus niphonius	21.5486
+Parambassis lala	4.85032
+イダテンギンポ:Omobranchus punctatus	3.78616
+メナダ:Planiliza haematocheilus	3.32828
+コウカイトカゲエソ:Saurida microlepis	3.06619
+クロダイ:Acanthopagrus schlegelii	3.02198
+フグ科:Takifugu fasciatus	1.05153

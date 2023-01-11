@@ -1,6 +1,7 @@
-20714	コイ科:Rhynchocypris jouyi
-3696	カワムツ:Nipponocypris temminckii
-2724	Tribolodon hakonensis
-2417	ドンコ科:Odontobutis obscura
-945	サケ科:Oncorhynchus mykiss newberrii
-525	ニホンウナギ:Anguilla japonica
+id	DRR169751.fastq
+コイ科:Rhynchocypris jouyi	66.7741
+カワムツ:Nipponocypris temminckii	11.9145
+Tribolodon hakonensis	8.78115
+ドンコ科:Odontobutis obscura	7.7915
+サケ科:Oncorhynchus mykiss newberrii	3.04632
+ニホンウナギ:Anguilla japonica	1.6924

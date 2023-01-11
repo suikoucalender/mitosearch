@@ -1,8 +1,9 @@
-4894	タウエガジ科:Dictyosoma burgeri
-4679	カタクチイワシ科:Engraulis japonicus
-2501	ヒラメ:Paralichthys olivaceus
-2317	サヨリ:Hyporhamphus sajori
-1735	クサフグ:Takifugu alboplumbeus
-1328	ハゼ科:Chaeturichthys stigmatias
-919	ブリ:Seriola quinqueradiata
-522	アカカマス:Sphyraena pinguis
+id	DRR057706.fastq
+タウエガジ科:Dictyosoma burgeri	25.901
+カタクチイワシ科:Engraulis japonicus	24.7632
+ヒラメ:Paralichthys olivaceus	13.2363
+サヨリ:Hyporhamphus sajori	12.2625
+クサフグ:Takifugu alboplumbeus	9.18232
+ハゼ科:Chaeturichthys stigmatias	7.02831
+ブリ:Seriola quinqueradiata	4.86372
+アカカマス:Sphyraena pinguis	2.76264

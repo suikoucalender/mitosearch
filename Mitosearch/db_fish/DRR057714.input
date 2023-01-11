@@ -1,13 +1,14 @@
-35558	カタクチイワシ科:Engraulis japonicus
-6332	マアジ:Trachurus japonicus
-4697	ホソトビウオ:Cypselurus hiraii
-3740	イマイトビウオ:Cheilopogon arcticeps
-2366	ブリ:Seriola quinqueradiata
-2044	クサフグ:Takifugu alboplumbeus
-2021	スズキ:Lateolabrax japonicus
-1681	カマツカ:Pseudogobio esocinus
-1263	Parambassis lala
-1206	ボラ:Mugil cephalus
-1124	マタナゴ:Ditrema temminckii pacificum
-994	マルアジ:Decapterus maruadsi
-777	クロダイ:Acanthopagrus schlegelii
+id	DRR057714.fastq
+カタクチイワシ科:Engraulis japonicus	55.7309
+マアジ:Trachurus japonicus	9.9243
+ホソトビウオ:Cypselurus hiraii	7.36172
+イマイトビウオ:Cheilopogon arcticeps	5.86179
+ブリ:Seriola quinqueradiata	3.70829
+クサフグ:Takifugu alboplumbeus	3.20361
+スズキ:Lateolabrax japonicus	3.16756
+カマツカ:Pseudogobio esocinus	2.63467
+Parambassis lala	1.97953
+ボラ:Mugil cephalus	1.89019
+マタナゴ:Ditrema temminckii pacificum	1.76167
+マルアジ:Decapterus maruadsi	1.55792
+クロダイ:Acanthopagrus schlegelii	1.21781

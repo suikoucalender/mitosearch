@@ -1,9 +1,10 @@
-509	ナイルティラピア:Oreochromis niloticus
-183	Systomus sarana sarana
-142	Devario devario
-108	Esomus metallicus
-66	Pseudetroplus maculatus
-46	ネズスズメダイ:Chrysiptera glauca
-35	コウタイ:Channa asiatica
-32	Mystus vittatus
-30	タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950
+id	DRR217086.fastq
+ナイルティラピア:Oreochromis niloticus	44.2224
+Systomus sarana sarana	15.8992
+Devario devario	12.3371
+Esomus metallicus	9.38315
+Pseudetroplus maculatus	5.73414
+ネズスズメダイ:Chrysiptera glauca	3.99652
+コウタイ:Channa asiatica	3.04083
+Mystus vittatus	2.78019
+タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950	2.60643

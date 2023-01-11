@@ -1,19 +1,20 @@
-15898	ナイルティラピア:Oreochromis niloticus
-15171	カワスズメ科:Oreochromis sp. 'red tilapia'
-7157	Trichopodus leerii
-6944	Hypsibarbus salweenensis
-5175	Notopterus notopterus
-4418	Trichopodus pectoralis
-2976	Barbonymus altus
-2825	ササウシノシタ科:Brachirus siamensis
-2671	タイワンドジョウ科:Channa micropeltes
-2480	Yasuhikotakia eos
-2288	タイワンドジョウ科:Channa striata
-1806	Polynemus dubius
-1531	Cynoscion regalis
-1439	Thynnichthys thynnoides
-1424	Amblyrhynchichthys truncatus
-1352	Chitala ornata
-1016	Hampala macrolepidota
-876	Hemibagrus spilopterus
-806	Hemibagrus sp. RCH-2015
+id	ERR3514693.fastq
+ナイルティラピア:Oreochromis niloticus	20.3162
+カワスズメ科:Oreochromis sp. 'red tilapia'	19.3871
+Trichopodus leerii	9.14598
+Hypsibarbus salweenensis	8.87378
+Notopterus notopterus	6.61316
+Trichopodus pectoralis	5.64579
+Barbonymus altus	3.80305
+ササウシノシタ科:Brachirus siamensis	3.61009
+タイワンドジョウ科:Channa micropeltes	3.41329
+Yasuhikotakia eos	3.16921
+タイワンドジョウ科:Channa striata	2.92385
+Polynemus dubius	2.3079
+Cynoscion regalis	1.95647
+Thynnichthys thynnoides	1.83891
+Amblyrhynchichthys truncatus	1.81974
+Chitala ornata	1.72773
+Hampala macrolepidota	1.29835
+Hemibagrus spilopterus	1.11945
+Hemibagrus sp. RCH-2015	1.02999

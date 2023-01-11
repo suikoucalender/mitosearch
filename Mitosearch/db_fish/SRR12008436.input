@@ -1,8 +1,9 @@
-44610	メバル科:Sebastes fasciatus
-7047	アジ科:Scomber scombrus
-5841	メバル科:Sebastes mentella
-2053	ハダカイワシ科:Protomyctophum arcticum
-1181	タラ科:Gadus morhua
-1100	オヒョウ:Hippoglossus stenolepis
-956	ゲンゲ科:Melanostigma atlanticum
-701	Catostomus commersonii
+id	SRR12008436.fastq
+メバル科:Sebastes fasciatus	70.2641
+アジ科:Scomber scombrus	11.0996
+メバル科:Sebastes mentella	9.20002
+ハダカイワシ科:Protomyctophum arcticum	3.23363
+タラ科:Gadus morhua	1.86016
+オヒョウ:Hippoglossus stenolepis	1.73258
+ゲンゲ科:Melanostigma atlanticum	1.50577
+Catostomus commersonii	1.10413

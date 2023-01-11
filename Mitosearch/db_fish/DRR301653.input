@@ -1,8 +1,9 @@
-51037	ナンヨウチヌ:Acanthopagrus pacificus
-19831	コボラ:Planiliza macrolepis
-6915	トウゴロウイワシ科:Doboatherina valenciennei
-6082	カガヤキミゾイサキ:Pomadasys kaakan
-4971	ミヤラビハゼ:Parioglossus raoi
-4954	ゴマフエダイ:Lutjanus argentimaculatus
-4821	Amoya chusanensis
-2334	タイワンメナダ:Crenimugil seheli
+id	DRR301653.fastq
+ナンヨウチヌ:Acanthopagrus pacificus	50.5592
+コボラ:Planiliza macrolepis	19.6454
+トウゴロウイワシ科:Doboatherina valenciennei	6.85026
+カガヤキミゾイサキ:Pomadasys kaakan	6.02506
+ミヤラビハゼ:Parioglossus raoi	4.92446
+ゴマフエダイ:Lutjanus argentimaculatus	4.90762
+Amoya chusanensis	4.77587
+タイワンメナダ:Crenimugil seheli	2.31215

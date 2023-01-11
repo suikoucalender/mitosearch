@@ -1,17 +1,18 @@
-6892	カタクチイワシ科:Engraulis japonicus
-2606	スジハゼ:Acentrogobius virgatulus
-1768	コノシロ:Konosirus punctatus
-1426	マアジ:Trachurus japonicus
-1083	スズキ:Lateolabrax japonicus
-955	ボラ:Mugil cephalus
-714	ハタタテヌメリ:Callionymus valenciennei
-619	ニシン科:Sardinops sagax
-608	イトヒキハゼ:Myersina filifer
-546	ギマ:Triacanthus biaculeatus
-340	シログチ:Pennahia argentata
-335	ハゼ科:Chaeturichthys stigmatias
-307	トビエイ科:Myliobatis aquila
-302	Parambassis lala
-292	クロダイ:Acanthopagrus schlegelii
-226	サッパ:Sardinella zunasi
-205	コチ科:Platycephalus sp. 2 LL-2021
+id	DRR249924.fastq
+カタクチイワシ科:Engraulis japonicus	35.851
+スジハゼ:Acentrogobius virgatulus	13.556
+コノシロ:Konosirus punctatus	9.19684
+マアジ:Trachurus japonicus	7.41781
+スズキ:Lateolabrax japonicus	5.63358
+ボラ:Mugil cephalus	4.96775
+ハタタテヌメリ:Callionymus valenciennei	3.71411
+ニシン科:Sardinops sagax	3.21993
+イトヒキハゼ:Myersina filifer	3.16271
+ギマ:Triacanthus biaculeatus	2.8402
+シログチ:Pennahia argentata	1.76862
+ハゼ科:Chaeturichthys stigmatias	1.74261
+トビエイ科:Myliobatis aquila	1.59696
+Parambassis lala	1.57095
+クロダイ:Acanthopagrus schlegelii	1.51893
+サッパ:Sardinella zunasi	1.17561
+コチ科:Platycephalus sp. 2 LL-2021	1.06638

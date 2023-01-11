@@ -1,4 +1,5 @@
-167911	ボラ:Mugil cephalus
-8478	カワスズメ科:Oreochromis esculentus
-2629	ハゼ科:Pseudogobius olorum
-2119	Retropinna semoni
+id	SRR15710202.fastq
+ボラ:Mugil cephalus	92.6983
+カワスズメ科:Oreochromis esculentus	4.68044
+ハゼ科:Pseudogobius olorum	1.45139
+Retropinna semoni	1.16983

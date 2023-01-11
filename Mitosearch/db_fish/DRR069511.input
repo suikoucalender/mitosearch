@@ -1,11 +1,12 @@
-6280	カワムツ:Nipponocypris temminckii
-2799	Zacco platypus
-1975	ドンコ科:Odontobutis obscura
-1622	ドジョウ:Misgurnus anguillicaudatus
-738	クロヨシノボリ:Rhinogobius brunneus
-699	コイ科:Carassius auratus grandoculis
-589	ギンブナ:Carassius langsdorfii
-553	ハス:Opsariichthys uncirostris
-258	カワヨシノボリ:Rhinogobius flumineus
-252	ゲンゴロウブナ:Carassius cuvieri
-220	コイ科:Rhynchocypris jouyi
+id	DRR069511.fastq
+カワムツ:Nipponocypris temminckii	39.2868
+Zacco platypus	17.5102
+ドンコ科:Odontobutis obscura	12.3553
+ドジョウ:Misgurnus anguillicaudatus	10.147
+クロヨシノボリ:Rhinogobius brunneus	4.61683
+コイ科:Carassius auratus grandoculis	4.37285
+ギンブナ:Carassius langsdorfii	3.6847
+ハス:Opsariichthys uncirostris	3.45949
+カワヨシノボリ:Rhinogobius flumineus	1.61401
+ゲンゴロウブナ:Carassius cuvieri	1.57648
+コイ科:Rhynchocypris jouyi	1.37629

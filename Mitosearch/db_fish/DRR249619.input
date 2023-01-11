@@ -1,11 +1,12 @@
-4044	コノシロ:Konosirus punctatus
-436	ホシザメ:Mustelus manazo
-383	ヒメ:Hime japonica
-365	ハタタテヌメリ:Callionymus valenciennei
-286	Parambassis lala
-203	イサキ:Parapristipoma trilineatum
-192	ブリ:Seriola quinqueradiata
-188	スジハゼ:Acentrogobius virgatulus
-135	クロダイ:Acanthopagrus schlegelii
-104	トビエイ科:Myliobatis aquila
-90	アカアマダイ:Branchiostegus japonicus
+id	DRR249619.fastq
+コノシロ:Konosirus punctatus	62.9318
+ホシザメ:Mustelus manazo	6.78494
+ヒメ:Hime japonica	5.96016
+ハタタテヌメリ:Callionymus valenciennei	5.68005
+Parambassis lala	4.45067
+イサキ:Parapristipoma trilineatum	3.15904
+ブリ:Seriola quinqueradiata	2.98786
+スジハゼ:Acentrogobius virgatulus	2.92561
+クロダイ:Acanthopagrus schlegelii	2.10084
+トビエイ科:Myliobatis aquila	1.61843
+アカアマダイ:Branchiostegus japonicus	1.40056

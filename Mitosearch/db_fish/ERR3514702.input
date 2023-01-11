@@ -1,15 +1,16 @@
-28729	カワスズメ科:Oreochromis sp. 'red tilapia'
-28581	ナイルティラピア:Oreochromis niloticus
-21583	Mystacoleucus marginatus
-5620	Luciobarbus capito
-3846	Puntioplites proctozystron
-3824	Hypsibarbus salweenensis
-3383	Paralaubuca typus
-3177	Pristolepis rubripinnis
-2765	Cirrhinus molitorella
-2210	Anabas testudineus
-1928	Acantopsis choirorhynchos
-1917	Barbonymus gonionotus
-1816	Yasuhikotakia eos
-1584	Barbonymus schwanefeldii
-1257	Hampala macrolepidota
+id	ERR3514702.fastq
+カワスズメ科:Oreochromis sp. 'red tilapia'	25.6006
+ナイルティラピア:Oreochromis niloticus	25.4687
+Mystacoleucus marginatus	19.2328
+Luciobarbus capito	5.00802
+Puntioplites proctozystron	3.4272
+Hypsibarbus salweenensis	3.40759
+Paralaubuca typus	3.01461
+Pristolepis rubripinnis	2.83105
+Cirrhinus molitorella	2.46391
+Anabas testudineus	1.96935
+Acantopsis choirorhynchos	1.71805
+Barbonymus gonionotus	1.70825
+Yasuhikotakia eos	1.61825
+Barbonymus schwanefeldii	1.41151
+Hampala macrolepidota	1.12012

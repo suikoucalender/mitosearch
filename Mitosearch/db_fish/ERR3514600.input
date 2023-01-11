@@ -1,12 +1,13 @@
-25163	ナイルティラピア:Oreochromis niloticus
-7402	カワスズメ科:Oreochromis sp. 'red tilapia'
-4671	Mystacoleucus marginatus
-4500	Barbonymus gonionotus
-3454	Clupeichthys goniognathus
-3046	Trichopsis vittata
-2663	Yasuhikotakia eos
-2518	Pristolepis rubripinnis
-2328	Luciobarbus capito
-2056	Labiobarbus spilopleura
-1231	Hemibagrus sp. RCH-2015
-1173	Barbonymus schwanefeldii
+id	ERR3514600.fastq
+ナイルティラピア:Oreochromis niloticus	41.7955
+カワスズメ科:Oreochromis sp. 'red tilapia'	12.2947
+Mystacoleucus marginatus	7.75849
+Barbonymus gonionotus	7.47446
+Clupeichthys goniognathus	5.73707
+Trichopsis vittata	5.05938
+Yasuhikotakia eos	4.42322
+Pristolepis rubripinnis	4.18238
+Luciobarbus capito	3.86679
+Labiobarbus spilopleura	3.415
+Hemibagrus sp. RCH-2015	2.04468
+Barbonymus schwanefeldii	1.94834

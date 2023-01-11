@@ -1,6 +1,7 @@
-14946	コノシロ:Konosirus punctatus
-2901	カタクチイワシ科:Engraulis japonicus
-1598	アカアマダイ:Branchiostegus japonicus
-779	ヒメ:Hime japonica
-686	スズキ:Lateolabrax japonicus
-472	Parambassis lala
+id	DRR249674.fastq
+コノシロ:Konosirus punctatus	69.8999
+カタクチイワシ科:Engraulis japonicus	13.5675
+アカアマダイ:Branchiostegus japonicus	7.47358
+ヒメ:Hime japonica	3.64325
+スズキ:Lateolabrax japonicus	3.20831
+Parambassis lala	2.20746

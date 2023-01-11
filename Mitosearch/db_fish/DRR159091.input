@@ -1,10 +1,11 @@
-316	シマヨシノボリ:Rhinogobius nagoyae
-288	ボウズハゼ:Sicyopterus japonicus
-188	アヤヨシノボリ:Rhinogobius sp. MO
-136	ギンユゴイ:Kuhlia mugil
-125	ボラ:Mugil cephalus
-90	オオウナギ:Anguilla marmorata
-60	ゴクラクハゼ:Rhinogobius similis
-25	クロヨシノボリ:Rhinogobius brunneus
-17	ナガノゴリ:Tridentiger kuroiwae
-13	ミナミハゼ:Awaous ocellaris
+id	DRR159091.fastq
+シマヨシノボリ:Rhinogobius nagoyae	25.1192
+ボウズハゼ:Sicyopterus japonicus	22.8935
+アヤヨシノボリ:Rhinogobius sp. MO	14.9444
+ギンユゴイ:Kuhlia mugil	10.8108
+ボラ:Mugil cephalus	9.93641
+オオウナギ:Anguilla marmorata	7.15421
+ゴクラクハゼ:Rhinogobius similis	4.76948
+クロヨシノボリ:Rhinogobius brunneus	1.98728
+ナガノゴリ:Tridentiger kuroiwae	1.35135
+ミナミハゼ:Awaous ocellaris	1.03339

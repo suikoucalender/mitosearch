@@ -1,16 +1,17 @@
-88	ナイルティラピア:Oreochromis niloticus
-61	カワスズメ科:Oreochromis sp. 'red tilapia'
-25	Mystacoleucus marginatus
-12	Puntioplites proctozystron
-11	Notopterus notopterus
-7	Esomus metallicus
-6	Barbonymus gonionotus
-6	Clupeichthys goniognathus
-6	Clupeichthys perakensis
-6	Hypsibarbus salweenensis
-5	Hypsibarbus vernayi
-5	Amblyrhynchichthys truncatus
-5	Hampala macrolepidota
-5	Labeo chrysophekadion
-4	Systomus orphoides
-4	Labiobarbus spilopleura
+id	ERR3514674.fastq
+ナイルティラピア:Oreochromis niloticus	34.375
+カワスズメ科:Oreochromis sp. 'red tilapia'	23.8281
+Mystacoleucus marginatus	9.76562
+Puntioplites proctozystron	4.6875
+Notopterus notopterus	4.29688
+Esomus metallicus	2.73438
+Barbonymus gonionotus	2.34375
+Clupeichthys goniognathus	2.34375
+Clupeichthys perakensis	2.34375
+Hypsibarbus salweenensis	2.34375
+Hypsibarbus vernayi	1.95312
+Amblyrhynchichthys truncatus	1.95312
+Hampala macrolepidota	1.95312
+Labeo chrysophekadion	1.95312
+Systomus orphoides	1.5625
+Labiobarbus spilopleura	1.5625

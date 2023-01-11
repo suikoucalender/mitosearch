@@ -1,4 +1,5 @@
-20971	メバル科:Sebastes fasciatus
-20024	オヒョウ:Hippoglossus stenolepis
-18631	カレイ科:Pseudopleuronectes americanus
-9615	タラ科:Gadus morhua
+id	SRR12008459.fastq
+メバル科:Sebastes fasciatus	30.287
+オヒョウ:Hippoglossus stenolepis	28.9193
+カレイ科:Pseudopleuronectes americanus	26.9075
+タラ科:Gadus morhua	13.8863

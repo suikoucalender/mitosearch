@@ -1,6 +1,7 @@
-14043	スマ:Euthynnus affinis
-256	タカサゴ:Pterocaesio digramma
-187	マルコバン:Trachinotus blochii
-179	グルクマ:Rastrelliger kanagurta
-171	カスミアジ:Caranx melampygus
-162	ウメイロモドキ:Caesio teres
+id	DRR074694.fastq
+スマ:Euthynnus affinis	93.6325
+タカサゴ:Pterocaesio digramma	1.70689
+マルコバン:Trachinotus blochii	1.24683
+グルクマ:Rastrelliger kanagurta	1.19349
+カスミアジ:Caranx melampygus	1.14015
+ウメイロモドキ:Caesio teres	1.08014

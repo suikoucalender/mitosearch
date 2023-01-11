@@ -1,5 +1,6 @@
-89559	コイ科:Hemigrammocypris neglectus
-56502	ミナミメダカ:Oryzias latipes
-55845	カワヨシノボリ:Rhinogobius flumineus
-44932	カワムツ:Nipponocypris temminckii
-17354	ドジョウ:Misgurnus anguillicaudatus
+id	DRR221529.fastq
+コイ科:Hemigrammocypris neglectus	33.8992
+ミナミメダカ:Oryzias latipes	21.3867
+カワヨシノボリ:Rhinogobius flumineus	21.138
+カワムツ:Nipponocypris temminckii	17.0073
+ドジョウ:Misgurnus anguillicaudatus	6.56871

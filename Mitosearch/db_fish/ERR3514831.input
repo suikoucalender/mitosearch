@@ -1,11 +1,12 @@
-46804	ナイルティラピア:Oreochromis niloticus
-13064	Mystacoleucus marginatus
-7608	Barbonymus gonionotus
-5586	Anabas testudineus
-3950	Trichopsis vittata
-2763	タイワンドジョウ科:Channa striata
-2445	Raiamas guttatus
-2256	Systomus orphoides
-1890	Parambassis ranga
-1863	Hampala macrolepidota
-1605	Hemibagrus sp. RCH-2015
+id	ERR3514831.fastq
+ナイルティラピア:Oreochromis niloticus	52.1005
+Mystacoleucus marginatus	14.5424
+Barbonymus gonionotus	8.46895
+Anabas testudineus	6.21814
+Trichopsis vittata	4.397
+タイワンドジョウ科:Channa striata	3.07567
+Raiamas guttatus	2.72169
+Systomus orphoides	2.5113
+Parambassis ranga	2.10388
+Hampala macrolepidota	2.07383
+Hemibagrus sp. RCH-2015	1.78663

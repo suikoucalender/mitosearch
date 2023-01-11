@@ -1,7 +1,8 @@
-23666	カタクチイワシ科:Engraulis japonicus
-3798	ブリ:Seriola quinqueradiata
-3618	ホソトビウオ:Cypselurus hiraii
-2560	チチブ:Tridentiger obscurus
-2121	コノシロ:Konosirus punctatus
-1157	コウライニゴイ:Hemibarbus labeo
-393	アカオビシマハゼ:Tridentiger trigonocephalus
+id	DRR057670.fastq
+カタクチイワシ科:Engraulis japonicus	63.4256
+ブリ:Seriola quinqueradiata	10.1788
+ホソトビウオ:Cypselurus hiraii	9.69635
+チチブ:Tridentiger obscurus	6.86088
+コノシロ:Konosirus punctatus	5.68435
+コウライニゴイ:Hemibarbus labeo	3.1008
+アカオビシマハゼ:Tridentiger trigonocephalus	1.05325

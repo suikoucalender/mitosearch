@@ -1,7 +1,8 @@
-4019	コノシロ:Konosirus punctatus
-3549	カタクチイワシ科:Engraulis japonicus
-2872	サッパ:Sardinella zunasi
-2627	マアジ:Trachurus japonicus
-1082	シログチ:Pennahia argentata
-584	スズキ:Lateolabrax japonicus
-169	ムシガレイ:Eopsetta grigorjewi
+id	DRR249913.fastq
+コノシロ:Konosirus punctatus	26.9695
+カタクチイワシ科:Engraulis japonicus	23.8156
+サッパ:Sardinella zunasi	19.2726
+マアジ:Trachurus japonicus	17.6285
+シログチ:Pennahia argentata	7.26077
+スズキ:Lateolabrax japonicus	3.91894
+ムシガレイ:Eopsetta grigorjewi	1.13408

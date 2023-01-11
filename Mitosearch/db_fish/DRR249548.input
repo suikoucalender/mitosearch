@@ -1,9 +1,10 @@
-9832	カタクチイワシ科:Engraulis japonicus
-3246	スズキ:Lateolabrax japonicus
-2064	Parambassis lala
-1111	コノシロ:Konosirus punctatus
-901	クロダイ:Acanthopagrus schlegelii
-890	セトダイ:Hapalogenys analis
-719	スジハゼ:Acentrogobius virgatulus
-613	フグ科:Takifugu fasciatus
-527	サヨリ:Hyporhamphus sajori
+id	DRR249548.fastq
+カタクチイワシ科:Engraulis japonicus	49.3996
+スズキ:Lateolabrax japonicus	16.3091
+Parambassis lala	10.3703
+コノシロ:Konosirus punctatus	5.58207
+クロダイ:Acanthopagrus schlegelii	4.52696
+セトダイ:Hapalogenys analis	4.47169
+スジハゼ:Acentrogobius virgatulus	3.61252
+フグ科:Takifugu fasciatus	3.07994
+サヨリ:Hyporhamphus sajori	2.64784

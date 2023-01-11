@@ -1,6 +1,7 @@
-1851	コノシロ:Konosirus punctatus
-1018	カタクチイワシ科:Engraulis japonicus
-581	サッパ:Sardinella zunasi
-176	トウゴロウイワシ科:Doboatherina valenciennei
-98	ボラ:Mugil cephalus
-70	アカエイ:Hemitrygon akajei
+id	DRR250004.fastq
+コノシロ:Konosirus punctatus	48.7876
+カタクチイワシ科:Engraulis japonicus	26.8318
+サッパ:Sardinella zunasi	15.3137
+トウゴロウイワシ科:Doboatherina valenciennei	4.6389
+ボラ:Mugil cephalus	2.58303
+アカエイ:Hemitrygon akajei	1.84502

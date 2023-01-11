@@ -1,12 +1,13 @@
-32496	ナイルティラピア:Oreochromis niloticus
-13629	カワスズメ科:Oreochromis sp. 'red tilapia'
-7999	Hypsibarbus vernayi
-5423	Mystacoleucus marginatus
-4641	タイワンドジョウ科:Channa striata
-3951	Cyclocheilichthys janthochir
-3597	Nemacheilus platiceps
-3249	Labiobarbus spilopleura
-2827	サバ科:Rastrelliger brachysoma
-2168	Puntioplites proctozystron
-2025	Cirrhinus molitorella
-1862	Systomus orphoides
+id	ERR3514678.fastq
+ナイルティラピア:Oreochromis niloticus	38.7471
+カワスズメ科:Oreochromis sp. 'red tilapia'	16.2507
+Hypsibarbus vernayi	9.53772
+Mystacoleucus marginatus	6.46619
+タイワンドジョウ科:Channa striata	5.53376
+Cyclocheilichthys janthochir	4.71103
+Nemacheilus platiceps	4.28893
+Labiobarbus spilopleura	3.87399
+サバ科:Rastrelliger brachysoma	3.37081
+Puntioplites proctozystron	2.58505
+Cirrhinus molitorella	2.41454
+Systomus orphoides	2.22018

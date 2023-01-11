@@ -1,9 +1,10 @@
-5471	カタクチイワシ科:Engraulis japonicus
-2819	Parambassis lala
-1695	ヒイラギ:Nuchequula nuchalis
-1670	クロダイ:Acanthopagrus schlegelii
-1411	クサウオ:Liparis tanakae
-1026	コノシロ:Konosirus punctatus
-914	マアジ:Trachurus japonicus
-606	ベラ科:Parajulis poecilepterus
-197	ブリ:Seriola quinqueradiata
+id	DRR057583.fastq
+カタクチイワシ科:Engraulis japonicus	34.6069
+Parambassis lala	17.8316
+ヒイラギ:Nuchequula nuchalis	10.7217
+クロダイ:Acanthopagrus schlegelii	10.5636
+クサウオ:Liparis tanakae	8.9253
+コノシロ:Konosirus punctatus	6.48997
+マアジ:Trachurus japonicus	5.78152
+ベラ科:Parajulis poecilepterus	3.83326
+ブリ:Seriola quinqueradiata	1.24613

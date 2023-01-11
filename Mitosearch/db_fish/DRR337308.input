@@ -1,6 +1,7 @@
-24127	カワヨシノボリ:Rhinogobius flumineus
-23981	カワムツ:Nipponocypris temminckii
-12924	コイ科:Rhynchocypris jouyi
-9294	ドンコ科:Odontobutis obscura
-4672	サクラマス・ヤマメ:Oncorhynchus masou masou
-4088	Tribolodon hakonensis
+id	DRR337308.fastq
+カワヨシノボリ:Rhinogobius flumineus	30.5073
+カワムツ:Nipponocypris temminckii	30.3227
+コイ科:Rhynchocypris jouyi	16.3417
+ドンコ科:Odontobutis obscura	11.7518
+サクラマス・ヤマメ:Oncorhynchus masou masou	5.90749
+Tribolodon hakonensis	5.16906

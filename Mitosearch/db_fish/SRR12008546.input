@@ -1,15 +1,16 @@
-79	メバル科:Sebastes fasciatus
-17	カレイ科:Pseudopleuronectes americanus
-13	ニシン科:Clupea harengus
-12	カジカ科:Triglops murrayi
-7	タラ科:Gadus morhua
-6	ハダカイワシ科:Notoscopelus elongatus kroyeri
-5	カレイ科:Glyptocephalus cynoglossus
-4	オオカミウオ科:Anarhichas denticulatus
-3	ハダカイワシ科:Protomyctophum arcticum
-2	クサウオ科:Paraliparis sp. NSMT P92399
-2	Urophycis tenuis
-2	カラスガレイ:Reinhardtius hippoglossoides
-2	ゲンゲ科:Melanostigma atlanticum
-2	シロメバル:Sebastes cheni
-2	カジカ科:Icelus spatula
+id	SRR12008546.fastq
+メバル科:Sebastes fasciatus	50
+カレイ科:Pseudopleuronectes americanus	10.7595
+ニシン科:Clupea harengus	8.22785
+カジカ科:Triglops murrayi	7.59494
+タラ科:Gadus morhua	4.43038
+ハダカイワシ科:Notoscopelus elongatus kroyeri	3.79747
+カレイ科:Glyptocephalus cynoglossus	3.16456
+オオカミウオ科:Anarhichas denticulatus	2.53165
+ハダカイワシ科:Protomyctophum arcticum	1.89873
+クサウオ科:Paraliparis sp. NSMT P92399	1.26582
+Urophycis tenuis	1.26582
+カラスガレイ:Reinhardtius hippoglossoides	1.26582
+ゲンゲ科:Melanostigma atlanticum	1.26582
+シロメバル:Sebastes cheni	1.26582
+カジカ科:Icelus spatula	1.26582

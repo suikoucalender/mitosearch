@@ -1,13 +1,14 @@
-151756	メバル科:Sebastes fasciatus
-72721	タラ科:Gadus morhua
-62976	オヒョウ:Hippoglossus stenolepis
-46715	カレイ科:Pseudopleuronectes americanus
-32133	ヤマトヒゲダラ:Enchelyopus cimbrius
-26059	ヤセギンポ:Leptoclinus maculatus
-23553	メバル科:Sebastes mentella
-20210	ゲンゲ科:Lycodes vahlii
-20105	カラスガレイ:Reinhardtius hippoglossoides
-19641	カレイ科:Glyptocephalus cynoglossus
-11478	タウエガジ科:Lumpenus lampretaeformis
-7242	ニシン科:Clupea harengus
-7171	オオカミウオ科:Anarhichas denticulatus
+id	SRR12008457.fastq
+メバル科:Sebastes fasciatus	30.2447
+タラ科:Gadus morhua	14.4932
+オヒョウ:Hippoglossus stenolepis	12.551
+カレイ科:Pseudopleuronectes americanus	9.31023
+ヤマトヒゲダラ:Enchelyopus cimbrius	6.40406
+ヤセギンポ:Leptoclinus maculatus	5.19352
+メバル科:Sebastes mentella	4.69408
+ゲンゲ科:Lycodes vahlii	4.02782
+カラスガレイ:Reinhardtius hippoglossoides	4.0069
+カレイ科:Glyptocephalus cynoglossus	3.91442
+タウエガジ科:Lumpenus lampretaeformis	2.28755
+ニシン科:Clupea harengus	1.44332
+オオカミウオ科:Anarhichas denticulatus	1.42917

@@ -1,11 +1,12 @@
-10582	カタクチイワシ科:Engraulis japonicus
-8259	コノシロ:Konosirus punctatus
-3686	Parambassis lala
-3616	マアジ:Trachurus japonicus
-3223	クサフグ:Takifugu alboplumbeus
-3069	サワラ:Scomberomorus niphonius
-2823	ホソトビウオ:Cypselurus hiraii
-2223	クロダイ:Acanthopagrus schlegelii
-1305	ブリ:Seriola quinqueradiata
-1164	タモロコ:Gnathopogon elongatus elongatus
-429	ヒイラギ:Nuchequula nuchalis
+id	DRR057624.fastq
+カタクチイワシ科:Engraulis japonicus	26.2067
+コノシロ:Konosirus punctatus	20.4537
+Parambassis lala	9.12851
+マアジ:Trachurus japonicus	8.95515
+クサフグ:Takifugu alboplumbeus	7.98187
+サワラ:Scomberomorus niphonius	7.60049
+ホソトビウオ:Cypselurus hiraii	6.99126
+クロダイ:Acanthopagrus schlegelii	5.50534
+ブリ:Seriola quinqueradiata	3.23188
+タモロコ:Gnathopogon elongatus elongatus	2.88269
+ヒイラギ:Nuchequula nuchalis	1.06243

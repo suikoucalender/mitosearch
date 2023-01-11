@@ -1,11 +1,12 @@
-24558	ナイルティラピア:Oreochromis niloticus
-20422	カワスズメ科:Oreochromis sp. 'red tilapia'
-14076	Mystacoleucus marginatus
-3640	Puntioplites proctozystron
-3087	Clupeichthys goniognathus
-2987	Hypsibarbus salweenensis
-1253	Cyclocheilichthys armatus
-1184	Labiobarbus lineatus
-1072	Trichopodus pectoralis
-973	Labeo rohita
-804	Barbonymus schwanefeldii
+id	ERR3514616.fastq
+ナイルティラピア:Oreochromis niloticus	33.1614
+カワスズメ科:Oreochromis sp. 'red tilapia'	27.5764
+Mystacoleucus marginatus	19.0072
+Puntioplites proctozystron	4.9152
+Clupeichthys goniognathus	4.16847
+Hypsibarbus salweenensis	4.03343
+Cyclocheilichthys armatus	1.69196
+Labiobarbus lineatus	1.59879
+Trichopodus pectoralis	1.44755
+Labeo rohita	1.31387
+Barbonymus schwanefeldii	1.08566

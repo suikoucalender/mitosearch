@@ -1,12 +1,13 @@
-65912	ヌマチチブ:Tridentiger brevispinis
-2936	Phoxinus steindachneri
-2728	ウキゴリ:Gymnogobius urotaenia
-2211	チチブ:Tridentiger obscurus
-1812	ゲンゴロウブナ:Carassius cuvieri
-1392	アユ:Plecoglossus altivelis
-1342	モツゴ:Pseudorasbora parva
-1130	ヒガシシマドジョウ:Cobitis sp. BIWAE type C
-918	クロヨシノボリ:Rhinogobius brunneus
-887	カジカ:Cottus pollux
-887	サンフィッシュ科:Micropterus salmoides
-869	コイ:Cyprinus carpio
+id	DRR231472.fastq
+ヌマチチブ:Tridentiger brevispinis	79.3891
+Phoxinus steindachneri	3.53633
+ウキゴリ:Gymnogobius urotaenia	3.2858
+チチブ:Tridentiger obscurus	2.66309
+ゲンゴロウブナ:Carassius cuvieri	2.1825
+アユ:Plecoglossus altivelis	1.67662
+モツゴ:Pseudorasbora parva	1.6164
+ヒガシシマドジョウ:Cobitis sp. BIWAE type C	1.36105
+クロヨシノボリ:Rhinogobius brunneus	1.1057
+カジカ:Cottus pollux	1.06837
+サンフィッシュ科:Micropterus salmoides	1.06837
+コイ:Cyprinus carpio	1.04669

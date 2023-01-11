@@ -1,9 +1,10 @@
-31	ヌマチチブ:Tridentiger brevispinis
-28	アヤヨシノボリ:Rhinogobius sp. MO
-20	ホウライヒメジ:Parupeneus ciliatus
-18	ゴクラクハゼ:Rhinogobius similis
-8	クロヨシノボリ:Rhinogobius brunneus
-7	ボウズハゼ:Sicyopterus japonicus
-6	グッピー:Poecilia reticulata
-4	シマヨシノボリ:Rhinogobius nagoyae
-2	オオウナギ:Anguilla marmorata
+id	DRR159186.fastq
+ヌマチチブ:Tridentiger brevispinis	25
+アヤヨシノボリ:Rhinogobius sp. MO	22.5806
+ホウライヒメジ:Parupeneus ciliatus	16.129
+ゴクラクハゼ:Rhinogobius similis	14.5161
+クロヨシノボリ:Rhinogobius brunneus	6.45161
+ボウズハゼ:Sicyopterus japonicus	5.64516
+グッピー:Poecilia reticulata	4.83871
+シマヨシノボリ:Rhinogobius nagoyae	3.22581
+オオウナギ:Anguilla marmorata	1.6129

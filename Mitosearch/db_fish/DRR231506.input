@@ -1,11 +1,12 @@
-38825	ヌマチチブ:Tridentiger brevispinis
-2448	チチブ:Tridentiger obscurus
-1800	ギンブナ:Carassius langsdorfii
-1562	ゲンゴロウブナ:Carassius cuvieri
-1452	コイ:Cyprinus carpio
-960	アユ:Plecoglossus altivelis
-711	コイ科:Carassius auratus grandoculis
-700	ボラ:Mugil cephalus
-694	コイ科:Hemibarbus maculatus
-645	サンフィッシュ科:Micropterus salmoides
-639	ムギツク:Pungtungia herzi
+id	DRR231506.fastq
+ヌマチチブ:Tridentiger brevispinis	76.9787
+チチブ:Tridentiger obscurus	4.85368
+ギンブナ:Carassius langsdorfii	3.56888
+ゲンゴロウブナ:Carassius cuvieri	3.09699
+コイ:Cyprinus carpio	2.8789
+アユ:Plecoglossus altivelis	1.9034
+コイ科:Carassius auratus grandoculis	1.40971
+ボラ:Mugil cephalus	1.3879
+コイ科:Hemibarbus maculatus	1.376
+サンフィッシュ科:Micropterus salmoides	1.27885
+ムギツク:Pungtungia herzi	1.26695

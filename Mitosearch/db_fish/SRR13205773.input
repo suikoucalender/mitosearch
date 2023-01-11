@@ -1,6 +1,7 @@
-75293	コノシロ:Konosirus punctatus
-71565	カタクチイワシ科:Engraulis japonicus
-51886	マサバ:Scomber japonicus
-20827	ムネエソ科:Maurolicus muelleri
-8935	マガレイ:Pseudopleuronectes herzensteini
-4969	ヒラメ:Paralichthys olivaceus
+id	SRR13205773.fastq
+コノシロ:Konosirus punctatus	32.2488
+カタクチイワシ科:Engraulis japonicus	30.6521
+マサバ:Scomber japonicus	22.2234
+ムネエソ科:Maurolicus muelleri	8.92044
+マガレイ:Pseudopleuronectes herzensteini	3.82696
+ヒラメ:Paralichthys olivaceus	2.12828

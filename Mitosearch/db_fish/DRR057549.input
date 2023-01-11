@@ -1,7 +1,8 @@
-17238	カタクチイワシ科:Engraulis japonicus
-2672	ハゼ科:Chaeturichthys stigmatias
-2274	ナガレメイタガレイ:Pleuronichthys cornutus
-2050	Eutrigla gurnardus
-1618	コウカイトカゲエソ:Saurida microlepis
-1083	シログチ:Pennahia argentata
-1029	ホウボウ:Chelidonichthys spinosus
+id	DRR057549.fastq
+カタクチイワシ科:Engraulis japonicus	61.6435
+ハゼ科:Chaeturichthys stigmatias	9.55514
+ナガレメイタガレイ:Pleuronichthys cornutus	8.13188
+Eutrigla gurnardus	7.33085
+コウカイトカゲエソ:Saurida microlepis	5.78601
+シログチ:Pennahia argentata	3.87284
+ホウボウ:Chelidonichthys spinosus	3.67973

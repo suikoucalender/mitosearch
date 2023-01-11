@@ -1,9 +1,10 @@
-15855	Barbonymus altus
-10859	Barbonymus gonionotus
-10465	Cyclocheilichthys enoplos
-7243	Cosmochilus harmandi
-5675	Cynoscion regalis
-3266	Rasbora dusonensis
-2042	Labeo chrysophekadion
-1321	Clupeoides borneensis
-765	Pangasianodon hypophthalmus
+id	ERR3514609.fastq
+Barbonymus altus	27.5782
+Barbonymus gonionotus	18.8882
+Cyclocheilichthys enoplos	18.2028
+Cosmochilus harmandi	12.5985
+Cynoscion regalis	9.87111
+Rasbora dusonensis	5.68089
+Labeo chrysophekadion	3.55186
+Clupeoides borneensis	2.29775
+Pangasianodon hypophthalmus	1.33064

@@ -1,6 +1,7 @@
-68	ニシン科:Clupea harengus
-26	Urophycis tenuis
-16	Alosa aestivalis
-7	Melanogrammus aeglefinus
-4	Dorosoma petenense
-2	イカナゴ科:Ammodytes marinus
+id	SRR13249238.fastq
+ニシン科:Clupea harengus	55.2846
+Urophycis tenuis	21.1382
+Alosa aestivalis	13.0081
+Melanogrammus aeglefinus	5.69106
+Dorosoma petenense	3.25203
+イカナゴ科:Ammodytes marinus	1.62602

@@ -1,7 +1,8 @@
-5997	カタクチイワシ科:Engraulis japonicus
-1306	ナンカイウマヅラハギ:Thamnaconus septentrionalis
-1056	クジメ:Hexagrammos agrammus
-1004	ヒラメ:Paralichthys olivaceus
-594	Tribolodon hakonensis
-443	シモフリシマハゼ:Tridentiger bifasciatus
-308	ブリ:Seriola quinqueradiata
+id	DRR057690.fastq
+カタクチイワシ科:Engraulis japonicus	56.0049
+ナンカイウマヅラハギ:Thamnaconus septentrionalis	12.1965
+クジメ:Hexagrammos agrammus	9.86179
+ヒラメ:Paralichthys olivaceus	9.37617
+Tribolodon hakonensis	5.54725
+シモフリシマハゼ:Tridentiger bifasciatus	4.13709
+ブリ:Seriola quinqueradiata	2.87635

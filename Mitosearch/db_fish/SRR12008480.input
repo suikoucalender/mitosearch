@@ -1,10 +1,11 @@
-73812	カラフトシシャモ:Mallotus villosus
-11738	ゲンゲ科:Lycodes lavalaei
-7544	タラ科:Gadus morhua
-3938	ゲンゲ科:Lycodes vahlii
-3730	カレイ科:Pseudopleuronectes americanus
-2490	トクビレ科:Sarritor frenatus
-2416	タウエガジ科:Lumpenus lampretaeformis
-2383	カジカ科:Artediellus uncinatus
-2216	ヤセギンポ:Leptoclinus maculatus
-1341	オヒョウ:Hippoglossus stenolepis
+id	SRR12008480.fastq
+カラフトシシャモ:Mallotus villosus	66.135
+ゲンゲ科:Lycodes lavalaei	10.5172
+タラ科:Gadus morhua	6.75937
+ゲンゲ科:Lycodes vahlii	3.52842
+カレイ科:Pseudopleuronectes americanus	3.34205
+トクビレ科:Sarritor frenatus	2.23102
+タウエガジ科:Lumpenus lampretaeformis	2.16472
+カジカ科:Artediellus uncinatus	2.13515
+ヤセギンポ:Leptoclinus maculatus	1.98552
+オヒョウ:Hippoglossus stenolepis	1.20153

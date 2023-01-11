@@ -1,4 +1,5 @@
-3161	サケ科:Oncorhynchus mykiss newberrii
-2007	ウナギ科:Anguilla dieffenbachii
-1369	Galaxias sp. 'southern'
-105	Gobiomorphus huttoni
+id	SRR14531917.fastq
+サケ科:Oncorhynchus mykiss newberrii	47.5911
+ウナギ科:Anguilla dieffenbachii	30.2168
+Galaxias sp. 'southern'	20.6113
+Gobiomorphus huttoni	1.58085

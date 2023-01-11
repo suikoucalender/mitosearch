@@ -1,10 +1,11 @@
-27621	Notemigonus crysoleucas
-18981	Perca flavescens
-17958	Catostomus commersonii
-15751	Ameiurus nebulosus
-14126	カワマス:Salvelinus fontinalis
-11249	Esox lucius
-9235	太平洋系降海型イトヨ:Gasterosteus aculeatus
-7053	サンフィッシュ科:Lepomis gibbosus
-7042	Semotilus atromaculatus
-2213	Umbra pygmaea
+id	SRR14526832.fastq
+Notemigonus crysoleucas	21.0479
+Perca flavescens	14.464
+Catostomus commersonii	13.6845
+Ameiurus nebulosus	12.0027
+カワマス:Salvelinus fontinalis	10.7644
+Esox lucius	8.57204
+太平洋系降海型イトヨ:Gasterosteus aculeatus	7.03732
+サンフィッシュ科:Lepomis gibbosus	5.37457
+Semotilus atromaculatus	5.36619
+Umbra pygmaea	1.68637

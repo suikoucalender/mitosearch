@@ -1,13 +1,14 @@
-43188	Zacco platypus
-5096	マルアジ:Decapterus maruadsi
-4985	ドンコ科:Odontobutis obscura
-4884	ギンブナ:Carassius langsdorfii
-3173	カワヨシノボリ:Rhinogobius flumineus
-2374	イトモロコ:Squalidus gracilis gracilis
-2355	コイ:Cyprinus carpio
-1632	Tribolodon hakonensis
-1163	マアジ:Trachurus japonicus
-1115	カマツカ:Pseudogobio esocinus
-869	ゼゼラ:Biwia zezera
-809	タモロコ:Gnathopogon elongatus elongatus
-792	カワヒガイ:Sarcocheilichthys variegatus variegatus
+id	DRR234521.fastq
+Zacco platypus	59.6231
+マルアジ:Decapterus maruadsi	7.03527
+ドンコ科:Odontobutis obscura	6.88203
+ギンブナ:Carassius langsdorfii	6.7426
+カワヨシノボリ:Rhinogobius flumineus	4.38048
+イトモロコ:Squalidus gracilis gracilis	3.27742
+コイ:Cyprinus carpio	3.25119
+Tribolodon hakonensis	2.25305
+マアジ:Trachurus japonicus	1.60558
+カマツカ:Pseudogobio esocinus	1.53931
+ゼゼラ:Biwia zezera	1.1997
+タモロコ:Gnathopogon elongatus elongatus	1.11686
+カワヒガイ:Sarcocheilichthys variegatus variegatus	1.09339

@@ -1,13 +1,14 @@
-8500	カタクチイワシ科:Engraulis japonicus
-2768	Parambassis lala
-1709	クロダイ:Acanthopagrus schlegelii
-1330	Zacco platypus
-1235	ボラ:Mugil cephalus
-1015	アカオビシマハゼ:Tridentiger trigonocephalus
-963	ブリ:Seriola quinqueradiata
-756	チチブ:Tridentiger obscurus
-710	マアジ:Trachurus japonicus
-509	ギンブナ:Carassius langsdorfii
-365	ベラ科:Parajulis poecilepterus
-354	ホソトビウオ:Cypselurus hiraii
-267	マハゼ:Acanthogobius flavimanus
+id	DRR057674.fastq
+カタクチイワシ科:Engraulis japonicus	41.5019
+Parambassis lala	13.515
+クロダイ:Acanthopagrus schlegelii	8.34432
+Zacco platypus	6.49382
+ボラ:Mugil cephalus	6.02998
+アカオビシマハゼ:Tridentiger trigonocephalus	4.95581
+ブリ:Seriola quinqueradiata	4.70192
+チチブ:Tridentiger obscurus	3.69123
+マアジ:Trachurus japonicus	3.46663
+ギンブナ:Carassius langsdorfii	2.48523
+ベラ科:Parajulis poecilepterus	1.78214
+ホソトビウオ:Cypselurus hiraii	1.72843
+マハゼ:Acanthogobius flavimanus	1.30365

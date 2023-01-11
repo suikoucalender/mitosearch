@@ -1,7 +1,8 @@
-11406	カタクチイワシ科:Engraulis japonicus
-4899	コノシロ:Konosirus punctatus
-3443	クサフグ:Takifugu alboplumbeus
-1742	Parambassis lala
-1611	サワラ:Scomberomorus niphonius
-985	クロダイ:Acanthopagrus schlegelii
-731	Tribolodon hakonensis
+id	DRR057627.fastq
+カタクチイワシ科:Engraulis japonicus	45.9604
+コノシロ:Konosirus punctatus	19.7405
+クサフグ:Takifugu alboplumbeus	13.8736
+Parambassis lala	7.01938
+サワラ:Scomberomorus niphonius	6.49152
+クロダイ:Acanthopagrus schlegelii	3.96905
+Tribolodon hakonensis	2.94556

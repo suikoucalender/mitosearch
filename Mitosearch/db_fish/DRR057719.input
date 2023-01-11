@@ -1,9 +1,10 @@
-16145	カタクチイワシ科:Engraulis japonicus
-6881	ホソトビウオ:Cypselurus hiraii
-4018	ブリ:Seriola quinqueradiata
-1923	イソギンポ:Parablennius yatabei
-1669	Parambassis lala
-1170	マアジ:Trachurus japonicus
-1004	クロダイ:Acanthopagrus schlegelii
-905	ホンベラ:Halichoeres tenuispinis
-367	ボラ:Mugil cephalus
+id	DRR057719.fastq
+カタクチイワシ科:Engraulis japonicus	47.371
+ホソトビウオ:Cypselurus hiraii	20.1895
+ブリ:Seriola quinqueradiata	11.7892
+イソギンポ:Parablennius yatabei	5.64227
+Parambassis lala	4.89701
+マアジ:Trachurus japonicus	3.4329
+クロダイ:Acanthopagrus schlegelii	2.94584
+ホンベラ:Halichoeres tenuispinis	2.65536
+ボラ:Mugil cephalus	1.07681

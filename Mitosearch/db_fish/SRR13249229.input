@@ -1,9 +1,10 @@
-95	ニシン科:Clupea harengus
-33	Urophycis tenuis
-19	Alosa aestivalis
-13	Melanogrammus aeglefinus
-11	イカナゴ科:Ammodytes marinus
-3	ニシン:Clupea pallasii
-2	Pollachius virens
-2	タラ科:Gadus morhua
-2	タウエガジ科:Lumpenus lampretaeformis
+id	SRR13249229.fastq
+ニシン科:Clupea harengus	52.7778
+Urophycis tenuis	18.3333
+Alosa aestivalis	10.5556
+Melanogrammus aeglefinus	7.22222
+イカナゴ科:Ammodytes marinus	6.11111
+ニシン:Clupea pallasii	1.66667
+Pollachius virens	1.11111
+タラ科:Gadus morhua	1.11111
+タウエガジ科:Lumpenus lampretaeformis	1.11111

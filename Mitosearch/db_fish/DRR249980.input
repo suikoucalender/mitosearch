@@ -1,10 +1,11 @@
-1027	コノシロ:Konosirus punctatus
-719	カタクチイワシ科:Engraulis japonicus
-293	ハタタテヌメリ:Callionymus valenciennei
-226	ダツ:Strongylura anastomella
-164	ニシン科:Sardinops sagax
-107	アカエイ:Hemitrygon akajei
-100	ボラ:Mugil cephalus
-80	シログチ:Pennahia argentata
-32	クロダイ:Acanthopagrus schlegelii
-29	Parambassis lala
+id	DRR249980.fastq
+コノシロ:Konosirus punctatus	36.9824
+カタクチイワシ科:Engraulis japonicus	25.8912
+ハタタテヌメリ:Callionymus valenciennei	10.551
+ダツ:Strongylura anastomella	8.13828
+ニシン科:Sardinops sagax	5.90565
+アカエイ:Hemitrygon akajei	3.85308
+ボラ:Mugil cephalus	3.60101
+シログチ:Pennahia argentata	2.88081
+クロダイ:Acanthopagrus schlegelii	1.15232
+Parambassis lala	1.04429

@@ -1,6 +1,7 @@
-296	エソ科:Synodus lucioceps
-245	トビエイ科:Myliobatis californica
-111	エソ科:Synodus foetens
-73	Paralabrax clathratus
-14	Larimus fasciatus
-12	Gibbonsia montereyensis
+id	SRR12791260.fastq
+エソ科:Synodus lucioceps	39.4141
+トビエイ科:Myliobatis californica	32.6232
+エソ科:Synodus foetens	14.7803
+Paralabrax clathratus	9.72037
+Larimus fasciatus	1.86418
+Gibbonsia montereyensis	1.59787

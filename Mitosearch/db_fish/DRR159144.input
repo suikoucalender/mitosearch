@@ -1,6 +1,7 @@
-199	クロヨシノボリ:Rhinogobius brunneus
-113	オオウナギ:Anguilla marmorata
-69	ヌマチチブ:Tridentiger brevispinis
-41	シマヨシノボリ:Rhinogobius nagoyae
-30	コボラ:Planiliza macrolepis
-22	ナガノゴリ:Tridentiger kuroiwae
+id	DRR159144.fastq
+クロヨシノボリ:Rhinogobius brunneus	41.9831
+オオウナギ:Anguilla marmorata	23.8397
+ヌマチチブ:Tridentiger brevispinis	14.557
+シマヨシノボリ:Rhinogobius nagoyae	8.64979
+コボラ:Planiliza macrolepis	6.32911
+ナガノゴリ:Tridentiger kuroiwae	4.64135

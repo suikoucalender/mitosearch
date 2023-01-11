@@ -1,8 +1,9 @@
-16085	カワムツ:Nipponocypris temminckii
-15341	ドンコ科:Odontobutis obscura
-12668	コイ科:Rhynchocypris jouyi
-11708	Tribolodon hakonensis
-9871	Zacco platypus
-2151	コイ:Cyprinus carpio
-2140	ハゼ科:Rhinogobius sp. OR
-1391	イトモロコ:Squalidus gracilis gracilis
+id	DRR169754.fastq
+カワムツ:Nipponocypris temminckii	22.5422
+ドンコ科:Odontobutis obscura	21.4995
+コイ科:Rhynchocypris jouyi	17.7535
+Tribolodon hakonensis	16.4081
+Zacco platypus	13.8336
+コイ:Cyprinus carpio	3.0145
+ハゼ科:Rhinogobius sp. OR	2.99909
+イトモロコ:Squalidus gracilis gracilis	1.94941

@@ -1,17 +1,18 @@
-12661	Hypsibarbus salweenensis
-11060	Clupeichthys goniognathus
-10360	Mystacoleucus marginatus
-6505	ナイルティラピア:Oreochromis niloticus
-6088	Cyclocheilichthys enoplos
-4894	Barbonymus gonionotus
-4808	Labeo chrysophekadion
-4291	Amblyrhynchichthys truncatus
-4126	Cynoscion regalis
-3981	Puntioplites proctozystron
-2423	Labeo rohita
-2350	Paralaubuca typus
-2104	Hampala macrolepidota
-1380	Mystus sp. EM2
-1292	Hemibagrus spilopterus
-1206	Lobocheilos melanotaenia
-928	Hemibagrus sp. RCH-2015
+id	ERR3514809.fastq
+Hypsibarbus salweenensis	15.7364
+Clupeichthys goniognathus	13.7465
+Mystacoleucus marginatus	12.8764
+ナイルティラピア:Oreochromis niloticus	8.08506
+Cyclocheilichthys enoplos	7.56677
+Barbonymus gonionotus	6.08275
+Labeo chrysophekadion	5.97586
+Amblyrhynchichthys truncatus	5.33328
+Cynoscion regalis	5.12821
+Puntioplites proctozystron	4.94798
+Labeo rohita	3.01155
+Paralaubuca typus	2.92081
+Hampala macrolepidota	2.61506
+Mystus sp. EM2	1.7152
+Hemibagrus spilopterus	1.60583
+Lobocheilos melanotaenia	1.49894
+Hemibagrus sp. RCH-2015	1.15341

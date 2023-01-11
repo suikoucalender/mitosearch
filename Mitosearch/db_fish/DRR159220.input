@@ -1,7 +1,8 @@
-251	オオウナギ:Anguilla marmorata
-125	アヤヨシノボリ:Rhinogobius sp. MO
-62	グッピー:Poecilia reticulata
-56	クロヨシノボリ:Rhinogobius brunneus
-52	シマヨシノボリ:Rhinogobius nagoyae
-35	ボウズハゼ:Sicyopterus japonicus
-7	ナガノゴリ:Tridentiger kuroiwae
+id	DRR159220.fastq
+オオウナギ:Anguilla marmorata	42.6871
+アヤヨシノボリ:Rhinogobius sp. MO	21.2585
+グッピー:Poecilia reticulata	10.5442
+クロヨシノボリ:Rhinogobius brunneus	9.52381
+シマヨシノボリ:Rhinogobius nagoyae	8.84354
+ボウズハゼ:Sicyopterus japonicus	5.95238
+ナガノゴリ:Tridentiger kuroiwae	1.19048

@@ -1,9 +1,10 @@
-3132	チダイ:Evynnis tumifrons
-2618	カタクチイワシ科:Engraulis japonicus
-2162	コチ科:Platycephalus sp. 2 LL-2021
-1464	Parargyrops edita
-1349	ハゼ科:Chaeturichthys stigmatias
-715	マダイ:Pagrus major
-557	マアジ:Trachurus japonicus
-272	コモチジャコ:Amblychaeturichthys sciistius
-219	ササウシノシタ:Heteromycteris japonicus
+id	DRR249941.fastq
+チダイ:Evynnis tumifrons	25.0801
+カタクチイワシ科:Engraulis japonicus	20.9641
+コチ科:Platycephalus sp. 2 LL-2021	17.3126
+Parargyrops edita	11.7233
+ハゼ科:Chaeturichthys stigmatias	10.8024
+マダイ:Pagrus major	5.7255
+マアジ:Trachurus japonicus	4.46028
+コモチジャコ:Amblychaeturichthys sciistius	2.17809
+ササウシノシタ:Heteromycteris japonicus	1.75368

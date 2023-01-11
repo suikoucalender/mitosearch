@@ -1,13 +1,14 @@
-68910	タラ科:Gadus morhua
-37681	ニシン科:Clupea harengus
-5735	カジカ科:Triglops murrayi
-3891	アジ科:Scomber scombrus
-3522	ゲンゲ科:Lycodes lavalaei
-3246	Anarrhichthys ocellatus
-2712	トクビレ科:Sarritor frenatus
-2705	クサウオ科:Liparis liparis
-2432	イサゴビクニン:Liparis ochotensis
-2218	ニセメダマギンポ:Anisarchus medius
-2166	Eumesogrammus praecisus
-2156	カレイ科:Pseudopleuronectes americanus
-2110	イカナゴ科:Ammodytes tobianus
+id	SRR12008408.fastq
+タラ科:Gadus morhua	49.4035
+ニシン科:Clupea harengus	27.0146
+カジカ科:Triglops murrayi	4.11158
+アジ科:Scomber scombrus	2.78957
+ゲンゲ科:Lycodes lavalaei	2.52502
+Anarrhichthys ocellatus	2.32715
+トクビレ科:Sarritor frenatus	1.94431
+クサウオ科:Liparis liparis	1.93929
+イサゴビクニン:Liparis ochotensis	1.74357
+ニセメダマギンポ:Anisarchus medius	1.59015
+Eumesogrammus praecisus	1.55287
+カレイ科:Pseudopleuronectes americanus	1.5457
+イカナゴ科:Ammodytes tobianus	1.51272

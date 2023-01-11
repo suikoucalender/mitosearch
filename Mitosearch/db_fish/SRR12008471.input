@@ -1,6 +1,7 @@
-89115	メバル科:Sebastes fasciatus
-24703	タラ科:Gadus morhua
-11915	メバル科:Sebastes mentella
-2330	カレイ科:Glyptocephalus cynoglossus
-2155	ニシン科:Clupea harengus
-2067	ヤマトヒゲダラ:Enchelyopus cimbrius
+id	SRR12008471.fastq
+メバル科:Sebastes fasciatus	67.3659
+タラ科:Gadus morhua	18.6741
+メバル科:Sebastes mentella	9.00707
+カレイ科:Glyptocephalus cynoglossus	1.76135
+ニシン科:Clupea harengus	1.62906
+ヤマトヒゲダラ:Enchelyopus cimbrius	1.56254

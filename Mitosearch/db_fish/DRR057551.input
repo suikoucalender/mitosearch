@@ -1,13 +1,14 @@
-15571	カタクチイワシ科:Engraulis japonicus
-4086	スジハゼ:Acentrogobius virgatulus
-3437	ハゼ科:Chaeturichthys stigmatias
-3382	Parambassis lala
-2757	ワニエソ:Saurida wanieso
-2204	マアジ:Trachurus japonicus
-2022	クロダイ:Acanthopagrus schlegelii
-2000	キジハタ:Epinephelus akaara
-1264	ハタタテヌメリ:Callionymus valenciennei
-954	ハモ:Muraenesox cinereus
-758	コモチジャコ:Amblychaeturichthys sciistius
-522	スズキ:Lateolabrax japonicus
-513	マダイ:Pagrus major
+id	DRR057551.fastq
+カタクチイワシ科:Engraulis japonicus	39.4502
+スジハゼ:Acentrogobius virgatulus	10.3522
+ハゼ科:Chaeturichthys stigmatias	8.70788
+Parambassis lala	8.56853
+ワニエソ:Saurida wanieso	6.98505
+マアジ:Trachurus japonicus	5.58399
+クロダイ:Acanthopagrus schlegelii	5.12288
+キジハタ:Epinephelus akaara	5.06714
+ハタタテヌメリ:Callionymus valenciennei	3.20243
+ハモ:Muraenesox cinereus	2.41703
+コモチジャコ:Amblychaeturichthys sciistius	1.92045
+スズキ:Lateolabrax japonicus	1.32252
+マダイ:Pagrus major	1.29972

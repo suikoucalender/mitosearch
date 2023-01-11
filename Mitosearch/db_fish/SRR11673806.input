@@ -1,9 +1,10 @@
-83382	コイ:Cyprinus carpio
-56634	サンフィッシュ科:Micropterus salmoides
-51081	チチブ:Tridentiger obscurus
-44904	サンフィッシュ科:Lepomis cyanellus
-38114	ボラ:Mugil cephalus
-33978	コイ科:Opsariichthys uncirostris amurensis
-25526	コイ科:Squalidus iijimae
-12463	コイ科:Sarcocheilichthys nigripinnis morii
-5443	Tribolodon hakonensis
+id	SRR11673806.fastq
+コイ:Cyprinus carpio	23.7201
+サンフィッシュ科:Micropterus salmoides	16.1109
+チチブ:Tridentiger obscurus	14.5313
+サンフィッシュ科:Lepomis cyanellus	12.7741
+ボラ:Mugil cephalus	10.8425
+コイ科:Opsariichthys uncirostris amurensis	9.66588
+コイ科:Squalidus iijimae	7.2615
+コイ科:Sarcocheilichthys nigripinnis morii	3.54541
+Tribolodon hakonensis	1.5484

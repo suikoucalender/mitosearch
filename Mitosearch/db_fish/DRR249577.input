@@ -1,11 +1,12 @@
-1549	シログチ:Pennahia argentata
-441	マサバ:Scomber japonicus
-355	ハゼ科:Chaeturichthys stigmatias
-346	ニシン科:Sardinops sagax
-321	スズキ:Lateolabrax japonicus
-266	ハタタテヌメリ:Callionymus valenciennei
-224	テンジクダイ:Jaydia lineata
-169	コノシロ:Konosirus punctatus
-169	ホシザメ:Mustelus manazo
-98	アカエイ:Hemitrygon akajei
-53	ドチザメ:Triakis scyllium
+id	DRR249577.fastq
+シログチ:Pennahia argentata	38.8123
+マサバ:Scomber japonicus	11.0499
+ハゼ科:Chaeturichthys stigmatias	8.89501
+ニシン科:Sardinops sagax	8.66951
+スズキ:Lateolabrax japonicus	8.0431
+ハタタテヌメリ:Callionymus valenciennei	6.665
+テンジクダイ:Jaydia lineata	5.61263
+コノシロ:Konosirus punctatus	4.23453
+ホシザメ:Mustelus manazo	4.23453
+アカエイ:Hemitrygon akajei	2.45552
+ドチザメ:Triakis scyllium	1.32799

@@ -1,8 +1,9 @@
-316	クロヨシノボリ:Rhinogobius brunneus
-80	Zacco platypus
-38	ハス:Opsariichthys uncirostris
-14	コイ科:Hemibarbus maculatus
-12	シマヨシノボリ:Rhinogobius nagoyae
-8	ウキゴリ:Gymnogobius urotaenia
-7	Phoxinus steindachneri
-7	ヌマムツ:Nipponocypris sieboldii
+id	DRR069667.fastq
+クロヨシノボリ:Rhinogobius brunneus	65.5602
+Zacco platypus	16.5975
+ハス:Opsariichthys uncirostris	7.88382
+コイ科:Hemibarbus maculatus	2.90456
+シマヨシノボリ:Rhinogobius nagoyae	2.48963
+ウキゴリ:Gymnogobius urotaenia	1.65975
+Phoxinus steindachneri	1.45228
+ヌマムツ:Nipponocypris sieboldii	1.45228

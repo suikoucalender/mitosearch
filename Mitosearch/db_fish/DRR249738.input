@@ -1,9 +1,10 @@
-526	ボラ:Mugil cephalus
-453	サッパ:Sardinella zunasi
-196	Parambassis lala
-180	カタクチイワシ科:Engraulis japonicus
-115	シロギス:Sillago japonica
-97	クロダイ:Acanthopagrus schlegelii
-95	スズキ:Lateolabrax japonicus
-77	コノシロ:Konosirus punctatus
-46	シログチ:Pennahia argentata
+id	DRR249738.fastq
+ボラ:Mugil cephalus	29.4678
+サッパ:Sardinella zunasi	25.3782
+Parambassis lala	10.9804
+カタクチイワシ科:Engraulis japonicus	10.084
+シロギス:Sillago japonica	6.44258
+クロダイ:Acanthopagrus schlegelii	5.43417
+スズキ:Lateolabrax japonicus	5.32213
+コノシロ:Konosirus punctatus	4.31373
+シログチ:Pennahia argentata	2.57703

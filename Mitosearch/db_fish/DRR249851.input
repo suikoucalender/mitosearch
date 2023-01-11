@@ -1,6 +1,7 @@
-21901	ニシン科:Sardinops sagax
-9940	マサバ:Scomber japonicus
-1687	イゴダカホデリ:Lepidotrigla alata
-1033	マアジ:Trachurus japonicus
-1005	シログチ:Pennahia argentata
-790	ウルメイワシ:Etrumeus micropus
+id	DRR249851.fastq
+ニシン科:Sardinops sagax	60.2404
+マサバ:Scomber japonicus	27.3407
+イゴダカホデリ:Lepidotrigla alata	4.64022
+マアジ:Trachurus japonicus	2.84135
+シログチ:Pennahia argentata	2.76433
+ウルメイワシ:Etrumeus micropus	2.17296

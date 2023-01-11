@@ -1,10 +1,11 @@
-1035	メバル科:Sebastes fasciatus
-525	タラ科:Gadus morhua
-284	Cyclopterus lumpus
-250	タウエガジ科:Lumpenus lampretaeformis
-194	カレイ科:Pseudopleuronectes americanus
-96	ゲンゲ科:Lycodes vahlii
-64	カラフトシシャモ:Mallotus villosus
-48	カレイ科:Glyptocephalus cynoglossus
-35	ニシン科:Clupea harengus
-28	メバル科:Sebastes mentella
+id	SRR12008561.fastq
+メバル科:Sebastes fasciatus	40.4455
+タラ科:Gadus morhua	20.5158
+Cyclopterus lumpus	11.0981
+タウエガジ科:Lumpenus lampretaeformis	9.76944
+カレイ科:Pseudopleuronectes americanus	7.58109
+ゲンゲ科:Lycodes vahlii	3.75147
+カラフトシシャモ:Mallotus villosus	2.50098
+カレイ科:Glyptocephalus cynoglossus	1.87573
+ニシン科:Clupea harengus	1.36772
+メバル科:Sebastes mentella	1.09418

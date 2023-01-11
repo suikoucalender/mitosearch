@@ -1,7 +1,8 @@
-5996	スズキ:Lateolabrax japonicus
-3428	ハゼ科:Chaeturichthys stigmatias
-1825	カタクチイワシ科:Engraulis japonicus
-1261	スジハゼ:Acentrogobius virgatulus
-838	ボラ:Mugil cephalus
-715	コモチジャコ:Amblychaeturichthys sciistius
-178	アカエイ:Hemitrygon akajei
+id	DRR249957.fastq
+スズキ:Lateolabrax japonicus	42.1038
+ハゼ科:Chaeturichthys stigmatias	24.0713
+カタクチイワシ科:Engraulis japonicus	12.8151
+スジハゼ:Acentrogobius virgatulus	8.85472
+ボラ:Mugil cephalus	5.88442
+コモチジャコ:Amblychaeturichthys sciistius	5.02071
+アカエイ:Hemitrygon akajei	1.24991

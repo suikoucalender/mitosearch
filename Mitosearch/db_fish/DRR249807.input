@@ -1,6 +1,7 @@
-15824	サワラ:Scomberomorus niphonius
-1519	ブリ:Seriola quinqueradiata
-410	カタクチイワシ科:Engraulis japonicus
-330	スズキ:Lateolabrax japonicus
-214	マサバ:Scomber japonicus
-201	ニクハゼ:Gymnogobius heptacanthus
+id	DRR249807.fastq
+サワラ:Scomberomorus niphonius	85.5444
+ブリ:Seriola quinqueradiata	8.2117
+カタクチイワシ科:Engraulis japonicus	2.21646
+スズキ:Lateolabrax japonicus	1.78398
+マサバ:Scomber japonicus	1.15688
+ニクハゼ:Gymnogobius heptacanthus	1.0866

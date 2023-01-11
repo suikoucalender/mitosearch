@@ -1,7 +1,8 @@
-829	カタクチイワシ科:Engraulis japonicus
-805	スズキ:Lateolabrax japonicus
-617	コノシロ:Konosirus punctatus
-171	アカカマス:Sphyraena pinguis
-148	キハダ:Thunnus albacares
-132	Cheilodactylus quadricornis
-101	スケトウダラ:Gadus chalcogrammus
+id	DRR249535.fastq
+カタクチイワシ科:Engraulis japonicus	29.5755
+スズキ:Lateolabrax japonicus	28.7192
+コノシロ:Konosirus punctatus	22.0121
+アカカマス:Sphyraena pinguis	6.10061
+キハダ:Thunnus albacares	5.28006
+Cheilodactylus quadricornis	4.70924
+スケトウダラ:Gadus chalcogrammus	3.60328

@@ -1,5 +1,6 @@
-6097	カタクチイワシ科:Engraulis japonicus
-3697	ハゼ科:Chaeturichthys stigmatias
-1048	マアジ:Trachurus japonicus
-769	スジハゼ:Acentrogobius virgatulus
-741	コモチジャコ:Amblychaeturichthys sciistius
+id	DRR057490.fastq
+カタクチイワシ科:Engraulis japonicus	49.3604
+ハゼ科:Chaeturichthys stigmatias	29.9304
+マアジ:Trachurus japonicus	8.48446
+スジハゼ:Acentrogobius virgatulus	6.22571
+コモチジャコ:Amblychaeturichthys sciistius	5.99903

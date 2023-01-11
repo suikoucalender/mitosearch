@@ -1,6 +1,7 @@
-6719	Sander vitreus
-5177	Perca flavescens
-828	キンギョ:Carassius auratus
-644	ブルーギル:Lepomis macrochirus
-305	サンフィッシュ科:Lepomis cyanellus
-288	Ameiurus natalis
+id	SRR12534655.fastq
+Sander vitreus	48.1269
+Perca flavescens	37.0819
+キンギョ:Carassius auratus	5.93081
+ブルーギル:Lepomis macrochirus	4.61285
+サンフィッシュ科:Lepomis cyanellus	2.18466
+Ameiurus natalis	2.06289

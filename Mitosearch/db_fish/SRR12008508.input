@@ -1,4 +1,5 @@
-444297	メバル科:Sebastes fasciatus
-50516	メバル科:Sebastes mentella
-7474	タラ科:Gadus morhua
-6627	オヒョウ:Hippoglossus stenolepis
+id	SRR12008508.fastq
+メバル科:Sebastes fasciatus	87.303
+メバル科:Sebastes mentella	9.92624
+タラ科:Gadus morhua	1.46862
+オヒョウ:Hippoglossus stenolepis	1.30218

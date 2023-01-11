@@ -1,9 +1,10 @@
-167425	チチブ:Tridentiger obscurus
-31330	コイ:Cyprinus carpio
-14002	メナダ:Planiliza haematocheilus
-13242	コウライニゴイ:Hemibarbus labeo
-10049	ニホンウナギ:Anguilla japonica
-5675	キンギョ:Carassius auratus
-5339	Culter alburnus
-3988	サンフィッシュ科:Micropterus salmoides
-3299	サンフィッシュ科:Lepomis cyanellus
+id	SRR11673809.fastq
+チチブ:Tridentiger obscurus	65.8249
+コイ:Cyprinus carpio	12.3177
+メナダ:Planiliza haematocheilus	5.50503
+コウライニゴイ:Hemibarbus labeo	5.20623
+ニホンウナギ:Anguilla japonica	3.95087
+キンギョ:Carassius auratus	2.23119
+Culter alburnus	2.09908
+サンフィッシュ科:Micropterus salmoides	1.56792
+サンフィッシュ科:Lepomis cyanellus	1.29704

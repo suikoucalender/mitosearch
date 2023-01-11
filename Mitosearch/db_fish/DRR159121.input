@@ -1,8 +1,9 @@
-1258	シマヨシノボリ:Rhinogobius nagoyae
-641	ボウズハゼ:Sicyopterus japonicus
-575	テンジクカワアナゴ:Eleotris fusca
-474	アヤヨシノボリ:Rhinogobius sp. MO
-438	ミナミハゼ:Awaous ocellaris
-337	ギンユゴイ:Kuhlia mugil
-223	オオウナギ:Anguilla marmorata
-145	ゴクラクハゼ:Rhinogobius similis
+id	DRR159121.fastq
+シマヨシノボリ:Rhinogobius nagoyae	30.7504
+ボウズハゼ:Sicyopterus japonicus	15.6685
+テンジクカワアナゴ:Eleotris fusca	14.0552
+アヤヨシノボリ:Rhinogobius sp. MO	11.5864
+ミナミハゼ:Awaous ocellaris	10.7064
+ギンユゴイ:Kuhlia mugil	8.23759
+オオウナギ:Anguilla marmorata	5.45099
+ゴクラクハゼ:Rhinogobius similis	3.54437

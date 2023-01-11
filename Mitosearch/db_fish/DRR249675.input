@@ -1,9 +1,10 @@
-15610	カタクチイワシ科:Engraulis japonicus
-5225	シログチ:Pennahia argentata
-4140	コノシロ:Konosirus punctatus
-1342	ハタタテヌメリ:Callionymus valenciennei
-830	イトヒキハゼ:Myersina filifer
-774	スジハゼ:Acentrogobius virgatulus
-388	ダツ:Strongylura anastomella
-371	ニシン科:Sardinops sagax
-292	スズキ:Lateolabrax japonicus
+id	DRR249675.fastq
+カタクチイワシ科:Engraulis japonicus	53.8796
+シログチ:Pennahia argentata	18.0347
+コノシロ:Konosirus punctatus	14.2897
+ハタタテヌメリ:Callionymus valenciennei	4.63206
+イトヒキハゼ:Myersina filifer	2.86484
+スジハゼ:Acentrogobius virgatulus	2.67154
+ダツ:Strongylura anastomella	1.33922
+ニシン科:Sardinops sagax	1.28055
+スズキ:Lateolabrax japonicus	1.00787

@@ -1,10 +1,11 @@
-34642	ナイルティラピア:Oreochromis niloticus
-10961	タイワンドジョウ科:Channa striata
-10022	カワスズメ科:Oreochromis sp. 'red tilapia'
-5315	Puntioplites proctozystron
-4037	Mystacoleucus marginatus
-3096	Pristolepis rubripinnis
-1873	Anabas testudineus
-1863	Barbonymus gonionotus
-1253	Systomus orphoides
-906	ハゼ科:Eugnathogobius oligactis
+id	ERR3514822.fastq
+ナイルティラピア:Oreochromis niloticus	46.8338
+タイワンドジョウ科:Channa striata	14.8186
+カワスズメ科:Oreochromis sp. 'red tilapia'	13.5491
+Puntioplites proctozystron	7.18554
+Mystacoleucus marginatus	5.45777
+Pristolepis rubripinnis	4.18559
+Anabas testudineus	2.53218
+Barbonymus gonionotus	2.51866
+Systomus orphoides	1.69398
+ハゼ科:Eugnathogobius oligactis	1.22485

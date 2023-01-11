@@ -1,6 +1,7 @@
-108961	ヌマチチブ:Tridentiger brevispinis
-15369	コイ:Cyprinus carpio
-12197	チチブ:Tridentiger obscurus
-6800	Tribolodon hakonensis
-5267	ゲンゴロウブナ:Carassius cuvieri
-2338	ウキゴリ:Gymnogobius urotaenia
+id	DRR231434.fastq
+ヌマチチブ:Tridentiger brevispinis	72.1921
+コイ:Cyprinus carpio	10.1827
+チチブ:Tridentiger obscurus	8.08112
+Tribolodon hakonensis	4.50534
+ゲンゴロウブナ:Carassius cuvieri	3.48965
+ウキゴリ:Gymnogobius urotaenia	1.54904

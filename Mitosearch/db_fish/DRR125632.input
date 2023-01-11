@@ -1,5 +1,6 @@
-2278	ゲンゴロウブナ:Carassius cuvieri
-721	モツゴ:Pseudorasbora parva
-394	Tribolodon ezoe
-331	ギンブナ:Carassius langsdorfii
-54	コイ:Cyprinus carpio
+id	DRR125632.fastq
+ゲンゴロウブナ:Carassius cuvieri	60.2965
+モツゴ:Pseudorasbora parva	19.0842
+Tribolodon ezoe	10.4288
+ギンブナ:Carassius langsdorfii	8.76125
+コイ:Cyprinus carpio	1.42933

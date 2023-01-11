@@ -1,5 +1,6 @@
-32295	アジ科:Caranx hippos
-28915	フエダイ科:Lutjanus griseus
-19449	イスズミ科:Kyphosus elegans
-13271	フエダイ科:Lutjanus guttatus
-1451	フエダイ科:Lutjanus campechanus
+id	SRR14472333.fastq
+アジ科:Caranx hippos	33.8589
+フエダイ科:Lutjanus griseus	30.3153
+イスズミ科:Kyphosus elegans	20.3909
+フエダイ科:Lutjanus guttatus	13.9137
+フエダイ科:Lutjanus campechanus	1.52127

@@ -1,6 +1,7 @@
-1818	メバル科:Sebastes fasciatus
-1473	タラ科:Gadus morhua
-1252	カラスガレイ:Reinhardtius hippoglossoides
-716	メバル科:Sebastes mentella
-659	ニシン科:Clupea harengus
-381	イカナゴ科:Ammodytes tobianus
+id	SRR12008571.fastq
+メバル科:Sebastes fasciatus	28.8617
+タラ科:Gadus morhua	23.3847
+カラスガレイ:Reinhardtius hippoglossoides	19.8762
+メバル科:Sebastes mentella	11.3669
+ニシン科:Clupea harengus	10.462
+イカナゴ科:Ammodytes tobianus	6.04858

@@ -1,17 +1,18 @@
-20853	Serranus scriba
-19271	ヒラメ科:Paralichthys californicus
-14641	ベラ科\nHypsigenyini:Semicossyphus pulcher
-13044	ベラ科\nJuilidini:Halichoeres californicus
-11067	ニシン科:Sardinops sagax
-8796	Medialuna californiensis
-8589	メバル科:Sebastes caurinus
-7590	シロメバル:Sebastes cheni
-6865	Serranidae sp. JL-2015
-5896	メジナ科:Girella simplicidens
-5481	Scorpaenichthys marmoratus
-5065	Embiotoca lateralis
-4314	マサバ:Scomber japonicus
-3229	Phanerodon vacca
-3141	アカメバル:Sebastes inermis
-2584	ウツボ科:Gymnothorax unicolor
-2355	Paralabrax maculatofasciatus
+id	SRR14752173.fastq
+Serranus scriba	14.6049
+ヒラメ科:Paralichthys californicus	13.4969
+ベラ科\nHypsigenyini:Semicossyphus pulcher	10.2542
+ベラ科\nJuilidini:Halichoeres californicus	9.13567
+ニシン科:Sardinops sagax	7.75103
+Medialuna californiensis	6.16048
+メバル科:Sebastes caurinus	6.01551
+シロメバル:Sebastes cheni	5.31583
+Serranidae sp. JL-2015	4.80806
+メジナ科:Girella simplicidens	4.1294
+Scorpaenichthys marmoratus	3.83875
+Embiotoca lateralis	3.54739
+マサバ:Scomber japonicus	3.02141
+Phanerodon vacca	2.26151
+アカメバル:Sebastes inermis	2.19987
+ウツボ科:Gymnothorax unicolor	1.80976
+Paralabrax maculatofasciatus	1.64938

@@ -1,14 +1,15 @@
-6195	テナガミズテング:Harpadon nehereus
-2936	ハゼ科:Chaeturichthys stigmatias
-1603	カンダリ:Collichthys lucidus
-1282	ハゼ科:Trypauchen vagina
-412	ハモ:Muraenesox cinereus
-404	キグチ:Larimichthys polyactis
-312	マナガツオ科:Pampus sp. LY-2009
-250	イワハダカ:Benthosema pterotum
-231	ニベ科:Larimichthys crocea
-225	ツマリエツ:Setipinna tenuifilis
-204	カサゴ:Sebastiscus marmoratus
-193	アカエイ:Hemitrygon akajei
-189	メガネウオ:Uranoscopus bicinctus
-179	フグ科:Takifugu fasciatus
+id	SRR18077929.fastq
+テナガミズテング:Harpadon nehereus	42.388
+ハゼ科:Chaeturichthys stigmatias	20.0889
+カンダリ:Collichthys lucidus	10.9682
+ハゼ科:Trypauchen vagina	8.77181
+ハモ:Muraenesox cinereus	2.81902
+キグチ:Larimichthys polyactis	2.76428
+マナガツオ科:Pampus sp. LY-2009	2.13479
+イワハダカ:Benthosema pterotum	1.71057
+ニベ科:Larimichthys crocea	1.58057
+ツマリエツ:Setipinna tenuifilis	1.53951
+カサゴ:Sebastiscus marmoratus	1.39583
+アカエイ:Hemitrygon akajei	1.32056
+メガネウオ:Uranoscopus bicinctus	1.29319
+フグ科:Takifugu fasciatus	1.22477

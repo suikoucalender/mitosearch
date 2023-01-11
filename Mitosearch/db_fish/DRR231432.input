@@ -1,8 +1,9 @@
-116991	ヌマチチブ:Tridentiger brevispinis
-9464	ゲンゴロウブナ:Carassius cuvieri
-9056	チチブ:Tridentiger obscurus
-5483	ギンブナ:Carassius langsdorfii
-4726	ウキゴリ:Gymnogobius urotaenia
-2319	コイ科:Hemibarbus maculatus
-2105	コイ:Cyprinus carpio
-2019	スミウキゴリ:Gymnogobius petschiliensis
+id	DRR231432.fastq
+ヌマチチブ:Tridentiger brevispinis	76.8853
+ゲンゴロウブナ:Carassius cuvieri	6.21965
+チチブ:Tridentiger obscurus	5.95151
+ギンブナ:Carassius langsdorfii	3.60337
+ウキゴリ:Gymnogobius urotaenia	3.10588
+コイ科:Hemibarbus maculatus	1.52402
+コイ:Cyprinus carpio	1.38338
+スミウキゴリ:Gymnogobius petschiliensis	1.32687

@@ -1,8 +1,9 @@
-16341	コノシロ:Konosirus punctatus
-2718	スズキ:Lateolabrax japonicus
-900	ボラ:Mugil cephalus
-585	カタクチイワシ科:Engraulis japonicus
-416	クロダイ:Acanthopagrus schlegelii
-414	シロメバル:Sebastes cheni
-373	Parambassis lala
-347	ギマ:Triacanthus biaculeatus
+id	DRR249885.fastq
+コノシロ:Konosirus punctatus	73.9613
+スズキ:Lateolabrax japonicus	12.302
+ボラ:Mugil cephalus	4.0735
+カタクチイワシ科:Engraulis japonicus	2.64778
+クロダイ:Acanthopagrus schlegelii	1.88286
+シロメバル:Sebastes cheni	1.87381
+Parambassis lala	1.68824
+ギマ:Triacanthus biaculeatus	1.57056

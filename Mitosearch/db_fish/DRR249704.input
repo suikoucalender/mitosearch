@@ -1,14 +1,15 @@
-6266	アイゴ:Siganus fuscescens
-3858	シログチ:Pennahia argentata
-3192	Parambassis lala
-2179	コノシロ:Konosirus punctatus
-1791	カタクチイワシ科:Engraulis japonicus
-1595	クサフグ:Takifugu alboplumbeus
-1498	ヒイラギ:Nuchequula nuchalis
-1447	クロダイ:Acanthopagrus schlegelii
-1294	ホタテウミヘビ:Ophichthus zophistius
-713	コショウダイ:Plectorhinchus cinctus
-654	スズキ:Lateolabrax japonicus
-441	ハタタテヌメリ:Callionymus valenciennei
-292	コチ科:Platycephalus sp. 2 LL-2021
-291	タチウオ:Trichiurus japonicus
+id	DRR249704.fastq
+アイゴ:Siganus fuscescens	24.562
+シログチ:Pennahia argentata	15.1229
+Parambassis lala	12.5122
+コノシロ:Konosirus punctatus	8.54141
+カタクチイワシ科:Engraulis japonicus	7.0205
+クサフグ:Takifugu alboplumbeus	6.2522
+ヒイラギ:Nuchequula nuchalis	5.87198
+クロダイ:Acanthopagrus schlegelii	5.67206
+ホタテウミヘビ:Ophichthus zophistius	5.07232
+コショウダイ:Plectorhinchus cinctus	2.79487
+スズキ:Lateolabrax japonicus	2.5636
+ハタタテヌメリ:Callionymus valenciennei	1.72867
+コチ科:Platycephalus sp. 2 LL-2021	1.1446
+タチウオ:Trichiurus japonicus	1.14068

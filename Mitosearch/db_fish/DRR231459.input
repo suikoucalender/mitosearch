@@ -1,6 +1,7 @@
-96240	ヌマチチブ:Tridentiger brevispinis
-7194	コイ:Cyprinus carpio
-4135	ゲンゴロウブナ:Carassius cuvieri
-2108	クロヨシノボリ:Rhinogobius brunneus
-2079	アユ:Plecoglossus altivelis
-1939	ウキゴリ:Gymnogobius urotaenia
+id	DRR231459.fastq
+ヌマチチブ:Tridentiger brevispinis	84.6475
+コイ:Cyprinus carpio	6.32746
+ゲンゴロウブナ:Carassius cuvieri	3.63692
+クロヨシノボリ:Rhinogobius brunneus	1.85408
+アユ:Plecoglossus altivelis	1.82858
+ウキゴリ:Gymnogobius urotaenia	1.70544

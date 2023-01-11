@@ -1,6 +1,7 @@
-92729	カワマス:Salvelinus fontinalis
-73987	太平洋系降海型イトヨ:Gasterosteus aculeatus
-18346	Semotilus atromaculatus
-6005	Catostomus commersonii
-5033	Rhinichthys cataractae
-2420	Culaea inconstans
+id	SRR14526844.fastq
+カワマス:Salvelinus fontinalis	46.7102
+太平洋系降海型イトヨ:Gasterosteus aculeatus	37.2693
+Semotilus atromaculatus	9.24139
+Catostomus commersonii	3.02488
+Rhinichthys cataractae	2.53526
+Culaea inconstans	1.21902

@@ -1,7 +1,8 @@
-8327	コノシロ:Konosirus punctatus
-3779	カタクチイワシ科:Engraulis japonicus
-754	マアジ:Trachurus japonicus
-452	アカカマス:Sphyraena pinguis
-400	シログチ:Pennahia argentata
-176	クロダイ:Acanthopagrus schlegelii
-155	アカエイ:Hemitrygon akajei
+id	DRR249922.fastq
+コノシロ:Konosirus punctatus	59.2964
+カタクチイワシ科:Engraulis japonicus	26.9102
+マアジ:Trachurus japonicus	5.36922
+アカカマス:Sphyraena pinguis	3.21869
+シログチ:Pennahia argentata	2.84839
+クロダイ:Acanthopagrus schlegelii	1.25329
+アカエイ:Hemitrygon akajei	1.10375

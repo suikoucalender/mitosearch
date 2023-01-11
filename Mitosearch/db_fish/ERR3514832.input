@@ -1,18 +1,19 @@
-44407	Hypsibarbus vernayi
-8042	Cirrhinus molitorella
-5274	Mystacoleucus marginatus
-4150	Cyclocheilichthys armatus
-3367	Barbonymus gonionotus
-2944	Clupeichthys perakensis
-2433	Barbodes lateristriga
-2385	Pristolepis rubripinnis
-1881	Schistura fasciolata
-1848	Cirrhinus mrigala
-1848	Schismatorhynchos nukta
-1821	タイワンドジョウ科:Channa striata
-1407	Notopterus notopterus
-1336	Bangana tungting
-1288	Hemibagrus sp. RCH-2015
-1275	Gyrinocheilus aymonieri
-1214	Barbonymus schwanefeldii
-976	Hampala macrolepidota
+id	ERR3514832.fastq
+Hypsibarbus vernayi	50.5222
+Cirrhinus molitorella	9.14945
+Mystacoleucus marginatus	6.00027
+Cyclocheilichthys armatus	4.72149
+Barbonymus gonionotus	3.83066
+Clupeichthys perakensis	3.34941
+Barbodes lateristriga	2.76804
+Pristolepis rubripinnis	2.71343
+Schistura fasciolata	2.14003
+Cirrhinus mrigala	2.10248
+Schismatorhynchos nukta	2.10248
+タイワンドジョウ科:Channa striata	2.07177
+Notopterus notopterus	1.60076
+Bangana tungting	1.51998
+Hemibagrus sp. RCH-2015	1.46537
+Gyrinocheilus aymonieri	1.45058
+Barbonymus schwanefeldii	1.38118
+Hampala macrolepidota	1.1104

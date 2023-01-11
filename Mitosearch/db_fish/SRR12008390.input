@@ -1,9 +1,10 @@
-47792	メバル科:Sebastes fasciatus
-8459	メバル科:Sebastes mentella
-3652	タラ科:Gadus morhua
-3362	Carpiodes cyprinus
-2830	ゲンゲ科:Lycodes lavalaei
-1715	アジ科:Scomber scombrus
-1549	ハダカイワシ科:Protomyctophum arcticum
-1284	Microgadus tomcod
-1014	Urophycis tenuis
+id	SRR12008390.fastq
+メバル科:Sebastes fasciatus	66.6955
+メバル科:Sebastes mentella	11.8048
+タラ科:Gadus morhua	5.0965
+Carpiodes cyprinus	4.6918
+ゲンゲ科:Lycodes lavalaei	3.94937
+アジ科:Scomber scombrus	2.39335
+ハダカイワシ科:Protomyctophum arcticum	2.16169
+Microgadus tomcod	1.79187
+Urophycis tenuis	1.41507

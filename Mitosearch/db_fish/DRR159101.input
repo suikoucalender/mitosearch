@@ -1,7 +1,8 @@
-766	シマヨシノボリ:Rhinogobius nagoyae
-497	ボウズハゼ:Sicyopterus japonicus
-478	アヤヨシノボリ:Rhinogobius sp. MO
-188	ボラ:Mugil cephalus
-130	ギンユゴイ:Kuhlia mugil
-124	ゴクラクハゼ:Rhinogobius similis
-56	ミナミハゼ:Awaous ocellaris
+id	DRR159101.fastq
+シマヨシノボリ:Rhinogobius nagoyae	34.2117
+ボウズハゼ:Sicyopterus japonicus	22.1974
+アヤヨシノボリ:Rhinogobius sp. MO	21.3488
+ボラ:Mugil cephalus	8.39661
+ギンユゴイ:Kuhlia mugil	5.80616
+ゴクラクハゼ:Rhinogobius similis	5.53819
+ミナミハゼ:Awaous ocellaris	2.50112

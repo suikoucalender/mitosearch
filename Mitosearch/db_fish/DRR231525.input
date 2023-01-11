@@ -1,7 +1,8 @@
-32019	Tribolodon hakonensis
-19327	ボラ:Mugil cephalus
-6986	Zacco platypus
-5800	ゲンゴロウブナ:Carassius cuvieri
-3842	ギンブナ:Carassius langsdorfii
-3593	コイ:Cyprinus carpio
-1501	ドンコ科:Odontobutis obscura
+id	DRR231525.fastq
+Tribolodon hakonensis	43.8208
+ボラ:Mugil cephalus	26.4507
+Zacco platypus	9.56096
+ゲンゴロウブナ:Carassius cuvieri	7.93781
+ギンブナ:Carassius langsdorfii	5.25812
+コイ:Cyprinus carpio	4.91734
+ドンコ科:Odontobutis obscura	2.05425

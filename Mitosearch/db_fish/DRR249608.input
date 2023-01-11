@@ -1,5 +1,6 @@
-2746	コノシロ:Konosirus punctatus
-1360	カタクチイワシ科:Engraulis japonicus
-126	スズキ:Lateolabrax japonicus
-108	ボラ:Mugil cephalus
-50	ニゴイ:Hemibarbus barbus
+id	DRR249608.fastq
+コノシロ:Konosirus punctatus	62.5513
+カタクチイワシ科:Engraulis japonicus	30.9795
+スズキ:Lateolabrax japonicus	2.87016
+ボラ:Mugil cephalus	2.46014
+ニゴイ:Hemibarbus barbus	1.13895

@@ -1,18 +1,19 @@
-851	テナガミズテング:Harpadon nehereus
-674	カサゴ:Sebastiscus marmoratus
-423	ニベ科:Larimichthys crocea
-415	ハモ:Muraenesox cinereus
-342	キグチ:Larimichthys polyactis
-179	マナガツオ科:Pampus sp. LY-2009
-176	ハゼ科:Chaeturichthys stigmatias
-172	フグ科:Takifugu fasciatus
-172	ニベ科:Pennahia macrocephalus
-135	タチウオ:Trichiurus japonicus
-122	アカエイ:Hemitrygon akajei
-113	ツマリエツ:Setipinna tenuifilis
-90	カンダリ:Collichthys lucidus
-87	アブラグチ:Johnius distinctus
-62	ホンニベ:Miichthys miiuy
-59	ボラ:Mugil cephalus
-58	キス科:Sillago sinica
-56	Thryssa kammalensis
+id	SRR18077926.fastq
+テナガミズテング:Harpadon nehereus	20.3297
+カサゴ:Sebastiscus marmoratus	16.1013
+ニベ科:Larimichthys crocea	10.1051
+ハモ:Muraenesox cinereus	9.914
+キグチ:Larimichthys polyactis	8.17009
+マナガツオ科:Pampus sp. LY-2009	4.27616
+ハゼ科:Chaeturichthys stigmatias	4.20449
+フグ科:Takifugu fasciatus	4.10893
+ニベ科:Pennahia macrocephalus	4.10893
+タチウオ:Trichiurus japonicus	3.22504
+アカエイ:Hemitrygon akajei	2.91448
+ツマリエツ:Setipinna tenuifilis	2.69947
+カンダリ:Collichthys lucidus	2.15002
+アブラグチ:Johnius distinctus	2.07836
+ホンニベ:Miichthys miiuy	1.48113
+ボラ:Mugil cephalus	1.40946
+キス科:Sillago sinica	1.38557
+Thryssa kammalensis	1.33779

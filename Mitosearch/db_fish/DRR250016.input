@@ -1,6 +1,7 @@
-10684	コノシロ:Konosirus punctatus
-3519	カタクチイワシ科:Engraulis japonicus
-2541	ボラ:Mugil cephalus
-1399	サッパ:Sardinella zunasi
-1279	スズキ:Lateolabrax japonicus
-248	コチ科:Platycephalus sp. 2 LL-2021
+id	DRR250016.fastq
+コノシロ:Konosirus punctatus	54.3162
+カタクチイワシ科:Engraulis japonicus	17.8902
+ボラ:Mugil cephalus	12.9181
+サッパ:Sardinella zunasi	7.11235
+スズキ:Lateolabrax japonicus	6.50229
+コチ科:Platycephalus sp. 2 LL-2021	1.2608

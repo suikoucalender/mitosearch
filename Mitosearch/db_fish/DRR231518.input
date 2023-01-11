@@ -1,9 +1,10 @@
-22068	Tribolodon hakonensis
-16271	ボラ:Mugil cephalus
-6168	ゲンゴロウブナ:Carassius cuvieri
-5571	Zacco platypus
-3929	ギンブナ:Carassius langsdorfii
-3557	コイ:Cyprinus carpio
-1040	キンギョ:Carassius auratus
-703	モツゴ:Pseudorasbora parva
-652	サンフィッシュ科:Micropterus salmoides
+id	DRR231518.fastq
+Tribolodon hakonensis	36.8052
+ボラ:Mugil cephalus	27.1369
+ゲンゴロウブナ:Carassius cuvieri	10.287
+Zacco platypus	9.29135
+ギンブナ:Carassius langsdorfii	6.55281
+コイ:Cyprinus carpio	5.93239
+キンギョ:Carassius auratus	1.73452
+モツゴ:Pseudorasbora parva	1.17247
+サンフィッシュ科:Micropterus salmoides	1.08741

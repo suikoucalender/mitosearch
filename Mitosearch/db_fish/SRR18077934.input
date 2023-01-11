@@ -1,10 +1,11 @@
-1658	ハモ:Muraenesox cinereus
-1289	アカエイ:Hemitrygon akajei
-297	テナガミズテング:Harpadon nehereus
-158	マナガツオ科:Pampus sp. LY-2009
-133	ハゼ科:Odontamblyopus sp. ZL-2016
-89	ハゼ科:Chaeturichthys stigmatias
-65	スズキ科:Lateolabrax maculatus
-61	イワハダカ:Benthosema pterotum
-44	ニベ科:Johnius belangerii
-41	Thryssa kammalensis
+id	SRR18077934.fastq
+ハモ:Muraenesox cinereus	43.2334
+アカエイ:Hemitrygon akajei	33.6115
+テナガミズテング:Harpadon nehereus	7.74446
+マナガツオ科:Pampus sp. LY-2009	4.11995
+ハゼ科:Odontamblyopus sp. ZL-2016	3.46806
+ハゼ科:Chaeturichthys stigmatias	2.32073
+スズキ科:Lateolabrax maculatus	1.69492
+イワハダカ:Benthosema pterotum	1.59061
+ニベ科:Johnius belangerii	1.14733
+Thryssa kammalensis	1.0691

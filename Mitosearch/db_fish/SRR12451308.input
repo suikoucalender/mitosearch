@@ -1,6 +1,7 @@
-55770	ハクレン:Hypophthalmichthys molitrix
-15385	Carpiodes cyprinus
-10020	Ictiobus bubalus
-5131	Pimephales tenellus
-4685	サンフィッシュ科:Micropterus treculii
-2519	Notropis atherinoides
+id	SRR12451308.fastq
+ハクレン:Hypophthalmichthys molitrix	59.6407
+Carpiodes cyprinus	16.4528
+Ictiobus bubalus	10.7154
+Pimephales tenellus	5.48711
+サンフィッシュ科:Micropterus treculii	5.01016
+Notropis atherinoides	2.69383

@@ -1,7 +1,8 @@
-402	トラザメ科:Cephaloscyllium fasciatum
-269	Paralabrax clathratus
-133	ネコザメ科:Heterodontus francisci
-105	トビエイ科:Myliobatis californica
-48	Gibbonsia montereyensis
-36	カレイ科:Pleuronichthys decurrens
-34	Hypsoblennius ionthas
+id	SRR12791263.fastq
+トラザメ科:Cephaloscyllium fasciatum	39.1431
+Paralabrax clathratus	26.1928
+ネコザメ科:Heterodontus francisci	12.9503
+トビエイ科:Myliobatis californica	10.224
+Gibbonsia montereyensis	4.67381
+カレイ科:Pleuronichthys decurrens	3.50536
+Hypsoblennius ionthas	3.31061

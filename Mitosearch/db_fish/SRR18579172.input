@@ -1,9 +1,10 @@
-1631839	Sparus aurata
-916329	ヒレナマズ科:Clarias gariepinus
-367438	ニシン:Clupea pallasii
-225362	Merlangius merlangus
-156614	Neogobius fluviatilis
-77089	Alosa sapidissima
-75009	Scophthalmus maximus
-55762	カタクチイワシ科:Engraulis encrasicolus
-45068	Dicentrarchus labrax
+id	SRR18579172.fastq
+Sparus aurata	45.9607
+ヒレナマズ科:Clarias gariepinus	25.8084
+ニシン:Clupea pallasii	10.3489
+Merlangius merlangus	6.34731
+Neogobius fluviatilis	4.41103
+Alosa sapidissima	2.17121
+Scophthalmus maximus	2.11263
+カタクチイワシ科:Engraulis encrasicolus	1.57053
+Dicentrarchus labrax	1.26934

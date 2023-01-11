@@ -1,15 +1,16 @@
-18725	カワヨシノボリ:Rhinogobius flumineus
-17241	Tribolodon hakonensis
-11635	Zacco platypus
-8460	コイ:Cyprinus carpio
-8395	コイ科:Rhynchocypris jouyi
-7103	ギンブナ:Carassius langsdorfii
-5950	チダイ:Evynnis tumifrons
-5639	ムギツク:Pungtungia herzi
-5281	カワムツ:Nipponocypris temminckii
-3700	カンパチ:Seriola dumerili
-2169	ニホンウナギ:Anguilla japonica
-1712	ゲンゴロウブナ:Carassius cuvieri
-1450	イトモロコ:Squalidus gracilis gracilis
-1228	ドンコ科:Odontobutis obscura
-1033	マアジ:Trachurus japonicus
+id	DRR149222.fastq
+カワヨシノボリ:Rhinogobius flumineus	18.7774
+Tribolodon hakonensis	17.2892
+Zacco platypus	11.6676
+コイ:Cyprinus carpio	8.48367
+コイ科:Rhynchocypris jouyi	8.41849
+ギンブナ:Carassius langsdorfii	7.12287
+チダイ:Evynnis tumifrons	5.96665
+ムギツク:Pungtungia herzi	5.65478
+カワムツ:Nipponocypris temminckii	5.29578
+カンパチ:Seriola dumerili	3.71035
+ニホンウナギ:Anguilla japonica	2.17507
+ゲンゴロウブナ:Carassius cuvieri	1.71679
+イトモロコ:Squalidus gracilis gracilis	1.45406
+ドンコ科:Odontobutis obscura	1.23144
+マアジ:Trachurus japonicus	1.03589

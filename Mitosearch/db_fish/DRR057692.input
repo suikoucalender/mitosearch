@@ -1,8 +1,9 @@
-774	カタクチイワシ科:Engraulis japonicus
-671	マアジ:Trachurus japonicus
-530	ボラ:Mugil cephalus
-468	ゴンズイ:Plotosus japonicus
-462	チダイ:Evynnis tumifrons
-347	ブリ:Seriola quinqueradiata
-256	Parambassis lala
-156	クロダイ:Acanthopagrus schlegelii
+id	DRR057692.fastq
+カタクチイワシ科:Engraulis japonicus	21.1245
+マアジ:Trachurus japonicus	18.3133
+ボラ:Mugil cephalus	14.4651
+ゴンズイ:Plotosus japonicus	12.7729
+チダイ:Evynnis tumifrons	12.6092
+ブリ:Seriola quinqueradiata	9.47052
+Parambassis lala	6.9869
+クロダイ:Acanthopagrus schlegelii	4.25764

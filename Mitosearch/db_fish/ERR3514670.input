@@ -1,21 +1,22 @@
-48	ナイルティラピア:Oreochromis niloticus
-24	Mystacoleucus marginatus
-21	カワスズメ科:Oreochromis sp. 'red tilapia'
-16	Barbonymus gonionotus
-14	Hypsibarbus vernayi
-12	Clupeichthys goniognathus
-9	タイワンドジョウ科:Channa striata
-9	Systomus orphoides
-7	Pristolepis rubripinnis
-6	Cirrhinus molitorella
-5	Cyclocheilichthys armatus
-4	Clupeichthys perakensis
-4	Hypsibarbus salweenensis
-4	Acantopsis choirorhynchos
-3	Raiamas guttatus
-3	Puntioplites proctozystron
-3	バラヒメダイ:Pristipomoides typus
-3	Schistura fasciolata
-3	Barbonymus schwanefeldii
-3	Ambastaia sidthimunki
-3	サバ科:Rastrelliger brachysoma
+id	ERR3514670.fastq
+ナイルティラピア:Oreochromis niloticus	23.5294
+Mystacoleucus marginatus	11.7647
+カワスズメ科:Oreochromis sp. 'red tilapia'	10.2941
+Barbonymus gonionotus	7.84314
+Hypsibarbus vernayi	6.86275
+Clupeichthys goniognathus	5.88235
+タイワンドジョウ科:Channa striata	4.41176
+Systomus orphoides	4.41176
+Pristolepis rubripinnis	3.43137
+Cirrhinus molitorella	2.94118
+Cyclocheilichthys armatus	2.45098
+Clupeichthys perakensis	1.96078
+Hypsibarbus salweenensis	1.96078
+Acantopsis choirorhynchos	1.96078
+Raiamas guttatus	1.47059
+Puntioplites proctozystron	1.47059
+バラヒメダイ:Pristipomoides typus	1.47059
+Schistura fasciolata	1.47059
+Barbonymus schwanefeldii	1.47059
+Ambastaia sidthimunki	1.47059
+サバ科:Rastrelliger brachysoma	1.47059

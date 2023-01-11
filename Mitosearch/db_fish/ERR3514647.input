@@ -1,9 +1,10 @@
-46782	ナイルティラピア:Oreochromis niloticus
-18839	カワスズメ科:Oreochromis sp. 'red tilapia'
-5494	Labeo chrysophekadion
-3582	Barbonymus gonionotus
-2616	Trichopodus leerii
-1452	タイワンドジョウ科:Channa striata
-1347	Syncrossus helodes
-946	Mystus sp. EM2
-874	Osteochilus microcephalus
+id	ERR3514647.fastq
+ナイルティラピア:Oreochromis niloticus	57.0986
+カワスズメ科:Oreochromis sp. 'red tilapia'	22.9935
+Labeo chrysophekadion	6.70556
+Barbonymus gonionotus	4.37192
+Trichopodus leerii	3.19289
+タイワンドジョウ科:Channa striata	1.7722
+Syncrossus helodes	1.64405
+Mystus sp. EM2	1.15462
+Osteochilus microcephalus	1.06674

@@ -1,7 +1,8 @@
-2630	ヒゲハゼ:Parachaeturichthys polynema
-740	メガネハギ:Sufflamen fraenatum
-499	アカヒメジ:Mulloidichthys vanicolensis
-370	ハゼ科:Cabillus sp. CBM:ZF:12221
-261	センハダカ:Diaphus suborbitalis
-251	クサヤモロ:Decapterus macarellus
-191	ベラ科\nJuilidini:Gomphosus caeruleus
+id	SRR14752164.fastq
+ヒゲハゼ:Parachaeturichthys polynema	53.2173
+メガネハギ:Sufflamen fraenatum	14.9737
+アカヒメジ:Mulloidichthys vanicolensis	10.0971
+ハゼ科:Cabillus sp. CBM:ZF:12221	7.48685
+センハダカ:Diaphus suborbitalis	5.28126
+クサヤモロ:Decapterus macarellus	5.07892
+ベラ科\nJuilidini:Gomphosus caeruleus	3.86483

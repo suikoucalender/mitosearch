@@ -1,11 +1,12 @@
-3735	カタクチイワシ科:Engraulis japonicus
-2539	シロギス:Sillago japonica
-2388	スズキ:Lateolabrax japonicus
-1605	カサゴ:Sebastiscus marmoratus
-1534	マアジ:Trachurus japonicus
-1458	マガレイ:Pseudopleuronectes herzensteini
-1192	Eutrigla gurnardus
-786	コノシロ:Konosirus punctatus
-636	サッパ:Sardinella zunasi
-501	ホウボウ:Chelidonichthys spinosus
-239	タチウオ:Trichiurus japonicus
+id	DRR249832.fastq
+カタクチイワシ科:Engraulis japonicus	22.4824
+シロギス:Sillago japonica	15.2832
+スズキ:Lateolabrax japonicus	14.3743
+カサゴ:Sebastiscus marmoratus	9.66111
+マアジ:Trachurus japonicus	9.23373
+マガレイ:Pseudopleuronectes herzensteini	8.77626
+Eutrigla gurnardus	7.1751
+コノシロ:Konosirus punctatus	4.73123
+サッパ:Sardinella zunasi	3.82833
+ホウボウ:Chelidonichthys spinosus	3.01571
+タチウオ:Trichiurus japonicus	1.43863

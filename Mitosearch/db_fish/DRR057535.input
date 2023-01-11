@@ -1,8 +1,9 @@
-7871	カタクチイワシ科:Engraulis japonicus
-5298	フグ科:Takifugu fasciatus
-1821	クサフグ:Takifugu alboplumbeus
-1421	ニシン科:Sardinops sagax
-1262	ベラ科:Parajulis poecilepterus
-1026	ブリ:Seriola quinqueradiata
-679	ボラ:Mugil cephalus
-291	マアジ:Trachurus japonicus
+id	DRR057535.fastq
+カタクチイワシ科:Engraulis japonicus	40.0173
+フグ科:Takifugu fasciatus	26.9358
+クサフグ:Takifugu alboplumbeus	9.25822
+ニシン科:Sardinops sagax	7.22457
+ベラ科:Parajulis poecilepterus	6.41619
+ブリ:Seriola quinqueradiata	5.21633
+ボラ:Mugil cephalus	3.45213
+マアジ:Trachurus japonicus	1.47949

@@ -1,8 +1,9 @@
-8555	Parambassis lala
-7825	カタクチイワシ科:Engraulis japonicus
-5010	クロダイ:Acanthopagrus schlegelii
-4040	フグ科:Takifugu fasciatus
-1853	ニシン科:Sardinops sagax
-560	クサフグ:Takifugu alboplumbeus
-476	ブリ:Seriola quinqueradiata
-348	スズキ:Lateolabrax japonicus
+id	DRR057701.fastq
+Parambassis lala	29.8427
+カタクチイワシ科:Engraulis japonicus	27.2962
+クロダイ:Acanthopagrus schlegelii	17.4765
+フグ科:Takifugu fasciatus	14.0929
+ニシン科:Sardinops sagax	6.46388
+クサフグ:Takifugu alboplumbeus	1.95347
+ブリ:Seriola quinqueradiata	1.66045
+スズキ:Lateolabrax japonicus	1.21394

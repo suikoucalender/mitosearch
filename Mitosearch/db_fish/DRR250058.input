@@ -1,8 +1,9 @@
-9532	カタクチイワシ科:Engraulis japonicus
-1201	イワハダカ:Benthosema pterotum
-943	ハオコゼ:Paracentropogon rubripinnis
-767	マルソウダ:Auxis rochei
-721	コショウダイ:Plectorhinchus cinctus
-715	イシダイ:Oplegnathus fasciatus
-410	ニシン科:Sardinops sagax
-270	ツバクロエイ:Gymnura japonica
+id	DRR250058.fastq
+カタクチイワシ科:Engraulis japonicus	65.4715
+イワハダカ:Benthosema pterotum	8.24919
+ハオコゼ:Paracentropogon rubripinnis	6.47709
+マルソウダ:Auxis rochei	5.26822
+コショウダイ:Plectorhinchus cinctus	4.95226
+イシダイ:Oplegnathus fasciatus	4.91105
+ニシン科:Sardinops sagax	2.81613
+ツバクロエイ:Gymnura japonica	1.85452

@@ -1,6 +1,7 @@
-8130	コノシロ:Konosirus punctatus
-5517	カタクチイワシ科:Engraulis japonicus
-1100	ボラ:Mugil cephalus
-774	ギンポ:Pholis nebulosa
-718	スズキ:Lateolabrax japonicus
-213	アカエイ:Hemitrygon akajei
+id	DRR249628.fastq
+コノシロ:Konosirus punctatus	49.4165
+カタクチイワシ科:Engraulis japonicus	33.5339
+ボラ:Mugil cephalus	6.68612
+ギンポ:Pholis nebulosa	4.7046
+スズキ:Lateolabrax japonicus	4.36421
+アカエイ:Hemitrygon akajei	1.29468

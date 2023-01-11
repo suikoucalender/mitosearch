@@ -1,9 +1,10 @@
-106	Devario devario
-94	Lepidocephalichthys sp. CBM-ZF-14149
-42	Rasbora daniconius
-29	タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950
-24	Devario sp. CBM:ZF:11302
-9	Mystus vittatus
-8	Schistura notostigma
-5	Beaufortia szechuanensis
-4	ヒレナマズ科:Clarias dussumieri
+id	DRR217105.fastq
+Devario devario	33.0218
+Lepidocephalichthys sp. CBM-ZF-14149	29.2835
+Rasbora daniconius	13.0841
+タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950	9.03427
+Devario sp. CBM:ZF:11302	7.47664
+Mystus vittatus	2.80374
+Schistura notostigma	2.49221
+Beaufortia szechuanensis	1.55763
+ヒレナマズ科:Clarias dussumieri	1.24611

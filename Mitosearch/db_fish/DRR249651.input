@@ -1,13 +1,14 @@
-11874	カタクチイワシ科:Engraulis japonicus
-10396	コノシロ:Konosirus punctatus
-3328	ハタタテヌメリ:Callionymus valenciennei
-1164	イトヒキハゼ:Myersina filifer
-710	スジハゼ:Acentrogobius virgatulus
-695	アカアマダイ:Branchiostegus japonicus
-546	スズキ:Lateolabrax japonicus
-490	ブリ:Seriola quinqueradiata
-389	ホシザメ:Mustelus manazo
-333	ヒラメ:Paralichthys olivaceus
-321	マガレイ:Pseudopleuronectes herzensteini
-320	シログチ:Pennahia argentata
-320	シロギス:Sillago japonica
+id	DRR249651.fastq
+カタクチイワシ科:Engraulis japonicus	38.4446
+コノシロ:Konosirus punctatus	33.6593
+ハタタテヌメリ:Callionymus valenciennei	10.7751
+イトヒキハゼ:Myersina filifer	3.7687
+スジハゼ:Acentrogobius virgatulus	2.29878
+アカアマダイ:Branchiostegus japonicus	2.25021
+スズキ:Lateolabrax japonicus	1.76779
+ブリ:Seriola quinqueradiata	1.58648
+ホシザメ:Mustelus manazo	1.25947
+ヒラメ:Paralichthys olivaceus	1.07816
+マガレイ:Pseudopleuronectes herzensteini	1.03931
+シログチ:Pennahia argentata	1.03607
+シロギス:Sillago japonica	1.03607

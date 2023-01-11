@@ -1,7 +1,8 @@
-125516	アオミシマ:Xenocephalus elongatus
-37676	ワニギス:Champsodon snyderi
-28479	イワハダカ:Benthosema pterotum
-2842	スミツキアカタチ:Cepola schlegelii
-2724	カタクチイワシ科:Engraulis japonicus
-2489	ハゼ科:Acentrogobius chlorostigmatoides
-2287	タチウオ:Trichiurus japonicus
+id	SRR13205771.fastq
+アオミシマ:Xenocephalus elongatus	62.1326
+ワニギス:Champsodon snyderi	18.6503
+イワハダカ:Benthosema pterotum	14.0976
+スミツキアカタチ:Cepola schlegelii	1.40684
+カタクチイワシ科:Engraulis japonicus	1.34843
+ハゼ科:Acentrogobius chlorostigmatoides	1.2321
+タチウオ:Trichiurus japonicus	1.13211

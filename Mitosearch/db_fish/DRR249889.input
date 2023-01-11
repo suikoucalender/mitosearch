@@ -1,12 +1,13 @@
-3262	コノシロ:Konosirus punctatus
-1937	カタクチイワシ科:Engraulis japonicus
-544	オキヒイラギ:Equulites rivulatus
-405	ニシン科:Sardinops sagax
-372	スズキ:Lateolabrax japonicus
-369	アイゴ:Siganus fuscescens
-319	シログチ:Pennahia argentata
-264	アカカマス:Sphyraena pinguis
-219	チダイ:Evynnis tumifrons
-206	マサバ:Scomber japonicus
-165	マルアジ:Decapterus maruadsi
-137	サッパ:Sardinella zunasi
+id	DRR249889.fastq
+コノシロ:Konosirus punctatus	39.7853
+カタクチイワシ科:Engraulis japonicus	23.6248
+オキヒイラギ:Equulites rivulatus	6.63496
+ニシン科:Sardinops sagax	4.93963
+スズキ:Lateolabrax japonicus	4.53714
+アイゴ:Siganus fuscescens	4.50055
+シログチ:Pennahia argentata	3.89072
+アカカマス:Sphyraena pinguis	3.2199
+チダイ:Evynnis tumifrons	2.67106
+マサバ:Scomber japonicus	2.5125
+マルアジ:Decapterus maruadsi	2.01244
+サッパ:Sardinella zunasi	1.67094

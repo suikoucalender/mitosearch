@@ -1,5 +1,6 @@
-1888	コノシロ:Konosirus punctatus
-1508	カタクチイワシ科:Engraulis japonicus
-188	サッパ:Sardinella zunasi
-127	ボラ:Mugil cephalus
-70	ギマ:Triacanthus biaculeatus
+id	DRR249999.fastq
+コノシロ:Konosirus punctatus	49.9339
+カタクチイワシ科:Engraulis japonicus	39.8836
+サッパ:Sardinella zunasi	4.97223
+ボラ:Mugil cephalus	3.3589
+ギマ:Triacanthus biaculeatus	1.85136

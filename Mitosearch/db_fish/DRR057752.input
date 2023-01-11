@@ -1,6 +1,7 @@
-24877	カタクチイワシ科:Engraulis japonicus
-5303	サワラ:Scomberomorus niphonius
-1094	ボラ:Mugil cephalus
-1013	タモロコ:Gnathopogon elongatus elongatus
-644	ベラ科:Parajulis poecilepterus
-411	タウエガジ科:Dictyosoma burgeri
+id	DRR057752.fastq
+カタクチイワシ科:Engraulis japonicus	74.6116
+サワラ:Scomberomorus niphonius	15.9049
+ボラ:Mugil cephalus	3.28115
+タモロコ:Gnathopogon elongatus elongatus	3.03821
+ベラ科:Parajulis poecilepterus	1.9315
+タウエガジ科:Dictyosoma burgeri	1.23268

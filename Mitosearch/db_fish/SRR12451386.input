@@ -1,5 +1,6 @@
-1893	コイ:Cyprinus carpio
-858	ソウギョ:Ctenopharyngodon idella
-523	ハクレン:Hypophthalmichthys molitrix
-200	Sander vitreus
-74	Barbodes semifasciolatus
+id	SRR12451386.fastq
+コイ:Cyprinus carpio	53.354
+ソウギョ:Ctenopharyngodon idella	24.1826
+ハクレン:Hypophthalmichthys molitrix	14.7407
+Sander vitreus	5.63698
+Barbodes semifasciolatus	2.08568

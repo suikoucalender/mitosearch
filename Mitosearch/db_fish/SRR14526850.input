@@ -1,6 +1,7 @@
-89593	Semotilus atromaculatus
-41531	Rhinichthys cataractae
-40342	カワマス:Salvelinus fontinalis
-34266	Catostomus commersonii
-4383	サンフィッシュ科:Lepomis gibbosus
-3853	Culaea inconstans
+id	SRR14526850.fastq
+Semotilus atromaculatus	41.8721
+Rhinichthys cataractae	19.4099
+カワマス:Salvelinus fontinalis	18.8542
+Catostomus commersonii	16.0145
+サンフィッシュ科:Lepomis gibbosus	2.04844
+Culaea inconstans	1.80074

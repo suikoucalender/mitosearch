@@ -1,5 +1,6 @@
-8344	メバル科:Sebastes fasciatus
-1900	カラフトシシャモ:Mallotus villosus
-489	サンマ:Cololabis saira
-468	メバル科:Sebastes mentella
-434	イカナゴ科:Ammodytes americanus
+id	SRR12008429.fastq
+メバル科:Sebastes fasciatus	71.7147
+カラフトシシャモ:Mallotus villosus	16.33
+サンマ:Cololabis saira	4.20284
+メバル科:Sebastes mentella	4.02235
+イカナゴ科:Ammodytes americanus	3.73012

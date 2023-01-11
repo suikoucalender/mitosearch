@@ -1,8 +1,9 @@
-82	Lepidocephalichthys sp. CBM-ZF-14149
-51	タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950
-9	ナイルティラピア:Oreochromis niloticus
-6	Devario sp. CBM:ZF:11302
-6	グッピー:Poecilia reticulata
-5	コウタイ:Channa asiatica
-4	Rasbora daniconius
-3	Beaufortia szechuanensis
+id	DRR217125.fastq
+Lepidocephalichthys sp. CBM-ZF-14149	49.3976
+タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950	30.7229
+ナイルティラピア:Oreochromis niloticus	5.42169
+Devario sp. CBM:ZF:11302	3.61446
+グッピー:Poecilia reticulata	3.61446
+コウタイ:Channa asiatica	3.01205
+Rasbora daniconius	2.40964
+Beaufortia szechuanensis	1.80723

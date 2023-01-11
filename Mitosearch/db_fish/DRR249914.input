@@ -1,8 +1,9 @@
-2985	コノシロ:Konosirus punctatus
-2888	カタクチイワシ科:Engraulis japonicus
-1506	スズキ:Lateolabrax japonicus
-1106	サッパ:Sardinella zunasi
-560	シログチ:Pennahia argentata
-540	スジハゼ:Acentrogobius virgatulus
-272	ハゼ科:Chaeturichthys stigmatias
-178	アカカマス:Sphyraena pinguis
+id	DRR249914.fastq
+コノシロ:Konosirus punctatus	29.7459
+カタクチイワシ科:Engraulis japonicus	28.7793
+スズキ:Lateolabrax japonicus	15.0075
+サッパ:Sardinella zunasi	11.0214
+シログチ:Pennahia argentata	5.58047
+スジハゼ:Acentrogobius virgatulus	5.38117
+ハゼ科:Chaeturichthys stigmatias	2.71051
+アカカマス:Sphyraena pinguis	1.77379

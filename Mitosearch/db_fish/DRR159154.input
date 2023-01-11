@@ -1,7 +1,8 @@
-243	オオウナギ:Anguilla marmorata
-60	ボウズハゼ:Sicyopterus japonicus
-42	クロヨシノボリ:Rhinogobius brunneus
-29	アヤヨシノボリ:Rhinogobius sp. MO
-19	シマヨシノボリ:Rhinogobius nagoyae
-18	ウケグチイットウダイ:Neoniphon sammara
-11	マアジ:Trachurus japonicus
+id	DRR159154.fastq
+オオウナギ:Anguilla marmorata	57.5829
+ボウズハゼ:Sicyopterus japonicus	14.218
+クロヨシノボリ:Rhinogobius brunneus	9.95261
+アヤヨシノボリ:Rhinogobius sp. MO	6.87204
+シマヨシノボリ:Rhinogobius nagoyae	4.50237
+ウケグチイットウダイ:Neoniphon sammara	4.2654
+マアジ:Trachurus japonicus	2.60664

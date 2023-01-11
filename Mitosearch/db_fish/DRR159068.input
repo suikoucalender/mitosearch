@@ -1,9 +1,10 @@
-489	シマヨシノボリ:Rhinogobius nagoyae
-259	アヤヨシノボリ:Rhinogobius sp. MO
-181	ボウズハゼ:Sicyopterus japonicus
-127	ギンユゴイ:Kuhlia mugil
-74	ボラ:Mugil cephalus
-56	ゴクラクハゼ:Rhinogobius similis
-40	テンジクカワアナゴ:Eleotris fusca
-20	ルリボウズハゼ:Sicyopterus lagocephalus
-16	ミナミハゼ:Awaous ocellaris
+id	DRR159068.fastq
+シマヨシノボリ:Rhinogobius nagoyae	38.748
+アヤヨシノボリ:Rhinogobius sp. MO	20.523
+ボウズハゼ:Sicyopterus japonicus	14.3423
+ギンユゴイ:Kuhlia mugil	10.0634
+ボラ:Mugil cephalus	5.86371
+ゴクラクハゼ:Rhinogobius similis	4.4374
+テンジクカワアナゴ:Eleotris fusca	3.16957
+ルリボウズハゼ:Sicyopterus lagocephalus	1.58479
+ミナミハゼ:Awaous ocellaris	1.26783

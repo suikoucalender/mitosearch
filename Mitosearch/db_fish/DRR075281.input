@@ -1,6 +1,7 @@
-4606	スマ:Euthynnus affinis
-355	ジンベエザメ:Rhincodon typus
-73	オオテンジクザメ:Nebrius ferrugineus
-73	グルクマ:Rastrelliger kanagurta
-70	ウシバナトビエイ科:Rhinoptera brasiliensis
-58	トラフザメ科:Stegostoma fasciatum
+id	DRR075281.fastq
+スマ:Euthynnus affinis	87.9847
+ジンベエザメ:Rhincodon typus	6.78128
+オオテンジクザメ:Nebrius ferrugineus	1.39446
+グルクマ:Rastrelliger kanagurta	1.39446
+ウシバナトビエイ科:Rhinoptera brasiliensis	1.33715
+トラフザメ科:Stegostoma fasciatum	1.10793

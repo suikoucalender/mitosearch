@@ -1,7 +1,8 @@
-8369	メバル科:Sebastes fasciatus
-5644	カラスガレイ:Reinhardtius hippoglossoides
-2294	サケビクニン:Careproctus rastrinus
-1566	アンコウ科:Lophius americanus
-1332	カレイ科:Pseudopleuronectes americanus
-1250	ニシン科:Clupea harengus
-967	メバル科:Sebastes mentella
+id	SRR12008566.fastq
+メバル科:Sebastes fasciatus	39.0673
+カラスガレイ:Reinhardtius hippoglossoides	26.3467
+サケビクニン:Careproctus rastrinus	10.7086
+アンコウ科:Lophius americanus	7.31024
+カレイ科:Pseudopleuronectes americanus	6.21791
+ニシン科:Clupea harengus	5.83512
+メバル科:Sebastes mentella	4.51405

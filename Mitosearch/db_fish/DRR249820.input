@@ -1,6 +1,7 @@
-3130	マサバ:Scomber japonicus
-1012	タラ科:Gadus morhua
-817	コノシロ:Konosirus punctatus
-757	カタクチイワシ科:Engraulis japonicus
-573	スズキ:Lateolabrax japonicus
-212	アカエイ:Hemitrygon akajei
+id	DRR249820.fastq
+マサバ:Scomber japonicus	48.1464
+タラ科:Gadus morhua	15.5668
+コノシロ:Konosirus punctatus	12.5673
+カタクチイワシ科:Engraulis japonicus	11.6444
+スズキ:Lateolabrax japonicus	8.81403
+アカエイ:Hemitrygon akajei	3.26104

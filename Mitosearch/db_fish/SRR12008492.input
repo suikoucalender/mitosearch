@@ -1,9 +1,10 @@
-34453	メバル科:Sebastes fasciatus
-17263	カラスガレイ:Reinhardtius hippoglossoides
-9344	ヤマトヒゲダラ:Enchelyopus cimbrius
-4968	オヒョウ:Hippoglossus stenolepis
-4916	メバル科:Sebastes mentella
-2043	Melanogrammus aeglefinus
-1747	ゲンゲ科:Melanostigma atlanticum
-1691	サケ科:Salmo salar
-1635	カレイ科:Glyptocephalus cynoglossus
+id	SRR12008492.fastq
+メバル科:Sebastes fasciatus	44.1366
+カラスガレイ:Reinhardtius hippoglossoides	22.115
+ヤマトヒゲダラ:Enchelyopus cimbrius	11.9703
+オヒョウ:Hippoglossus stenolepis	6.36434
+メバル科:Sebastes mentella	6.29772
+Melanogrammus aeglefinus	2.61722
+ゲンゲ科:Melanostigma atlanticum	2.23802
+サケ科:Salmo salar	2.16628
+カレイ科:Glyptocephalus cynoglossus	2.09454

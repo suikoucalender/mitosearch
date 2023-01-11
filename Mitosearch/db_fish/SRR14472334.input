@@ -1,10 +1,11 @@
-11495	ボラ科:Mugil curema
-9324	Eucinostomus gula
-7887	フエダイ科:Lutjanus griseus
-4482	ニシン科:Clupea harengus
-4165	カラフトマス:Oncorhynchus gorbuscha
-3883	アジ科:Scomber scombrus
-2185	スギ:Rachycentron canadum
-1769	Dorosoma cepedianum
-1308	クロサギ科:Gerres cinereus
-728	イスズミ科:Kyphosus elegans
+id	SRR14472334.fastq
+ボラ科:Mugil curema	24.3404
+Eucinostomus gula	19.7434
+フエダイ科:Lutjanus griseus	16.7005
+ニシン科:Clupea harengus	9.49053
+カラフトマス:Oncorhynchus gorbuscha	8.81929
+アジ科:Scomber scombrus	8.22217
+スギ:Rachycentron canadum	4.62669
+Dorosoma cepedianum	3.74582
+クロサギ科:Gerres cinereus	2.76966
+イスズミ科:Kyphosus elegans	1.54152

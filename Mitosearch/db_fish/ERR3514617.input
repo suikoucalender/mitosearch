@@ -1,17 +1,18 @@
-20725	Mystacoleucus marginatus
-13884	Hypsibarbus salweenensis
-9105	カワスズメ科:Oreochromis sp. 'red tilapia'
-5288	ナイルティラピア:Oreochromis niloticus
-4625	メアジ:Selar crumenophthalmus
-4474	Raiamas guttatus
-4245	グルクマ:Rastrelliger kanagurta
-4128	Labeo chrysophekadion
-4100	Barbonymus gonionotus
-4018	タイワンドジョウ科:Channa micropeltes
-2614	Puntioplites proctozystron
-2351	Clupeichthys goniognathus
-2324	Hemibagrus spilopterus
-2305	フクドジョウ科:Barbatula barbatula
-2075	Barbonymus schwanefeldii
-1943	Osphronemus goramy
-1621	Pristolepis rubripinnis
+id	ERR3514617.fastq
+Mystacoleucus marginatus	23.0726
+Hypsibarbus salweenensis	15.4567
+カワスズメ科:Oreochromis sp. 'red tilapia'	10.1364
+ナイルティラピア:Oreochromis niloticus	5.887
+メアジ:Selar crumenophthalmus	5.1489
+Raiamas guttatus	4.9808
+グルクマ:Rastrelliger kanagurta	4.72586
+Labeo chrysophekadion	4.5956
+Barbonymus gonionotus	4.56443
+タイワンドジョウ科:Channa micropeltes	4.47314
+Puntioplites proctozystron	2.9101
+Clupeichthys goniognathus	2.61731
+Hemibagrus spilopterus	2.58725
+フクドジョウ科:Barbatula barbatula	2.5661
+Barbonymus schwanefeldii	2.31005
+Osphronemus goramy	2.16309
+Pristolepis rubripinnis	1.80462

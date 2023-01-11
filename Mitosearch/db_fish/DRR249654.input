@@ -1,10 +1,11 @@
-9332	カタクチイワシ科:Engraulis japonicus
-6546	コノシロ:Konosirus punctatus
-4231	アカアマダイ:Branchiostegus japonicus
-2007	ヒメ:Hime japonica
-1288	ハタタテヌメリ:Callionymus valenciennei
-813	ニシン科:Sardinops sagax
-384	スジハゼ:Acentrogobius virgatulus
-370	チダイ:Evynnis tumifrons
-344	アヤメカサゴ:Sebastiscus albofasciatus
-319	スズキ:Lateolabrax japonicus
+id	DRR249654.fastq
+カタクチイワシ科:Engraulis japonicus	36.4048
+コノシロ:Konosirus punctatus	25.5364
+アカアマダイ:Branchiostegus japonicus	16.5054
+ヒメ:Hime japonica	7.82945
+ハタタテヌメリ:Callionymus valenciennei	5.02458
+ニシン科:Sardinops sagax	3.17157
+スジハゼ:Acentrogobius virgatulus	1.49801
+チダイ:Evynnis tumifrons	1.4434
+アヤメカサゴ:Sebastiscus albofasciatus	1.34197
+スズキ:Lateolabrax japonicus	1.24444

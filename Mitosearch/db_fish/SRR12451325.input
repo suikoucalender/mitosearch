@@ -1,6 +1,7 @@
-2470	Proterorhinus semilunaris
-594	Carpiodes cyprinus
-428	Carpiodes velifer
-416	Neogobius melanostomus
-172	サンフィッシュ科:Micropterus salmoides
-55	Proterorhinus marmoratus
+id	SRR12451325.fastq
+Proterorhinus semilunaris	59.734
+Carpiodes cyprinus	14.3652
+Carpiodes velifer	10.3507
+Neogobius melanostomus	10.0605
+サンフィッシュ科:Micropterus salmoides	4.15961
+Proterorhinus marmoratus	1.33011

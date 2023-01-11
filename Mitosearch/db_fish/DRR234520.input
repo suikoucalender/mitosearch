@@ -1,12 +1,13 @@
-11754	ドンコ科:Odontobutis obscura
-7620	Zacco platypus
-7491	アブラボテ:Tanakia limbata
-6391	コイ:Cyprinus carpio
-6366	カネヒラ:Acheilognathus rhombeus
-4096	モツゴ:Pseudorasbora parva
-2425	カムルチー:Channa argus
-1712	ギンブナ:Carassius langsdorfii
-1544	ナマズ:Silurus asotus
-875	セボシタビラ:Acheilognathus tabira nakamurae
-790	タモロコ:Gnathopogon elongatus elongatus
-674	ヤリタナゴ:Tanakia lanceolata
+id	DRR234520.fastq
+ドンコ科:Odontobutis obscura	22.7183
+Zacco platypus	14.7281
+アブラボテ:Tanakia limbata	14.4787
+コイ:Cyprinus carpio	12.3526
+カネヒラ:Acheilognathus rhombeus	12.3043
+モツゴ:Pseudorasbora parva	7.91681
+カムルチー:Channa argus	4.68708
+ギンブナ:Carassius langsdorfii	3.30898
+ナマズ:Silurus asotus	2.98427
+セボシタビラ:Acheilognathus tabira nakamurae	1.69121
+タモロコ:Gnathopogon elongatus elongatus	1.52692
+ヤリタナゴ:Tanakia lanceolata	1.30272

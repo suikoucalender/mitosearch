@@ -1,15 +1,16 @@
-25994	ベラ科\nHypsigenyini:Semicossyphus pulcher
-14539	Embiotoca lateralis
-7350	ヒラメ科:Paralichthys californicus
-6635	ニシン科:Sardinops sagax
-6303	Scorpaenichthys marmoratus
-5704	ベラ科\nJuilidini:Halichoeres californicus
-5183	Serranus scriba
-5112	カタクチイワシ科:Engraulis mordax
-4978	シロメバル:Sebastes cheni
-3778	Serranidae sp. JL-2015
-2522	Medialuna californiensis
-2096	マアジ:Trachurus japonicus
-2093	メバル科:Sebastes caurinus
-1392	ウツボ科:Gymnothorax unicolor
-1171	メジナ科:Girella simplicidens
+id	SRR14752168.fastq
+ベラ科\nHypsigenyini:Semicossyphus pulcher	27.4054
+Embiotoca lateralis	15.3284
+ヒラメ科:Paralichthys californicus	7.74908
+ニシン科:Sardinops sagax	6.99526
+Scorpaenichthys marmoratus	6.64523
+ベラ科\nJuilidini:Halichoeres californicus	6.01371
+Serranus scriba	5.46442
+カタクチイワシ科:Engraulis mordax	5.38956
+シロメバル:Sebastes cheni	5.24829
+Serranidae sp. JL-2015	3.98313
+Medialuna californiensis	2.65894
+マアジ:Trachurus japonicus	2.2098
+メバル科:Sebastes caurinus	2.20664
+ウツボ科:Gymnothorax unicolor	1.46758
+メジナ科:Girella simplicidens	1.23458

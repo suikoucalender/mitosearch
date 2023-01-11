@@ -1,6 +1,7 @@
-1610	コノシロ:Konosirus punctatus
-324	カタクチイワシ科:Engraulis japonicus
-61	セトダイ:Hapalogenys analis
-50	マダイ:Pagrus major
-42	Parambassis lala
-34	イシダイ:Oplegnathus fasciatus
+id	DRR249639.fastq
+コノシロ:Konosirus punctatus	75.9076
+カタクチイワシ科:Engraulis japonicus	15.2758
+セトダイ:Hapalogenys analis	2.876
+マダイ:Pagrus major	2.35738
+Parambassis lala	1.9802
+イシダイ:Oplegnathus fasciatus	1.60302

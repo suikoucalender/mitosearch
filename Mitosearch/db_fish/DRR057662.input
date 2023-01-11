@@ -1,9 +1,10 @@
-38075	カタクチイワシ科:Engraulis japonicus
-7858	マアジ:Trachurus japonicus
-3299	ブリ:Seriola quinqueradiata
-3047	ホソトビウオ:Cypselurus hiraii
-2947	コノシロ:Konosirus punctatus
-2500	マサバ:Scomber japonicus
-1859	クサフグ:Takifugu alboplumbeus
-1072	イダテンギンポ:Omobranchus punctatus
-1052	ボラ:Mugil cephalus
+id	DRR057662.fastq
+カタクチイワシ科:Engraulis japonicus	61.7009
+マアジ:Trachurus japonicus	12.734
+ブリ:Seriola quinqueradiata	5.34606
+ホソトビウオ:Cypselurus hiraii	4.93769
+コノシロ:Konosirus punctatus	4.77564
+マサバ:Scomber japonicus	4.05127
+クサフグ:Takifugu alboplumbeus	3.01253
+イダテンギンポ:Omobranchus punctatus	1.73719
+ボラ:Mugil cephalus	1.70478

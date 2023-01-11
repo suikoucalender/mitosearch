@@ -1,13 +1,14 @@
-2559	コノシロ:Konosirus punctatus
-554	マサバ:Scomber japonicus
-517	カタクチイワシ科:Engraulis japonicus
-440	オキヒイラギ:Equulites rivulatus
-418	チダイ:Evynnis tumifrons
-320	ニシン科:Sardinops sagax
-300	ハゼ科:Chaeturichthys stigmatias
-192	ムツ:Scombrops boops
-186	スズキ:Lateolabrax japonicus
-182	シログチ:Pennahia argentata
-140	サッパ:Sardinella zunasi
-100	アカカマス:Sphyraena pinguis
-91	テンジクダイ:Jaydia lineata
+id	DRR249901.fastq
+コノシロ:Konosirus punctatus	42.6571
+マサバ:Scomber japonicus	9.23487
+カタクチイワシ科:Engraulis japonicus	8.6181
+オキヒイラギ:Equulites rivulatus	7.33456
+チダイ:Evynnis tumifrons	6.96783
+ニシン科:Sardinops sagax	5.33422
+ハゼ科:Chaeturichthys stigmatias	5.00083
+ムツ:Scombrops boops	3.20053
+スズキ:Lateolabrax japonicus	3.10052
+シログチ:Pennahia argentata	3.03384
+サッパ:Sardinella zunasi	2.33372
+アカカマス:Sphyraena pinguis	1.66694
+テンジクダイ:Jaydia lineata	1.51692

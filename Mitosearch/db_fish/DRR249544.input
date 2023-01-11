@@ -1,13 +1,14 @@
-1794	カタクチイワシ科:Engraulis japonicus
-1555	アカアマダイ:Branchiostegus japonicus
-437	ブリ:Seriola quinqueradiata
-398	コノシロ:Konosirus punctatus
-375	ヒメコダイ:Chelidoperca hirundinacea
-343	ハゼ科:Chaeturichthys stigmatias
-337	ヒメ:Hime japonica
-259	シログチ:Pennahia argentata
-177	スジハゼ:Acentrogobius virgatulus
-161	ハタタテヌメリ:Callionymus valenciennei
-148	スズキ:Lateolabrax japonicus
-111	サンマ:Cololabis saira
-97	ヒイラギ:Nuchequula nuchalis
+id	DRR249544.fastq
+カタクチイワシ科:Engraulis japonicus	28.9729
+アカアマダイ:Branchiostegus japonicus	25.113
+ブリ:Seriola quinqueradiata	7.05749
+コノシロ:Konosirus punctatus	6.42765
+ヒメコダイ:Chelidoperca hirundinacea	6.0562
+ハゼ科:Chaeturichthys stigmatias	5.53941
+ヒメ:Hime japonica	5.44251
+シログチ:Pennahia argentata	4.18282
+スジハゼ:Acentrogobius virgatulus	2.85853
+ハタタテヌメリ:Callionymus valenciennei	2.60013
+スズキ:Lateolabrax japonicus	2.39018
+サンマ:Cololabis saira	1.79264
+ヒイラギ:Nuchequula nuchalis	1.56654

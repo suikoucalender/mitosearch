@@ -1,9 +1,10 @@
-3448	コノシロ:Konosirus punctatus
-1220	カタクチイワシ科:Engraulis japonicus
-492	スズキ:Lateolabrax japonicus
-234	ハタタテヌメリ:Callionymus valenciennei
-176	サッパ:Sardinella zunasi
-151	マガレイ:Pseudopleuronectes herzensteini
-80	ヒメ:Hime japonica
-78	サケ:Oncorhynchus keta
-63	アカアマダイ:Branchiostegus japonicus
+id	DRR249589.fastq
+コノシロ:Konosirus punctatus	58.0276
+カタクチイワシ科:Engraulis japonicus	20.5318
+スズキ:Lateolabrax japonicus	8.28004
+ハタタテヌメリ:Callionymus valenciennei	3.93807
+サッパ:Sardinella zunasi	2.96197
+マガレイ:Pseudopleuronectes herzensteini	2.54123
+ヒメ:Hime japonica	1.34635
+サケ:Oncorhynchus keta	1.31269
+アカアマダイ:Branchiostegus japonicus	1.06025

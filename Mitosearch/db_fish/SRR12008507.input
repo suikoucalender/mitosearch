@@ -1,6 +1,7 @@
-74438	メバル科:Sebastes fasciatus
-37230	タラ科:Gadus morhua
-15087	ヤマトヒゲダラ:Enchelyopus cimbrius
-13974	メバル科:Sebastes mentella
-4694	ドロギンポ:Askoldia variegata
-2432	Urophycis tenuis
+id	SRR12008507.fastq
+メバル科:Sebastes fasciatus	50.3453
+タラ科:Gadus morhua	25.1801
+ヤマトヒゲダラ:Enchelyopus cimbrius	10.2039
+メバル科:Sebastes mentella	9.45115
+ドロギンポ:Askoldia variegata	3.17473
+Urophycis tenuis	1.64485

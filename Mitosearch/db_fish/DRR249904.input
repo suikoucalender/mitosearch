@@ -1,13 +1,14 @@
-4774	カタクチイワシ科:Engraulis japonicus
-2257	コノシロ:Konosirus punctatus
-978	ニシン科:Sardinops sagax
-457	チダイ:Evynnis tumifrons
-350	マサバ:Scomber japonicus
-341	アカカマス:Sphyraena pinguis
-276	スズキ:Lateolabrax japonicus
-266	シログチ:Pennahia argentata
-233	カナド:Lepidotrigla guentheri
-188	ボラ:Mugil cephalus
-160	サッパ:Sardinella zunasi
-125	オキヒイラギ:Equulites rivulatus
-117	スジハゼ:Acentrogobius virgatulus
+id	DRR249904.fastq
+カタクチイワシ科:Engraulis japonicus	45.3716
+コノシロ:Konosirus punctatus	21.4503
+ニシン科:Sardinops sagax	9.29481
+チダイ:Evynnis tumifrons	4.34328
+マサバ:Scomber japonicus	3.32636
+アカカマス:Sphyraena pinguis	3.24083
+スズキ:Lateolabrax japonicus	2.62308
+シログチ:Pennahia argentata	2.52804
+カナド:Lepidotrigla guentheri	2.21441
+ボラ:Mugil cephalus	1.78673
+サッパ:Sardinella zunasi	1.52062
+オキヒイラギ:Equulites rivulatus	1.18799
+スジハゼ:Acentrogobius virgatulus	1.11196

@@ -1,4 +1,5 @@
-519312	ボラ:Mugil cephalus
-9966	ハゼ科:Pseudogobius olorum
-7798	カワスズメ科:Oreochromis esculentus
-6131	ニシン科:Nematalosa erebi
+id	SRR15710066.fastq
+ボラ:Mugil cephalus	95.6011
+ハゼ科:Pseudogobius olorum	1.83466
+カワスズメ科:Oreochromis esculentus	1.43555
+ニシン科:Nematalosa erebi	1.12867

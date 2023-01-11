@@ -1,12 +1,13 @@
-2919	コノシロ:Konosirus punctatus
-1815	カタクチイワシ科:Engraulis japonicus
-968	スズキ:Lateolabrax japonicus
-544	アカカマス:Sphyraena pinguis
-431	ボラ:Mugil cephalus
-421	シログチ:Pennahia argentata
-400	センハダカ:Diaphus suborbitalis
-250	マサバ:Scomber japonicus
-182	チダイ:Evynnis tumifrons
-176	ニシン科:Sardinops sagax
-125	イワハダカ:Benthosema pterotum
-124	タチウオ:Trichiurus japonicus
+id	DRR249906.fastq
+コノシロ:Konosirus punctatus	34.9372
+カタクチイワシ科:Engraulis japonicus	21.7235
+スズキ:Lateolabrax japonicus	11.5859
+アカカマス:Sphyraena pinguis	6.51107
+ボラ:Mugil cephalus	5.15859
+シログチ:Pennahia argentata	5.0389
+センハダカ:Diaphus suborbitalis	4.78755
+マサバ:Scomber japonicus	2.99222
+チダイ:Evynnis tumifrons	2.17834
+ニシン科:Sardinops sagax	2.10652
+イワハダカ:Benthosema pterotum	1.49611
+タチウオ:Trichiurus japonicus	1.48414

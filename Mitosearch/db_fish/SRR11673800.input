@@ -1,18 +1,19 @@
-45818	コノシロ:Konosirus punctatus
-44718	ヒイラギ:Nuchequula nuchalis
-32285	Kareius bicoloratus
-25745	カタクチイワシ科:Engraulis japonicus
-12472	スズキ:Lateolabrax japonicus
-8605	Parambassis lala
-7528	シモフリシマハゼ:Tridentiger bifasciatus
-6574	シロメバル:Sebastes cheni
-6492	ヤリタナゴ:Tanakia lanceolata
-5717	ボラ:Mugil cephalus
-4250	ドジョウ:Misgurnus anguillicaudatus
-4188	ヒメハゼ:Favonigobius gymnauchen
-4176	Zacco platypus
-4140	ドジョウ科:Misgurnus bipartitus
-3747	キンギョ:Carassius auratus
-3439	コチ科:Platycephalus sp. 2 LL-2021
-2931	メナダ:Planiliza haematocheilus
-2639	コイ:Cyprinus carpio
+id	SRR11673800.fastq
+コノシロ:Konosirus punctatus	20.3216
+ヒイラギ:Nuchequula nuchalis	19.8338
+Kareius bicoloratus	14.3194
+カタクチイワシ科:Engraulis japonicus	11.4187
+スズキ:Lateolabrax japonicus	5.5317
+Parambassis lala	3.81657
+シモフリシマハゼ:Tridentiger bifasciatus	3.33889
+シロメバル:Sebastes cheni	2.91576
+ヤリタナゴ:Tanakia lanceolata	2.8794
+ボラ:Mugil cephalus	2.53566
+ドジョウ:Misgurnus anguillicaudatus	1.885
+ヒメハゼ:Favonigobius gymnauchen	1.8575
+Zacco platypus	1.85218
+ドジョウ科:Misgurnus bipartitus	1.83621
+キンギョ:Carassius auratus	1.66191
+コチ科:Platycephalus sp. 2 LL-2021	1.5253
+メナダ:Planiliza haematocheilus	1.29999
+コイ:Cyprinus carpio	1.17048

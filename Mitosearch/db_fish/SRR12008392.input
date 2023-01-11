@@ -1,7 +1,8 @@
-21571	メバル科:Sebastes fasciatus
-5377	タウエガジ科:Lumpenus lampretaeformis
-4488	オヒョウ:Hippoglossus stenolepis
-4310	タラ科:Gadus morhua
-3984	オオカミウオ科:Anarhichas denticulatus
-3657	カジカ科:Triglops murrayi
-3380	メバル科:Sebastes mentella
+id	SRR12008392.fastq
+メバル科:Sebastes fasciatus	46.1244
+タウエガジ科:Lumpenus lampretaeformis	11.4974
+オヒョウ:Hippoglossus stenolepis	9.59651
+タラ科:Gadus morhua	9.2159
+オオカミウオ科:Anarhichas denticulatus	8.51883
+カジカ科:Triglops murrayi	7.81962
+メバル科:Sebastes mentella	7.22732

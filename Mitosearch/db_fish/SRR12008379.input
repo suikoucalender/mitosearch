@@ -1,8 +1,9 @@
-12546	ハダカイワシ科:Protomyctophum arcticum
-9603	カレイ科:Glyptocephalus cynoglossus
-8684	ハダカイワシ科:Notoscopelus elongatus kroyeri
-4942	アンコウ科:Lophius americanus
-3189	メバル科:Sebastes fasciatus
-3048	クサウオ科:Paraliparis sp. NSMT P92399
-1433	ゲンゲ科:Melanostigma atlanticum
-967	サンマ:Cololabis saira
+id	SRR12008379.fastq
+ハダカイワシ科:Protomyctophum arcticum	28.2491
+カレイ科:Glyptocephalus cynoglossus	21.6225
+ハダカイワシ科:Notoscopelus elongatus kroyeri	19.5533
+アンコウ科:Lophius americanus	11.1276
+メバル科:Sebastes fasciatus	7.18049
+クサウオ科:Paraliparis sp. NSMT P92399	6.86301
+ゲンゲ科:Melanostigma atlanticum	3.22661
+サンマ:Cololabis saira	2.17734

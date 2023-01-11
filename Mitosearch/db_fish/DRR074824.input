@@ -1,6 +1,7 @@
-214	ナガサキフエダイ:Pristipomoides multidens
-136	ネズッポ科:Callionymus olidus
-112	ヘラヌメリ:Repomucenus planus
-110	ムネエソ科:Maurolicus muelleri
-27	ハナフエダイ:Pristipomoides argyrogrammicus
-8	スマ:Euthynnus affinis
+id	DRR074824.fastq
+ナガサキフエダイ:Pristipomoides multidens	35.2554
+ネズッポ科:Callionymus olidus	22.4053
+ヘラヌメリ:Repomucenus planus	18.4514
+ムネエソ科:Maurolicus muelleri	18.1219
+ハナフエダイ:Pristipomoides argyrogrammicus	4.44811
+スマ:Euthynnus affinis	1.31796

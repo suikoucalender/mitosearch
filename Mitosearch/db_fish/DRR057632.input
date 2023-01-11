@@ -1,11 +1,12 @@
-6174	カタクチイワシ科:Engraulis japonicus
-1569	マアジ:Trachurus japonicus
-1550	チチブ:Tridentiger obscurus
-1184	カマツカ:Pseudogobio esocinus
-1010	サワラ:Scomberomorus niphonius
-933	ヒイラギ:Nuchequula nuchalis
-861	ブリ:Seriola quinqueradiata
-451	クサフグ:Takifugu alboplumbeus
-396	Parambassis lala
-223	クロダイ:Acanthopagrus schlegelii
-195	Tribolodon hakonensis
+id	DRR057632.fastq
+カタクチイワシ科:Engraulis japonicus	42.4447
+マアジ:Trachurus japonicus	10.7865
+チチブ:Tridentiger obscurus	10.6559
+カマツカ:Pseudogobio esocinus	8.13969
+サワラ:Scomberomorus niphonius	6.94349
+ヒイラギ:Nuchequula nuchalis	6.41413
+ブリ:Seriola quinqueradiata	5.91915
+クサフグ:Takifugu alboplumbeus	3.10051
+Parambassis lala	2.7224
+クロダイ:Acanthopagrus schlegelii	1.53307
+Tribolodon hakonensis	1.34057

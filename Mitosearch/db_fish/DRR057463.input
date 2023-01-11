@@ -1,6 +1,7 @@
-1341	カタクチイワシ科:Engraulis japonicus
-1175	ブリ:Seriola quinqueradiata
-990	Parambassis lala
-625	クロダイ:Acanthopagrus schlegelii
-379	ヒラメ:Paralichthys olivaceus
-278	マアジ:Trachurus japonicus
+id	DRR057463.fastq
+カタクチイワシ科:Engraulis japonicus	28.0075
+ブリ:Seriola quinqueradiata	24.5405
+Parambassis lala	20.6767
+クロダイ:Acanthopagrus schlegelii	13.0535
+ヒラメ:Paralichthys olivaceus	7.91562
+マアジ:Trachurus japonicus	5.80618

@@ -1,8 +1,9 @@
-30095	カワヨシノボリ:Rhinogobius flumineus
-14423	Zacco platypus
-11943	カマツカ:Pseudogobio esocinus
-6487	ムギツク:Pungtungia herzi
-6337	イトモロコ:Squalidus gracilis gracilis
-6045	カワムツ:Nipponocypris temminckii
-4545	ナマズ:Silurus asotus
-1717	Tribolodon hakonensis
+id	DRR337316.fastq
+カワヨシノボリ:Rhinogobius flumineus	36.8847
+Zacco platypus	17.677
+カマツカ:Pseudogobio esocinus	14.6375
+ムギツク:Pungtungia herzi	7.95053
+イトモロコ:Squalidus gracilis gracilis	7.76669
+カワムツ:Nipponocypris temminckii	7.40881
+ナマズ:Silurus asotus	5.5704
+Tribolodon hakonensis	2.10437

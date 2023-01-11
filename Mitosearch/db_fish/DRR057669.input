@@ -1,12 +1,13 @@
-3720	カタクチイワシ科:Engraulis japonicus
-3376	マアジ:Trachurus japonicus
-2598	サワラ:Scomberomorus niphonius
-2164	ブリ:Seriola quinqueradiata
-1900	クサフグ:Takifugu alboplumbeus
-1689	フグ科:Takifugu fasciatus
-1587	ホソトビウオ:Cypselurus hiraii
-1524	シロメバル:Sebastes cheni
-1173	イソギンポ:Parablennius yatabei
-1124	ホシササノハベラ:Pseudolabrus sieboldi
-1035	セトダイ:Hapalogenys analis
-565	スズキ:Lateolabrax japonicus
+id	DRR057669.fastq
+カタクチイワシ科:Engraulis japonicus	16.5665
+マアジ:Trachurus japonicus	15.0345
+サワラ:Scomberomorus niphonius	11.5698
+ブリ:Seriola quinqueradiata	9.63705
+クサフグ:Takifugu alboplumbeus	8.46137
+フグ科:Takifugu fasciatus	7.52171
+ホソトビウオ:Cypselurus hiraii	7.06747
+シロメバル:Sebastes cheni	6.78691
+イソギンポ:Parablennius yatabei	5.22378
+ホシササノハベラ:Pseudolabrus sieboldi	5.00557
+セトダイ:Hapalogenys analis	4.60922
+スズキ:Lateolabrax japonicus	2.51614

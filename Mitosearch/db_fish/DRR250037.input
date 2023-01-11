@@ -1,8 +1,9 @@
-2050	オキヒイラギ:Equulites rivulatus
-1582	カサゴ:Sebastiscus marmoratus
-1077	カワハギ:Stephanolepis cirrhifer
-896	テンジクダイ:Jaydia lineata
-571	カタクチイワシ科:Engraulis japonicus
-495	ホシササノハベラ:Pseudolabrus sieboldi
-292	トラギス:Parapercis pulchella
-121	トビエイ科:Myliobatis aquila
+id	DRR250037.fastq
+オキヒイラギ:Equulites rivulatus	28.9385
+カサゴ:Sebastiscus marmoratus	22.332
+カワハギ:Stephanolepis cirrhifer	15.2033
+テンジクダイ:Jaydia lineata	12.6482
+カタクチイワシ科:Engraulis japonicus	8.06042
+ホシササノハベラ:Pseudolabrus sieboldi	6.98758
+トラギス:Parapercis pulchella	4.12196
+トビエイ科:Myliobatis aquila	1.70807

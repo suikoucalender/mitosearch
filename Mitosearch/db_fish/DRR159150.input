@@ -1,7 +1,8 @@
-105	シマヨシノボリ:Rhinogobius nagoyae
-97	クロヨシノボリ:Rhinogobius brunneus
-93	ボウズハゼ:Sicyopterus japonicus
-77	オオウナギ:Anguilla marmorata
-50	アヤヨシノボリ:Rhinogobius sp. MO
-27	テリエビス:Sargocentron ittodai
-17	ゴクラクハゼ:Rhinogobius similis
+id	DRR159150.fastq
+シマヨシノボリ:Rhinogobius nagoyae	22.5322
+クロヨシノボリ:Rhinogobius brunneus	20.8155
+ボウズハゼ:Sicyopterus japonicus	19.9571
+オオウナギ:Anguilla marmorata	16.5236
+アヤヨシノボリ:Rhinogobius sp. MO	10.7296
+テリエビス:Sargocentron ittodai	5.79399
+ゴクラクハゼ:Rhinogobius similis	3.64807

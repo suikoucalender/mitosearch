@@ -1,8 +1,9 @@
-96208	ヌマチチブ:Tridentiger brevispinis
-7576	コイ:Cyprinus carpio
-3364	チチブ:Tridentiger obscurus
-2753	Zacco platypus
-2470	ゲンゴロウブナ:Carassius cuvieri
-1796	Tribolodon hakonensis
-1750	ニゴイ:Hemibarbus barbus
-1416	ギンブナ:Carassius langsdorfii
+id	DRR231431.fastq
+ヌマチチブ:Tridentiger brevispinis	81.9957
+コイ:Cyprinus carpio	6.45684
+チチブ:Tridentiger obscurus	2.86705
+Zacco platypus	2.34631
+ゲンゴロウブナ:Carassius cuvieri	2.10512
+Tribolodon hakonensis	1.53069
+ニゴイ:Hemibarbus barbus	1.49148
+ギンブナ:Carassius langsdorfii	1.20682

@@ -1,6 +1,7 @@
-50782	ギンブナ:Carassius langsdorfii
-24283	Tribolodon hakonensis
-16698	ドンコ科:Odontobutis obscura
-7598	コイ科:Rhynchocypris jouyi
-6880	コイ科:Hemibarbus maculatus
-1088	ゲンゴロウブナ:Carassius cuvieri
+id	DRR149216.fastq
+ギンブナ:Carassius langsdorfii	47.3143
+Tribolodon hakonensis	22.6248
+ドンコ科:Odontobutis obscura	15.5578
+コイ科:Rhynchocypris jouyi	7.07917
+コイ科:Hemibarbus maculatus	6.4102
+ゲンゴロウブナ:Carassius cuvieri	1.01371

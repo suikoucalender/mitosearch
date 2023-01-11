@@ -1,13 +1,14 @@
-2035	アカアマダイ:Branchiostegus japonicus
-918	ヒメ:Hime japonica
-484	スズキ:Lateolabrax japonicus
-381	ブリ:Seriola quinqueradiata
-350	コノシロ:Konosirus punctatus
-334	ハモ:Muraenesox cinereus
-262	カタクチイワシ科:Engraulis japonicus
-248	ハゼ科:Chaeturichthys stigmatias
-165	シログチ:Pennahia argentata
-138	シロギス:Sillago japonica
-120	マダイ:Pagrus major
-100	コモンカスベ:Okamejei kenojei
-66	ヒメコダイ:Chelidoperca hirundinacea
+id	DRR249549.fastq
+アカアマダイ:Branchiostegus japonicus	36.3328
+ヒメ:Hime japonica	16.3899
+スズキ:Lateolabrax japonicus	8.64131
+ブリ:Seriola quinqueradiata	6.80236
+コノシロ:Konosirus punctatus	6.24888
+ハモ:Muraenesox cinereus	5.96322
+カタクチイワシ科:Engraulis japonicus	4.67774
+ハゼ科:Chaeturichthys stigmatias	4.42778
+シログチ:Pennahia argentata	2.9459
+シロギス:Sillago japonica	2.46385
+マダイ:Pagrus major	2.14247
+コモンカスベ:Okamejei kenojei	1.7854
+ヒメコダイ:Chelidoperca hirundinacea	1.17836

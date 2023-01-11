@@ -1,7 +1,8 @@
-35784	メバル科:Sebastes fasciatus
-18389	ニシン科:Clupea harengus
-13175	トミカジカ:Icelus toyamensis
-11674	カレイ科:Glyptocephalus cynoglossus
-9627	ヤマトヒゲダラ:Enchelyopus cimbrius
-8049	カラスガレイ:Reinhardtius hippoglossoides
-6861	カラフトシシャモ:Mallotus villosus
+id	SRR12008470.fastq
+メバル科:Sebastes fasciatus	34.5542
+ニシン科:Clupea harengus	17.757
+トミカジカ:Icelus toyamensis	12.7222
+カレイ科:Glyptocephalus cynoglossus	11.2728
+ヤマトヒゲダラ:Enchelyopus cimbrius	9.29615
+カラスガレイ:Reinhardtius hippoglossoides	7.77238
+カラフトシシャモ:Mallotus villosus	6.62521

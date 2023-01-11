@@ -1,6 +1,7 @@
-93042	ハゼ科:Glossogobius giuris
-19248	ハゼ科:Pseudogobius fulvicaudus
-16687	コボラ:Planiliza macrolepis
-12043	Gobiopterus lacustris
-6589	アベハゼ:Mugilogobius abei
-5775	ハゼ科:Pseudogobius taijiangensis
+id	SRR15710113.fastq
+ハゼ科:Glossogobius giuris	60.6595
+ハゼ科:Pseudogobius fulvicaudus	12.5489
+コボラ:Planiliza macrolepis	10.8792
+Gobiopterus lacustris	7.85154
+アベハゼ:Mugilogobius abei	4.29575
+ハゼ科:Pseudogobius taijiangensis	3.76506

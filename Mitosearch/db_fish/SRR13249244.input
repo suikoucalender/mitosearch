@@ -1,7 +1,8 @@
-73	ニシン科:Clupea harengus
-35	Ctenogobius boleosoma
-11	Urophycis tenuis
-11	Alosa aestivalis
-7	Melanogrammus aeglefinus
-3	イカナゴ科:Ammodytes marinus
-2	Fundulus heteroclitus
+id	SRR13249244.fastq
+ニシン科:Clupea harengus	51.4085
+Ctenogobius boleosoma	24.6479
+Urophycis tenuis	7.74648
+Alosa aestivalis	7.74648
+Melanogrammus aeglefinus	4.92958
+イカナゴ科:Ammodytes marinus	2.11268
+Fundulus heteroclitus	1.40845

@@ -1,10 +1,11 @@
-3250	カタクチイワシ科:Engraulis japonicus
-2613	コノシロ:Konosirus punctatus
-1284	スズキ:Lateolabrax japonicus
-919	マダイ:Pagrus major
-636	サワラ:Scomberomorus niphonius
-455	アカアマダイ:Branchiostegus japonicus
-351	ブリ:Seriola quinqueradiata
-329	シモフリシマハゼ:Tridentiger bifasciatus
-323	イソギンポ:Parablennius yatabei
-262	イシダイ:Oplegnathus fasciatus
+id	DRR249796.fastq
+カタクチイワシ科:Engraulis japonicus	31.184
+コノシロ:Konosirus punctatus	25.072
+スズキ:Lateolabrax japonicus	12.3201
+マダイ:Pagrus major	8.81789
+サワラ:Scomberomorus niphonius	6.10248
+アカアマダイ:Branchiostegus japonicus	4.36576
+ブリ:Seriola quinqueradiata	3.36788
+シモフリシマハゼ:Tridentiger bifasciatus	3.15678
+イソギンポ:Parablennius yatabei	3.09921
+イシダイ:Oplegnathus fasciatus	2.51391

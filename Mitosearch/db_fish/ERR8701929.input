@@ -1,12 +1,13 @@
-13803	Perca fluviatilis
-12499	ブラウントラウト:Salmo trutta
-9805	Squalius cephalus
-6721	カワマス:Salvelinus fontinalis
-5517	Abramis brama
-2699	Coregonus sp. 'cluncaformis'
-1779	Leuciscus idus
-1496	サケ科:Salmo labrax
-1399	サケ科:Salvelinus levanidovi
-1249	Coregonus clupeaformis
-740	ゴギ:Salvelinus leucomaenis
-651	Coregonus lavaretus
+id	ERR8701929.fastq
+Perca fluviatilis	23.6523
+ブラウントラウト:Salmo trutta	21.4178
+Squalius cephalus	16.8015
+カワマス:Salvelinus fontinalis	11.5168
+Abramis brama	9.45372
+Coregonus sp. 'cluncaformis'	4.6249
+Leuciscus idus	3.04843
+サケ科:Salmo labrax	2.56349
+サケ科:Salvelinus levanidovi	2.39727
+Coregonus clupeaformis	2.14024
+ゴギ:Salvelinus leucomaenis	1.26804
+Coregonus lavaretus	1.11553

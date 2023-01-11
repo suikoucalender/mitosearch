@@ -1,9 +1,10 @@
-96273	ヌマチチブ:Tridentiger brevispinis
-3379	チチブ:Tridentiger obscurus
-2967	クロヨシノボリ:Rhinogobius brunneus
-2794	ウキゴリ:Gymnogobius urotaenia
-2478	カジカ:Cottus pollux
-2419	ニゴイ:Hemibarbus barbus
-2177	アユ:Plecoglossus altivelis
-1950	コイ科:Carassius auratus grandoculis
-1828	ボラ:Mugil cephalus
+id	DRR231419.fastq
+ヌマチチブ:Tridentiger brevispinis	82.8048
+チチブ:Tridentiger obscurus	2.90629
+クロヨシノボリ:Rhinogobius brunneus	2.55193
+ウキゴリ:Gymnogobius urotaenia	2.40313
+カジカ:Cottus pollux	2.13134
+ニゴイ:Hemibarbus barbus	2.08059
+アユ:Plecoglossus altivelis	1.87245
+コイ科:Carassius auratus grandoculis	1.6772
+ボラ:Mugil cephalus	1.57227

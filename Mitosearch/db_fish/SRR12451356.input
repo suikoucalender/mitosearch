@@ -1,8 +1,9 @@
-8221	Ictiobus niger
-2338	Ictiobus bubalus
-1773	コイ:Cyprinus carpio
-1690	Moxostoma breviceps
-645	Moxostoma macrolepidotum
-472	Dorosoma cepedianum
-466	アメリカナマズ科:Ictalurus australis
-196	Moxostoma erythrurum
+id	SRR12451356.fastq
+Ictiobus niger	52.0284
+Ictiobus bubalus	14.7965
+コイ:Cyprinus carpio	11.2208
+Moxostoma breviceps	10.6955
+Moxostoma macrolepidotum	4.08202
+Dorosoma cepedianum	2.98715
+アメリカナマズ科:Ictalurus australis	2.94918
+Moxostoma erythrurum	1.24043

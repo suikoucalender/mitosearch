@@ -1,7 +1,8 @@
-14248	モツゴ:Pseudorasbora parva
-5190	コイ科:Acheilognathus chankaensis
-1641	Tribolodon ezoe
-1186	Tribolodon hakonensis
-1186	ゲンゴロウブナ:Carassius cuvieri
-290	タモロコ:Gnathopogon elongatus elongatus
-273	コイ:Cyprinus carpio
+id	DRR125626.fastq
+モツゴ:Pseudorasbora parva	59.3321
+コイ科:Acheilognathus chankaensis	21.6124
+Tribolodon ezoe	6.83351
+Tribolodon hakonensis	4.93879
+ゲンゴロウブナ:Carassius cuvieri	4.93879
+タモロコ:Gnathopogon elongatus elongatus	1.20763
+コイ:Cyprinus carpio	1.13684

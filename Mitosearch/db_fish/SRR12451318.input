@@ -1,6 +1,7 @@
-2250	Moxostoma macrolepidotum
-1459	Catostomus columbianus
-1410	Catostomus commersonii
-925	コクチバス:Micropterus dolomieu
-319	コイ:Cyprinus carpio
-83	Catostomus tsiltcoosensis
+id	SRR12451318.fastq
+Moxostoma macrolepidotum	34.9054
+Catostomus columbianus	22.6342
+Catostomus commersonii	21.874
+コクチバス:Micropterus dolomieu	14.35
+コイ:Cyprinus carpio	4.94881
+Catostomus tsiltcoosensis	1.28762

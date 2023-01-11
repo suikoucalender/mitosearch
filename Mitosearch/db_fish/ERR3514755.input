@@ -1,24 +1,25 @@
-29	ナイルティラピア:Oreochromis niloticus
-25	カワスズメ科:Oreochromis sp. 'red tilapia'
-13	Mystacoleucus marginatus
-8	Puntioplites proctozystron
-8	Clupeichthys goniognathus
-6	Hemibagrus spilopterus
-6	Pristolepis rubripinnis
-6	Barbonymus gonionotus
-6	Barbonymus schwanefeldii
-5	タイワンドジョウ科:Channa striata
-5	Cyclocheilichthys armatus
-4	Hypsibarbus vernayi
-3	バラヒメダイ:Pristipomoides typus
-3	Barbonymus altus
-3	Labeo rohita
-2	Cirrhinus mrigala
-2	Trichopsis vittata
-2	Luciobarbus capito
-2	Hemibagrus sp. RCH-2015
-2	Hampala macrolepidota
-2	コクレン:Hypophthalmichthys nobilis
-2	Cirrhinus molitorella
-2	Systomus orphoides
-2	Hypsibarbus salweenensis
+id	ERR3514755.fastq
+ナイルティラピア:Oreochromis niloticus	19.5946
+カワスズメ科:Oreochromis sp. 'red tilapia'	16.8919
+Mystacoleucus marginatus	8.78378
+Puntioplites proctozystron	5.40541
+Clupeichthys goniognathus	5.40541
+Hemibagrus spilopterus	4.05405
+Pristolepis rubripinnis	4.05405
+Barbonymus gonionotus	4.05405
+Barbonymus schwanefeldii	4.05405
+タイワンドジョウ科:Channa striata	3.37838
+Cyclocheilichthys armatus	3.37838
+Hypsibarbus vernayi	2.7027
+バラヒメダイ:Pristipomoides typus	2.02703
+Barbonymus altus	2.02703
+Labeo rohita	2.02703
+Cirrhinus mrigala	1.35135
+Trichopsis vittata	1.35135
+Luciobarbus capito	1.35135
+Hemibagrus sp. RCH-2015	1.35135
+Hampala macrolepidota	1.35135
+コクレン:Hypophthalmichthys nobilis	1.35135
+Cirrhinus molitorella	1.35135
+Systomus orphoides	1.35135
+Hypsibarbus salweenensis	1.35135

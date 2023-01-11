@@ -1,14 +1,15 @@
-24079	ヌマチチブ:Tridentiger brevispinis
-2435	ゲンゴロウブナ:Carassius cuvieri
-2099	チチブ:Tridentiger obscurus
-1633	ヒガシシマドジョウ:Cobitis sp. BIWAE type C
-1617	ウキゴリ:Gymnogobius urotaenia
-1163	コイ科:Hemibarbus maculatus
-1114	ギンブナ:Carassius langsdorfii
-1034	ニホンウナギ:Anguilla japonica
-587	Tribolodon hakonensis
-585	アブラハヤ:Rhynchocypris lagowskii
-569	ボラ:Mugil cephalus
-560	コイ:Cyprinus carpio
-545	マハゼ:Acanthogobius flavimanus
-465	アユ:Plecoglossus altivelis
+id	DRR231412.fastq
+ヌマチチブ:Tridentiger brevispinis	62.5672
+ゲンゴロウブナ:Carassius cuvieri	6.32714
+チチブ:Tridentiger obscurus	5.45407
+ヒガシシマドジョウ:Cobitis sp. BIWAE type C	4.24321
+ウキゴリ:Gymnogobius urotaenia	4.20164
+コイ科:Hemibarbus maculatus	3.02196
+ギンブナ:Carassius langsdorfii	2.89463
+ニホンウナギ:Anguilla japonica	2.68676
+Tribolodon hakonensis	1.52527
+アブラハヤ:Rhynchocypris lagowskii	1.52007
+ボラ:Mugil cephalus	1.4785
+コイ:Cyprinus carpio	1.45511
+マハゼ:Acanthogobius flavimanus	1.41614
+アユ:Plecoglossus altivelis	1.20826

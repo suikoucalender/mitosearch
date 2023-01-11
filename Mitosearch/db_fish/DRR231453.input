@@ -1,12 +1,13 @@
-55095	ヌマチチブ:Tridentiger brevispinis
-3936	チチブ:Tridentiger obscurus
-3468	クロヨシノボリ:Rhinogobius brunneus
-3249	ヒガシシマドジョウ:Cobitis sp. BIWAE type C
-2920	コイ:Cyprinus carpio
-1866	ギンブナ:Carassius langsdorfii
-1797	アユ:Plecoglossus altivelis
-1508	ウキゴリ:Gymnogobius urotaenia
-1049	サンフィッシュ科:Micropterus salmoides
-1031	マハゼ:Acanthogobius flavimanus
-946	シマヨシノボリ:Rhinogobius nagoyae
-819	ニゴイ:Hemibarbus barbus
+id	DRR231453.fastq
+ヌマチチブ:Tridentiger brevispinis	70.9219
+チチブ:Tridentiger obscurus	5.06668
+クロヨシノボリ:Rhinogobius brunneus	4.46424
+ヒガシシマドジョウ:Cobitis sp. BIWAE type C	4.18233
+コイ:Cyprinus carpio	3.75882
+ギンブナ:Carassius langsdorfii	2.40204
+アユ:Plecoglossus altivelis	2.31322
+ウキゴリ:Gymnogobius urotaenia	1.9412
+サンフィッシュ科:Micropterus salmoides	1.35034
+マハゼ:Acanthogobius flavimanus	1.32717
+シマヨシノボリ:Rhinogobius nagoyae	1.21775
+ニゴイ:Hemibarbus barbus	1.05427

@@ -1,11 +1,12 @@
-10854	ホソトビウオ:Cypselurus hiraii
-7941	カタクチイワシ科:Engraulis japonicus
-5632	コノシロ:Konosirus punctatus
-3913	マアジ:Trachurus japonicus
-3525	クサフグ:Takifugu alboplumbeus
-2916	ブリ:Seriola quinqueradiata
-2730	セトダイ:Hapalogenys analis
-2628	Parambassis lala
-2187	ボラ:Mugil cephalus
-1607	クロダイ:Acanthopagrus schlegelii
-820	アカオビシマハゼ:Tridentiger trigonocephalus
+id	DRR057623.fastq
+ホソトビウオ:Cypselurus hiraii	24.2531
+カタクチイワシ科:Engraulis japonicus	17.7441
+コノシロ:Konosirus punctatus	12.5846
+マアジ:Trachurus japonicus	8.74355
+クサフグ:Takifugu alboplumbeus	7.87657
+ブリ:Seriola quinqueradiata	6.51576
+セトダイ:Hapalogenys analis	6.10015
+Parambassis lala	5.87223
+ボラ:Mugil cephalus	4.88682
+クロダイ:Acanthopagrus schlegelii	3.59082
+アカオビシマハゼ:Tridentiger trigonocephalus	1.83228

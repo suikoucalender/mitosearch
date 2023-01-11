@@ -1,8 +1,9 @@
-90884	カワマス:Salvelinus fontinalis
-59148	Semotilus atromaculatus
-20160	Margariscus margarita
-10662	Catostomus commersonii
-4585	Perca flavescens
-3329	Ameiurus nebulosus
-2368	Notemigonus crysoleucas
-2087	サンフィッシュ科:Lepomis gibbosus
+id	SRR14526830.fastq
+カワマス:Salvelinus fontinalis	47.0358
+Semotilus atromaculatus	30.6113
+Margariscus margarita	10.4335
+Catostomus commersonii	5.51798
+Perca flavescens	2.37291
+Ameiurus nebulosus	1.72288
+Notemigonus crysoleucas	1.22553
+サンフィッシュ科:Lepomis gibbosus	1.0801

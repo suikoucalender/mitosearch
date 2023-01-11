@@ -1,9 +1,10 @@
-5373	カタクチイワシ科:Engraulis japonicus
-1948	ハゼ科:Chaeturichthys stigmatias
-1054	テンジクダイ:Jaydia lineata
-836	サワラ:Scomberomorus niphonius
-685	コノシロ:Konosirus punctatus
-556	トビササウシノシタ:Aseraggodes kobensis
-514	シログチ:Pennahia argentata
-488	シロギス:Sillago japonica
-253	ハタタテヌメリ:Callionymus valenciennei
+id	DRR249927.fastq
+カタクチイワシ科:Engraulis japonicus	45.8956
+ハゼ科:Chaeturichthys stigmatias	16.6396
+テンジクダイ:Jaydia lineata	9.00316
+サワラ:Scomberomorus niphonius	7.14103
+コノシロ:Konosirus punctatus	5.8512
+トビササウシノシタ:Aseraggodes kobensis	4.7493
+シログチ:Pennahia argentata	4.39054
+シロギス:Sillago japonica	4.16845
+ハタタテヌメリ:Callionymus valenciennei	2.1611

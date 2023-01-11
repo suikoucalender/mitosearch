@@ -1,11 +1,12 @@
-5382	カタクチイワシ科:Engraulis japonicus
-1986	ハタタテヌメリ:Callionymus valenciennei
-1621	シログチ:Pennahia argentata
-1327	ダイナンウミヘビ:Ophisurus macrorhynchos
-1221	スジハゼ:Acentrogobius virgatulus
-1071	コノシロ:Konosirus punctatus
-635	イトヒキハゼ:Myersina filifer
-529	コチ科:Platycephalus sp. 2 LL-2021
-289	ニシン科:Sardinops sagax
-285	ホシザメ:Mustelus manazo
-176	ササウシノシタ:Heteromycteris japonicus
+id	DRR249678.fastq
+カタクチイワシ科:Engraulis japonicus	37.061
+ハタタテヌメリ:Callionymus valenciennei	13.6758
+シログチ:Pennahia argentata	11.1624
+ダイナンウミヘビ:Ophisurus macrorhynchos	9.13786
+スジハゼ:Acentrogobius virgatulus	8.40793
+コノシロ:Konosirus punctatus	7.37502
+イトヒキハゼ:Myersina filifer	4.37268
+コチ科:Platycephalus sp. 2 LL-2021	3.64275
+ニシン科:Sardinops sagax	1.99008
+ホシザメ:Mustelus manazo	1.96254
+ササウシノシタ:Heteromycteris japonicus	1.21195

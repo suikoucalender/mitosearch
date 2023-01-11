@@ -1,8 +1,9 @@
-48	Rasbora daniconius
-44	Lepidocephalichthys sp. CBM-ZF-14149
-19	ヒレナマズ科:Clarias dussumieri
-8	Devario devario
-6	タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950
-3	Beaufortia szechuanensis
-2	Devario sp. CBM:ZF:11302
-2	コウタイ:Channa asiatica
+id	DRR217101.fastq
+Rasbora daniconius	36.3636
+Lepidocephalichthys sp. CBM-ZF-14149	33.3333
+ヒレナマズ科:Clarias dussumieri	14.3939
+Devario devario	6.06061
+タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950	4.54545
+Beaufortia szechuanensis	2.27273
+Devario sp. CBM:ZF:11302	1.51515
+コウタイ:Channa asiatica	1.51515

@@ -1,9 +1,10 @@
-19612	カタクチイワシ科:Engraulis japonicus
-5206	コノシロ:Konosirus punctatus
-3633	マアジ:Trachurus japonicus
-2663	ボラ:Mugil cephalus
-2063	サワラ:Scomberomorus niphonius
-2056	ブリ:Seriola quinqueradiata
-1687	アカカマス:Sphyraena pinguis
-1345	トビウオ科:Cheilopogon doederleinii
-1220	チダイ:Evynnis tumifrons
+id	DRR057718.fastq
+カタクチイワシ科:Engraulis japonicus	49.6695
+コノシロ:Konosirus punctatus	13.1848
+マアジ:Trachurus japonicus	9.20096
+ボラ:Mugil cephalus	6.74433
+サワラ:Scomberomorus niphonius	5.22477
+ブリ:Seriola quinqueradiata	5.20704
+アカカマス:Sphyraena pinguis	4.27251
+トビウオ科:Cheilopogon doederleinii	3.40636
+チダイ:Evynnis tumifrons	3.08978

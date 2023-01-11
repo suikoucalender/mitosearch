@@ -1,12 +1,13 @@
-4274	カタクチイワシ科:Engraulis japonicus
-1443	スズキ:Lateolabrax japonicus
-1155	Parambassis lala
-971	アカアマダイ:Branchiostegus japonicus
-936	コノシロ:Konosirus punctatus
-561	クロダイ:Acanthopagrus schlegelii
-528	ブリ:Seriola quinqueradiata
-418	ボラ:Mugil cephalus
-377	ハタタテヌメリ:Callionymus valenciennei
-207	ゴンズイ:Plotosus japonicus
-135	ホシザメ:Mustelus manazo
-120	ドジョウ:Misgurnus anguillicaudatus
+id	DRR249679.fastq
+カタクチイワシ科:Engraulis japonicus	38.418
+スズキ:Lateolabrax japonicus	12.9708
+Parambassis lala	10.382
+アカアマダイ:Branchiostegus japonicus	8.72809
+コノシロ:Konosirus punctatus	8.41348
+クロダイ:Acanthopagrus schlegelii	5.0427
+ブリ:Seriola quinqueradiata	4.74607
+ボラ:Mugil cephalus	3.7573
+ハタタテヌメリ:Callionymus valenciennei	3.38876
+ゴンズイ:Plotosus japonicus	1.86067
+ホシザメ:Mustelus manazo	1.21348
+ドジョウ:Misgurnus anguillicaudatus	1.07865

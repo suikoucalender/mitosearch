@@ -1,11 +1,12 @@
-36056	ナイルティラピア:Oreochromis niloticus
-25079	コクレン:Hypophthalmichthys nobilis
-13692	カワスズメ科:Oreochromis sp. 'red tilapia'
-6458	ハクレン:Hypophthalmichthys molitrix
-4807	Labeo rohita
-3639	Clupeoides borneensis
-3143	Anabas testudineus
-2812	Barbonymus gonionotus
-2121	Clupeichthys goniognathus
-1555	Cirrhinus mrigala
-1362	Yasuhikotakia eos
+id	ERR3514810.fastq
+ナイルティラピア:Oreochromis niloticus	35.7968
+コクレン:Hypophthalmichthys nobilis	24.8987
+カワスズメ科:Oreochromis sp. 'red tilapia'	13.5936
+ハクレン:Hypophthalmichthys molitrix	6.41158
+Labeo rohita	4.77245
+Clupeoides borneensis	3.61284
+Anabas testudineus	3.12041
+Barbonymus gonionotus	2.79179
+Clupeichthys goniognathus	2.10575
+Cirrhinus mrigala	1.54382
+Yasuhikotakia eos	1.35221

@@ -1,13 +1,14 @@
-34991	ヌマチチブ:Tridentiger brevispinis
-6157	チチブ:Tridentiger obscurus
-3265	コイ:Cyprinus carpio
-2486	ニゴイ:Hemibarbus barbus
-1811	Tribolodon hakonensis
-1807	モツゴ:Pseudorasbora parva
-1429	クロヨシノボリ:Rhinogobius brunneus
-1343	Zacco platypus
-1167	カマツカ:Pseudogobio esocinus
-1091	ギンブナ:Carassius langsdorfii
-968	スミウキゴリ:Gymnogobius petschiliensis
-772	ムギツク:Pungtungia herzi
-742	ゲンゴロウブナ:Carassius cuvieri
+id	DRR231456.fastq
+ヌマチチブ:Tridentiger brevispinis	60.2992
+チチブ:Tridentiger obscurus	10.6102
+コイ:Cyprinus carpio	5.6265
+ニゴイ:Hemibarbus barbus	4.28406
+Tribolodon hakonensis	3.12085
+モツゴ:Pseudorasbora parva	3.11396
+クロヨシノボリ:Rhinogobius brunneus	2.46256
+Zacco platypus	2.31436
+カマツカ:Pseudogobio esocinus	2.01106
+ギンブナ:Carassius langsdorfii	1.88009
+スミウキゴリ:Gymnogobius petschiliensis	1.66813
+ムギツク:Pungtungia herzi	1.33037
+ゲンゴロウブナ:Carassius cuvieri	1.27867

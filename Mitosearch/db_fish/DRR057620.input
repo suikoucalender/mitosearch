@@ -1,10 +1,11 @@
-28255	カタクチイワシ科:Engraulis japonicus
-4268	コノシロ:Konosirus punctatus
-4250	ホソトビウオ:Cypselurus hiraii
-3266	ブリ:Seriola quinqueradiata
-2308	マアジ:Trachurus japonicus
-1767	アカカマス:Sphyraena pinguis
-1190	マハゼ:Acanthogobius flavimanus
-1112	トビウオ科:Cheilopogon doederleinii
-708	Parambassis lala
-617	アジ科:Trachurus trachurus
+id	DRR057620.fastq
+カタクチイワシ科:Engraulis japonicus	59.1839
+コノシロ:Konosirus punctatus	8.9399
+ホソトビウオ:Cypselurus hiraii	8.9022
+ブリ:Seriola quinqueradiata	6.84108
+マアジ:Trachurus japonicus	4.83442
+アカカマス:Sphyraena pinguis	3.70122
+マハゼ:Acanthogobius flavimanus	2.49262
+トビウオ科:Cheilopogon doederleinii	2.32923
+Parambassis lala	1.483
+アジ科:Trachurus trachurus	1.29239

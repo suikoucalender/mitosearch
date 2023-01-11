@@ -1,7 +1,8 @@
-5392	メバル科:Sebastes fasciatus
-1160	太平洋系降海型イトヨ:Gasterosteus aculeatus
-1108	タラ科:Gadus morhua
-513	オヒョウ:Hippoglossus stenolepis
-504	ヤマトヒゲダラ:Enchelyopus cimbrius
-503	カラスガレイ:Reinhardtius hippoglossoides
-239	Cyclopterus lumpus
+id	SRR12008548.fastq
+メバル科:Sebastes fasciatus	57.246
+太平洋系降海型イトヨ:Gasterosteus aculeatus	12.3155
+タラ科:Gadus morhua	11.7635
+オヒョウ:Hippoglossus stenolepis	5.44644
+ヤマトヒゲダラ:Enchelyopus cimbrius	5.35089
+カラスガレイ:Reinhardtius hippoglossoides	5.34027
+Cyclopterus lumpus	2.53742

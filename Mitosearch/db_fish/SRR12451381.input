@@ -1,7 +1,8 @@
-1110	Dorosoma cepedianum
-681	ハクレン:Hypophthalmichthys molitrix
-214	Squaliobarbus curriculus
-140	サンフィッシュ科:Lepomis megalotis
-96	Aplodinotus grunniens
-42	Siphateles bicolor thalassinus
-25	Pimephales promelas
+id	SRR12451381.fastq
+Dorosoma cepedianum	48.0936
+ハクレン:Hypophthalmichthys molitrix	29.5061
+Squaliobarbus curriculus	9.2721
+サンフィッシュ科:Lepomis megalotis	6.06586
+Aplodinotus grunniens	4.15945
+Siphateles bicolor thalassinus	1.81976
+Pimephales promelas	1.08319

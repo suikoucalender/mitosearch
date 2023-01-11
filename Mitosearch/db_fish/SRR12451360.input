@@ -1,7 +1,8 @@
-6948	Ictiobus bubalus
-1885	Moxostoma erythrurum
-1568	サンフィッシュ科:Lepomis megalotis
-1305	Dorosoma cepedianum
-1167	コイ:Cyprinus carpio
-1128	ブルーギル:Lepomis macrochirus
-237	Cyprinella spiloptera
+id	SRR12451360.fastq
+Ictiobus bubalus	48.799
+Moxostoma erythrurum	13.2392
+サンフィッシュ科:Lepomis megalotis	11.0128
+Dorosoma cepedianum	9.16561
+コイ:Cyprinus carpio	8.19638
+ブルーギル:Lepomis macrochirus	7.92246
+Cyprinella spiloptera	1.66456

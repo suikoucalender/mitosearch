@@ -1,8 +1,9 @@
-679	コノシロ:Konosirus punctatus
-259	カタクチイワシ科:Engraulis japonicus
-186	アカアマダイ:Branchiostegus japonicus
-149	マサバ:Scomber japonicus
-84	Parambassis lala
-83	スズキ:Lateolabrax japonicus
-69	ヒメ:Hime japonica
-35	クロダイ:Acanthopagrus schlegelii
+id	DRR249593.fastq
+コノシロ:Konosirus punctatus	43.9767
+カタクチイワシ科:Engraulis japonicus	16.7746
+アカアマダイ:Branchiostegus japonicus	12.0466
+マサバ:Scomber japonicus	9.65026
+Parambassis lala	5.44041
+スズキ:Lateolabrax japonicus	5.37565
+ヒメ:Hime japonica	4.46891
+クロダイ:Acanthopagrus schlegelii	2.26684

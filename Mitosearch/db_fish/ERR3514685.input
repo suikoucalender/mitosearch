@@ -1,7 +1,8 @@
-43727	ナイルティラピア:Oreochromis niloticus
-26758	カワスズメ科:Oreochromis sp. 'red tilapia'
-2504	Hypsibarbus salweenensis
-1055	Notopterus notopterus
-983	Amblyrhynchichthys truncatus
-973	Clupeichthys goniognathus
-936	Barbonymus gonionotus
+id	ERR3514685.fastq
+ナイルティラピア:Oreochromis niloticus	56.8356
+カワスズメ科:Oreochromis sp. 'red tilapia'	34.7796
+Hypsibarbus salweenensis	3.25465
+Notopterus notopterus	1.37127
+Amblyrhynchichthys truncatus	1.27769
+Clupeichthys goniognathus	1.26469
+Barbonymus gonionotus	1.2166

@@ -1,7 +1,8 @@
-306826	ボラ:Mugil cephalus
-128771	ナイルティラピア:Oreochromis niloticus
-50584	コボラ:Planiliza macrolepis
-11967	ハゼ科:Pseudogobius taijiangensis
-11779	カダヤシ:Gambusia affinis
-5664	Coptodon zillii
-5260	アンピンボラ:Planiliza subviridis
+id	SRR15710258.fastq
+ボラ:Mugil cephalus	58.9086
+ナイルティラピア:Oreochromis niloticus	24.7232
+コボラ:Planiliza macrolepis	9.7118
+ハゼ科:Pseudogobius taijiangensis	2.29759
+カダヤシ:Gambusia affinis	2.26149
+Coptodon zillii	1.08745
+アンピンボラ:Planiliza subviridis	1.00989

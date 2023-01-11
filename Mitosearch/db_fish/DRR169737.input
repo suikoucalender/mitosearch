@@ -1,11 +1,12 @@
-19841	カワヨシノボリ:Rhinogobius flumineus
-12606	カワムツ:Nipponocypris temminckii
-3948	ドンコ科:Odontobutis obscura
-3426	ムギツク:Pungtungia herzi
-1883	アブラボテ:Tanakia limbata
-1822	Zacco platypus
-1553	オヤニラミ:Coreoperca kawamebari
-1317	カジカ:Cottus pollux
-1160	ハゼ科:Rhinogobius sp. OR
-1073	ギンブナ:Carassius langsdorfii
-756	コイ:Cyprinus carpio
+id	DRR169737.fastq
+カワヨシノボリ:Rhinogobius flumineus	40.1762
+カワムツ:Nipponocypris temminckii	25.526
+ドンコ科:Odontobutis obscura	7.99433
+ムギツク:Pungtungia herzi	6.93733
+アブラボテ:Tanakia limbata	3.8129
+Zacco platypus	3.68938
+オヤニラミ:Coreoperca kawamebari	3.14468
+カジカ:Cottus pollux	2.6668
+ハゼ科:Rhinogobius sp. OR	2.34889
+ギンブナ:Carassius langsdorfii	2.17272
+コイ:Cyprinus carpio	1.53083

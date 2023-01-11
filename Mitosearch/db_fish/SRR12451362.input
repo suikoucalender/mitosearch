@@ -1,6 +1,7 @@
-6411	コイ:Cyprinus carpio
-1146	Perca flavescens
-382	Morone americana
-226	Morone chrysops
-195	Dorosoma cepedianum
-177	Catostomus commersonii
+id	SRR12451362.fastq
+コイ:Cyprinus carpio	75.0966
+Perca flavescens	13.4239
+Morone americana	4.47464
+Morone chrysops	2.6473
+Dorosoma cepedianum	2.28417
+Catostomus commersonii	2.07333

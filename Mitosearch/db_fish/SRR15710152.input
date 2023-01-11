@@ -1,7 +1,8 @@
-174488	ナイルティラピア:Oreochromis niloticus
-99201	ボラ:Mugil cephalus
-27760	コボラ:Planiliza macrolepis
-21008	アンピンボラ:Planiliza subviridis
-16651	ハゼ科:Pseudogobius taijiangensis
-7431	キチヌ:Acanthopagrus latus
-3628	Hemigobius hoevenii
+id	SRR15710152.fastq
+ナイルティラピア:Oreochromis niloticus	49.8299
+ボラ:Mugil cephalus	28.3296
+コボラ:Planiliza macrolepis	7.92765
+アンピンボラ:Planiliza subviridis	5.99942
+ハゼ科:Pseudogobius taijiangensis	4.75516
+キチヌ:Acanthopagrus latus	2.12213
+Hemigobius hoevenii	1.03608

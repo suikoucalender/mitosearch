@@ -1,7 +1,8 @@
-5799	Tribolodon hakonensis
-3395	Tribolodon ezoe
-2872	タモロコ:Gnathopogon elongatus elongatus
-2532	ギンブナ:Carassius langsdorfii
-1187	モツゴ:Pseudorasbora parva
-417	ドジョウ:Misgurnus anguillicaudatus
-246	ゲンゴロウブナ:Carassius cuvieri
+id	DRR125619.fastq
+Tribolodon hakonensis	35.2566
+Tribolodon ezoe	20.6408
+タモロコ:Gnathopogon elongatus elongatus	17.4611
+ギンブナ:Carassius langsdorfii	15.394
+モツゴ:Pseudorasbora parva	7.21668
+ドジョウ:Misgurnus anguillicaudatus	2.53526
+ゲンゴロウブナ:Carassius cuvieri	1.49562

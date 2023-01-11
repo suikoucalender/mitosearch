@@ -1,15 +1,16 @@
-29914	ギンブナ:Carassius langsdorfii
-12730	ムギツク:Pungtungia herzi
-12602	Zacco platypus
-8125	カマツカ:Pseudogobio esocinus
-8080	コイ:Cyprinus carpio
-5272	カワムツ:Nipponocypris temminckii
-5239	Tribolodon hakonensis
-2557	カワヨシノボリ:Rhinogobius flumineus
-2239	ドンコ科:Odontobutis obscura
-1817	ハゼ科:Rhinogobius sp. OR
-1772	ドジョウ科:Cobitis matsubarai
-1570	アブラボテ:Tanakia limbata
-1279	クロヨシノボリ:Rhinogobius brunneus
-1270	ナマズ:Silurus asotus
-1034	イトモロコ:Squalidus gracilis gracilis
+id	DRR234528.fastq
+ギンブナ:Carassius langsdorfii	31.3236
+ムギツク:Pungtungia herzi	13.3298
+Zacco platypus	13.1958
+カマツカ:Pseudogobio esocinus	8.50785
+コイ:Cyprinus carpio	8.46073
+カワムツ:Nipponocypris temminckii	5.52042
+Tribolodon hakonensis	5.48586
+カワヨシノボリ:Rhinogobius flumineus	2.67749
+ドンコ科:Odontobutis obscura	2.3445
+ハゼ科:Rhinogobius sp. OR	1.90262
+ドジョウ科:Cobitis matsubarai	1.8555
+アブラボテ:Tanakia limbata	1.64398
+クロヨシノボリ:Rhinogobius brunneus	1.33927
+ナマズ:Silurus asotus	1.32984
+イトモロコ:Squalidus gracilis gracilis	1.08272

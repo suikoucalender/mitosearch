@@ -1,6 +1,7 @@
-35692	ナイルティラピア:Oreochromis niloticus
-31677	カワスズメ科:Oreochromis sp. 'red tilapia'
-948	Barbonymus schwanefeldii
-830	Trichopodus pectoralis
-814	Barbonymus altus
-790	Barbonymus gonionotus
+id	ERR3514602.fastq
+ナイルティラピア:Oreochromis niloticus	50.4473
+カワスズメ科:Oreochromis sp. 'red tilapia'	44.7725
+Barbonymus schwanefeldii	1.33991
+Trichopodus pectoralis	1.17313
+Barbonymus altus	1.15051
+Barbonymus gonionotus	1.11659

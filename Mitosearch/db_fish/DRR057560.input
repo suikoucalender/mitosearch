@@ -1,12 +1,13 @@
-5326	ヒイラギ:Nuchequula nuchalis
-4236	カタクチイワシ科:Engraulis japonicus
-3783	スジハゼ:Acentrogobius virgatulus
-3151	Parambassis lala
-2103	ハゼ科:Chaeturichthys stigmatias
-1934	クロダイ:Acanthopagrus schlegelii
-1653	コチ科:Platycephalus sp. 2 LL-2021
-1615	ブリ:Seriola quinqueradiata
-1092	クサフグ:Takifugu alboplumbeus
-772	ボラ:Mugil cephalus
-729	コノシロ:Konosirus punctatus
-429	アカオビシマハゼ:Tridentiger trigonocephalus
+id	DRR057560.fastq
+ヒイラギ:Nuchequula nuchalis	19.8561
+カタクチイワシ科:Engraulis japonicus	15.7924
+スジハゼ:Acentrogobius virgatulus	14.1036
+Parambassis lala	11.7474
+ハゼ科:Chaeturichthys stigmatias	7.84029
+クロダイ:Acanthopagrus schlegelii	7.21023
+コチ科:Platycephalus sp. 2 LL-2021	6.16262
+ブリ:Seriola quinqueradiata	6.02095
+クサフグ:Takifugu alboplumbeus	4.07113
+ボラ:Mugil cephalus	2.87813
+コノシロ:Konosirus punctatus	2.71782
+アカオビシマハゼ:Tridentiger trigonocephalus	1.59937

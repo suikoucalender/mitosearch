@@ -1,4 +1,5 @@
-16607	ウナギ科:Anguilla australis australis
-3975	ウナギ科:Anguilla dieffenbachii
-553	Galaxias rostratus
-539	Gobiomorphus huttoni
+id	SRR14531915.fastq
+ウナギ科:Anguilla australis australis	76.6218
+ウナギ科:Anguilla dieffenbachii	18.3399
+Galaxias rostratus	2.55144
+Gobiomorphus huttoni	2.48685

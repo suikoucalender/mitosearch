@@ -1,5 +1,6 @@
-22131	メバル科:Sebastes fasciatus
-5561	カレイ科:Glyptocephalus cynoglossus
-3351	ヤマトヒゲダラ:Enchelyopus cimbrius
-3067	カラスガレイ:Reinhardtius hippoglossoides
-2742	サケ科:Salmo salar
+id	SRR12008569.fastq
+メバル科:Sebastes fasciatus	60.0537
+カレイ科:Glyptocephalus cynoglossus	15.0901
+ヤマトヒゲダラ:Enchelyopus cimbrius	9.09313
+カラスガレイ:Reinhardtius hippoglossoides	8.32248
+サケ科:Salmo salar	7.44057

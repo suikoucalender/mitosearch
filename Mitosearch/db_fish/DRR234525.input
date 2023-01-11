@@ -1,11 +1,12 @@
-23850	Zacco platypus
-8445	Tribolodon hakonensis
-6258	カワヨシノボリ:Rhinogobius flumineus
-4040	カワムツ:Nipponocypris temminckii
-3105	ムギツク:Pungtungia herzi
-2506	カマツカ:Pseudogobio esocinus
-1408	イトモロコ:Squalidus gracilis gracilis
-1388	カジカ:Cottus pollux
-921	ギンブナ:Carassius langsdorfii
-884	コイ:Cyprinus carpio
-766	ドンコ科:Odontobutis obscura
+id	DRR234525.fastq
+Zacco platypus	44.5204
+Tribolodon hakonensis	15.7641
+カワヨシノボリ:Rhinogobius flumineus	11.6817
+カワムツ:Nipponocypris temminckii	7.54139
+ムギツク:Pungtungia herzi	5.79605
+カマツカ:Pseudogobio esocinus	4.6779
+イトモロコ:Squalidus gracilis gracilis	2.62829
+カジカ:Cottus pollux	2.59095
+ギンブナ:Carassius langsdorfii	1.71921
+コイ:Cyprinus carpio	1.65015
+ドンコ科:Odontobutis obscura	1.42988

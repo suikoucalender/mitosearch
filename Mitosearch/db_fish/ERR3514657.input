@@ -1,8 +1,9 @@
-18104	Clupeichthys goniognathus
-15989	Barbonymus gonionotus
-13397	Thynnichthys thynnoides
-8886	Anabas testudineus
-8657	Cyclocheilichthys armatus
-5341	Trichopodus pectoralis
-3383	Trichopodus trichopterus
-1737	Labiobarbus spilopleura
+id	ERR3514657.fastq
+Clupeichthys goniognathus	23.9807
+Barbonymus gonionotus	21.1792
+Thynnichthys thynnoides	17.7458
+Anabas testudineus	11.7705
+Cyclocheilichthys armatus	11.4671
+Trichopodus pectoralis	7.07473
+Trichopodus trichopterus	4.48115
+Labiobarbus spilopleura	2.30085

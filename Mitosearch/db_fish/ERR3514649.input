@@ -1,15 +1,16 @@
-36389	ナイルティラピア:Oreochromis niloticus
-15965	カワスズメ科:Oreochromis sp. 'red tilapia'
-4428	Yasuhikotakia eos
-2725	Barbonymus altus
-2236	Cosmochilus harmandi
-2048	Cyclocheilichthys enoplos
-1854	Metzia longinasus
-1732	Paralaubuca typus
-1629	Chitala ornata
-1578	カワスズメ:Oreochromis mossambicus
-1549	Trichopodus pectoralis
-1066	タイワンドジョウ科:Channa striata
-866	Mystus sp. EM2
-837	アカメ:Lates japonicus
-804	Pristolepis rubripinnis
+id	ERR3514649.fastq
+ナイルティラピア:Oreochromis niloticus	48.0662
+カワスズメ科:Oreochromis sp. 'red tilapia'	21.0882
+Yasuhikotakia eos	5.84894
+Barbonymus altus	3.59945
+Cosmochilus harmandi	2.95353
+Cyclocheilichthys enoplos	2.7052
+Metzia longinasus	2.44895
+Paralaubuca typus	2.2878
+Chitala ornata	2.15174
+カワスズメ:Oreochromis mossambicus	2.08438
+Trichopodus pectoralis	2.04607
+タイワンドジョウ科:Channa striata	1.40808
+Mystus sp. EM2	1.1439
+アカメ:Lates japonicus	1.10559
+Pristolepis rubripinnis	1.062

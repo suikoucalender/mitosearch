@@ -1,13 +1,14 @@
-26321	Zacco platypus
-15051	Tribolodon hakonensis
-11840	ギンブナ:Carassius langsdorfii
-9430	コイ:Cyprinus carpio
-8289	カワヨシノボリ:Rhinogobius flumineus
-7420	ニホンウナギ:Anguilla japonica
-7201	ムギツク:Pungtungia herzi
-2753	カワムツ:Nipponocypris temminckii
-2039	イトモロコ:Squalidus gracilis gracilis
-1825	ハゼ科:Rhinogobius sp. OR
-1504	コイ科:Squalidus iijimae
-1420	コイ科:Carassius auratus grandoculis
-1413	コイ科:Cyprinus carpio (triploid)
+id	DRR149221.fastq
+Zacco platypus	27.274
+Tribolodon hakonensis	15.5959
+ギンブナ:Carassius langsdorfii	12.2687
+コイ:Cyprinus carpio	9.77141
+カワヨシノボリ:Rhinogobius flumineus	8.5891
+ニホンウナギ:Anguilla japonica	7.68864
+ムギツク:Pungtungia herzi	7.46171
+カワムツ:Nipponocypris temminckii	2.85267
+イトモロコ:Squalidus gracilis gracilis	2.11282
+ハゼ科:Rhinogobius sp. OR	1.89107
+コイ科:Squalidus iijimae	1.55845
+コイ科:Carassius auratus grandoculis	1.47141
+コイ科:Cyprinus carpio (triploid)	1.46416

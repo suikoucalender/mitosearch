@@ -1,7 +1,8 @@
-9379	コノシロ:Konosirus punctatus
-5219	カタクチイワシ科:Engraulis japonicus
-1453	カナド:Lepidotrigla guentheri
-1114	シキシマハナダイ:Callanthias japonicus
-655	スズキ:Lateolabrax japonicus
-514	クロダイ:Acanthopagrus schlegelii
-412	Parambassis lala
+id	DRR249974.fastq
+コノシロ:Konosirus punctatus	50.032
+カタクチイワシ科:Engraulis japonicus	27.8406
+カナド:Lepidotrigla guentheri	7.75099
+シキシマハナダイ:Callanthias japonicus	5.9426
+スズキ:Lateolabrax japonicus	3.49408
+クロダイ:Acanthopagrus schlegelii	2.74192
+Parambassis lala	2.1978

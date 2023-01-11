@@ -1,4 +1,5 @@
-572614	カワスズメ科:Oreochromis esculentus
-7391	カダヤシ科:Gambusia holbrooki
-6448	ハゼ科:Pseudogobius olorum
-6290	キンギョ:Carassius auratus
+id	SRR15710071.fastq
+カワスズメ科:Oreochromis esculentus	96.6041
+カダヤシ科:Gambusia holbrooki	1.24691
+ハゼ科:Pseudogobius olorum	1.08782
+キンギョ:Carassius auratus	1.06117

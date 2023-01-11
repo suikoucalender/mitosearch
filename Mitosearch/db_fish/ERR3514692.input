@@ -1,12 +1,13 @@
-26478	カワスズメ科:Oreochromis sp. 'red tilapia'
-23750	ナイルティラピア:Oreochromis niloticus
-9921	Barbonymus altus
-4540	Barbonymus gonionotus
-4195	Labiobarbus spilopleura
-4054	Anabas testudineus
-4000	ササウシノシタ科:Brachirus siamensis
-2982	Polynemus dubius
-2668	Trichopodus leerii
-2374	Hypsibarbus salweenensis
-1651	Labeo chrysophekadion
-1635	Puntioplites proctozystron
+id	ERR3514692.fastq
+カワスズメ科:Oreochromis sp. 'red tilapia'	30.0041
+ナイルティラピア:Oreochromis niloticus	26.9128
+Barbonymus altus	11.2422
+Barbonymus gonionotus	5.14459
+Labiobarbus spilopleura	4.75365
+Anabas testudineus	4.59387
+ササウシノシタ科:Brachirus siamensis	4.53268
+Polynemus dubius	3.37911
+Trichopodus leerii	3.0233
+Hypsibarbus salweenensis	2.69015
+Labeo chrysophekadion	1.87086
+Puntioplites proctozystron	1.85273

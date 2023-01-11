@@ -1,7 +1,8 @@
-433	アヤヨシノボリ:Rhinogobius sp. MO
-79	シマヨシノボリ:Rhinogobius nagoyae
-54	ボウズハゼ:Sicyopterus japonicus
-51	オオウナギ:Anguilla marmorata
-39	クロヨシノボリ:Rhinogobius brunneus
-28	コイ:Cyprinus carpio
-24	ヌマチチブ:Tridentiger brevispinis
+id	DRR159159.fastq
+アヤヨシノボリ:Rhinogobius sp. MO	61.1582
+シマヨシノボリ:Rhinogobius nagoyae	11.1582
+ボウズハゼ:Sicyopterus japonicus	7.62712
+オオウナギ:Anguilla marmorata	7.20339
+クロヨシノボリ:Rhinogobius brunneus	5.50847
+コイ:Cyprinus carpio	3.9548
+ヌマチチブ:Tridentiger brevispinis	3.38983

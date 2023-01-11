@@ -1,10 +1,11 @@
-2662	コノシロ:Konosirus punctatus
-2265	カタクチイワシ科:Engraulis japonicus
-1340	スジハゼ:Acentrogobius virgatulus
-1237	シログチ:Pennahia argentata
-467	アカエイ:Hemitrygon akajei
-427	Parambassis lala
-425	ハタタテヌメリ:Callionymus valenciennei
-378	スズキ:Lateolabrax japonicus
-214	イトヒキハゼ:Myersina filifer
-187	クロダイ:Acanthopagrus schlegelii
+id	DRR249703.fastq
+コノシロ:Konosirus punctatus	27.7234
+カタクチイワシ科:Engraulis japonicus	23.5888
+スジハゼ:Acentrogobius virgatulus	13.9554
+シログチ:Pennahia argentata	12.8827
+アカエイ:Hemitrygon akajei	4.86357
+Parambassis lala	4.44699
+ハタタテヌメリ:Callionymus valenciennei	4.42616
+スズキ:Lateolabrax japonicus	3.93668
+イトヒキハゼ:Myersina filifer	2.2287
+クロダイ:Acanthopagrus schlegelii	1.94751

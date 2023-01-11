@@ -1,9 +1,10 @@
-3654	カタクチイワシ科:Engraulis japonicus
-2199	チダイ:Evynnis tumifrons
-2164	サッパ:Sardinella zunasi
-2035	Eutrigla gurnardus
-1686	マサバ:Scomber japonicus
-1227	スズキ:Lateolabrax japonicus
-707	アカアマダイ:Branchiostegus japonicus
-641	ソコイトヨリ:Nemipterus bathybius
-603	コノシロ:Konosirus punctatus
+id	DRR249939.fastq
+カタクチイワシ科:Engraulis japonicus	24.4972
+チダイ:Evynnis tumifrons	14.7426
+サッパ:Sardinella zunasi	14.5079
+Eutrigla gurnardus	13.6431
+マサバ:Scomber japonicus	11.3033
+スズキ:Lateolabrax japonicus	8.22607
+アカアマダイ:Branchiostegus japonicus	4.73988
+ソコイトヨリ:Nemipterus bathybius	4.2974
+コノシロ:Konosirus punctatus	4.04264

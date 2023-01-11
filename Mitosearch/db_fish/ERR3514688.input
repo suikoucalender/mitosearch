@@ -1,7 +1,8 @@
-53544	カワスズメ科:Oreochromis sp. 'red tilapia'
-34014	ナイルティラピア:Oreochromis niloticus
-2576	Barbonymus gonionotus
-2383	Labeo chrysophekadion
-1645	タイワンドジョウ科:Channa striata
-1176	Yasuhikotakia eos
-1073	カワスズメ科:Oreochromis tanganicae
+id	ERR3514688.fastq
+カワスズメ科:Oreochromis sp. 'red tilapia'	55.5372
+ナイルティラピア:Oreochromis niloticus	35.2802
+Barbonymus gonionotus	2.67189
+Labeo chrysophekadion	2.47171
+タイワンドジョウ科:Channa striata	1.70624
+Yasuhikotakia eos	1.21978
+カワスズメ科:Oreochromis tanganicae	1.11294

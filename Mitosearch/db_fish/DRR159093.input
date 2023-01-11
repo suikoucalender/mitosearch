@@ -1,8 +1,9 @@
-689	ボウズハゼ:Sicyopterus japonicus
-617	シマヨシノボリ:Rhinogobius nagoyae
-407	アヤヨシノボリ:Rhinogobius sp. MO
-213	ギンユゴイ:Kuhlia mugil
-126	グッピー:Poecilia reticulata
-94	ボラ:Mugil cephalus
-81	ゴクラクハゼ:Rhinogobius similis
-50	オオウナギ:Anguilla marmorata
+id	DRR159093.fastq
+ボウズハゼ:Sicyopterus japonicus	30.2591
+シマヨシノボリ:Rhinogobius nagoyae	27.0971
+アヤヨシノボリ:Rhinogobius sp. MO	17.8744
+ギンユゴイ:Kuhlia mugil	9.35441
+グッピー:Poecilia reticulata	5.5336
+ボラ:Mugil cephalus	4.12824
+ゴクラクハゼ:Rhinogobius similis	3.55731
+オオウナギ:Anguilla marmorata	2.19587

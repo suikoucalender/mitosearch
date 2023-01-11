@@ -1,9 +1,10 @@
-12436	カタクチイワシ科:Engraulis japonicus
-9774	スズキ:Lateolabrax japonicus
-1470	サワラ:Scomberomorus niphonius
-1439	ハゼ科:Chaeturichthys stigmatias
-608	シログチ:Pennahia argentata
-478	サッパ:Sardinella zunasi
-471	スジハゼ:Acentrogobius virgatulus
-422	コノシロ:Konosirus punctatus
-337	キチヌ:Acanthopagrus latus
+id	DRR249932.fastq
+カタクチイワシ科:Engraulis japonicus	45.329
+スズキ:Lateolabrax japonicus	35.626
+サワラ:Scomberomorus niphonius	5.35812
+ハゼ科:Chaeturichthys stigmatias	5.24512
+シログチ:Pennahia argentata	2.21615
+サッパ:Sardinella zunasi	1.7423
+スジハゼ:Acentrogobius virgatulus	1.71679
+コノシロ:Konosirus punctatus	1.53818
+キチヌ:Acanthopagrus latus	1.22836

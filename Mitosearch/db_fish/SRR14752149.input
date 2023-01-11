@@ -1,5 +1,6 @@
-4056	コンゴウテンジクダイ:Ostorhinchus fleurieu
-307	オウムブダイ:Scarus psittacus
-288	カスリイシモチ:Pristiapogon kallopterus
-55	スジオテンジクダイ:Ostorhinchus holotaenia
-49	オオスジイシモチ:Ostorhinchus doederleini
+id	SRR14752149.fastq
+コンゴウテンジクダイ:Ostorhinchus fleurieu	85.2997
+オウムブダイ:Scarus psittacus	6.45636
+カスリイシモチ:Pristiapogon kallopterus	6.05678
+スジオテンジクダイ:Ostorhinchus holotaenia	1.15668
+オオスジイシモチ:Ostorhinchus doederleini	1.03049

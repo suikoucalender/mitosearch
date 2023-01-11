@@ -1,7 +1,8 @@
-169	カワヨシノボリ:Rhinogobius flumineus
-91	カワムツ:Nipponocypris temminckii
-48	コイ:Cyprinus carpio
-31	コイ科:Rhynchocypris jouyi
-29	ムギツク:Pungtungia herzi
-27	ニシシマドジョウ:Cobitis sp. BIWAE type B
-6	Zacco platypus
+id	DRR069640.fastq
+カワヨシノボリ:Rhinogobius flumineus	42.1446
+カワムツ:Nipponocypris temminckii	22.6933
+コイ:Cyprinus carpio	11.9701
+コイ科:Rhynchocypris jouyi	7.73067
+ムギツク:Pungtungia herzi	7.23192
+ニシシマドジョウ:Cobitis sp. BIWAE type B	6.73317
+Zacco platypus	1.49626

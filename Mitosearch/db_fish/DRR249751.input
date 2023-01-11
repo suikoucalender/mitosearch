@@ -1,7 +1,8 @@
-3886	カタクチイワシ科:Engraulis japonicus
-1015	コノシロ:Konosirus punctatus
-684	ハタタテヌメリ:Callionymus valenciennei
-657	テンジクダイ:Jaydia lineata
-475	トビエイ科:Myliobatis aquila
-270	アカエイ:Hemitrygon akajei
-169	トビササウシノシタ:Aseraggodes kobensis
+id	DRR249751.fastq
+カタクチイワシ科:Engraulis japonicus	54.3041
+コノシロ:Konosirus punctatus	14.1839
+ハタタテヌメリ:Callionymus valenciennei	9.55841
+テンジクダイ:Jaydia lineata	9.18111
+トビエイ科:Myliobatis aquila	6.63779
+アカエイ:Hemitrygon akajei	3.77306
+トビササウシノシタ:Aseraggodes kobensis	2.36165

@@ -1,8 +1,9 @@
-7709	ハゼ科:Chaeturichthys stigmatias
-6775	サワラ:Scomberomorus niphonius
-1501	カタクチイワシ科:Engraulis japonicus
-1304	フグ科:Takifugu fasciatus
-1006	テンジクダイ:Jaydia lineata
-979	ハタタテヌメリ:Callionymus valenciennei
-943	マアジ:Trachurus japonicus
-302	コモチジャコ:Amblychaeturichthys sciistius
+id	DRR249937.fastq
+ハゼ科:Chaeturichthys stigmatias	37.5701
+サワラ:Scomberomorus niphonius	33.0182
+カタクチイワシ科:Engraulis japonicus	7.31517
+フグ科:Takifugu fasciatus	6.35509
+テンジクダイ:Jaydia lineata	4.90277
+ハタタテヌメリ:Callionymus valenciennei	4.77119
+マアジ:Trachurus japonicus	4.59574
+コモチジャコ:Amblychaeturichthys sciistius	1.47181

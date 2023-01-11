@@ -1,9 +1,10 @@
-3327	スズキ:Lateolabrax japonicus
-2938	カタクチイワシ科:Engraulis japonicus
-2333	サッパ:Sardinella zunasi
-1736	コノシロ:Konosirus punctatus
-755	ボラ:Mugil cephalus
-416	ヒイラギ:Nuchequula nuchalis
-363	シログチ:Pennahia argentata
-294	アカカマス:Sphyraena pinguis
-264	トウゴロウイワシ科:Doboatherina valenciennei
+id	DRR249728.fastq
+スズキ:Lateolabrax japonicus	26.7745
+カタクチイワシ科:Engraulis japonicus	23.644
+サッパ:Sardinella zunasi	18.7751
+コノシロ:Konosirus punctatus	13.9707
+ボラ:Mugil cephalus	6.07597
+ヒイラギ:Nuchequula nuchalis	3.34782
+シログチ:Pennahia argentata	2.92129
+アカカマス:Sphyraena pinguis	2.36601
+トウゴロウイワシ科:Doboatherina valenciennei	2.12458

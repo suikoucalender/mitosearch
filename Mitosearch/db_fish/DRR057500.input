@@ -1,6 +1,7 @@
-2650	カタクチイワシ科:Engraulis japonicus
-2637	ハゼ科:Chaeturichthys stigmatias
-2386	シログチ:Pennahia argentata
-1324	マダイ:Pagrus major
-653	ヒイラギ:Nuchequula nuchalis
-443	ベラ科:Parajulis poecilepterus
+id	DRR057500.fastq
+カタクチイワシ科:Engraulis japonicus	26.2558
+ハゼ科:Chaeturichthys stigmatias	26.127
+シログチ:Pennahia argentata	23.6401
+マダイ:Pagrus major	13.118
+ヒイラギ:Nuchequula nuchalis	6.46983
+ベラ科:Parajulis poecilepterus	4.38918

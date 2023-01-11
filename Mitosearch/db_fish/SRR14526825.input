@@ -1,9 +1,10 @@
-1178	Rhinichthys cataractae
-1134	Catostomus catostomus
-921	サンフィッシュ科:Lepomis gibbosus
-723	Rhinichthys atratulus
-487	Etheostoma flabellare
-481	Notemigonus crysoleucas
-453	Catostomus commersonii
-433	Perca flavescens
-258	Esox lucius
+id	SRR14526825.fastq
+Rhinichthys cataractae	19.4133
+Catostomus catostomus	18.6882
+サンフィッシュ科:Lepomis gibbosus	15.178
+Rhinichthys atratulus	11.915
+Etheostoma flabellare	8.02571
+Notemigonus crysoleucas	7.92683
+Catostomus commersonii	7.46539
+Perca flavescens	7.13579
+Esox lucius	4.25181

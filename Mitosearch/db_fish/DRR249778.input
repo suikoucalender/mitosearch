@@ -1,9 +1,10 @@
-6423	ボラ:Mugil cephalus
-2451	サッパ:Sardinella zunasi
-1483	フグ科:Takifugu fasciatus
-1349	カタクチイワシ科:Engraulis japonicus
-1066	シログチ:Pennahia argentata
-696	コノシロ:Konosirus punctatus
-694	スズキ:Lateolabrax japonicus
-246	アカエイ:Hemitrygon akajei
-155	ブリ:Seriola quinqueradiata
+id	DRR249778.fastq
+ボラ:Mugil cephalus	44.1049
+サッパ:Sardinella zunasi	16.8303
+フグ科:Takifugu fasciatus	10.1833
+カタクチイワシ科:Engraulis japonicus	9.2632
+シログチ:Pennahia argentata	7.31992
+コノシロ:Konosirus punctatus	4.77924
+スズキ:Lateolabrax japonicus	4.7655
+アカエイ:Hemitrygon akajei	1.68921
+ブリ:Seriola quinqueradiata	1.06434

@@ -1,10 +1,11 @@
-4644	シログチ:Pennahia argentata
-4537	コノシロ:Konosirus punctatus
-4376	カタクチイワシ科:Engraulis japonicus
-2894	アカアマダイ:Branchiostegus japonicus
-1356	ヒメ:Hime japonica
-970	アカエイ:Hemitrygon akajei
-962	ブリ:Seriola quinqueradiata
-585	スズキ:Lateolabrax japonicus
-519	Eutrigla gurnardus
-298	ハタタテヌメリ:Callionymus valenciennei
+id	DRR249649.fastq
+シログチ:Pennahia argentata	21.9668
+コノシロ:Konosirus punctatus	21.4607
+カタクチイワシ科:Engraulis japonicus	20.6991
+アカアマダイ:Branchiostegus japonicus	13.689
+ヒメ:Hime japonica	6.41408
+アカエイ:Hemitrygon akajei	4.58824
+ブリ:Seriola quinqueradiata	4.5504
+スズキ:Lateolabrax japonicus	2.76713
+Eutrigla gurnardus	2.45495
+ハタタテヌメリ:Callionymus valenciennei	1.40958

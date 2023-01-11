@@ -1,6 +1,7 @@
-6178	コノシロ:Konosirus punctatus
-943	カタクチイワシ科:Engraulis japonicus
-940	アカアマダイ:Branchiostegus japonicus
-273	ブリ:Seriola quinqueradiata
-260	ギマ:Triacanthus biaculeatus
-99	Parambassis lala
+id	DRR249552.fastq
+コノシロ:Konosirus punctatus	71.0687
+カタクチイワシ科:Engraulis japonicus	10.8478
+アカアマダイ:Branchiostegus japonicus	10.8133
+ブリ:Seriola quinqueradiata	3.14046
+ギマ:Triacanthus biaculeatus	2.99091
+Parambassis lala	1.13885

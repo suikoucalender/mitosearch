@@ -1,8 +1,9 @@
-1756	スズキ:Lateolabrax japonicus
-1226	ボラ:Mugil cephalus
-852	サッパ:Sardinella zunasi
-823	ハタタテヌメリ:Callionymus valenciennei
-784	カタクチイワシ科:Engraulis japonicus
-538	コノシロ:Konosirus punctatus
-531	サワラ:Scomberomorus niphonius
-383	マサバ:Scomber japonicus
+id	DRR249569.fastq
+スズキ:Lateolabrax japonicus	25.4751
+ボラ:Mugil cephalus	17.7862
+サッパ:Sardinella zunasi	12.3604
+ハタタテヌメリ:Callionymus valenciennei	11.9396
+カタクチイワシ科:Engraulis japonicus	11.3739
+コノシロ:Konosirus punctatus	7.80502
+サワラ:Scomberomorus niphonius	7.70347
+マサバ:Scomber japonicus	5.55636

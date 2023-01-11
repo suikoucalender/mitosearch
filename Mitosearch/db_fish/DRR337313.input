@@ -1,9 +1,10 @@
-21258	カワムツ:Nipponocypris temminckii
-18139	Zacco platypus
-14854	ドンコ科:Odontobutis obscura
-8960	カワヨシノボリ:Rhinogobius flumineus
-4356	カジカ:Cottus pollux
-4183	コイ科:Rhynchocypris jouyi
-3222	コイ:Cyprinus carpio
-1443	キンギョ:Carassius auratus
-1275	ギンブナ:Carassius langsdorfii
+id	DRR337313.fastq
+カワムツ:Nipponocypris temminckii	27.3626
+Zacco platypus	23.3479
+ドンコ科:Odontobutis obscura	19.1196
+カワヨシノボリ:Rhinogobius flumineus	11.533
+カジカ:Cottus pollux	5.6069
+コイ科:Rhynchocypris jouyi	5.38422
+コイ:Cyprinus carpio	4.14725
+キンギョ:Carassius auratus	1.85738
+ギンブナ:Carassius langsdorfii	1.64114

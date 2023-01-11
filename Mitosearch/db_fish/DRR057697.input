@@ -1,6 +1,7 @@
-12087	カタクチイワシ科:Engraulis japonicus
-6077	ハオコゼ:Paracentropogon rubripinnis
-3481	ブリ:Seriola quinqueradiata
-2982	サヨリ:Hyporhamphus sajori
-2124	ヒイラギ:Nuchequula nuchalis
-1414	ボラ:Mugil cephalus
+id	DRR057697.fastq
+カタクチイワシ科:Engraulis japonicus	42.915
+ハオコゼ:Paracentropogon rubripinnis	21.5764
+ブリ:Seriola quinqueradiata	12.3593
+サヨリ:Hyporhamphus sajori	10.5876
+ヒイラギ:Nuchequula nuchalis	7.54127
+ボラ:Mugil cephalus	5.02042

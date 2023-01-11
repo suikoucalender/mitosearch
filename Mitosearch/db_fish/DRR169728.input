@@ -1,6 +1,7 @@
-18614	コイ科:Rhynchocypris jouyi
-17273	クロヨシノボリ:Rhinogobius brunneus
-10308	ドンコ科:Odontobutis obscura
-1625	カワムツ:Nipponocypris temminckii
-925	ハゼ科:Rhinogobius sp. OR
-720	サクラマス・ヤマメ:Oncorhynchus masou masou
+id	DRR169728.fastq
+コイ科:Rhynchocypris jouyi	37.6306
+クロヨシノボリ:Rhinogobius brunneus	34.9196
+ドンコ科:Odontobutis obscura	20.839
+カワムツ:Nipponocypris temminckii	3.28515
+ハゼ科:Rhinogobius sp. OR	1.87001
+サクラマス・ヤマメ:Oncorhynchus masou masou	1.45557

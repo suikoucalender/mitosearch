@@ -1,8 +1,9 @@
-38570	ゲンゲ科:Lycodes vahlii
-22155	タラ科:Gadus morhua
-11369	カレイ科:Pseudopleuronectes americanus
-10095	メバル科:Sebastes mentella
-8555	ヤマトヒゲダラ:Enchelyopus cimbrius
-5385	メバル科:Sebastes fasciatus
-3578	カラフトシシャモ:Mallotus villosus
-3473	ゲンゲ科:Lycodes esmarkii
+id	SRR12008474.fastq
+ゲンゲ科:Lycodes vahlii	37.3813
+タラ科:Gadus morhua	21.4722
+カレイ科:Pseudopleuronectes americanus	11.0186
+メバル科:Sebastes mentella	9.78387
+ヤマトヒゲダラ:Enchelyopus cimbrius	8.29134
+メバル科:Sebastes fasciatus	5.21903
+カラフトシシャモ:Mallotus villosus	3.46773
+ゲンゲ科:Lycodes esmarkii	3.36596

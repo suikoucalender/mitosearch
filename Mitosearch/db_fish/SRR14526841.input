@@ -1,7 +1,8 @@
-28771	カワマス:Salvelinus fontinalis
-25647	太平洋系降海型イトヨ:Gasterosteus aculeatus
-9998	Catostomus commersonii
-8383	Semotilus atromaculatus
-2321	Rhinichthys cataractae
-1233	Umbra pygmaea
-813	Notemigonus crysoleucas
+id	SRR14526841.fastq
+カワマス:Salvelinus fontinalis	37.2846
+太平洋系降海型イトヨ:Gasterosteus aculeatus	33.2361
+Catostomus commersonii	12.9565
+Semotilus atromaculatus	10.8636
+Rhinichthys cataractae	3.0078
+Umbra pygmaea	1.59785
+Notemigonus crysoleucas	1.05357

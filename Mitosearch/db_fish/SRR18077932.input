@@ -1,17 +1,18 @@
-1584	アカエイ:Hemitrygon akajei
-651	テナガミズテング:Harpadon nehereus
-463	マナガツオ科:Pampus sp. LY-2009
-412	カンダリ:Collichthys lucidus
-367	ニベ科:Larimichthys crocea
-365	ホンニベ:Miichthys miiuy
-319	ハゼ科:Chaeturichthys stigmatias
-295	ボラ:Mugil cephalus
-261	イワハダカ:Benthosema pterotum
-189	サッパ:Sardinella zunasi
-144	カサゴ:Sebastiscus marmoratus
-130	ヒラメ:Paralichthys olivaceus
-116	オオニベ:Argyrosomus japonicus
-112	ツバメコノシロ科:Eleutheronema tetradactylum
-104	ハモ:Muraenesox cinereus
-90	マサバ:Scomber japonicus
-74	スズキ科:Lateolabrax maculatus
+id	SRR18077932.fastq
+アカエイ:Hemitrygon akajei	27.907
+テナガミズテング:Harpadon nehereus	11.4693
+マナガツオ科:Pampus sp. LY-2009	8.15715
+カンダリ:Collichthys lucidus	7.25863
+ニベ科:Larimichthys crocea	6.46582
+ホンニベ:Miichthys miiuy	6.43058
+ハゼ科:Chaeturichthys stigmatias	5.62016
+ボラ:Mugil cephalus	5.19732
+イワハダカ:Benthosema pterotum	4.59831
+サッパ:Sardinella zunasi	3.32981
+カサゴ:Sebastiscus marmoratus	2.537
+ヒラメ:Paralichthys olivaceus	2.29035
+オオニベ:Argyrosomus japonicus	2.04369
+ツバメコノシロ科:Eleutheronema tetradactylum	1.97322
+ハモ:Muraenesox cinereus	1.83228
+マサバ:Scomber japonicus	1.58562
+スズキ科:Lateolabrax maculatus	1.30374

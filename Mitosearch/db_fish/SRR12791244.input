@@ -1,8 +1,9 @@
-216	カスザメ科:Squatina dumeril
-67	トビエイ科:Myliobatis californica
-42	Paralabrax clathratus
-31	Paralabrax nebulifer
-29	Hypsoblennius ionthas
-20	トラザメ科:Cephaloscyllium fasciatum
-13	Gibbonsia montereyensis
-5	ドチザメ:Triakis scyllium
+id	SRR12791244.fastq
+カスザメ科:Squatina dumeril	51.0638
+トビエイ科:Myliobatis californica	15.8392
+Paralabrax clathratus	9.92908
+Paralabrax nebulifer	7.32861
+Hypsoblennius ionthas	6.85579
+トラザメ科:Cephaloscyllium fasciatum	4.72813
+Gibbonsia montereyensis	3.07329
+ドチザメ:Triakis scyllium	1.18203

@@ -1,13 +1,14 @@
-31147	Zacco platypus
-8944	ドンコ科:Odontobutis obscura
-5998	コイ:Cyprinus carpio
-5847	ギンブナ:Carassius langsdorfii
-3558	マルアジ:Decapterus maruadsi
-3139	イトモロコ:Squalidus gracilis gracilis
-1862	コイ科:Rhodeus atremius atremius
-1842	セボシタビラ:Acheilognathus tabira nakamurae
-1485	コイ科:Squalidus iijimae
-1372	ニッポンバラタナゴ:Rhodeus ocellatus kurumeus
-1068	マアジ:Trachurus japonicus
-783	マサバ:Scomber japonicus
-776	アブラボテ:Tanakia limbata
+id	DRR234522.fastq
+Zacco platypus	45.9253
+ドンコ科:Odontobutis obscura	13.1877
+コイ:Cyprinus carpio	8.84387
+ギンブナ:Carassius langsdorfii	8.62122
+マルアジ:Decapterus maruadsi	5.24616
+イトモロコ:Squalidus gracilis gracilis	4.62836
+コイ科:Rhodeus atremius atremius	2.74546
+セボシタビラ:Acheilognathus tabira nakamurae	2.71597
+コイ科:Squalidus iijimae	2.18959
+ニッポンバラタナゴ:Rhodeus ocellatus kurumeus	2.02297
+マアジ:Trachurus japonicus	1.57473
+マサバ:Scomber japonicus	1.15451
+アブラボテ:Tanakia limbata	1.14419

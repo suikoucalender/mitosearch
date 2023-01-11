@@ -1,6 +1,7 @@
-321	オオウナギ:Anguilla marmorata
-41	アヤヨシノボリ:Rhinogobius sp. MO
-33	クロヨシノボリ:Rhinogobius brunneus
-27	ナイルティラピア:Oreochromis niloticus
-20	シマヨシノボリ:Rhinogobius nagoyae
-18	ボウズハゼ:Sicyopterus japonicus
+id	DRR159158.fastq
+オオウナギ:Anguilla marmorata	69.7826
+アヤヨシノボリ:Rhinogobius sp. MO	8.91304
+クロヨシノボリ:Rhinogobius brunneus	7.17391
+ナイルティラピア:Oreochromis niloticus	5.86957
+シマヨシノボリ:Rhinogobius nagoyae	4.34783
+ボウズハゼ:Sicyopterus japonicus	3.91304

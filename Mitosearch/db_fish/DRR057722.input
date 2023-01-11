@@ -1,6 +1,7 @@
-44814	カタクチイワシ科:Engraulis japonicus
-8089	サワラ:Scomberomorus niphonius
-2866	ブリ:Seriola quinqueradiata
-2638	コイ:Cyprinus carpio
-2433	マアジ:Trachurus japonicus
-812	イマイトビウオ:Cheilopogon arcticeps
+id	DRR057722.fastq
+カタクチイワシ科:Engraulis japonicus	72.6886
+サワラ:Scomberomorus niphonius	13.1204
+ブリ:Seriola quinqueradiata	4.64867
+コイ:Cyprinus carpio	4.27886
+マアジ:Trachurus japonicus	3.94634
+イマイトビウオ:Cheilopogon arcticeps	1.31707

@@ -1,6 +1,7 @@
-6566	ボラ:Mugil cephalus
-5619	サワラ:Scomberomorus niphonius
-2562	マアナゴ:Conger myriaster
-1196	サッパ:Sardinella zunasi
-1020	スズキ:Lateolabrax japonicus
-346	カタクチイワシ科:Engraulis japonicus
+id	DRR249935.fastq
+ボラ:Mugil cephalus	37.934
+サワラ:Scomberomorus niphonius	32.4629
+マアナゴ:Conger myriaster	14.8015
+サッパ:Sardinella zunasi	6.9097
+スズキ:Lateolabrax japonicus	5.89289
+カタクチイワシ科:Engraulis japonicus	1.99896

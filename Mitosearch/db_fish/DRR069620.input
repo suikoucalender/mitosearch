@@ -1,8 +1,9 @@
-84	カワムツ:Nipponocypris temminckii
-55	ドンコ科:Odontobutis obscura
-21	Zacco platypus
-12	ドジョウ:Misgurnus anguillicaudatus
-10	ハス:Opsariichthys uncirostris
-10	クロヨシノボリ:Rhinogobius brunneus
-4	ギンブナ:Carassius langsdorfii
-3	タモロコ:Gnathopogon elongatus elongatus
+id	DRR069620.fastq
+カワムツ:Nipponocypris temminckii	42.2111
+ドンコ科:Odontobutis obscura	27.6382
+Zacco platypus	10.5528
+ドジョウ:Misgurnus anguillicaudatus	6.03015
+ハス:Opsariichthys uncirostris	5.02513
+クロヨシノボリ:Rhinogobius brunneus	5.02513
+ギンブナ:Carassius langsdorfii	2.01005
+タモロコ:Gnathopogon elongatus elongatus	1.50754

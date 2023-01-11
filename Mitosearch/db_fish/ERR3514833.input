@@ -1,12 +1,13 @@
-50128	Hypsibarbus vernayi
-15631	Cirrhinus molitorella
-3850	Mystacoleucus marginatus
-2295	Systomus orphoides
-2047	コイ:Cyprinus carpio
-2034	Barbodes lateristriga
-1773	Cirrhinus mrigala
-1651	Schismatorhynchos nukta
-1593	Mastacembelus favus
-1325	Homalopteroides smithi
-1151	Rasbora trilineata
-1048	Hemibagrus sp. RCH-2015
+id	ERR3514833.fastq
+Hypsibarbus vernayi	59.3048
+Cirrhinus molitorella	18.4925
+Mystacoleucus marginatus	4.55481
+Systomus orphoides	2.71514
+コイ:Cyprinus carpio	2.42174
+Barbodes lateristriga	2.40636
+Cirrhinus mrigala	2.09758
+Schismatorhynchos nukta	1.95325
+Mastacembelus favus	1.88463
+Homalopteroides smithi	1.56757
+Rasbora trilineata	1.36171
+Hemibagrus sp. RCH-2015	1.23986

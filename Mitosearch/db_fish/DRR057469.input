@@ -1,12 +1,13 @@
-12672	カタクチイワシ科:Engraulis japonicus
-3199	フグ科:Takifugu fasciatus
-3144	ヒイラギ:Nuchequula nuchalis
-2910	ブリ:Seriola quinqueradiata
-2281	ホソトビウオ:Cypselurus hiraii
-2004	マアジ:Trachurus japonicus
-1759	アカオビシマハゼ:Tridentiger trigonocephalus
-1751	アカカマス:Sphyraena pinguis
-1109	カレイ科:Microstomus kitt
-905	Tribolodon hakonensis
-541	ヒレグロ:Glyptocephalus stelleri
-509	ボラ科:Planiliza affinis
+id	DRR057469.fastq
+カタクチイワシ科:Engraulis japonicus	38.653
+フグ科:Takifugu fasciatus	9.75781
+ヒイラギ:Nuchequula nuchalis	9.59004
+ブリ:Seriola quinqueradiata	8.87628
+ホソトビウオ:Cypselurus hiraii	6.95766
+マアジ:Trachurus japonicus	6.11274
+アカオビシマハゼ:Tridentiger trigonocephalus	5.36542
+アカカマス:Sphyraena pinguis	5.34102
+カレイ科:Microstomus kitt	3.38275
+Tribolodon hakonensis	2.76049
+ヒレグロ:Glyptocephalus stelleri	1.6502
+ボラ科:Planiliza affinis	1.55259

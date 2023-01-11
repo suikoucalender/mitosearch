@@ -1,6 +1,7 @@
-5376	スマ:Euthynnus affinis
-271	ジンベエザメ:Rhincodon typus
-112	オオテンジクザメ:Nebrius ferrugineus
-99	タカサゴ:Pterocaesio digramma
-70	グルクマ:Rastrelliger kanagurta
-66	トラフザメ科:Stegostoma fasciatum
+id	DRR075307.fastq
+スマ:Euthynnus affinis	89.6897
+ジンベエザメ:Rhincodon typus	4.52119
+オオテンジクザメ:Nebrius ferrugineus	1.86854
+タカサゴ:Pterocaesio digramma	1.65165
+グルクマ:Rastrelliger kanagurta	1.16783
+トラフザメ科:Stegostoma fasciatum	1.1011

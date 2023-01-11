@@ -1,10 +1,11 @@
-250	Lepidocephalichthys sp. CBM-ZF-14149
-147	Devario sp. CBM:ZF:11302
-68	タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950
-32	Rasbora daniconius
-28	ホシヤマトミズン:Amblygaster sirm
-24	Devario devario
-19	グッピー:Poecilia reticulata
-13	ヒレナマズ科:Clarias dussumieri
-10	コウタイ:Channa asiatica
-8	Beaufortia szechuanensis
+id	DRR217099.fastq
+Lepidocephalichthys sp. CBM-ZF-14149	41.7362
+Devario sp. CBM:ZF:11302	24.5409
+タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950	11.3523
+Rasbora daniconius	5.34224
+ホシヤマトミズン:Amblygaster sirm	4.67446
+Devario devario	4.00668
+グッピー:Poecilia reticulata	3.17195
+ヒレナマズ科:Clarias dussumieri	2.17028
+コウタイ:Channa asiatica	1.66945
+Beaufortia szechuanensis	1.33556

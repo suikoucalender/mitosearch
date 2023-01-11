@@ -1,7 +1,8 @@
-431	コノシロ:Konosirus punctatus
-289	カタクチイワシ科:Engraulis japonicus
-185	Parambassis lala
-158	サヨリ:Hyporhamphus sajori
-78	クロダイ:Acanthopagrus schlegelii
-69	セトダイ:Hapalogenys analis
-35	ホシザメ:Mustelus manazo
+id	DRR249610.fastq
+コノシロ:Konosirus punctatus	34.6185
+カタクチイワシ科:Engraulis japonicus	23.2129
+Parambassis lala	14.8594
+サヨリ:Hyporhamphus sajori	12.6908
+クロダイ:Acanthopagrus schlegelii	6.26506
+セトダイ:Hapalogenys analis	5.54217
+ホシザメ:Mustelus manazo	2.81124

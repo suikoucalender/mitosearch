@@ -1,12 +1,13 @@
-11233	カタクチイワシ科:Engraulis japonicus
-4380	ブリ:Seriola quinqueradiata
-2680	ゴクラクハゼ:Rhinogobius similis
-2510	ホソトビウオ:Cypselurus hiraii
-2227	ヒラメ:Paralichthys olivaceus
-1798	スズキ:Lateolabrax japonicus
-1700	ボラ:Mugil cephalus
-1628	コイ:Cyprinus carpio
-1018	ギンブナ:Carassius langsdorfii
-927	タモロコ:Gnathopogon elongatus elongatus
-726	アカオビシマハゼ:Tridentiger trigonocephalus
-620	ヒイラギ:Nuchequula nuchalis
+id	DRR057681.fastq
+カタクチイワシ科:Engraulis japonicus	35.7204
+ブリ:Seriola quinqueradiata	13.9282
+ゴクラクハゼ:Rhinogobius similis	8.52228
+ホソトビウオ:Cypselurus hiraii	7.98168
+ヒラメ:Paralichthys olivaceus	7.08176
+スズキ:Lateolabrax japonicus	5.71756
+ボラ:Mugil cephalus	5.40592
+コイ:Cyprinus carpio	5.17696
+ギンブナ:Carassius langsdorfii	3.23719
+タモロコ:Gnathopogon elongatus elongatus	2.94782
+アカオビシマハゼ:Tridentiger trigonocephalus	2.30865
+ヒイラギ:Nuchequula nuchalis	1.97157

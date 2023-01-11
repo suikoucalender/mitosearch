@@ -1,8 +1,9 @@
-37389	Zacco platypus
-13301	ギンブナ:Carassius langsdorfii
-5507	カワムツ:Nipponocypris temminckii
-2834	コイ:Cyprinus carpio
-1960	ハゼ科:Rhinogobius sp. OR
-1706	コイ科:Cyprinus carpio (triploid)
-1352	ドンコ科:Odontobutis obscura
-1245	ムギツク:Pungtungia herzi
+id	DRR337318.fastq
+Zacco platypus	57.2625
+ギンブナ:Carassius langsdorfii	20.3709
+カワムツ:Nipponocypris temminckii	8.43416
+コイ:Cyprinus carpio	4.34037
+ハゼ科:Rhinogobius sp. OR	3.00181
+コイ科:Cyprinus carpio (triploid)	2.6128
+ドンコ科:Odontobutis obscura	2.07063
+ムギツク:Pungtungia herzi	1.90676

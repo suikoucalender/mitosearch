@@ -1,6 +1,7 @@
-8595	スマ:Euthynnus affinis
-461	ジンベエザメ:Rhincodon typus
-164	オオテンジクザメ:Nebrius ferrugineus
-150	トラフザメ科:Stegostoma fasciatum
-131	ツムブリ:Elagatis bipinnulata
-126	マルコバン:Trachinotus blochii
+id	DRR075294.fastq
+スマ:Euthynnus affinis	89.2801
+ジンベエザメ:Rhincodon typus	4.78862
+オオテンジクザメ:Nebrius ferrugineus	1.70354
+トラフザメ科:Stegostoma fasciatum	1.55812
+ツムブリ:Elagatis bipinnulata	1.36076
+マルコバン:Trachinotus blochii	1.30882

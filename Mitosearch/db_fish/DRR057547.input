@@ -1,11 +1,12 @@
-5300	カタクチイワシ科:Engraulis japonicus
-4347	ヒイラギ:Nuchequula nuchalis
-3661	セトダイ:Hapalogenys analis
-1863	ハゼ科:Chaeturichthys stigmatias
-1817	ハオコゼ:Paracentropogon rubripinnis
-1723	ウッカリカサゴ:Sebastiscus tertius
-1382	Parambassis lala
-1379	マハゼ:Acanthogobius flavimanus
-892	クロダイ:Acanthopagrus schlegelii
-872	シログチ:Pennahia argentata
-338	ヌノサラシ:Grammistes sexlineatus
+id	DRR057547.fastq
+カタクチイワシ科:Engraulis japonicus	22.4824
+ヒイラギ:Nuchequula nuchalis	18.4398
+セトダイ:Hapalogenys analis	15.5298
+ハゼ科:Chaeturichthys stigmatias	7.90277
+ハオコゼ:Paracentropogon rubripinnis	7.70764
+ウッカリカサゴ:Sebastiscus tertius	7.3089
+Parambassis lala	5.86239
+マハゼ:Acanthogobius flavimanus	5.84966
+クロダイ:Acanthopagrus schlegelii	3.78383
+シログチ:Pennahia argentata	3.69899
+ヌノサラシ:Grammistes sexlineatus	1.43378

@@ -1,12 +1,13 @@
-33370	ナイルティラピア:Oreochromis niloticus
-14794	カワスズメ科:Oreochromis sp. 'red tilapia'
-11558	Polynemus dubius
-5697	Barbonymus gonionotus
-5436	Puntioplites proctozystron
-4181	Labeo chrysophekadion
-3854	Mastacembelus favus
-3541	Esomus metallicus
-2763	Lobocheilos melanotaenia
-1952	Barbonymus altus
-1563	Systomus orphoides
-1523	Clupeichthys goniognathus
+id	ERR3514776.fastq
+ナイルティラピア:Oreochromis niloticus	36.9824
+カワスズメ科:Oreochromis sp. 'red tilapia'	16.3955
+Polynemus dubius	12.8092
+Barbonymus gonionotus	6.31372
+Puntioplites proctozystron	6.02447
+Labeo chrysophekadion	4.63361
+Mastacembelus favus	4.27121
+Esomus metallicus	3.92433
+Lobocheilos melanotaenia	3.06211
+Barbonymus altus	2.16331
+Systomus orphoides	1.7322
+Clupeichthys goniognathus	1.68787

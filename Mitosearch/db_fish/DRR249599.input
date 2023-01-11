@@ -1,12 +1,13 @@
-6082	コノシロ:Konosirus punctatus
-2945	カタクチイワシ科:Engraulis japonicus
-1794	スズキ:Lateolabrax japonicus
-1169	サケ:Oncorhynchus keta
-948	スジハゼ:Acentrogobius virgatulus
-556	ハタタテヌメリ:Callionymus valenciennei
-541	Parambassis lala
-299	フグ科:Takifugu fasciatus
-296	ホシザメ:Mustelus manazo
-228	クロダイ:Acanthopagrus schlegelii
-227	マガレイ:Pseudopleuronectes herzensteini
-184	ボラ:Mugil cephalus
+id	DRR249599.fastq
+コノシロ:Konosirus punctatus	39.8323
+カタクチイワシ科:Engraulis japonicus	19.2874
+スズキ:Lateolabrax japonicus	11.7493
+サケ:Oncorhynchus keta	7.65604
+スジハゼ:Acentrogobius virgatulus	6.20866
+ハタタテヌメリ:Callionymus valenciennei	3.64136
+Parambassis lala	3.54313
+フグ科:Takifugu fasciatus	1.95822
+ホシザメ:Mustelus manazo	1.93857
+クロダイ:Acanthopagrus schlegelii	1.49322
+マガレイ:Pseudopleuronectes herzensteini	1.48667
+ボラ:Mugil cephalus	1.20506

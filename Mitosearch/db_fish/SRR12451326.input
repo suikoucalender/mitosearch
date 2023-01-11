@@ -1,6 +1,7 @@
-14146	Perca flavescens
-4774	Clupeonella cultriventris
-1856	Sander vitreus
-1607	Neogobius melanostomus
-1171	コイ:Cyprinus carpio
-259	ソウギョ:Ctenopharyngodon idella
+id	SRR12451326.fastq
+Perca flavescens	59.4045
+Clupeonella cultriventris	20.0479
+Sander vitreus	7.79406
+Neogobius melanostomus	6.74841
+コイ:Cyprinus carpio	4.91748
+ソウギョ:Ctenopharyngodon idella	1.08764

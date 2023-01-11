@@ -1,12 +1,13 @@
-91893	ヌマチチブ:Tridentiger brevispinis
-10154	コイ:Cyprinus carpio
-9705	チチブ:Tridentiger obscurus
-3528	マハゼ:Acanthogobius flavimanus
-3145	クロヨシノボリ:Rhinogobius brunneus
-3044	ギンブナ:Carassius langsdorfii
-3010	ヒガシシマドジョウ:Cobitis sp. BIWAE type C
-1602	ウキゴリ:Gymnogobius urotaenia
-1564	コイ科:Cyprinus carpio (triploid)
-1563	カムルチー:Channa argus
-1558	Phoxinus steindachneri
-1521	アユ:Plecoglossus altivelis
+id	DRR231443.fastq
+ヌマチチブ:Tridentiger brevispinis	69.4649
+コイ:Cyprinus carpio	7.67574
+チチブ:Tridentiger obscurus	7.33632
+マハゼ:Acanthogobius flavimanus	2.66693
+クロヨシノボリ:Rhinogobius brunneus	2.37741
+ギンブナ:Carassius langsdorfii	2.30106
+ヒガシシマドジョウ:Cobitis sp. BIWAE type C	2.27536
+ウキゴリ:Gymnogobius urotaenia	1.211
+コイ科:Cyprinus carpio (triploid)	1.18228
+カムルチー:Channa argus	1.18152
+Phoxinus steindachneri	1.17774
+アユ:Plecoglossus altivelis	1.14977

@@ -1,6 +1,7 @@
-12532	カタクチイワシ科:Engraulis japonicus
-4800	コノシロ:Konosirus punctatus
-1379	ニシン科:Sardinops sagax
-930	スズキ:Lateolabrax japonicus
-504	マタナゴ:Ditrema temminckii pacificum
-310	ハタタテヌメリ:Callionymus valenciennei
+id	DRR249630.fastq
+カタクチイワシ科:Engraulis japonicus	61.2662
+コノシロ:Konosirus punctatus	23.4661
+ニシン科:Sardinops sagax	6.74163
+スズキ:Lateolabrax japonicus	4.54657
+マタナゴ:Ditrema temminckii pacificum	2.46395
+ハタタテヌメリ:Callionymus valenciennei	1.51552

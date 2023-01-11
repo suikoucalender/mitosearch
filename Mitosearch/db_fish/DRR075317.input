@@ -1,5 +1,6 @@
-8235	スマ:Euthynnus affinis
-443	ジンベエザメ:Rhincodon typus
-144	マダラトビエイ科:Aetobatus narinari
-137	タカサゴ:Pterocaesio digramma
-100	オオテンジクザメ:Nebrius ferrugineus
+id	DRR075317.fastq
+スマ:Euthynnus affinis	90.9041
+ジンベエザメ:Rhincodon typus	4.89016
+マダラトビエイ科:Aetobatus narinari	1.58958
+タカサゴ:Pterocaesio digramma	1.51231
+オオテンジクザメ:Nebrius ferrugineus	1.10387

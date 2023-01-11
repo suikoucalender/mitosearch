@@ -1,11 +1,12 @@
-2215	ヒイラギ:Nuchequula nuchalis
-1664	カタクチイワシ科:Engraulis japonicus
-1636	ホンベラ:Halichoeres tenuispinis
-833	トカゲゴチ:Inegocia japonica
-810	ハオコゼ:Paracentropogon rubripinnis
-618	カレイ科:Microstomus kitt
-451	スジハゼ:Acentrogobius virgatulus
-365	シログチ:Pennahia argentata
-331	カレイ科:Pseudopleuronectes americanus
-323	ヒレグロ:Glyptocephalus stelleri
-145	アカオビシマハゼ:Tridentiger trigonocephalus
+id	DRR057495.fastq
+ヒイラギ:Nuchequula nuchalis	23.5864
+カタクチイワシ科:Engraulis japonicus	17.7191
+ホンベラ:Halichoeres tenuispinis	17.4209
+トカゲゴチ:Inegocia japonica	8.87019
+ハオコゼ:Paracentropogon rubripinnis	8.62528
+カレイ科:Microstomus kitt	6.58077
+スジハゼ:Acentrogobius virgatulus	4.80247
+シログチ:Pennahia argentata	3.8867
+カレイ科:Pseudopleuronectes americanus	3.52465
+ヒレグロ:Glyptocephalus stelleri	3.43946
+アカオビシマハゼ:Tridentiger trigonocephalus	1.54403

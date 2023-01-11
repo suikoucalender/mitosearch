@@ -1,7 +1,8 @@
-11280	コイ科:Hemibarbus maculatus
-10710	カワヨシノボリ:Rhinogobius flumineus
-4098	カワムツ:Nipponocypris temminckii
-2793	コイ科:Rhynchocypris jouyi
-1521	Zacco platypus
-1500	カジカ:Cottus pollux
-572	イトモロコ:Squalidus gracilis gracilis
+id	DRR069516.fastq
+コイ科:Hemibarbus maculatus	34.7355
+カワヨシノボリ:Rhinogobius flumineus	32.9802
+カワムツ:Nipponocypris temminckii	12.6193
+コイ科:Rhynchocypris jouyi	8.60073
+Zacco platypus	4.68375
+カジカ:Cottus pollux	4.61908
+イトモロコ:Squalidus gracilis gracilis	1.76141

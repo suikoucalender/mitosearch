@@ -1,9 +1,10 @@
-89133	メバル科:Sebastes fasciatus
-13935	カレイ科:Glyptocephalus cynoglossus
-13926	ドロギンポ:Askoldia variegata
-10539	メバル科:Sebastes mentella
-6655	ヤマトヒゲダラ:Enchelyopus cimbrius
-6647	Microgadus tomcod
-6639	ゲンゲ科:Melanostigma atlanticum
-3977	カラスガレイ:Reinhardtius hippoglossoides
-2872	カレイ科:Pseudopleuronectes americanus
+id	SRR12008485.fastq
+メバル科:Sebastes fasciatus	57.7574
+カレイ科:Glyptocephalus cynoglossus	9.02976
+ドロギンポ:Askoldia variegata	9.02393
+メバル科:Sebastes mentella	6.82918
+ヤマトヒゲダラ:Enchelyopus cimbrius	4.31238
+Microgadus tomcod	4.3072
+ゲンゲ科:Melanostigma atlanticum	4.30202
+カラスガレイ:Reinhardtius hippoglossoides	2.57706
+カレイ科:Pseudopleuronectes americanus	1.86103

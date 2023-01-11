@@ -1,6 +1,7 @@
-496	オオウナギ:Anguilla marmorata
-397	アヤヨシノボリ:Rhinogobius sp. MO
-229	クロヨシノボリ:Rhinogobius brunneus
-98	シマヨシノボリ:Rhinogobius nagoyae
-30	ナガノゴリ:Tridentiger kuroiwae
-24	ヌマチチブ:Tridentiger brevispinis
+id	DRR159211.fastq
+オオウナギ:Anguilla marmorata	38.9325
+アヤヨシノボリ:Rhinogobius sp. MO	31.1617
+クロヨシノボリ:Rhinogobius brunneus	17.9749
+シマヨシノボリ:Rhinogobius nagoyae	7.69231
+ナガノゴリ:Tridentiger kuroiwae	2.35479
+ヌマチチブ:Tridentiger brevispinis	1.88383

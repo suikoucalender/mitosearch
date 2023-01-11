@@ -1,5 +1,6 @@
-511	サケ科:Oncorhynchus mykiss newberrii
-506	コイ科:Rhynchocypris jouyi
-42	カジカ:Cottus pollux
-23	太平洋系降海型イトヨ:Gasterosteus aculeatus
-20	ゴギ:Salvelinus leucomaenis
+id	DRR069653.fastq
+サケ科:Oncorhynchus mykiss newberrii	46.3702
+コイ科:Rhynchocypris jouyi	45.9165
+カジカ:Cottus pollux	3.81125
+太平洋系降海型イトヨ:Gasterosteus aculeatus	2.08711
+ゴギ:Salvelinus leucomaenis	1.81488

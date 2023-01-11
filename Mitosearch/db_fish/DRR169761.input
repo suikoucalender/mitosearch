@@ -1,12 +1,13 @@
-20919	Zacco platypus
-8226	カワヨシノボリ:Rhinogobius flumineus
-8204	カワムツ:Nipponocypris temminckii
-4495	コイ科:Hemibarbus maculatus
-3352	ムギツク:Pungtungia herzi
-2828	ヌマチチブ:Tridentiger brevispinis
-2375	コイ科:Rhynchocypris jouyi
-1614	ドンコ科:Odontobutis obscura
-1220	クロヨシノボリ:Rhinogobius brunneus
-717	チチブ:Tridentiger obscurus
-646	ウキゴリ:Gymnogobius urotaenia
-622	ハゼ科:Rhinogobius sp. OR
+id	DRR169761.fastq
+Zacco platypus	37.8844
+カワヨシノボリ:Rhinogobius flumineus	14.8973
+カワムツ:Nipponocypris temminckii	14.8575
+コイ科:Hemibarbus maculatus	8.14046
+ムギツク:Pungtungia herzi	6.07048
+ヌマチチブ:Tridentiger brevispinis	5.12152
+コイ科:Rhynchocypris jouyi	4.30113
+ドンコ科:Odontobutis obscura	2.92296
+クロヨシノボリ:Rhinogobius brunneus	2.20942
+チチブ:Tridentiger obscurus	1.29849
+ウキゴリ:Gymnogobius urotaenia	1.16991
+ハゼ科:Rhinogobius sp. OR	1.12644

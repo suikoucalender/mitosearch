@@ -1,12 +1,13 @@
-77	クロヨシノボリ:Rhinogobius brunneus
-74	オオウナギ:Anguilla marmorata
-47	シマヨシノボリ:Rhinogobius nagoyae
-23	ギンユゴイ:Kuhlia mugil
-22	ボラ:Mugil cephalus
-19	ヌマチチブ:Tridentiger brevispinis
-16	ベニザケ・ヒメマス:Oncorhynchus nerka
-16	アヤヨシノボリ:Rhinogobius sp. MO
-15	ナイルティラピア:Oreochromis niloticus
-12	テンジクカワアナゴ:Eleotris fusca
-11	カダヤシ:Gambusia affinis
-9	ナガノゴリ:Tridentiger kuroiwae
+id	DRR159197.fastq
+クロヨシノボリ:Rhinogobius brunneus	22.5806
+オオウナギ:Anguilla marmorata	21.7009
+シマヨシノボリ:Rhinogobius nagoyae	13.783
+ギンユゴイ:Kuhlia mugil	6.74487
+ボラ:Mugil cephalus	6.45161
+ヌマチチブ:Tridentiger brevispinis	5.57185
+ベニザケ・ヒメマス:Oncorhynchus nerka	4.69208
+アヤヨシノボリ:Rhinogobius sp. MO	4.69208
+ナイルティラピア:Oreochromis niloticus	4.39883
+テンジクカワアナゴ:Eleotris fusca	3.51906
+カダヤシ:Gambusia affinis	3.22581
+ナガノゴリ:Tridentiger kuroiwae	2.6393

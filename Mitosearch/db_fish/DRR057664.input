@@ -1,9 +1,10 @@
-31865	カタクチイワシ科:Engraulis japonicus
-9985	ブリ:Seriola quinqueradiata
-8333	マアジ:Trachurus japonicus
-3539	ホソトビウオ:Cypselurus hiraii
-3015	サワラ:Scomberomorus niphonius
-2355	マダイ:Pagrus major
-1670	カレイ科:Pseudopleuronectes americanus
-1413	クサフグ:Takifugu alboplumbeus
-657	ボラ:Mugil cephalus
+id	DRR057664.fastq
+カタクチイワシ科:Engraulis japonicus	50.7146
+ブリ:Seriola quinqueradiata	15.8916
+マアジ:Trachurus japonicus	13.2624
+ホソトビウオ:Cypselurus hiraii	5.63248
+サワラ:Scomberomorus niphonius	4.79851
+マダイ:Pagrus major	3.74809
+カレイ科:Pseudopleuronectes americanus	2.65788
+クサフグ:Takifugu alboplumbeus	2.24885
+ボラ:Mugil cephalus	1.04565

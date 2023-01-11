@@ -1,7 +1,8 @@
-3139	サッパ:Sardinella zunasi
-2748	カタクチイワシ科:Engraulis japonicus
-1622	コノシロ:Konosirus punctatus
-1075	ギマ:Triacanthus biaculeatus
-695	サヨリ:Hyporhamphus sajori
-193	マアジ:Trachurus japonicus
-96	ダツ:Strongylura anastomella
+id	DRR249967.fastq
+サッパ:Sardinella zunasi	32.8073
+カタクチイワシ科:Engraulis japonicus	28.7207
+コノシロ:Konosirus punctatus	16.9523
+ギマ:Triacanthus biaculeatus	11.2354
+サヨリ:Hyporhamphus sajori	7.2638
+マアジ:Trachurus japonicus	2.01714
+ダツ:Strongylura anastomella	1.00334

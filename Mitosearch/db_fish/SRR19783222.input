@@ -1,6 +1,7 @@
-4419	キハダ:Thunnus albacares
-1632	Paralabrax nebulifer
-784	Paralabrax maculatofasciatus
-221	Conodon nobilis
-133	Paralabrax clathratus
-109	エソ科:Synodus lucioceps
+id	SRR19783222.fastq
+キハダ:Thunnus albacares	60.5508
+Paralabrax nebulifer	22.3623
+Paralabrax maculatofasciatus	10.7427
+Conodon nobilis	3.02823
+Paralabrax clathratus	1.82242
+エソ科:Synodus lucioceps	1.49356

@@ -1,6 +1,7 @@
-5538	ボラ:Mugil cephalus
-3893	コノシロ:Konosirus punctatus
-1494	カタクチイワシ科:Engraulis japonicus
-498	サッパ:Sardinella zunasi
-413	ギマ:Triacanthus biaculeatus
-262	トウゴロウイワシ科:Doboatherina valenciennei
+id	DRR249748.fastq
+ボラ:Mugil cephalus	45.7762
+コノシロ:Konosirus punctatus	32.1789
+カタクチイワシ科:Engraulis japonicus	12.3491
+サッパ:Sardinella zunasi	4.11638
+ギマ:Triacanthus biaculeatus	3.41379
+トウゴロウイワシ科:Doboatherina valenciennei	2.16565

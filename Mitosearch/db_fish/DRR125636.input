@@ -1,5 +1,6 @@
-55	コイ科:Acheilognathus chankaensis
-41	コイ科:Rhynchocypris percnurus sachalinensis
-3	ゲンゴロウブナ:Carassius cuvieri
-3	ギンブナ:Carassius langsdorfii
-2	コイ科:Rhynchocypris percnurus
+id	DRR125636.fastq
+コイ科:Acheilognathus chankaensis	52.8846
+コイ科:Rhynchocypris percnurus sachalinensis	39.4231
+ゲンゴロウブナ:Carassius cuvieri	2.88462
+ギンブナ:Carassius langsdorfii	2.88462
+コイ科:Rhynchocypris percnurus	1.92308

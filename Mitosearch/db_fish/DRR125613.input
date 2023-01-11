@@ -1,7 +1,8 @@
-1879	コイ科:Acheilognathus chankaensis
-1401	モツゴ:Pseudorasbora parva
-750	ギンブナ:Carassius langsdorfii
-409	キンギョ:Carassius auratus
-206	ゲンゴロウブナ:Carassius cuvieri
-120	ドジョウ:Misgurnus anguillicaudatus
-112	Tribolodon hakonensis
+id	DRR125613.fastq
+コイ科:Acheilognathus chankaensis	38.5278
+モツゴ:Pseudorasbora parva	28.7267
+ギンブナ:Carassius langsdorfii	15.3783
+キンギョ:Carassius auratus	8.3863
+ゲンゴロウブナ:Carassius cuvieri	4.22391
+ドジョウ:Misgurnus anguillicaudatus	2.46053
+Tribolodon hakonensis	2.29649

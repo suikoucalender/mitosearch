@@ -1,9 +1,10 @@
-113554	ヌマチチブ:Tridentiger brevispinis
-14671	ギンブナ:Carassius langsdorfii
-6662	クロヨシノボリ:Rhinogobius brunneus
-5807	コイ:Cyprinus carpio
-4588	ゲンゴロウブナ:Carassius cuvieri
-4103	チチブ:Tridentiger obscurus
-3330	カムルチー:Channa argus
-1747	カワヨシノボリ:Rhinogobius flumineus
-1682	Phoxinus steindachneri
+id	DRR231463.fastq
+ヌマチチブ:Tridentiger brevispinis	72.7239
+ギンブナ:Carassius langsdorfii	9.39581
+クロヨシノボリ:Rhinogobius brunneus	4.26657
+コイ:Cyprinus carpio	3.719
+ゲンゴロウブナ:Carassius cuvieri	2.93831
+チチブ:Tridentiger obscurus	2.6277
+カムルチー:Channa argus	2.13265
+カワヨシノボリ:Rhinogobius flumineus	1.11884
+Phoxinus steindachneri	1.07721

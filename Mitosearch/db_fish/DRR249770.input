@@ -1,7 +1,8 @@
-13543	コノシロ:Konosirus punctatus
-3500	カレイ科:Pseudopleuronectes americanus
-1923	コイ:Cyprinus carpio
-1301	スズキ:Lateolabrax japonicus
-1212	ボラ:Mugil cephalus
-715	カタクチイワシ科:Engraulis japonicus
-238	アカザ:Liobagrus reinii
+id	DRR249770.fastq
+コノシロ:Konosirus punctatus	60.3736
+カレイ科:Pseudopleuronectes americanus	15.6027
+コイ:Cyprinus carpio	8.57257
+スズキ:Lateolabrax japonicus	5.79975
+ボラ:Mugil cephalus	5.403
+カタクチイワシ科:Engraulis japonicus	3.18741
+アカザ:Liobagrus reinii	1.06098

@@ -1,9 +1,10 @@
-18949	カタクチイワシ科:Engraulis japonicus
-2158	コノシロ:Konosirus punctatus
-1580	ダツ:Strongylura anastomella
-1180	サッパ:Sardinella zunasi
-963	マサバ:Scomber japonicus
-879	カツオ:Katsuwonus pelamis
-689	アカカマス:Sphyraena pinguis
-645	シログチ:Pennahia argentata
-288	ハタタテヌメリ:Callionymus valenciennei
+id	DRR249912.fastq
+カタクチイワシ科:Engraulis japonicus	69.3315
+コノシロ:Konosirus punctatus	7.8958
+ダツ:Strongylura anastomella	5.78098
+サッパ:Sardinella zunasi	4.31744
+マサバ:Scomber japonicus	3.52347
+カツオ:Katsuwonus pelamis	3.21613
+アカカマス:Sphyraena pinguis	2.52095
+シログチ:Pennahia argentata	2.35996
+ハタタテヌメリ:Callionymus valenciennei	1.05375

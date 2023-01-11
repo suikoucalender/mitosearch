@@ -1,7 +1,8 @@
-5528	カタクチイワシ科:Engraulis japonicus
-2608	ヒイラギ:Nuchequula nuchalis
-1807	シロギス:Sillago japonica
-745	Eutrigla gurnardus
-611	アカカマス:Sphyraena pinguis
-517	シログチ:Pennahia argentata
-387	ホウボウ:Chelidonichthys spinosus
+id	DRR057545.fastq
+カタクチイワシ科:Engraulis japonicus	45.3003
+ヒイラギ:Nuchequula nuchalis	21.3718
+シロギス:Sillago japonica	14.8078
+Eutrigla gurnardus	6.10506
+アカカマス:Sphyraena pinguis	5.00697
+シログチ:Pennahia argentata	4.23666
+ホウボウ:Chelidonichthys spinosus	3.17135

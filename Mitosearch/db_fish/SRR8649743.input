@@ -1,8 +1,9 @@
-48704	トドハダカ:Diaphus theta
-48687	カタクチイワシ科:Engraulis mordax
-6563	シロガネダラ:Merluccius productus
-2014	Larimus fasciatus
-1826	コヒレハダカ:Stenobrachius leucopsarus
-1650	Sprattus sprattus
-1452	オヒョウ:Hippoglossus stenolepis
-1238	シマゾイ:Sebastes trivittatus
+id	SRR8649743.fastq
+トドハダカ:Diaphus theta	43.4337
+カタクチイワシ科:Engraulis mordax	43.4186
+シロガネダラ:Merluccius productus	5.85282
+Larimus fasciatus	1.79607
+コヒレハダカ:Stenobrachius leucopsarus	1.62841
+Sprattus sprattus	1.47145
+オヒョウ:Hippoglossus stenolepis	1.29488
+シマゾイ:Sebastes trivittatus	1.10404

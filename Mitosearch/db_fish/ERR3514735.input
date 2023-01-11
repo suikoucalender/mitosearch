@@ -1,9 +1,10 @@
-52462	ナイルティラピア:Oreochromis niloticus
-22550	カワスズメ科:Oreochromis sp. 'red tilapia'
-3572	Hypsibarbus salweenensis
-2631	Barbonymus gonionotus
-2096	Barbonymus schwanefeldii
-1767	Mystacoleucus marginatus
-1404	Labiobarbus lineatus
-1241	Barbonymus altus
-1119	Cyclocheilichthys armatus
+id	ERR3514735.fastq
+ナイルティラピア:Oreochromis niloticus	59.0509
+カワスズメ科:Oreochromis sp. 'red tilapia'	25.3821
+Hypsibarbus salweenensis	4.02062
+Barbonymus gonionotus	2.96144
+Barbonymus schwanefeldii	2.35924
+Mystacoleucus marginatus	1.98892
+Labiobarbus lineatus	1.58033
+Barbonymus altus	1.39686
+Cyclocheilichthys armatus	1.25954

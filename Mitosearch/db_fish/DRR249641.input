@@ -1,9 +1,10 @@
-5803	コノシロ:Konosirus punctatus
-2782	カタクチイワシ科:Engraulis japonicus
-1098	ニシン科:Sardinops sagax
-1053	アカアマダイ:Branchiostegus japonicus
-1005	サッパ:Sardinella zunasi
-951	ブリ:Seriola quinqueradiata
-836	スズキ:Lateolabrax japonicus
-707	ヒメ:Hime japonica
-248	チダイ:Evynnis tumifrons
+id	DRR249641.fastq
+コノシロ:Konosirus punctatus	40.0677
+カタクチイワシ科:Engraulis japonicus	19.2087
+ニシン科:Sardinops sagax	7.5813
+アカアマダイ:Branchiostegus japonicus	7.27059
+サッパ:Sardinella zunasi	6.93917
+ブリ:Seriola quinqueradiata	6.56632
+スズキ:Lateolabrax japonicus	5.77228
+ヒメ:Hime japonica	4.88159
+チダイ:Evynnis tumifrons	1.71235

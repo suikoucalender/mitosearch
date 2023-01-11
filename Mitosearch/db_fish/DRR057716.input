@@ -1,12 +1,13 @@
-29995	カタクチイワシ科:Engraulis japonicus
-7323	ブリ:Seriola quinqueradiata
-6973	マアジ:Trachurus japonicus
-3034	ホソトビウオ:Cypselurus hiraii
-2177	カレイ科:Pseudopleuronectes americanus
-1986	イマイトビウオ:Cheilopogon arcticeps
-1929	コショウダイ:Plectorhinchus cinctus
-1873	Zacco platypus
-1868	ハガツオ:Sarda orientalis
-1320	ビリンゴ:Gymnogobius breunigii
-1317	サワラ:Scomberomorus niphonius
-904	セトダイ:Hapalogenys analis
+id	DRR057716.fastq
+カタクチイワシ科:Engraulis japonicus	49.416
+ブリ:Seriola quinqueradiata	12.0644
+マアジ:Trachurus japonicus	11.4878
+ホソトビウオ:Cypselurus hiraii	4.99843
+カレイ科:Pseudopleuronectes americanus	3.58655
+イマイトビウオ:Cheilopogon arcticeps	3.27188
+コショウダイ:Plectorhinchus cinctus	3.17798
+Zacco platypus	3.08572
+ハガツオ:Sarda orientalis	3.07748
+ビリンゴ:Gymnogobius breunigii	2.17467
+サワラ:Scomberomorus niphonius	2.16972
+セトダイ:Hapalogenys analis	1.48932

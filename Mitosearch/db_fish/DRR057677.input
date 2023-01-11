@@ -1,18 +1,19 @@
-11328	カタクチイワシ科:Engraulis japonicus
-10275	ヒイラギ:Nuchequula nuchalis
-5515	ホソトビウオ:Cypselurus hiraii
-4032	クサフグ:Takifugu alboplumbeus
-3896	ハゼ科:Chaeturichthys stigmatias
-3212	マアジ:Trachurus japonicus
-2469	マタナゴ:Ditrema temminckii pacificum
-2225	ボラ:Mugil cephalus
-2057	サヨリ:Hyporhamphus sajori
-1626	Zacco platypus
-1499	シロギス:Sillago japonica
-1288	ブリ:Seriola quinqueradiata
-1263	Parambassis lala
-874	マルアジ:Decapterus maruadsi
-823	ベニザケ・ヒメマス:Oncorhynchus nerka
-816	イソギンポ:Parablennius yatabei
-742	クロダイ:Acanthopagrus schlegelii
-596	ゴンズイ:Plotosus japonicus
+id	DRR057677.fastq
+カタクチイワシ科:Engraulis japonicus	20.7716
+ヒイラギ:Nuchequula nuchalis	18.8408
+ホソトビウオ:Cypselurus hiraii	10.1126
+クサフグ:Takifugu alboplumbeus	7.39328
+ハゼ科:Chaeturichthys stigmatias	7.1439
+マアジ:Trachurus japonicus	5.88969
+マタナゴ:Ditrema temminckii pacificum	4.52728
+ボラ:Mugil cephalus	4.07987
+サヨリ:Hyporhamphus sajori	3.77182
+Zacco platypus	2.98152
+シロギス:Sillago japonica	2.74864
+ブリ:Seriola quinqueradiata	2.36174
+Parambassis lala	2.3159
+マルアジ:Decapterus maruadsi	1.60261
+ベニザケ・ヒメマス:Oncorhynchus nerka	1.50909
+イソギンポ:Parablennius yatabei	1.49626
+クロダイ:Acanthopagrus schlegelii	1.36057
+ゴンズイ:Plotosus japonicus	1.09286

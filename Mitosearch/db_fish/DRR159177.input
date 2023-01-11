@@ -1,7 +1,8 @@
-80	オオウナギ:Anguilla marmorata
-60	クロヨシノボリ:Rhinogobius brunneus
-21	シマヨシノボリ:Rhinogobius nagoyae
-14	アヤヨシノボリ:Rhinogobius sp. MO
-8	ボウズハゼ:Sicyopterus japonicus
-7	テンジクカワアナゴ:Eleotris fusca
-4	ルリボウズハゼ:Sicyopterus lagocephalus
+id	DRR159177.fastq
+オオウナギ:Anguilla marmorata	41.2371
+クロヨシノボリ:Rhinogobius brunneus	30.9278
+シマヨシノボリ:Rhinogobius nagoyae	10.8247
+アヤヨシノボリ:Rhinogobius sp. MO	7.21649
+ボウズハゼ:Sicyopterus japonicus	4.12371
+テンジクカワアナゴ:Eleotris fusca	3.60825
+ルリボウズハゼ:Sicyopterus lagocephalus	2.06186

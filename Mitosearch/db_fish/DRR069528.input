@@ -1,8 +1,9 @@
-45639	クロヨシノボリ:Rhinogobius brunneus
-19712	Tribolodon hakonensis
-2750	Zacco platypus
-1774	Phoxinus steindachneri
-1550	カワムツ:Nipponocypris temminckii
-1165	アユ:Plecoglossus altivelis
-1003	ウツセミカジカ:Cottus reinii
-801	シマヨシノボリ:Rhinogobius nagoyae
+id	DRR069528.fastq
+クロヨシノボリ:Rhinogobius brunneus	61.3477
+Tribolodon hakonensis	26.4968
+Zacco platypus	3.69653
+Phoxinus steindachneri	2.3846
+カワムツ:Nipponocypris temminckii	2.0835
+アユ:Plecoglossus altivelis	1.56599
+ウツセミカジカ:Cottus reinii	1.34823
+シマヨシノボリ:Rhinogobius nagoyae	1.0767

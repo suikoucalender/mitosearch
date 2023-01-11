@@ -1,10 +1,11 @@
-28543	ナイルティラピア:Oreochromis niloticus
-15054	コクレン:Hypophthalmichthys nobilis
-7400	Cyclocheilichthys enoplos
-5999	Labeo rohita
-5869	Barbonymus gonionotus
-4128	カワスズメ科:Oreochromis sp. 'red tilapia'
-3147	ハクレン:Hypophthalmichthys molitrix
-3015	Anabas testudineus
-2514	Cirrhinus mrigala
-1801	Osteochilus melanopleurus
+id	ERR3514640.fastq
+ナイルティラピア:Oreochromis niloticus	36.8439
+コクレン:Hypophthalmichthys nobilis	19.432
+Cyclocheilichthys enoplos	9.55208
+Labeo rohita	7.74364
+Barbonymus gonionotus	7.57584
+カワスズメ科:Oreochromis sp. 'red tilapia'	5.32851
+ハクレン:Hypophthalmichthys molitrix	4.06222
+Anabas testudineus	3.89183
+Cirrhinus mrigala	3.24513
+Osteochilus melanopleurus	2.32477

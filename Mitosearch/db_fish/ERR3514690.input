@@ -1,22 +1,23 @@
-8610	Mystacoleucus marginatus
-8188	Pristolepis rubripinnis
-7655	Hypsibarbus salweenensis
-7004	Labeo chrysophekadion
-6043	Trichopodus pectoralis
-3648	Barbonymus schwanefeldii
-3507	Yasuhikotakia eos
-2722	Trichopodus leerii
-2515	カワスズメ科:Oreochromis sp. 'red tilapia'
-2496	Anabas testudineus
-2165	Barbonymus gonionotus
-2140	Barbonymus altus
-2027	Cyclocheilichthys armatus
-2017	Notopterus notopterus
-1813	ナイルティラピア:Oreochromis niloticus
-1640	Luciobarbus capito
-1467	Puntioplites proctozystron
-1432	Acantopsis choirorhynchos
-1409	Trichopsis vittata
-1326	Syncrossus helodes
-1221	Mastacembelus favus
-1141	Crossocheilus reticulatus
+id	ERR3514690.fastq
+Mystacoleucus marginatus	11.9275
+Pristolepis rubripinnis	11.3429
+Hypsibarbus salweenensis	10.6045
+Labeo chrysophekadion	9.70271
+Trichopodus pectoralis	8.37143
+Barbonymus schwanefeldii	5.05361
+Yasuhikotakia eos	4.85828
+Trichopodus leerii	3.77081
+カワスズメ科:Oreochromis sp. 'red tilapia'	3.48406
+Anabas testudineus	3.45773
+Barbonymus gonionotus	2.9992
+Barbonymus altus	2.96456
+Cyclocheilichthys armatus	2.80802
+Notopterus notopterus	2.79417
+ナイルティラピア:Oreochromis niloticus	2.51157
+Luciobarbus capito	2.27191
+Puntioplites proctozystron	2.03225
+Acantopsis choirorhynchos	1.98376
+Trichopsis vittata	1.9519
+Syncrossus helodes	1.83692
+Mastacembelus favus	1.69146
+Crossocheilus reticulatus	1.58064

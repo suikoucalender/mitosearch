@@ -1,7 +1,8 @@
-55845	Pimephales notatus
-8814	Cyprinella spiloptera
-7311	コイ:Cyprinus carpio
-6666	Hybopsis winchelli
-3177	Ictiobus bubalus
-1982	Phenacobius mirabilis
-1509	Notropis blennius
+id	SRR12451376.fastq
+Pimephales notatus	65.4659
+Cyprinella spiloptera	10.3325
+コイ:Cyprinus carpio	8.57052
+Hybopsis winchelli	7.8144
+Ictiobus bubalus	3.72433
+Phenacobius mirabilis	2.32345
+Notropis blennius	1.76897

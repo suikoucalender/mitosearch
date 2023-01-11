@@ -1,9 +1,10 @@
-476	カスザメ科:Squatina dumeril
-131	ドチザメ:Triakis scyllium
-131	トビエイ科:Myliobatis californica
-34	Gibbonsia montereyensis
-31	ネコザメ科:Heterodontus francisci
-28	エビスザメ:Notorynchus cepedianus
-22	Bairdiella chrysoura
-21	エソ科:Synodus lucioceps
-10	Paralabrax clathratus
+id	SRR12791275.fastq
+カスザメ科:Squatina dumeril	53.8462
+ドチザメ:Triakis scyllium	14.819
+トビエイ科:Myliobatis californica	14.819
+Gibbonsia montereyensis	3.84615
+ネコザメ科:Heterodontus francisci	3.50679
+エビスザメ:Notorynchus cepedianus	3.16742
+Bairdiella chrysoura	2.48869
+エソ科:Synodus lucioceps	2.37557
+Paralabrax clathratus	1.13122

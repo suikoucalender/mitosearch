@@ -1,8 +1,9 @@
-116	ミナミメダカ:Oryzias latipes
-94	カワムツ:Nipponocypris temminckii
-63	ギギ:Tachysurus nudiceps
-42	カワヨシノボリ:Rhinogobius flumineus
-35	ドンコ科:Odontobutis obscura
-31	サンフィッシュ科:Lepomis cyanellus
-21	ドジョウ:Misgurnus anguillicaudatus
-21	コイ科:Hemigrammocypris neglectus
+id	DRR221552.fastq
+ミナミメダカ:Oryzias latipes	27.4232
+カワムツ:Nipponocypris temminckii	22.2222
+ギギ:Tachysurus nudiceps	14.8936
+カワヨシノボリ:Rhinogobius flumineus	9.92908
+ドンコ科:Odontobutis obscura	8.27423
+サンフィッシュ科:Lepomis cyanellus	7.32861
+ドジョウ:Misgurnus anguillicaudatus	4.96454
+コイ科:Hemigrammocypris neglectus	4.96454

@@ -1,5 +1,6 @@
-5053	メバル科:Sebastes fasciatus
-1674	メバル科:Sebastes mentella
-1642	オオカミウオ科:Anarhichas denticulatus
-806	カラフトシシャモ:Mallotus villosus
-628	トクビレ科:Sarritor frenatus
+id	SRR12008424.fastq
+メバル科:Sebastes fasciatus	51.5454
+メバル科:Sebastes mentella	17.0764
+オオカミウオ科:Anarhichas denticulatus	16.75
+カラフトシシャモ:Mallotus villosus	8.22197
+トクビレ科:Sarritor frenatus	6.4062

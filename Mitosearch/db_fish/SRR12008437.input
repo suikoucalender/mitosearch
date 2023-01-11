@@ -1,7 +1,8 @@
-11699	メバル科:Sebastes fasciatus
-1150	Moxostoma anisurum
-1120	Urophycis tenuis
-662	チョウザメ科:Acipenser fulvescens
-554	Sander vitreus
-539	Catostomus catostomus
-298	ヤマトヒゲダラ:Enchelyopus cimbrius
+id	SRR12008437.fastq
+メバル科:Sebastes fasciatus	73.0183
+Moxostoma anisurum	7.17763
+Urophycis tenuis	6.99039
+チョウザメ科:Acipenser fulvescens	4.13182
+Sander vitreus	3.45775
+Catostomus catostomus	3.36412
+ヤマトヒゲダラ:Enchelyopus cimbrius	1.85994

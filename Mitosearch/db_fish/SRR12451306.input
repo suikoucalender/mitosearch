@@ -1,8 +1,9 @@
-294	Moxostoma cervinum
-114	コイ:Cyprinus carpio
-98	Carpiodes cyprinus
-79	Ictiobus bubalus
-49	Moxostoma macrolepidotum
-28	Moxostoma anisurum
-9	Thoburnia rhothoeca
-9	Dorosoma cepedianum
+id	SRR12451306.fastq
+Moxostoma cervinum	43.2353
+コイ:Cyprinus carpio	16.7647
+Carpiodes cyprinus	14.4118
+Ictiobus bubalus	11.6176
+Moxostoma macrolepidotum	7.20588
+Moxostoma anisurum	4.11765
+Thoburnia rhothoeca	1.32353
+Dorosoma cepedianum	1.32353

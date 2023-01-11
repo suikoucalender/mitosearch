@@ -1,9 +1,10 @@
-34848	フグ科:Takifugu fasciatus
-3683	カタクチイワシ科:Engraulis japonicus
-3544	マアジ:Trachurus japonicus
-2605	アカオビシマハゼ:Tridentiger trigonocephalus
-2058	シロメバル:Sebastes cheni
-1771	キジハタ:Epinephelus akaara
-1604	マガレイ:Pseudopleuronectes herzensteini
-902	スジハゼ:Acentrogobius virgatulus
-686	メナダ:Planiliza haematocheilus
+id	DRR057513.fastq
+フグ科:Takifugu fasciatus	67.403
+カタクチイワシ科:Engraulis japonicus	7.12365
+マアジ:Trachurus japonicus	6.8548
+アカオビシマハゼ:Tridentiger trigonocephalus	5.03859
+シロメバル:Sebastes cheni	3.98058
+キジハタ:Epinephelus akaara	3.42547
+マガレイ:Pseudopleuronectes herzensteini	3.10245
+スジハゼ:Acentrogobius virgatulus	1.74465
+メナダ:Planiliza haematocheilus	1.32686

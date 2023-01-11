@@ -1,7 +1,8 @@
-30917	ブラウントラウト:Salmo trutta
-11174	サケ科:Oncorhynchus mykiss newberrii
-10783	Perca fluviatilis
-5261	サケ科:Oncorhynchus mykiss irideus
-3854	Tinca tinca
-3618	サンフィッシュ科:Lepomis gibbosus
-1562	ニジマス:Oncorhynchus mykiss
+id	ERR8701925.fastq
+ブラウントラウト:Salmo trutta	46.0287
+サケ科:Oncorhynchus mykiss newberrii	16.6357
+Perca fluviatilis	16.0535
+サケ科:Oncorhynchus mykiss irideus	7.83248
+Tinca tinca	5.73777
+サンフィッシュ科:Lepomis gibbosus	5.38641
+ニジマス:Oncorhynchus mykiss	2.32548

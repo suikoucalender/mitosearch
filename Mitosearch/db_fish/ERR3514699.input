@@ -1,10 +1,11 @@
-21262	コクレン:Hypophthalmichthys nobilis
-21010	ナイルティラピア:Oreochromis niloticus
-9709	Cyclocheilichthys enoplos
-7612	サバ科:Rastrelliger brachysoma
-6542	Labeo rohita
-6512	タイワンドジョウ科:Channa striata
-4376	Barbonymus gonionotus
-2720	Puntioplites proctozystron
-1699	Anabas testudineus
-1046	Hemibagrus spilopterus
+id	ERR3514699.fastq
+コクレン:Hypophthalmichthys nobilis	25.7759
+ナイルティラピア:Oreochromis niloticus	25.4704
+Cyclocheilichthys enoplos	11.7702
+サバ科:Rastrelliger brachysoma	9.22801
+Labeo rohita	7.93085
+タイワンドジョウ科:Channa striata	7.89448
+Barbonymus gonionotus	5.30501
+Puntioplites proctozystron	3.29745
+Anabas testudineus	2.05969
+Hemibagrus spilopterus	1.26806

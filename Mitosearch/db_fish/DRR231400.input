@@ -1,12 +1,13 @@
-46053	ヌマチチブ:Tridentiger brevispinis
-3069	クロヨシノボリ:Rhinogobius brunneus
-2743	コイ:Cyprinus carpio
-1864	シマヨシノボリ:Rhinogobius nagoyae
-1526	サンフィッシュ科:Micropterus salmoides
-1230	チチブ:Tridentiger obscurus
-1162	カマツカ:Pseudogobio esocinus
-1116	Phoxinus steindachneri
-1106	マハゼ:Acanthogobius flavimanus
-1076	ウキゴリ:Gymnogobius urotaenia
-977	スズキ:Lateolabrax japonicus
-656	アユ:Plecoglossus altivelis
+id	DRR231400.fastq
+ヌマチチブ:Tridentiger brevispinis	73.593
+クロヨシノボリ:Rhinogobius brunneus	4.90428
+コイ:Cyprinus carpio	4.38333
+シマヨシノボリ:Rhinogobius nagoyae	2.97868
+サンフィッシュ科:Micropterus salmoides	2.43856
+チチブ:Tridentiger obscurus	1.96555
+カマツカ:Pseudogobio esocinus	1.85688
+Phoxinus steindachneri	1.78337
+マハゼ:Acanthogobius flavimanus	1.76739
+ウキゴリ:Gymnogobius urotaenia	1.71945
+スズキ:Lateolabrax japonicus	1.56125
+アユ:Plecoglossus altivelis	1.04829

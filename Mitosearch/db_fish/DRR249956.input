@@ -1,9 +1,10 @@
-5044	コノシロ:Konosirus punctatus
-4470	カタクチイワシ科:Engraulis japonicus
-2724	アカアマダイ:Branchiostegus japonicus
-1303	シロギス:Sillago japonica
-1203	スジハゼ:Acentrogobius virgatulus
-856	サッパ:Sardinella zunasi
-572	ハタタテヌメリ:Callionymus valenciennei
-277	スズキ:Lateolabrax japonicus
-199	Eutrigla gurnardus
+id	DRR249956.fastq
+コノシロ:Konosirus punctatus	30.2979
+カタクチイワシ科:Engraulis japonicus	26.8501
+アカアマダイ:Branchiostegus japonicus	16.3623
+シロギス:Sillago japonica	7.82677
+スジハゼ:Acentrogobius virgatulus	7.22609
+サッパ:Sardinella zunasi	5.14176
+ハタタテヌメリ:Callionymus valenciennei	3.43585
+スズキ:Lateolabrax japonicus	1.66386
+Eutrigla gurnardus	1.19534

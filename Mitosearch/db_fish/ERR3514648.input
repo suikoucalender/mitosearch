@@ -1,6 +1,7 @@
-39712	ナイルティラピア:Oreochromis niloticus
-22918	カワスズメ科:Oreochromis sp. 'red tilapia'
-1375	タイワンドジョウ科:Channa striata
-1085	タイワンドジョウ科:Channa micropeltes
-1015	Mastacembelus favus
-1011	Cyclocheilichthys enoplos
+id	ERR3514648.fastq
+ナイルティラピア:Oreochromis niloticus	59.1692
+カワスズメ科:Oreochromis sp. 'red tilapia'	34.1469
+タイワンドジョウ科:Channa striata	2.04869
+タイワンドジョウ科:Channa micropeltes	1.6166
+Mastacembelus favus	1.51231
+Cyclocheilichthys enoplos	1.50635

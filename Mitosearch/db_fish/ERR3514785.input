@@ -1,8 +1,9 @@
-38413	ナイルティラピア:Oreochromis niloticus
-33932	カワスズメ科:Oreochromis sp. 'red tilapia'
-11615	Mystacoleucus marginatus
-5296	Hypsibarbus salweenensis
-2381	Barbonymus gonionotus
-1924	Notopterus notopterus
-1457	Raiamas guttatus
-1043	Systomus orphoides
+id	ERR3514785.fastq
+ナイルティラピア:Oreochromis niloticus	39.9881
+カワスズメ科:Oreochromis sp. 'red tilapia'	35.3234
+Mystacoleucus marginatus	12.0913
+Hypsibarbus salweenensis	5.51316
+Barbonymus gonionotus	2.47863
+Notopterus notopterus	2.00289
+Raiamas guttatus	1.51674
+Systomus orphoides	1.08577

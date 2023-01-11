@@ -1,7 +1,8 @@
-3331	ウナギ科:Anguilla australis australis
-2718	Galaxias rostratus
-2419	Gobiomorphus huttoni
-1938	ウナギ科:Anguilla dieffenbachii
-397	Galaxias maculatus
-202	Retropinna retropinna
-174	Galaxias fasciatus
+id	SRR14531909.fastq
+ウナギ科:Anguilla australis australis	29.7969
+Galaxias rostratus	24.3134
+Gobiomorphus huttoni	21.6388
+ウナギ科:Anguilla dieffenbachii	17.3361
+Galaxias maculatus	3.5513
+Retropinna retropinna	1.80696
+Galaxias fasciatus	1.55649

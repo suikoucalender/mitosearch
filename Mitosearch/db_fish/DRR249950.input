@@ -1,9 +1,10 @@
-14011	カタクチイワシ科:Engraulis japonicus
-1720	コノシロ:Konosirus punctatus
-920	チダイ:Evynnis tumifrons
-553	サワラ:Scomberomorus niphonius
-544	シログチ:Pennahia argentata
-494	サッパ:Sardinella zunasi
-378	スケトウダラ:Gadus chalcogrammus
-240	Parambassis lala
-231	クロダイ:Acanthopagrus schlegelii
+id	DRR249950.fastq
+カタクチイワシ科:Engraulis japonicus	73.3906
+コノシロ:Konosirus punctatus	9.00948
+チダイ:Evynnis tumifrons	4.81902
+サワラ:Scomberomorus niphonius	2.89665
+シログチ:Pennahia argentata	2.84951
+サッパ:Sardinella zunasi	2.58761
+スケトウダラ:Gadus chalcogrammus	1.97999
+Parambassis lala	1.25714
+クロダイ:Acanthopagrus schlegelii	1.20999

@@ -1,7 +1,8 @@
-30688	カレイ科:Pseudopleuronectes americanus
-18589	タラ科:Gadus morhua
-6562	カジカ科:Triglops murrayi
-4175	オオカミウオ科:Anarhichas denticulatus
-3689	カレイ科:Glyptocephalus cynoglossus
-2271	メバル科:Sebastes fasciatus
-1156	メバル科:Sebastes mentella
+id	SRR12008398.fastq
+カレイ科:Pseudopleuronectes americanus	45.7143
+タラ科:Gadus morhua	27.691
+カジカ科:Triglops murrayi	9.77506
+オオカミウオ科:Anarhichas denticulatus	6.21928
+カレイ科:Glyptocephalus cynoglossus	5.49531
+メバル科:Sebastes fasciatus	3.38299
+メバル科:Sebastes mentella	1.72203

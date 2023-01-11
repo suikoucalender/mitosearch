@@ -1,5 +1,6 @@
-110922	メバル科:Sebastes fasciatus
-12447	メバル科:Sebastes mentella
-9574	アジ科:Scomber scombrus
-5173	Urophycis tenuis
-2394	オヒョウ:Hippoglossus stenolepis
+id	SRR12008535.fastq
+メバル科:Sebastes fasciatus	78.9424
+メバル科:Sebastes mentella	8.85844
+アジ科:Scomber scombrus	6.81375
+Urophycis tenuis	3.68159
+オヒョウ:Hippoglossus stenolepis	1.70379

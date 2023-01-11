@@ -1,17 +1,18 @@
-5491	Labeo chrysophekadion
-2478	Ambastaia sidthimunki
-1655	Hypsibarbus vernayi
-884	Barbonymus schwanefeldii
-776	Bagarius yarrelli
-614	Osphronemus goramy
-598	Crossocheilus reticulatus
-391	ナイルティラピア:Oreochromis niloticus
-361	カワスズメ科:Oreochromis sp. 'red tilapia'
-309	Mystus cavasius
-306	Cirrhinus molitorella
-223	Bangana tungting
-220	Cyclocheilichthys armatus
-204	Pangasianodon hypophthalmus
-203	Glyptothorax annandalei
-198	Puntioplites proctozystron
-168	Hemibagrus sp. RCH-2015
+id	ERR3514756.fastq
+Labeo chrysophekadion	36.4149
+Ambastaia sidthimunki	16.4335
+Hypsibarbus vernayi	10.9755
+Barbonymus schwanefeldii	5.86246
+Bagarius yarrelli	5.14623
+Osphronemus goramy	4.07189
+Crossocheilus reticulatus	3.96578
+ナイルティラピア:Oreochromis niloticus	2.59301
+カワスズメ科:Oreochromis sp. 'red tilapia'	2.39406
+Mystus cavasius	2.04921
+Cirrhinus molitorella	2.02931
+Bangana tungting	1.47888
+Cyclocheilichthys armatus	1.45898
+Pangasianodon hypophthalmus	1.35287
+Glyptothorax annandalei	1.34624
+Puntioplites proctozystron	1.31308
+Hemibagrus sp. RCH-2015	1.11413

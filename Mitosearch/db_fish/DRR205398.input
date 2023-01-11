@@ -1,23 +1,24 @@
-14134	クマササハナムロ:Pterocaesio tile
-7840	ミナミキビナゴ:Spratelloides delicatulus
-6006	ハマフエフキ:Lethrinus nebulosus
-4858	ユメウメイロ:Caesio cuning
-4592	タカサゴ:Pterocaesio digramma
-4046	ロウソクギンポ:Rhabdoblennius nitidus
-3196	イスズミ科:Kyphosus sectatrix
-3010	クサギンポ:Enneapterygius philippinus
-2707	ヒメダツ:Platybelone argalus platyura
-2445	ミノカエルウオ:Cirripectes polyzona
-2422	ナンヨウブダイ:Chlorurus microrhinos
-2380	オキナワスズメダイ:Pomachromis richardsoni
-2339	ヘビギンポ科:Enneapterygius etheostomus
-2268	ネズスズメダイ:Chrysiptera glauca
-1870	キンセンイシモチ:Ostorhinchus wassinki
-1859	イスズミ:Kyphosus vaigiensis
-1707	イチモンジブダイ:Scarus forsteni
-1695	オヤビッチャ:Abudefduf vaigiensis
-1300	ヤマブキベラ:Thalassoma lutescens
-1257	コガシラベラ:Thalassoma amblycephalum
-1211	オビブダイ:Scarus schlegeli
-1157	ソロイモンガラ:Melichthys niger
-1118	ミゾレチョウチョウウオ:Chaetodon kleinii
+id	DRR205398.fastq
+クマササハナムロ:Pterocaesio tile	18.7411
+ミナミキビナゴ:Spratelloides delicatulus	10.3955
+ハマフエフキ:Lethrinus nebulosus	7.96372
+ユメウメイロ:Caesio cuning	6.44152
+タカサゴ:Pterocaesio digramma	6.08881
+ロウソクギンポ:Rhabdoblennius nitidus	5.36484
+イスズミ科:Kyphosus sectatrix	4.23777
+クサギンポ:Enneapterygius philippinus	3.99114
+ヒメダツ:Platybelone argalus platyura	3.58938
+ミノカエルウオ:Cirripectes polyzona	3.24197
+ナンヨウブダイ:Chlorurus microrhinos	3.21148
+オキナワスズメダイ:Pomachromis richardsoni	3.15579
+ヘビギンポ科:Enneapterygius etheostomus	3.10142
+ネズスズメダイ:Chrysiptera glauca	3.00728
+キンセンイシモチ:Ostorhinchus wassinki	2.47955
+イスズミ:Kyphosus vaigiensis	2.46496
+イチモンジブダイ:Scarus forsteni	2.26342
+オヤビッチャ:Abudefduf vaigiensis	2.2475
+ヤマブキベラ:Thalassoma lutescens	1.72375
+コガシラベラ:Thalassoma amblycephalum	1.66673
+オビブダイ:Scarus schlegeli	1.60574
+ソロイモンガラ:Melichthys niger	1.53414
+ミゾレチョウチョウウオ:Chaetodon kleinii	1.48242

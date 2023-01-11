@@ -1,13 +1,14 @@
-26164	カタクチイワシ科:Engraulis japonicus
-7180	フグ科:Takifugu fasciatus
-5602	マアジ:Trachurus japonicus
-4526	スズキ:Lateolabrax japonicus
-4036	コノシロ:Konosirus punctatus
-2365	ブリ:Seriola quinqueradiata
-2077	サヨリ:Hyporhamphus sajori
-2029	クサフグ:Takifugu alboplumbeus
-1549	Parambassis lala
-1277	コイ:Cyprinus carpio
-1239	シロギス:Sillago japonica
-874	クロダイ:Acanthopagrus schlegelii
-801	サワラ:Scomberomorus niphonius
+id	DRR057630.fastq
+カタクチイワシ科:Engraulis japonicus	43.8119
+フグ科:Takifugu fasciatus	12.023
+マアジ:Trachurus japonicus	9.3806
+スズキ:Lateolabrax japonicus	7.57883
+コノシロ:Konosirus punctatus	6.75832
+ブリ:Seriola quinqueradiata	3.96021
+サヨリ:Hyporhamphus sajori	3.47796
+クサフグ:Takifugu alboplumbeus	3.39758
+Parambassis lala	2.59381
+コイ:Cyprinus carpio	2.13835
+シロギス:Sillago japonica	2.07472
+クロダイ:Acanthopagrus schlegelii	1.46352
+サワラ:Scomberomorus niphonius	1.34128

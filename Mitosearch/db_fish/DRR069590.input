@@ -1,8 +1,9 @@
-72	アユ:Plecoglossus altivelis
-49	Phoxinus steindachneri
-15	クロヨシノボリ:Rhinogobius brunneus
-9	サケ科:Oncorhynchus masou 'Biwa'
-7	カワムツ:Nipponocypris temminckii
-5	Zacco platypus
-5	コイ科:Rhynchocypris jouyi
-2	サクラマス・ヤマメ:Oncorhynchus masou masou
+id	DRR069590.fastq
+アユ:Plecoglossus altivelis	43.9024
+Phoxinus steindachneri	29.878
+クロヨシノボリ:Rhinogobius brunneus	9.14634
+サケ科:Oncorhynchus masou 'Biwa'	5.4878
+カワムツ:Nipponocypris temminckii	4.26829
+Zacco platypus	3.04878
+コイ科:Rhynchocypris jouyi	3.04878
+サクラマス・ヤマメ:Oncorhynchus masou masou	1.21951

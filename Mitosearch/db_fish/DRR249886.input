@@ -1,7 +1,8 @@
-4958	コノシロ:Konosirus punctatus
-2480	カタクチイワシ科:Engraulis japonicus
-847	ニシン科:Sardinops sagax
-134	ボラ:Mugil cephalus
-119	マサバ:Scomber japonicus
-115	チダイ:Evynnis tumifrons
-97	アカアマダイ:Branchiostegus japonicus
+id	DRR249886.fastq
+コノシロ:Konosirus punctatus	56.6629
+カタクチイワシ科:Engraulis japonicus	28.3429
+ニシン科:Sardinops sagax	9.68
+ボラ:Mugil cephalus	1.53143
+マサバ:Scomber japonicus	1.36
+チダイ:Evynnis tumifrons	1.31429
+アカアマダイ:Branchiostegus japonicus	1.10857

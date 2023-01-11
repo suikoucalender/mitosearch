@@ -1,12 +1,13 @@
-29529	ナイルティラピア:Oreochromis niloticus
-13242	コクレン:Hypophthalmichthys nobilis
-5795	Labeo rohita
-5768	カワスズメ科:Oreochromis sp. 'red tilapia'
-3430	ハクレン:Hypophthalmichthys molitrix
-3250	Barbonymus gonionotus
-2820	Cyclocheilichthys enoplos
-2509	Cirrhinus mrigala
-1446	タイワンドジョウ科:Channa striata
-1224	Anabas testudineus
-1184	Barbonymus altus
-805	Trichopodus pectoralis
+id	ERR3514811.fastq
+ナイルティラピア:Oreochromis niloticus	41.589
+コクレン:Hypophthalmichthys nobilis	18.6502
+Labeo rohita	8.16174
+カワスズメ科:Oreochromis sp. 'red tilapia'	8.12371
+ハクレン:Hypophthalmichthys molitrix	4.83085
+Barbonymus gonionotus	4.57734
+Cyclocheilichthys enoplos	3.97172
+Cirrhinus mrigala	3.5337
+タイワンドジョウ科:Channa striata	2.03656
+Anabas testudineus	1.7239
+Barbonymus altus	1.66756
+Trichopodus pectoralis	1.13377

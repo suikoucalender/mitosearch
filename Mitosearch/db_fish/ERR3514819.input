@@ -1,8 +1,9 @@
-60825	ナイルティラピア:Oreochromis niloticus
-17051	カワスズメ科:Oreochromis sp. 'red tilapia'
-2917	Barbonymus schwanefeldii
-1866	タイワンドジョウ科:Channa striata
-1759	Paralaubuca typus
-1503	Labiobarbus spilopleura
-1412	Hypsibarbus salweenensis
-1116	Hemibagrus spilopterus
+id	ERR3514819.fastq
+ナイルティラピア:Oreochromis niloticus	68.7684
+カワスズメ科:Oreochromis sp. 'red tilapia'	19.2778
+Barbonymus schwanefeldii	3.29795
+タイワンドジョウ科:Channa striata	2.10969
+Paralaubuca typus	1.98872
+Labiobarbus spilopleura	1.69928
+Hypsibarbus salweenensis	1.5964
+Hemibagrus spilopterus	1.26174

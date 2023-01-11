@@ -1,6 +1,7 @@
-5144	スマ:Euthynnus affinis
-582	ジンベエザメ:Rhincodon typus
-97	トラフザメ科:Stegostoma fasciatum
-88	オオテンジクザメ:Nebrius ferrugineus
-68	グルクマ:Rastrelliger kanagurta
-66	マダラトビエイ科:Aetobatus narinari
+id	DRR075171.fastq
+スマ:Euthynnus affinis	85.0951
+ジンベエザメ:Rhincodon typus	9.62779
+トラフザメ科:Stegostoma fasciatum	1.60463
+オオテンジクザメ:Nebrius ferrugineus	1.45575
+グルクマ:Rastrelliger kanagurta	1.1249
+マダラトビエイ科:Aetobatus narinari	1.09181

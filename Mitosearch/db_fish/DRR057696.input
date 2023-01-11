@@ -1,8 +1,9 @@
-14859	カタクチイワシ科:Engraulis japonicus
-7298	クサフグ:Takifugu alboplumbeus
-2703	フグ科:Takifugu fasciatus
-1848	Parambassis lala
-1520	サケ:Oncorhynchus keta
-1126	クロダイ:Acanthopagrus schlegelii
-1056	ボラ:Mugil cephalus
-833	ホソトビウオ:Cypselurus hiraii
+id	DRR057696.fastq
+カタクチイワシ科:Engraulis japonicus	47.5595
+クサフグ:Takifugu alboplumbeus	23.3588
+フグ科:Takifugu fasciatus	8.65154
+Parambassis lala	5.91492
+サケ:Oncorhynchus keta	4.86509
+クロダイ:Acanthopagrus schlegelii	3.60401
+ボラ:Mugil cephalus	3.37996
+ホソトビウオ:Cypselurus hiraii	2.6662

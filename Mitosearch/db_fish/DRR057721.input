@@ -1,9 +1,10 @@
-9800	セトダイ:Hapalogenys analis
-5035	ホソトビウオ:Cypselurus hiraii
-3722	イソギンポ:Parablennius yatabei
-2310	フグ科:Takifugu fasciatus
-1938	アカオビシマハゼ:Tridentiger trigonocephalus
-1903	ブリ:Seriola quinqueradiata
-1417	ホシササノハベラ:Pseudolabrus sieboldi
-1215	Parambassis lala
-741	クロダイ:Acanthopagrus schlegelii
+id	DRR057721.fastq
+セトダイ:Hapalogenys analis	34.899
+ホソトビウオ:Cypselurus hiraii	17.9303
+イソギンポ:Parablennius yatabei	13.2545
+フグ科:Takifugu fasciatus	8.2262
+アカオビシマハゼ:Tridentiger trigonocephalus	6.90146
+ブリ:Seriola quinqueradiata	6.77682
+ホシササノハベラ:Pseudolabrus sieboldi	5.04612
+Parambassis lala	4.32677
+クロダイ:Acanthopagrus schlegelii	2.63879

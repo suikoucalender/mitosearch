@@ -1,10 +1,11 @@
-13749	コノシロ:Konosirus punctatus
-5480	ボラ:Mugil cephalus
-4622	キンメダイ:Beryx splendens
-1558	カタクチイワシ科:Engraulis japonicus
-1443	マサバ:Scomber japonicus
-1019	シロギス:Sillago japonica
-745	スズキ:Lateolabrax japonicus
-442	サツキハゼ:Parioglossus dotui
-370	アカエイ:Hemitrygon akajei
-309	ベニザケ・ヒメマス:Oncorhynchus nerka
+id	DRR249747.fastq
+コノシロ:Konosirus punctatus	46.2353
+ボラ:Mugil cephalus	18.4282
+キンメダイ:Beryx splendens	15.5429
+カタクチイワシ科:Engraulis japonicus	5.23926
+マサバ:Scomber japonicus	4.85254
+シロギス:Sillago japonica	3.42671
+スズキ:Lateolabrax japonicus	2.5053
+サツキハゼ:Parioglossus dotui	1.48636
+アカエイ:Hemitrygon akajei	1.24424
+ベニザケ・ヒメマス:Oncorhynchus nerka	1.03911

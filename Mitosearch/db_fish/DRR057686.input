@@ -1,12 +1,13 @@
-12545	カタクチイワシ科:Engraulis japonicus
-5627	クサフグ:Takifugu alboplumbeus
-5538	Parambassis lala
-3223	クロダイ:Acanthopagrus schlegelii
-2634	チダイ:Evynnis tumifrons
-2153	アカカマス:Sphyraena pinguis
-2036	ヒイラギ:Nuchequula nuchalis
-1120	チチブ:Tridentiger obscurus
-607	スケトウダラ:Gadus chalcogrammus
-415	コノシロ:Konosirus punctatus
-414	ホソトビウオ:Cypselurus hiraii
-413	アカオビシマハゼ:Tridentiger trigonocephalus
+id	DRR057686.fastq
+カタクチイワシ科:Engraulis japonicus	34.1593
+クサフグ:Takifugu alboplumbeus	15.322
+Parambassis lala	15.0796
+クロダイ:Acanthopagrus schlegelii	8.77604
+チダイ:Evynnis tumifrons	7.17223
+アカカマス:Sphyraena pinguis	5.86249
+ヒイラギ:Nuchequula nuchalis	5.54391
+チチブ:Tridentiger obscurus	3.04969
+スケトウダラ:Gadus chalcogrammus	1.65283
+コノシロ:Konosirus punctatus	1.13002
+ホソトビウオ:Cypselurus hiraii	1.1273
+アカオビシマハゼ:Tridentiger trigonocephalus	1.12457

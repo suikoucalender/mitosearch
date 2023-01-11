@@ -1,11 +1,12 @@
-64184	ヌマチチブ:Tridentiger brevispinis
-6547	チチブ:Tridentiger obscurus
-3464	コイ:Cyprinus carpio
-2442	クロヨシノボリ:Rhinogobius brunneus
-2372	マハゼ:Acanthogobius flavimanus
-1801	ゲンゴロウブナ:Carassius cuvieri
-1688	ボラ:Mugil cephalus
-1292	ギンブナ:Carassius langsdorfii
-1229	アユ:Plecoglossus altivelis
-1202	ニゴイ:Hemibarbus barbus
-990	コイ科:Hemibarbus maculatus
+id	DRR231450.fastq
+ヌマチチブ:Tridentiger brevispinis	73.5962
+チチブ:Tridentiger obscurus	7.50708
+コイ:Cyprinus carpio	3.97198
+クロヨシノボリ:Rhinogobius brunneus	2.80011
+マハゼ:Acanthogobius flavimanus	2.71984
+ゲンゴロウブナ:Carassius cuvieri	2.06511
+ボラ:Mugil cephalus	1.93554
+ギンブナ:Carassius langsdorfii	1.48146
+アユ:Plecoglossus altivelis	1.40923
+ニゴイ:Hemibarbus barbus	1.37827
+コイ科:Hemibarbus maculatus	1.13518

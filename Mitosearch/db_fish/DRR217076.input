@@ -1,12 +1,13 @@
-75	Mystus vittatus
-40	Systomus sarana sarana
-34	Lepidocephalichthys sp. CBM-ZF-14149
-30	Rasbora myersi
-26	タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950
-24	ハゼ科:Glossogobius giuris
-23	Trigonostigma espei
-20	コウタイ:Channa asiatica
-11	Devario sp. CBM:ZF:11302
-5	Garra kempi
-4	Rasbora daniconius
-3	Systomus sarana
+id	DRR217076.fastq
+Mystus vittatus	25.4237
+Systomus sarana sarana	13.5593
+Lepidocephalichthys sp. CBM-ZF-14149	11.5254
+Rasbora myersi	10.1695
+タイワンドジョウ科:Channa cf. orientalis CBM:ZF:11950	8.81356
+ハゼ科:Glossogobius giuris	8.13559
+Trigonostigma espei	7.79661
+コウタイ:Channa asiatica	6.77966
+Devario sp. CBM:ZF:11302	3.72881
+Garra kempi	1.69492
+Rasbora daniconius	1.35593
+Systomus sarana	1.01695

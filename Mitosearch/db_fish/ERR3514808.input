@@ -1,15 +1,16 @@
-13911	Clupeichthys goniognathus
-7331	Mystacoleucus marginatus
-7017	Cynoscion regalis
-6237	Hypsibarbus salweenensis
-5815	Labeo chrysophekadion
-5341	Amblyrhynchichthys truncatus
-4993	Barbonymus altus
-4673	Sundasalanx praecox
-4395	Cyclocheilichthys enoplos
-4038	Barbonymus schwanefeldii
-3792	Luciobarbus capito
-3734	Barbonymus gonionotus
-3646	Mystus sp. EM2
-2126	Sikukia gudgeri
-2087	Hemibagrus sp. RCH-2015
+id	ERR3514808.fastq
+Clupeichthys goniognathus	17.5786
+Mystacoleucus marginatus	9.2638
+Cynoscion regalis	8.86701
+Hypsibarbus salweenensis	7.88137
+Labeo chrysophekadion	7.34811
+Amblyrhynchichthys truncatus	6.74914
+Barbonymus altus	6.30939
+Sundasalanx praecox	5.90502
+Cyclocheilichthys enoplos	5.55373
+Barbonymus schwanefeldii	5.10261
+Luciobarbus capito	4.79175
+Barbonymus gonionotus	4.71846
+Mystus sp. EM2	4.60726
+Sikukia gudgeri	2.68651
+Hemibagrus sp. RCH-2015	2.63723

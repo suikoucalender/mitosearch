@@ -1,6 +1,7 @@
-18030	コノシロ:Konosirus punctatus
-6943	ボラ:Mugil cephalus
-4092	カタクチイワシ科:Engraulis japonicus
-3185	スズキ:Lateolabrax japonicus
-811	イサキ:Parapristipoma trilineatum
-440	アカエイ:Hemitrygon akajei
+id	DRR249627.fastq
+コノシロ:Konosirus punctatus	53.8193
+ボラ:Mugil cephalus	20.7248
+カタクチイワシ科:Engraulis japonicus	12.2146
+スズキ:Lateolabrax japonicus	9.50718
+イサキ:Parapristipoma trilineatum	2.42082
+アカエイ:Hemitrygon akajei	1.31339

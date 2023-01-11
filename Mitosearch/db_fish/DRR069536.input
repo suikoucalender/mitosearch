@@ -1,6 +1,7 @@
-15854	コイ科:Rhynchocypris jouyi
-11940	カワヨシノボリ:Rhinogobius flumineus
-1209	カワムツ:Nipponocypris temminckii
-436	サクラマス・ヤマメ:Oncorhynchus masou masou
-411	クロヨシノボリ:Rhinogobius brunneus
-324	ニシシマドジョウ:Cobitis sp. BIWAE type B
+id	DRR069536.fastq
+コイ科:Rhynchocypris jouyi	52.5419
+カワヨシノボリ:Rhinogobius flumineus	39.5705
+カワムツ:Nipponocypris temminckii	4.00676
+サクラマス・ヤマメ:Oncorhynchus masou masou	1.44495
+クロヨシノボリ:Rhinogobius brunneus	1.3621
+ニシシマドジョウ:Cobitis sp. BIWAE type B	1.07377

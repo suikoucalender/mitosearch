@@ -1,6 +1,7 @@
-4016	カサゴ:Sebastiscus marmoratus
-2033	ヒイラギ:Nuchequula nuchalis
-1172	カタクチイワシ科:Engraulis japonicus
-1165	スズキ:Lateolabrax japonicus
-468	Parambassis lala
-262	クロダイ:Acanthopagrus schlegelii
+id	DRR057571.fastq
+カサゴ:Sebastiscus marmoratus	44.0544
+ヒイラギ:Nuchequula nuchalis	22.3014
+カタクチイワシ科:Engraulis japonicus	12.8565
+スズキ:Lateolabrax japonicus	12.7797
+Parambassis lala	5.13383
+クロダイ:Acanthopagrus schlegelii	2.87407

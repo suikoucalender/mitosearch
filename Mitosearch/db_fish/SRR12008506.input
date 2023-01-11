@@ -1,4 +1,5 @@
-13255	メバル科:Sebastes fasciatus
-1041	カラスガレイ:Reinhardtius hippoglossoides
-962	ゲンゲ科:Melanostigma atlanticum
-222	ヨコエソ科:Cyclothone pygmaea
+id	SRR12008506.fastq
+メバル科:Sebastes fasciatus	85.6266
+カラスガレイ:Reinhardtius hippoglossoides	6.72481
+ゲンゲ科:Melanostigma atlanticum	6.21447
+ヨコエソ科:Cyclothone pygmaea	1.43411

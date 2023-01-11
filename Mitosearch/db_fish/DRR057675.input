@@ -1,7 +1,8 @@
-20119	カタクチイワシ科:Engraulis japonicus
-5545	マアジ:Trachurus japonicus
-4677	ホソトビウオ:Cypselurus hiraii
-2855	コノシロ:Konosirus punctatus
-2592	セトダイ:Hapalogenys analis
-2464	ブリ:Seriola quinqueradiata
-1821	Tribolodon hakonensis
+id	DRR057675.fastq
+カタクチイワシ科:Engraulis japonicus	50.2059
+マアジ:Trachurus japonicus	13.8372
+ホソトビウオ:Cypselurus hiraii	11.6712
+コノシロ:Konosirus punctatus	7.1245
+セトダイ:Hapalogenys analis	6.4682
+ブリ:Seriola quinqueradiata	6.14878
+Tribolodon hakonensis	4.54421

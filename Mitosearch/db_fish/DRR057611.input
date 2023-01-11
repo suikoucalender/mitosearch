@@ -1,13 +1,14 @@
-27729	マアジ:Trachurus japonicus
-22962	ブリ:Seriola quinqueradiata
-14174	カタクチイワシ科:Engraulis japonicus
-8142	ホソトビウオ:Cypselurus hiraii
-8129	ハガツオ:Sarda orientalis
-7236	イマイトビウオ:Cheilopogon arcticeps
-5807	コノシロ:Konosirus punctatus
-3415	アカカマス:Sphyraena pinguis
-3331	Tribolodon hakonensis
-3120	サワラ:Scomberomorus niphonius
-2364	タモロコ:Gnathopogon elongatus elongatus
-1668	ニシン科:Sardinops sagax
-1468	タウエガジ科:Dictyosoma burgeri
+id	DRR057611.fastq
+マアジ:Trachurus japonicus	25.3129
+ブリ:Seriola quinqueradiata	20.9612
+カタクチイワシ科:Engraulis japonicus	12.939
+ホソトビウオ:Cypselurus hiraii	7.43256
+ハガツオ:Sarda orientalis	7.42069
+イマイトビウオ:Cheilopogon arcticeps	6.6055
+コノシロ:Konosirus punctatus	5.30102
+アカカマス:Sphyraena pinguis	3.11744
+Tribolodon hakonensis	3.04076
+サワラ:Scomberomorus niphonius	2.84814
+タモロコ:Gnathopogon elongatus elongatus	2.15802
+ニシン科:Sardinops sagax	1.52266
+タウエガジ科:Dictyosoma burgeri	1.34009

@@ -1,9 +1,10 @@
-2149	カタクチイワシ科:Engraulis japonicus
-1991	ドンコ科:Odontobutis obscura
-1688	スズキ:Lateolabrax japonicus
-1481	ギンポ:Pholis nebulosa
-1476	コチ科:Platycephalus sp. 2 LL-2021
-1321	ハオコゼ:Paracentropogon rubripinnis
-1071	ヒイラギ:Nuchequula nuchalis
-585	シログチ:Pennahia argentata
-332	スジハゼ:Acentrogobius virgatulus
+id	DRR057591.fastq
+カタクチイワシ科:Engraulis japonicus	17.7691
+ドンコ科:Odontobutis obscura	16.4627
+スズキ:Lateolabrax japonicus	13.9573
+ギンポ:Pholis nebulosa	12.2457
+コチ科:Platycephalus sp. 2 LL-2021	12.2044
+ハオコゼ:Paracentropogon rubripinnis	10.9228
+ヒイラギ:Nuchequula nuchalis	8.85563
+シログチ:Pennahia argentata	4.83711
+スジハゼ:Acentrogobius virgatulus	2.74516

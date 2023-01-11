@@ -1,5 +1,6 @@
-5841	コノシロ:Konosirus punctatus
-994	カタクチイワシ科:Engraulis japonicus
-379	サッパ:Sardinella zunasi
-293	スズキ:Lateolabrax japonicus
-156	ボラ:Mugil cephalus
+id	DRR249981.fastq
+コノシロ:Konosirus punctatus	76.2234
+カタクチイワシ科:Engraulis japonicus	12.9714
+サッパ:Sardinella zunasi	4.94584
+スズキ:Lateolabrax japonicus	3.82357
+ボラ:Mugil cephalus	2.03576

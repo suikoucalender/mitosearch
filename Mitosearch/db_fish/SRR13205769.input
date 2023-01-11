@@ -1,9 +1,10 @@
-256737	アオミシマ:Xenocephalus elongatus
-113525	イワハダカ:Benthosema pterotum
-15487	スミツキアカタチ:Cepola schlegelii
-14638	カタクチイワシ科:Engraulis japonicus
-11500	Mahidolia mystacina
-10063	ベラ科\nNovaculini:Iniistius umbrilatus
-7877	アゴアマダイ科:Opistognathus sp. MEGANE-AGOAMADAI
-6475	タチウオ:Trichiurus japonicus
-5168	ノドグロミミズアナゴ:Scolecenchelys fuscogularis
+id	SRR13205769.fastq
+アオミシマ:Xenocephalus elongatus	58.155
+イワハダカ:Benthosema pterotum	25.7152
+スミツキアカタチ:Cepola schlegelii	3.50805
+カタクチイワシ科:Engraulis japonicus	3.31574
+Mahidolia mystacina	2.60493
+ベラ科\nNovaculini:Iniistius umbrilatus	2.27943
+アゴアマダイ科:Opistognathus sp. MEGANE-AGOAMADAI	1.78427
+タチウオ:Trichiurus japonicus	1.46669
+ノドグロミミズアナゴ:Scolecenchelys fuscogularis	1.17063

@@ -1,9 +1,10 @@
-1817	カタクチイワシ科:Engraulis japonicus
-285	コノシロ:Konosirus punctatus
-82	カサゴ:Sebastiscus marmoratus
-70	ベラ科:Parajulis poecilepterus
-67	マアジ:Trachurus japonicus
-52	クロタチカマス:Gempylus serpens
-45	マタナゴ:Ditrema temminckii pacificum
-42	Parambassis lala
-32	シログチ:Pennahia argentata
+id	DRR249664.fastq
+カタクチイワシ科:Engraulis japonicus	72.9133
+コノシロ:Konosirus punctatus	11.4366
+カサゴ:Sebastiscus marmoratus	3.29053
+ベラ科:Parajulis poecilepterus	2.80899
+マアジ:Trachurus japonicus	2.6886
+クロタチカマス:Gempylus serpens	2.08668
+マタナゴ:Ditrema temminckii pacificum	1.80578
+Parambassis lala	1.68539
+シログチ:Pennahia argentata	1.28411

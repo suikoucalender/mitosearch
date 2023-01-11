@@ -1,13 +1,14 @@
-22694	Catostomus commersonii
-13557	Rhinichthys cataractae
-10902	Etheostoma olmstedi
-5195	カジカ科:Cottus perplexus
-3198	Catostomus catostomus
-2617	Luxilus cornutus
-2510	Etheostoma flabellare
-1725	Percopsis omiscomaycus
-1397	Semotilus atromaculatus
-1303	Culaea inconstans
-1079	カワマス:Salvelinus fontinalis
-792	Rhinichthys atratulus
-718	Percina caprodes
+id	SRR14526869.fastq
+Catostomus commersonii	33.5279
+Rhinichthys cataractae	20.029
+Etheostoma olmstedi	16.1065
+カジカ科:Cottus perplexus	7.67503
+Catostomus catostomus	4.72469
+Luxilus cornutus	3.86633
+Etheostoma flabellare	3.70825
+Percopsis omiscomaycus	2.5485
+Semotilus atromaculatus	2.06391
+Culaea inconstans	1.92504
+カワマス:Salvelinus fontinalis	1.5941
+Rhinichthys atratulus	1.17009
+Percina caprodes	1.06076

@@ -1,7 +1,8 @@
-2213	スズキ:Lateolabrax japonicus
-1909	マサバ:Scomber japonicus
-1748	ボラ:Mugil cephalus
-1647	シログチ:Pennahia argentata
-1272	Parambassis lala
-1125	コショウダイ:Plectorhinchus cinctus
-588	クロダイ:Acanthopagrus schlegelii
+id	DRR249871.fastq
+スズキ:Lateolabrax japonicus	21.0722
+マサバ:Scomber japonicus	18.1775
+ボラ:Mugil cephalus	16.6444
+シログチ:Pennahia argentata	15.6827
+Parambassis lala	12.112
+コショウダイ:Plectorhinchus cinctus	10.7122
+クロダイ:Acanthopagrus schlegelii	5.59893

@@ -1,9 +1,10 @@
-6995	サワラ:Scomberomorus niphonius
-5453	スズキ:Lateolabrax japonicus
-2236	ブリ:Seriola quinqueradiata
-567	マダイ:Pagrus major
-394	フグ科:Takifugu fasciatus
-394	スジハゼ:Acentrogobius virgatulus
-349	マアジ:Trachurus japonicus
-317	Eutrigla gurnardus
-235	カタクチイワシ科:Engraulis japonicus
+id	DRR249795.fastq
+サワラ:Scomberomorus niphonius	41.2928
+スズキ:Lateolabrax japonicus	32.1901
+ブリ:Seriola quinqueradiata	13.1995
+マダイ:Pagrus major	3.34711
+フグ科:Takifugu fasciatus	2.32586
+スジハゼ:Acentrogobius virgatulus	2.32586
+マアジ:Trachurus japonicus	2.06021
+Eutrigla gurnardus	1.87131
+カタクチイワシ科:Engraulis japonicus	1.38725

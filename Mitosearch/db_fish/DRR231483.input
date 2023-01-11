@@ -1,12 +1,13 @@
-73637	ヌマチチブ:Tridentiger brevispinis
-9154	コイ:Cyprinus carpio
-3428	Tribolodon hakonensis
-3267	クロヨシノボリ:Rhinogobius brunneus
-2794	チチブ:Tridentiger obscurus
-2295	ヒガシシマドジョウ:Cobitis sp. BIWAE type C
-2022	アユ:Plecoglossus altivelis
-1612	Phoxinus steindachneri
-1556	モツゴ:Pseudorasbora parva
-1489	Parambassis lala
-1476	ニゴイ:Hemibarbus barbus
-1443	コイ科:Hemibarbus maculatus
+id	DRR231483.fastq
+ヌマチチブ:Tridentiger brevispinis	70.6872
+コイ:Cyprinus carpio	8.78731
+Tribolodon hakonensis	3.29068
+クロヨシノボリ:Rhinogobius brunneus	3.13613
+チチブ:Tridentiger obscurus	2.68208
+ヒガシシマドジョウ:Cobitis sp. BIWAE type C	2.20307
+アユ:Plecoglossus altivelis	1.941
+Phoxinus steindachneri	1.54743
+モツゴ:Pseudorasbora parva	1.49367
+Parambassis lala	1.42935
+ニゴイ:Hemibarbus barbus	1.41687
+コイ科:Hemibarbus maculatus	1.3852

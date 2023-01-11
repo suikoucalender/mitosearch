@@ -1,13 +1,14 @@
-18708	カタクチイワシ科:Engraulis japonicus
-3215	Tribolodon hakonensis
-2468	スズキ:Lateolabrax japonicus
-2441	メナダ:Planiliza haematocheilus
-2354	イサキ:Parapristipoma trilineatum
-2263	ブリ:Seriola quinqueradiata
-2141	チチブ:Tridentiger obscurus
-2136	アカカマス:Sphyraena pinguis
-1862	ホソトビウオ:Cypselurus hiraii
-1747	ゴクラクハゼ:Rhinogobius similis
-1702	サワラ:Scomberomorus niphonius
-1330	イマイトビウオ:Cheilopogon arcticeps
-647	マアジ:Trachurus japonicus
+id	DRR057629.fastq
+カタクチイワシ科:Engraulis japonicus	43.4928
+Tribolodon hakonensis	7.47431
+スズキ:Lateolabrax japonicus	5.73767
+メナダ:Planiliza haematocheilus	5.6749
+イサキ:Parapristipoma trilineatum	5.47264
+ブリ:Seriola quinqueradiata	5.26108
+チチブ:Tridentiger obscurus	4.97745
+アカカマス:Sphyraena pinguis	4.96583
+ホソトビウオ:Cypselurus hiraii	4.32882
+ゴクラクハゼ:Rhinogobius similis	4.06147
+サワラ:Scomberomorus niphonius	3.95685
+イマイトビウオ:Cheilopogon arcticeps	3.09202
+マアジ:Trachurus japonicus	1.50416
