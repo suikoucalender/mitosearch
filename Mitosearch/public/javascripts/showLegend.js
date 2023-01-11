@@ -158,6 +158,7 @@ timeFilterOnBtn.addEventListener("click", e => {
     upperHandleNumber.style.display = "block";
     
     slidersize();  
+    sliderUpdating();
     sliderStatusChecker = "exist"
 });
 

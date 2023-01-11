@@ -49,6 +49,7 @@ pointBtn.addEventListener("click", e => {
       //slider.noUiSlider.reset();
       //getCapturedSampleList();
       appendScript("javascripts/drawLiddgeLine.js")
+      appendScript("javascripts/timechange.js")
     })
   } else if (functioncheker=="on"){
     map.off('click');

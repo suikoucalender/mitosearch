@@ -1,6 +1,7 @@
 var lowerHandle
 var upperHandle
 var graphChecker
+var sliderLoadChecker = false
 
 
 function slidersize(){
@@ -50,6 +51,7 @@ function sliderUpdating(){
     }
     var minTimestamp=timestamp(minTime)
     var maxTimestamp=timestamp(maxTime)
+    maxTimestamp=maxTimestamp+86399000
     console.log(maxTime)
     console.log(maxTimestamp)
     console.log(minTime)
@@ -63,6 +65,7 @@ function sliderUpdating(){
         },
         //start: [minTimestamp, maxTimestamp],
     });
+    sliderLoadChecker=true
 }
 
 
@@ -85,6 +88,7 @@ for (var i=1;i<sampleDataSet.length;i++){
 }
 var minTimestamp=timestamp(minTime)
 var maxTimestamp=timestamp(maxTime)
+maxTimestamp=maxTimestamp+86399000
     console.log(maxTime)
     console.log(maxTimestamp)
     console.log(minTime)
@@ -114,3 +118,4 @@ var dateValues = [
     document.getElementById('event-start'),
     document.getElementById('event-end')
 ];
+sliderLoadChecker=true;

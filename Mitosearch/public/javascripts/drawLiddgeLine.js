@@ -2,8 +2,11 @@
 var dateRangeCheker = false;
 upperHandle=timestamp(upperHandle);
 lowerHandle=timestamp(lowerHandle);
+//if(upperHandle===lowerHandle){
+//    upperHandle=upperHandle+100;
+//    sliderLoadChecker=false;
+//}
 
-upperHandle=upperHandle+86399000;
 
 upperHandle=new Date(upperHandle);
 lowerHandle=new Date(lowerHandle);
@@ -91,14 +94,12 @@ function getCapturedSampleList() {
             }
         })
     }
-
     drawLiddgeLineChangeable(capturedSampleList)
     drawLiddgeLine(capturedSampleList);
     slidersize();
     if(graphChecker!=="nonexist"){
         sliderDisplay();
     }
-
 }
 
 
@@ -152,7 +153,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
         let tempdate = sampleData.date;
         let tempdateTrans=new Date(tempdate);
 
-
+        
         //Determine if the sample is within the date range
         if (tempdateTrans>=lowerHandle && tempdateTrans<=upperHandle){
             dateRangeCheker=true
