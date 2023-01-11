@@ -1,16 +1,15 @@
-id	DRR249762.fastq
-ボラ:Mugil cephalus 	17.15
-Parambassis lala 	15.43
-クロダイ:Acanthopagrus schlegelii 	8.56
-ダツ:Strongylura anastomella 	6.2
-ベニツケギンポ:Dictyosoma rubrimaculatum 	5.92
-ホシササノハベラ:Pseudolabrus sieboldi 	5.64
-ウスメバル:Sebastes thompsoni 	5.59
-クサフグ:Takifugu alboplumbeus 	5.39
-カサゴ:Sebastiscus marmoratus 	5.3
-マアジ:Trachurus japonicus 	5.25
-Engraulis japonicus 	5.2
-マタナゴ:Ditrema temminckii 	4.99
-カワハギ:Stephanolepis cirrhifer 	4.09
-Cheilodactylus zonatus 	2.73
-タツウミヘビ:Brachysomophis crocodilinus 	2.57
+2706	ボラ:Mugil cephalus
+2573	Parambassis lala
+1225	クロダイ:Acanthopagrus schlegelii
+981	ダツ:Strongylura anastomella
+937	ベニツケギンポ:Dictyosoma rubrimaculatum
+890	ホシササノハベラ:Pseudolabrus sieboldi
+888	シロメバル:Sebastes cheni
+847	クサフグ:Takifugu alboplumbeus
+838	カサゴ:Sebastiscus marmoratus
+826	マアジ:Trachurus japonicus
+823	カタクチイワシ科:Engraulis japonicus
+784	マタナゴ:Ditrema temminckii pacificum
+651	カワハギ:Stephanolepis cirrhifer
+433	Cheilodactylus quadricornis
+408	タツウミヘビ:Brachysomophis crocodilinus

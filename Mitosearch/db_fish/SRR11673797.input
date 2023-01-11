@@ -1,13 +1,12 @@
-id	SRR11673797.fastq
-ボラ:Mugil cephalus 	33.41
-ヌマチチブ:Tridentiger brevispinis 	23.21
-クロヨシノボリ:Rhinogobius brunneus 	9.41
-ニゴイ:Hemibarbus labeo 	8.21
-ハス:Opsariichthys uncirostris amurensis 	6.06
-オオクチバス:Micropterus salmoides 	5.1
-ゴクラクハゼ:Rhinogobius similis 	4.7
-キンギョ:Carassius auratus 	3.19
-ブルーギル:Lepomis macrochirus 	2.39
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	2.07
-Ctenopharyngodon idellus x Elopichthys bambusa 	1.12
-Culter alburnus 	1.12
+393	ボラ:Mugil cephalus
+285	チチブ:Tridentiger obscurus
+114	クロヨシノボリ:Rhinogobius brunneus
+96	コウライニゴイ:Hemibarbus labeo
+72	コイ科:Opsariichthys uncirostris amurensis
+70	サンフィッシュ科:Micropterus salmoides
+57	ゴクラクハゼ:Rhinogobius similis
+39	キンギョ:Carassius auratus
+28	コイ:Cyprinus carpio
+27	サンフィッシュ科:Lepomis cyanellus
+14	Culter alburnus
+14	ソウギョ:Ctenopharyngodon idella

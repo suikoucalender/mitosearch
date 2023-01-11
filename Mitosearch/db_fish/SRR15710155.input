@@ -1,8 +1,5 @@
-id	SRR15710155.fastq
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	39.11
-Oreochromis sp. 'red tilapia' 	25.14
-ナイルティラピア:Oreochromis niloticus 	14.02
-ゴクラクハゼ:Rhinogobius similis 	8.76
-アンピンボラ:Planiliza subviridis 	6.23
-ボラ:Mugil cephalus 	4.4
-カダヤシ:Gambusia affinis 	2.34
+102763	ナイルティラピア:Oreochromis niloticus
+11533	ゴクラクハゼ:Rhinogobius similis
+8200	アンピンボラ:Planiliza subviridis
+5798	ボラ:Mugil cephalus
+3083	カダヤシ:Gambusia affinis

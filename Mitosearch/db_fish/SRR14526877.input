@@ -1,16 +1,15 @@
-id	SRR14526877.fastq
-Catostomus commersonii 	21.81
-Lepomis gibbosus 	12.559999999999999
-Rhinichthys cataractae 	12.46
-Ameiurus nebulosus 	10.13
-Etheostoma flabellare 	7.24
-Notemigonus crysoleucas 	7.16
-Rhinichthys atratulus 	6.52
-Perca flavescens 	5.96
-Esox lucius 	3.42
-Catostomus catostomus 	3.0
-カワマス:Salvelinus fontinalis 	2.5100000000000002
-Ocyurus chrysurus 	2.2399999999999998
-Semotilus atromaculatus 	1.9
-Luxilus cornutus 	1.6400000000000001
-Etheostoma olmstedi 	1.4500000000000002
+3262	Catostomus commersonii
+1848	Rhinichthys cataractae
+1758	サンフィッシュ科:Lepomis gibbosus
+1609	Ameiurus nebulosus
+1086	Etheostoma flabellare
+1012	Notemigonus crysoleucas
+980	Rhinichthys atratulus
+834	Perca flavescens
+493	Esox lucius
+437	Catostomus catostomus rostratus
+334	Ocyurus chrysurus
+325	カワマス:Salvelinus fontinalis
+254	Semotilus atromaculatus
+251	Luxilus cornutus
+214	Etheostoma olmstedi

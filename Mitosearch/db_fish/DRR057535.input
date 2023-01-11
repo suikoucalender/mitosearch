@@ -1,9 +1,8 @@
-id	DRR057535.fastq
-Engraulis japonicus 	39.92
-ヒガンフグ:Takifugu pardalis 	26.86
-クサフグ:Takifugu alboplumbeus 	9.5
-Sardinops sagax 	7.21
-Parajulis poecilepterus 	6.4
-ブリ:Seriola quinqueradiata 	5.2
-ボラ:Mugil cephalus 	3.44
-マアジ:Trachurus japonicus 	1.48
+7871	カタクチイワシ科:Engraulis japonicus
+5298	フグ科:Takifugu fasciatus
+1821	クサフグ:Takifugu alboplumbeus
+1421	ニシン科:Sardinops sagax
+1262	ベラ科:Parajulis poecilepterus
+1026	ブリ:Seriola quinqueradiata
+679	ボラ:Mugil cephalus
+291	マアジ:Trachurus japonicus

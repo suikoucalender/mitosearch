@@ -1,8 +1,7 @@
-id	DRR249582.fastq
-マサバ:Scomber japonicus 	44.92
-メジナ:Girella punctata 	13.13
-メダイ:Hyperoglyphe japonica 	12.26
-Engraulis japonicus 	11.91
-Sardinops sagax 	6.3
-マルアジ:Decapterus maruadsi 	6.04
-マアジ:Trachurus japonicus 	5.43
+511	マサバ:Scomber japonicus
+149	セトダイ:Hapalogenys analis
+138	メダイ:Hyperoglyphe japonica
+133	カタクチイワシ科:Engraulis japonicus
+70	ニシン科:Sardinops sagax
+68	マルアジ:Decapterus maruadsi
+61	マアジ:Trachurus japonicus

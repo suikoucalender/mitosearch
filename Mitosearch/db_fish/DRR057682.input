@@ -1,13 +1,12 @@
-id	DRR057682.fastq
-Engraulis japonicus 	53.52
-Tribolodon hakonensis 	15.75
-ブリ:Seriola quinqueradiata 	5.35
-モヨウハゼ:Acentrogobius pflaumii 	4.23
-イマイトビウオ:Cheilopogon arcticeps 	4.09
-コイ:Cyprinus carpio 	3.62
-ヒガンフグ:Takifugu pardalis 	3.27
-ホソトビウオ:Cypselurus hiraii 	3.03
-コノシロ:Konosirus punctatus 	2.22
-Pseudopleuronectes americanus 	1.82
-ゴンズイ:Plotosus japonicus 	1.8
-マアジ:Trachurus japonicus 	1.3
+21711	カタクチイワシ科:Engraulis japonicus
+6391	Tribolodon hakonensis
+2173	ブリ:Seriola quinqueradiata
+1715	モヨウハゼ:Acentrogobius pflaumii
+1673	イマイトビウオ:Cheilopogon arcticeps
+1469	コイ:Cyprinus carpio
+1327	フグ科:Takifugu fasciatus
+1227	ホソトビウオ:Cypselurus hiraii
+899	コノシロ:Konosirus punctatus
+738	カレイ科:Pseudopleuronectes americanus
+731	ゴンズイ:Plotosus japonicus
+528	マアジ:Trachurus japonicus

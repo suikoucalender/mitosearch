@@ -1,10 +1,6 @@
-id	ERR7929859.fastq
-Lepomis gibbosus 	30.81
-Gobio macrocephalus 	21.26
-Luciobarbus sclateri 	20.9
-Anguilla anguilla 	9.959999999999999
-Gambusia holbrooki 	7.91
-Alburnus alburnus 	5.140000000000001
-Squalius cephalus 	1.6099999999999999
-Gobio cynocephalus 	1.25
-Leuciscus idus 	1.16
+18	Mesogobio lachneri
+5	ハゼ科:Gobio cynocephalus
+1	Leuciscus idus
+1	Leuciscus aspius
+1	コイ科:Squalidus gracilis majimae
+1	ハゼ科:Gobio macrocephalus

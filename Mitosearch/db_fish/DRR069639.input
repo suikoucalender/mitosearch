@@ -1,12 +1,10 @@
-id	DRR069639.fastq
-クロヨシノボリ:Rhinogobius brunneus 	43.91
-Zacco platypus 	17.71
-ハス:Opsariichthys uncirostris 	14.16
-ウキゴリ:Gymnogobius urotaenia 	8.92
-ヌマチチブ:Tridentiger brevispinis 	3.26
-コイ:Cyprinus carpio 	2.55
-Carassius langsdorfii 	2.27
-カマツカ:Pseudogobio esocinus 	1.98
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.98
-Micropterus floridanus 	1.84
-Odontobutis obscura 	1.42
+308	クロヨシノボリ:Rhinogobius brunneus
+125	Zacco platypus
+100	ハス:Opsariichthys uncirostris
+63	ウキゴリ:Gymnogobius urotaenia
+32	コイ:Cyprinus carpio
+23	チチブ:Tridentiger obscurus
+16	ギンブナ:Carassius langsdorfii
+14	カマツカ:Pseudogobio esocinus
+13	サンフィッシュ科:Micropterus floridanus
+13	ドンコ科:Odontobutis obscura

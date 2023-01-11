@@ -1,10 +1,9 @@
-id	DRR057671.fastq
-Engraulis japonicus 	68.35
-マアジ:Trachurus japonicus 	8.44
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	7.06
-イマイトビウオ:Cheilopogon arcticeps 	5.58
-Cheilopogon doederleinii 	2.74
-Carassius langsdorfii 	2.69
-シロギス:Sillago japonica 	2.37
-サワラ:Scomberomorus niphonius 	1.58
-ボラ:Mugil cephalus 	1.18
+21612	カタクチイワシ科:Engraulis japonicus
+2669	マアジ:Trachurus japonicus
+2233	コイ:Cyprinus carpio
+1769	イマイトビウオ:Cheilopogon arcticeps
+867	トビウオ科:Cheilopogon doederleinii
+851	ギンブナ:Carassius langsdorfii
+749	シロギス:Sillago japonica
+501	サワラ:Scomberomorus niphonius
+374	ボラ:Mugil cephalus

@@ -1,15 +1,14 @@
-id	DRR249970.fastq
-Engraulis japonicus 	44.82
-コノシロ:Konosirus punctatus 	21.16
-ボラ:Mugil cephalus 	7.98
-アカオビシマハゼ:Tridentiger trigonocephalus 	5.54
-コクレン:Hypophthalmichthys nobilis 	4.39
-マハゼ:Acanthogobius flavimanus 	2.9
-Sardinops sagax 	2.08
-チチブ:Tridentiger obscurus 	1.94
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.84
-ハクレン:Hypophthalmichthys molitrix 	1.75
-クロダイ:Acanthopagrus schlegelii 	1.59
-Parambassis lala 	1.59
-Tribolodon brandtii 	1.25
-ハタタテヌメリ:Callionymus valenciennei 	1.18
+8557	カタクチイワシ科:Engraulis japonicus
+4040	コノシロ:Konosirus punctatus
+1517	ボラ:Mugil cephalus
+1054	シモフリシマハゼ:Tridentiger bifasciatus
+842	コクレン:Hypophthalmichthys nobilis
+553	マハゼ:Acanthogobius flavimanus
+396	ニシン科:Sardinops sagax
+370	ヌマチチブ:Tridentiger brevispinis
+353	コイ:Cyprinus carpio
+337	ハクレン:Hypophthalmichthys molitrix
+306	クロダイ:Acanthopagrus schlegelii
+293	Parambassis lala
+241	Tribolodon brandtii
+226	ハタタテヌメリ:Callionymus valenciennei

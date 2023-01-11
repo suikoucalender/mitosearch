@@ -1,9 +1,6 @@
-id	ERR7929719.fastq
-Gobio macrocephalus 	21.85
-Lepomis gibbosus 	21.58
-Luciobarbus sclateri 	17.630000000000003
-Anguilla anguilla 	16.8
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	6.98
-Alburnus alburnus 	6.01
-Squalius cephalus 	4.73
-Rutilus rutilus 	4.41
+12	Mesogobio lachneri
+4	ハゼ科:Gobio macrocephalus
+1	コイ科:Opsariichthys uncirostris amurensis
+1	ハゼ科:Gobio gobio
+1	Stenotomus caprinus
+1	ソウギョ:Ctenopharyngodon idella

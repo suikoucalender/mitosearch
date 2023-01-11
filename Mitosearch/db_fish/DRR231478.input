@@ -1,13 +1,12 @@
-id	DRR231478.fastq
-チチブ:Tridentiger obscurus 	70.44
-ヌマチチブ:Tridentiger brevispinis 	7.51
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	3.34
-Phoxinus steindachneri 	3.07
-Tribolodon hakonensis 	3.02
-クロヨシノボリ:Rhinogobius brunneus 	3.0
-モツゴ:Pseudorasbora parva 	2.04
-キンギョ:Carassius auratus x Megalobrama amblycephala pentaploid hybrid 	2.0
-Carassius langsdorfii 	1.82
-カジカ:Cottus pollux 	1.53
-アユ:Plecoglossus altivelis 	1.11
-マハゼ:Acanthogobius flavimanus 	1.11
+64145	ヌマチチブ:Tridentiger brevispinis
+6853	チチブ:Tridentiger obscurus
+3970	コイ:Cyprinus carpio
+2743	Tribolodon hakonensis
+2714	クロヨシノボリ:Rhinogobius brunneus
+1870	Phoxinus steindachneri
+1857	モツゴ:Pseudorasbora parva
+1828	ゲンゴロウブナ:Carassius cuvieri
+1644	ギンブナ:Carassius langsdorfii
+1391	カジカ:Cottus pollux
+1015	アユ:Plecoglossus altivelis
+1014	マハゼ:Acanthogobius flavimanus

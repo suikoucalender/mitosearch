@@ -1,13 +1,11 @@
-id	DRR231475.fastq
-チチブ:Tridentiger obscurus 	71.51
-コイ:Cyprinus carpio 	5.39
-オオシマドジョウ:Cobitis sp. BIWAE type C 	4.82
-ヌマチチブ:Tridentiger brevispinis 	4.34
-アユ:Plecoglossus altivelis 	2.4
-クロヨシノボリ:Rhinogobius brunneus 	2.22
-Carassius langsdorfii 	2.16
-Zacco platypus 	1.67
-モツゴ:Pseudorasbora parva 	1.5
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.47
-ニゴイ:Hemibarbus barbus 	1.4
-ウキゴリ:Gymnogobius urotaenia 	1.12
+88024	ヌマチチブ:Tridentiger brevispinis
+8480	コイ:Cyprinus carpio
+5946	ヒガシシマドジョウ:Cobitis sp. BIWAE type C
+5329	チチブ:Tridentiger obscurus
+2948	アユ:Plecoglossus altivelis
+2669	ギンブナ:Carassius langsdorfii
+2069	Zacco platypus
+1862	モツゴ:Pseudorasbora parva
+1802	クロヨシノボリ:Rhinogobius brunneus
+1726	ニゴイ:Hemibarbus barbus
+1381	ウキゴリ:Gymnogobius urotaenia

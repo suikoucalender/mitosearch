@@ -1,13 +1,12 @@
-id	SRR11673804.fastq
-ビリンゴ:Gymnogobius breunigii 	48.2
-ボラ:Mugil cephalus 	19.38
-コノシロ:Konosirus punctatus 	8.36
-マタナゴ:Ditrema temminckii 	7.45
-Tribolodon hakonensis 	3.08
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	2.7
-マハゼ:Acanthogobius flavimanus 	2.01
-Paramisgurnus dabryanus ssp. DLY-2014 	1.93
-ニゴイ:Hemibarbus labeo 	1.91
-キンギョ:Carassius auratus 	1.81
-ヌマチチブ:Tridentiger brevispinis 	1.67
-マサバ:Scomber japonicus 	1.5
+167721	ハゼ科:Gymnogobius laevis
+67890	ボラ:Mugil cephalus
+29299	コノシロ:Konosirus punctatus
+26135	マタナゴ:Ditrema temminckii pacificum
+10835	Tribolodon hakonensis
+10396	コイ:Cyprinus carpio
+7043	マハゼ:Acanthogobius flavimanus
+6993	ドジョウ科:Misgurnus mizolepis
+6703	コウライニゴイ:Hemibarbus labeo
+5954	チチブ:Tridentiger obscurus
+5602	キンギョ:Carassius auratus
+5238	マサバ:Scomber japonicus

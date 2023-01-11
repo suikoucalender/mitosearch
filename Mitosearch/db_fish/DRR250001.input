@@ -1,6 +1,5 @@
-id	DRR250001.fastq
-コノシロ:Konosirus punctatus 	56.75
-Engraulis japonicus 	18.63
-ボラ:Mugil cephalus 	12.8
-キハダ:Thunnus albacares 	9.4
-サッパ:Sardinella zunasi 	2.42
+1960	コノシロ:Konosirus punctatus
+580	カタクチイワシ科:Engraulis japonicus
+451	ボラ:Mugil cephalus
+335	キハダ:Thunnus albacares
+84	サッパ:Sardinella zunasi

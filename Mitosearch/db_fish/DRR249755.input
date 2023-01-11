@@ -1,11 +1,11 @@
-id	DRR249755.fastq
-Parajulis poecilepterus 	25.95
-カサゴ:Sebastiscus marmoratus 	17.67
-マアジ:Trachurus japonicus 	12.19
-リュウグウハゼ:Pterogobius zacalles 	10.89
-マダイ:Pagrus major 	10.56
-Engraulis japonicus 	10.17
-オキトラギス:Parapercis multifasciata 	3.85
-カワハギ:Stephanolepis cirrhifer 	3.19
-クラカケトラギス:Parapercis sexfasciata 	2.87
-アカエイ:Hemitrygon akajei 	2.67
+390	ベラ科:Parajulis poecilepterus
+263	カサゴ:Sebastiscus marmoratus
+184	マアジ:Trachurus japonicus
+165	リュウグウハゼ:Pterogobius zacalles
+163	マダイ:Pagrus major
+153	カタクチイワシ科:Engraulis japonicus
+146	ニシキハゼ:Pterogobius virgo
+59	オキトラギス:Parapercis multifasciata
+48	カワハギ:Stephanolepis cirrhifer
+42	クラカケトラギス:Parapercis sexfasciata
+41	アカエイ:Hemitrygon akajei

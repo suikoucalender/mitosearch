@@ -1,7 +1,6 @@
-id	DRR075345.fastq
-スマ:Euthynnus affinis 	88.99
-ジンベエザメ:Rhincodon typus 	4.68
-Stegostoma fasciatum 	1.87
-タカサゴ:Pterocaesio digramma 	1.71
-マサバ:Scomber japonicus 	1.38
-グルクマ:Rastrelliger kanagurta 	1.37
+6183	スマ:Euthynnus affinis
+326	ジンベエザメ:Rhincodon typus
+130	トラフザメ科:Stegostoma fasciatum
+118	タカサゴ:Pterocaesio digramma
+96	マサバ:Scomber japonicus
+95	グルクマ:Rastrelliger kanagurta

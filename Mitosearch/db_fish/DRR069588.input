@@ -1,10 +1,9 @@
-id	DRR069588.fastq
-Phoxinus oxycephalus jouyi 	36.97
-カワヨシノボリ:Rhinogobius flumineus 	27.96
-カジカ:Cottus pollux 	9.0
-Tribolodon hakonensis 	8.53
-カワムツ:Nipponocypris temminckii 	7.58
-コイ:Cyprinus carpio 	3.32
-サケ:Oncorhynchus keta 	2.84
-ムギツク:Pungtungia herzi 	2.37
-ニホンウナギ:Anguilla japonica 	1.42
+78	コイ科:Rhynchocypris jouyi
+61	カワヨシノボリ:Rhinogobius flumineus
+19	カジカ:Cottus pollux
+18	Tribolodon hakonensis
+16	カワムツ:Nipponocypris temminckii
+7	コイ:Cyprinus carpio
+6	サクラマス・ヤマメ:Oncorhynchus masou masou
+5	ムギツク:Pungtungia herzi
+3	ニホンウナギ:Anguilla japonica

@@ -1,7 +1,6 @@
-id	DRR069583.fastq
-Phoxinus oxycephalus jouyi 	43.52
-カワムツ:Nipponocypris temminckii 	37.31
-カジカ:Cottus pollux 	11.4
-アカザ:Liobagrus reinii 	3.11
-ニジマス:Oncorhynchus mykiss 	2.59
-サケ:Oncorhynchus keta 	2.07
+84	コイ科:Rhynchocypris jouyi
+72	カワムツ:Nipponocypris temminckii
+22	カジカ:Cottus pollux
+6	アカザ:Liobagrus reinii
+5	サケ科:Oncorhynchus mykiss newberrii
+4	サクラマス・ヤマメ:Oncorhynchus masou masou

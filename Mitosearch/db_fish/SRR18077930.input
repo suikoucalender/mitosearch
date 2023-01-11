@@ -1,20 +1,19 @@
-id	SRR18077930.fastq
-テナガミズテング:Harpadon nehereus 	21.37
-アカエイ:Hemitrygon akajei 	14.52
-ヒガンフグ:Takifugu pardalis 	10.89
-アカハゼ:Amblychaeturichthys hexanema 	7.960000000000001
-カンダリ:Collichthys lucidus 	6.75
-Larimichthys crocea 	5.8500000000000005
-ハモ:Muraenesox cinereus 	5.4399999999999995
-マアナゴ:Conger myriaster 	3.93
-Pampus argenteus 	3.4299999999999997
-イワハダカ:Benthosema pterotum 	3.2300000000000004
-Pennahia macrocephalus 	2.82
-キグチ:Larimichthys polyactis 	2.62
-ボラ:Mugil cephalus 	2.12
-Odontamblyopus sp. ZL-2016 	1.92
-ヒラスズキ:Lateolabrax maculatus 	1.71
-Stolephorus insularis 	1.41
-アブラグチ:Johnius distinctus 	1.41
-Trypauchen vagina 	1.41
-Cheilodactylus zonatus 	1.21
+212	テナガミズテング:Harpadon nehereus
+143	アカエイ:Hemitrygon akajei
+111	フグ科:Takifugu fasciatus
+85	ハゼ科:Chaeturichthys stigmatias
+70	メガネウオ:Uranoscopus bicinctus
+67	カンダリ:Collichthys lucidus
+58	ニベ科:Larimichthys crocea
+54	ハモ:Muraenesox cinereus
+39	マアナゴ:Conger myriaster
+34	マナガツオ科:Pampus sp. LY-2009
+32	イワハダカ:Benthosema pterotum
+28	ニベ科:Pennahia macrocephalus
+26	キグチ:Larimichthys polyactis
+21	ボラ:Mugil cephalus
+19	ハゼ科:Odontamblyopus sp. ZL-2016
+17	スズキ科:Lateolabrax maculatus
+14	カタクチイワシ科:Stolephorus insularis
+14	ハゼ科:Trypauchen vagina
+14	アブラグチ:Johnius distinctus

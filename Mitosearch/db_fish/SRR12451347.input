@@ -1,12 +1,8 @@
-id	SRR12451347.fastq
-Neogobius melanostomus 	39.75
-Proterorhinus marmoratus 	17.79
-Proterorhinus semilunaris 	16.1
-コクチバス:Micropterus dolomieu 	6.42
-オオクチバス:Micropterus salmoides 	6.19
-Ambloplites rupestris 	4.5
-Pimephales notatus 	3.27
-コイ:Cyprinus carpio 	2.03
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.46
-キンギョ:Carassius auratus 	1.35
-ギンブナ:Carassius sp. KR-2010b 	1.13
+356	Neogobius melanostomus
+300	Proterorhinus semilunaris
+57	コクチバス:Micropterus dolomieu
+52	サンフィッシュ科:Micropterus salmoides
+39	Ambloplites ariommus
+32	コイ:Cyprinus carpio
+29	Pimephales notatus
+27	キンギョ:Carassius auratus

@@ -1,9 +1,9 @@
-id	DRR069566.fastq
-クロヨシノボリ:Rhinogobius brunneus 	84.16
-カワムツ:Nipponocypris temminckii 	7.4
-Engraulis japonicus 	1.98
-ドジョウ:Misgurnus anguillicaudatus 	1.62
-Odontobutis obscura 	1.38
-Phoxinus oxycephalus jouyi 	1.36
-Phoxinus steindachneri 	1.07
-アユ:Plecoglossus altivelis 	1.04
+5089	クロヨシノボリ:Rhinogobius brunneus
+457	カワムツ:Nipponocypris temminckii
+122	カタクチイワシ科:Engraulis japonicus
+100	シマヨシノボリ:Rhinogobius nagoyae
+100	ドジョウ:Misgurnus anguillicaudatus
+95	ドンコ科:Odontobutis obscura
+84	コイ科:Rhynchocypris jouyi
+66	Phoxinus steindachneri
+65	アユ:Plecoglossus altivelis

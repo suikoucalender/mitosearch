@@ -1,9 +1,8 @@
-id	SRR12008489.fastq
-カラスガレイ:Reinhardtius hippoglossoides 	42.55
-Sebastes fasciatus 	17.85
-Pseudopleuronectes americanus 	12.09
-ヤマトヒゲダラ:Enchelyopus cimbrius 	11.4
-Glyptocephalus cynoglossus 	9.54
-Sebastes mentella 	2.88
-Gadus morhua 	1.91
-Clupea harengus 	1.78
+102499	カラスガレイ:Reinhardtius hippoglossoides
+43522	メバル科:Sebastes fasciatus
+29066	カレイ科:Pseudopleuronectes americanus
+27610	ヤマトヒゲダラ:Enchelyopus cimbrius
+22741	カレイ科:Glyptocephalus cynoglossus
+7008	メバル科:Sebastes mentella
+4588	タラ科:Gadus morhua
+4259	ニシン科:Clupea harengus

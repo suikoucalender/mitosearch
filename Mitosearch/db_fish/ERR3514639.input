@@ -1,15 +1,13 @@
-id	ERR3514639.fastq
-Oreochromis sp. 'red tilapia' 	24.39
-Cyclocheilichthys enoplos 	16.61
-コクレン:Hypophthalmichthys nobilis 	14.24
-ナイルティラピア:Oreochromis niloticus 	12.53
-Barbonymus gonionotus 	7.49
-Labeo rohita 	5.42
-Cirrhinus mrigala 	3.93
-ハクレン:Hypophthalmichthys molitrix 	3.56
-Osteochilus melanopleurus 	2.79
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	2.56
-Barbonymus altus 	1.85
-Anabas testudineus 	1.83
-Clupeoides borneensis 	1.61
-Puntioplites proctozystron 	1.19
+28945	ナイルティラピア:Oreochromis niloticus
+13559	Cyclocheilichthys enoplos
+11638	コクレン:Hypophthalmichthys nobilis
+6096	Barbonymus gonionotus
+4434	Labeo rohita
+3267	カワスズメ科:Oreochromis sp. 'red tilapia'
+3206	Cirrhinus mrigala
+2903	ハクレン:Hypophthalmichthys molitrix
+2276	Osteochilus melanopleurus
+1500	Barbonymus altus
+1492	Anabas testudineus
+1317	Clupeoides borneensis
+974	Puntioplites proctozystron

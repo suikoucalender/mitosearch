@@ -1,19 +1,15 @@
-id	SRR12008546.fastq
-Sebastes fasciatus 	52.97
-Pseudopleuronectes americanus 	9.19
-Triglops murrayi 	7.57
-Clupea harengus 	6.49
-Glyptocephalus cynoglossus 	3.78
-Gadus morhua 	3.78
-Anarhichas denticulatus 	2.7
-Urophycis tenuis 	1.62
-Protomyctophum arcticum 	1.62
-カラスガレイ:Reinhardtius hippoglossoides 	1.62
-Artediellus atlanticus 	1.08
-Notoscopelus elongatus kroyeri 	1.08
-Paraliparis sp. NSMT P92399 	1.08
-ウスメバル:Sebastes thompsoni 	1.08
-Sebastes mentella 	1.08
-Lophius americanus 	1.08
-サンマ:Cololabis saira 	1.08
-Melanostigma atlanticum 	1.08
+79	メバル科:Sebastes fasciatus
+17	カレイ科:Pseudopleuronectes americanus
+13	ニシン科:Clupea harengus
+12	カジカ科:Triglops murrayi
+7	タラ科:Gadus morhua
+6	ハダカイワシ科:Notoscopelus elongatus kroyeri
+5	カレイ科:Glyptocephalus cynoglossus
+4	オオカミウオ科:Anarhichas denticulatus
+3	ハダカイワシ科:Protomyctophum arcticum
+2	クサウオ科:Paraliparis sp. NSMT P92399
+2	Urophycis tenuis
+2	カラスガレイ:Reinhardtius hippoglossoides
+2	ゲンゲ科:Melanostigma atlanticum
+2	シロメバル:Sebastes cheni
+2	カジカ科:Icelus spatula

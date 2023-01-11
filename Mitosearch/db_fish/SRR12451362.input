@@ -1,8 +1,6 @@
-id	SRR12451362.fastq
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	57.42
-コイ:Cyprinus carpio 	17.64
-Perca flavescens 	13.42
-Morone americana 	4.47
-Morone chrysops 	2.65
-Dorosoma cepedianum 	2.33
-Catostomus commersonii 	2.07
+6411	コイ:Cyprinus carpio
+1146	Perca flavescens
+382	Morone americana
+226	Morone chrysops
+195	Dorosoma cepedianum
+177	Catostomus commersonii

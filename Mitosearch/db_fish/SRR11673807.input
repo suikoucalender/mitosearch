@@ -1,9 +1,8 @@
-id	SRR11673807.fastq
-ブルーギル:Lepomis macrochirus 	39.75
-オオクチバス:Micropterus salmoides 	25.15
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	15.56
-ヌマチチブ:Tridentiger brevispinis 	9.45
-Sarcocheilichthys nigripinnis morii 	5.37
-キンギョ:Carassius auratus 	1.72
-クロヨシノボリ:Rhinogobius brunneus 	1.57
-Sarcocheilichthys davidi 	1.42
+100430	サンフィッシュ科:Lepomis cyanellus
+66243	サンフィッシュ科:Micropterus salmoides
+40686	コイ:Cyprinus carpio
+24280	チチブ:Tridentiger obscurus
+13710	コイ科:Sarcocheilichthys nigripinnis morii
+3973	クロヨシノボリ:Rhinogobius brunneus
+3638	キンギョ:Carassius auratus
+3613	コイ科:Sarcocheilichthys davidi

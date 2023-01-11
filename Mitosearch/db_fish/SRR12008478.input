@@ -1,11 +1,9 @@
-id	SRR12008478.fastq
-Sebastes fasciatus 	57.78
-Gadus morhua 	13.89
-Sebastes mentella 	7.22
-Cyclopterus lumpus 	7.22
-ヤマトヒゲダラ:Enchelyopus cimbrius 	3.33
-カラスガレイ:Reinhardtius hippoglossoides 	3.33
-Lycodes esmarkii 	2.78
-Glyptocephalus cynoglossus 	2.22
-カラフトシシャモ:Mallotus villosus 	1.11
-Clupea harengus 	1.11
+80	メバル科:Sebastes fasciatus
+16	タラ科:Gadus morhua
+12	メバル科:Sebastes mentella
+9	Cyclopterus lumpus
+5	ヤマトヒゲダラ:Enchelyopus cimbrius
+4	カラスガレイ:Reinhardtius hippoglossoides
+4	ゲンゲ科:Lycodes vahlii
+3	カレイ科:Glyptocephalus cynoglossus
+2	カラフトシシャモ:Mallotus villosus

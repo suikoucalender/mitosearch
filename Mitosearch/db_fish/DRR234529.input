@@ -1,10 +1,9 @@
-id	DRR234529.fastq
-Carassius langsdorfii 	42.2
-Zacco platypus 	27.13
-カワムツ:Nipponocypris temminckii 	9.0
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	5.93
-Tribolodon hakonensis 	5.17
-コイ:Cyprinus carpio 	4.93
-カマツカ:Pseudogobio esocinus 	2.25
-ミナミメダカ:Oryzias latipes 	1.83
-オヤニラミ:Coreoperca kawamebari 	1.57
+30408	ギンブナ:Carassius langsdorfii
+19526	Zacco platypus
+7953	コイ:Cyprinus carpio
+6171	カワムツ:Nipponocypris temminckii
+3728	Tribolodon hakonensis
+3596	ドンコ科:Odontobutis obscura
+1693	カマツカ:Pseudogobio esocinus
+1329	ミナミメダカ:Oryzias latipes
+1124	オヤニラミ:Coreoperca kawamebari

@@ -1,11 +1,10 @@
-id	DRR231397.fastq
-チチブ:Tridentiger obscurus 	77.25
-ヌマチチブ:Tridentiger brevispinis 	8.52
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	3.3
-クロヨシノボリ:Rhinogobius brunneus 	3.15
-アユ:Plecoglossus altivelis 	1.92
-ニゴイ:Hemibarbus maculatus 	1.27
-ニホンウナギ:Anguilla japonica 	1.24
-Tribolodon hakonensis 	1.13
-ボラ:Mugil cephalus 	1.11
-Carassius langsdorfii 	1.11
+66835	ヌマチチブ:Tridentiger brevispinis
+7376	チチブ:Tridentiger obscurus
+3640	コイ:Cyprinus carpio
+2705	クロヨシノボリ:Rhinogobius brunneus
+1670	アユ:Plecoglossus altivelis
+1111	コイ科:Hemibarbus maculatus
+1076	ニホンウナギ:Anguilla japonica
+991	Tribolodon hakonensis
+964	ボラ:Mugil cephalus
+962	ギンブナ:Carassius langsdorfii

@@ -1,10 +1,9 @@
-id	SRR11673809.fastq
-ヌマチチブ:Tridentiger brevispinis 	65.89
-キンギョ:Carassius auratus 	8.24
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	6.03
-メナダ:Planiliza haematocheilus 	5.57
-ニゴイ:Hemibarbus labeo 	5.27
-ニホンウナギ:Anguilla japonica 	4.01
-Culter alburnus 	2.13
-オオクチバス:Micropterus salmoides 	1.54
-ブルーギル:Lepomis macrochirus 	1.32
+167425	チチブ:Tridentiger obscurus
+31330	コイ:Cyprinus carpio
+14002	メナダ:Planiliza haematocheilus
+13242	コウライニゴイ:Hemibarbus labeo
+10049	ニホンウナギ:Anguilla japonica
+5675	キンギョ:Carassius auratus
+5339	Culter alburnus
+3988	サンフィッシュ科:Micropterus salmoides
+3299	サンフィッシュ科:Lepomis cyanellus

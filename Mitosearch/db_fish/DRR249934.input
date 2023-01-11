@@ -1,14 +1,14 @@
-id	DRR249934.fastq
-Engraulis japonicus 	52.83
-サッパ:Sardinella zunasi 	11.22
-サワラ:Scomberomorus niphonius 	11.22
-ヨシノゴチ:Platycephalus sp. MAGOCHI 	3.88
-コノシロ:Konosirus punctatus 	3.74
-ギマ:Triacanthus biaculeatus 	3.57
-ハタタテヌメリ:Callionymus valenciennei 	3.11
-クロダイ:Acanthopagrus schlegelii 	2.22
-シログチ:Pennahia argentata 	2.1
-Parambassis lala 	1.77
-イボダイ:Psenopsis anomala 	1.47
-シロザメ:Mustelus griseus 	1.45
-マルアジ:Decapterus maruadsi 	1.42
+11478	カタクチイワシ科:Engraulis japonicus
+2445	サッパ:Sardinella zunasi
+2434	サワラ:Scomberomorus niphonius
+976	スジハゼ:Acentrogobius virgatulus
+848	コチ科:Platycephalus sp. 2 LL-2021
+817	コノシロ:Konosirus punctatus
+776	ギマ:Triacanthus biaculeatus
+676	ハタタテヌメリ:Callionymus valenciennei
+479	クロダイ:Acanthopagrus schlegelii
+463	シログチ:Pennahia argentata
+384	Parambassis lala
+318	イボダイ:Psenopsis anomala
+313	シロザメ:Mustelus griseus
+310	マルアジ:Decapterus maruadsi

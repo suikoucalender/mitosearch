@@ -1,10 +1,10 @@
-id	DRR249898.fastq
-コノシロ:Konosirus punctatus 	75.13
-Engraulis japonicus 	10.31
-Sardinops sagax 	3.87
-Siganus canaliculatus 	3.24
-シログチ:Pennahia argentata 	1.8
-ムツ:Scombrops boops 	1.67
-サッパ:Sardinella zunasi 	1.51
-アカカマス:Sphyraena pinguis 	1.29
-ウツボ:Gymnothorax kidako 	1.17
+6639	コノシロ:Konosirus punctatus
+921	カタクチイワシ科:Engraulis japonicus
+341	ニシン科:Sardinops sagax
+285	アイゴ:Siganus fuscescens
+229	オキヒイラギ:Equulites rivulatus
+160	シログチ:Pennahia argentata
+147	ムツ:Scombrops boops
+134	サッパ:Sardinella zunasi
+115	アカカマス:Sphyraena pinguis
+104	ウツボ:Gymnothorax kidako

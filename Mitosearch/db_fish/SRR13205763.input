@@ -1,7 +1,5 @@
-id	SRR13205763.fastq
-コノシロ:Konosirus punctatus 	50.51
-Engraulis japonicus 	31.55
-ゴマサバ:Scomber australasicus 	9.73
-マサバ:Scomber japonicus 	5.0
-Maurolicus muelleri 	1.85
-マコガレイ:Pseudopleuronectes yokohamae 	1.37
+325038	コノシロ:Konosirus punctatus
+206803	カタクチイワシ科:Engraulis japonicus
+94734	マサバ:Scomber japonicus
+12574	ムネエソ科:Maurolicus muelleri
+8756	マガレイ:Pseudopleuronectes herzensteini

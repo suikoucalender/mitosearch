@@ -1,12 +1,11 @@
-id	DRR125618.fastq
-ギンブナ:Carassius sp. 'Ginbuna' 	52.85
-キンギョ:Carassius auratus x Megalobrama amblycephala pentaploid hybrid 	21.62
-ニッポンバラタナゴ:Rhodeus ocellatus ocellatus 	4.31
-ドジョウ:Misgurnus anguillicaudatus 	4.02
-ハス:Opsariichthys uncirostris uncirostris 	3.7
-タモロコ:Gnathopogon elongatus elongatus 	3.59
-モツゴ:Pseudorasbora parva 	2.75
-Tribolodon brandtii brandtii 	2.51
-Tribolodon sachalinensis 	2.03
-Zacco platypus 	1.42
-Tribolodon hakonensis 	1.21
+8657	ギンブナ:Carassius langsdorfii
+3601	ゲンゴロウブナ:Carassius cuvieri
+2148	コイ科:Acheilognathus chankaensis
+1838	ハス:Opsariichthys uncirostris
+1787	タモロコ:Gnathopogon elongatus elongatus
+1367	モツゴ:Pseudorasbora parva
+1266	Tribolodon brandtii
+999	Tribolodon ezoe
+705	Zacco platypus
+601	Tribolodon hakonensis
+274	ドジョウ:Misgurnus anguillicaudatus

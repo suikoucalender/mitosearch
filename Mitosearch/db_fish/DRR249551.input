@@ -1,9 +1,8 @@
-id	DRR249551.fastq
-コノシロ:Konosirus punctatus 	54.3
-アカアマダイ:Branchiostegus japonicus 	17.41
-Engraulis japonicus 	13.36
-スズキ:Lateolabrax japonicus 	7.21
-ブリ:Seriola quinqueradiata 	3.27
-ヒメ:Hime japonica 	1.59
-サンマ:Cololabis saira 	1.51
-ハタタテヌメリ:Callionymus valenciennei 	1.34
+4086	コノシロ:Konosirus punctatus
+1328	アカアマダイ:Branchiostegus japonicus
+1011	カタクチイワシ科:Engraulis japonicus
+542	スズキ:Lateolabrax japonicus
+209	ブリ:Seriola quinqueradiata
+119	ヒメ:Hime japonica
+115	サンマ:Cololabis saira
+100	ハタタテヌメリ:Callionymus valenciennei

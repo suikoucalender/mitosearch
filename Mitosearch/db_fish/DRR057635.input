@@ -1,13 +1,12 @@
-id	DRR057635.fastq
-Engraulis japonicus 	43.59
-Parambassis lala 	12.08
-クロダイ:Acanthopagrus schlegelii 	8.63
-キダイ:Dentex hypselosomus 	7.74
-クサフグ:Takifugu alboplumbeus 	6.19
-ヒガンフグ:Takifugu pardalis 	6.12
-マタナゴ:Ditrema temminckii 	3.98
-アカハゼ:Amblychaeturichthys hexanema 	3.58
-スケトウダラ:Gadus chalcogrammus 	2.45
-イマイトビウオ:Cheilopogon arcticeps 	2.13
-ブリ:Seriola quinqueradiata 	2.05
-ボラ:Mugil cephalus 	1.45
+15175	カタクチイワシ科:Engraulis japonicus
+4423	Parambassis lala
+2786	クロダイ:Acanthopagrus schlegelii
+2693	チダイ:Evynnis tumifrons
+2133	フグ科:Takifugu fasciatus
+2114	クサフグ:Takifugu alboplumbeus
+1384	マタナゴ:Ditrema temminckii pacificum
+1234	ハゼ科:Chaeturichthys stigmatias
+854	スケトウダラ:Gadus chalcogrammus
+749	イマイトビウオ:Cheilopogon arcticeps
+713	ブリ:Seriola quinqueradiata
+506	ボラ:Mugil cephalus

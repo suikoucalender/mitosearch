@@ -1,8 +1,7 @@
-id	DRR069571.fastq
-Phoxinus oxycephalus jouyi 	75.0
-カジカ:Cottus pollux 	8.33
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	6.33
-サケ:Oncorhynchus keta 	4.73
-コイ:Cyprinus carpio 	2.88
-Niwaella delicata 	1.52
-Phoxinus steindachneri 	1.2
+931	コイ科:Rhynchocypris jouyi
+104	カジカ:Cottus pollux
+79	コイ:Cyprinus carpio
+58	サクラマス・ヤマメ:Oncorhynchus masou masou
+35	コイ科:Cyprinus carpio (triploid)
+19	Niwaella delicata
+15	Phoxinus steindachneri

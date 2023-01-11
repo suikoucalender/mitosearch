@@ -1,13 +1,11 @@
-id	DRR231506.fastq
-チチブ:Tridentiger obscurus 	77.08
-ヌマチチブ:Tridentiger brevispinis 	4.88
-Carassius langsdorfii 	3.54
-キンギョ:Carassius auratus x Megalobrama amblycephala pentaploid hybrid 	3.08
-アユ:Plecoglossus altivelis 	1.89
-コイ:Cyprinus carpio 	1.45
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.42
-キンギョ:Carassius auratus grandoculis 	1.4
-ボラ:Mugil cephalus 	1.38
-ニゴイ:Hemibarbus maculatus 	1.36
-オオクチバス:Micropterus salmoides salmoides 	1.28
-ムギツク:Pungtungia herzi 	1.26
+38825	ヌマチチブ:Tridentiger brevispinis
+2448	チチブ:Tridentiger obscurus
+1800	ギンブナ:Carassius langsdorfii
+1562	ゲンゴロウブナ:Carassius cuvieri
+1452	コイ:Cyprinus carpio
+960	アユ:Plecoglossus altivelis
+711	コイ科:Carassius auratus grandoculis
+700	ボラ:Mugil cephalus
+694	コイ科:Hemibarbus maculatus
+645	サンフィッシュ科:Micropterus salmoides
+639	ムギツク:Pungtungia herzi

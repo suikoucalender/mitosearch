@@ -1,7 +1,6 @@
-id	DRR249639.fastq
-コノシロ:Konosirus punctatus 	75.86
-Engraulis japonicus 	15.4
-メジナ:Girella punctata 	2.87
-マダイ:Pagrus major 	2.31
-Parambassis lala 	1.94
-イシダイ:Oplegnathus fasciatus 	1.62
+1610	コノシロ:Konosirus punctatus
+324	カタクチイワシ科:Engraulis japonicus
+61	セトダイ:Hapalogenys analis
+50	マダイ:Pagrus major
+42	Parambassis lala
+34	イシダイ:Oplegnathus fasciatus

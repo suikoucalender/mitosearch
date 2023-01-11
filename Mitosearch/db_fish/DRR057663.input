@@ -1,14 +1,13 @@
-id	DRR057663.fastq
-マアジ:Trachurus japonicus 	25.02
-ブリ:Seriola quinqueradiata 	22.36
-イマイトビウオ:Cheilopogon arcticeps 	12.46
-Cheilopogon doederleinii 	10.45
-Engraulis japonicus 	10.39
-ホソトビウオ:Cypselurus hiraii 	5.91
-ハガツオ:Sarda orientalis 	2.8
-サワラ:Scomberomorus niphonius 	2.51
-アカオビシマハゼ:Tridentiger trigonocephalus 	2.0
-マタナゴ:Ditrema temminckii 	1.91
-アカカマス:Sphyraena pinguis 	1.69
-Tribolodon hakonensis 	1.33
-トサカギンポ:Omobranchus fasciolatoceps 	1.15
+25757	マアジ:Trachurus japonicus
+23026	ブリ:Seriola quinqueradiata
+12929	イマイトビウオ:Cheilopogon arcticeps
+10761	トビウオ科:Cheilopogon doederleinii
+10698	カタクチイワシ科:Engraulis japonicus
+6077	ホソトビウオ:Cypselurus hiraii
+2891	ハガツオ:Sarda orientalis
+2583	サワラ:Scomberomorus niphonius
+1970	マタナゴ:Ditrema temminckii pacificum
+1738	アカカマス:Sphyraena pinguis
+1456	アカオビシマハゼ:Tridentiger trigonocephalus
+1371	Tribolodon hakonensis
+1181	トサカギンポ:Omobranchus fasciolatoceps

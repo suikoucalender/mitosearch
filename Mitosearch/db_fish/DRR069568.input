@@ -1,13 +1,12 @@
-id	DRR069568.fastq
-ハス:Opsariichthys uncirostris 	44.8
-クロヨシノボリ:Rhinogobius brunneus 	29.1
-Zacco platypus 	6.91
-ヌマムツ:Nipponocypris sieboldii 	3.87
-ウツセミカジカ:Cottus reinii 	2.58
-カワムツ:Nipponocypris temminckii 	2.49
-Carassius langsdorfii 	2.35
-キンギョ:Carassius auratus grandoculis 	1.8
-ドジョウ:Misgurnus anguillicaudatus 	1.75
-Phoxinus oxycephalus jouyi 	1.7
-Odontobutis obscura 	1.43
-ウキゴリ:Gymnogobius urotaenia 	1.24
+973	ハス:Opsariichthys uncirostris
+619	クロヨシノボリ:Rhinogobius brunneus
+150	Zacco platypus
+84	ヌマムツ:Nipponocypris sieboldii
+56	ウツセミカジカ:Cottus reinii
+54	カワムツ:Nipponocypris temminckii
+51	ギンブナ:Carassius langsdorfii
+39	コイ科:Carassius auratus grandoculis
+38	ドジョウ:Misgurnus anguillicaudatus
+38	ドンコ科:Odontobutis obscura
+37	コイ科:Rhynchocypris jouyi
+27	ウキゴリ:Gymnogobius urotaenia

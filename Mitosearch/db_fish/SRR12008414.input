@@ -1,7 +1,9 @@
-id	SRR12008414.fastq
-Sebastes fasciatus 	88.11
-Sebastes mentella 	4.85
-カラスガレイ:Reinhardtius hippoglossoides 	2.2
-Melanostigma atlanticum 	1.76
-ヤマトヒゲダラ:Enchelyopus cimbrius 	1.76
-Pseudopleuronectes americanus 	1.32
+164	メバル科:Sebastes fasciatus
+7	メバル科:Sebastes mentella
+4	ヤマトヒゲダラ:Enchelyopus cimbrius
+3	ゲンゲ科:Melanostigma atlanticum
+3	ドロギンポ:Askoldia variegata
+2	カレイ科:Pseudopleuronectes americanus
+2	カラスガレイ:Reinhardtius hippoglossoides
+2	シロメバル:Sebastes cheni
+2	ゲンゲ科:Lycodes vahlii

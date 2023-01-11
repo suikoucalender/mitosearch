@@ -1,8 +1,7 @@
-id	SRR12008560.fastq
-Sebastes fasciatus 	33.74
-Gadus morhua 	27.67
-Sebastes mentella 	13.67
-Cyclopterus lumpus 	12.34
-Ammodytes dubius 	5.5
-カラフトシシャモ:Mallotus villosus 	3.65
-Pseudopleuronectes americanus 	3.44
+2080	メバル科:Sebastes fasciatus
+1742	タラ科:Gadus morhua
+852	メバル科:Sebastes mentella
+777	Cyclopterus lumpus
+343	イカナゴ科:Ammodytes dubius
+233	カラフトシシャモ:Mallotus villosus
+221	カレイ科:Pseudopleuronectes americanus

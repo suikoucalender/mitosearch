@@ -1,14 +1,17 @@
-id	SRR14752162.fastq
-Rhacochilus vacca 	13.89
-Scorpaenichthys marmoratus 	13.35
-ウスメバル:Sebastes thompsoni 	11.95
-コクチイシナギ:Stereolepis gigas 	9.21
-Girella simplicidens 	8.3
-Semicossyphus pulcher 	7.96
-Oxyjulis californica 	7.64
-Sardinops sagax 	7.3
-Engraulis mordax 	6.84
-Medialuna californiensis 	6.64
-Gymnothorax unicolor 	3.41
-マサバ:Scomber japonicus 	2.24
-ボラ:Mugil cephalus 	1.26
+19515	Scorpaenichthys marmoratus
+15703	Serranus scriba
+13822	ヒラメ科:Paralichthys californicus
+13578	Serranidae sp. JL-2015
+13198	Embiotoca lateralis
+12155	メジナ科:Girella simplicidens
+11763	メバル科:Sebastes caurinus
+11645	ベラ科\nHypsigenyini:Semicossyphus pulcher
+11169	ベラ科\nJuilidini:Halichoeres californicus
+10700	ニシン科:Sardinops sagax
+10005	カタクチイワシ科:Engraulis mordax
+9715	Medialuna californiensis
+7101	Phanerodon vacca
+6322	シロメバル:Sebastes cheni
+4989	ウツボ科:Gymnothorax unicolor
+3281	マサバ:Scomber japonicus
+1849	ボラ:Mugil cephalus

@@ -1,12 +1,11 @@
-id	DRR231421.fastq
-チチブ:Tridentiger obscurus 	76.5
-アユ:Plecoglossus altivelis 	3.74
-Tribolodon hakonensis 	3.5
-ヌマチチブ:Tridentiger brevispinis 	3.07
-オオヨシノボリ:Rhinogobius fluviatilis 	2.38
-カワムツ:Nipponocypris temminckii 	2.36
-ウキゴリ:Gymnogobius urotaenia 	2.22
-モツゴ:Pseudorasbora parva 	1.98
-タモロコ:Gnathopogon elongatus elongatus 	1.69
-キンギョ:Carassius auratus grandoculis 	1.41
-Zacco platypus 	1.16
+73894	ヌマチチブ:Tridentiger brevispinis
+3611	アユ:Plecoglossus altivelis
+3409	Tribolodon hakonensis
+2970	チチブ:Tridentiger obscurus
+2312	カワムツ:Nipponocypris temminckii
+2295	ハゼ科:Rhinogobius sp. OR
+2143	ウキゴリ:Gymnogobius urotaenia
+1931	モツゴ:Pseudorasbora parva
+1653	タモロコ:Gnathopogon elongatus elongatus
+1373	コイ科:Carassius auratus grandoculis
+1130	Zacco platypus

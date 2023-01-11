@@ -1,11 +1,10 @@
-id	DRR069565.fastq
-クロヨシノボリ:Rhinogobius brunneus 	52.48
-Tribolodon hakonensis 	12.87
-Phoxinus oxycephalus jouyi 	7.92
-カワヨシノボリ:Rhinogobius flumineus 	6.93
-Zacco platypus 	4.95
-メジナ:Girella punctata 	4.95
-カワムツ:Nipponocypris temminckii 	3.96
-Niwaella delicata 	1.98
-アユ:Plecoglossus altivelis 	1.98
-ムギツク:Pungtungia herzi 	1.98
+53	クロヨシノボリ:Rhinogobius brunneus
+13	Tribolodon hakonensis
+8	コイ科:Rhynchocypris jouyi
+7	カワヨシノボリ:Rhinogobius flumineus
+5	Zacco platypus
+5	セトダイ:Hapalogenys analis
+4	カワムツ:Nipponocypris temminckii
+2	ムギツク:Pungtungia herzi
+2	アユ:Plecoglossus altivelis
+2	Niwaella delicata

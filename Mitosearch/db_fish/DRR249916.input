@@ -1,21 +1,21 @@
-id	DRR249916.fastq
-Engraulis japonicus 	29.27
-ハタタテヌメリ:Callionymus valenciennei 	13.72
-コノシロ:Konosirus punctatus 	13.68
-マアジ:Trachurus japonicus 	9.92
-シロギス:Sillago japonica 	4.04
-サッパ:Sardinella zunasi 	3.01
-スズキ:Lateolabrax japonicus 	2.98
-シログチ:Pennahia argentata 	2.97
-アカエイ:Hemitrygon akajei 	2.36
-イボダイ:Psenopsis anomala 	2.17
-アカカマス:Sphyraena pinguis 	2.08
-ヨシノゴチ:Platycephalus sp. MAGOCHI 	1.94
-マダイ:Pagrus major 	1.6
-サビハゼ:Sagamia geneionema 	1.57
-テンジクダイ:Jaydia lineata 	1.57
-マルアジ:Decapterus maruadsi 	1.52
-ヒイラギ:Nuchequula nuchalis 	1.46
-イトヒキハゼ:Myersina filifer 	1.41
-アカハゼ:Amblychaeturichthys hexanema 	1.38
-キチヌ:Acanthopagrus latus 	1.35
+3095	カタクチイワシ科:Engraulis japonicus
+1652	スジハゼ:Acentrogobius virgatulus
+1467	ハタタテヌメリ:Callionymus valenciennei
+1451	コノシロ:Konosirus punctatus
+1054	マアジ:Trachurus japonicus
+430	シロギス:Sillago japonica
+417	ハゼ科:Chaeturichthys stigmatias
+321	サッパ:Sardinella zunasi
+318	シログチ:Pennahia argentata
+317	スズキ:Lateolabrax japonicus
+248	アカエイ:Hemitrygon akajei
+232	イボダイ:Psenopsis anomala
+220	アカカマス:Sphyraena pinguis
+207	コチ科:Platycephalus sp. 2 LL-2021
+171	マダイ:Pagrus major
+166	テンジクダイ:Jaydia lineata
+165	サビハゼ:Sagamia geneionema
+163	マルアジ:Decapterus maruadsi
+152	ヒイラギ:Nuchequula nuchalis
+148	イトヒキハゼ:Myersina filifer
+143	キチヌ:Acanthopagrus latus

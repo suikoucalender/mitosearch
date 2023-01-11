@@ -1,14 +1,13 @@
-id	SRR14526854.fastq
-Catostomus commersonii 	23.1
-Lepomis gibbosus 	19.07
-Perca flavescens 	16.04
-Rhinichthys cataractae 	10.11
-Esox lucius 	7.91
-Notemigonus crysoleucas 	6.800000000000001
-太平洋系降海型イトヨ:Gasterosteus aculeatus 	3.9600000000000004
-Ameiurus nebulosus 	3.2300000000000004
-Etheostoma flabellare 	2.69
-カワマス:Salvelinus fontinalis 	2.32
-Etheostoma olmstedi 	1.82
-Rhinichthys atratulus 	1.69
-コクチバス:Micropterus dolomieu 	1.26
+35259	Catostomus commersonii
+28077	サンフィッシュ科:Lepomis gibbosus
+23998	Perca flavescens
+15340	Rhinichthys cataractae
+11767	Esox lucius
+9959	Notemigonus crysoleucas
+5841	太平洋系降海型イトヨ:Gasterosteus aculeatus
+5289	Ameiurus nebulosus
+4184	Etheostoma flabellare
+3365	カワマス:Salvelinus fontinalis
+2875	Etheostoma olmstedi
+2639	Rhinichthys atratulus
+2024	サンフィッシュ科:Micropterus treculii

@@ -1,13 +1,12 @@
-id	DRR249670.fastq
-コノシロ:Konosirus punctatus 	33.13
-Sardinops sagax 	25.25
-Engraulis japonicus 	11.05
-アカアマダイ:Branchiostegus japonicus 	5.85
-ボラ:Mugil cephalus 	5.85
-ブリ:Seriola quinqueradiata 	4.57
-マハゼ:Acanthogobius flavimanus 	4.1
-ハタタテヌメリ:Callionymus valenciennei 	3.17
-ヒメコダイ:Chelidoperca hirundinacea 	2.34
-ヒイラギ:Nuchequula nuchalis 	1.83
-シログチ:Pennahia argentata 	1.66
-スズキ:Lateolabrax japonicus 	1.21
+3786	コノシロ:Konosirus punctatus
+2892	ニシン科:Sardinops sagax
+1256	カタクチイワシ科:Engraulis japonicus
+671	ボラ:Mugil cephalus
+670	アカアマダイ:Branchiostegus japonicus
+472	マハゼ:Acanthogobius flavimanus
+441	ブリ:Seriola quinqueradiata
+366	ハタタテヌメリ:Callionymus valenciennei
+266	ヒメコダイ:Chelidoperca hirundinacea
+213	ヒイラギ:Nuchequula nuchalis
+188	シログチ:Pennahia argentata
+137	スズキ:Lateolabrax japonicus

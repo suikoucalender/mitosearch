@@ -1,19 +1,18 @@
-id	SRR18077926.fastq
-テナガミズテング:Harpadon nehereus 	20.419999999999998
-カサゴ:Sebastiscus marmoratus 	16.18
-Larimichthys crocea 	10.12
-ハモ:Muraenesox cinereus 	10.0
-キグチ:Larimichthys polyactis 	8.21
-Pampus argenteus 	4.279999999999999
-Pennahia macrocephalus 	4.12
-ヒガンフグ:Takifugu pardalis 	4.07
-アカハゼ:Amblychaeturichthys hexanema 	3.83
-タチウオ:Trichiurus japonicus 	3.2300000000000004
-アカエイ:Hemitrygon akajei 	2.94
-ツマリエツ:Setipinna tenuifilis 	2.73
-カンダリ:Collichthys lucidus 	2.15
-アブラグチ:Johnius distinctus 	2.08
-ホンニベ:Miichthys miiuy 	1.48
-ボラ:Mugil cephalus 	1.41
-Sillago sinica 	1.39
-Thryssa kammalensis 	1.34
+851	テナガミズテング:Harpadon nehereus
+674	カサゴ:Sebastiscus marmoratus
+423	ニベ科:Larimichthys crocea
+415	ハモ:Muraenesox cinereus
+342	キグチ:Larimichthys polyactis
+179	マナガツオ科:Pampus sp. LY-2009
+176	ハゼ科:Chaeturichthys stigmatias
+172	フグ科:Takifugu fasciatus
+172	ニベ科:Pennahia macrocephalus
+135	タチウオ:Trichiurus japonicus
+122	アカエイ:Hemitrygon akajei
+113	ツマリエツ:Setipinna tenuifilis
+90	カンダリ:Collichthys lucidus
+87	アブラグチ:Johnius distinctus
+62	ホンニベ:Miichthys miiuy
+59	ボラ:Mugil cephalus
+58	キス科:Sillago sinica
+56	Thryssa kammalensis

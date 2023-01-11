@@ -1,10 +1,11 @@
-id	SRR14531929.fastq
-Anguilla australis australis 	33.0
-Anguilla dieffenbachii 	25.0
-カダヤシ:Gambusia affinis 	20.0
-Galaxias rostratus 	10.0
-ブラウントラウト:Salmo trutta 	3.0
-Galaxias sp. 'southern' 	3.0
-Gobiomorphus huttoni 	2.0
-Tinca tinca 	2.0
-キンギョ:Carassius auratus 	2.0
+19	ウナギ科:Anguilla australis australis
+13	カダヤシ:Gambusia affinis
+12	ウナギ科:Anguilla dieffenbachii
+8	Gobiomorphus huttoni
+6	Galaxias rostratus
+2	Galaxias sp. 'southern'
+1	ブラウントラウト:Salmo trutta
+1	ウナギ科:Anguilla rostrata
+1	Gobiomorphus breviceps
+1	Galaxias fasciatus
+1	Tinca tinca

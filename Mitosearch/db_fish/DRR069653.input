@@ -1,6 +1,5 @@
-id	DRR069653.fastq
-ニジマス:Oncorhynchus mykiss 	46.22
-Phoxinus oxycephalus jouyi 	46.04
-カジカ:Cottus pollux 	3.82
-太平洋系降海型イトヨ:Gasterosteus aculeatus 	2.09
-ゴギ:Salvelinus leucomaenis leucomaenis 	1.82
+511	サケ科:Oncorhynchus mykiss newberrii
+506	コイ科:Rhynchocypris jouyi
+42	カジカ:Cottus pollux
+23	太平洋系降海型イトヨ:Gasterosteus aculeatus
+20	ゴギ:Salvelinus leucomaenis

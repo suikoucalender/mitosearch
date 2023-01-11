@@ -1,7 +1,4 @@
-id	SRR15710246.fastq
-ナイルティラピア:Oreochromis niloticus 	41.93
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	36.56
-Oreochromis sp. 'red tilapia' 	14.06
-ボラ:Mugil cephalus 	3.2
-Coptodon zillii 	2.72
-Pseudogobius taijiangensis 	1.54
+455082	ナイルティラピア:Oreochromis niloticus
+15786	ボラ:Mugil cephalus
+13462	Coptodon zillii
+7606	ハゼ科:Pseudogobius taijiangensis

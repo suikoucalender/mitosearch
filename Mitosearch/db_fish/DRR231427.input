@@ -1,12 +1,11 @@
-id	DRR231427.fastq
-チチブ:Tridentiger obscurus 	76.94
-コイ:Cyprinus carpio 	4.5
-クロヨシノボリ:Rhinogobius brunneus 	3.42
-ヌマチチブ:Tridentiger brevispinis 	2.87
-Tribolodon hakonensis 	2.77
-Zacco platypus 	1.71
-オオクチバス:Micropterus salmoides salmoides 	1.64
-マハゼ:Acanthogobius flavimanus 	1.63
-アユ:Plecoglossus altivelis 	1.63
-ウキゴリ:Gymnogobius urotaenia 	1.51
-ニゴイ:Hemibarbus barbus 	1.38
+82898	ヌマチチブ:Tridentiger brevispinis
+4861	コイ:Cyprinus carpio
+3681	クロヨシノボリ:Rhinogobius brunneus
+3092	チチブ:Tridentiger obscurus
+3001	Tribolodon hakonensis
+1857	Zacco platypus
+1770	サンフィッシュ科:Micropterus salmoides
+1754	アユ:Plecoglossus altivelis
+1747	マハゼ:Acanthogobius flavimanus
+1620	ウキゴリ:Gymnogobius urotaenia
+1494	ニゴイ:Hemibarbus barbus

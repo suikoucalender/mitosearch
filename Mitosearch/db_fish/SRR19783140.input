@@ -1,14 +1,5 @@
-id	SRR19783140.fastq
-Engraulis mordax 	43.87
-Oxyjulis californica 	17.0
-Myliobatis californica 	11.86
-Leuresthes tenuis 	5.93
-Sardinops sagax 	4.74
-マサバ:Scomber japonicus 	4.74
-マアジ:Trachurus japonicus 	2.37
-Menticirrhus littoralis 	1.9800000000000002
-アカオビシマハゼ:Tridentiger trigonocephalus 	1.9800000000000002
-キハダ:Thunnus albacares 	1.58
-Embiotoca jacksoni 	1.58
-カツオ:Katsuwonus pelamis 	1.1900000000000002
-Dipturus kwangtungensis 	1.1900000000000002
+13	Paralabrax maculatofasciatus
+13	Paralabrax nebulifer
+2	キハダ:Thunnus albacares
+2	ウシノシタ科:Symphurus atricaudus
+1	Seriphus politus

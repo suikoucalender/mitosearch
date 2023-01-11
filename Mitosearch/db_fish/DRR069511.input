@@ -1,12 +1,11 @@
-id	DRR069511.fastq
-カワムツ:Nipponocypris temminckii 	40.08
-Zacco platypus 	17.86
-Odontobutis obscura 	10.7
-ドジョウ:Misgurnus anguillicaudatus 	10.28
-クロヨシノボリ:Rhinogobius brunneus 	4.75
-キンギョ:Carassius auratus grandoculis 	4.46
-Carassius langsdorfii 	3.76
-ハス:Opsariichthys uncirostris 	3.53
-カワヨシノボリ:Rhinogobius flumineus 	1.65
-キンギョ:Carassius auratus x Megalobrama amblycephala pentaploid hybrid 	1.53
-Phoxinus oxycephalus jouyi 	1.4
+6280	カワムツ:Nipponocypris temminckii
+2799	Zacco platypus
+1975	ドンコ科:Odontobutis obscura
+1622	ドジョウ:Misgurnus anguillicaudatus
+738	クロヨシノボリ:Rhinogobius brunneus
+699	コイ科:Carassius auratus grandoculis
+589	ギンブナ:Carassius langsdorfii
+553	ハス:Opsariichthys uncirostris
+258	カワヨシノボリ:Rhinogobius flumineus
+252	ゲンゴロウブナ:Carassius cuvieri
+220	コイ科:Rhynchocypris jouyi

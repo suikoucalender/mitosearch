@@ -1,19 +1,18 @@
-id	SRR14526866.fastq
-Catostomus commersonii 	42.230000000000004
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	14.19
-Sander vitreus 	8.61
-Etheostoma olmstedi 	4.36
-Perca flavescens 	4.130000000000001
-Pimephales notatus 	3.7900000000000005
-Cottus bairdii 	2.79
-Catostomus catostomus 	2.69
-Rhinichthys cataractae 	2.41
-Etheostoma flabellare 	2.39
-Lota lota 	2.25
-Neogobius melanostomus 	2.09
-Percopsis omiscomaycus 	1.7000000000000002
-Percina macrolepida 	1.63
-Alosa pseudoharengus 	1.28
-Fundulus diaphanus 	1.27
-コクチバス:Micropterus dolomieu 	1.11
-Esox lucius 	1.09
+58836	Catostomus commersonii
+19580	コイ:Cyprinus carpio
+11967	Sander vitreus
+5999	Etheostoma olmstedi
+5753	Perca flavescens
+5247	Pimephales notatus
+3844	カジカ科:Cottus perplexus
+3734	Catostomus catostomus
+3305	Etheostoma flabellare
+3279	Rhinichthys cataractae
+3155	Lota lota
+2917	Neogobius melanostomus
+2381	Percina caprodes
+2353	Percopsis omiscomaycus
+1775	Fundulus diaphanus
+1758	Alosa pseudoharengus
+1675	サンフィッシュ科:Micropterus treculii
+1511	Esox lucius

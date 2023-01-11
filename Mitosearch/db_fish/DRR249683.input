@@ -1,8 +1,7 @@
-id	DRR249683.fastq
-コノシロ:Konosirus punctatus 	75.48
-サッパ:Sardinella zunasi 	11.46
-Engraulis japonicus 	6.8
-ブリ:Seriola quinqueradiata 	2.3
-ボラ:Mugil cephalus 	1.69
-Sardinops sagax 	1.18
-ムツ:Scombrops boops 	1.09
+17739	コノシロ:Konosirus punctatus
+2691	サッパ:Sardinella zunasi
+1599	カタクチイワシ科:Engraulis japonicus
+496	ブリ:Seriola quinqueradiata
+400	ボラ:Mugil cephalus
+279	ニシン科:Sardinops sagax
+256	ムツ:Scombrops boops

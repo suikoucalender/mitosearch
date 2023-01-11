@@ -1,15 +1,5 @@
-id	DRR125607.fastq
-Tribolodon brandtii brandtii 	37.22
-Tribolodon hakonensis 	25.3
-Tribolodon sachalinensis 	9.0
-サケ:Oncorhynchus keta 	8.25
-ギンブナ:Carassius sp. 'Ginbuna' 	7.89
-キンギョ:Carassius auratus x Megalobrama amblycephala pentaploid hybrid 	1.95
-キンギョ:Carassius auratus 	1.93
-マガレイ:Pseudopleuronectes herzensteini 	1.45
-ドジョウ:Misgurnus anguillicaudatus 	1.43
-モツゴ:Pseudorasbora parva 	1.24
-ブリ:Seriola quinqueradiata 	1.11
-スケトウダラ:Gadus chalcogrammus 	1.08
-トミヨ属淡水型:Pungitius sp. Brackish type 	1.07
-Tribolodon brandtii maruta 	1.07
+5709	Tribolodon brandtii
+3743	Tribolodon hakonensis
+1257	Tribolodon ezoe
+399	ギンブナ:Carassius langsdorfii
+184	モツゴ:Pseudorasbora parva

@@ -1,11 +1,10 @@
-id	SRR12008388.fastq
-Pseudopleuronectes americanus 	27.74
-Triglops murrayi 	21.7
-Anarhichas denticulatus 	17.53
-Gadus morhua 	10.34
-Glyptocephalus cynoglossus 	9.74
-Sebastes fasciatus 	5.59
-Artediellus atlanticus 	2.87
-Artediellus uncinatus 	1.77
-Clupea harengus 	1.64
-Platichthys flesus 	1.08
+40031	カレイ科:Pseudopleuronectes americanus
+31379	カジカ科:Triglops murrayi
+25371	オオカミウオ科:Anarhichas denticulatus
+14868	タラ科:Gadus morhua
+13899	カレイ科:Glyptocephalus cynoglossus
+8018	メバル科:Sebastes fasciatus
+4158	カジカ科:Icelus spatula
+2549	カジカ科:Artediellus uncinatus
+2358	ニシン科:Clupea harengus
+1584	ヌマガレイ:Platichthys stellatus

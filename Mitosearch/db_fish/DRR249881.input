@@ -1,12 +1,12 @@
-id	DRR249881.fastq
-スズキ:Lateolabrax japonicus 	51.32
-コノシロ:Konosirus punctatus 	18.66
-Engraulis japonicus 	6.82
-ウスメバル:Sebastes thompsoni 	4.46
-アカアマダイ:Branchiostegus japonicus 	4.04
-キダイ:Dentex hypselosomus 	3.85
-マダイ:Pagrus major 	3.33
-ダツ:Strongylura anastomella 	2.15
-ハタタテヌメリ:Callionymus valenciennei 	1.9
-アヤメカサゴ:Sebastiscus albofasciatus 	1.9
-Sardinops sagax 	1.57
+6681	スズキ:Lateolabrax japonicus
+2410	コノシロ:Konosirus punctatus
+875	カタクチイワシ科:Engraulis japonicus
+577	シロメバル:Sebastes cheni
+525	アカアマダイ:Branchiostegus japonicus
+502	チダイ:Evynnis tumifrons
+435	マダイ:Pagrus major
+341	スジハゼ:Acentrogobius virgatulus
+274	ダツ:Strongylura anastomella
+248	アヤメカサゴ:Sebastiscus albofasciatus
+242	ハタタテヌメリ:Callionymus valenciennei
+201	ニシン科:Sardinops sagax

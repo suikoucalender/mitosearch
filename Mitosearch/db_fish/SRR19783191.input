@@ -1,13 +1,5 @@
-id	SRR19783191.fastq
-Leuresthes tenuis 	35.31
-マサバ:Scomber japonicus 	19.950000000000003
-マアジ:Trachurus japonicus 	8.25
-Sardinops sagax 	8.18
-キハダ:Thunnus albacares 	6.950000000000001
-Menticirrhus littoralis 	5.01
-Sarda sarda 	3.9
-コクチフサカサゴ:Scorpaena miostoma 	3.5000000000000004
-Engraulis mordax 	3.4099999999999997
-カツオ:Katsuwonus pelamis 	2.11
-Rhacochilus vacca 	1.7999999999999998
-Myliobatis californica 	1.6400000000000001
+14006	キハダ:Thunnus albacares
+4154	Paralabrax nebulifer
+2350	Paralabrax maculatofasciatus
+867	Bairdiella chrysoura
+453	Hypsoblennius ionthas

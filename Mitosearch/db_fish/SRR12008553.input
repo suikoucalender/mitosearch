@@ -1,9 +1,8 @@
-id	SRR12008553.fastq
-Gadus morhua 	42.77
-カラスガレイ:Reinhardtius hippoglossoides 	15.18
-Sebastes fasciatus 	11.83
-カラフトシシャモ:Mallotus villosus 	11.38
-Triglops murrayi 	6.22
-Cyclopterus lumpus 	5.67
-Pseudopleuronectes americanus 	5.18
-Eumesogrammus praecisus 	1.77
+28537	タラ科:Gadus morhua
+10167	カラスガレイ:Reinhardtius hippoglossoides
+7880	メバル科:Sebastes fasciatus
+7609	カラフトシシャモ:Mallotus villosus
+4167	カジカ科:Triglops murrayi
+3796	Cyclopterus lumpus
+3457	カレイ科:Pseudopleuronectes americanus
+1169	ニセメダマギンポ:Anisarchus medius

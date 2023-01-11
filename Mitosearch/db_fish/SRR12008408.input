@@ -1,12 +1,13 @@
-id	SRR12008408.fastq
-Gadus morhua 	50.6
-Clupea harengus 	27.72
-Triglops murrayi 	4.19
-Eumesogrammus praecisus 	3.22
-Scomber scombrus 	2.85
-Lycodes reticulatus 	2.58
-Sarritor frenatus 	1.97
-Liparis liparis 	1.97
-Liparis gibbus 	1.77
-Pseudopleuronectes americanus 	1.57
-Ammodytes tobianus 	1.55
+68910	タラ科:Gadus morhua
+37681	ニシン科:Clupea harengus
+5735	カジカ科:Triglops murrayi
+3891	アジ科:Scomber scombrus
+3522	ゲンゲ科:Lycodes lavalaei
+3246	Anarrhichthys ocellatus
+2712	トクビレ科:Sarritor frenatus
+2705	クサウオ科:Liparis liparis
+2432	イサゴビクニン:Liparis ochotensis
+2218	ニセメダマギンポ:Anisarchus medius
+2166	Eumesogrammus praecisus
+2156	カレイ科:Pseudopleuronectes americanus
+2110	イカナゴ科:Ammodytes tobianus

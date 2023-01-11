@@ -1,9 +1,7 @@
-id	DRR231524.fastq
-Tribolodon hakonensis 	42.11
-ボラ:Mugil cephalus 	26.59
-Zacco platypus 	10.43
-キンギョ:Carassius auratus x Megalobrama amblycephala pentaploid hybrid 	6.39
-Carassius langsdorfii 	5.73
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	4.13
-チチブ:Tridentiger obscurus 	2.49
-コイ:Cyprinus carpio 	2.13
+32483	Tribolodon hakonensis
+20604	ボラ:Mugil cephalus
+8065	Zacco platypus
+4947	ゲンゴロウブナ:Carassius cuvieri
+4699	コイ:Cyprinus carpio
+4421	ギンブナ:Carassius langsdorfii
+1934	ヌマチチブ:Tridentiger brevispinis

@@ -1,10 +1,8 @@
-id	DRR069687.fastq
-Zacco platypus 	58.82
-クロヨシノボリ:Rhinogobius brunneus 	28.68
-Carassius langsdorfii 	2.57
-Phoxinus steindachneri 	2.21
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.84
-コイ:Cyprinus carpio 	1.84
-Odontobutis obscura 	1.47
-キンギョ:Carassius auratus grandoculis 	1.47
-カワムツ:Nipponocypris temminckii 	1.1
+160	Zacco platypus
+77	クロヨシノボリ:Rhinogobius brunneus
+10	コイ:Cyprinus carpio
+7	ギンブナ:Carassius langsdorfii
+6	Phoxinus steindachneri
+5	ドンコ科:Odontobutis obscura
+4	コイ科:Carassius auratus grandoculis
+3	カワムツ:Nipponocypris temminckii

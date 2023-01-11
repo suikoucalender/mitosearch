@@ -1,12 +1,11 @@
-id	SRR12008466.fastq
-Clupea harengus 	66.61
-Sebastes fasciatus 	9.76
-Pseudopleuronectes americanus 	5.37
-カラスガレイ:Reinhardtius hippoglossoides 	4.19
-ヤマトヒゲダラ:Enchelyopus cimbrius 	3.27
-Sebastes mentella 	2.96
-オヒョウ:Hippoglossus stenolepis 	2.02
-Gadus morhua 	1.77
-Lumpenus lampretaeformis 	1.56
-Lophius americanus 	1.33
-Sarritor frenatus 	1.15
+53162	ニシン科:Clupea harengus
+7776	メバル科:Sebastes fasciatus
+4279	カレイ科:Pseudopleuronectes americanus
+3350	カラスガレイ:Reinhardtius hippoglossoides
+2621	ヤマトヒゲダラ:Enchelyopus cimbrius
+2356	メバル科:Sebastes mentella
+1620	オヒョウ:Hippoglossus stenolepis
+1402	タラ科:Gadus morhua
+1230	タウエガジ科:Lumpenus lampretaeformis
+1068	アンコウ科:Lophius americanus
+925	トクビレ科:Sarritor frenatus

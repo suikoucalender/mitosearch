@@ -1,11 +1,10 @@
-id	DRR249980.fastq
-コノシロ:Konosirus punctatus 	37.12
-Engraulis japonicus 	25.83
-ハタタテヌメリ:Callionymus valenciennei 	10.66
-ダツ:Strongylura anastomella 	8.05
-Sardinops sagax 	5.89
-アカエイ:Hemitrygon akajei 	3.78
-ボラ:Mugil cephalus 	3.6
-シログチ:Pennahia argentata 	2.89
-クロダイ:Acanthopagrus schlegelii 	1.16
-Parambassis lala 	1.02
+1027	コノシロ:Konosirus punctatus
+719	カタクチイワシ科:Engraulis japonicus
+293	ハタタテヌメリ:Callionymus valenciennei
+226	ダツ:Strongylura anastomella
+164	ニシン科:Sardinops sagax
+107	アカエイ:Hemitrygon akajei
+100	ボラ:Mugil cephalus
+80	シログチ:Pennahia argentata
+32	クロダイ:Acanthopagrus schlegelii
+29	Parambassis lala

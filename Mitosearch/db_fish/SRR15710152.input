@@ -1,10 +1,7 @@
-id	SRR15710152.fastq
-ボラ:Mugil cephalus 	28.29
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	19.61
-ナイルティラピア:Oreochromis niloticus 	17.73
-Oreochromis sp. 'red tilapia' 	12.56
-Planiliza macrolepis 	7.92
-アンピンボラ:Planiliza subviridis 	5.99
-Pseudogobius taijiangensis 	4.75
-キチヌ:Acanthopagrus latus 	2.12
-Hemigobius hoevenii 	1.03
+174488	ナイルティラピア:Oreochromis niloticus
+99201	ボラ:Mugil cephalus
+27760	コボラ:Planiliza macrolepis
+21008	アンピンボラ:Planiliza subviridis
+16651	ハゼ科:Pseudogobius taijiangensis
+7431	キチヌ:Acanthopagrus latus
+3628	Hemigobius hoevenii

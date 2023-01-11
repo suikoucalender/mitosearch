@@ -1,9 +1,7 @@
-id	ERR3514685.fastq
-Oreochromis sp. 'red tilapia' 	73.99
-ナイルティラピア:Oreochromis niloticus 	15.82
-Hypsibarbus salweenensis 	3.27
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	1.8
-Notopterus notopterus 	1.37
-Amblyrhynchichthys truncatus 	1.28
-Clupeichthys goniognathus 	1.26
-Barbonymus gonionotus 	1.22
+43727	ナイルティラピア:Oreochromis niloticus
+26758	カワスズメ科:Oreochromis sp. 'red tilapia'
+2504	Hypsibarbus salweenensis
+1055	Notopterus notopterus
+983	Amblyrhynchichthys truncatus
+973	Clupeichthys goniognathus
+936	Barbonymus gonionotus

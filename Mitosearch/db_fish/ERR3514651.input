@@ -1,12 +1,10 @@
-id	ERR3514651.fastq
-Oreochromis sp. 'red tilapia' 	30.7
-ナイルティラピア:Oreochromis niloticus 	22.46
-Mystacoleucus marginatus 	14.84
-Trichopodus leerii 	8.04
-Amblyrhynchichthys truncatus 	4.17
-ナイルティラピア:Oreochromis niloticus x Oreochromis aureus 	4.01
-Hampala macrolepidota 	4.0
-Puntioplites proctozystron 	3.79
-Paralaubuca typus 	3.32
-Syncrossus helodes 	2.75
-Hypsibarbus vernayi 	1.92
+42530	ナイルティラピア:Oreochromis niloticus
+13577	Mystacoleucus marginatus
+10512	カワスズメ科:Oreochromis sp. 'red tilapia'
+7307	Trichopodus leerii
+3865	Amblyrhynchichthys truncatus
+3669	Hampala macrolepidota
+3502	Puntioplites proctozystron
+3082	Paralaubuca typus
+2547	Syncrossus helodes
+1714	Hypsibarbus vernayi

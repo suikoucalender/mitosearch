@@ -1,11 +1,10 @@
-id	DRR249892.fastq
-コノシロ:Konosirus punctatus 	64.52
-Engraulis japonicus 	13.87
-マサバ:Scomber japonicus 	5.38
-スズキ:Lateolabrax japonicus 	4.85
-Siganus canaliculatus 	3.74
-サッパ:Sardinella zunasi 	2.15
-アカカマス:Sphyraena pinguis 	2.11
-Sardinops sagax 	1.17
-シログチ:Pennahia argentata 	1.13
-キダイ:Dentex hypselosomus 	1.07
+9751	コノシロ:Konosirus punctatus
+2080	カタクチイワシ科:Engraulis japonicus
+812	マサバ:Scomber japonicus
+734	スズキ:Lateolabrax japonicus
+563	アイゴ:Siganus fuscescens
+327	サッパ:Sardinella zunasi
+316	アカカマス:Sphyraena pinguis
+174	ニシン科:Sardinops sagax
+167	シログチ:Pennahia argentata
+161	チダイ:Evynnis tumifrons

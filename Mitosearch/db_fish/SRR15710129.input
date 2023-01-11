@@ -1,6 +1,5 @@
-id	SRR15710129.fastq
-ボラ:Mugil cephalus 	50.84
-Planiliza macrolepis 	24.99
-Planiliza affinis 	10.65
-アンピンボラ:Planiliza subviridis 	6.92
-ナイルティラピア:Oreochromis niloticus 	6.59
+158638	ボラ:Mugil cephalus
+77782	コボラ:Planiliza macrolepis
+33194	ボラ科:Planiliza affinis
+21578	アンピンボラ:Planiliza subviridis
+20552	ナイルティラピア:Oreochromis niloticus

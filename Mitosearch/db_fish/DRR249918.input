@@ -1,8 +1,7 @@
-id	DRR249918.fastq
-コノシロ:Konosirus punctatus 	54.27
-ボラ:Mugil cephalus 	25.84
-スズキ:Lateolabrax japonicus 	6.62
-シログチ:Pennahia argentata 	5.18
-Engraulis japonicus 	3.12
-ヒイラギ:Nuchequula nuchalis 	2.78
-サッパ:Sardinella zunasi 	2.2
+6790	コノシロ:Konosirus punctatus
+3244	ボラ:Mugil cephalus
+829	スズキ:Lateolabrax japonicus
+648	シログチ:Pennahia argentata
+395	カタクチイワシ科:Engraulis japonicus
+349	ヒイラギ:Nuchequula nuchalis
+272	サッパ:Sardinella zunasi

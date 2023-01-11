@@ -1,13 +1,12 @@
-id	DRR169738.fastq
-トウヨシノボリ:Rhinogobius sp. OR 	39.33
-カワムツ:Nipponocypris temminckii 	29.86
-ムギツク:Pungtungia herzi 	6.1
-Phoxinus oxycephalus jouyi 	6.01
-Zacco platypus 	3.8
-オオヨシノボリ:Rhinogobius fluviatilis 	3.53
-カジカ:Cottus pollux 	2.91
-オヤニラミ:Coreoperca kawamebari 	2.1
-Carassius langsdorfii 	1.9
-カマツカ:Pseudogobio esocinus 	1.69
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	1.58
-クロヨシノボリ:Rhinogobius brunneus 	1.19
+23527	カワヨシノボリ:Rhinogobius flumineus
+17820	カワムツ:Nipponocypris temminckii
+3644	ムギツク:Pungtungia herzi
+3567	コイ科:Rhynchocypris jouyi
+3470	ドンコ科:Odontobutis obscura
+2255	Zacco platypus
+2069	ハゼ科:Rhinogobius sp. OR
+1727	カジカ:Cottus pollux
+1256	オヤニラミ:Coreoperca kawamebari
+1200	コイ:Cyprinus carpio
+1130	ギンブナ:Carassius langsdorfii
+1015	カマツカ:Pseudogobio esocinus

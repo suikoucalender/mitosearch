@@ -1,10 +1,9 @@
-id	DRR249946.fastq
-コノシロ:Konosirus punctatus 	49.57
-Engraulis japonicus 	33.84
-サワラ:Scomberomorus niphonius 	5.53
-アカカマス:Sphyraena pinguis 	2.54
-メイタガレイ:Pleuronichthys lighti 	2.22
-ヨシノゴチ:Platycephalus sp. MAGOCHI 	1.97
-キダイ:Dentex hypselosomus 	1.96
-ハタタテヌメリ:Callionymus valenciennei 	1.27
-ヒガンフグ:Takifugu pardalis 	1.09
+11081	コノシロ:Konosirus punctatus
+7565	カタクチイワシ科:Engraulis japonicus
+1238	サワラ:Scomberomorus niphonius
+566	アカカマス:Sphyraena pinguis
+495	ナガレメイタガレイ:Pleuronichthys cornutus
+445	コチ科:Platycephalus sp. 2 LL-2021
+437	チダイ:Evynnis tumifrons
+286	ハタタテヌメリ:Callionymus valenciennei
+241	フグ科:Takifugu fasciatus

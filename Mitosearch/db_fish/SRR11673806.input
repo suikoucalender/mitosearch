@@ -1,10 +1,9 @@
-id	SRR11673806.fastq
-ゲンゴロウブナ:Cyprinus carpio specularis x Carassius cuvieri 	23.45
-オオクチバス:Micropterus salmoides 	15.83
-ヌマチチブ:Tridentiger brevispinis 	14.54
-ブルーギル:Lepomis macrochirus 	12.96
-ボラ:Mugil cephalus 	10.97
-ハス:Opsariichthys uncirostris amurensis 	9.76
-Squalidus sp. SX-0527 	7.36
-Sarcocheilichthys nigripinnis morii 	3.57
-Tribolodon hakonensis 	1.56
+83382	コイ:Cyprinus carpio
+56634	サンフィッシュ科:Micropterus salmoides
+51081	チチブ:Tridentiger obscurus
+44904	サンフィッシュ科:Lepomis cyanellus
+38114	ボラ:Mugil cephalus
+33978	コイ科:Opsariichthys uncirostris amurensis
+25526	コイ科:Squalidus iijimae
+12463	コイ科:Sarcocheilichthys nigripinnis morii
+5443	Tribolodon hakonensis

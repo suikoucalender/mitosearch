@@ -1,6 +1,5 @@
-id	SRR15710149.fastq
-ボラ:Mugil cephalus 	67.57
-Planiliza macrolepis 	22.72
-Pseudogobius taijiangensis 	6.4
-Hemigobius hoevenii 	2.24
-アンピンボラ:Planiliza subviridis 	1.07
+320964	ボラ:Mugil cephalus
+107807	コボラ:Planiliza macrolepis
+30377	ハゼ科:Pseudogobius taijiangensis
+10626	Hemigobius hoevenii
+5058	アンピンボラ:Planiliza subviridis

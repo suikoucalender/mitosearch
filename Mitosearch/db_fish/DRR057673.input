@@ -1,11 +1,10 @@
-id	DRR057673.fastq
-Engraulis japonicus 	43.49
-サワラ:Scomberomorus niphonius 	13.3
-マアジ:Trachurus japonicus 	10.67
-ブリ:Seriola quinqueradiata 	7.14
-コノシロ:Konosirus punctatus 	6.91
-ホソトビウオ:Cypselurus hiraii 	6.69
-Tribolodon hakonensis 	6.35
-ヒイラギ:Nuchequula nuchalis 	2.54
-キダイ:Dentex hypselosomus 	1.67
-アカハゼ:Amblychaeturichthys hexanema 	1.24
+22330	カタクチイワシ科:Engraulis japonicus
+6827	サワラ:Scomberomorus niphonius
+5480	マアジ:Trachurus japonicus
+3671	ブリ:Seriola quinqueradiata
+3547	コノシロ:Konosirus punctatus
+3432	ホソトビウオ:Cypselurus hiraii
+3259	Tribolodon hakonensis
+1306	ヒイラギ:Nuchequula nuchalis
+859	チダイ:Evynnis tumifrons
+633	ハゼ科:Chaeturichthys stigmatias

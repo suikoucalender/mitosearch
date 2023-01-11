@@ -1,13 +1,12 @@
-id	DRR249976.fastq
-コノシロ:Konosirus punctatus 	42.03
-Engraulis japonicus 	29.1
-ボラ:Mugil cephalus 	10.44
-コクレン:Hypophthalmichthys nobilis 	2.8
-ニゴイ:Hemibarbus barbus 	2.74
-マハゼ:Acanthogobius flavimanus 	2.42
-クロダイ:Acanthopagrus schlegelii 	2.22
-ハクレン:Hypophthalmichthys molitrix 	2.1
-カナド:Lepidotrigla guentheri 	1.95
-Parambassis lala 	1.87
-スズキ:Lateolabrax japonicus 	1.19
-カマツカ:Pseudogobio esocinus 	1.12
+7932	コノシロ:Konosirus punctatus
+5513	カタクチイワシ科:Engraulis japonicus
+1969	ボラ:Mugil cephalus
+527	コクレン:Hypophthalmichthys nobilis
+524	カナガシラ:Lepidotrigla microptera
+517	ニゴイ:Hemibarbus barbus
+460	マハゼ:Acanthogobius flavimanus
+421	クロダイ:Acanthopagrus schlegelii
+395	ハクレン:Hypophthalmichthys molitrix
+355	Parambassis lala
+227	スズキ:Lateolabrax japonicus
+213	カマツカ:Pseudogobio esocinus

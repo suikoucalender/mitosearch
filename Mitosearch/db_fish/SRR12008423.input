@@ -1,10 +1,9 @@
-id	SRR12008423.fastq
-Sebastes fasciatus 	60.47
-カラスガレイ:Reinhardtius hippoglossoides 	8.9
-Clupea harengus 	8.37
-Urophycis tenuis 	5.36
-Melanostigma atlanticum 	4.62
-Sebastes mentella 	4.36
-Cyclopterus lumpus 	2.76
-Glyptocephalus cynoglossus 	2.58
-オヒョウ:Hippoglossus stenolepis 	2.58
+79456	メバル科:Sebastes fasciatus
+11706	カラスガレイ:Reinhardtius hippoglossoides
+10996	ニシン科:Clupea harengus
+7059	Urophycis tenuis
+6116	ゲンゲ科:Melanostigma atlanticum
+5719	メバル科:Sebastes mentella
+3638	Cyclopterus lumpus
+3395	オヒョウ:Hippoglossus stenolepis
+3359	カレイ科:Glyptocephalus cynoglossus
