@@ -1,5 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<% if (language === "zh"){ %>
+    <% console.log("index.js language=Chinese  "+language) %>
+    <html lang="zh-CN">
+<% } else if (language ==="ja"){ %>
+    <% console.log("index.js language=Japanese  "+language) %>
+    <html lang="ja">
+<% } else { %>
+    <% console.log("index.js language=English  "+language) %>
+    <html lang="en">
+<% } %>
+
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="99fifQZxW5GTQS0H1k0Pqa0hO9tvWhuBFxvjhC1z1qg" />
@@ -31,7 +41,18 @@
     <script src="select2/dist/js/select2.min.js"></script>
 
     <!-- Select2�ｿｽ�ｿｽ�ｿｽ{�ｿｽ皷ｻ -->
-    <script src="select2/dist/js/i18n/ja.js"></script>
+    <% if (language === "zh"){ %>
+        <% console.log("index.js language=Chinese  "+language) %>
+        <script src="select2/dist/js/i18n/zh-CN.js"></script>
+    <% } else if (language ==="ja"){ %>
+        <% console.log("index.js language=Japanese  "+language) %>
+        <script src="select2/dist/js/i18n/ja.js"></script>
+    <% } else { %>
+        <% console.log("index.js language=English  "+language) %>
+        <script src="select2/dist/js/i18n/en.js"></script>
+    <% } %>
+     
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSBFZZQ0RX"></script>
@@ -55,19 +76,19 @@
 <body>
     <header id="top-header">
         <p>MitoSearch</p>
-        <p id="explain">We constructed MitoSearch, a fish species composition database, using 4355 sequence data of 12S ribosomal RNA genes obtained by amplifying eDNA (environmental DNA) with MiFish primers in order to understand fish species composition around the world.</p>
+        <p id="explain"><%= __('MainTitle') %></p>
         <ul id="nav">
-            <li class="disabled"><a href="./">Top</a></li>
-            <li><a href="./about">About</a></li>
+            <li class="disabled"><a href="./"><%= __('Top') %></a></li>
+            <li><a href="./about"><%= __('About') %></a></li>
             <li></li>
             <td><div class="btn-separator"></div></td>
             <div>
             <% if (taxo === 'fish') { %>
-            <button class="data_changer_off" id="fish" disabled="true">Fish</button>
-            <button class="data_changer_on" id="mollusk">Mollusk</button>
+                <button class="data_changer_off" id="fish" disabled="true"><%= __('Fish') %></button>
+                <button class="data_changer_on" id="mollusk"><%= __('Mollusk') %></button>
             <% } else if (taxo === 'mollusk') { %>
-            <button class="data_changer_on" id="fish" >Fish</button>
-            <button class="data_changer_off" id="mollusk" disabled="true">Mollusk</button>
+                <button class="data_changer_on" id="fish" ><%= __('Fish') %></button>
+                <button class="data_changer_off" id="mollusk" disabled="true"><%= __('Mollusk') %></button>
             <% } %>
             </div>
         </ul>
