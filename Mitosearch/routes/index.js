@@ -1,4 +1,5 @@
 'use strict';
+const e = require('express');
 var express = require('express');
 var router = express.Router();
 var app = express();
@@ -18,9 +19,12 @@ router.get('/', function (req, res) {
     if (taxo==undefined || taxo==""){
         taxo="fish"
     }
-    let sampleDataObjList = getSampleDataObjList(taxo);
+    let language = req.headers["accept-language"]
+    language = language[0]+language[1]
+    console.log(language)
+    let sampleDataObjList = getSampleDataObjList(taxo,language);
     let allFishList = getAllFishList(sampleDataObjList);
-    let fishClassifyDataObj = fishClassify(taxo);
+    let fishClassifyDataObj = fishClassify(taxo,language);
     let latitude=req.query.lat;
     let longitude=req.query.long;
     let ratio=req.query.ratio;
@@ -33,14 +37,17 @@ router.get('/', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio });
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
 });
 
 router.get('/fish', function (req, res) {
     taxo = "fish";
-    let sampleDataObjList = getSampleDataObjList(taxo);
+    let language = req.headers["accept-language"]
+    language = language[0]+language[1]
+    console.log(language)
+    let sampleDataObjList = getSampleDataObjList(taxo,language);
     let allFishList = getAllFishList(sampleDataObjList);
-    let fishClassifyDataObj = fishClassify(taxo);
+    let fishClassifyDataObj = fishClassify(taxo,language);
     let latitude=req.query.lat;
     let longitude=req.query.long;
     let ratio=req.query.ratio;
@@ -53,14 +60,17 @@ router.get('/fish', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio });
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
 router.get('/mollusk', function (req, res) {
     taxo = "mollusk";
-    let sampleDataObjList = getSampleDataObjList(taxo);
+    let language = req.headers["accept-language"]
+    language = language[0]+language[1]
+    console.log(language)
+    let sampleDataObjList = getSampleDataObjList(taxo,language);
     let allFishList = getAllFishList(sampleDataObjList);
-    let fishClassifyDataObj = fishClassify(taxo);
+    let fishClassifyDataObj = fishClassify(taxo,language);
     let latitude=req.query.lat;
     let longitude=req.query.long;
     let ratio=req.query.ratio;
@@ -73,7 +83,7 @@ router.get('/mollusk', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio });
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
 router.post('/', function (req, res) {
@@ -96,7 +106,10 @@ router.post('/', function (req, res) {
 });
 
 router.get('/about', function (req, res) {
-    res.render('ejs/about.ejs');
+    let language = req.headers["accept-language"]
+    language = language[0]+language[1]
+    res.render('ejs/about.ejs', {language: language});
+
 });
 
 module.exports = router;
@@ -110,7 +123,7 @@ function getSampleList(taxo) {
     return sampleList;
 }
 
-function getSampleDataObjList(taxo) {
+function getSampleDataObjList(taxo,lang) {
     let sampleDataObjList = [];
     let sampleID;
     let sampleFishCompList;
@@ -121,6 +134,7 @@ function getSampleDataObjList(taxo) {
     let sampleLat;
     let sampleLng;
     let waterlist = { ID: "water" };
+
 
     // サンプルメタデータ一覧を取得
     let sampleList = getSampleList(taxo);
@@ -172,9 +186,15 @@ function getSampleDataObjList(taxo) {
                 if (sampleLatLng[3] == "W") {
                     sampleLng = sampleLng * -1;
                 }
-
+                
                 //inputファイルからサンプル情報を読み取り
-                sampleFishCompList = fs.readFileSync("db_" + taxo + "/" + sampleID + ".input", "utf-8");
+                if (lang==="zh"){
+                    sampleFishCompList = fs.readFileSync("db_" + taxo + "_zh/" + sampleID + ".input", "utf-8");
+                } else if(lang==="ja"){
+                    sampleFishCompList = fs.readFileSync("db_" + taxo + "_ja/" + sampleID + ".input", "utf-8");
+                } else {
+                    sampleFishCompList = fs.readFileSync("db_" + taxo + "_en/" + sampleID + ".input", "utf-8");
+                }
                 sampleFishCompList = sampleFishCompList.split("\n");
 
                 //Headerを除く各行から魚種組成を取得
@@ -202,8 +222,15 @@ function getSampleDataObjList(taxo) {
     return sampleDataObjList;
 }
 
-function fishClassify(taxo) {
-    let fishClassifyDataList = fs.readFileSync("data/" + taxo + "/classifylist.txt", "utf-8");
+function fishClassify(taxo,lang) {
+    let fishClassifyDataList
+    if (lang==="zh"){
+        fishClassifyDataList = fs.readFileSync("data/" + taxo + "/classifylist_zh.txt", "utf-8");
+    } else if(lang==="ja"){
+        fishClassifyDataList = fs.readFileSync("data/" + taxo + "/classifylist_ja.txt", "utf-8");
+    } else {
+        fishClassifyDataList = fs.readFileSync("data/" + taxo + "/classifylist_en.txt", "utf-8");
+    }
     fishClassifyDataList = fishClassifyDataList.split("\n");
     fishClassifyDataList = fishClassifyDataList.map(data => data.split("\t"));
     fishClassifyDataList = fishClassifyDataList.map(data => [data[0], parseInt(data[1])]);

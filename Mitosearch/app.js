@@ -18,8 +18,8 @@ app.set('view engine', 'pug');
 
 const i18n = require('i18n');
 i18n.configure({
-    locales: ['ja', 'en'],
-    defaultLocale: 'ja',
+    locales: ['ja', 'en', 'zh'],
+    defaultLocale: 'en',
     directory: __dirname + "/locales",
     objectNotation: true
 });
