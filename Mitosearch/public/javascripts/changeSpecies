@@ -1,0 +1,16 @@
+const fishBtn = document.getElementById("fish");
+const molluskBtn = document.getElementById("mollusk");
+
+fishBtn.addEventListener("click", e => {
+    //change the button appearance;
+    fishBtn.className = "data_changer_off";
+    fishBtn.disabled = true;
+    window.location.href="./fish";
+  });
+
+molluskBtn.addEventListener("click", e => {
+    //change the button appearance;
+    molluskBtn.className = "data_changer_off";
+    molluskBtn.disabled = true;
+    window.location.href="./mollusk";
+});
