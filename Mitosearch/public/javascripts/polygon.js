@@ -1,3 +1,4 @@
+console.log("=====polygon.js=====")
 const undoBtn = document.getElementById("undo");
 const pointBtn = document.getElementById("point");
 var dotnumber = 0

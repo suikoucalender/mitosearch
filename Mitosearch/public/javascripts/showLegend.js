@@ -1,3 +1,4 @@
+console.log("=====showLegend.js=====")
 const helpBtn = document.getElementById("help");
 const expansionBtn = document.getElementById("expansion");
 const restoreBtn = document.getElementById("restore")
@@ -127,44 +128,47 @@ restoreBtn.addEventListener("click", e => {
 
 
 alltimeBtn.addEventListener("click", e => {
+    timeBtnChecker = "monthlyBtn";
+    //getCapturedSampleList()
     appendScript("javascripts/drawLiddgeLine.js");
     alltimeBtn.style.display = "none";
     monthlyBtn.style.display = "block";
-    //sliderDisplay();
-    timeBtnChecker = "monthlyBtn";
+    sliderDisplay();
+    
 });
 
 monthlyBtn.addEventListener("click", e => {
+    timeBtnChecker = "alltimeBtn";
+    //getCapturedSampleList()
     appendScript("javascripts/drawLiddgeLine.js");
     monthlyBtn.style.display = "none";
     alltimeBtn.style.display = "block";
-    //sliderDisplay();
-    timeBtnChecker = "alltimeBtn";
+    sliderDisplay();
+    
 });
 
 
 timeFilterOnBtn.addEventListener("click", e => {
-    timeFilterOnBtn.style.display = "none";
-    timeFilterOffBtn.style.display = "block";
-    if (timeBtnChecker=="monthlyBtn"){
-        bargraphArea.style.display = "none";
-    }else if (timeBtnChecker=="alltimeBtn"){
-        bargraphArea.style.display = "block";
-    }
-    
-    bargraphAlltimeArea.style.display = "block"
-    sliderArea.style.display = "block";
-    lowerHandleNumber.style.display = "block";
-    upperHandleNumber.style.display = "block";
-    
-    slidersize();  
-    sliderUpdating();
+    //timeFilterOnBtn.style.display = "none";
+    //timeFilterOffBtn.style.display = "block";
+    //if (timeBtnChecker=="monthlyBtn"){
+    //    bargraphArea.style.display = "none";
+    //}else if (timeBtnChecker=="alltimeBtn"){
+    //    bargraphArea.style.display = "block";
+    //}
+    //bargraphAlltimeArea.style.display = "block"
+    //sliderArea.style.display = "block";
+    //lowerHandleNumber.style.display = "block";
+    //upperHandleNumber.style.display = "block";
     sliderStatusChecker = "exist"
+    sliderUpdating();
+    sliderDisplay()
+    slidersize();
 });
 
 timeFilterOffBtn.addEventListener("click", e => {
-    timeFilterOnBtn.style.display = "block";
-    timeFilterOffBtn.style.display = "none";
+    //timeFilterOnBtn.style.display = "block";
+    //timeFilterOffBtn.style.display = "none";
     sliderStatusChecker="non-exist"
     slider.noUiSlider.reset();
     sliderDisplay()

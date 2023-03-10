@@ -1,10 +1,19 @@
+//console.log("=====timePicker.js=====")
+var counter=1
+//var getCapturedSampleListChecker=true
 var lowerHandle
 var upperHandle
 var graphChecker
 var sliderLoadChecker = false
+var userTimeSettingChecker=true
+var userLowerHandleSetting
+var userUpperHandleSetting
+var userLowerHandleSettingStamp
+var userUpperHandleSettingStamp
 
 
 function slidersize(){
+    //console.log("RUN slidersize function")
     if(graphChecker=="exist"){
         sliderArea.style.display = "block";
         lowerHandleNumber.style.display = "block";
@@ -19,6 +28,7 @@ function slidersize(){
         lowerHandleNumber.style.display = "none";
         upperHandleNumber.style.display = "none";
     }
+    //console.log("=====finish slidersize=====")
 }
 
 
@@ -29,18 +39,24 @@ function timestamp(str){
 
 
 function sliderUpdating(){
-    if(isMove){return};
+    //console.log("RUN sliderUpdating function")
+    if(isMove){
+        //console.log("moving, CANCELED sliderUpdating")
+        return
+    };
     //get min and max value of sample
     if (capturedSampleList.length == 0) {
         return;
     }
+    //console.log("captured Sample List")
+    //console.log(capturedSampleList)
     var tempdateAll=capturedSampleList[0]['date'];
     var maxTime=tempdateAll;
     var minTime=tempdateAll;
     for (var i=1;i<capturedSampleList.length;i++){
         tempdateAll=capturedSampleList[i]['date']
         if(isNaN(Date.parse(tempdateAll))){
-            console.log('date missing '+i)
+            //console.log('date missing '+i)
         }else{
             if (tempdateAll>maxTime){
                 maxTime=tempdateAll
@@ -49,23 +65,35 @@ function sliderUpdating(){
             }
         }
     }
+    //console.log()
     var minTimestamp=timestamp(minTime)
     var maxTimestamp=timestamp(maxTime)
     maxTimestamp=maxTimestamp+86399000
-    console.log(maxTime)
-    console.log(maxTimestamp)
-    console.log(minTime)
-    console.log(minTimestamp)
+    //if (userTimeSettingChecker){
+        //if (userUpperHandleSettingStamp>maxTimestamp){
+        //    maxTimestamp=userUpperHandleSettingStamp
+        //}
+        //if (userLowerHandleSettingStamp<minTimestamp) {
+        //    minTimestamp=userLowerHandleSettingStamp
+        //}
+    //}
+    //console.log(maxTime)
+    //console.log(maxTimestamp)
+    //console.log(minTime)
+    //console.log(minTimestamp)
 
     //Update slider
+    userTimeSettingChecker=false
     slider.noUiSlider.updateOptions({
         range: {
             min: minTimestamp,
             max: maxTimestamp
         },
-        //start: [minTimestamp, maxTimestamp],
+        start: [userLowerHandleSettingStamp, userUpperHandleSettingStamp],
     });
+    userTimeSettingChecker=true
     sliderLoadChecker=true
+    //console.log("=====finish sliderUpdating=====")
 }
 
 
@@ -75,6 +103,10 @@ var maxTime=tempdateAll;
 var minTime=tempdateAll;
 for (var i=1;i<sampleDataSet.length;i++){
     tempdateAll=sampleDataSet[i]['date']
+    let dateformatChecker=tempdateAll.indexOf("T")
+    if (dateformatChecker!==-1){
+        tempdateAll=tempdateAll.substring(0,dateformatChecker)
+    }
     if(isNaN(Date.parse(tempdateAll))){
         console.log('date missing '+i)
     }else{
@@ -83,16 +115,16 @@ for (var i=1;i<sampleDataSet.length;i++){
         }else if(tempdateAll<=minTime){
             minTime=tempdateAll
         }
-        console.log(tempdateAll)
+        //console.log(tempdateAll)
     }
 }
 var minTimestamp=timestamp(minTime)
 var maxTimestamp=timestamp(maxTime)
 maxTimestamp=maxTimestamp+86399000
-    console.log(maxTime)
-    console.log(maxTimestamp)
-    console.log(minTime)
-    console.log(minTimestamp)
+    //console.log(maxTime)
+    //console.log(maxTimestamp)
+    //console.log(minTime)
+    //console.log(minTimestamp)
 
 
 

@@ -1,3 +1,4 @@
+console.log("=====iconLocation.js=====")
 function iconLocation() {
     //read the elements
     var helpBtn = document.getElementById("help");

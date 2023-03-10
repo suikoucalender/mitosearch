@@ -1,3 +1,5 @@
+console.log("=====drawPie.js=====")
+
 //地図を描画するDOM要素を選択し、デフォルトの緯度経度、縮尺を設定。
 var map = L.map("map").setView([latitude, longitude], ratio);
 

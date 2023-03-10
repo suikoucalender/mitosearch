@@ -1,6 +1,7 @@
+console.log("=====drawSelectbox.js=====")
 $(function () {
     $('.test-select2').select2({
-        language: "ja" //“ú–{Œê‰»
+        language: "ja" //ï¿½ï¿½ï¿½{ï¿½ê‰»
     });
 })
 

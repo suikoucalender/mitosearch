@@ -1,20 +1,18 @@
 
-var dateRangeCheker = false;
-upperHandle=timestamp(upperHandle);
-lowerHandle=timestamp(lowerHandle);
+var dateRangeCheker= false;
+var upperHandleStamp=timestamp(upperHandle);
+var lowerHandleStamp=timestamp(lowerHandle);
 //if(upperHandle===lowerHandle){
 //    upperHandle=upperHandle+100;
 //    sliderLoadChecker=false;
 //}
+var upperHandleForRange=new Date(upperHandleStamp);
+var lowerHandleForRange=new Date(lowerHandleStamp);
 
-
-upperHandle=new Date(upperHandle);
-lowerHandle=new Date(lowerHandle);
-
-console.log(timestamp(upperHandle));
-console.log(timestamp(lowerHandle));
-console.log(upperHandle);
-console.log(lowerHandle);
+//console.log(upperHandleStamp);
+//console.log(lowerHandleStamp);
+//console.log(upperHandle);
+//console.log(lowerHandle);
 
 
 //window.onload = getCapturedSampleList;
@@ -25,28 +23,37 @@ map.on("move", getCapturedSampleList);
 map.on("move", sliderUpdating);
 //document.querySelector('#map').onwheel = getCapturedSampleList;
 
-function setMoveFlag(){isMove = true}
+
+function setMoveFlag(){
+    isMove = true
+}
 function removeMoveFlagAndDraw(){
     if(isMove){
         isMove = false;
-        //getCapturedSampleList();
-        sliderUpdating;
+        getCapturedSampleList();
+    }
+    //getCapturedSampleListChecker=false
+    sliderDisplay;//to solve disappear problem
+    sliderUpdating;
+    
+    if(sliderStatusChecker=="non-exist"){
         slider.noUiSlider.reset();
     }
-    //sliderUpdating();
-    //
+    
 }
 
 
 
-
-
-
-
-
+dateRangeCheker = false
 //キャプチャエリア内のサンプルの組成を取得
 function getCapturedSampleList() {
-    if(isMove){return}
+    //if(getCapturedSampleListChecker===true){
+    //    console.log("runed once, CANCELED getCapturedSampleList")
+    //    return
+    //}
+    if(isMove){
+        return
+    }
     var pos = map.getCenter();
     var zoom = map.getZoom();
     var coordination="?taxo="+taxo+"&lat="+pos.lat+"&long="+pos.lng+"&ratio="+zoom
@@ -94,19 +101,16 @@ function getCapturedSampleList() {
             }
         })
     }
+    //console.log(capturedSampleList)
+
     drawLiddgeLineChangeable(capturedSampleList)
     drawLiddgeLine(capturedSampleList);
     slidersize();
     if(graphChecker!=="nonexist"){
         sliderDisplay();
     }
+    getCapturedSampleListChecker=true
 }
-
-
-
-
-
-
 
 
 
@@ -147,24 +151,32 @@ function drawLiddgeLineChangeable(capturedSampleList){
 
     //魚種リストと日付のリストを取得
     capturedSampleList.forEach(sampleData => {
+        //console.log(sampleData.date)
         if (isInvalidDate(sampleData.date)) {
             return;
         }
         let tempdate = sampleData.date;
+        //console.log(tempdate)
         let tempdateTrans=new Date(tempdate);
+        //console.log(tempdateTrans)
 
-        
+        //console.log(lowerHandleForRange)
+        //console.log(upperHandleForRange)
         //Determine if the sample is within the date range
-        if (tempdateTrans>=lowerHandle && tempdateTrans<=upperHandle){
+        if (tempdateTrans>=lowerHandleForRange && tempdateTrans<=upperHandleForRange){
             dateRangeCheker=true
             //dateListAlltimeChangeable=true
         }
+        //console.log(dateRangeCheker)
 
         if (dateRangeCheker==true){
+            //console.log(timemode)
             if (timemode === "monthly"){
                 tempdate="2017-"+tempdate.substring(5,7)+"-01";
             }
+            //console.log(tempdate)
             dateList.push(tempdate)
+            //console.log(dateList)
             fishList = fishList.concat(Object.keys(sampleData.fish));
             if(!(tempdate in numDataInDay)){
                 numDataInDay[tempdate]=1;
@@ -198,7 +210,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
         numDataInDayList.push({"date": new Date(key), "value": numDataInDay[key]});
     }
 
-
+    //console.log(dateList)
     if (dateList.length == 0) {
         //svgタグを削除
         graph.select("svg").remove();
@@ -319,7 +331,6 @@ function drawLiddgeLineChangeable(capturedSampleList){
                     .tickFormat(d3.timeFormat("%y/%m"))
             )
     }
-
     //y軸のスケールを作成する
     var fishScale = d3.scaleBand()
         .domain(fishList)
@@ -328,7 +339,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
     //y軸を追加する
     svg.append("g")
         .attr("transform", "translate(0, 0)")
-        .call(d3.axisLeft(fishScale));
+        .call(d3.axisLeft(fishScale))
 
 
 
@@ -424,21 +435,6 @@ function drawLiddgeLineChangeable(capturedSampleList){
     numDataInDayList=[]
     graphChecker="exist"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -663,16 +659,6 @@ function drawLiddgeLine(capturedSampleList) {
 
 
 
-
-
-
-
-
-
-
-
-
-
 function drawScale(timemode, svg, xScale) {
     //x軸を追加する
     d3.select(".xaxis").remove();
@@ -724,27 +710,34 @@ return Number.isNaN(new Date(date).getTime());
 }
 
 function sliderDisplay(){
-    if (sliderStatusChecker=="non-exist"){
-        if(timeBtnChecker=="monthlyBtn"){
+    //console.log(sliderStatusChecker)
+    //console.log(timeBtnChecker)
+    if (sliderStatusChecker=="exist"){
+        timeFilterOnBtn.style.display = "none";
+        timeFilterOffBtn.style.display = "block";
+        if(timeBtnChecker=="monthlyBtn"){//ok
             bargraphArea.style.display = "none";
             bargraphAlltimeArea.style.display = "block";
-        }else{
+        }else{//ok
             bargraphArea.style.display = "block";
-            bargraphAlltimeArea.style.display = "none";
+            bargraphAlltimeArea.style.display = "block";
         }
-        sliderArea.style.display = "none";
-        lowerHandleNumber.style.display = "none";
-        upperHandleNumber.style.display = "none";
-    } else if (sliderStatusChecker=="exist"){
-        if(timeBtnChecker=="monthlyBtn"){
-            bargraphArea.style.display = "none";
-            bargraphAlltimeArea.style.display = "block"
-        }else{
-            bargraphArea.style.display = "block"
-            bargraphAlltimeArea.style.display = "block"
-        } 
         sliderArea.style.display = "block";
         lowerHandleNumber.style.display = "block";
         upperHandleNumber.style.display = "block";
+    } else if (sliderStatusChecker=="non-exist"){
+        timeFilterOnBtn.style.display = "block";
+        timeFilterOffBtn.style.display = "none";
+        if(timeBtnChecker=="monthlyBtn"){//ok
+            bargraphArea.style.display = "none";
+            bargraphAlltimeArea.style.display = "block"
+        }else{//ok
+            bargraphArea.style.display = "block"
+            bargraphAlltimeArea.style.display = "none"
+        } 
+        sliderArea.style.display = "none";
+        lowerHandleNumber.style.display = "none";
+        upperHandleNumber.style.display = "none";
     }
 }
+
