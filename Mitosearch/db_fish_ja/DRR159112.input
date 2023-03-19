@@ -1,4 +1,4 @@
-id	DRR159112.fastq
+id	DRR159112
 シマヨシノボリ:Rhinogobius nagoyae	29.6651
 アヤヨシノボリ:Rhinogobius sp. MO	18.74
 ギンユゴイ:Kuhlia mugil	12.4402
@@ -8,5 +8,5 @@ id	DRR159112.fastq
 オオウナギ:Anguilla marmorata	3.66826
 ミナミハゼ:Awaous ocellaris	1.83413
 ナガノゴリ:Tridentiger kuroiwae	1.27592
-テンジクカワアナゴ:Eleotris fusca	1.03668
 ヌマチチブ:Tridentiger brevispinis	1.03668
+テンジクカワアナゴ:Eleotris fusca	1.03668

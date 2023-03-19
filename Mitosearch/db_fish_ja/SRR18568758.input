@@ -1,28 +1,28 @@
-id	SRR18568758.fastq
-コイ:Cyprinus carpio	11.5577
-Capoeta damascina	7.71815
-Alburnus tarichi	7.00039
-キンギョ:Carassius auratus	6.69135
-Chondrostoma nasus	6.57112
-Atherina boyeri	5.58025
-Squalius cephalus	5.57068
-Luciobarbus capito	4.8228
-モツゴ:Pseudorasbora parva	4.35793
-Neogobius fluviatilis	3.75915
-Pomatoschistus minutus	2.92111
-Sarotherodon galilaeus	2.91554
-Oxynoemacheilus insignis	2.79726
-Rutilus rutilus	2.742
-Alburnus chalcoides aralensis	2.65946
-Leuciscus idus	2.60656
-ボラ:Mugil cephalus	2.52559
-サケ科:Oncorhynchus mykiss newberrii	2.26767
-フグ科:Chelon ramada	2.05498
-カダヤシ科:Gambusia holbrooki	1.93503
-Vimba melanops	1.87082
-コイ科:Rhodeus sericeus	1.75905
-Alburnus alburnus	1.68149
-ハゼ科:Gobio macrocephalus	1.52079
-Neogobius melanostomus	1.40435
-ボラ科:Planiliza abu	1.39378
-Carasobarbus canis	1.315
+id	SRR18568758
+コイ:Cyprinus carpio	11.5931
+Capoeta damascina	7.75805
+Alburnus tarichi	6.87131
+キンギョ:Carassius auratus	6.75213
+Chondrostoma nasus	6.56676
+Atherina boyeri	5.56936
+Squalius cephalus	5.56812
+Luciobarbus capito	4.84478
+モツゴ:Pseudorasbora parva	4.2512
+Neogobius fluviatilis	3.80975
+Pomatoschistus minutus	2.927
+Sarotherodon galilaeus	2.90352
+Oxynoemacheilus insignis	2.83569
+Rutilus rutilus	2.74946
+Alburnus chalcoides aralensis	2.65362
+Leuciscus idus	2.61929
+ボラ:Mugil cephalus	2.53924
+サケ科:Oncorhynchus mykiss newberrii	2.27231
+Chelon ramada	2.08942
+カダヤシ科:Gambusia holbrooki	1.94497
+Vimba melanops	1.89224
+コイ科:Rhodeus sericeus	1.71594
+Alburnus alburnus	1.66253
+Gobio macrocephalus	1.46576
+ボラ科:Planiliza abu	1.41276
+Neogobius melanostomus	1.40919
+Carasobarbus canis	1.32255

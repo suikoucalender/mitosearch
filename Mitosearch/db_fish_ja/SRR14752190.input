@@ -1,4 +1,4 @@
-id	SRR14752190.fastq
+id	SRR14752190
 サザナミハギ:Ctenochaetus striatus	17.9028
 ミノカエルウオ:Cirripectes polyzona	12.1761
 ナガニザ:Acanthurus nigrofuscus	9.36006
@@ -19,8 +19,8 @@ id	SRR14752190.fastq
 クマササハナムロ:Pterocaesio tile	1.70966
 コガシラベラ:Thalassoma amblycephalum	1.6207
 ゴマフキンチャクフグ:Canthigaster amboinensis	1.46225
-ベニゴンベ:Neocirrhites armatus	1.42611
 ワタゲダンゴオコゼ:Caracanthus unipinna	1.42611
+ベニゴンベ:Neocirrhites armatus	1.42611
 ムラサメモンガラ:Rhinecanthus aculeatus	1.40665
 オジサン:Parupeneus multifasciatus	1.32325
 クマドリ:Balistapus undulatus	1.32047

@@ -1,4 +1,4 @@
-id	SRR12791254.fastq
+id	SRR12791254
 [freckled blenny]: Hypsoblennius ionthas	28.9796
 [kelp bass]: Paralabrax clathratus	26.9388
 [California lizardfish]: Synodus lucioceps	9.79592
@@ -9,7 +9,7 @@ id	SRR12791254.fastq
 [barred grunt]: Conodon nobilis	2.04082
 [barred sand bass]: Paralabrax nebulifer	2.04082
 [banded houndshark]: Triakis scyllium	1.63265
-Etropus crossotus	1.22449
-[inshore lizardfish]: Synodus foetens	1.22449
-Seriphus politus	1.22449
 [giant guitarfish]: Rhynchobatus djiddensis	1.22449
+[inshore lizardfish]: Synodus foetens	1.22449
+Etropus crossotus	1.22449
+Seriphus politus	1.22449

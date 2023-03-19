@@ -1,4 +1,4 @@
-id	SRR18077922.fastq
+id	SRR18077922
 [Bombay duck fish]: Harpadon nehereus	23.8943
 [yellow croaker]: Larimichthys polyactis	12.072
 [large yellow croaker]: Larimichthys crocea	10.0219
@@ -13,8 +13,8 @@ Pennahia macrocephalus	2.61213
 [obscure pufferfish]: Takifugu fasciatus	2.31033
 [skinnycheek lanternfish]: Benthosema pterotum	2.21667
 [largehead hairtail]: Trichiurus japonicus	1.77958
-[yellowfin puffer]: Takifugu xanthopterus	1.76917
 [whitespotted conger]: Conger myriaster	1.76917
+[yellowfin puffer]: Takifugu xanthopterus	1.76917
 [Mi-iuy croaker]: Miichthys miiuy	1.74836
 Odontamblyopus sp. ZL-2016	1.74836
 Johnius distinctus	1.57144

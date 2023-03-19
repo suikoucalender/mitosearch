@@ -1,4 +1,4 @@
-id	SRR14752151.fastq
+id	SRR14752151
 サザナミハギ:Ctenochaetus striatus	19.4521
 ミノカエルウオ:Cirripectes polyzona	11.611
 ナガニザ:Acanthurus nigrofuscus	6.38351
@@ -16,8 +16,8 @@ id	SRR14752151.fastq
 チョウチョウウオ科:Chaetodon pelewensis	1.98542
 テリエビス:Sargocentron ittodai	1.96029
 ゴマモンガラ:Balistoides viridescens	1.8095
-イシガキスズメダイ:Plectroglyphidodon dickii	1.75924
 ソロイモンガラ:Melichthys niger	1.75924
+イシガキスズメダイ:Plectroglyphidodon dickii	1.75924
 ベラ科\nブダイ族\n（ブダイ科）:Chlorurus sordidus	1.70897
 ベニゴンベ:Neocirrhites armatus	1.55818
 ナンヨウツバメウオ:Platax orbicularis	1.53305
@@ -29,5 +29,5 @@ id	SRR14752151.fastq
 イシガキハタ:Epinephelus hexagonatus	1.23147
 ミツボシキュウセン:Halichoeres trimaculatus	1.23147
 モヨウキカイウツボ:Scuticaria tigrina	1.20633
-オウムブダイ:Scarus psittacus	1.1812
 タスキモンガラ:Rhinecanthus rectangulus	1.1812
+オウムブダイ:Scarus psittacus	1.1812

@@ -1,4 +1,4 @@
-id	SRR14752158.fastq
+id	SRR14752158
 [twotone tang]: Zebrasoma scopas	17.5
 [brown surgeonfish]: Acanthurus nigrofuscus	9.53704
 [striated surgeonfish]: Ctenochaetus striatus	9.16667
@@ -12,11 +12,11 @@ Gymnothorax buroensis	6.11111
 [black & yellow blenny]: Enchelyurus flavipes	3.98148
 [whitesaddle goatfish]: Parupeneus ciliatus	3.7037
 [bigeye scad]: Selar crumenophthalmus	3.61111
-[vagabond butterflyfish]: Chaetodon vagabundus	2.22222
 [scarlet soldierfish]: Myripristis pralinia	2.22222
+[vagabond butterflyfish]: Chaetodon vagabundus	2.22222
 [Pacific gregory]: Stegastes fasciolatus	1.94444
-[bluespine unicornfish]: Naso unicornis	1.85185
 Acanthurus sohal	1.85185
+[bluespine unicornfish]: Naso unicornis	1.85185
 [brick soldierfish]: Myripristis amaena	1.66667
 [pygmy blenny]: Nannosalarias nativitatis	1.66667
 [milkfish]: Chanos chanos	1.48148

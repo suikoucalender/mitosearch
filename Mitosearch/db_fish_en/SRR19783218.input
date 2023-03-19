@@ -1,11 +1,20 @@
-id	SRR19783218.fastq
-[yellowfin tuna]: Thunnus albacares	37.9089
-[barred sand bass]: Paralabrax nebulifer	22.198
-[spotted sand bass]: Paralabrax maculatofasciatus	15.9507
-[California tonguefish]: Symphurus atricaudus	8.97296
-[kelp bass]: Paralabrax clathratus	6.44352
-[freckled blenny]: Hypsoblennius ionthas	2.09333
-[barred grunt]: Conodon nobilis	2.06062
-[banded drum]: Larimus fasciatus	1.5809
-[California lizardfish]: Synodus lucioceps	1.49368
-Seriphus politus	1.29743
+id	SRR19783218
+[northern anchovy]: Engraulis mordax	33.64
+Halichoeres californicus	9.30799
+[Mi-iuy croaker]: Miichthys miiuy	7.17299
+[painted comber]: Serranus scriba	6.46384
+[South American pilchard]: Sardinops sagax	6.23782
+[Peruvian rock seabass]: Paralabrax humeralis	5.85552
+Salvelinus kronocius	4.58258
+[yellowfin tuna]: Thunnus albacares	3.42475
+[short-nosed tripodfish]: Triacanthus biaculeatus	3.3777
+[chub mackerel]: Scomber japonicus	3.0853
+[skipjack tuna]: Katsuwonus pelamis	2.92398
+[bat eagle ray]: Myliobatis californica	2.39128
+[topsmelt silverside]: Atherinops affinis	2.17282
+[barred sand bass]: Paralabrax nebulifer	1.82244
+[yellow perch]: Perca flavescens	1.76195
+[threadfin sculpin]: Icelinus filamentosus	1.71994
+[Atlantic bonito]: Sarda sarda	1.49728
+Semicossyphus pulcher	1.31159
+[spotted sand bass]: Paralabrax maculatofasciatus	1.25025

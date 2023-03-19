@@ -1,4 +1,4 @@
-id	SRR14752151.fastq
+id	SRR14752151
 栉齿刺尾鱼:Ctenochaetus striatus	19.4521
 多斑穗肩鳚:Cirripectes polyzona	11.611
 褐斑刺尾鱼:Acanthurus nigrofuscus	6.38351
@@ -16,8 +16,8 @@ Vanderhorstia sp. 'Komon-yatsushi-haze'	3.09123
 夕阳蝴蝶鱼:Chaetodon pelewensis	1.98542
 银带棘鳞鱼:Sargocentron ittodai	1.96029
 褐拟鳞鲀:Balistoides viridescens	1.8095
-狄氏椒雀鲷:Plectroglyphidodon dickii	1.75924
 角鳞鲀:Melichthys niger	1.75924
+狄氏椒雀鲷:Plectroglyphidodon dickii	1.75924
 蓝头绿鹦嘴鱼:Chlorurus sordidus	1.70897
 盔新:Neocirrhites armatus	1.55818
 圆燕鱼:Platax orbicularis	1.53305
@@ -29,5 +29,5 @@ Tylosurus crocodilus	1.2566
 六角石斑鱼:Epinephelus hexagonatus	1.23147
 三斑海猪鱼:Halichoeres trimaculatus	1.23147
 虎斑鞭尾鳝:Scuticaria tigrina	1.20633
-棕吻鹦嘴鱼:Scarus psittacus	1.1812
 黑带锉鳞鲀:Rhinecanthus rectangulus	1.1812
+棕吻鹦嘴鱼:Scarus psittacus	1.1812

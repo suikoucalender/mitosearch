@@ -1,7 +1,18 @@
-id	SRR19783194.fastq
-[yellowfin tuna]: Thunnus albacares	45.6259
-[barred sand bass]: Paralabrax nebulifer	17.5387
-[freckled blenny]: Hypsoblennius ionthas	14.1707
-[spotted sand bass]: Paralabrax maculatofasciatus	10.591
-[kelp bass]: Paralabrax clathratus	9.48951
-[banded drum]: Larimus fasciatus	2.5842
+id	SRR19783194
+[northern anchovy]: Engraulis mordax	20.7636
+[California grunion]: Leuresthes tenuis	17.3354
+[topsmelt silverside]: Atherinops affinis	15.5282
+[Jack silverside]: Atherinopsis californiensis	12.7501
+[South American pilchard]: Sardinops sagax	6.19274
+[chub mackerel]: Scomber japonicus	6.06775
+[painted comber]: Serranus scriba	3.09379
+[Atlantic bonito]: Sarda sarda	2.55003
+[Mi-iuy croaker]: Miichthys miiuy	2.35932
+[dwarf perch]: Micrometrus minimus	2.21629
+Halichoeres californicus	2.10741
+[bat eagle ray]: Myliobatis californica	1.79494
+[white seaperch]: Phanerodon furcatus	1.70539
+[black perch]: Embiotoca jacksoni	1.64805
+[yellowfin tuna]: Thunnus albacares	1.53466
+[walleye]: Sander vitreus	1.17902
+[black drum]: Pogonias cromis	1.17322

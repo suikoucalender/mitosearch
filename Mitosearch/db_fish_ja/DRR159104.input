@@ -1,4 +1,4 @@
-id	DRR159104.fastq
+id	DRR159104
 ボウズハゼ:Sicyopterus japonicus	34.8993
 シマヨシノボリ:Rhinogobius nagoyae	15.2685
 アヤヨシノボリ:Rhinogobius sp. MO	14.5973
@@ -8,5 +8,5 @@ id	DRR159104.fastq
 オオウナギ:Anguilla marmorata	2.68456
 ボラ:Mugil cephalus	2.18121
 テンジクカワアナゴ:Eleotris fusca	1.67785
-ルリボウズハゼ:Sicyopterus lagocephalus	1.00671
 ナガノゴリ:Tridentiger kuroiwae	1.00671
+ルリボウズハゼ:Sicyopterus lagocephalus	1.00671

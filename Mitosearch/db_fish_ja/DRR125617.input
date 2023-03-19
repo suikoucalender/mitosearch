@@ -1,11 +1,12 @@
-id	DRR125617.fastq
-Tribolodon ezoe	30.1242
-Tribolodon brandtii	20.5271
-Tribolodon hakonensis	17.0158
-ゲンゴロウブナ:Carassius cuvieri	11.8669
-フクドジョウ:Barbatula oreas	5.94105
-ドジョウ:Misgurnus anguillicaudatus	3.915
-ギンブナ:Carassius langsdorfii	3.39706
-モツゴ:Pseudorasbora parva	2.71917
-コイ:Cyprinus carpio	2.45259
-タモロコ:Gnathopogon elongatus elongatus	2.04128
+id	DRR125617
+フクドジョウ:Barbatula oreas	30.0899
+ゲンゴロウブナ:Carassius cuvieri	15.4402
+Tribolodon ezoe	13.5289
+ドジョウ:Misgurnus anguillicaudatus	12.5409
+Tribolodon brandtii	9.19869
+Tribolodon hakonensis	7.62469
+ギンブナ:Carassius langsdorfii	4.55165
+コイ:Cyprinus carpio	3.09008
+ハゼ科:Gymnogobius sp. HOKURIKU-JUZUKAKE-HAZE	1.40365
+ハナカジカ:Cottus nozawae	1.31507
+モツゴ:Pseudorasbora parva	1.21627

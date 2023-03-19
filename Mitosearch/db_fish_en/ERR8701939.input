@@ -1,17 +1,17 @@
-id	ERR8701939.fastq
-[European perch]: Perca fluviatilis	32.0442
-[sharptooth jobfish]: Pristipomoides typus	16.2983
-[river trout]: Salmo trutta	12.1547
-[common bream]: Abramis brama	9.66851
-[northern pike]: Esox lucius	6.35359
-Pungitius kaibarae	3.59116
-[sleepy cod]: Oxyeleotris lineolata	3.31492
-Nimbapanchax leucopterygius	2.76243
-[roach minnow]: Rutilus rutilus	2.48619
-[common dab]: Limanda limanda	2.20994
-[tench]: Tinca tinca	1.9337
-[brook trout]: Salvelinus fontinalis	1.65746
-[ide]: Leuciscus idus	1.38122
-Hemigrammocharax uniocellatus	1.38122
-Distichodus hypostomatus	1.38122
-Oncorhynchus mykiss irideus	1.38122
+id	ERR8701939
+[European perch]: Perca fluviatilis	30.303
+[sharptooth jobfish]: Pristipomoides typus	17.1717
+[river trout]: Salmo trutta	13.3838
+[common bream]: Abramis brama	9.09091
+[northern pike]: Esox lucius	6.31313
+Pungitius kaibarae	4.0404
+[sleepy cod]: Oxyeleotris lineolata	3.53535
+[roach minnow]: Rutilus rutilus	2.77778
+Nimbapanchax leucopterygius	2.52525
+[common dab]: Limanda limanda	2.52525
+[tench]: Tinca tinca	1.76768
+[brook trout]: Salvelinus fontinalis	1.51515
+Distichodus hypostomatus	1.26263
+[ide]: Leuciscus idus	1.26263
+Oncorhynchus mykiss irideus	1.26263
+Hemigrammocharax uniocellatus	1.26263

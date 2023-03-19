@@ -1,4 +1,4 @@
-id	SRR14752192.fastq
+id	SRR14752192
 アカヒメジ:Mulloidichthys vanicolensis	16.7018
 サザナミハギ:Ctenochaetus striatus	10.8766
 クロソラスズメダイ:Stegastes nigricans	9.92709
@@ -19,7 +19,7 @@ Brevitrygon walga	3.79254
 アオヤガラ:Fistularia commersonii	1.36237
 ハゼ科:Vanderhorstia sp. 'Komon-yatsushi-haze'	1.2982
 クマドリ:Balistapus undulatus	1.29124
-ボラ科:Moolgarda engeli	1.27423
+Moolgarda engeli	1.27423
 オキザヨリ:Tylosurus crocodilus	1.24098
 ナメラヤッコ:Centropyge vrolikii	1.18841
 テングハギ:Naso unicornis	1.17835

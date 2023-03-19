@@ -1,4 +1,4 @@
-id	SRR14752190.fastq
+id	SRR14752190
 [striated surgeonfish]: Ctenochaetus striatus	17.9028
 [barred blenny]: Cirripectes polyzona	12.1761
 [brown surgeonfish]: Acanthurus nigrofuscus	9.36006
@@ -19,8 +19,8 @@ Gomphosus varius	2.6604
 [dark-banded fusilier]: Pterocaesio tile	1.70966
 [blunt-headed wrasse]: Thalassoma amblycephalum	1.6207
 [spider-eye puffer]: Canthigaster amboinensis	1.46225
-[flame hawkfish]: Neocirrhites armatus	1.42611
 [pygmy coral croucher]: Caracanthus unipinna	1.42611
+[flame hawkfish]: Neocirrhites armatus	1.42611
 [blackbar triggerfish]: Rhinecanthus aculeatus	1.40665
 [manybar goatfish]: Parupeneus multifasciatus	1.32325
 [orange-lined triggerfish]: Balistapus undulatus	1.32047

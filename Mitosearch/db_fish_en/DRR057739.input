@@ -1,4 +1,4 @@
-id	DRR057739.fastq
+id	DRR057739
 [Japanese anchovy]: Engraulis japonicus	28.6545
 [chicken grunt]: Parapristipoma trilineatum	11.7923
 [obscure pufferfish]: Takifugu fasciatus	10.8174
@@ -6,8 +6,8 @@ id	DRR057739.fastq
 [Japanese sillago]: Sillago japonica	6.66177
 Nuchequula nuchalis	5.17533
 [Konoshiro gizzard shad]: Konosirus punctatus	4.926
-[Japanese jack mackerel]: Trachurus japonicus	4.75658
 [yellowfin goby]: Acanthogobius flavimanus	4.75658
+[Japanese jack mackerel]: Trachurus japonicus	4.75658
 [big-scaled redfin]: Tribolodon hakonensis	4.37618
 [black porgy]: Acanthopagrus schlegelii	4.21954
 [Japanese flyingfish]: Cypselurus hiraii	3.81038

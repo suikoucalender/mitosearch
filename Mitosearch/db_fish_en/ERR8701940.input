@@ -1,16 +1,17 @@
-id	ERR8701940.fastq
-[Atlantic herring]: Clupea harengus	30.8772
-[sharptooth jobfish]: Pristipomoides typus	14.0351
-[European perch]: Perca fluviatilis	13.6842
-[river trout]: Salmo trutta	10.1754
-[northern pike]: Esox lucius	5.96491
-[roach minnow]: Rutilus rutilus	3.50877
-[tench]: Tinca tinca	3.15789
-[brook trout]: Salvelinus fontinalis	2.80702
-[European chub]: Squalius cephalus	2.80702
-[common carp]: Cyprinus carpio	2.80702
-[sleepy cod]: Oxyeleotris lineolata	2.45614
-Pungitius kaibarae	2.45614
-Hyperopisus bebe	2.10526
-[South African mullet]: Chelon richardsonii	1.75439
-Hemigrammocharax uniocellatus	1.40351
+id	ERR8701940
+[Atlantic herring]: Clupea harengus	29.3333
+[sharptooth jobfish]: Pristipomoides typus	14.3333
+[European perch]: Perca fluviatilis	13.6667
+[river trout]: Salmo trutta	10
+[northern pike]: Esox lucius	5.66667
+[roach minnow]: Rutilus rutilus	3.66667
+[tench]: Tinca tinca	3.33333
+[brook trout]: Salvelinus fontinalis	2.66667
+[European chub]: Squalius cephalus	2.66667
+Pungitius kaibarae	2.66667
+[common carp]: Cyprinus carpio	2.66667
+[sleepy cod]: Oxyeleotris lineolata	2.33333
+Hyperopisus bebe	2.33333
+[South African mullet]: Chelon richardsonii	2
+Petrocephalus soudanensis	1.33333
+Hemigrammocharax uniocellatus	1.33333

@@ -1,15 +1,16 @@
-id	SRR12008493.fastq
-メバル科:Sebastes fasciatus	38.0597
-カラスガレイ:Reinhardtius hippoglossoides	20.8955
-メバル科:Sebastes mentella	10.4478
-タラ科:Gadus morhua	4.47761
-オヒョウ:Hippoglossus stenolepis	4.47761
-カレイ科:Glyptocephalus cynoglossus	3.73134
-ゲンゲ科:Melanostigma atlanticum	2.98507
-ヤマトヒゲダラ:Enchelyopus cimbrius	2.98507
-Urophycis tenuis	2.23881
-ニシン科:Clupea harengus	2.23881
-カレイ科:Pseudopleuronectes americanus	2.23881
-ドロギンポ:Askoldia variegata	2.23881
-カレイ科:Microstomus kitt	1.49254
-Melanogrammus aeglefinus	1.49254
+id	SRR12008493
+メバル科:Sebastes fasciatus	35
+カラスガレイ:Reinhardtius hippoglossoides	27.2222
+メバル科:Sebastes mentella	7.77778
+カレイ科:Pseudopleuronectes americanus	3.88889
+オヒョウ:Hippoglossus stenolepis	3.88889
+ヤマトヒゲダラ:Enchelyopus cimbrius	3.88889
+カレイ科:Glyptocephalus cynoglossus	3.33333
+タラ科:Gadus morhua	3.33333
+ゲンゲ科:Melanostigma atlanticum	3.33333
+ニシン科:Clupea harengus	1.66667
+Urophycis tenuis	1.66667
+ドロギンポ:Askoldia variegata	1.66667
+Cyclopterus lumpus	1.11111
+Melanogrammus aeglefinus	1.11111
+カレイ科:Microstomus kitt	1.11111

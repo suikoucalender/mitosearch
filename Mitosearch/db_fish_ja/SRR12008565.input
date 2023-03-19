@@ -1,13 +1,11 @@
-id	SRR12008565.fastq
-メバル科:Sebastes fasciatus	65.7754
-タラ科:Gadus morhua	9.62567
-メバル科:Sebastes mentella	6.41711
-Cyclopterus lumpus	4.81283
-ヤマトヒゲダラ:Enchelyopus cimbrius	3.74332
-ゲンゲ科:Lycodes vahlii	2.13904
-カラスガレイ:Reinhardtius hippoglossoides	1.60428
-カレイ科:Glyptocephalus cynoglossus	1.60428
-オオカミウオ科:Anarhichas denticulatus	1.06952
-カレイ科:Limanda limanda	1.06952
-オヒョウ:Hippoglossus stenolepis	1.06952
-カラフトシシャモ:Mallotus villosus	1.06952
+id	SRR12008565
+メバル科:Sebastes fasciatus	60.4348
+タラ科:Gadus morhua	10.8696
+メバル科:Sebastes mentella	9.56522
+Cyclopterus lumpus	5.21739
+ヤマトヒゲダラ:Enchelyopus cimbrius	3.91304
+カラスガレイ:Reinhardtius hippoglossoides	3.04348
+ゲンゲ科:Lycodes vahlii	2.17391
+カレイ科:Glyptocephalus cynoglossus	1.73913
+オオカミウオ科:Anarhichas denticulatus	1.73913
+カラフトシシャモ:Mallotus villosus	1.30435

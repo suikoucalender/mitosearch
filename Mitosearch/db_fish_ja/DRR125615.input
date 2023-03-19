@@ -1,9 +1,11 @@
-id	DRR125615.fastq
-モツゴ:Pseudorasbora parva	49.2617
-ゲンゴロウブナ:Carassius cuvieri	18.0443
-ギンブナ:Carassius langsdorfii	11.2092
-タモロコ:Gnathopogon elongatus elongatus	7.57599
-コイ:Cyprinus carpio	6.16025
-コイ科:Acheilognathus chankaensis	4.1914
-Tribolodon brandtii	1.92825
-Tribolodon ezoe	1.62886
+id	DRR125615
+ゲンゴロウブナ:Carassius cuvieri	30.2476
+モツゴ:Pseudorasbora parva	26.6445
+ギンブナ:Carassius langsdorfii	19.6084
+コイ:Cyprinus carpio	10.428
+タモロコ:Gnathopogon elongatus elongatus	4.09389
+カムルチー:Channa argus	2.33075
+コイ科:Acheilognathus chankaensis	2.26494
+ハゼ科:Gymnogobius sp. HOKURIKU-JUZUKAKE-HAZE	1.82895
+ウキゴリ:Gymnogobius urotaenia	1.41764
+チカ:Hypomesus japonicus	1.13521
