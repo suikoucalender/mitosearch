@@ -10,6 +10,8 @@ var userLowerHandleSetting
 var userUpperHandleSetting
 var userLowerHandleSettingStamp
 var userUpperHandleSettingStamp
+var userLowerCalanderSettingStamp
+var userUpperCalanderSettingStamp
 
 
 function slidersize(){
@@ -39,7 +41,7 @@ function timestamp(str){
 
 
 function sliderUpdating(){
-    //console.log("RUN sliderUpdating function")
+    console.log("RUN sliderUpdating function")
     if(isMove){
         //console.log("moving, CANCELED sliderUpdating")
         return
@@ -77,12 +79,43 @@ function sliderUpdating(){
         //    minTimestamp=userLowerHandleSettingStamp
         //}
     //}
-    //console.log(maxTime)
-    //console.log(maxTimestamp)
-    //console.log(minTime)
-    //console.log(minTimestamp)
-
+    console.log(maxTime)
+    console.log(maxTimestamp)
+    console.log(minTime)
+    console.log(minTimestamp)
+    console.log(userLowerHandleSettingStamp+' '+userLowerHandleSetting)
+    console.log(userUpperHandleSettingStamp+' '+userUpperHandleSetting)
+    
     //Update slider
+
+
+    console.log(document.getElementById("lowerHandleNumberDatePicker").value+"====="+userLowerCalanderSettingStamp)
+    console.log(document.getElementById("upperHandleNumberDatePicker").value+"====="+userUpperCalanderSettingStamp)
+    
+    if(document.getElementById("lowerHandleNumberDatePicker").value==""){
+        userLowerHandleSettingStamp=minTimestamp
+    }else{
+        userLowerCalanderSettingStamp=timestamp(document.getElementById("lowerHandleNumberDatePicker").value)
+        userLowerHandleSettingStamp=userLowerCalanderSettingStamp
+        console.log("lowerCalanderWorked")
+    }
+
+    if(document.getElementById("upperHandleNumberDatePicker").value==""){
+        userUpperHandleSettingStamp=maxTimestamp
+    }else{
+        userUpperCalanderSettingStamp=timestamp(document.getElementById("upperHandleNumberDatePicker").value)
+        userUpperHandleSettingStamp=userUpperCalanderSettingStamp
+        console.log("upperCalanderWorked")
+    }
+    
+    if (userTimeSettingChecker){
+        if (userUpperHandleSettingStamp>maxTimestamp){
+            maxTimestamp=userUpperHandleSettingStamp
+        }
+        if (userLowerHandleSettingStamp<minTimestamp) {
+            minTimestamp=userLowerHandleSettingStamp
+        }
+    }
     userTimeSettingChecker=false
     slider.noUiSlider.updateOptions({
         range: {
@@ -91,11 +124,11 @@ function sliderUpdating(){
         },
         start: [userLowerHandleSettingStamp, userUpperHandleSettingStamp],
     });
+
     userTimeSettingChecker=true
     sliderLoadChecker=true
     //console.log("=====finish sliderUpdating=====")
 }
-
 
 //get min and max value of slider
 var tempdateAll=sampleDataSet[0]['date'];
@@ -121,10 +154,10 @@ for (var i=1;i<sampleDataSet.length;i++){
 var minTimestamp=timestamp(minTime)
 var maxTimestamp=timestamp(maxTime)
 maxTimestamp=maxTimestamp+86399000
-    //console.log(maxTime)
-    //console.log(maxTimestamp)
-    //console.log(minTime)
-    //console.log(minTimestamp)
+    console.log(maxTime)
+    console.log(maxTimestamp)
+    console.log(minTime)
+    console.log(minTimestamp)
 
 
 
@@ -150,4 +183,6 @@ var dateValues = [
     document.getElementById('event-start'),
     document.getElementById('event-end')
 ];
+
 sliderLoadChecker=true;
+

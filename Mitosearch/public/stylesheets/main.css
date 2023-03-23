@@ -252,6 +252,20 @@ img {
 
 }
 
+#lowerHandleNumberDatePicker{
+    width: 100px;
+    height: auto;
+    font-size: smaller;
+    float: left;
+}
+
+#upperHandleNumberDatePicker{
+    width: 100px;
+    height: auto;
+    font-size: smaller;
+    float: right;
+}
+
 #event-start {
     display: none;
 }

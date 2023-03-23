@@ -171,5 +171,6 @@ timeFilterOffBtn.addEventListener("click", e => {
     //timeFilterOffBtn.style.display = "none";
     sliderStatusChecker="non-exist"
     slider.noUiSlider.reset();
+    userTimeSettingChecker=false
     sliderDisplay()
 });

@@ -359,7 +359,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
         .append("path")
         .attr("transform", function (d) { return ("translate(0," + (fishScale(d.fish) + betweenlen) + ")") })
         //.attr("fill", function (d) { return "rgb(255,255," + ((100 - d.max) * 2) + ")" })
-        .attr("fill", function (d) { return "rgb(225,235,202)" })
+        .attr("fill", function (d) { return "rgb(255,255,103)" })
         .datum(function (d) { return d.density })
         .attr("stroke", "#000")
         .attr("stroke-width", 1)
