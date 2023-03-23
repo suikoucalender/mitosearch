@@ -1,4 +1,4 @@
-id	SRR14752158.fastq
+id	SRR14752158
 ゴマハギ:Zebrasoma scopas	17.5
 ナガニザ:Acanthurus nigrofuscus	9.53704
 サザナミハギ:Ctenochaetus striatus	9.16667
@@ -12,11 +12,11 @@ id	SRR14752158.fastq
 イソギンポ科:Enchelyurus flavipes	3.98148
 ホウライヒメジ:Parupeneus ciliatus	3.7037
 メアジ:Selar crumenophthalmus	3.61111
-フウライチョウチョウウオ:Chaetodon vagabundus	2.22222
 コガネマツカサ:Myripristis pralinia	2.22222
+フウライチョウチョウウオ:Chaetodon vagabundus	2.22222
 スズメダイ科:Stegastes fasciolatus	1.94444
-テングハギ:Naso unicornis	1.85185
 ニザダイ科:Acanthurus sohal	1.85185
+テングハギ:Naso unicornis	1.85185
 アメマツカサ:Myripristis amaena	1.66667
 ヒナギンポ:Nannosalarias nativitatis	1.66667
 サバヒー:Chanos chanos	1.48148

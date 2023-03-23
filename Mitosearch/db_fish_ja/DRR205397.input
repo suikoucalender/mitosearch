@@ -1,4 +1,4 @@
-id	DRR205397.fastq
+id	DRR205397
 ミナミキビナゴ:Spratelloides delicatulus	21.4176
 ユメウメイロ:Caesio cuning	14.4611
 クマササハナムロ:Pterocaesio tile	8.22593
@@ -6,7 +6,7 @@ id	DRR205397.fastq
 タカサゴ:Pterocaesio digramma	4.96486
 ニジハギ:Acanthurus lineatus	3.74925
 ハクセイハギ:Cantherhines dumerilii	3.60624
-イスズミ科:Kyphosus sectatrix	2.88764
+イスズミ科:Kyphosus sectatrix	2.89029
 ヘビギンポ科:Enneapterygius etheostomus	2.8585
 ネズスズメダイ:Chrysiptera glauca	2.58219
 オヤビッチャ:Abudefduf vaigiensis	2.54158
@@ -19,7 +19,7 @@ id	DRR205397.fastq
 テングハギ:Naso unicornis	1.83181
 アカマツカサ:Myripristis berndti	1.7144
 ソメワケヘビギンポ:Enneapterygius similis	1.64289
-イスズミ:Kyphosus vaigiensis	1.62347
+イスズミ:Kyphosus vaigiensis	1.62082
 ニザダイ科:Naso elegans	1.53607
 ニセモンツキスズメダイ:Pomacentrus nigromarginatus	1.36746
 ルリスズメダイ:Chrysiptera cyanea	1.32155

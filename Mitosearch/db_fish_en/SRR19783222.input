@@ -1,7 +1,19 @@
-id	SRR19783222.fastq
-[yellowfin tuna]: Thunnus albacares	60.5508
-[barred sand bass]: Paralabrax nebulifer	22.3623
-[spotted sand bass]: Paralabrax maculatofasciatus	10.7427
-[barred grunt]: Conodon nobilis	3.02823
-[kelp bass]: Paralabrax clathratus	1.82242
-[California lizardfish]: Synodus lucioceps	1.49356
+id	SRR19783222
+[northern anchovy]: Engraulis mordax	22.3149
+[topsmelt silverside]: Atherinops affinis	13.5252
+[skipjack tuna]: Katsuwonus pelamis	12.1762
+Halichoeres californicus	11.0171
+[bat eagle ray]: Myliobatis californica	8.82224
+[chub mackerel]: Scomber japonicus	6.43471
+[yellowfin tuna]: Thunnus albacares	3.52169
+[Peruvian rock seabass]: Paralabrax humeralis	3.4489
+[painted comber]: Serranus scriba	3.1099
+[black perch]: Embiotoca jacksoni	2.48945
+[copper rockfish]: Sebastes caurinus	2.16501
+[South American pilchard]: Sardinops sagax	2.08528
+Haemulon plumierii	2.05131
+[spotstripe snapper]: Lutjanus ophuysenii	1.73173
+[Japanese jack mackerel]: Trachurus japonicus	1.47869
+[California flounder]: Paralichthys californicus	1.2215
+Sebastes cheni	1.2111
+[barred sand bass]: Paralabrax nebulifer	1.19516

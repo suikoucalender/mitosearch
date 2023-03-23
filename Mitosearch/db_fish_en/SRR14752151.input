@@ -1,4 +1,4 @@
-id	SRR14752151.fastq
+id	SRR14752151
 [striated surgeonfish]: Ctenochaetus striatus	19.4521
 [barred blenny]: Cirripectes polyzona	11.611
 [brown surgeonfish]: Acanthurus nigrofuscus	6.38351
@@ -16,8 +16,8 @@ Gymnothorax buroensis	2.81478
 [sunset butterflyfish]: Chaetodon pelewensis	1.98542
 [samurai squirrelfish]: Sargocentron ittodai	1.96029
 [titan triggerfish]: Balistoides viridescens	1.8095
-[blackbar devil]: Plectroglyphidodon dickii	1.75924
 [black triggerfish]: Melichthys niger	1.75924
+[blackbar devil]: Plectroglyphidodon dickii	1.75924
 [daisy parrotfish]: Chlorurus sordidus	1.70897
 [flame hawkfish]: Neocirrhites armatus	1.55818
 [orbicular batfish]: Platax orbicularis	1.53305
@@ -29,5 +29,5 @@ Gymnothorax buroensis	2.81478
 [starspotted grouper]: Epinephelus hexagonatus	1.23147
 [threespot wrasse]: Halichoeres trimaculatus	1.23147
 [spotted snake moray]: Scuticaria tigrina	1.20633
-[common parrotfish]: Scarus psittacus	1.1812
 [wedge-tail triggerfish]: Rhinecanthus rectangulus	1.1812
+[common parrotfish]: Scarus psittacus	1.1812

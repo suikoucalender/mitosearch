@@ -1,6 +1,13 @@
-id	DRR125607.fastq
-Tribolodon brandtii	50.5579
-Tribolodon hakonensis	33.1474
-Tribolodon ezoe	11.1318
-ギンブナ:Carassius langsdorfii	3.53348
-モツゴ:Pseudorasbora parva	1.62947
+id	DRR125607
+Tribolodon brandtii	39.002
+Tribolodon hakonensis	25.577
+Tribolodon ezoe	8.58466
+サケ:Oncorhynchus keta	8.37361
+ギンブナ:Carassius langsdorfii	7.97195
+ゲンゴロウブナ:Carassius cuvieri	2.02873
+キンギョ:Carassius auratus	1.9198
+マガレイ:Pseudopleuronectes herzensteini	1.59984
+ドジョウ:Misgurnus anguillicaudatus	1.44326
+モツゴ:Pseudorasbora parva	1.25264
+ブリ:Seriola quinqueradiata	1.15052
+トゲウオ科:Pungitius sp. Freshwater type	1.09606

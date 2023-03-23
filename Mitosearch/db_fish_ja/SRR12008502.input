@@ -1,8 +1,9 @@
-id	SRR12008502.fastq
-メバル科:Sebastes fasciatus	86.6197
-メバル科:Sebastes mentella	4.22535
-アジ科:Scomber scombrus	2.8169
-タラ科:Gadus morhua	2.11268
-メバル科:Sebastes norvegicus	1.40845
-ヤマトヒゲダラ:Enchelyopus cimbrius	1.40845
-カラフトシシャモ:Mallotus villosus	1.40845
+id	SRR12008502
+メバル科:Sebastes fasciatus	84.375
+メバル科:Sebastes mentella	6.25
+サバ科:Scomber scombrus	2.5
+タラ科:Gadus morhua	1.875
+メバル科:Sebastes norvegicus	1.25
+カラフトシシャモ:Mallotus villosus	1.25
+オヒョウ:Hippoglossus stenolepis	1.25
+ヤマトヒゲダラ:Enchelyopus cimbrius	1.25

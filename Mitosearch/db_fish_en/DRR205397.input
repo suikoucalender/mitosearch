@@ -1,4 +1,4 @@
-id	DRR205397.fastq
+id	DRR205397
 [delicate round herring]: Spratelloides delicatulus	21.4176
 [redbelly yellowtail fusilier]: Caesio cuning	14.4611
 [dark-banded fusilier]: Pterocaesio tile	8.22593
@@ -6,7 +6,7 @@ id	DRR205397.fastq
 [double-lined fusilier]: Pterocaesio digramma	4.96486
 [lined surgeonfish]: Acanthurus lineatus	3.74925
 [whitespotted filefish]: Cantherhines dumerilii	3.60624
-[Bermuda sea chub]: Kyphosus sectatrix	2.88764
+[Bermuda sea chub]: Kyphosus sectatrix	2.89029
 Enneapterygius etheostomus	2.8585
 [grey demoiselle]: Chrysiptera glauca	2.58219
 [Indo-Pacific sergeant]: Abudefduf vaigiensis	2.54158
@@ -19,7 +19,7 @@ Enneapterygius etheostomus	2.8585
 [bluespine unicornfish]: Naso unicornis	1.83181
 [blotcheye soldierfish]: Myripristis berndti	1.7144
 Enneapterygius similis	1.64289
-[brassy chub]: Kyphosus vaigiensis	1.62347
+[brassy chub]: Kyphosus vaigiensis	1.62082
 [elegant unicornfish]: Naso elegans	1.53607
 [blackmargined damsel]: Pomacentrus nigromarginatus	1.36746
 [sapphire devil]: Chrysiptera cyanea	1.32155

@@ -1,17 +1,23 @@
-id	SRR8649742.fastq
-[threadfin sculpin]: Icelinus filamentosus	17.599
-[jewel lanternfish]: Lampanyctus crocodilus	14.6488
-Brosmophycis marginata	13.5933
-Sebastes cheni	9.74366
-[Pacific herring]: Clupea pallasii	8.36526
-Lampanyctus acanthurus	6.61011
-Mustelus griseus	5.96606
-[longfin sanddab]: Citharichthys xanthostigma	5.87302
-[northern lampfish]: Stenobrachius leucopsarus	4.18081
-[northern anchovy]: Engraulis mordax	3.12534
-[European sprat]: Sprattus sprattus	2.65098
-[brokenline lanternfish]: Lampanyctus jordani	2.01241
-[broadfin lampfish]: Nannobrachium ritteri	1.73235
-[wolf-eel]: Anarrhichthys ocellatus	1.46962
-[golden redfish]: Sebastes norvegicus	1.33461
-[North Pacific hake]: Merluccius productus	1.09469
+id	SRR8649742
+[longfin sanddab]: Citharichthys xanthostigma	21.7729
+Sebastes cheni	16.0808
+[northern lampfish]: Stenobrachius leucopsarus	11.0104
+[northern anchovy]: Engraulis mordax	9.6611
+Sebastes trivittatus	5.56487
+[North Pacific hake]: Merluccius productus	3.63342
+[copper rockfish]: Sebastes caurinus	3.23908
+[Gulf butterfish]: Peprilus burti	3.14007
+[broadfin lampfish]: Nannobrachium ritteri	2.97182
+[Pacific herring]: Clupea pallasii	2.67525
+[Pacific saury]: Cololabis saira	2.27228
+[bigfin lanternfish]: Symbolophorus californiensis	2.10495
+[yellowtail amberjack]: Seriola lalandi	2.02799
+Ophiodon elongatus	1.96939
+Oxylebius pictus	1.87901
+[California flounder]: Paralichthys californicus	1.71585
+[slender sole]: Lyopsetta exilis	1.69333
+[Jack silverside]: Atherinopsis californiensis	1.42391
+[South American pilchard]: Sardinops sagax	1.35606
+[wolf-eel]: Anarrhichthys ocellatus	1.33446
+[ocean sunfish]: Mola mola	1.33092
+Tarletonbeania crenularis	1.14215

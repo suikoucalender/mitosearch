@@ -1,10 +1,10 @@
-id	SRR18077922.fastq
+id	SRR18077922
 テナガミズテング:Harpadon nehereus	23.8943
 キグチ:Larimichthys polyactis	12.072
 ニベ科:Larimichthys crocea	10.0219
 ハモ:Muraenesox cinereus	6.66042
 マナガツオ科:Pampus sp. LY-2009	4.73514
-ハゼ科:Trypauchen vagina	4.65189
+Trypauchen vagina	4.65189
 ツマリエツ:Setipinna tenuifilis	4.41253
 アカエイ:Hemitrygon akajei	3.99625
 カンダリ:Collichthys lucidus	3.37184
@@ -13,8 +13,8 @@ id	SRR18077922.fastq
 フグ科:Takifugu fasciatus	2.31033
 イワハダカ:Benthosema pterotum	2.21667
 タチウオ:Trichiurus japonicus	1.77958
-シマフグ:Takifugu xanthopterus	1.76917
 マアナゴ:Conger myriaster	1.76917
+シマフグ:Takifugu xanthopterus	1.76917
 ホンニベ:Miichthys miiuy	1.74836
 ハゼ科:Odontamblyopus sp. ZL-2016	1.74836
 アブラグチ:Johnius distinctus	1.57144

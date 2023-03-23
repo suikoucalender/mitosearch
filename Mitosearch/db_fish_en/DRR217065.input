@@ -1,4 +1,4 @@
-id	DRR217065.fastq
+id	DRR217065
 [striped dwarf catfish]: Mystus vittatus	20.1439
 Systomus sarana sarana	10.4317
 Devario sp. CBM:ZF:11302	10.0719
@@ -13,5 +13,5 @@ Lepidocephalichthys sp. CBM-ZF-14149	5.39568
 Clarias dussumieri	2.8777
 [striped flying barb]: Esomus metallicus	2.51799
 [Gangetic mystus]: Mystus cavasius	1.79856
-[snakehead murrel]: Channa striata	1.43885
 [stinging catfish]: Heteropneustes fossilis	1.43885
+[snakehead murrel]: Channa striata	1.43885

@@ -1,4 +1,4 @@
-id	SRR14752195.fastq
+id	SRR14752195
 [striated surgeonfish]: Ctenochaetus striatus	19.0334
 [brown surgeonfish]: Acanthurus nigrofuscus	9.72375
 [orange-lined triggerfish]: Balistapus undulatus	8.85683
@@ -18,8 +18,8 @@ Thalassoma quinquevittatum	5.51207
 Gymnothorax buroensis	2.07026
 [Hawaiian whitespotted toby]: Canthigaster jactator	1.7209
 Parachaeturichthys polynema	1.64327
-Enneapterygius etheostomus	1.46859
 [manybar goatfish]: Parupeneus multifasciatus	1.46859
+Enneapterygius etheostomus	1.46859
 [surge damselfish]: Chrysiptera brownriggii	1.34567
-[blackbar devil]: Plectroglyphidodon dickii	1.33273
 [orangespotted filefish]: Cantherhines pullus	1.33273
+[blackbar devil]: Plectroglyphidodon dickii	1.33273

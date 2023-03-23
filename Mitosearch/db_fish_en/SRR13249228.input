@@ -1,9 +1,15 @@
-id	SRR13249228.fastq
-[Atlantic herring]: Clupea harengus	58.1818
-[white hake]: Urophycis tenuis	15.4545
-[haddock]: Melanogrammus aeglefinus	10.9091
-[blueback shad]: Alosa aestivalis	8.18182
-[saithe]: Pollachius virens	1.81818
-[Atlantic cod]: Gadus morhua	1.81818
-[lesser sand-eel]: Ammodytes marinus	1.81818
-Ammodytes japonicus	1.81818
+id	SRR13249228
+[white hake]: Urophycis tenuis	26.1877
+[Atlantic herring]: Clupea harengus	16.3887
+[haddock]: Melanogrammus aeglefinus	15.8839
+[small sandeel]: Ammodytes tobianus	10.3218
+[Atlantic cod]: Gadus morhua	5.65221
+[fourbeard rockling]: Enchelyopus cimbrius	5.0933
+[Gulf butterfish]: Peprilus burti	4.77779
+[lesser sand-eel]: Ammodytes marinus	4.23691
+[northern sand lance]: Ammodytes dubius	3.16416
+[greater sand-eel]: Hyperoplus immaculatus	2.21761
+[blueback shad]: Alosa aestivalis	1.86604
+[American sand lance]: Ammodytes americanus	1.68575
+[deepwater redfish]: Sebastes mentella	1.34319
+[saithe]: Pollachius virens	1.18092

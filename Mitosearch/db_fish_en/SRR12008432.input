@@ -1,6 +1,7 @@
-id	SRR12008432.fastq
-[winter flounder]: Pseudopleuronectes americanus	73.8318
-[Acadian redfish]: Sebastes fasciatus	17.757
-[Atlantic cod]: Gadus morhua	3.73832
-[starry flounder]: Platichthys stellatus	2.80374
-[European plaice]: Pleuronectes platessa	1.86916
+id	SRR12008432
+[winter flounder]: Pseudopleuronectes americanus	75
+[Acadian redfish]: Sebastes fasciatus	14.5833
+[Atlantic cod]: Gadus morhua	2.77778
+[European plaice]: Pleuronectes platessa	2.77778
+[starry flounder]: Platichthys stellatus	2.77778
+[English sole]: Parophrys vetulus	2.08333

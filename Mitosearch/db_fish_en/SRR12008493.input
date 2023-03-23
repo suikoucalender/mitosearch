@@ -1,15 +1,16 @@
-id	SRR12008493.fastq
-[Acadian redfish]: Sebastes fasciatus	38.0597
-[Greenland flounder]: Reinhardtius hippoglossoides	20.8955
-[deepwater redfish]: Sebastes mentella	10.4478
-[Atlantic cod]: Gadus morhua	4.47761
-[Pacific halibut]: Hippoglossus stenolepis	4.47761
-[witch]: Glyptocephalus cynoglossus	3.73134
-Melanostigma atlanticum	2.98507
-[fourbeard rockling]: Enchelyopus cimbrius	2.98507
-[white hake]: Urophycis tenuis	2.23881
-[Atlantic herring]: Clupea harengus	2.23881
-[winter flounder]: Pseudopleuronectes americanus	2.23881
-Askoldia variegata	2.23881
-[lemon sole]: Microstomus kitt	1.49254
-[haddock]: Melanogrammus aeglefinus	1.49254
+id	SRR12008493
+[Acadian redfish]: Sebastes fasciatus	35
+[Greenland flounder]: Reinhardtius hippoglossoides	27.2222
+[deepwater redfish]: Sebastes mentella	7.77778
+[winter flounder]: Pseudopleuronectes americanus	3.88889
+[Pacific halibut]: Hippoglossus stenolepis	3.88889
+[fourbeard rockling]: Enchelyopus cimbrius	3.88889
+[witch]: Glyptocephalus cynoglossus	3.33333
+[Atlantic cod]: Gadus morhua	3.33333
+Melanostigma atlanticum	3.33333
+[Atlantic herring]: Clupea harengus	1.66667
+[white hake]: Urophycis tenuis	1.66667
+Askoldia variegata	1.66667
+[lumpfish]: Cyclopterus lumpus	1.11111
+[haddock]: Melanogrammus aeglefinus	1.11111
+[lemon sole]: Microstomus kitt	1.11111

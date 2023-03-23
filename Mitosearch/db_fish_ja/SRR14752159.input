@@ -1,4 +1,4 @@
-id	SRR14752159.fastq
+id	SRR14752159
 ベラ科\nHypsigenyini:Semicossyphus pulcher	13.6126
 ヒラメ科:Paralichthys californicus	10.4712
 Medialuna californiensis	7.8534
@@ -14,8 +14,8 @@ Phanerodon vacca	3.14136
 ニシン科:Sardinops sagax	3.14136
 カタクチイワシ科:Engraulis mordax	2.6178
 ネッタイスズメダイ:Pomacentrus moluccensis	2.6178
-Hypsoblennius ionthas	2.09424
 クサビフグ:Ranzania laevis	2.09424
+Hypsoblennius ionthas	2.09424
 Paralabrax maculatofasciatus	1.57068
-クロソラスズメダイ:Stegastes nigricans	1.57068
 マサバ:Scomber japonicus	1.57068
+クロソラスズメダイ:Stegastes nigricans	1.57068

@@ -1,16 +1,17 @@
-id	ERR8701940.fastq
-ニシン科:Clupea harengus	30.8772
-バラヒメダイ:Pristipomoides typus	14.0351
-Perca fluviatilis	13.6842
-ブラウントラウト:Salmo trutta	10.1754
-Esox lucius	5.96491
-Rutilus rutilus	3.50877
-Tinca tinca	3.15789
-カワマス:Salvelinus fontinalis	2.80702
-Squalius cephalus	2.80702
-コイ:Cyprinus carpio	2.80702
-Oxyeleotris lineolata	2.45614
-ミナミトミヨ:Pungitius kaibarae	2.45614
-Hyperopisus bebe	2.10526
-フグ科:Chelon richardsonii	1.75439
-Hemigrammocharax uniocellatus	1.40351
+id	ERR8701940
+ニシン科:Clupea harengus	29.3333
+バラヒメダイ:Pristipomoides typus	14.3333
+Perca fluviatilis	13.6667
+ブラウントラウト:Salmo trutta	10
+Esox lucius	5.66667
+Rutilus rutilus	3.66667
+Tinca tinca	3.33333
+カワマス:Salvelinus fontinalis	2.66667
+Squalius cephalus	2.66667
+ミナミトミヨ:Pungitius kaibarae	2.66667
+コイ:Cyprinus carpio	2.66667
+Oxyeleotris lineolata	2.33333
+Hyperopisus bebe	2.33333
+Chelon richardsonii	2
+Petrocephalus soudanensis	1.33333
+Hemigrammocharax uniocellatus	1.33333

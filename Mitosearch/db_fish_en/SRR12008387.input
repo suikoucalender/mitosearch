@@ -1,18 +1,15 @@
-id	SRR12008387.fastq
-[Atlantic cod]: Gadus morhua	23.4127
-[Acadian redfish]: Sebastes fasciatus	17.8571
-[winter flounder]: Pseudopleuronectes americanus	13.4921
-[witch]: Glyptocephalus cynoglossus	9.52381
-[moustache sculpin]: Triglops murrayi	7.93651
-[northern wolffish]: Anarhichas denticulatus	5.15873
-[Atlantic herring]: Clupea harengus	3.96825
-[striped seasnail]: Liparis liparis	3.1746
-[walleye pollock]: Gadus chalcogrammus	3.1746
-[Laval's eelpout]: Lycodes lavalaei	2.77778
-[lemon sole]: Microstomus kitt	1.5873
-[Atlantic mackerel]: Scomber scombrus	1.5873
-[Arctic staghorn sculpin]: Gymnocanthus tricuspis	1.5873
-[wolf-eel]: Anarrhichthys ocellatus	1.19048
-[deepwater redfish]: Sebastes mentella	1.19048
-[sawback poacher]: Sarritor frenatus	1.19048
-[fourbeard rockling]: Enchelyopus cimbrius	1.19048
+id	SRR12008387
+[Atlantic cod]: Gadus morhua	22.7106
+[Acadian redfish]: Sebastes fasciatus	19.0476
+[winter flounder]: Pseudopleuronectes americanus	13.5531
+[witch]: Glyptocephalus cynoglossus	11.7216
+[moustache sculpin]: Triglops murrayi	8.42491
+[northern wolffish]: Anarhichas denticulatus	5.86081
+[Atlantic herring]: Clupea harengus	4.0293
+[walleye pollock]: Gadus chalcogrammus	2.9304
+[striped seasnail]: Liparis liparis	2.9304
+[Laval's eelpout]: Lycodes lavalaei	2.5641
+[lemon sole]: Microstomus kitt	1.8315
+[deepwater redfish]: Sebastes mentella	1.4652
+[Arctic staghorn sculpin]: Gymnocanthus tricuspis	1.4652
+[Atlantic mackerel]: Scomber scombrus	1.4652

@@ -1,8 +1,9 @@
-id	SRR12008502.fastq
-[Acadian redfish]: Sebastes fasciatus	86.6197
-[deepwater redfish]: Sebastes mentella	4.22535
-[Atlantic mackerel]: Scomber scombrus	2.8169
-[Atlantic cod]: Gadus morhua	2.11268
-[golden redfish]: Sebastes norvegicus	1.40845
-[fourbeard rockling]: Enchelyopus cimbrius	1.40845
-[capelin]: Mallotus villosus	1.40845
+id	SRR12008502
+[Acadian redfish]: Sebastes fasciatus	84.375
+[deepwater redfish]: Sebastes mentella	6.25
+[Atlantic mackerel]: Scomber scombrus	2.5
+[Atlantic cod]: Gadus morhua	1.875
+[golden redfish]: Sebastes norvegicus	1.25
+[capelin]: Mallotus villosus	1.25
+[Pacific halibut]: Hippoglossus stenolepis	1.25
+[fourbeard rockling]: Enchelyopus cimbrius	1.25

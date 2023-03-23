@@ -1,9 +1,11 @@
-id	DRR125614.fastq
-Tribolodon ezoe	45.221
-Tribolodon brandtii	16.5786
-コイ科:Acheilognathus chankaensis	13.3591
-コイ:Cyprinus carpio	9.01882
-Tribolodon hakonensis	8.20998
-モツゴ:Pseudorasbora parva	4.69973
-タモロコ:Gnathopogon elongatus elongatus	1.49609
-ゲンゴロウブナ:Carassius cuvieri	1.41679
+id	DRR125614
+Tribolodon ezoe	35.22
+コイ:Cyprinus carpio	20.8113
+Tribolodon brandtii	12.8912
+コイ科:Acheilognathus chankaensis	10.3646
+Tribolodon hakonensis	6.40663
+ドジョウ:Misgurnus anguillicaudatus	4.27382
+モツゴ:Pseudorasbora parva	3.64628
+ゲンゴロウブナ:Carassius cuvieri	3.12538
+フクドジョウ:Barbatula oreas	2.1
+タモロコ:Gnathopogon elongatus elongatus	1.16074

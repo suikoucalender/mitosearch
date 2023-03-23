@@ -1,7 +1,21 @@
-id	SRR19783145.fastq
-Paralabrax maculatofasciatus	59.02
-Paralabrax nebulifer	31.1214
-ウシノシタ科:Symphurus atricaudus	5.36227
-Larimus fasciatus	2.25208
-Seriphus politus	1.19593
-Conodon nobilis	1.04838
+id	SRR19783145
+カタクチイワシ科:Engraulis mordax	51.2102
+ホンニベ:Miichthys miiuy	8.2038
+ベラ科\nJuilidini:Halichoeres californicus	7.16843
+Serranus scriba	4.91159
+Paralabrax maculatofasciatus	4.49567
+Paralabrax nebulifer	2.4716
+サケ科:Salvelinus kronocius	2.09851
+メバル科:Sebastes caurinus	1.95111
+メジナ科:Girella simplicidens	1.75644
+マサバ:Scomber japonicus	1.74876
+ヒラメ科:Paralichthys californicus	1.70563
+Paralabrax humeralis	1.59958
+ニシン科:Sardinops sagax	1.5984
+Aplodinotus grunniens	1.4829
+Coregonus sardinella	1.44745
+Percina crypta	1.43357
+Anisotremus scapularis	1.30832
+ベラ科\nHypsigenyini:Semicossyphus pulcher	1.19577
+ギマ:Triacanthus biaculeatus	1.11601
+カジカ科:Cottus rhotheus	1.09622

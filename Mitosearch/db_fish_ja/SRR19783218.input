@@ -1,11 +1,20 @@
-id	SRR19783218.fastq
-キハダ:Thunnus albacares	37.9089
-Paralabrax nebulifer	22.198
-Paralabrax maculatofasciatus	15.9507
-ウシノシタ科:Symphurus atricaudus	8.97296
-Paralabrax clathratus	6.44352
-Hypsoblennius ionthas	2.09333
-Conodon nobilis	2.06062
-Larimus fasciatus	1.5809
-エソ科:Synodus lucioceps	1.49368
-Seriphus politus	1.29743
+id	SRR19783218
+カタクチイワシ科:Engraulis mordax	33.64
+ベラ科\nJuilidini:Halichoeres californicus	9.30799
+ホンニベ:Miichthys miiuy	7.17299
+Serranus scriba	6.46384
+ニシン科:Sardinops sagax	6.23782
+Paralabrax humeralis	5.85552
+サケ科:Salvelinus kronocius	4.58258
+キハダ:Thunnus albacares	3.42475
+ギマ:Triacanthus biaculeatus	3.3777
+マサバ:Scomber japonicus	3.0853
+カツオ:Katsuwonus pelamis	2.92398
+トビエイ科:Myliobatis californica	2.39128
+Atherinops affinis	2.17282
+Paralabrax nebulifer	1.82244
+Perca flavescens	1.76195
+カジカ科:Icelinus filamentosus	1.71994
+サバ科:Sarda sarda	1.49728
+ベラ科\nHypsigenyini:Semicossyphus pulcher	1.31159
+Paralabrax maculatofasciatus	1.25025

@@ -1,4 +1,4 @@
-id	DRR159081.fastq
+id	DRR159081
 シマヨシノボリ:Rhinogobius nagoyae	39.0244
 ボウズハゼ:Sicyopterus japonicus	25.4355
 アヤヨシノボリ:Rhinogobius sp. MO	9.33024
@@ -7,5 +7,5 @@ id	DRR159081.fastq
 ボラ:Mugil cephalus	4.02633
 オオウナギ:Anguilla marmorata	3.98761
 ミナミハゼ:Awaous ocellaris	3.1746
-ルリボウズハゼ:Sicyopterus lagocephalus	1.08401
 ナガノゴリ:Tridentiger kuroiwae	1.08401
+ルリボウズハゼ:Sicyopterus lagocephalus	1.08401

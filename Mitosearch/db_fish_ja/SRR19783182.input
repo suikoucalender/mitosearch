@@ -1,6 +1,16 @@
-id	SRR19783182.fastq
-Paralabrax nebulifer	50.369
-Paralabrax maculatofasciatus	34.6528
-Hypsoblennius ionthas	11.892
-キハダ:Thunnus albacares	1.94566
-エソ科:Synodus lucioceps	1.14056
+id	SRR19783182
+カタクチイワシ科:Engraulis mordax	56.1662
+サケ科:Salvelinus kronocius	15.7033
+Serranus scriba	5.38417
+ニシン科:Sardinops sagax	2.99682
+Capros aper	2.53161
+トビエイ科:Myliobatis californica	2.26423
+ベラ科\nJuilidini:Halichoeres californicus	2.20344
+キス科:Sillago maculata	1.87011
+イトマキエイ:Mobula mobular	1.86857
+Percina crypta	1.81138
+Paralabrax nebulifer	1.73616
+キハダ:Thunnus albacares	1.65477
+カジカ科:Cottus rhotheus	1.29362
+Cymatogaster aggregata	1.26632
+Embiotoca jacksoni	1.24932

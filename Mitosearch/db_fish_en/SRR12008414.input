@@ -1,10 +1,8 @@
-id	SRR12008414.fastq
-[Acadian redfish]: Sebastes fasciatus	86.7725
-[deepwater redfish]: Sebastes mentella	3.7037
-[fourbeard rockling]: Enchelyopus cimbrius	2.1164
-Melanostigma atlanticum	1.5873
-Askoldia variegata	1.5873
-[winter flounder]: Pseudopleuronectes americanus	1.0582
-[Greenland flounder]: Reinhardtius hippoglossoides	1.0582
-Sebastes cheni	1.0582
-[Vahl's eelpout]: Lycodes vahlii	1.0582
+id	SRR12008414
+[Acadian redfish]: Sebastes fasciatus	87.8641
+[deepwater redfish]: Sebastes mentella	3.39806
+Askoldia variegata	1.94175
+[Greenland flounder]: Reinhardtius hippoglossoides	1.94175
+[fourbeard rockling]: Enchelyopus cimbrius	1.94175
+[winter flounder]: Pseudopleuronectes americanus	1.45631
+Melanostigma atlanticum	1.45631

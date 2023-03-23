@@ -1,13 +1,11 @@
-id	SRR12008565.fastq
-[Acadian redfish]: Sebastes fasciatus	65.7754
-[Atlantic cod]: Gadus morhua	9.62567
-[deepwater redfish]: Sebastes mentella	6.41711
-[lumpfish]: Cyclopterus lumpus	4.81283
-[fourbeard rockling]: Enchelyopus cimbrius	3.74332
-[Vahl's eelpout]: Lycodes vahlii	2.13904
-[Greenland flounder]: Reinhardtius hippoglossoides	1.60428
-[witch]: Glyptocephalus cynoglossus	1.60428
-[northern wolffish]: Anarhichas denticulatus	1.06952
-[common dab]: Limanda limanda	1.06952
-[Pacific halibut]: Hippoglossus stenolepis	1.06952
-[capelin]: Mallotus villosus	1.06952
+id	SRR12008565
+[Acadian redfish]: Sebastes fasciatus	60.4348
+[Atlantic cod]: Gadus morhua	10.8696
+[deepwater redfish]: Sebastes mentella	9.56522
+[lumpfish]: Cyclopterus lumpus	5.21739
+[fourbeard rockling]: Enchelyopus cimbrius	3.91304
+[Greenland flounder]: Reinhardtius hippoglossoides	3.04348
+[Vahl's eelpout]: Lycodes vahlii	2.17391
+[witch]: Glyptocephalus cynoglossus	1.73913
+[northern wolffish]: Anarhichas denticulatus	1.73913
+[capelin]: Mallotus villosus	1.30435

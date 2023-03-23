@@ -1,19 +1,20 @@
-id	ERR8701941.fastq
-Perca fluviatilis	21.4286
-ブラウントラウト:Salmo trutta	18.4524
-Esox lucius	9.52381
-バラヒメダイ:Pristipomoides typus	7.7381
-Rutilus rutilus	6.54762
-Tinca tinca	5.35714
-サケ科:Oncorhynchus mykiss newberrii	4.7619
-Squalius cephalus	3.57143
-Abramis brama	3.57143
-ニジマス:Oncorhynchus mykiss	2.38095
-フグ科:Chelon richardsonii	2.38095
-Coregonus sp. 'cluncaformis'	2.38095
-カレイ科:Limanda limanda	2.38095
-ミナミトミヨ:Pungitius kaibarae	2.38095
-ニシン科:Clupea harengus	1.78571
-カワマス:Salvelinus fontinalis	1.78571
-サケ科:Salmo labrax	1.78571
-イソギンポ科:Salaria fluviatilis	1.78571
+id	ERR8701941
+Perca fluviatilis	19.6721
+ブラウントラウト:Salmo trutta	18.0328
+Esox lucius	9.28962
+バラヒメダイ:Pristipomoides typus	7.65027
+Rutilus rutilus	6.01093
+Tinca tinca	5.46448
+サケ科:Oncorhynchus mykiss newberrii	4.91803
+Chelon richardsonii	3.82514
+Abramis brama	3.27869
+Squalius cephalus	3.27869
+ミナミトミヨ:Pungitius kaibarae	3.27869
+カワマス:Salvelinus fontinalis	2.18579
+カレイ科:Limanda limanda	2.18579
+Coregonus sp. 'cluncaformis'	2.18579
+ニジマス:Oncorhynchus mykiss	2.18579
+ニシン科:Clupea harengus	1.63934
+サケ科:Salmo labrax	1.63934
+Salaria fluviatilis	1.63934
+コイ:Cyprinus carpio	1.63934
