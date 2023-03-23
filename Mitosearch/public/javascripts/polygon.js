@@ -46,11 +46,11 @@ pointBtn.addEventListener("click", e => {
       }else{
         polygonCoordinate.coordinates[0][0].push(tempco);
       }
-      //sliderUpdating();
-      //slider.noUiSlider.reset();
-      //getCapturedSampleList();
-      appendScript("javascripts/drawLiddgeLine.js")
-      appendScript("javascripts/timechange.js")
+      sliderUpdating();
+      slider.noUiSlider.reset();
+      getCapturedSampleList();
+      //appendScript("javascripts/drawLiddgeLine.js")
+      //appendScript("javascripts/timechange.js")
     })
   } else if (functioncheker=="on"){
     map.off('click');
