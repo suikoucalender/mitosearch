@@ -108,10 +108,10 @@ restoreBtn.addEventListener("click", e => {
     liddgeArea.style.display = "block";
     bargraphAlltimeArea.style.display = "block";
     bargraphArea.style.display = "block";
-    sliderArea.style.display = "block";
-    lowerHandleNumber.style.display = "block";
-    upperHandleNumber.style.display = "block";
-    graphName.style.display = "block";
+    //sliderArea.style.display = "block";
+    //lowerHandleNumber.style.display = "block";
+    //upperHandleNumber.style.display = "block";
+    //graphName.style.display = "block";
 
     if (sliderStatusChecker=="non-exist"){
         timeFilterOnBtn.style.display="block"
