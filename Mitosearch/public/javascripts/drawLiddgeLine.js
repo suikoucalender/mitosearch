@@ -81,13 +81,18 @@ function getCapturedSampleList() {
             var samplePoint= L.marker(sampleCoTmp);
             //console.log("hayeswise=" (L.polygon(polygonCoordinate)).contains(L.marker(sampleCoTmp).getLatLng()))
             //console.log("mapbox="leafletPip.pointInLayer(sampleCoTmp,(L.geoJson(polygonCoordinate))))
-
+            console.log("sample__________"+sampleCoTmp)
+            console.log(samplePoint)
+            try{
             if (newpolygon.contains(samplePoint.getLatLng())){
                 //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'red',fillColor:'red',fillOpacity:1}).addTo(sampledotlayer);
                 capturedSampleList.push(sampleData);
                 //console.log(sampleData)
             }else{
                 //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'black',fillColor:'black',fillOpacity:1}).addTo(sampledotlayer);
+            }
+            }catch{
+                console.log("latlngdata is 0")
             }
         })
 
