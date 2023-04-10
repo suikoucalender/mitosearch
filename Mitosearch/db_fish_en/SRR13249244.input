@@ -1,18 +1,16 @@
 id	SRR13249244
-[Atlantic herring]: Clupea harengus	19.1634
-[white hake]: Urophycis tenuis	18.6885
-[haddock]: Melanogrammus aeglefinus	16.0317
-[small sandeel]: Ammodytes tobianus	11.9389
-[fourbeard rockling]: Enchelyopus cimbrius	6.11645
-[lesser sand-eel]: Ammodytes marinus	4.90673
-[Atlantic cod]: Gadus morhua	3.93443
-[Gulf butterfish]: Peprilus burti	3.76484
-[American sand lance]: Ammodytes americanus	3.71962
-[northern sand lance]: Ammodytes dubius	2.15941
-Ammodytes japonicus	1.91068
-[blueback shad]: Alosa aestivalis	1.5602
-[northern rockling]: Ciliata septentrionalis	1.37931
-[snakeblenny]: Lumpenus lampretaeformis	1.25495
-[deepwater redfish]: Sebastes mentella	1.24364
-[saithe]: Pollachius virens	1.15319
-[winter flounder]: Pseudopleuronectes americanus	1.07405
+[Pacific sandeel]: Ammodytes personatus	19.3283
+[Atlantic herring]: Clupea harengus	18.8167
+[white hake]: Urophycis tenuis	18.2384
+[whiting]: Merlangius merlangus	15.8474
+[fourbeard rockling]: Enchelyopus cimbrius	6.00534
+[Pacific cod]: Gadus macrocephalus	3.87011
+[American butterfish]: Peprilus triacanthus	3.70329
+[American sand lance]: Ammodytes americanus	3.66993
+[northern sand lance]: Ammodytes dubius	2.17972
+Leptoclinus maculatus	1.75712
+[blueback shad]: Alosa aestivalis	1.5347
+[threadfin rockling]: Gaidropsarus ensis	1.35676
+[northern rockling]: Ciliata septentrionalis	1.33452
+[Acadian redfish]: Sebastes fasciatus	1.22331
+[saithe]: Pollachius virens	1.13434

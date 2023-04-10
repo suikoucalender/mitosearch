@@ -1,13 +1,14 @@
 id	SRR11673811
-コイ:Cyprinus carpio	36.9867
-キンギョ:Carassius auratus	26.1794
-コウライニゴイ:Hemibarbus labeo	10.445
-クロヨシノボリ:Rhinogobius brunneus	4.96852
-サンフィッシュ科:Lepomis cyanellus	4.75309
-サンフィッシュ科:Micropterus salmoides	4.37535
-ゲンゴロウブナ:Carassius cuvieri	3.4037
-コイ科:Opsariichthys uncirostris amurensis	3.35538
-Tribolodon hakonensis	1.59285
-ドジョウ:Misgurnus anguillicaudatus	1.45046
-コウライオヤニラミ:Coreoperca herzi	1.37262
-ドジョウ科:Misgurnus mizolepis	1.11698
+コイ科:Cyprinus carpio 'singuonensis'	33.543
+ゲンゴロウブナ:Carassius cuvieri	29.4973
+コイ科:Hemibarbus medius	9.88232
+クロヨシノボリ:Rhinogobius brunneus	5.02635
+ブルーギル:Lepomis macrochirus	4.80237
+サンフィッシュ科:Micropterus salmoides	4.18142
+ハス:Opsariichthys uncirostris	3.29731
+コイ科:Carassius auratus auratus	2.88371
+Tribolodon hakonensis	1.57344
+ドジョウ科:Misgurnus bipartitus	1.43779
+コウライニゴイ:Hemibarbus labeo	1.40859
+コウライオヤニラミ:Coreoperca herzi	1.37865
+ドジョウ科:Misgurnus mizolepis	1.08777

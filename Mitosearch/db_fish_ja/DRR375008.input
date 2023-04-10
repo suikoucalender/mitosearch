@@ -1,26 +1,26 @@
 id	DRR375008
-ムギイワシ:Atherion elymus	24.4323
-キビナゴ:Spratelloides gracilis	15.2187
-ギンイソイワシ:Hypoatherina tsurugae	5.97184
-スズメダイ科:Pomacentrus caeruleus	5.58183
-オヤビッチャ:Abudefduf vaigiensis	4.71054
-コケギンポ:Neoclinus bryope	4.50308
-コイ:Cyprinus carpio	3.21965
-ベラ科\nJuilidini:Stethojulis terina	2.76879
-ニシン科:Sardinops sagax	2.72177
-クサフグ:Takifugu alboplumbeus	2.68581
-ヒラスズキ:Lateolabrax latus	2.67751
-アゴハゼ:Chaenogobius annularis	2.57517
-ニザダイ:Prionurus scalprum	2.53644
-ホシギンポ:Entomacrodus stellifer stellifer	2.31793
-ナベカ:Omobranchus elegans	2.02473
-スズキ:Lateolabrax japonicus	1.86983
-イシダイ:Oplegnathus fasciatus	1.82557
-ブダイ:Calotomus japonicus	1.78132
-コクチフサカサゴ:Scorpaena miostoma	1.72323
-Parambassis lala	1.67344
-メジナ科:Girella melanichthys	1.5545
-ウルメイワシ:Etrumeus micropus	1.55174
-ミナミハタンポ:Pempheris schwenkii	1.38578
-コンゴウテンジクダイ:Ostorhinchus fleurieu	1.37748
-スズメダイ科:Abudefduf saxatilis	1.31109
+ムギイワシ:Atherion elymus	24.0371
+キビナゴ:Spratelloides gracilis	15.0287
+ギンイソイワシ:Hypoatherina tsurugae	5.8973
+ネッタイスズメダイ:Pomacentrus moluccensis	5.62415
+オヤビッチャ:Abudefduf vaigiensis	4.68451
+コケギンポ:Neoclinus bryope	4.41956
+コイ科:Cyprinus carpio 'singuonensis'	3.17126
+ベラ科\nJuilidini:Stethojulis terina	2.70964
+マイワシ:Sardinops melanostictus	2.69325
+クサフグ:Takifugu alboplumbeus	2.65228
+ヒラスズキ:Lateolabrax latus	2.64409
+クロダイ:Acanthopagrus schlegelii	2.55668
+アゴハゼ:Chaenogobius annularis	2.54302
+ニザダイ科:Prionurus laticlavius	2.50205
+ホシギンポ:Entomacrodus stellifer stellifer	2.27533
+ナベカ:Omobranchus elegans	1.99672
+メジナ:Girella punctata	1.88746
+スズキ:Lateolabrax japonicus	1.84649
+イシダイ:Oplegnathus fasciatus	1.79459
+ブダイ:Calotomus japonicus	1.75908
+メジナ科:Girella melanichthys	1.5351
+ウルメイワシ科:Etrumeus teres	1.53237
+メバル科:Helicolenus avius	1.48047
+ミナミハタンポ:Pempheris schwenkii	1.36848
+コンゴウテンジクダイ:Ostorhinchus fleurieu	1.36028
