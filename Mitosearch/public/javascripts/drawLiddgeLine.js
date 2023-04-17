@@ -106,7 +106,6 @@ function getCapturedSampleList() {
             }
         })
     }
-    //console.log(capturedSampleList)
 
     drawLiddgeLineChangeable(capturedSampleList)
     drawLiddgeLine(capturedSampleList);
@@ -155,15 +154,39 @@ function drawLiddgeLineChangeable(capturedSampleList){
 
 
     //魚種リストと日付のリストを取得
+    var counter=0
     capturedSampleList.forEach(sampleData => {
-        //console.log(sampleData.date)
-        if (isInvalidDate(sampleData.date)) {
+        var sampleDate=sampleData.date
+        //console.log("readed-----------"+sampleDate)
+        if(sampleData.date.indexOf("T")!==-1){
+            sampleData.data=sampleData.date.toString()
+            var datetransformed=timeTransformer(sampleData.data)
+            sampleDate=datetransformed
+            sampleDate=Date.parse(sampleDate)
+            sampleDate=new Date(sampleDate)
+            var tempYear=sampleDate.getFullYear()
+            var tempMonth=sampleDate.getMonth()+1
+            var tempDay=sampleDate.getDate()
+            //console.log("readed month-----------"+tempMonth)
+            if(tempMonth.toString().length===1){
+                tempMonth="0"+tempMonth
+            }
+            if(tempDay.toString().length===1){
+                tempDay="0"+tempDay
+            }
+            //console.log("changed month-----------"+tempMonth)
+            
+            sampleDate=tempYear+"-"+tempMonth+"-"+tempDay
+        }
+        //console.log("changed-----------"+sampleDate)
+        if (isInvalidDate(sampleDate)) {
             return;
         }
-        let tempdate = sampleData.date;
-        //console.log(tempdate)
+
+        let tempdate = sampleDate;//🌟如果把sampleData.date改成sampleDate的话，千叶县附近的数据可以显示，但是会报错
         let tempdateTrans=new Date(tempdate);
-        //console.log(tempdateTrans)
+        //console.log("tempdate----------------"+tempdate)
+        //console.log("tempdateTrans----------------"+tempdateTrans)//🌟按照读取的数据，带有时区的时间不能转化。
 
         //console.log(lowerHandleForRange)
         //console.log(upperHandleForRange)
@@ -175,11 +198,12 @@ function drawLiddgeLineChangeable(capturedSampleList){
         //console.log(dateRangeCheker)
 
         if (dateRangeCheker==true){
-            //console.log(timemode)
+            //console.log("!!!!!!"+tempdate)
+
             if (timemode === "monthly"){
                 tempdate="2017-"+tempdate.substring(5,7)+"-01";
             }
-            //console.log(tempdate)
+            //console.log("push content------"+tempdate)
             dateList.push(tempdate)
             //console.log(dateList)
             fishList = fishList.concat(Object.keys(sampleData.fish));
@@ -202,7 +226,6 @@ function drawLiddgeLineChangeable(capturedSampleList){
                 }
             });
         }
-
         dateRangeCheker=false
     });
 
@@ -225,13 +248,14 @@ function drawLiddgeLineChangeable(capturedSampleList){
 
     //日付リストの要素を積集合をとる。
     dateList = Array.from(new Set(dateList));
-
+    console.log("_____________dateList______________")
+    console.log(dateList)
     
 
     //魚種リストの積集合をとる。
     fishList = Array.from(new Set(fishList));
-    
-
+    console.log("_____________fishList______________")
+    console.log(fishList)
     //日付の昇順にソートする
     dateList.sort(function (a, b) {
         return (a > b ? 1 : -1);
@@ -259,8 +283,11 @@ function drawLiddgeLineChangeable(capturedSampleList){
         let fastmax = 0;
         fastdensityData.density.push([scaleMin, 0]);
         dateList.forEach(date => {
+            //console.log(date)
+            //console.log(new Date(date))
             if(date in timelineData[fishName]){
                 let tempVal = timelineData[fishName][date]/numDataInDay[date];
+                
                 if(tempVal > fastmax){fastmax=tempVal};
                 fastdensityData.density.push([new Date(date), tempVal]);
             }else{
@@ -274,14 +301,14 @@ function drawLiddgeLineChangeable(capturedSampleList){
         fastdensityData.density = fastdensityData.density.map(data => { return [data[0], data[1] * (40 / fastmax)] })
         //組成の最大値の情報を格納
         fastdensityData["max"] = fastmax;
-
+        //console.log(fastdensityData)
         fastdensityList.push(fastdensityData);
     });
-    //console.log(fastdensityList);
-
+    console.log(fastdensityList)
 
     //グラフ描画用リストをMaxでソート
     densityList = object_array_sort(fastdensityList, "max");
+    console.log(densityList)
 
     //魚種リストをソート
     fishList = densityList.map(densityData => {
@@ -477,10 +504,27 @@ function drawLiddgeLine(capturedSampleList) {
 
     //魚種リストと日付のリストを取得
     capturedSampleList.forEach(sampleData => {
-        if (isInvalidDate(sampleData.date)) {
+        var sampleDate=sampleData.date
+        //console.log(sampleDate)
+        if(sampleData.date.indexOf("T")!==-1){
+            sampleData.data=sampleData.date.toString()
+            var datetransformed=timeTransformer(sampleData.data)
+            sampleDate=datetransformed
+            sampleDate=Date.parse(sampleDate)
+            sampleDate=new Date(sampleDate)
+            var tempYear=sampleDate.getFullYear()
+            var tempMonth=sampleDate.getMonth()+1
+            if(tempMonth.length=1){
+                tempMonth="0"+tempMonth
+            }
+            var tempDay=sampleDate.getDate()
+            sampleDate=tempYear+"-"+tempMonth+"-"+tempDay
+        }
+        //console.log(sampleDate)
+        if (isInvalidDate(sampleDate)) {
             return;
         }
-        let tempdate = sampleData.date;
+        let tempdate = sampleDate;//🌟如果把sampleData.date改成sampleDate的话，千叶县附近的数据可以显示，但是会报错
         if(timemode === "monthly"){
             tempdate="2017-"+tempdate.substring(5,7)+"-01";
         }
@@ -710,9 +754,13 @@ data = data.sort(function (a, b) {
 return data; // ソート後の配列を返す
 }
 
+//1st problem 
 function isInvalidDate(date) {
-return Number.isNaN(new Date(date).getTime());
+    return Number.isNaN(new Date(date).getTime());
 }
+
+
+
 
 function sliderDisplay(){
     //console.log(sliderStatusChecker)
