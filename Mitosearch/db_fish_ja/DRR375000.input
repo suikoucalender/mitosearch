@@ -1,21 +1,20 @@
 id	DRR375000
-カガヤキミゾイサキ:Pomadasys kaakan	20.7101
-コイ:Cyprinus carpio	15.0507
-クサフグ:Takifugu alboplumbeus	13.0365
-アゴハゼ:Chaenogobius annularis	11.3085
-マハゼ:Acanthogobius flavimanus	8.31778
-アカオビシマハゼ:Tridentiger trigonocephalus	4.42729
-イサキ科:Pomadasys sp. CBM:ZF:18112	3.85215
-Parambassis lala	2.68909
-セトダイ:Hapalogenys analis	2.52805
-Oedalechilus labiosus	2.5076
-イソギンポ:Parablennius yatabei	2.49994
-メジナ科:Girella melanichthys	1.82766
-ニザダイ:Prionurus scalprum	1.8021
-ニシキベラ:Thalassoma cupido	1.56438
-ボラ:Mugil cephalus	1.54393
-クロダイ:Acanthopagrus schlegelii	1.53882
-ホシギンポ:Entomacrodus stellifer stellifer	1.28575
-ナベカ:Omobranchus elegans	1.17073
-カエルウオ:Istiblennius enosimae	1.17073
-シロメバル:Sebastes cheni	1.16817
+カガヤキミゾイサキ:Pomadasys kaakan	15.8687
+コイ科:Cyprinus carpio 'singuonensis'	14.9936
+クサフグ:Takifugu alboplumbeus	12.9865
+アゴハゼ:Chaenogobius annularis	11.2541
+イサキ科:Pomadasys sp. CBM:ZF:18112	9.09438
+マハゼ:Acanthogobius flavimanus	8.28288
+アカオビシマハゼ:Tridentiger trigonocephalus	4.37039
+クロダイ:Acanthopagrus schlegelii	4.20758
+メジナ:Girella punctata	2.5159
+Oedalechilus labiosus	2.49555
+イソギンポ:Parablennius yatabei	2.47011
+メジナ科:Girella melanichthys	1.82142
+ニザダイ科:Prionurus laticlavius	1.79089
+ヤンセンニシキベラ:Thalassoma jansenii	1.55686
+ボラ:Mugil cephalus	1.5365
+ホシギンポ:Entomacrodus stellifer stellifer	1.27703
+ウスメバル:Sebastes thompsoni	1.16255
+ナベカ:Omobranchus elegans	1.15747
+カエルウオ:Istiblennius enosimae	1.15747

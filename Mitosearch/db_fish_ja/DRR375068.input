@@ -1,21 +1,23 @@
 id	DRR375068
-セトダイ:Hapalogenys analis	29.5394
-クサフグ:Takifugu alboplumbeus	9.68564
-カエルウオ:Istiblennius enosimae	9.50702
-ヘビギンポ科:Enneapterygius etheostomus	8.53143
-アイゴ:Siganus fuscescens	6.49781
-メジナ科:Girella melanichthys	5.20466
-ニシキベラ:Thalassoma cupido	4.42297
-ムギイワシ:Atherion elymus	4.29014
-ボラ:Mugil cephalus	4.25503
-ドロメ:Chaenogobius gulosus	2.71913
-テンジクダイ科:Apogon semilineatus	2.43515
-ヒメギンポ:Springerichthys bapturus	2.12828
-ニザダイ:Prionurus scalprum	1.87178
-マハゼ:Acanthogobius flavimanus	1.50231
-スズメダイ科:Stegastes gascoynei	1.33132
-ホシギンポ:Entomacrodus stellifer stellifer	1.29162
-アヤアナハゼ:Pseudoblennius marmoratus	1.26109
-ナミノハナ科:Iso hawaiiensis	1.21223
-トウゴロウイワシ科:Doboatherina valenciennei	1.16948
-アカカマス:Sphyraena pinguis	1.14353
+メジナ:Girella punctata	29.5448
+クサフグ:Takifugu alboplumbeus	9.36481
+ヘビギンポ科:Enneapterygius etheostomus	8.19624
+カエルウオ:Istiblennius enosimae	7.81557
+アイゴ科:Siganus canaliculatus	6.28698
+メジナ科:Girella melanichthys	5.0343
+ヤンセンニシキベラ:Thalassoma jansenii	4.27149
+ムギイワシ:Atherion elymus	4.13722
+ボラ:Mugil cephalus	4.11214
+ドロメ:Chaenogobius gulosus	2.62781
+テンジクダイ科:Apogon semilineatus	2.35338
+ヒメギンポ:Springerichthys bapturus	2.05681
+スズメダイ科:Stegastes altus	2.03467
+ニザダイ科:Prionurus laticlavius	1.80745
+クロダイ:Acanthopagrus schlegelii	1.71745
+マハゼ:Acanthogobius flavimanus	1.45186
+ニセカエルウオ:Istiblennius edentulus	1.34415
+ホシギンポ:Entomacrodus stellifer stellifer	1.23644
+アヤアナハゼ:Pseudoblennius marmoratus	1.21136
+ナミノハナ科:Iso hawaiiensis	1.17152
+ヤクシマイワシ:Atherinomorus lacunosus	1.11841
+アカカマス:Sphyraena pinguis	1.10513

@@ -1,20 +1,19 @@
 id	DRR412741
-マサバ:Scomber japonicus	12.4183
-ビンナガ:Thunnus alalunga	11.47
-マダイ:Pagrus major	10.7278
-マアジ:Trachurus japonicus	10.3002
-ブリ:Seriola quinqueradiata	8.8052
-キハダ:Thunnus albacares	7.77289
-ニシン科:Sardinops sagax	6.77876
-サケ科:Salmo salar	5.7327
-カンパチ:Seriola dumerili	4.79659
-コシナガ:Thunnus tonggol	4.33999
-タラ科:Gadus morhua	2.42807
-スズキ:Lateolabrax japonicus	2.37463
-メカジキ:Xiphias gladius	2.18374
-ギンザケ:Oncorhynchus kisutch	2.11349
-サケ科:Oncorhynchus mykiss newberrii	1.71798
-サバ科:Thunnus thynnus thynnus	1.64773
-ババガレイ:Microstomus achne	1.59734
-スケトウダラ:Gadus chalcogrammus	1.46448
-ニホンウナギ:Anguilla japonica	1.3301
+ゴマサバ:Scomber australasicus	12.5061
+サバ科:Thunnus atlanticus	11.7884
+ビンナガ:Thunnus alalunga	11.3089
+マダイ:Pagrus major	10.8678
+マアジ:Trachurus japonicus	10.3698
+ブリ:Seriola quinqueradiata	8.84975
+マイワシ:Sardinops melanostictus	6.82251
+サケ科:Salmo salar	5.77278
+カンパチ:Seriola dumerili	4.64312
+マダラ:Gadus macrocephalus	2.58822
+スズキ:Lateolabrax japonicus	2.37612
+メカジキ:Xiphias gladius	2.18554
+ギンザケ:Oncorhynchus kisutch	2.14404
+サケ科:Oncorhynchus gilae	1.71062
+サバ科:Thunnus thynnus	1.70601
+ババガレイ:Microstomus achne	1.70601
+ニホンウナギ:Anguilla japonica	1.34176
+スケトウダラ:Gadus chalcogrammus	1.31255

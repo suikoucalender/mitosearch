@@ -1,24 +1,23 @@
 id	DRR375033
-クサフグ:Takifugu alboplumbeus	12.1383
-アイゴ:Siganus fuscescens	11.9855
-Parambassis lala	11.7816
-アゴハゼ:Chaenogobius annularis	10.9451
-クロダイ:Acanthopagrus schlegelii	7.25352
-セトダイ:Hapalogenys analis	6.41098
-ダイナンウミヘビ:Ophisurus macrorhynchos	5.14108
-カエルウオ:Istiblennius enosimae	3.76526
-イシダイ:Oplegnathus fasciatus	2.98238
-スズキ:Lateolabrax japonicus	2.95681
-キビナゴ:Spratelloides gracilis	2.65973
-ボラ:Mugil cephalus	2.64755
-メジナ科:Girella melanichthys	2.14775
-マタナゴ:Ditrema temminckii pacificum	2.14531
-ニシキベラ:Thalassoma cupido	2.04974
-マサバ:Scomber japonicus	2.0333
-コイ:Cyprinus carpio	2.02721
-マハゼ:Acanthogobius flavimanus	1.70822
-マアジ:Trachurus japonicus	1.66804
-ナベカ:Omobranchus elegans	1.51341
-カタクチイワシ科:Engraulis japonicus	1.4367
-クジメ:Hexagrammos agrammus	1.30643
-シロギス:Sillago japonica	1.29608
+クロダイ:Acanthopagrus schlegelii	19.0375
+クサフグ:Takifugu alboplumbeus	12.1443
+アイゴ科:Siganus canaliculatus	11.9926
+アゴハゼ:Chaenogobius annularis	10.9472
+メジナ:Girella punctata	6.41706
+ダイナンウミヘビ:Ophisurus macrorhynchos	5.14205
+カエルウオ:Istiblennius enosimae	3.74709
+イシダイ:Oplegnathus fasciatus	2.96711
+スズキ:Lateolabrax japonicus	2.95737
+キビナゴ:Spratelloides gracilis	2.66023
+ボラ:Mugil cephalus	2.64744
+メジナ科:Girella melanichthys	2.14998
+ウミタナゴ:Ditrema temminckii	2.14572
+ヤンセンニシキベラ:Thalassoma jansenii	2.0483
+ゴマサバ:Scomber australasicus	2.03368
+コイ科:Cyprinus carpio 'singuonensis'	2.02759
+マハゼ:Acanthogobius flavimanus	1.70854
+マアジ:Trachurus japonicus	1.67566
+ナベカ:Omobranchus elegans	1.507
+カタクチイワシ科:Engraulis japonicus	1.43697
+ウサギアイナメ:Hexagrammos lagocephalus	1.31033
+シロギス:Sillago japonica	1.29632

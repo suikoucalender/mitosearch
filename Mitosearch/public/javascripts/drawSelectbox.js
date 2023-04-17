@@ -1,7 +1,7 @@
 console.log("=====drawSelectbox.js=====")
 $(function () {
     $('.test-select2').select2({
-        language: "ja" //���{�ꉻ
+        language: "ja"
     });
 })
 

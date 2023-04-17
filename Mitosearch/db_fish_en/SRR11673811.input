@@ -1,13 +1,14 @@
 id	SRR11673811
-[common carp]: Cyprinus carpio	36.9867
-[goldfish]: Carassius auratus	26.1794
-[barbel steed]: Hemibarbus labeo	10.445
-[Amur goby]: Rhinogobius brunneus	4.96852
-[green sunfish]: Lepomis cyanellus	4.75309
-[largemouth bass]: Micropterus salmoides	4.37535
-[Japanese crucian carp]: Carassius cuvieri	3.4037
-Opsariichthys uncirostris amurensis	3.35538
-[big-scaled redfin]: Tribolodon hakonensis	1.59285
-[oriental weatherfish]: Misgurnus anguillicaudatus	1.45046
-Coreoperca herzi	1.37262
-[Chinese weather loach]: Misgurnus mizolepis	1.11698
+Cyprinus carpio 'singuonensis'	33.543
+[Japanese crucian carp]: Carassius cuvieri	29.4973
+Hemibarbus medius	9.88232
+[Amur goby]: Rhinogobius brunneus	5.02635
+[bluegill]: Lepomis macrochirus	4.80237
+[largemouth bass]: Micropterus salmoides	4.18142
+[three-lips]: Opsariichthys uncirostris	3.29731
+[gold crucian carp]: Carassius auratus auratus	2.88371
+[big-scaled redfin]: Tribolodon hakonensis	1.57344
+Misgurnus bipartitus	1.43779
+[barbel steed]: Hemibarbus labeo	1.40859
+Coreoperca herzi	1.37865
+[Chinese weather loach]: Misgurnus mizolepis	1.08777

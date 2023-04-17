@@ -1,20 +1,18 @@
 id	DRR412745
-ニシン科:Sardinops sagax	15.6021
-マダイ:Pagrus major	10.9963
-カツオ:Katsuwonus pelamis	10.9197
-マアジ:Trachurus japonicus	9.25632
-ブリ:Seriola quinqueradiata	8.14498
-ビンナガ:Thunnus alalunga	7.99902
-マサバ:Scomber japonicus	5.64773
-サケ科:Salmo salar	5.52489
-キハダ:Thunnus albacares	5.4454
-コシナガ:Thunnus tonggol	3.10278
-カンパチ:Seriola dumerili	2.99006
-サワラ:Scomberomorus niphonius	2.98283
-タラ科:Gadus morhua	2.54205
-サケ科:Oncorhynchus mykiss newberrii	1.79635
-ギンザケ:Oncorhynchus kisutch	1.5261
-イサキ:Parapristipoma trilineatum	1.43072
-アジ科:Seriola lalandi	1.42783
-メカジキ:Xiphias gladius	1.34545
-サバ科:Thunnus thynnus thynnus	1.31944
+マイワシ:Sardinops melanostictus	15.9043
+マダイ:Pagrus major	11.2638
+カツオ:Katsuwonus pelamis	10.9221
+マアジ:Trachurus japonicus	9.4371
+サバ科:Thunnus atlanticus	8.45892
+ブリ:Seriola quinqueradiata	8.29245
+ビンナガ:Thunnus alalunga	8.01108
+ゴマサバ:Scomber australasicus	5.79249
+サケ科:Salmo salar	5.66285
+サワラ:Scomberomorus niphonius	3.04503
+カンパチ:Seriola dumerili	2.92129
+マダラ:Gadus macrocephalus	2.6134
+サケ科:Oncorhynchus gilae	1.82673
+ギンザケ:Oncorhynchus kisutch	1.56598
+サバ科:Thunnus thynnus	1.45843
+イサキ:Parapristipoma trilineatum	1.45843
+メカジキ:Xiphias gladius	1.36563

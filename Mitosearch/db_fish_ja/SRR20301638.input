@@ -1,10 +1,9 @@
 id	SRR20301638
-ニシン:Clupea pallasii	76.8645
-ニシン科:Clupea harengus	10.4414
-マスノスケ:Oncorhynchus tshawytscha	2.67884
-カラフトマス:Oncorhynchus gorbuscha	2.22222
-太平洋系陸封型イトヨ:Gasterosteus aculeatus	1.97869
-カンキョウカジカ:Cottus hangiongensis	1.79604
-Anoplarchus insignis	1.64384
-メバル科:Sebastes caurinus	1.21766
-イカナゴ:Ammodytes japonicus	1.15677
+ニシン:Clupea pallasii	86.7433
+マスノスケ:Oncorhynchus tshawytscha	2.6937
+カラフトマス:Oncorhynchus gorbuscha	2.23971
+イカナゴ科:Ammodytes personatus	2.08838
+太平洋系陸封型イトヨ:Gasterosteus aculeatus	1.96731
+カンキョウカジカ:Cottus hangiongensis	1.78571
+ニセメダマギンポ:Anisarchus medius	1.27119
+メバル科:Sebastes caurinus	1.21065
