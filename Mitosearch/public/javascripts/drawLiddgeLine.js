@@ -524,7 +524,7 @@ function drawLiddgeLine(capturedSampleList) {
         if (isInvalidDate(sampleDate)) {
             return;
         }
-        let tempdate = sampleDate;//🌟如果把sampleData.date改成sampleDate的话，千叶县附近的数据可以显示，但是会报错
+        let tempdate = sampleDate;
         if(timemode === "monthly"){
             tempdate="2017-"+tempdate.substring(5,7)+"-01";
         }
