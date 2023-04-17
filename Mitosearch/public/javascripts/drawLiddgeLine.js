@@ -248,14 +248,10 @@ function drawLiddgeLineChangeable(capturedSampleList){
 
     //日付リストの要素を積集合をとる。
     dateList = Array.from(new Set(dateList));
-    console.log("_____________dateList______________")
-    console.log(dateList)
-    
 
     //魚種リストの積集合をとる。
     fishList = Array.from(new Set(fishList));
-    console.log("_____________fishList______________")
-    console.log(fishList)
+
     //日付の昇順にソートする
     dateList.sort(function (a, b) {
         return (a > b ? 1 : -1);
@@ -283,8 +279,7 @@ function drawLiddgeLineChangeable(capturedSampleList){
         let fastmax = 0;
         fastdensityData.density.push([scaleMin, 0]);
         dateList.forEach(date => {
-            //console.log(date)
-            //console.log(new Date(date))
+
             if(date in timelineData[fishName]){
                 let tempVal = timelineData[fishName][date]/numDataInDay[date];
                 
@@ -301,14 +296,13 @@ function drawLiddgeLineChangeable(capturedSampleList){
         fastdensityData.density = fastdensityData.density.map(data => { return [data[0], data[1] * (40 / fastmax)] })
         //組成の最大値の情報を格納
         fastdensityData["max"] = fastmax;
-        //console.log(fastdensityData)
         fastdensityList.push(fastdensityData);
     });
-    console.log(fastdensityList)
+
 
     //グラフ描画用リストをMaxでソート
     densityList = object_array_sort(fastdensityList, "max");
-    console.log(densityList)
+
 
     //魚種リストをソート
     fishList = densityList.map(densityData => {
@@ -524,7 +518,7 @@ function drawLiddgeLine(capturedSampleList) {
         if (isInvalidDate(sampleDate)) {
             return;
         }
-        let tempdate = sampleDate;
+        let tempdate = sampleDate;//🌟如果把sampleData.date改成sampleDate的话，千叶县附近的数据可以显示，但是会报错
         if(timemode === "monthly"){
             tempdate="2017-"+tempdate.substring(5,7)+"-01";
         }
