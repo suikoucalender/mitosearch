@@ -1,4 +1,3 @@
-console.log("=====iconLocation.js=====")
 function iconLocation() {
     //read the elements
     var helpBtn = document.getElementById("help");
@@ -27,29 +26,12 @@ function iconLocation() {
     var mapHeight = map.offsetHeight;
     var graphLeft = graph.offsetLeft;
     var graphWidth = graph.offsetWidth;
-    //var bargraphxLeft = bargraphx.getBoundingClientRect().left;
-    //var bargraphAlltimexLeft = bargraphAlltimex.getBoundingClientRect().left;
-    //var bargraphxTop = bargraphx.getBoundingClientRect().top;
-    //var bargraphAlltimexTop = bargraphAlltimex.getBoundingClientRect().top;
 
     var iconTop = mapTop + 30
         //0.02 * mapHeight;
     helpBtn.style.top = iconTop + "px";
     expansionBtn.style.top = iconTop + "px";
     restoreBtn.style.top = iconTop + "px";
-    //if (timeBtnChecker=="monthlyBtn"){
-    //    bargraphAlltimexTop = bargraphAlltimexTop - 0
-    //    graphName.style.top = bargraphAlltimexTop + "px"
-    //    bargraphAlltimexLeft = bargraphAlltimexLeft - 0
-    //    graphName.style.left = bargraphAlltimexLeft + "px"
-    //} else if (timeBtnChecker=="alltimeBtn"){
-    //    bargraphxTop = bargraphxTop - 80
-    //    graphName.style.top = bargraphxTop + "px"
-    //    bargraphxLeft = bargraphxLeft - 10
-    //    graphName.style.left = bargraphxLeft + "px"
-    //}
-    //timeFilterOnBtn.style.top = timeFilterBtnTop + "px";
-    //timeFilterOffBtn.style.top = timeFilterBtnTop + "px";
 
     var helpLeft = mapLeft + 50;
     helpBtn.style.left = helpLeft + "px";
@@ -82,14 +64,11 @@ function iconLocation() {
     alltimeBtn.style.left = alltimeLeft + "px";
     var monthlyLeft = graphLeft + 0.90 * graphWidth;
     monthlyBtn.style.left = monthlyLeft + "px";
-    //var timeFilterBtnLeft= alltimeLeft-0
-    //timeFilterOnBtn.style.left = timeFilterBtnLeft + "px";
-    //timeFilterOffBtn.style.left = timeFilterBtnLeft + "px";
 
     var graphNameTop=mapTop+30;
     graphName.style.top=graphNameTop + "px";
-    console.log(bargraphAlltimexLeft)
-    console.log(bargraphxLeft)
+    //console.log(bargraphAlltimexLeft)
+    //console.log(bargraphxLeft)
     if(bargraphxLeft>0){
         var graphNameLeft=bargraphxLeft-40; 
     }else{

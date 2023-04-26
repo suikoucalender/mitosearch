@@ -1,4 +1,3 @@
-console.log("=====drawSelectbox.js=====")
 $(function () {
     $('.test-select2').select2({
         language: "ja"
@@ -8,6 +7,7 @@ $(function () {
 $("#button").click(function () {
     let fishList = $("#filter").val().join(" ,");
     fishList = fishList + " ,";
+    console.log(fishList)
     $.ajax({
         type: "POST",
         data: { fishList: fishList },
@@ -16,8 +16,9 @@ $("#button").click(function () {
     .done(function (res) {
         res = JSON.parse(res);
         sampleDataSet = res.new_sampleDataObjList;
+        console.log(sampleDataSet)
         fishClassifyDataObj = res.new_fishClassifyDataObj;
-
+        console.log(fishClassifyDataObj)
         map.remove();
 
         //appendScript("javascripts/drawPie.js");

@@ -1,21 +1,20 @@
-console.log("=====timechange.js=====")
 slider.noUiSlider.on('update', function (values, handle) {
-    console.log("bar moving  "+userTimeSettingChecker)
+    //read the date from the slider
     dateValues[handle].innerHTML = formatter.format(new Date(+values[handle]));
     lowerHandle=document.getElementById('event-start').innerHTML
     upperHandle=document.getElementById('event-end').innerHTML
-
+    //if bar moved, time information change
     if (userTimeSettingChecker){
         userLowerHandleSetting=lowerHandle
         userUpperHandleSetting=upperHandle
         userLowerHandleSettingStamp=timestamp(userLowerHandleSetting);
         userUpperHandleSettingStamp=timestamp(userUpperHandleSetting);
     }
-    console.log(userLowerHandleSettingStamp+' '+userLowerHandleSetting)
-    console.log(userUpperHandleSettingStamp+' '+userUpperHandleSetting)
+    //change the date label on the webpage
     document.getElementById('lowerHandleNumber').innerHTML=lowerHandle
     document.getElementById('upperHandleNumber').innerHTML=upperHandle
-
+    
+    //change date format
     var lowerHandleFormatChange=lowerHandle.split('/')
     lowerHandleFormatChange=lowerHandleFormatChange.join('-')
     var upperHandleFormatChange=upperHandle.split('/')
@@ -23,25 +22,21 @@ slider.noUiSlider.on('update', function (values, handle) {
     document.getElementById("lowerHandleNumberDatePicker").value=lowerHandleFormatChange
     document.getElementById("upperHandleNumberDatePicker").value=upperHandleFormatChange
 
-    //console.log("RUN updating")
-    //getCapturedSampleListChecker=false
-    //if(counter<=3){
-        //appendScript("javascripts/drawLiddgeLine.js")
-    //}else{
-        upperHandleStamp=timestamp(upperHandle);
-        lowerHandleStamp=timestamp(lowerHandle);
-        upperHandleForRange=new Date(upperHandle);
-        lowerHandleForRange=new Date(lowerHandle);
-        //console.log(upperHandleStamp)
-        //console.log(lowerHandleStamp)
-        //dateRangeCheker = false
-        getCapturedSampleList()
-    //}
+    upperHandleStamp=timestamp(upperHandle);
+    lowerHandleStamp=timestamp(lowerHandle);
+    upperHandleForRange=new Date(upperHandle);
+    lowerHandleForRange=new Date(lowerHandle);
+    //Retrieve new data and plot
+    getCapturedSampleList()
 });
 
 
+//change the slider with bar
 document.getElementById("lowerHandleNumberDatePicker").addEventListener("blur", dateChangedByLowerCalander);
 document.getElementById("upperHandleNumberDatePicker").addEventListener("blur", dateChangedByUpperCalander);
+
+
+
 function dateChangedByLowerCalander() {
     userLowerCalanderSettingStamp=timestamp(document.getElementById("lowerHandleNumberDatePicker").value);
     if (userLowerCalanderSettingStamp<minTimestamp){

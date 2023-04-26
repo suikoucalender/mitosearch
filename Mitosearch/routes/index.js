@@ -21,7 +21,6 @@ router.get('/', function (req, res) {
     }
     let language = req.headers["accept-language"]
     language = language[0]+language[1]
-    console.log(language)
     let sampleDataObjList = getSampleDataObjList(taxo,language);
     let allFishList = getAllFishList(sampleDataObjList);
     let fishClassifyDataObj = fishClassify(taxo,language);
@@ -44,7 +43,7 @@ router.get('/fish', function (req, res) {
     taxo = "fish";
     let language = req.headers["accept-language"]
     language = language[0]+language[1]
-    console.log(language)
+    //console.log(language)
     let sampleDataObjList = getSampleDataObjList(taxo,language);
     let allFishList = getAllFishList(sampleDataObjList);
     let fishClassifyDataObj = fishClassify(taxo,language);
@@ -67,7 +66,7 @@ router.get('/mollusk', function (req, res) {
     taxo = "mollusk";
     let language = req.headers["accept-language"]
     language = language[0]+language[1]
-    console.log(language)
+    //console.log(language)
     let sampleDataObjList = getSampleDataObjList(taxo,language);
     let allFishList = getAllFishList(sampleDataObjList);
     let fishClassifyDataObj = fishClassify(taxo,language);
@@ -89,7 +88,9 @@ router.get('/mollusk', function (req, res) {
 router.post('/', function (req, res) {
     taxo = "fish";
     let selectedFishList = req.body.fishList;
-    let { new_sampleDataObjList, new_fishClassifyDataObj } = filterBySelectFish(selectedFishList, taxo);
+    let language = req.headers["accept-language"]
+    language = language[0]+language[1]
+    let { new_sampleDataObjList, new_fishClassifyDataObj } = filterBySelectFish(selectedFishList, taxo, language);
     let latitude=req.query.lat;
     let longitude=req.query.long;
     let ratio=req.query.ratio;
@@ -261,17 +262,15 @@ function getAllFishList(sampleDataObjList) {
     return allFishList;
 }
 
-function filterBySelectFish(selectedFishList, taxo) {
-
+function filterBySelectFish(selectedFishList, taxo, lang) {
     selectedFishList = selectedFishList.split(",");
-    let sampleDataObjList = getSampleDataObjList(taxo);
-    let fishClassifyDataObj = fishClassify(taxo);
+    let sampleDataObjList = getSampleDataObjList(taxo, lang);
+    let fishClassifyDataObj = fishClassify(taxo,lang);
 
     let new_sampleDataObjList = [];
 
     sampleDataObjList.forEach(sampleDataObj => {
         let sampleFishList = Object.keys(sampleDataObj.fish);
-
         let new_sampleDataObj = {
             sample: sampleDataObj.sample, latitude: sampleDataObj.latitude, longitude: sampleDataObj.longitude, date: sampleDataObj.date, fish: {}
         };
@@ -279,12 +278,15 @@ function filterBySelectFish(selectedFishList, taxo) {
         let total = 0;
 
         selectedFishList.forEach(selectedFish => {
-            if (sampleFishList.includes(selectedFish)) {
-                new_sampleDataObj.fish[selectedFish] = sampleDataObj.fish[selectedFish];
-                total += sampleDataObj.fish[selectedFish];
+            //there may be spaces in original version, and we removed them when we add multi-languages
+            //you can see below, there is a space after "others" *1
+            //I still did not understand the reason 
+            if (sampleFishList.includes(selectedFish.trimEnd())) {
+                new_sampleDataObj.fish[selectedFish] = sampleDataObj.fish[selectedFish.trimEnd()];
+                total += sampleDataObj.fish[selectedFish.trimEnd()];
             }
         })
-
+        // *1
         new_sampleDataObj.fish["others "] = 100 - total;
 
         new_sampleDataObjList.push(new_sampleDataObj);

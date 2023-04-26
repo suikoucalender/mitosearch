@@ -1,4 +1,3 @@
-console.log("=====polygon.js=====")
 const undoBtn = document.getElementById("undo");
 const pointBtn = document.getElementById("point");
 var dotnumber = 0
@@ -13,12 +12,13 @@ var polygoncheker="nonexist"
 
 
 pointBtn.addEventListener("click", e => {
-  if (functioncheker=="off"){
+  if (functioncheker=="off"){//Activate the function of adding fixed points
     functioncheker = "on";
     undoBtn.className="iconPolygon2on";
     undoBtn.disabled=false;
     pointBtn.className="iconPolygonon";
-    map.on('click',function(e){
+
+    map.on('click',function(e){//draw polygon fix points on the map by click
       var dotLayer = L.layerGroup().addTo(map);
       var dotmarker = L.circle(e.latlng,{radius:100,color:'red',fillColor:'red',fillOpacity:1}).addTo(dotLayer);
       dotLayer.eachLayer(function(layer){
@@ -29,7 +29,7 @@ pointBtn.addEventListener("click", e => {
       var tempco = [];
       tempco.push(dotmarker.getLatLng().lng,dotmarker.getLatLng().lat);
 
-      if (dotnumber>=3){
+      if (dotnumber>=3){//add polygon, when fix points more then 3
         if (polygoncheker=="exist"){
           $("#polygonlayer").remove();
           polygonCoordinate.coordinates[0][0].pop();
@@ -39,20 +39,17 @@ pointBtn.addEventListener("click", e => {
         var geoJsonLayer = L.geoJSON(polygonCoordinate).addTo(map);
         geoJsonLayer.eachLayer(function (layer) {
           layer._path.id = 'polygonlayer';
-          
         });
         polygoncheker="exist"
 
       }else{
         polygonCoordinate.coordinates[0][0].push(tempco);
       }
-      sliderUpdating();
+      sliderUpdating();//updating the plots and time slider
       slider.noUiSlider.reset();
       getCapturedSampleList();
-      //appendScript("javascripts/drawLiddgeLine.js")
-      //appendScript("javascripts/timechange.js")
     })
-  } else if (functioncheker=="on"){
+  } else if (functioncheker=="on"){//Disable the ability to add a fixed point
     map.off('click');
     functioncheker="off"
     pointBtn.className="iconPolygon";
@@ -60,7 +57,7 @@ pointBtn.addEventListener("click", e => {
   }
 });
 
-undoBtn.addEventListener("click", e =>{
+undoBtn.addEventListener("click", e =>{//reset the polygon function
   $("#polygonlayer").remove();
   $('#dots*').remove();
   dotnumber=0

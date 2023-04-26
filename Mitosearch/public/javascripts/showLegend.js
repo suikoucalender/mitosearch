@@ -1,4 +1,4 @@
-console.log("=====showLegend.js=====")
+//The function of the button to show or not show each element of the web page
 const helpBtn = document.getElementById("help");
 const expansionBtn = document.getElementById("expansion");
 const restoreBtn = document.getElementById("restore")
@@ -42,12 +42,6 @@ taxonomyLegend.addEventListener("click", e => {
     liddgeArea.style.display = "block";
     bargraphAlltimeArea.style.display = "block";
     bargraphArea.style.display = "block";
-    //sliderArea.style.display = "block";
-    //lowerHandleNumber.style.display = "block";
-    //upperHandleNumber.style.display = "block";
-    //graphName.style.display = "block";
-    //timeFilterOnBtn.style.display = "block"
-    //timeFilterOffBtn.style.display = "block"
     sliderDisplay();
 });
 
@@ -57,9 +51,6 @@ expansionBtn.addEventListener("click", e => {
     mapArea.style.width = "100%";
     pointBtn.className="iconPolygon";
     functioncheker="off";
-    //liddgeArea.style.display = "none";
-    //changeRidgeGraph.style.display = "none";
-
     map.remove();
 
     appendScript("javascripts/drawPie.js");
@@ -94,24 +85,15 @@ restoreBtn.addEventListener("click", e => {
     mapArea.style.width = "40%";
     pointBtn.className="iconPolygon";
     functioncheker="off";
-    //liddgeArea.style.display = "block";
-    //changeRidgeGraph.style.display = "block";
-
     map.remove();
 
     load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
-    //appendScript("javascripts/drawPie.js");
-    //appendScript("javascripts/drawLiddgeLine.js");
 
     restoreBtn.style.display = "none";
     expansionBtn.style.display = "block";
     liddgeArea.style.display = "block";
     bargraphAlltimeArea.style.display = "block";
     bargraphArea.style.display = "block";
-    //sliderArea.style.display = "block";
-    //lowerHandleNumber.style.display = "block";
-    //upperHandleNumber.style.display = "block";
-    //graphName.style.display = "block";
 
     if (sliderStatusChecker=="non-exist"){
         timeFilterOnBtn.style.display="block"
@@ -130,37 +112,22 @@ restoreBtn.addEventListener("click", e => {
 
 alltimeBtn.addEventListener("click", e => {
     timeBtnChecker = "monthlyBtn";
-    //getCapturedSampleList()
     appendScript("javascripts/drawLiddgeLine.js");
     alltimeBtn.style.display = "none";
     monthlyBtn.style.display = "block";
-    sliderDisplay();
-    
+    sliderDisplay(); 
 });
 
 monthlyBtn.addEventListener("click", e => {
     timeBtnChecker = "alltimeBtn";
-    //getCapturedSampleList()
     appendScript("javascripts/drawLiddgeLine.js");
     monthlyBtn.style.display = "none";
     alltimeBtn.style.display = "block";
     sliderDisplay();
-    
 });
 
 
 timeFilterOnBtn.addEventListener("click", e => {
-    //timeFilterOnBtn.style.display = "none";
-    //timeFilterOffBtn.style.display = "block";
-    //if (timeBtnChecker=="monthlyBtn"){
-    //    bargraphArea.style.display = "none";
-    //}else if (timeBtnChecker=="alltimeBtn"){
-    //    bargraphArea.style.display = "block";
-    //}
-    //bargraphAlltimeArea.style.display = "block"
-    //sliderArea.style.display = "block";
-    //lowerHandleNumber.style.display = "block";
-    //upperHandleNumber.style.display = "block";
     sliderStatusChecker = "exist"
     sliderUpdating();
     sliderDisplay()
@@ -168,8 +135,6 @@ timeFilterOnBtn.addEventListener("click", e => {
 });
 
 timeFilterOffBtn.addEventListener("click", e => {
-    //timeFilterOnBtn.style.display = "block";
-    //timeFilterOffBtn.style.display = "none";
     sliderStatusChecker="non-exist"
     slider.noUiSlider.reset();
     userTimeSettingChecker=false

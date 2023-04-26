@@ -1,6 +1,4 @@
-//console.log("=====timePicker.js=====")
 var counter=1
-//var getCapturedSampleListChecker=true
 var lowerHandle
 var upperHandle
 var graphChecker
@@ -43,13 +41,13 @@ function timeTransformer(date){
 }
 
 function slidersize(){
-    //console.log("RUN slidersize function")
     if(graphChecker=="exist"){
+        //get width of graph, the caculate the size of slider
         sliderArea.style.display = "block";
         lowerHandleNumber.style.display = "block";
         upperHandleNumber.style.display = "block";
         var graph = document.querySelector("#bargraphAlltime > svg > g > g:nth-child(2)");
-        var graphWidth = graph.getBoundingClientRect().width; //🌟graph没有生成所以没办法读取宽度
+        var graphWidth = graph.getBoundingClientRect().width;
         var parent = document.querySelector(".parent");
         parent.style.width = graphWidth + "px"
         parent.style.marginRight = -15 + "px"
@@ -58,101 +56,62 @@ function slidersize(){
         lowerHandleNumber.style.display = "none";
         upperHandleNumber.style.display = "none";
     }
-    //console.log("=====finish slidersize=====")
 }
-
 
 function timestamp(str){
     return new Date(str).getTime();
 }
 
-
-
 function sliderUpdating(){
-    console.log("RUN sliderUpdating function")// bug
     if(isMove){
-        console.log("moving, CANCELED sliderUpdating")
         return
     };
     //get min and max value of sample
-    console.log("1")
     if (capturedSampleList.length == 0) {
         return;
     }
-    console.log("2")
-    //console.log("captured Sample List")
-    //console.log(capturedSampleList)
+
     var tempdateAll=sampleDataSet[0]['date'];
     if(tempdateAll.indexOf("T")!==-1){
         tempdateAll=tempdateAll.toString()
         var datetransformed=timeTransformer(tempdateAll)
-        //console.log("changed====="+datetransformed)
         tempdateAll=datetransformed
     }
     tempdateAll=Date.parse(tempdateAll)
-    console.log("temdateAll____________"+tempdateAll)
+    //console.log("temdateAll____________"+tempdateAll)
     var maxTimestamp=tempdateAll;
     var minTimestamp=tempdateAll;
 
 
 for (var i=1;i<sampleDataSet.length;i++){
-    //console.log("_________________uppdate new slider____________________")
+
     tempdateAll=sampleDataSet[i]['date']
-    //console.log("readed date=========="+tempdateAll)
+
     if(tempdateAll.indexOf("T")!==-1){
         tempdateAll=tempdateAll.toString()
         var datetransformed=timeTransformer(tempdateAll)
-        //console.log("changed====="+datetransformed)
         tempdateAll=datetransformed
     }
     tempdateAll=Date.parse(tempdateAll)
-    //let dateformatChecker=tempdateAll.indexOf("T")
-    //if (dateformatChecker!==-1){
-    //    tempdateAll=tempdateAll.substring(0,dateformatChecker)
-    //}
-    //console.log("tempdateallstamp====="+tempdateAll)
-    //console.log("tempdatealldate====="+new Date(tempdateAll))
+
     if(isNaN(tempdateAll)){
-        console.log('date missing '+i)
+        //console.log('date missing '+i)
     }else{
         if (tempdateAll>=maxTime){
             maxTimestamp=tempdateAll
         }else if(tempdateAll<=minTime){
             minTimestamp=tempdateAll
         }
-        //console.log(tempdateAll)
+
         var maxTime=new Date(maxTimestamp)
         var minTime=new Date(minTimestamp)
 
-        //console.log("maxStamp======="+maxTimestamp)
-        //console.log("maxTime======="+maxTime)
-        //console.log("minStamp======="+minTimestamp)
-        //console.log("minTime======="+minTime)
     }
 
 }
-    //console.log()
-    maxTimestamp=maxTimestamp+86399000
-    //if (userTimeSettingChecker){
-        //if (userUpperHandleSettingStamp>maxTimestamp){
-        //    maxTimestamp=userUpperHandleSettingStamp
-        //}
-        //if (userLowerHandleSettingStamp<minTimestamp) {
-        //    minTimestamp=userLowerHandleSettingStamp
-        //}
-    //}
-
-    //console.log(maxTimestamp)
-
-    //console.log(minTimestamp)
-    //console.log(userLowerHandleSettingStamp+' '+userLowerHandleSetting)
-    //console.log(userUpperHandleSettingStamp+' '+userUpperHandleSetting)
     
-    //Update slider
+    maxTimestamp=maxTimestamp+86399000
 
-
-    //console.log(document.getElementById("lowerHandleNumberDatePicker").value+"====="+userLowerCalanderSettingStamp)
-    //console.log(document.getElementById("upperHandleNumberDatePicker").value+"====="+userUpperCalanderSettingStamp)
     
     if(document.getElementById("lowerHandleNumberDatePicker").value==""){
         userLowerHandleSettingStamp=minTimestamp
@@ -189,38 +148,33 @@ for (var i=1;i<sampleDataSet.length;i++){
 
     userTimeSettingChecker=true
     sliderLoadChecker=true
-    //console.log("=====finish sliderUpdating=====")
 }
 
 //get min and max value of slider
 var tempdateAll=sampleDataSet[0]['date'];
+//Checking time format, if it is zulu time, transform it into the utc time
 if(tempdateAll.indexOf("T")!==-1){
     tempdateAll=tempdateAll.toString()
     var datetransformed=timeTransformer(tempdateAll)
     //console.log("changed====="+datetransformed)
     tempdateAll=datetransformed
 }
+//changing the time to timestamp format
 tempdateAll=Date.parse(tempdateAll)
 var maxTimestamp=tempdateAll;
 var minTimestamp=tempdateAll;
 
+
+
+//Iterate through the data to get the maximum and minimum time values
 for (var i=1;i<sampleDataSet.length;i++){
-    //console.log("_________________create new slider____________________")
     tempdateAll=sampleDataSet[i]['date']
-    //console.log("readed date=========="+tempdateAll)
     if(tempdateAll.indexOf("T")!==-1){
         tempdateAll=tempdateAll.toString()
         var datetransformed=timeTransformer(tempdateAll)
-        //console.log("changed====="+datetransformed)
         tempdateAll=datetransformed
     }
     tempdateAll=Date.parse(tempdateAll)
-    //let dateformatChecker=tempdateAll.indexOf("T")
-    //if (dateformatChecker!==-1){
-    //    tempdateAll=tempdateAll.substring(0,dateformatChecker)
-    //}
-    //console.log("tempdateallstamp====="+tempdateAll)
-    //console.log("tempdatealldate====="+new Date(tempdateAll))
     if(isNaN(tempdateAll)){
         //console.log('date missing '+i)
     }else{
@@ -229,23 +183,15 @@ for (var i=1;i<sampleDataSet.length;i++){
         }else if(tempdateAll<=minTimestamp){
             minTimestamp=tempdateAll
         }
-        //console.log(tempdateAll)
         var maxTime=new Date(maxTimestamp)
         var minTime=new Date(minTimestamp)
-
-        //console.log("maxStamp======="+maxTimestamp)
-        //console.log("maxTime======="+maxTime)
-        //console.log("minStamp======="+minTimestamp)
-        //console.log("minTime======="+minTime)
     }
 
 }
 
+//maximun time value plus 1 day, to prevent error
 maxTimestamp=maxTimestamp+86399000
 
-    //console.log("max======="+maxTimestamp)
-
-    //console.log("mix======="+minTimestamp)
 
 
 

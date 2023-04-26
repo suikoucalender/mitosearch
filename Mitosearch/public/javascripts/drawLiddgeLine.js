@@ -298,17 +298,17 @@ function drawLiddgeLineChangeable(capturedSampleList){
         fastdensityData["max"] = fastmax;
         fastdensityList.push(fastdensityData);
     });
-
+  
 
     //グラフ描画用リストをMaxでソート
     densityList = object_array_sort(fastdensityList, "max");
-
+    densityList=densityList.slice(0,20)
 
     //魚種リストをソート
     fishList = densityList.map(densityData => {
         return densityData.fish;
     });
-
+    
     //グラフ全体のサイズとマージンを設定
     var map = document.getElementById("map");
     var mapLeft = map.offsetLeft;
@@ -757,15 +757,13 @@ function isInvalidDate(date) {
 
 
 function sliderDisplay(){
-    //console.log(sliderStatusChecker)
-    //console.log(timeBtnChecker)
     if (sliderStatusChecker=="exist"){
         timeFilterOnBtn.style.display = "none";
         timeFilterOffBtn.style.display = "block";
-        if(timeBtnChecker=="monthlyBtn"){//ok
+        if(timeBtnChecker=="monthlyBtn"){
             bargraphArea.style.display = "none";
             bargraphAlltimeArea.style.display = "block";
-        }else{//ok
+        }else{
             bargraphArea.style.display = "block";
             bargraphAlltimeArea.style.display = "block";
         }
@@ -775,10 +773,10 @@ function sliderDisplay(){
     } else if (sliderStatusChecker=="non-exist"){
         timeFilterOnBtn.style.display = "block";
         timeFilterOffBtn.style.display = "none";
-        if(timeBtnChecker=="monthlyBtn"){//ok
+        if(timeBtnChecker=="monthlyBtn"){
             bargraphArea.style.display = "none";
             bargraphAlltimeArea.style.display = "block"
-        }else{//ok
+        }else{
             bargraphArea.style.display = "block"
             bargraphAlltimeArea.style.display = "none"
         } 
