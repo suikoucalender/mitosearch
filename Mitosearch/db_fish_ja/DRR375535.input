@@ -1,12 +1,12 @@
 id	DRR375535
-カタクチイワシ科:Engraulis japonicus	13.3473
+カタクチイワシ科:Engraulis japonicus	13.3539
 アイゴ科:Siganus canaliculatus	10.8741
 ミナミハタンポ:Pempheris schwenkii	9.89289
 ムギイワシ:Atherion elymus	8.36276
 ネッタイスズメダイ:Pomacentrus moluccensis	7.96206
 ボラ:Mugil cephalus	5.97824
-ウツボ:Gymnothorax kidako	4.98634
-クロダイ:Acanthopagrus schlegelii	4.95419
+ウツボ:Gymnothorax kidako	4.98038
+マダイ:Pagrus major	4.95419
 キビナゴ:Spratelloides gracilis	4.22067
 ギンイソイワシ:Hypoatherina tsurugae	2.91797
 メジナ:Girella punctata	2.80128
@@ -22,5 +22,5 @@ Cheilodactylus zonatus	2.70721
 ナミノハナ科:Iso hawaiiensis	1.50453
 テンジクイサキ:Kyphosus cinerascens	1.23423
 ヒラスズキ:Lateolabrax latus	1.20982
-カサゴ:Sebastiscus marmoratus	1.19017
+カサゴ:Sebastiscus marmoratus	1.18958
 アヤアナハゼ:Pseudoblennius marmoratus	1.14254

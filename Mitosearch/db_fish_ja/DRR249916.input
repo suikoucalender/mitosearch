@@ -5,6 +5,7 @@ id	DRR249916
 ハタタテヌメリ:Callionymus valenciennei	11.165
 マアジ:Trachurus japonicus	8.23901
 シロギス:Sillago japonica	3.3726
+マダイ:Pagrus major	2.7951
 ニシン科:Sardinella lemuru	2.5102
 スズキ:Lateolabrax japonicus	2.4871
 シログチ:Pennahia argentata	2.4717
@@ -15,8 +16,6 @@ id	DRR249916
 アカカマス:Sphyraena pinguis	1.7325
 ミナミマゴチ:Platycephalus indicus	1.6247
 コモチジャコ:Amblychaeturichthys sciistius	1.5862
-クロダイ:Acanthopagrus schlegelii	1.4553
-マダイ:Pagrus major	1.3398
 サビハゼ:Sagamia geneionema	1.3167
 テンジクダイ:Jaydia lineata	1.309
 マルアジ:Decapterus maruadsi	1.2397
