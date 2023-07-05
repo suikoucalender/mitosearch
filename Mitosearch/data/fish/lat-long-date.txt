@@ -357,6 +357,8 @@ SRR14709087
 ::std_case		
 ::std_case		
 ::std_case		
+::std_case		
+::std_case		
 SRR14617343	23.95 N 113.5167 W	1905-06-15 
 SRR14617370	19.9167 N 107 W	1905-06-21 
 SRR14617748	35.5933 N 121.5933 W	1905-06-25 
@@ -5105,6 +5107,7 @@ SRR24302164	34.0446 N 118.9407 W	2018-09-24
 SRR24302174	34.0446 N 118.9407 W	2018-09-24 
 SRR24302175	34.0446 N 118.9407 W	2018-09-24 
 SRR24302176	34.0446 N 118.9407 W	2018-09-24 
+SRR24302177	34.0446 N 118.9407 W	2018-09-24 
 SRR24302178	34.0446 N 118.9407 W	2018-09-24 
 SRR24302179	34.0446 N 118.9407 W	2018-09-24 
 SRR24302180	34.0446 N 118.9407 W	2018-09-24 
@@ -7047,6 +7050,388 @@ DRR412746	missing 	2021-05-06
 DRR412763	missing 	2021-05-06 
 DRR412747	missing 	2021-05-25 
 DRR412764	missing 	2021-05-25 
+SRR24995336	not applicable 	2021-06 
+SRR24995338	not applicable 	2021-06 
+SRR24995339	not applicable 	2021-06 
+SRR24995340	not applicable 	2021-06 
+SRR24995341	not applicable 	2021-06 
+SRR24995342	not applicable 	2021-06 
+SRR24995343	not applicable 	2021-06 
+SRR24995344	not applicable 	2021-06 
+SRR24995345	not applicable 	2021-06 
+SRR24995346	not applicable 	2021-06 
+SRR24995347	not applicable 	2021-06 
+SRR24995348	not applicable 	2021-06 
+SRR24995349	not applicable 	2021-06 
+SRR24995350	not applicable 	2021-06 
+SRR24995351	not applicable 	2021-06 
+SRR24995352	not applicable 	2021-06 
+SRR24995353	not applicable 	2021-06 
+SRR24995354	not applicable 	2021-06 
+SRR24995357	not applicable 	2021-06 
+SRR24995358	not applicable 	2021-06 
+SRR24995359	not applicable 	2021-06 
+SRR24995360	not applicable 	2021-06 
+SRR24995361	not applicable 	2021-06 
+SRR24995362	not applicable 	2021-06 
+SRR24995363	not applicable 	2021-06 
+SRR24995364	not applicable 	2021-06 
+SRR24995365	not applicable 	2021-06 
+SRR24995366	not applicable 	2021-06 
+SRR24995368	not applicable 	2021-06 
+SRR24995369	not applicable 	2021-06 
+SRR24995370	not applicable 	2021-06 
+SRR24995371	not applicable 	2021-06 
+SRR24995372	not applicable 	2021-06 
+SRR24995373	not applicable 	2021-06 
+SRR24995374	not applicable 	2021-06 
+SRR24995375	not applicable 	2021-06 
+SRR24995376	not applicable 	2021-06 
+SRR24995377	not applicable 	2021-06 
+SRR24995379	not applicable 	2021-06 
+SRR24995380	not applicable 	2021-06 
+SRR24995453	not applicable 	2021-06 
+SRR24995454	not applicable 	2021-06 
+SRR24995455	not applicable 	2021-06 
+SRR24995465	not applicable 	2021-06 
+SRR24995466	not applicable 	2021-06 
+SRR24995467	not applicable 	2021-06 
+SRR24995469	not applicable 	2021-06 
+SRR24995470	not applicable 	2021-06 
+SRR24995471	not applicable 	2021-06 
+SRR24995472	not applicable 	2021-06 
+SRR24995473	not applicable 	2021-06 
+SRR24995474	not applicable 	2021-06 
+SRR24995475	not applicable 	2021-06 
+SRR24995476	not applicable 	2021-06 
+SRR24995477	not applicable 	2021-06 
+SRR24995478	not applicable 	2021-06 
+SRR24995480	not applicable 	2021-06 
+SRR24995481	not applicable 	2021-06 
+SRR24995482	not applicable 	2021-06 
+SRR24995483	not applicable 	2021-06 
+SRR24995484	not applicable 	2021-06 
+SRR24995485	not applicable 	2021-06 
+SRR24995486	not applicable 	2021-06 
+SRR24995488	not applicable 	2021-06 
+SRR24995489	not applicable 	2021-06 
+SRR24995490	not applicable 	2021-06 
+SRR24995492	not applicable 	2021-06 
+SRR24995493	not applicable 	2021-06 
+SRR24995494	not applicable 	2021-06 
+SRR24995495	not applicable 	2021-06 
+SRR24995496	not applicable 	2021-06 
+SRR24995497	not applicable 	2021-06 
+SRR24995498	not applicable 	2021-06 
+SRR24995499	not applicable 	2021-06 
+SRR24995500	not applicable 	2021-06 
+SRR24995501	not applicable 	2021-06 
+SRR24995502	not applicable 	2021-06 
+SRR24995504	not applicable 	2021-06 
+SRR24995505	not applicable 	2021-06 
+SRR24995506	not applicable 	2021-06 
+SRR24995507	not applicable 	2021-06 
+SRR24995508	not applicable 	2021-06 
+SRR24995509	not applicable 	2021-06 
+SRR24995510	not applicable 	2021-06 
+SRR24995511	not applicable 	2021-06 
+SRR24995512	not applicable 	2021-06 
+SRR24995513	not applicable 	2021-06 
+SRR24995515	not applicable 	2021-06 
+SRR24995516	not applicable 	2021-06 
+SRR24995517	not applicable 	2021-06 
+SRR24995518	not applicable 	2021-06 
+SRR24995519	not applicable 	2021-06 
+SRR24995520	not applicable 	2021-06 
+SRR24995521	not applicable 	2021-06 
+SRR24995522	not applicable 	2021-06 
+SRR24995523	not applicable 	2021-06 
+SRR24995524	not applicable 	2021-06 
+SRR24995525	not applicable 	2021-06 
+SRR24995526	not applicable 	2021-06 
+SRR24995527	not applicable 	2021-06 
+SRR24995528	not applicable 	2021-06 
+SRR24995529	not applicable 	2021-06 
+SRR24995531	not applicable 	2021-06 
+SRR24995532	not applicable 	2021-06 
+SRR24995533	not applicable 	2021-06 
+SRR24995534	not applicable 	2021-06 
+SRR24995535	not applicable 	2021-06 
+SRR24995536	not applicable 	2021-06 
+SRR24995537	not applicable 	2021-06 
+SRR24995538	not applicable 	2021-06 
+SRR24995539	not applicable 	2021-06 
+SRR24995540	not applicable 	2021-06 
+SRR24995542	not applicable 	2021-06 
+SRR24995543	not applicable 	2021-06 
+SRR24995544	not applicable 	2021-06 
+SRR24995545	not applicable 	2021-06 
+SRR24995546	not applicable 	2021-06 
+SRR24995547	not applicable 	2021-06 
+SRR24995548	not applicable 	2021-06 
+SRR24995549	not applicable 	2021-06 
+SRR24995550	not applicable 	2021-06 
+SRR24995552	not applicable 	2021-06 
+SRR24995553	not applicable 	2021-06 
+SRR24995554	not applicable 	2021-06 
+SRR24995555	not applicable 	2021-06 
+SRR24995556	not applicable 	2021-06 
+SRR24995557	not applicable 	2021-06 
+SRR24995558	not applicable 	2021-06 
+SRR24995559	not applicable 	2021-06 
+SRR24995560	not applicable 	2021-06 
+SRR24995561	not applicable 	2021-06 
+SRR24995565	not applicable 	2021-06 
+SRR24995566	not applicable 	2021-06 
+SRR24995567	not applicable 	2021-06 
+SRR24995568	not applicable 	2021-06 
+SRR24995569	not applicable 	2021-06 
+SRR24995570	not applicable 	2021-06 
+SRR24995571	not applicable 	2021-06 
+SRR24995573	not applicable 	2021-06 
+SRR24995574	not applicable 	2021-06 
+SRR24995575	not applicable 	2021-06 
+SRR24995576	not applicable 	2021-06 
+SRR24995634	not applicable 	2021-06 
+SRR24995639	not applicable 	2021-06 
+SRR24995641	not applicable 	2021-06 
+SRR24995642	not applicable 	2021-06 
+SRR24995643	not applicable 	2021-06 
+SRR24995644	not applicable 	2021-06 
+SRR24995645	not applicable 	2021-06 
+SRR24995646	not applicable 	2021-06 
+SRR24995647	not applicable 	2021-06 
+SRR24995648	not applicable 	2021-06 
+SRR24995650	not applicable 	2021-06 
+SRR24995651	not applicable 	2021-06 
+SRR24995652	not applicable 	2021-06 
+SRR24995653	not applicable 	2021-06 
+SRR24995654	not applicable 	2021-06 
+SRR24995655	not applicable 	2021-06 
+SRR24995656	not applicable 	2021-06 
+SRR24995657	not applicable 	2021-06 
+SRR24995658	not applicable 	2021-06 
+SRR24995659	not applicable 	2021-06 
+SRR24995661	not applicable 	2021-06 
+SRR24995662	not applicable 	2021-06 
+SRR24995663	not applicable 	2021-06 
+SRR24995664	not applicable 	2021-06 
+SRR24995665	not applicable 	2021-06 
+SRR24995666	not applicable 	2021-06 
+SRR24995667	not applicable 	2021-06 
+SRR24995668	not applicable 	2021-06 
+SRR24995671	not applicable 	2021-06 
+SRR24995672	not applicable 	2021-06 
+SRR24995673	not applicable 	2021-06 
+SRR24995674	not applicable 	2021-06 
+SRR24995675	not applicable 	2021-06 
+SRR24995676	not applicable 	2021-06 
+SRR24995677	not applicable 	2021-06 
+SRR24995678	not applicable 	2021-06 
+SRR24995679	not applicable 	2021-06 
+SRR24995680	not applicable 	2021-06 
+SRR24995681	not applicable 	2021-06 
+SRR24995682	not applicable 	2021-06 
+SRR24995684	not applicable 	2021-06 
+SRR24995685	not applicable 	2021-06 
+SRR24995686	not applicable 	2021-06 
+SRR24995687	not applicable 	2021-06 
+SRR24995688	not applicable 	2021-06 
+SRR24995689	not applicable 	2021-06 
+SRR24995690	not applicable 	2021-06 
+SRR24995691	not applicable 	2021-06 
+SRR24995692	not applicable 	2021-06 
+SRR24995693	not applicable 	2021-06 
+SRR24995695	not applicable 	2021-06 
+SRR24995696	not applicable 	2021-06 
+SRR24995697	not applicable 	2021-06 
+SRR24995700	not applicable 	2021-06 
+SRR24995701	not applicable 	2021-06 
+SRR24995702	not applicable 	2021-06 
+SRR24995703	not applicable 	2021-06 
+SRR24995704	not applicable 	2021-06 
+SRR24995705	not applicable 	2021-06 
+SRR24995706	not applicable 	2021-06 
+SRR24995707	not applicable 	2021-06 
+SRR24995708	not applicable 	2021-06 
+SRR24995709	not applicable 	2021-06 
+SRR24995711	not applicable 	2021-06 
+SRR24995712	not applicable 	2021-06 
+SRR24995713	not applicable 	2021-06 
+SRR24995714	not applicable 	2021-06 
+SRR24995715	not applicable 	2021-06 
+SRR24995716	not applicable 	2021-06 
+SRR24995717	not applicable 	2021-06 
+SRR24995718	not applicable 	2021-06 
+SRR24995719	not applicable 	2021-06 
+SRR24995720	not applicable 	2021-06 
+SRR24995722	not applicable 	2021-06 
+SRR24995723	not applicable 	2021-06 
+SRR24995724	not applicable 	2021-06 
+SRR24995725	not applicable 	2021-06 
+SRR24995726	not applicable 	2021-06 
+SRR24995727	not applicable 	2021-06 
+SRR24995728	not applicable 	2021-06 
+SRR24995729	not applicable 	2021-06 
+SRR24995730	not applicable 	2021-06 
+SRR24995732	not applicable 	2021-06 
+SRR24995733	not applicable 	2021-06 
+SRR24995734	not applicable 	2021-06 
+SRR24995735	not applicable 	2021-06 
+SRR24995736	not applicable 	2021-06 
+SRR24995737	not applicable 	2021-06 
+SRR24995738	not applicable 	2021-06 
+SRR24995739	not applicable 	2021-06 
+SRR24995740	not applicable 	2021-06 
+SRR24995741	not applicable 	2021-06 
+SRR24995743	not applicable 	2021-06 
+SRR24995744	not applicable 	2021-06 
+SRR24995745	not applicable 	2021-06 
+SRR24995746	not applicable 	2021-06 
+SRR24995747	not applicable 	2021-06 
+SRR24995748	not applicable 	2021-06 
+SRR24995749	not applicable 	2021-06 
+SRR24995750	not applicable 	2021-06 
+SRR24995751	not applicable 	2021-06 
+SRR24995752	not applicable 	2021-06 
+SRR24995753	not applicable 	2021-06 
+SRR24995754	not applicable 	2021-06 
+SRR24995756	not applicable 	2021-06 
+SRR24995757	not applicable 	2021-06 
+SRR24995758	not applicable 	2021-06 
+SRR24995759	not applicable 	2021-06 
+SRR24995760	not applicable 	2021-06 
+SRR24995761	not applicable 	2021-06 
+SRR24995762	not applicable 	2021-06 
+SRR24995763	not applicable 	2021-06 
+SRR24995764	not applicable 	2021-06 
+SRR24995765	not applicable 	2021-06 
+SRR24995767	not applicable 	2021-06 
+SRR24995768	not applicable 	2021-06 
+SRR24995769	not applicable 	2021-06 
+SRR24995770	not applicable 	2021-06 
+SRR24995771	not applicable 	2021-06 
+SRR24995772	not applicable 	2021-06 
+SRR24995773	not applicable 	2021-06 
+SRR24995774	not applicable 	2021-06 
+SRR24995775	not applicable 	2021-06 
+SRR24995776	not applicable 	2021-06 
+SRR24995777	not applicable 	2021-06 
+SRR24995778	not applicable 	2021-06 
+SRR24995779	not applicable 	2021-06 
+SRR24995780	not applicable 	2021-06 
+SRR24995781	not applicable 	2021-06 
+SRR24995782	not applicable 	2021-06 
+SRR24995784	not applicable 	2021-06 
+SRR24995785	not applicable 	2021-06 
+SRR24995786	not applicable 	2021-06 
+SRR24995787	not applicable 	2021-06 
+SRR24995788	not applicable 	2021-06 
+SRR24995789	not applicable 	2021-06 
+SRR24995790	not applicable 	2021-06 
+SRR24995791	not applicable 	2021-06 
+SRR24995792	not applicable 	2021-06 
+SRR24995793	not applicable 	2021-06 
+SRR24995795	not applicable 	2021-06 
+SRR24995796	not applicable 	2021-06 
+SRR24995797	not applicable 	2021-06 
+SRR24995798	not applicable 	2021-06 
+SRR24995799	not applicable 	2021-06 
+SRR24995800	not applicable 	2021-06 
+SRR24995801	not applicable 	2021-06 
+SRR24995802	not applicable 	2021-06 
+SRR24995803	not applicable 	2021-06 
+SRR24995804	not applicable 	2021-06 
+SRR24995805	not applicable 	2021-06 
+SRR24995807	not applicable 	2021-06 
+SRR24995808	not applicable 	2021-06 
+SRR24995809	not applicable 	2021-06 
+SRR24995810	not applicable 	2021-06 
+SRR24995811	not applicable 	2021-06 
+SRR24995812	not applicable 	2021-06 
+SRR24995813	not applicable 	2021-06 
+SRR24995814	not applicable 	2021-06 
+SRR24995815	not applicable 	2021-06 
+SRR24995816	not applicable 	2021-06 
+SRR24995818	not applicable 	2021-06 
+SRR24995819	not applicable 	2021-06 
+SRR24995820	not applicable 	2021-06 
+SRR24995821	not applicable 	2021-06 
+SRR24995822	not applicable 	2021-06 
+SRR24995823	not applicable 	2021-06 
+SRR24995824	not applicable 	2021-06 
+SRR24995825	not applicable 	2021-06 
+SRR24995827	not applicable 	2021-06 
+SRR24995828	not applicable 	2021-06 
+SRR24995829	not applicable 	2021-06 
+SRR24995830	not applicable 	2021-06 
+SRR24995831	not applicable 	2021-06 
+SRR24995832	not applicable 	2021-06 
+SRR24995833	not applicable 	2021-06 
+SRR24995834	not applicable 	2021-06 
+SRR24995835	not applicable 	2021-06 
+SRR24995836	not applicable 	2021-06 
+SRR24995837	not applicable 	2021-06 
+SRR24995838	not applicable 	2021-06 
+SRR24995839	not applicable 	2021-06 
+SRR24995840	not applicable 	2021-06 
+SRR24995868	not applicable 	2021-06 
+SRR24995869	not applicable 	2021-06 
+SRR24995872	not applicable 	2021-06 
+SRR24995873	not applicable 	2021-06 
+SRR24995874	not applicable 	2021-06 
+SRR24995875	not applicable 	2021-06 
+SRR24995876	not applicable 	2021-06 
+SRR24995877	not applicable 	2021-06 
+SRR24995878	not applicable 	2021-06 
+SRR24995879	not applicable 	2021-06 
+SRR24995880	not applicable 	2021-06 
+SRR24995881	not applicable 	2021-06 
+SRR24995882	not applicable 	2021-06 
+SRR24995884	not applicable 	2021-06 
+SRR24995885	not applicable 	2021-06 
+SRR24995886	not applicable 	2021-06 
+SRR24995887	not applicable 	2021-06 
+SRR24995888	not applicable 	2021-06 
+SRR24995889	not applicable 	2021-06 
+SRR24995890	not applicable 	2021-06 
+SRR24995891	not applicable 	2021-06 
+SRR24995892	not applicable 	2021-06 
+SRR24995893	not applicable 	2021-06 
+SRR24995894	not applicable 	2021-06 
+SRR24995895	not applicable 	2021-06 
+SRR24995896	not applicable 	2021-06 
+SRR24995897	not applicable 	2021-06 
+SRR24995898	not applicable 	2021-06 
+SRR24995899	not applicable 	2021-06 
+SRR24995900	not applicable 	2021-06 
+SRR24995901	not applicable 	2021-06 
+SRR24995903	not applicable 	2021-06 
+SRR24995904	not applicable 	2021-06 
+SRR24995905	not applicable 	2021-06 
+SRR24995906	not applicable 	2021-06 
+SRR24995907	not applicable 	2021-06 
+SRR24995908	not applicable 	2021-06 
+SRR24995909	not applicable 	2021-06 
+SRR24995910	not applicable 	2021-06 
+SRR24995911	not applicable 	2021-06 
+SRR24995912	not applicable 	2021-06 
+SRR24995914	not applicable 	2021-06 
+SRR24995915	not applicable 	2021-06 
+SRR24995916	not applicable 	2021-06 
+SRR24995917	not applicable 	2021-06 
+SRR24995918	not applicable 	2021-06 
+SRR24995919	not applicable 	2021-06 
+SRR24995920	not applicable 	2021-06 
+SRR24995921	not applicable 	2021-06 
+SRR24995923	not applicable 	2021-06 
+SRR24995924	not applicable 	2021-06 
+SRR24995925	not applicable 	2021-06 
+SRR24995926	not applicable 	2021-06 
+SRR24995927	not applicable 	2021-06 
+SRR24995928	not applicable 	2021-06 
+SRR24995929	not applicable 	2021-06 
+SRR24995930	not applicable 	2021-06 
 DRR412748	missing 	2021-06-15 
 DRR412765	missing 	2021-06-15 
 SRR21474063	not applicable 	2021-06-21 
@@ -7241,6 +7626,226 @@ SRR24256612	37.6436 N 91.3576 W	2021-07-28
 SRR24256623	37.6436 N 91.3576 W	2021-07-28 
 SRR24256634	37.6436 N 91.3576 W	2021-07-28 
 SRR24256646	37.6436 N 91.3576 W	2021-07-28 
+SRR24995337	not applicable 	2021-08 
+SRR24995355	not applicable 	2021-08 
+SRR24995356	not applicable 	2021-08 
+SRR24995367	not applicable 	2021-08 
+SRR24995378	not applicable 	2021-08 
+SRR24995381	not applicable 	2021-08 
+SRR24995382	not applicable 	2021-08 
+SRR24995383	not applicable 	2021-08 
+SRR24995384	not applicable 	2021-08 
+SRR24995385	not applicable 	2021-08 
+SRR24995386	not applicable 	2021-08 
+SRR24995387	not applicable 	2021-08 
+SRR24995388	not applicable 	2021-08 
+SRR24995389	not applicable 	2021-08 
+SRR24995390	not applicable 	2021-08 
+SRR24995391	not applicable 	2021-08 
+SRR24995392	not applicable 	2021-08 
+SRR24995393	not applicable 	2021-08 
+SRR24995394	not applicable 	2021-08 
+SRR24995395	not applicable 	2021-08 
+SRR24995396	not applicable 	2021-08 
+SRR24995397	not applicable 	2021-08 
+SRR24995398	not applicable 	2021-08 
+SRR24995399	not applicable 	2021-08 
+SRR24995400	not applicable 	2021-08 
+SRR24995401	not applicable 	2021-08 
+SRR24995402	not applicable 	2021-08 
+SRR24995403	not applicable 	2021-08 
+SRR24995404	not applicable 	2021-08 
+SRR24995405	not applicable 	2021-08 
+SRR24995406	not applicable 	2021-08 
+SRR24995407	not applicable 	2021-08 
+SRR24995408	not applicable 	2021-08 
+SRR24995409	not applicable 	2021-08 
+SRR24995410	not applicable 	2021-08 
+SRR24995411	not applicable 	2021-08 
+SRR24995412	not applicable 	2021-08 
+SRR24995413	not applicable 	2021-08 
+SRR24995414	not applicable 	2021-08 
+SRR24995415	not applicable 	2021-08 
+SRR24995416	not applicable 	2021-08 
+SRR24995417	not applicable 	2021-08 
+SRR24995418	not applicable 	2021-08 
+SRR24995419	not applicable 	2021-08 
+SRR24995420	not applicable 	2021-08 
+SRR24995421	not applicable 	2021-08 
+SRR24995422	not applicable 	2021-08 
+SRR24995423	not applicable 	2021-08 
+SRR24995424	not applicable 	2021-08 
+SRR24995425	not applicable 	2021-08 
+SRR24995426	not applicable 	2021-08 
+SRR24995427	not applicable 	2021-08 
+SRR24995428	not applicable 	2021-08 
+SRR24995429	not applicable 	2021-08 
+SRR24995430	not applicable 	2021-08 
+SRR24995431	not applicable 	2021-08 
+SRR24995432	not applicable 	2021-08 
+SRR24995433	not applicable 	2021-08 
+SRR24995434	not applicable 	2021-08 
+SRR24995435	not applicable 	2021-08 
+SRR24995436	not applicable 	2021-08 
+SRR24995437	not applicable 	2021-08 
+SRR24995438	not applicable 	2021-08 
+SRR24995439	not applicable 	2021-08 
+SRR24995440	not applicable 	2021-08 
+SRR24995441	not applicable 	2021-08 
+SRR24995442	not applicable 	2021-08 
+SRR24995443	not applicable 	2021-08 
+SRR24995444	not applicable 	2021-08 
+SRR24995445	not applicable 	2021-08 
+SRR24995446	not applicable 	2021-08 
+SRR24995447	not applicable 	2021-08 
+SRR24995448	not applicable 	2021-08 
+SRR24995449	not applicable 	2021-08 
+SRR24995459	not applicable 	2021-08 
+SRR24995468	not applicable 	2021-08 
+SRR24995479	not applicable 	2021-08 
+SRR24995487	not applicable 	2021-08 
+SRR24995491	not applicable 	2021-08 
+SRR24995503	not applicable 	2021-08 
+SRR24995514	not applicable 	2021-08 
+SRR24995530	not applicable 	2021-08 
+SRR24995541	not applicable 	2021-08 
+SRR24995551	not applicable 	2021-08 
+SRR24995562	not applicable 	2021-08 
+SRR24995563	not applicable 	2021-08 
+SRR24995564	not applicable 	2021-08 
+SRR24995572	not applicable 	2021-08 
+SRR24995577	not applicable 	2021-08 
+SRR24995578	not applicable 	2021-08 
+SRR24995579	not applicable 	2021-08 
+SRR24995580	not applicable 	2021-08 
+SRR24995581	not applicable 	2021-08 
+SRR24995582	not applicable 	2021-08 
+SRR24995583	not applicable 	2021-08 
+SRR24995584	not applicable 	2021-08 
+SRR24995585	not applicable 	2021-08 
+SRR24995586	not applicable 	2021-08 
+SRR24995587	not applicable 	2021-08 
+SRR24995588	not applicable 	2021-08 
+SRR24995589	not applicable 	2021-08 
+SRR24995590	not applicable 	2021-08 
+SRR24995591	not applicable 	2021-08 
+SRR24995592	not applicable 	2021-08 
+SRR24995593	not applicable 	2021-08 
+SRR24995594	not applicable 	2021-08 
+SRR24995595	not applicable 	2021-08 
+SRR24995596	not applicable 	2021-08 
+SRR24995597	not applicable 	2021-08 
+SRR24995598	not applicable 	2021-08 
+SRR24995599	not applicable 	2021-08 
+SRR24995600	not applicable 	2021-08 
+SRR24995601	not applicable 	2021-08 
+SRR24995602	not applicable 	2021-08 
+SRR24995603	not applicable 	2021-08 
+SRR24995604	not applicable 	2021-08 
+SRR24995605	not applicable 	2021-08 
+SRR24995606	not applicable 	2021-08 
+SRR24995607	not applicable 	2021-08 
+SRR24995608	not applicable 	2021-08 
+SRR24995609	not applicable 	2021-08 
+SRR24995610	not applicable 	2021-08 
+SRR24995611	not applicable 	2021-08 
+SRR24995612	not applicable 	2021-08 
+SRR24995613	not applicable 	2021-08 
+SRR24995614	not applicable 	2021-08 
+SRR24995615	not applicable 	2021-08 
+SRR24995616	not applicable 	2021-08 
+SRR24995617	not applicable 	2021-08 
+SRR24995618	not applicable 	2021-08 
+SRR24995619	not applicable 	2021-08 
+SRR24995620	not applicable 	2021-08 
+SRR24995621	not applicable 	2021-08 
+SRR24995622	not applicable 	2021-08 
+SRR24995623	not applicable 	2021-08 
+SRR24995624	not applicable 	2021-08 
+SRR24995625	not applicable 	2021-08 
+SRR24995626	not applicable 	2021-08 
+SRR24995627	not applicable 	2021-08 
+SRR24995628	not applicable 	2021-08 
+SRR24995629	not applicable 	2021-08 
+SRR24995630	not applicable 	2021-08 
+SRR24995631	not applicable 	2021-08 
+SRR24995632	not applicable 	2021-08 
+SRR24995636	not applicable 	2021-08 
+SRR24995637	not applicable 	2021-08 
+SRR24995638	not applicable 	2021-08 
+SRR24995640	not applicable 	2021-08 
+SRR24995649	not applicable 	2021-08 
+SRR24995660	not applicable 	2021-08 
+SRR24995669	not applicable 	2021-08 
+SRR24995670	not applicable 	2021-08 
+SRR24995683	not applicable 	2021-08 
+SRR24995694	not applicable 	2021-08 
+SRR24995698	not applicable 	2021-08 
+SRR24995699	not applicable 	2021-08 
+SRR24995710	not applicable 	2021-08 
+SRR24995721	not applicable 	2021-08 
+SRR24995731	not applicable 	2021-08 
+SRR24995742	not applicable 	2021-08 
+SRR24995755	not applicable 	2021-08 
+SRR24995766	not applicable 	2021-08 
+SRR24995783	not applicable 	2021-08 
+SRR24995794	not applicable 	2021-08 
+SRR24995806	not applicable 	2021-08 
+SRR24995817	not applicable 	2021-08 
+SRR24995826	not applicable 	2021-08 
+SRR24995841	not applicable 	2021-08 
+SRR24995842	not applicable 	2021-08 
+SRR24995843	not applicable 	2021-08 
+SRR24995844	not applicable 	2021-08 
+SRR24995845	not applicable 	2021-08 
+SRR24995846	not applicable 	2021-08 
+SRR24995847	not applicable 	2021-08 
+SRR24995848	not applicable 	2021-08 
+SRR24995849	not applicable 	2021-08 
+SRR24995850	not applicable 	2021-08 
+SRR24995851	not applicable 	2021-08 
+SRR24995852	not applicable 	2021-08 
+SRR24995853	not applicable 	2021-08 
+SRR24995854	not applicable 	2021-08 
+SRR24995855	not applicable 	2021-08 
+SRR24995856	not applicable 	2021-08 
+SRR24995857	not applicable 	2021-08 
+SRR24995858	not applicable 	2021-08 
+SRR24995859	not applicable 	2021-08 
+SRR24995860	not applicable 	2021-08 
+SRR24995861	not applicable 	2021-08 
+SRR24995862	not applicable 	2021-08 
+SRR24995863	not applicable 	2021-08 
+SRR24995864	not applicable 	2021-08 
+SRR24995870	not applicable 	2021-08 
+SRR24995871	not applicable 	2021-08 
+SRR24995883	not applicable 	2021-08 
+SRR24995902	not applicable 	2021-08 
+SRR24995913	not applicable 	2021-08 
+SRR24995922	not applicable 	2021-08 
+SRR24995931	not applicable 	2021-08 
+SRR24995932	not applicable 	2021-08 
+SRR24995933	not applicable 	2021-08 
+SRR24995934	not applicable 	2021-08 
+SRR24995935	not applicable 	2021-08 
+SRR24995936	not applicable 	2021-08 
+SRR24995937	not applicable 	2021-08 
+SRR24995938	not applicable 	2021-08 
+SRR24995939	not applicable 	2021-08 
+SRR24995940	not applicable 	2021-08 
+SRR24995941	not applicable 	2021-08 
+SRR24995942	not applicable 	2021-08 
+SRR24995943	not applicable 	2021-08 
+SRR24995944	not applicable 	2021-08 
+SRR24995945	not applicable 	2021-08 
+SRR24995946	not applicable 	2021-08 
+SRR24995947	not applicable 	2021-08 
+SRR24995948	not applicable 	2021-08 
+SRR24995949	not applicable 	2021-08 
+SRR24995950	not applicable 	2021-08 
+SRR24995951	not applicable 	2021-08 
+SRR24995952	not applicable 	2021-08 
+SRR24995953	not applicable 	2021-08 
 SRR23822304	43.384490 N 80.353812 W	2021-08-04 
 SRR23822306	43.384490 N 80.353812 W	2021-08-04 
 SRR23822312	43.384490 N 80.353812 W	2021-08-04 
@@ -7513,6 +8118,97 @@ SRR23325534	17.53464373 S 118.91910385 E	2021-08-09
 SRR23325535	17.52905406 S 118.93975887 E	2021-08-09 
 SRR23325536	17.56100247 S 118.94086293 E	2021-08-09 
 SRR23325537	17.55440092 S 118.95843409 E	2021-08-09 
+SRR24974460	57.48 N 1.16 W	2021-08-10 
+SRR24974461	57.48 N 1.17 W	2021-08-10 
+SRR24974462	57.49 N 1.36 W	2021-08-10 
+SRR24974463	NA 	2021-08-10 
+SRR24974464	57.49 N 1.36 W	2021-08-10 
+SRR24974465	NA 	2021-08-10 
+SRR24974466	NA 	2021-08-10 
+SRR24974467	57.48 N 1.33 W	2021-08-10 
+SRR24974468	57.48 N 1.34 W	2021-08-10 
+SRR24974469	57.48 N 1.34 W	2021-08-10 
+SRR24974470	57.48 N 1.21 W	2021-08-10 
+SRR24974471	57.47 N 1.19 W	2021-08-10 
+SRR24974472	57.47 N 1.19 W	2021-08-10 
+SRR24974473	57.47 N 1.19 W	2021-08-10 
+SRR24974474	57.47 N 1.19 W	2021-08-10 
+SRR24974475	57.47 N 1.19 W	2021-08-10 
+SRR24974476	57.47 N 1.19 W	2021-08-10 
+SRR24974477	57.49 N 1.19 W	2021-08-10 
+SRR24974478	57.49 N 1.19 W	2021-08-10 
+SRR24974479	57.49 N 1.19 W	2021-08-10 
+SRR24974480	57.49 N 1.19 W	2021-08-10 
+SRR24974481	57.48 N 1.38 W	2021-08-10 
+SRR24974482	57.49 N 1.19 W	2021-08-10 
+SRR24974483	57.49 N 1.19 W	2021-08-10 
+SRR24974484	NA 	2021-08-10 
+SRR24974485	57.48 N 1.33 W	2021-08-10 
+SRR24974486	57.48 N 1.38 W	2021-08-10 
+SRR24974487	57.48 N 1.21 W	2021-08-10 
+SRR24974488	57.48 N 1.21 W	2021-08-10 
+SRR24974489	NA 	2021-08-10 
+SRR24974490	57.47 N 1.35 W	2021-08-10 
+SRR24974491	57.48 N 1.34 W	2021-08-10 
+SRR24974492	57.48 N 1.34 W	2021-08-10 
+SRR24974493	57.48 N 1.34 W	2021-08-10 
+SRR24974494	57.48 N 1.34 W	2021-08-10 
+SRR24974495	NA 	2021-08-10 
+SRR24974496	NA 	2021-08-10 
+SRR24974497	NA 	2021-08-10 
+SRR24974498	NA 	2021-08-10 
+SRR24974499	NA 	2021-08-10 
+SRR24974500	57.48 N 1.16 W	2021-08-10 
+SRR24974501	57.48 N 1.17 W	2021-08-10 
+SRR24974502	57.48 N 1.17 W	2021-08-10 
+SRR24974503	57.48 N 1.17 W	2021-08-10 
+SRR24974504	57.49 N 1.36 W	2021-08-10 
+SRR24974505	57.47 N 1.19 W	2021-08-10 
+SRR24974506	57.48 N 1.16 W	2021-08-10 
+SRR24974507	57.48 N 1.16 W	2021-08-10 
+SRR24974508	57.48 N 1.16 W	2021-08-10 
+SRR24974509	57.48 N 1.16 W	2021-08-10 
+SRR24974510	57.48 N 1.16 W	2021-08-10 
+SRR24974511	57.48 N 1.16 W	2021-08-10 
+SRR24974512	NA 	2021-08-10 
+SRR24974513	57.47 N 1.19 W	2021-08-10 
+SRR24974514	57.49 N 1.36 W	2021-08-10 
+SRR24974515	57.49 N 1.19 W	2021-08-10 
+SRR24974516	57.49 N 1.19 W	2021-08-10 
+SRR24974517	57.48 N 1.21 W	2021-08-10 
+SRR24974518	57.48 N 1.21 W	2021-08-10 
+SRR24974519	57.48 N 1.17 W	2021-08-10 
+SRR24974520	57.48 N 1.17 W	2021-08-10 
+SRR24974521	57.48 N 1.17 W	2021-08-10 
+SRR24974522	57.48 N 1.17 W	2021-08-10 
+SRR24974523	57.48 N 1.34 W	2021-08-10 
+SRR24974524	57.48 N 1.38 W	2021-08-10 
+SRR24974525	57.48 N 1.34 W	2021-08-10 
+SRR24974526	57.48 N 1.33 W	2021-08-10 
+SRR24974527	57.48 N 1.33 W	2021-08-10 
+SRR24974528	57.48 N 1.33 W	2021-08-10 
+SRR24974529	57.48 N 1.33 W	2021-08-10 
+SRR24974530	57.48 N 1.33 W	2021-08-10 
+SRR24974531	57.48 N 1.33 W	2021-08-10 
+SRR24974532	57.48 N 1.21 W	2021-08-10 
+SRR24974533	57.48 N 1.21 W	2021-08-10 
+SRR24974534	57.48 N 1.21 W	2021-08-10 
+SRR24974535	57.48 N 1.38 W	2021-08-10 
+SRR24974536	57.49 N 1.36 W	2021-08-10 
+SRR24974537	57.49 N 1.36 W	2021-08-10 
+SRR24974538	57.47 N 1.35 W	2021-08-10 
+SRR24974539	57.48 N 1.38 W	2021-08-10 
+SRR24974540	57.48 N 1.38 W	2021-08-10 
+SRR24974541	57.47 N 1.35 W	2021-08-10 
+SRR24974542	57.47 N 1.35 W	2021-08-10 
+SRR24974543	57.47 N 1.35 W	2021-08-10 
+SRR24974544	57.47 N 1.35 W	2021-08-10 
+SRR24974545	57.47 N 1.35 W	2021-08-10 
+SRR24974546	57.47 N 1.35 W	2021-08-10 
+SRR24974547	57.49 N 1.36 W	2021-08-10 
+SRR24974548	57.49 N 1.36 W	2021-08-10 
+SRR24974549	57.48 N 1.38 W	2021-08-10 
+SRR24974550	57.48 N 1.38 W	2021-08-10 
 DRR412751	missing 	2021-08-13 
 DRR412768	missing 	2021-08-13 
 SRR24256625	37.6578 N 91.3149 W	2021-08-24 
@@ -8477,3 +9173,19 @@ SRR23967789	not applicable 	not applicable
 SRR23967817	not applicable 	not applicable 
 SRR23967818	not applicable 	not applicable 
 SRR23967819	not applicable 	not applicable 
+SRR24995450	not applicable 	not applicable 
+SRR24995451	not applicable 	not applicable 
+SRR24995452	not applicable 	not applicable 
+SRR24995456	not applicable 	not applicable 
+SRR24995457	not applicable 	not applicable 
+SRR24995458	not applicable 	not applicable 
+SRR24995460	not applicable 	not applicable 
+SRR24995461	not applicable 	not applicable 
+SRR24995462	not applicable 	not applicable 
+SRR24995463	not applicable 	not applicable 
+SRR24995464	not applicable 	not applicable 
+SRR24995633	not applicable 	not applicable 
+SRR24995635	not applicable 	not applicable 
+SRR24995865	not applicable 	not applicable 
+SRR24995866	not applicable 	not applicable 
+SRR24995867	not applicable 	not applicable 
