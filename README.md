@@ -15,10 +15,11 @@ sudo apt install -y nodejs npm
 sudo dnf install nodejs -y
 ```
 
-2. MitoSearchのインストール
+2. MitoSearchのインストールおよび起動
 
 ```
 git clone https://github.com/suikoucalender/mitosearch.git
+
 cd mitosearch/Mitosearch
 npm start
 ```
