@@ -26,11 +26,13 @@
     <script src="noUiSlider-15.6.1/dist/nouislider.js"></script>
     <script src="wnumb-1.2.0/wNumb.js"></script>
 
+    <script src='decimal/decimal.js'></script>
+
     <script src='javascripts/jquery-3.6.0.js'></script>
     <script src="d3/d3.js"></script>
 
     <!-- markerClusterGroup -->
-    <script src="markerClusterGroup/dist/leaflet.markercluster.js"></script>
+    <script src="markerClusterGroup/dist/leaflet.markercluster-src.js"></script>
     <script src="https://cdn.rawgit.com/hayeswise/Leaflet.PointInPolygon/v1.0.0/wise-leaflet-pip.js"></script>
     <link rel="stylesheet" href="markerClusterGroup/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="markerClusterGroup/dist/MarkerCluster.Default.css" />
@@ -133,7 +135,7 @@
         </div>
         <div id="content" style="height: 75%; width: 100%;">
             <div id="map" style="height: 1000px; width: 40%;"></div>
-           
+            <div id="mapTest" style="height: 1000px; width: 40%;"></div>
             <div id="bargraphAlltime" style="height: 100px; width: 60%;"></div>
             <div class="parent" id="sliderArea" style="height: 60px;">
                 <div class="son" id="slider"></div>
@@ -149,6 +151,7 @@
         </div>
         <p style="width: 60%; float:right; text-align: right;" id="graphName">#Samples</p>
         <div id="tmp"></div>
+        <div id="tmptemp"></div>
         
     </main>
     <script>
@@ -163,7 +166,7 @@
         var ratio = <%-JSON.stringify(ratio)%>;
         var map;
         var isMove = false;
-
+        var language = <%-JSON.stringify(language)%>;
     </script>
     <script>
         var sliderStatusChecker = "non-exist";
@@ -171,6 +174,8 @@
     <script src="javascripts/timePicker.js"></script>
     <script src="javascripts/drawSelectbox.js"></script>
     <script src="javascripts/polygon.js"></script>
+    <script src="javascripts/testPieEDITING.js"></script> 
+    <!-- <script src="javascripts/drawPieLayered.js"></script> -->
     <script src="javascripts/drawPie.js"></script>
     <script src="javascripts/showLegend.js"></script>
     <script src="javascripts/drawLiddgeLine.js"></script>

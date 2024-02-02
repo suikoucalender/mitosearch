@@ -38,7 +38,8 @@ router.get('/', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    let pieDataSet=getDataForPieChart(language, ratio, latitude, longitude) //🌟problem
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language, pieDataSet:pieDataSet });
 });
 
 router.get('/fish', function (req, res) {
@@ -61,7 +62,8 @@ router.get('/fish', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    let pieDataSet=getDataForPieChart(language, ratio, latitude, longitude)
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language, pieDataSet: pieDataSet });
 });
 
 router.get('/mollusk', function (req, res) {
@@ -84,7 +86,8 @@ router.get('/mollusk', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    let pieDataSet=getDataForPieChart(language, ratio, latitude, longitude)
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language, pieDataSet: pieDataSet });
 });
 
 router.post('/', function (req, res) {
@@ -106,7 +109,7 @@ router.post('/', function (req, res) {
         ratio=5
     }
     let pieDataSet=getDataForPieChart(language, ratio, latitude, longitude)
-    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language, pieDataSet: pieDataSet });
 });
 
 router.get('/about', function (req, res) {
@@ -312,3 +315,158 @@ function filterBySelectFish(selectedFishList, taxo, lang) {
 
     return { new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj };
 }
+
+
+
+//为什么美洲的数据无法读取？在服务器端加载的时候，地图还没有加载好，不知道显示地图的范围。
+function getDataForPieChart(language, ratio, latitude, longitude){
+    let pieDataSet = {};
+    let pieInputList;
+    let pieLocation;
+    let blockSizeLayer={};
+    let blockSize;
+    let ratioAndBlock={"2":45,"3":30,"4":15,"5":5,"6":3,"7":2,"8":1,"9":0.5,"10":0.2,"11":0.1,"12":0.05,"13":0.05,"14":0.02,"15":0.02,"16":0.02,"17":0.02,"18":"special"}
+    blockSize=ratioAndBlock[ratio]
+    if(blockSize!=="special"){
+
+
+        //Avoiding the loss of decimal precision
+        var expansion=1
+        var expandedBlockSize=blockSize*expansion
+        for(let a=0;expandedBlockSize<1;a++){
+            expansion=expansion*10
+            expandedBlockSize=expandedBlockSize*10
+        }
+        console.log(blockSize)
+        console.log("关注点1")
+        console.log(longitude)
+        console.log(latitude)
+        //Calculating the range of data to be read, Larger range prevents incomplete reading of data, Multiplier adjustable
+        var leftlong = Math.floor((longitude*expansion-10*expandedBlockSize)/expandedBlockSize)*expandedBlockSize
+        leftlong = leftlong/expansion
+        if (leftlong<-180){
+            leftlong=-180
+        }
+        var rightlong = Math.floor((longitude*expansion+10*expandedBlockSize)/expandedBlockSize)*expandedBlockSize
+        rightlong = rightlong/expansion
+        if (rightlong>180){
+            rightlong=180
+        }
+        var lowerlat = Math.floor((latitude*expansion-10*expandedBlockSize)/expandedBlockSize)*expandedBlockSize
+        lowerlat = lowerlat/expansion
+        if (lowerlat<-90){
+            lowerlat=-90
+        }
+        var upperlat = Math.floor((latitude*expansion+10*expandedBlockSize)/expandedBlockSize)*expandedBlockSize
+        upperlat = upperlat/expansion
+        if (upperlat>90){
+            upperlat=90
+        }
+        console.log("关注点2")
+        console.log(leftlong)
+        console.log(rightlong)
+        console.log(lowerlat)
+        console.log(upperlat)
+        console.log(expansion)
+        let longitudeLayer={}
+        let x
+        for(x=leftlong*expansion; x<rightlong*expansion; x=x+expandedBlockSize){
+            let pathLong=x/expansion
+            let latitudeLayer={}
+            let y
+            for(y=lowerlat*expansion; y<upperlat*expansion; y=y+expandedBlockSize){
+                let pathLat=y/expansion
+                let pieDataTemp=[]
+                let folderPath = `layered_data/${language}/${blockSize}/${pathLat}/${pathLong}`;
+                let speciesPath = `${folderPath}/fishAndRatio.json`;
+                let coordPath = `${folderPath}/pieCoord.json`;
+                if (fs.existsSync(speciesPath.toString())) {
+                    //read data of each block
+                    pieInputList=JSON.parse(fs.readFileSync(speciesPath, 'utf8'));
+                    pieLocation=JSON.parse(fs.readFileSync(coordPath,'utf8'));
+                    pieDataTemp=[pieInputList,pieLocation]
+                    latitudeLayer[pathLat]=pieDataTemp
+                } else {
+                    //console.log(`output.json 文件不存在: ${speciesPath}`);
+                    continue
+                }
+            
+            }
+            let keys = Object.keys(latitudeLayer);
+            if(keys.length!==0){
+                longitudeLayer[pathLong]=latitudeLayer
+            }
+        }
+        blockSizeLayer[blockSize]=longitudeLayer
+        pieDataSet[language]=[]
+        pieDataSet[language].push(blockSizeLayer)
+    }else{
+        console.log(blockSize)
+        let longitudeLayer={}
+        let x
+        for(x=-180; x<180; x=x+1){
+            var pathLong=x
+            let latitudeLayer={}
+            let y
+            for(y=-90; y<90; y=y+1){
+                var pathLat=y
+                var pieDataTemp=[]
+                let folderPath = `layered_data/${language}/${blockSize}/${pathLat}/${pathLong}`;
+                if(fs.existsSync(folderPath.toString())){
+                    var contents = fs.readdirSync(folderPath);
+                    for(let j=0; j<contents.length; j=j+1){
+                        var data
+                        var filePath=`${folderPath}/${contents[j]}`
+                        data=fs.readFileSync(filePath, 'utf8')
+                        data=JSON.parse(data)
+                        //console.log("---1---")
+                        //console.log(data)
+                        pieDataTemp.push(data)
+                    }
+                }
+                //console.log("---2---")
+                //console.log(pieDataTemp)
+                if(pieDataTemp.length!==0){
+                    latitudeLayer[pathLat]=pieDataTemp
+                    //console.log("---3---")
+                    //console.log(latitudeLayer)
+                }
+                
+            }
+            if(getAssociativeArrayLength(latitudeLayer)!==0){
+                longitudeLayer[pathLong]=latitudeLayer
+                //console.log("---4---")
+                //console.log(longitudeLayer)
+            }
+            
+
+            
+            
+        }
+        if(getAssociativeArrayLength(longitudeLayer)!==0){
+            blockSizeLayer[blockSize]=longitudeLayer
+            //console.log("---5---")
+            //console.log(blockSizeLayer)
+        }
+            
+        pieDataSet[language]=[]
+        pieDataSet[language].push(blockSizeLayer)
+    }
+    //console.log(pieDataSet)
+    return pieDataSet
+}
+
+function countFilesInDirectory(directoryPath) {
+    try {
+      const files = fs.readdirSync(directoryPath);
+      return files.length;
+    } catch (error) {
+      // non-exist or empty directory
+      return -1;
+    }
+  }
+
+  function getAssociativeArrayLength(obj) {
+    let keysArray = Object.keys(obj);
+    return keysArray.length;
+  }

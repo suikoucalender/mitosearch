@@ -17,21 +17,30 @@ var lowerHandleForRange=new Date(lowerHandleStamp);
 
 //window.onload = getCapturedSampleList;
 getCapturedSampleList();
+
 map.on("mouseup", removeMoveFlagAndDraw);
 map.on("mousedown", setMoveFlag);
 map.on("move", getCapturedSampleList);
 map.on("move", sliderUpdating);
 //document.querySelector('#map').onwheel = getCapturedSampleList;
 
+mapTest.on("mouseup", removeMoveFlagAndDraw);
+mapTest.on("mousedown", setMoveFlag);
+mapTest.on("move", getCapturedSampleList);
+mapTest.on("move", sliderUpdating);
+
 
 function setMoveFlag(){
     isMove = true
 }
+
 function removeMoveFlagAndDraw(){
     if(isMove){
         isMove = false;
-        getCapturedSampleList();
+        getCapturedSampleList();//重复执行了
+        
     }
+    //readDataAndPlotPieChart();
     //getCapturedSampleListChecker=false
     sliderDisplay;//to solve disappear problem
     sliderUpdating;
@@ -56,6 +65,10 @@ function getCapturedSampleList() {
     }
     var pos = map.getCenter();
     var zoom = map.getZoom();
+//测试修改
+var pos = mapTest.getCenter();
+var zoom = mapTest.getZoom();
+readDataAndPlotPieChart();
     var coordination="?taxo="+taxo+"&lat="+pos.lat+"&long="+pos.lng+"&ratio="+zoom
     history.replaceState(null,"",coordination)
     //マップの移動・拡大・縮小時に4隅の緯度経度を取得

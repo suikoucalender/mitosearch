@@ -6,9 +6,7 @@ var app = express();
 
 //追加モジュール
 const fs = require("fs");
-const path = require('path');
 const { route } = require('./users');
-const { Console } = require('console');
 
 //viewをejsに変更
 app.set('view engine', 'ejs');
@@ -61,7 +59,7 @@ router.get('/fish', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
 router.get('/mollusk', function (req, res) {
@@ -84,7 +82,7 @@ router.get('/mollusk', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
 router.post('/', function (req, res) {
@@ -105,8 +103,7 @@ router.post('/', function (req, res) {
     if (ratio==undefined || ratio==""){
         ratio=5
     }
-    let pieDataSet=getDataForPieChart(language, ratio, latitude, longitude)
-    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio });
 });
 
 router.get('/about', function (req, res) {

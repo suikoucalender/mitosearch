@@ -10,7 +10,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { minZoom: 2, maxZ
 var tmp = d3.select("#tmp");
 
 //MarkerClusterGroupオブジェクトを作成。グラフのアイコンはdefineClusterIcon関数で描画する
-var markers = L.markerClusterGroup({ iconCreateFunction: defineClusterIcon });
+var markers = L.markerClusterGroup({ iconCreateFunction: defineClusterIcon }); //important part 2？
 
 var radius = 25;
 
@@ -63,7 +63,7 @@ redrawPolygon();
 function drawPieIcon(radius, sampleData) {
     //グラフ描画用のデータに変換
     var pieInputList = createPieInput(sampleData);
-
+    //console.log(pieInputList)
     //円弧を描画する
     var arc = d3.arc()
         .outerRadius(radius)
@@ -85,7 +85,7 @@ function drawPieIcon(radius, sampleData) {
 
     //マーカ用のdivIconを作成する。
     var myIcon = L.divIcon({ html: tmp.html(), className: 'marker-cluster' });
-
+    //console.log(myIcon)
     //一時描画領域に描画したSVG要素を削除
     tmp.select("svg").remove();
 
