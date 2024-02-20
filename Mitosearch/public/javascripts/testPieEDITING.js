@@ -8,28 +8,28 @@ let tmptest = d3.select("#tmptemp")
 
 readDataAndPlotPieChart()
 
-
 function readDataAndPlotPieChart(){
 
-ratio=mapTest.getZoom()
-//this array is the “map zoom level”：blocksize  //🌟8开始用markers？
-let ratioAndBlock={"2":45,"3":30,"4":15,"5":5,"6":3,"7":2,"8":1,"9":0.5,"10":0.2,"11":0.1,"12":0.05,"13":0.05,"14":0.02,"15":0.02,"16":0.02,"17":0.0001,"18":"special"}
-let blockSize=ratioAndBlock[ratio]
-//  Get all pie
-var elementsToRemove = document.querySelectorAll('#mapTest .leaflet-marker-icon');
-// And remove them
-elementsToRemove.forEach(function(element) {
-    element.remove();
-});
+    ratio=mapTest.getZoom()
+    console.log("map zoom level",ratio)
+    //this array is the “map zoom level”：blocksize
+    let ratioAndBlock={"2":45,"3":30,"4":15,"5":5,"6":3,"7":2,"8":1,"9":0.5,"10":0.2,"11":0.1,"12":0.05,"13":0.05,"14":0.02,"15":0.02,"16":0.02,"17":0.01,"18":"special"}
+    let blockSize=ratioAndBlock[ratio]
+    //  Get all pie chart
+    var elementsToRemove = document.querySelectorAll('#mapTest .leaflet-marker-icon');
+    // And remove all the pie chart, to aviod multiple overlapping drawings
+    elementsToRemove.forEach(function(element) {
+        element.remove();
+    });
 
-if(blockSize!=="special"){
-    
-    //Avoiding the loss of decimal precision
     let radiusTest = 25;
     //pieチャートデータセット用関数の設定
     let pie = d3.pie()
         .value(function (d) { return d.value; })
         .sort(null);
+if(blockSize!=="special"){//this part, map level is 1-17
+    //Avoiding the loss of decimal precision
+
 
     // get map boundary
     let bounds = mapTest.getBounds();
@@ -135,7 +135,7 @@ if(blockSize!=="special"){
                     })
                     .then(data => {
                         pieDataTmp = data;
-                        //console.log(`pieDataTmp`, pieDataTmp);
+                        console.log(`pieDataTmp`, pieDataTmp);
 
                         //Ordered from largest to smallest percentage
                         let pieDataTmpSorted = pieDataTmp.sort(function(a, b) {
@@ -153,7 +153,7 @@ if(blockSize!=="special"){
                             i += 1
                         });
                         htmlStringForPopup += '</table>';
-
+                        console.log(pieCoorTmp[2])
                         //draw pie
                         let customIcon = drawPieIcontest(radiusTest, pieDataTmp, pieCoorTmp[2])
                         
@@ -173,97 +173,182 @@ if(blockSize!=="special"){
 }
 
 
-}else{
-    let radiusTest = 25;
-    //pieチャートデータセット用関数の設定
-    let pie = d3.pie()
-        .value(function (d) { return d.value; })
-        .sort(null);
-    // get map boundary
-    let bounds = mapTest.getBounds();
+}else{//This is when the map zoom level goes to 18
+    //get the center location of map
+    let mapTestCenter = mapTest.getCenter();
+    console.log("map center location",mapTestCenter)
 
-    // get SouthWest and NorthEast coordinate
-    let southWest = bounds.getSouthWest();
-    let northEast = bounds.getNorthEast();
-    let leftlong = new Decimal(southWest.lng)
-    let lowerlat = new Decimal(southWest.lat)
-    let rightlong = new Decimal(northEast.lng)
-    let upperlat = new Decimal(northEast.lat)
-    let groupeDataList = `layered_data/${language}/${blockSize}/groupedDataList.json`
-    let groupeDataListKey = Object.keys(groupeDataList)
-    let groupeDataListScreenedKey=[]
-    let folderPath = `layered_data/${language}/${blockSize}/${lowerlat}/${leftlong}`//maybe could be delete
-    //let urlFileIndex = `${folderPath}/fileList.json`
-    //console.log(urlFileIndex)
-    fetch(urlFileIndex)
+    //calculate the block which we need
+    let roundMapTestCenterLat = Math.floor(mapTestCenter.lat);
+    let roundMapTestCenterLng = Math.floor(mapTestCenter.lng);
+    console.log("map center round lat",roundMapTestCenterLat)
+    console.log("map center round lng",roundMapTestCenterLng)
+    let expectedNeededBlock=`${roundMapTestCenterLat},${roundMapTestCenterLng}`
+
+    let blockData;
+    //setting the offset of pie chart
+    let offset=0.1
+
+    let dataIconSaver
+
+    //read block
+    fetch(`layered_data/zh/special/index/${expectedNeededBlock}.json`)
         .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
+        return response.json(); 
         })
         .then(data => {
-            let fileIndex = data["files"]
-            console.log(fileIndex);
-            for(i=0;i<fileIndex.length;i++){
-                let urlFile = `${folderPath}/${fileIndex[i]}`
-                //console.log(urlFile)
-                fetch(urlFile)
-                    .then(response => {
-                        if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                    })
-                    .then(data => {
-                        let pieData=data["species"];
-                        let pieCoord=[data["lat"],data["long"]];
-                        let pieName=data["ID"]
-                        let pieTime=data["time"]
-                        let htmlStringForPopup = `<table><tr><td><u>${pieName}</u></td><td><u>` + pieTime + "</u></td></tr>";
-                        let j=0
-                        pieData.forEach(function(item) {
-                            if (j<20){
-                                htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
-                            }
-                            j += 1
-                        });
-                        var customIcon = drawPieIcontest(radiusTest, pieData,1)
-                        //add pie chart
-                        var markersTest1 = L.marker([pieCoord[0],pieCoord[1]], { icon: customIcon }).addTo(mapTest);
-                        var markersTest2 = L.marker([pieCoord[0],pieCoord[1]+360], { icon: customIcon }).addTo(mapTest);
-                        //markersTest1.bindPopup(htmlStringForPopup)
-                        //markersTest2.bindPopup(htmlStringForPopup)
-                        
-                        //tooltipオブジェクトを作成し、マーカーにバインド
-                        markersTest1.bindTooltip(htmlStringForPopup, { direction: 'bottom' }).openTooltip();
-                        markersTest2.bindTooltip(htmlStringForPopup, { direction: 'bottom' }).openTooltip();
+        // data processing
+        blockData=data
 
-                        //popupオブジェクトを作成し、マーカにバインド
-                        var popuptest = L.popup().setContent(htmlStringForPopup);
-                        markersTest1.bindPopup(popuptest);
-                        markersTest2.bindPopup(popuptest);
-                        
-                        //マーカーをMarkerClusterGroupオブジェクトレイヤーに追加する
-                        markersTest.addLayer(markersTest1);
-                        markersTest.addLayer(markersTest2);
-                    })
-                    
-                    .catch(error => {
-                        console.error('There was a problem with the fetch operation:', error);
-                    });
-            }
+        mainLevel18(blockData,offset,radiusTest)
+
+
+
+
         })
+
+
+
+
+
         .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
+        console.error('Fetch error:', error);
         });
-        markersTest.on('clustermouseover', function (e) { drawClusterPopup(e) }); 
-        //MarkerClusterGroupオブジェクトレイヤーをマップオブジェクトレイヤーに追加する
-        mapTest.addLayer(markersTest);
-}
+
+
 
 }
 
+}
+
+
+
+
+function calculatePlotArrangement(sampleNumber) {
+    let rows = 1;
+    let columns = 1;
+
+    while (rows * columns < sampleNumber) {
+        if (rows === columns) {
+            columns++;
+        } else {
+            rows++;
+        }
+    }
+
+    return { rows, columns };
+
+}
+
+
+
+
+function adjustPieChartCenter(index, baseLatitude, baseLongitude, plotArrangement, offset) {
+    const columns = plotArrangement.columns;
+
+    // determinate the columns of plot, calculate the lng of pie
+    const centerLng = baseLongitude + (index % columns) * offset;
+    // determinate the rows of plot, calculate the lat of pie
+    const centerLat = baseLatitude + Math.floor(index / columns) * offset;
+
+    // return the center of pie
+    return { centerLat, centerLng };
+}
+
+
+async function fetchSampleData(urlSample) {
+    try {
+      const response = await fetch(urlSample);
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+
+
+  
+  // Call fetchSampleData with async/await //🌟准备数据和marker，return，然后一次性plot到图上
+async function plotingLevel18(j,urlSample,baseLat,baseLng,plotArrangement,offset,radiusTest) {
+    const sampleDataTmp = await fetchSampleData(urlSample);
+    console.log('Data outside fetchData:', sampleDataTmp);
+    let pieDataTmp=sampleDataTmp["species"]
+    console.log(`sample name`, sampleDataTmp["ID"]);
+    console.log(`lat`, sampleDataTmp["lat"]);
+    console.log(`lng`, sampleDataTmp["long"]);
+    console.log(`fish ratio`, pieDataTmp);
+
+
+    let pieCenter = adjustPieChartCenter(j, baseLat, baseLng, plotArrangement, offset)
+
+
+    //preparing the popup content
+    let htmlStringForPopup = "<table><tr><td><u>Sample name</u></td><td><u>" + sampleDataTmp["ID"] + "</u></td></tr>";
+    htmlStringForPopup += '<tr><td><u>Date</u></td><td><u>' + sampleDataTmp["time"] + '</u></td><td>';
+    let k = 0
+    pieDataTmp.forEach(function(item){
+        if(k<20){
+            htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+        }
+        k += 1
+    });
+    htmlStringForPopup += '</table>';
+
+    //draw pie //确认一下经纬度顺序
+    let customIcon = drawPieIcontest(radiusTest,pieDataTmp,1)
+
+    console.log(pieCenter)
+
+    //add pie chart
+    let markersTest1 = L.marker([pieCenter["centerLat"],pieCenter["centerLng"]], { icon: customIcon }).addTo(mapTest);
+    markersTest1.bindPopup(htmlStringForPopup)
+
+
+
+  }
+  
+  
+async function mainLevel18(blockData,offset,radiusTest){
+            let dataIconSaver
+            //read data in the block
+            for (i=0; i<blockData.length; i++){
+                //get lat,lng
+                let blockDataKeys=Object.keys(blockData[i])
+                //get sample number
+                let sampleNumber = blockData[i][blockDataKeys].length
+    
+                console.log("sample number",sampleNumber)
+    
+                //decide rows and column of pie chart
+                let plotArrangement = calculatePlotArrangement(sampleNumber)
+                console.log("plot arangement", plotArrangement)
+    
+    
+    
+                //
+                console.log(blockDataKeys)
+                console.log(blockData[i][blockDataKeys])
+    
+                let coordinate = blockDataKeys[0]
+                coordinate = coordinate.split(',')
+                //lat
+                let baseLat=parseFloat(coordinate[0])
+                let baseLng=parseFloat(coordinate[1])
+                console.log(baseLat)
+                console.log(baseLng)
+    
+                console.log("----------------------------")
+                for(let j=0;j<sampleNumber;j++){
+    
+                    let urlSample = `layered_data/zh/special/${blockData[i][blockDataKeys][j]}`
+                    console.log(urlSample)
+                    console.log(j)
+                    await plotingLevel18(j,urlSample,baseLat,baseLng,plotArrangement,offset,radiusTest)
+    
+    
+                }
+}
+}
 
  
 function drawPieIcontest(radius, pieInputList,sampleNo){
