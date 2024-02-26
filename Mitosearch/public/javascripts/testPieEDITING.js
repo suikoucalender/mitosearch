@@ -9,10 +9,10 @@ let tmptest = d3.select("#tmptemp")
 readDataAndPlotPieChart()
 
 function readDataAndPlotPieChart(){
-
+    //get the zoom level of map
     ratio=mapTest.getZoom()
     console.log("map zoom level",ratio)
-    //this array is the “map zoom level”：blocksize
+    //this array is {“map zoom level”：blocksize}
     let ratioAndBlock={"2":45,"3":30,"4":15,"5":5,"6":3,"7":2,"8":1,"9":0.5,"10":0.2,"11":0.1,"12":0.05,"13":0.05,"14":0.02,"15":0.02,"16":0.02,"17":0.01,"18":"special"}
     let blockSize=ratioAndBlock[ratio]
     //  Get all pie chart
@@ -27,150 +27,149 @@ function readDataAndPlotPieChart(){
     let pie = d3.pie()
         .value(function (d) { return d.value; })
         .sort(null);
-if(blockSize!=="special"){//this part, map level is 1-17
-    //Avoiding the loss of decimal precision
+    if(blockSize!=="special"){//this part, map level is 1-17
+        //Avoiding the loss of decimal precision
 
+        // get map boundary
+        let bounds = mapTest.getBounds();
+        // get SouthWest and NorthEast coordinate
+        let southWest = bounds.getSouthWest();
+        let northEast = bounds.getNorthEast();
+        console.log(blockSize)
+        console.log(southWest)
+        console.log(northEast)
+        //get leftlong, rightlong, lowerlat, upperlat, adjust with blocksize
+        let leftlong = Decimal.mul(Decimal.floor(Decimal.div(southWest.lng,blockSize)),blockSize)
+        let rightlong = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lng,blockSize)),blockSize)
+        let lowerlat = Decimal.mul(Decimal.floor(Decimal.div(southWest.lat,blockSize)),blockSize)
+        let upperlat = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lat,blockSize)),blockSize)
+        if(blockSize>1){
+            leftlong = Math.floor(southWest.lng/blockSize)*blockSize
+            rightlong = Math.ceil(northEast.lng/blockSize)*blockSize
+            lowerlat = Math.floor(southWest.lat/blockSize)*blockSize
+            upperlat = Math.ceil(northEast.lat/blockSize)*blockSize
+        }
+        console.log(leftlong)
+        console.log(rightlong)
+        console.log(lowerlat)
+        console.log(upperlat)
 
-    // get map boundary
-    let bounds = mapTest.getBounds();
-    // get SouthWest and NorthEast coordinate
-    let southWest = bounds.getSouthWest();
-    let northEast = bounds.getNorthEast();
-    console.log(blockSize)
-    console.log(southWest)
-    console.log(northEast)
-    //get leftlong, rightlong, lowerlat, upperlat, adjust with blocksize
-    let leftlong = Decimal.mul(Decimal.floor(Decimal.div(southWest.lng,blockSize)),blockSize)
-    let rightlong = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lng,blockSize)),blockSize)
-    let lowerlat = Decimal.mul(Decimal.floor(Decimal.div(southWest.lat,blockSize)),blockSize)
-    let upperlat = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lat,blockSize)),blockSize)
-    if(blockSize>1){
-        leftlong = Math.floor(southWest.lng/blockSize)*blockSize
-        rightlong = Math.ceil(northEast.lng/blockSize)*blockSize
-        lowerlat = Math.floor(southWest.lat/blockSize)*blockSize
-        upperlat = Math.ceil(northEast.lat/blockSize)*blockSize
-    }
-    console.log(leftlong)
-    console.log(rightlong)
-    console.log(lowerlat)
-    console.log(upperlat)
+        //decide the data reading range
+        let longStart=Decimal.sub(leftlong,blockSize)
+        let longEnd=Decimal.add(rightlong,blockSize)
+        let latStart=Decimal.sub(lowerlat,blockSize)
+        let latEnd=Decimal.add(upperlat,blockSize)
+        if(blockSize>1){
+            longStart=leftlong-blockSize
+            longEnd=rightlong+blockSize
+            latStart=lowerlat-blockSize
+            latEnd=upperlat+blockSize
+        }
+        console.log(longStart)
+        console.log(longEnd)
+        console.log(latStart)
+        console.log(latEnd)
 
-    //decide the data reading range
-    let longStart=Decimal.sub(leftlong,blockSize)
-    let longEnd=Decimal.add(rightlong,blockSize)
-    let latStart=Decimal.sub(lowerlat,blockSize)
-    let latEnd=Decimal.add(upperlat,blockSize)
-    if(blockSize>1){
-        longStart=leftlong-blockSize
-        longEnd=rightlong+blockSize
-        latStart=lowerlat-blockSize
-        latEnd=upperlat+blockSize
-    }
-    console.log(longStart)
-    console.log(longEnd)
-    console.log(latStart)
-    console.log(latEnd)
-
-    //list up the urls
-    let urlsFishAndRatio=[]
-    let urlsPieCoord=[]
-    let urlsOutput=[]
-    let pieDataSetTrial={}
+        //list up the urls
+        let urlsFishAndRatio=[]
+        let urlsPieCoord=[]
+        let urlsOutput=[]
+        let pieDataSetTrial={}
  
-    for(x=longStart;x<=longEnd;x=Decimal.add(x,blockSize)){
+        for(x=longStart;x<=longEnd;x=Decimal.add(x,blockSize)){
     
-        let long=x
-        //Ensure readings are within range
-        if(long>180){
-            long=Decimal.sub(long,360)
-        }
-        if(long<-180){
-            long=Decimal.add(long,360)
-        }
+            let long=x
+            //Ensure readings are within range
+            if(long>180){
+                long=Decimal.sub(long,360)
+            }
+            if(long<-180){
+                long=Decimal.add(long,360)
+            }
 
-        for(y=latStart;y<=latEnd;y=Decimal.add(y,blockSize)){
+            for(y=latStart;y<=latEnd;y=Decimal.add(y,blockSize)){
        
-            let lat=y
-            let folderPath = `layered_data/${language}/${blockSize}/${lat}/${long}`;
-            let speciesPath = `${folderPath}/fishAndRatio.json`;
-            let coordPath = `${folderPath}/pieCoord.json`;
-            let outputPath = `${folderPath}/output.json`
-            urlsFishAndRatio.push(speciesPath)
-            urlsPieCoord.push(coordPath)
-            urlsOutput.push(outputPath)
+                let lat=y
+                let folderPath = `layered_data/${language}/${blockSize}/${lat}/${long}`;
+                let speciesPath = `${folderPath}/fishAndRatio.json`;
+                let coordPath = `${folderPath}/pieCoord.json`;
+                let outputPath = `${folderPath}/output.json`
+                urlsFishAndRatio.push(speciesPath)
+                urlsPieCoord.push(coordPath)
+                urlsOutput.push(outputPath)
+            }
         }
-    }
-    //console.log(urlsFishAndRatio)
-    //console.log(urlsPieCoord)
-    //console.log(urlsOutput)
+        //console.log(urlsFishAndRatio)
+        //console.log(urlsPieCoord)
+        //console.log(urlsOutput)
 
-    for(i=0;i<urlsFishAndRatio.length;i++){
+        for(i=0;i<urlsFishAndRatio.length;i++){
     
-        let urlFishAndRatio=urlsFishAndRatio[i]
-        let urlPieCoord=urlsPieCoord[i]
-        let urlOutput=urlsOutput[i]
-        let pieCoorTmp
-        let pieDataTmp
-        //console.log(fetch(urlOutput))
+            let urlFishAndRatio=urlsFishAndRatio[i]
+            let urlPieCoord=urlsPieCoord[i]
+            let urlOutput=urlsOutput[i]
+            let pieCoorTmp
+            let pieDataTmp
+            //console.log(fetch(urlOutput))
 
-        fetch(urlPieCoord)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-            //console.log("*******",response.json())
-            return response.json(); 
-            })
-            .then(dataCoor => {
-                pieCoorTmp = dataCoor;
-                console.log(`pieCoorTmp`, pieCoorTmp);//OK
-                console.log(urlFishAndRatio)
-                fetch(urlFishAndRatio)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Network response was not ok');
-                        }
-                        //console.log("*******",response.json())
-                    return response.json(); 
-                    })
-                    .then(data => {
-                        pieDataTmp = data;
-                        console.log(`pieDataTmp`, pieDataTmp);
-
-                        //Ordered from largest to smallest percentage
-                        let pieDataTmpSorted = pieDataTmp.sort(function(a, b) {
-                            return b.value - a.value;
-                        });
-                        //console.log("pie data sorted", pieDataTmpSorted)
-
-                        //preparing the popup content
-                        let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
-                        let i=0
-                        pieDataTmpSorted.forEach(function(item) {
-                            if (i<20){
-                                htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+            fetch(urlPieCoord)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                //console.log("*******",response.json())
+                return response.json(); 
+                })
+                .then(dataCoor => {
+                    pieCoorTmp = dataCoor;
+                    console.log(`pieCoorTmp`, pieCoorTmp);//OK
+                    console.log(urlFishAndRatio)
+                    fetch(urlFishAndRatio)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
                             }
-                            i += 1
-                        });
-                        htmlStringForPopup += '</table>';
-                        console.log(pieCoorTmp[2])
-                        //draw pie
-                        let customIcon = drawPieIcontest(radiusTest, pieDataTmp, pieCoorTmp[2])
+                            //console.log("*******",response.json())
+                        return response.json(); 
+                        })
+                        .then(data => {
+                            pieDataTmp = data;
+                            console.log(`pieDataTmp`, pieDataTmp);
+
+                            //Ordered from largest to smallest percentage
+                            let pieDataTmpSorted = pieDataTmp.sort(function(a, b) {
+                                return b.value - a.value;
+                            });
+                            //console.log("pie data sorted", pieDataTmpSorted)
+
+                            //preparing the popup content
+                            let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
+                            let i=0
+                            pieDataTmpSorted.forEach(function(item) {
+                                if (i<20){
+                                    htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+                                }
+                                i += 1
+                            });
+                            htmlStringForPopup += '</table>';
+                            console.log(pieCoorTmp[2])
+                            //draw pie
+                            let customIcon = drawPieIcontest(radiusTest, pieDataTmp, pieCoorTmp[2])
                         
-                        //add pie chart//can not get data
-                        let markersTest1 = L.marker([pieCoorTmp[0],pieCoorTmp[1]], { icon: customIcon }).addTo(mapTest);
-                        let markersTest2 = L.marker([pieCoorTmp[0],Decimal.add(pieCoorTmp[1],360)], { icon: customIcon }).addTo(mapTest);//？
-                        markersTest1.bindPopup(htmlStringForPopup)
-                        //markersTest2.bindPopup(htmlStringForPopup)
-                    })
-                    .catch(error => {
-                        console.error('There was a problem with the fetch operation:', error);
-                    });
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
-}
+                            //add pie chart//can not get data
+                            let markersTest1 = L.marker([pieCoorTmp[0],pieCoorTmp[1]], { icon: customIcon }).addTo(mapTest);
+                            let markersTest2 = L.marker([pieCoorTmp[0],Decimal.add(pieCoorTmp[1],360)], { icon: customIcon }).addTo(mapTest);//？
+                            markersTest1.bindPopup(htmlStringForPopup)
+                            //markersTest2.bindPopup(htmlStringForPopup)
+                        })
+                        .catch(error => {
+                            console.error('There was a problem with the fetch operation:', error);
+                        });
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        }
 
 
 }else{//This is when the map zoom level goes to 18
@@ -187,7 +186,7 @@ if(blockSize!=="special"){//this part, map level is 1-17
 
     let blockData;
     //setting the offset of pie chart
-    let offset=0.1
+    let offset=0.0002
 
     let dataIconSaver
 
@@ -268,7 +267,7 @@ async function fetchSampleData(urlSample) {
 
 
   
-  // Call fetchSampleData with async/await //🌟准备数据和marker，return，然后一次性plot到图上
+  // Call fetchSampleData with async/await
 async function plotingLevel18(j,urlSample,baseLat,baseLng,plotArrangement,offset,radiusTest) {
     const sampleDataTmp = await fetchSampleData(urlSample);
     console.log('Data outside fetchData:', sampleDataTmp);
@@ -294,7 +293,7 @@ async function plotingLevel18(j,urlSample,baseLat,baseLng,plotArrangement,offset
     });
     htmlStringForPopup += '</table>';
 
-    //draw pie //确认一下经纬度顺序
+    //draw pie
     let customIcon = drawPieIcontest(radiusTest,pieDataTmp,1)
 
     console.log(pieCenter)

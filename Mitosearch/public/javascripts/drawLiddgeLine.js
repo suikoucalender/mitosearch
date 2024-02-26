@@ -37,7 +37,7 @@ function setMoveFlag(){
 function removeMoveFlagAndDraw(){
     if(isMove){
         isMove = false;
-        getCapturedSampleList();//重复执行了
+        getCapturedSampleList();
         
     }
     //readDataAndPlotPieChart();
@@ -65,7 +65,7 @@ function getCapturedSampleList() {
     }
     var pos = map.getCenter();
     var zoom = map.getZoom();
-//测试修改
+
 var pos = mapTest.getCenter();
 var zoom = mapTest.getZoom();
 readDataAndPlotPieChart();
@@ -196,10 +196,10 @@ function drawLiddgeLineChangeable(capturedSampleList){
             return;
         }
 
-        let tempdate = sampleDate;//🌟如果把sampleData.date改成sampleDate的话，千叶县附近的数据可以显示，但是会报错
+        let tempdate = sampleDate;
         let tempdateTrans=new Date(tempdate);
         //console.log("tempdate----------------"+tempdate)
-        //console.log("tempdateTrans----------------"+tempdateTrans)//🌟按照读取的数据，带有时区的时间不能转化。
+        //console.log("tempdateTrans----------------"+tempdateTrans)//Time with time zones cannot be converted
 
         //console.log(lowerHandleForRange)
         //console.log(upperHandleForRange)
@@ -531,7 +531,7 @@ function drawLiddgeLine(capturedSampleList) {
         if (isInvalidDate(sampleDate)) {
             return;
         }
-        let tempdate = sampleDate;//🌟如果把sampleData.date改成sampleDate的话，千叶县附近的数据可以显示，但是会报错
+        let tempdate = sampleDate;
         if(timemode === "monthly"){
             tempdate="2017-"+tempdate.substring(5,7)+"-01";
         }

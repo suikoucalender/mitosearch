@@ -25,7 +25,7 @@ function timeTransformer(date){
         result=result.replace("T"," ")
         offset=date.substring(date.indexOf("+")+1)
         offset=Number(offset.substring(0,offset.indexOf(":")))
-        //+32400000 is changing the time from GMT+9 localtime to UTC time 🌟 think later
+        //+32400000 is changing the time from GMT+9 localtime to UTC time
         result=new Date(result).getTime()+offset*3600000//+32400000
         result=new Date(result).toUTCString()
     }else if(date.indexOf("-")!==-1){
