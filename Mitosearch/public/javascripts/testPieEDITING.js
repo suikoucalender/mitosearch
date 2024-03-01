@@ -5,6 +5,9 @@ let mapTest = L.map("mapTest").setView([latitude, longitude], ratio);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { minZoom: 2, maxZoom: 18 }).addTo(mapTest);
 let tmptest = d3.select("#tmptemp")
 
+//new added
+let blockPlotRecorder={}
+let mapLevelRecoder=mapTest.getZoom()
 
 readDataAndPlotPieChart()
 
@@ -15,12 +18,15 @@ function readDataAndPlotPieChart(){
     //this array is {“map zoom level”：blocksize}
     let ratioAndBlock={"2":45,"3":30,"4":15,"5":5,"6":3,"7":2,"8":1,"9":0.5,"10":0.2,"11":0.1,"12":0.05,"13":0.05,"14":0.02,"15":0.02,"16":0.02,"17":0.01,"18":"special"}
     let blockSize=ratioAndBlock[ratio]
+
+    //new added(changed)
     //  Get all pie chart
-    var elementsToRemove = document.querySelectorAll('#mapTest .leaflet-marker-icon');
+    //var elementsToRemove = document.querySelectorAll('#mapTest .leaflet-marker-icon');
     // And remove all the pie chart, to aviod multiple overlapping drawings
-    elementsToRemove.forEach(function(element) {
-        element.remove();
-    });
+    //elementsToRemove.forEach(function(element) {
+        //element.remove();
+    //});
+
 
     let radiusTest = 25;
     //pieチャートデータセット用関数の設定
@@ -111,6 +117,24 @@ function readDataAndPlotPieChart(){
             let pieCoorTmp
             let pieDataTmp
             //console.log(fetch(urlOutput))
+            
+            
+            //new added  not working well
+            console.log(urlFishAndRatio)
+            let matches = urlFishAndRatio.split('/');
+            console.log(matches)
+            let firstNumber = matches[3];
+            let secondNumber = matches[4];
+            let combinedString = `${firstNumber},${secondNumber}`;
+            console.log(combinedString); 
+            blockPlotRecorder[combinedString]=1;
+
+            //new added
+            //if(blockPlotRecorder[combinedString]===1){
+                //return;
+            //}
+
+
 
             fetch(urlPieCoord)
                 .then(response => {
@@ -133,6 +157,9 @@ function readDataAndPlotPieChart(){
                         return response.json(); 
                         })
                         .then(data => {
+                            
+
+                            
                             pieDataTmp = data;
                             console.log(`pieDataTmp`, pieDataTmp);
 
@@ -161,6 +188,9 @@ function readDataAndPlotPieChart(){
                             let markersTest2 = L.marker([pieCoorTmp[0],Decimal.add(pieCoorTmp[1],360)], { icon: customIcon }).addTo(mapTest);//？
                             markersTest1.bindPopup(htmlStringForPopup)
                             //markersTest2.bindPopup(htmlStringForPopup)
+                            
+                            blockPlotRecorder[combinedString]=1;
+                            
                         })
                         .catch(error => {
                             console.error('There was a problem with the fetch operation:', error);
@@ -170,7 +200,7 @@ function readDataAndPlotPieChart(){
                     console.error('There was a problem with the fetch operation:', error);
                 });
         }
-
+console.log(blockPlotRecorder)
 
 }else{//This is when the map zoom level goes to 18
     //get the center location of map
