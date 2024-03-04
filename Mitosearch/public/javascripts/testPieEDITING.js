@@ -169,8 +169,8 @@ function readDataAndPlotPieChart() {
                             //console.log("pie data sorted", pieDataTmpSorted)
 
                             //preparing the popup content
-                            //let htmlStringForPopup = urlPieCoord+"<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
-                            let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
+                            let htmlStringForPopup = urlPieCoord+"<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
+                            //let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
                             let i = 0
                             pieDataTmpSorted.forEach(function (item) {
                                 if (i < 20) {
@@ -197,7 +197,8 @@ function readDataAndPlotPieChart() {
                         });
                 })
                 .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
+                    //データが存在しない場合このエラーになる
+                    //console.error('There was a problem with the fetch operation:', error);
                 });
         }
         console.log("blockPlotRecorder: ", blockPlotRecorder)
