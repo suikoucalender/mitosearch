@@ -1,3 +1,4 @@
+let graphData = {} //{blockSize: {y_x: }} リッジグラフ用のデータをダウンロードした結果の保存場所
 
 var dateRangeCheker = false;
 var upperHandleStamp = timestamp(upperHandle);
@@ -171,7 +172,13 @@ function drawLiddgeLine3(capturedSampleList) {
     let urls = [];
     for (let y_x of targetBlocks) {
         console.log(y_x)
-        urls.push(`layered_data/${language}/${blockSize}/${y_x}/month.json`)
+        if(!(blockSize in graphData)){
+            graphData[blockSize]={}
+        }
+        if(!(y_x in graphData[blockSize])){
+            graphData[blockSize][y_x]=[] //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
+            urls.push(`layered_data/${language}/${blockSize}/${y_x}/month.json`)
+        }
     }
 
     fetchFiles(urls).then(dataList => {
@@ -180,8 +187,12 @@ function drawLiddgeLine3(capturedSampleList) {
         let fishList = {} //{fishname:1}
         let numList = {} //{month: num}
         let sumList = {} //{month: {species: sum_percentage}}
-        for (let blockTableData of dataList) { //dataList: [[{month, num, data:[{name, value}]}]]<-全ブロック分
-            for (let blockMonthTableData of blockTableData) { //blockTableData: [{month, num, data:[{name, value}]}]<-1ブロック分
+        for (let blockTableData of dataList) { //dataList: [x, y, monthdata:[{month, num, data:[{name, value}]}]]<-全ブロック分
+            //blockTableData: x, y, monthdata:[{month, num, data:[{name, value}]}]<-1ブロック分
+            graphData[blockSize][blockTableData.y+"/"+blockTableData.x] = blockTableData.monthdata
+        }
+        for (let y_x of targetBlocks) { //targetBlocks: 集計対象となる全ブロックの場所情報
+            for (let blockMonthTableData of graphData[blockSize][y_x]) {
                 //blockMonthTableData: {month, num, data:[{name, value}]}<-1月分
                 addKeyVal(numList, blockMonthTableData.month, blockMonthTableData.num)
                 for (let blockMonthSpeciesTableData of blockMonthTableData.data) {
