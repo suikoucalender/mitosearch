@@ -148,6 +148,16 @@ async function fetchFiles(urls) {
     return successfulResults;
 }
 
+function addKeyVal(obj, key, valueToAdd) {
+    // キーがオブジェクトに存在しなければ0で初期化
+    if (!obj.hasOwnProperty(key)) {
+        obj[key] = 0;
+    }
+
+    // 値を追加
+    obj[key] += valueToAdd;
+}
+
 function drawLiddgeLine3(capturedSampleList) {
     // get map boundary
     let bounds = mapTest.getBounds();
@@ -155,369 +165,396 @@ function drawLiddgeLine3(capturedSampleList) {
     let southWest = bounds.getSouthWest();
     let northEast = bounds.getNorthEast();
     let blockSize = getBlockSize(mapTest.getZoom())
-    targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
+    let targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
     console.log(targetBlocks)
 
     let urls = [];
-    for (let i of targetBlocks) {
-        console.log(i)
-        urls.push(`layered_data/${language}/${blockSize}/${i}/month.json`)
+    for (let y_x of targetBlocks) {
+        console.log(y_x)
+        urls.push(`layered_data/${language}/${blockSize}/${y_x}/month.json`)
     }
 
     fetchFiles(urls).then(dataList => {
         console.log('ダウンロードできたファイルの結果:', dataList);
 
-        let fishList = {};
-        let dateList = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
-        
-        for(let blockTableData of dataList){
-            for(let i in blockTableData.data){
-
+        let fishList = {} //{fishname:1}
+        let numList = {} //{month: num}
+        let sumList = {} //{month: {species: sum_percentage}}
+        for (let blockTableData of dataList) { //dataList: [[{month, num, data:[{name, value}]}]]<-全ブロック分
+            for (let blockMonthTableData of blockTableData) { //blockTableData: [{month, num, data:[{name, value}]}]<-1ブロック分
+                //blockMonthTableData: {month, num, data:[{name, value}]}<-1月分
+                addKeyVal(numList, blockMonthTableData.month, blockMonthTableData.num)
+                for (let blockMonthSpeciesTableData of blockMonthTableData.data) {
+                    //blockMonthSpeciesTableData: {name, value}<-1種分
+                    addKeyVal(fishList, blockMonthSpeciesTableData.name, 1)
+                    if (!(blockMonthTableData.month in sumList)) {
+                        sumList[blockMonthTableData.month] = {}
+                    }
+                    addKeyVal(sumList[blockMonthTableData.month], blockMonthSpeciesTableData.name,
+                        blockMonthSpeciesTableData.value * blockMonthTableData.num)
+                }
             }
         }
+        console.log(fishList)
+        let averageList = {} //{month: {species: sum_percentage}}
+        for (let month in sumList) {
+            if (!(month in averageList)) {
+                averageList[month] = {}
+            }
+            for (let species in sumList[month]) {
+                addKeyVal(averageList[month], species, sumList[month][species] / numList[month])
+            }
+        }
+        console.log(averageList)
+
+        let fishArray = Object.keys(fishList)
+        let dateArray = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
+
+
+        dateList = [];
+        var dateListAlltime = [];
+        //fishList = [];
+        let densityList = [];
+        let timemode = "monthly";
+        var alltimeBtn = document.getElementById("alltime");
+        var alltimeBtnStyle = alltimeBtn.style;
+        var alltimeBtnStyleDisplay = alltimeBtnStyle.getPropertyValue('display');
+        let timelineData = {};
+        let numDataInDay = {};
+        let numtimelineData = {};
+
+        //console.log(alltimeBtnStyleDisplay);
+        if (alltimeBtnStyleDisplay === "none") { timemode = "alltime" }
+
+        //svgタグを追加し、幅と高さを設定
+        var graph = d3.select("#graph");
+        var bargraph = d3.select("#bargraph")
+        graphName.style.display = "block";
+        //サンプルが存在しないときは、グラフを描画しない
+        if (capturedSampleList.length == 0) {
+            //svgタグを削除
+            graph.select("svg").remove();
+            bargraph.select("svg").remove();
+            sliderArea.style.display = "none";
+            lowerHandleNumber.style.display = "none";
+            upperHandleNumber.style.display = "none";
+            graphName.style.display = "none";
+            graphChecker = "nonexist"
+            return;
+        }
+
+
+        //魚種リストと日付のリストを取得
+        var counter = 0
+        capturedSampleList.forEach(sampleData => {
+            var sampleDate = sampleData.date
+            //console.log("readed-----------"+sampleDate)
+            if (sampleData.date.indexOf("T") !== -1) {
+                sampleData.data = sampleData.date.toString()
+                var datetransformed = timeTransformer(sampleData.data)
+                sampleDate = datetransformed
+                sampleDate = Date.parse(sampleDate)
+                sampleDate = new Date(sampleDate)
+                var tempYear = sampleDate.getFullYear()
+                var tempMonth = sampleDate.getMonth() + 1
+                var tempDay = sampleDate.getDate()
+                //console.log("readed month-----------"+tempMonth)
+                if (tempMonth.toString().length === 1) {
+                    tempMonth = "0" + tempMonth
+                }
+                if (tempDay.toString().length === 1) {
+                    tempDay = "0" + tempDay
+                }
+                //console.log("changed month-----------"+tempMonth)
+
+                sampleDate = tempYear + "-" + tempMonth + "-" + tempDay
+            }
+            //console.log("changed-----------"+sampleDate)
+            if (isInvalidDate(sampleDate)) {
+                return;
+            }
+
+            let tempdate = sampleDate;
+            let tempdateTrans = new Date(tempdate);
+            //console.log("tempdate----------------"+tempdate)
+            //console.log("tempdateTrans----------------"+tempdateTrans)//Time with time zones cannot be converted
+
+            //console.log(lowerHandleForRange)
+            //console.log(upperHandleForRange)
+            //Determine if the sample is within the date range
+            if (tempdateTrans >= lowerHandleForRange && tempdateTrans <= upperHandleForRange) {
+                dateRangeCheker = true
+                //dateListAlltimeChangeable=true
+            }
+            //console.log(dateRangeCheker)
+
+            if (dateRangeCheker == true) {
+                //console.log("!!!!!!"+tempdate)
+
+                if (timemode === "monthly") {
+                    tempdate = "2017-" + tempdate.substring(5, 7) + "-01";
+                }
+                //console.log("push content------"+tempdate)
+                dateList.push(tempdate)
+                //console.log(dateList)
+                //fishList = fishList.concat(Object.keys(sampleData.fish));
+                //console.log(fishList)
+                if (!(tempdate in numDataInDay)) {
+                    numDataInDay[tempdate] = 1;
+                } else {
+                    numDataInDay[tempdate]++;
+                }
+                Object.keys(sampleData.fish).forEach(sampleFish => {
+                    if (!(sampleFish in timelineData)) {
+                        timelineData[sampleFish] = {};
+                        numtimelineData[sampleFish] = {};
+                    }
+                    if (!(tempdate in timelineData[sampleFish])) {
+                        timelineData[sampleFish][tempdate] = sampleData.fish[sampleFish];
+                        numtimelineData[sampleFish][tempdate] = 1;
+                    } else {
+                        timelineData[sampleFish][tempdate] += sampleData.fish[sampleFish];
+                        numtimelineData[sampleFish][tempdate]++;
+                    }
+                });
+            }
+            dateRangeCheker = false
+        });
+
+        var numDataInDaymax = 0;
+        let numDataInDayList = [];
+
+
+        for (var key in numDataInDay) {
+            numDataInDaymax = Math.max(numDataInDaymax, numDataInDay[key]);
+            numDataInDayList.push({ "date": new Date(key), "value": numDataInDay[key] });
+        }
+
+        //console.log(dateList)
+        if (dateList.length == 0) {
+            //svgタグを削除
+            graph.select("svg").remove();
+            bargraph.select("svg").remove();
+            return;
+        }
+
+        //日付リストの要素を積集合をとる。
+        dateList = Array.from(new Set(dateList));
+
+        //魚種リストの積集合をとる。
+        fishList = Array.from(new Set(fishArray));
+
+        //日付の昇順にソートする
+        dateList.sort(function (a, b) {
+            return (a > b ? 1 : -1);
+        });
+
+
+        //リスト内の最大・最小の日付を取得
+        var minDate = new Date(dateList[0]);
+        var maxDate = new Date(dateList[dateList.length - 1]);
+
+        //x軸の端点の日付を取得
+        var scaleMax = new Date("2017-12-31");
+        var scaleMin = new Date("2016-12-01");
+
+
+        if (timemode == "alltime") {
+            scaleMax = new Date(maxDate.setMonth(maxDate.getMonth() + 1));
+            scaleMin = new Date(minDate.setMonth(minDate.getMonth() - 1));
+        }
+
+        //魚種ごとのデータ作成高速化版
+        let fastdensityList = [];
+        for (let fishName of fishArray) {
+            let fastdensityData = { fish: fishName, density: [] };
+            let fastmax = 0;
+            fastdensityData.density.push([scaleMin, 0]);
+            for (let date of dateArray) {
+                if (date in averageList && fishName in averageList[date]) {
+                    if (averageList[date][fishName] > fastmax) {
+                        fastmax = averageList[date][fishName]
+                    }
+                    fastdensityData.density.push([new Date("2017-" + date + "-01"), averageList[date][fishName]]);
+                } else {
+                    fastdensityData.density.push([new Date("2017-" + date + "-01"), 0]);
+                }
+            }
+            fastdensityData.density.push([scaleMax, 0]);
+
+            //データの最大値が40になるように調整
+            fastdensityData.density = fastdensityData.density.map(data => { return [data[0], data[1] * (40 / fastmax)] })
+            //組成の最大値の情報を格納
+            fastdensityData["max"] = fastmax;
+            fastdensityList.push(fastdensityData);
+        }
+
+        //グラフ描画用リストをMaxでソート
+        densityList = object_array_sort(fastdensityList, "max");
+        densityList = densityList.slice(0, 20)
+
+        //魚種リストをソート
+        fishList = densityList.map(densityData => {
+            return densityData.fish;
+        });
+
+        //グラフ全体のサイズとマージンを設定
+        var map = document.getElementById("map");
+        var mapLeft = map.offsetLeft;
+        var mapWidth = map.offsetWidth;
+
+        var margin = { top: 75, right: mapLeft, bottom: 30, left: 250 },
+            width = window.innerWidth - mapWidth - mapLeft - margin.left - margin.right,
+            height = 40 * fishList.length,
+            barmargin = { top: 10, right: mapLeft, bottom: margin.bottom, left: margin.left },
+            barheight = 100,
+            barwidth = width / 20;
+
+
+        if (timemode == "alltime") {
+            barwidth = width / 300;
+        }
+
+
+        //svgタグを削除
+        bargraph.select("svg").remove();
+        graph.select("svg").remove();
+
+        //var svg = graph.append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom)
+        var svg = graph.append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom)
+            .append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        //x軸のスケールを作成
+        var xScale = d3.scaleTime()
+            .domain([scaleMin, scaleMax])
+            .range([0, width]);
+
+        //x軸を追加する
+        if (timemode == "monthly") {
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(
+                    d3.axisTop(xScale)
+                        .tickFormat(d3.timeFormat("%B"))
+                )
+        }
+        else {
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(
+                    d3.axisTop(xScale)
+                        .tickFormat(d3.timeFormat("%y/%m"))
+                )
+        }
+        //y軸のスケールを作成する
+        var fishScale = d3.scaleBand()
+            .domain(fishList)
+            .range([0, height]);
+
+        //y軸を追加する
+        svg.append("g")
+            .attr("transform", "translate(0, 0)")
+            .call(d3.axisLeft(fishScale))
+
+
+
+        //半メモリ分の長さを取得
+        var betweenlen;
+
+        if (fishList.length > 1) {
+            betweenlen = fishScale(fishList[1]) / 2;
+        } else {
+            betweenlen = height / 2;
+        }
+
+        //Riddgeグラフを作成する
+        svg.selectAll("area")
+            .data(densityList)
+            .enter()
+            .append("path")
+            .attr("transform", function (d) { return ("translate(0," + (fishScale(d.fish) + betweenlen) + ")") })
+            //.attr("fill", function (d) { return "rgb(255,255," + ((100 - d.max) * 2) + ")" })
+            .attr("fill", function (d) { return "rgb(255,255,103)" })
+            .datum(function (d) { return d.density })
+            .attr("stroke", "#000")
+            .attr("stroke-width", 1)
+            .attr("d", d3.line()
+                //.curve(d3.curveBasis)
+                .curve(d3.curveMonotoneX)
+                .x(function (d) { return xScale(d[0]); })
+                .y(function (d) { return (- d[1]); })
+            )
+
+        drawScale(timemode, svg, xScale)
+
+        window.addEventListener("scroll", function () {
+            drawScale(timemode, svg, xScale);
+        })
+
+        window.addEventListener("onresize", function () {
+            drawScale(timemode, svg, xScale);
+        })
+
+        //SVG領域の設定
+        var svgbar = bargraph.append("svg").attr("width", width + barmargin.left + barmargin.right).attr("height", barheight + barmargin.top + barmargin.bottom)
+            .append("g").attr("transform", "translate(" + barmargin.left + "," + barmargin.top + ")");
+        //x軸のスケールを作成
+        var barxScale = d3.scaleTime()
+            .domain([scaleMin, scaleMax])
+            .range([0, width]);
+
+        //y軸のスケールを作成
+        var superscript = "⁰¹²³⁴⁵⁶⁷⁸⁹",
+            formatPower = function (d) { return (d + "").split("").map(function (c) { return superscript[c]; }).join(""); },
+            formatTick = function (d) { return 10 + formatPower(Math.round(Math.log(d) / Math.LN10)); };
+
+        var baryScale = d3.scaleLog()
+            .domain([numDataInDaymax, 0.90000000001])
+            .range([0, barheight]);
+
+        //バーの表示
+        svgbar.append("g")
+            .selectAll("rect")
+            .data(numDataInDayList)
+            .enter()
+            .append("rect")
+            .attr("x", function (d) { return barxScale(d.date) - barwidth / 2; })
+            .attr("y", function (d) { return baryScale(d.value); })
+            .attr("width", barwidth)
+            .attr("height", function (d) { return barheight - baryScale(d.value); })
+            .attr("fill", "#27A391");
+
+        //x軸を追加する
+        if (timemode == "monthly") {
+            svgbar.append("g")
+                .attr("transform", "translate(0," + barheight + ")")
+                .call(
+                    d3.axisTop(barxScale)
+                        .tickFormat(d3.timeFormat("%B"))
+                )
+        }
+        else {
+            svgbar.append("g")
+                .attr("transform", "translate(0," + barheight + ")")
+                .call(
+                    d3.axisTop(barxScale)
+                        .tickFormat(d3.timeFormat("%y/%m"))
+                )
+        }
+
+        //y軸を追加する
+        svgbar.append("g")
+            .attr("transform", "translate(0, 0)")
+            .call(d3.axisLeft(baryScale).ticks(10, 0));
+        //console.log(numDataInDayList)
+        numDataInDayList = []
+        graphChecker = "exist"
+
 
     }).catch(error => {
         console.error('エラー:', error);
     });
 
-    var dateList = [];
-    var densityList = [];
-    let timemode = "monthly";
-    var alltimeBtn = document.getElementById("alltime");
-    var alltimeBtnStyle = alltimeBtn.style;
-    var alltimeBtnStyleDisplay = alltimeBtnStyle.getPropertyValue('display');
-    let timelineData = {};
-    let numDataInDay = {};
-    let numtimelineData = {};
-
-    //console.log(alltimeBtnStyleDisplay);
-    if (alltimeBtnStyleDisplay === "none") { timemode = "alltime" }
-
-    //svgタグを追加し、幅と高さを設定
-    var graph = d3.select("#graph");
-    var bargraph = d3.select("#bargraph")
-    graphName.style.display = "block";
-    //サンプルが存在しないときは、グラフを描画しない
-    if (capturedSampleList.length == 0) {
-        //svgタグを削除
-        graph.select("svg").remove();
-        bargraph.select("svg").remove();
-        sliderArea.style.display = "none";
-        lowerHandleNumber.style.display = "none";
-        upperHandleNumber.style.display = "none";
-        graphName.style.display = "none";
-        graphChecker = "nonexist"
-        return;
-    }
-
-
-    //魚種リストと日付のリストを取得
-    var counter = 0
-    capturedSampleList.forEach(sampleData => {
-        var sampleDate = sampleData.date
-        //console.log("readed-----------"+sampleDate)
-        if (sampleData.date.indexOf("T") !== -1) {
-            sampleData.data = sampleData.date.toString()
-            var datetransformed = timeTransformer(sampleData.data)
-            sampleDate = datetransformed
-            sampleDate = Date.parse(sampleDate)
-            sampleDate = new Date(sampleDate)
-            var tempYear = sampleDate.getFullYear()
-            var tempMonth = sampleDate.getMonth() + 1
-            var tempDay = sampleDate.getDate()
-            //console.log("readed month-----------"+tempMonth)
-            if (tempMonth.toString().length === 1) {
-                tempMonth = "0" + tempMonth
-            }
-            if (tempDay.toString().length === 1) {
-                tempDay = "0" + tempDay
-            }
-            //console.log("changed month-----------"+tempMonth)
-
-            sampleDate = tempYear + "-" + tempMonth + "-" + tempDay
-        }
-        //console.log("changed-----------"+sampleDate)
-        if (isInvalidDate(sampleDate)) {
-            return;
-        }
-
-        let tempdate = sampleDate;
-        let tempdateTrans = new Date(tempdate);
-        //console.log("tempdate----------------"+tempdate)
-        //console.log("tempdateTrans----------------"+tempdateTrans)//Time with time zones cannot be converted
-
-        //console.log(lowerHandleForRange)
-        //console.log(upperHandleForRange)
-        //Determine if the sample is within the date range
-        if (tempdateTrans >= lowerHandleForRange && tempdateTrans <= upperHandleForRange) {
-            dateRangeCheker = true
-            //dateListAlltimeChangeable=true
-        }
-        //console.log(dateRangeCheker)
-
-        if (dateRangeCheker == true) {
-            //console.log("!!!!!!"+tempdate)
-
-            if (timemode === "monthly") {
-                tempdate = "2017-" + tempdate.substring(5, 7) + "-01";
-            }
-            //console.log("push content------"+tempdate)
-            dateList.push(tempdate)
-            //console.log(dateList)
-            fishList = fishList.concat(Object.keys(sampleData.fish));
-            if (!(tempdate in numDataInDay)) {
-                numDataInDay[tempdate] = 1;
-            } else {
-                numDataInDay[tempdate]++;
-            }
-            Object.keys(sampleData.fish).forEach(sampleFish => {
-                if (!(sampleFish in timelineData)) {
-                    timelineData[sampleFish] = {};
-                    numtimelineData[sampleFish] = {};
-                }
-                if (!(tempdate in timelineData[sampleFish])) {
-                    timelineData[sampleFish][tempdate] = sampleData.fish[sampleFish];
-                    numtimelineData[sampleFish][tempdate] = 1;
-                } else {
-                    timelineData[sampleFish][tempdate] += sampleData.fish[sampleFish];
-                    numtimelineData[sampleFish][tempdate]++;
-                }
-            });
-        }
-        dateRangeCheker = false
-    });
-
-    var numDataInDaymax = 0;
-    let numDataInDayList = [];
-
-
-    for (var key in numDataInDay) {
-        numDataInDaymax = Math.max(numDataInDaymax, numDataInDay[key]);
-        numDataInDayList.push({ "date": new Date(key), "value": numDataInDay[key] });
-    }
-
-    //console.log(dateList)
-    if (dateList.length == 0) {
-        //svgタグを削除
-        graph.select("svg").remove();
-        bargraph.select("svg").remove();
-        return;
-    }
-
-    //日付リストの要素を積集合をとる。
-    dateList = Array.from(new Set(dateList));
-
-    //魚種リストの積集合をとる。
-    fishList = Array.from(new Set(fishList));
-
-    //日付の昇順にソートする
-    dateList.sort(function (a, b) {
-        return (a > b ? 1 : -1);
-    });
-
-
-    //リスト内の最大・最小の日付を取得
-    var minDate = new Date(dateList[0]);
-    var maxDate = new Date(dateList[dateList.length - 1]);
-
-    //x軸の端点の日付を取得
-    var scaleMax = new Date("2017-12-31");
-    var scaleMin = new Date("2016-12-01");
-
-
-    if (timemode == "alltime") {
-        scaleMax = new Date(maxDate.setMonth(maxDate.getMonth() + 1));
-        scaleMin = new Date(minDate.setMonth(minDate.getMonth() - 1));
-    }
-
-    //魚種ごとのデータ作成高速化版
-    let fastdensityList = [];
-    fishList.forEach(fishName => {
-        let fastdensityData = { fish: fishName, density: [] };
-        let fastmax = 0;
-        fastdensityData.density.push([scaleMin, 0]);
-        dateList.forEach(date => {
-
-            if (date in timelineData[fishName]) {
-                let tempVal = timelineData[fishName][date] / numDataInDay[date];
-
-                if (tempVal > fastmax) { fastmax = tempVal };
-                fastdensityData.density.push([new Date(date), tempVal]);
-            } else {
-                fastdensityData.density.push([new Date(date), 0]);
-            }
-        });
-
-        fastdensityData.density.push([scaleMax, 0]);
-
-        //データの最大値が40になるように調整
-        fastdensityData.density = fastdensityData.density.map(data => { return [data[0], data[1] * (40 / fastmax)] })
-        //組成の最大値の情報を格納
-        fastdensityData["max"] = fastmax;
-        fastdensityList.push(fastdensityData);
-    });
-
-
-    //グラフ描画用リストをMaxでソート
-    densityList = object_array_sort(fastdensityList, "max");
-    densityList = densityList.slice(0, 20)
-
-    //魚種リストをソート
-    fishList = densityList.map(densityData => {
-        return densityData.fish;
-    });
-
-    //グラフ全体のサイズとマージンを設定
-    var map = document.getElementById("map");
-    var mapLeft = map.offsetLeft;
-    var mapWidth = map.offsetWidth;
-
-    var margin = { top: 75, right: mapLeft, bottom: 30, left: 250 },
-        width = window.innerWidth - mapWidth - mapLeft - margin.left - margin.right,
-        height = 40 * fishList.length,
-        barmargin = { top: 10, right: mapLeft, bottom: margin.bottom, left: margin.left },
-        barheight = 100,
-        barwidth = width / 20;
-
-
-    if (timemode == "alltime") {
-        barwidth = width / 300;
-    }
-
-
-    //svgタグを削除
-    bargraph.select("svg").remove();
-    graph.select("svg").remove();
-
-    //var svg = graph.append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom)
-    var svg = graph.append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom)
-        .append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    //x軸のスケールを作成
-    var xScale = d3.scaleTime()
-        .domain([scaleMin, scaleMax])
-        .range([0, width]);
-
-    //x軸を追加する
-    if (timemode == "monthly") {
-        svg.append("g")
-            .attr("transform", "translate(0," + height + ")")
-            .call(
-                d3.axisTop(xScale)
-                    .tickFormat(d3.timeFormat("%B"))
-            )
-    }
-    else {
-        svg.append("g")
-            .attr("transform", "translate(0," + height + ")")
-            .call(
-                d3.axisTop(xScale)
-                    .tickFormat(d3.timeFormat("%y/%m"))
-            )
-    }
-    //y軸のスケールを作成する
-    var fishScale = d3.scaleBand()
-        .domain(fishList)
-        .range([0, height]);
-
-    //y軸を追加する
-    svg.append("g")
-        .attr("transform", "translate(0, 0)")
-        .call(d3.axisLeft(fishScale))
-
-
-
-    //半メモリ分の長さを取得
-    var betweenlen;
-
-    if (fishList.length > 1) {
-        betweenlen = fishScale(fishList[1]) / 2;
-    } else {
-        betweenlen = height / 2;
-    }
-
-    //Riddgeグラフを作成する
-    svg.selectAll("area")
-        .data(densityList)
-        .enter()
-        .append("path")
-        .attr("transform", function (d) { return ("translate(0," + (fishScale(d.fish) + betweenlen) + ")") })
-        //.attr("fill", function (d) { return "rgb(255,255," + ((100 - d.max) * 2) + ")" })
-        .attr("fill", function (d) { return "rgb(255,255,103)" })
-        .datum(function (d) { return d.density })
-        .attr("stroke", "#000")
-        .attr("stroke-width", 1)
-        .attr("d", d3.line()
-            //.curve(d3.curveBasis)
-            .curve(d3.curveMonotoneX)
-            .x(function (d) { return xScale(d[0]); })
-            .y(function (d) { return (- d[1]); })
-        )
-
-    drawScale(timemode, svg, xScale)
-
-    window.addEventListener("scroll", function () {
-        drawScale(timemode, svg, xScale);
-    })
-
-    window.addEventListener("onresize", function () {
-        drawScale(timemode, svg, xScale);
-    })
-
-    //SVG領域の設定
-    var svgbar = bargraph.append("svg").attr("width", width + barmargin.left + barmargin.right).attr("height", barheight + barmargin.top + barmargin.bottom)
-        .append("g").attr("transform", "translate(" + barmargin.left + "," + barmargin.top + ")");
-    //x軸のスケールを作成
-    var barxScale = d3.scaleTime()
-        .domain([scaleMin, scaleMax])
-        .range([0, width]);
-
-    //y軸のスケールを作成
-    var superscript = "⁰¹²³⁴⁵⁶⁷⁸⁹",
-        formatPower = function (d) { return (d + "").split("").map(function (c) { return superscript[c]; }).join(""); },
-        formatTick = function (d) { return 10 + formatPower(Math.round(Math.log(d) / Math.LN10)); };
-
-    var baryScale = d3.scaleLog()
-        .domain([numDataInDaymax, 0.90000000001])
-        .range([0, barheight]);
-
-    //バーの表示
-    svgbar.append("g")
-        .selectAll("rect")
-        .data(numDataInDayList)
-        .enter()
-        .append("rect")
-        .attr("x", function (d) { return barxScale(d.date) - barwidth / 2; })
-        .attr("y", function (d) { return baryScale(d.value); })
-        .attr("width", barwidth)
-        .attr("height", function (d) { return barheight - baryScale(d.value); })
-        .attr("fill", "#27A391");
-
-    //x軸を追加する
-    if (timemode == "monthly") {
-        svgbar.append("g")
-            .attr("transform", "translate(0," + barheight + ")")
-            .call(
-                d3.axisTop(barxScale)
-                    .tickFormat(d3.timeFormat("%B"))
-            )
-    }
-    else {
-        svgbar.append("g")
-            .attr("transform", "translate(0," + barheight + ")")
-            .call(
-                d3.axisTop(barxScale)
-                    .tickFormat(d3.timeFormat("%y/%m"))
-            )
-    }
-
-    //y軸を追加する
-    svgbar.append("g")
-        .attr("transform", "translate(0, 0)")
-        .call(d3.axisLeft(baryScale).ticks(10, 0));
-    //console.log(numDataInDayList)
-    numDataInDayList = []
-    graphChecker = "exist"
 }
 
 function drawLiddgeLineChangeable(capturedSampleList) {

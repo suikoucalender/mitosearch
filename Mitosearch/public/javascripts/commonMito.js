@@ -33,7 +33,7 @@ function getTargetBlocks(southWest, northEast, blockSize){
     //ブロックをすべて列挙する
     let listBlocks = []
     
-    for (x = longStart; x <= longEnd; x = x.add(blockSize)) {
+    for (let x = longStart; x <= longEnd; x = Decimal.add(x, blockSize)) {
     
         let long = x
         //Ensure readings are within range
@@ -44,7 +44,7 @@ function getTargetBlocks(southWest, northEast, blockSize){
         //    long = Decimal.add(long, 360)
         //}
     
-        for (y = latStart; y <= latEnd; y = y.add(blockSize)) {
+        for (let y = latStart; y <= latEnd; y = Decimal.add(y, blockSize)) {
             //console.log(x,y)
             let lat = y
             listBlocks.push(lat+"/"+long)
