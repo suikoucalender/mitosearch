@@ -1,10 +1,12 @@
 const fs = require('fs');
 const path = require('path');
+
 const args = process.argv.slice(2)
 let lang=args[0]
+const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
 
 
-const folderPath = `layered_data/${lang}/special/index`;
+const folderPath = `${outputbasedir}/layered_data/${lang}/special/index`;
 
 
 fs.readdir(folderPath, (err, files) => {
@@ -19,7 +21,7 @@ fs.readdir(folderPath, (err, files) => {
 
     let json = JSON.stringify(fileNames);
 
-    fs.writeFile(`layered_data/${lang}/special/aIndexNames.json`, json, 'utf8', (err) => {
+    fs.writeFile(`${outputbasedir}/layered_data/${lang}/special/aIndexNames.json`, json, 'utf8', (err) => {
         if (err) {
             console.error('Error writing JSON to file', err);
         } else {

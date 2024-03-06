@@ -15,7 +15,7 @@ for level1-17, needed blocksize:
 if you changed ratioAndBlock in javascripts related to pie chart, please also prepare corresponding data
 
 run code:
-    node 01blockSeparatorForLevel1to17decimal.js lat-long-date.txt mapwater.result.txt db_fish_ja //blocksize 45-0.01までを一度に作成
+    node 01blockSeparatorForLevel1to17decimal.js language(ja/zh/en)  #blocksize 45-0.01までを一度に作成
 
 
 
@@ -42,9 +42,10 @@ run code one by one:
     node 16levelClickIndexName.js language
 
 
+下記のコマンドを実行すればMitosearch/publicフォルダー以下に"layered_data"フォルダーが作られる
 language=ja
 #$language="ja" #for powershell
-node 01blockSeparatorForLevel1to17decimal.js lat-long-date.txt mapwater.result.txt db_fish_$language
+node 01blockSeparatorForLevel1to17decimal.js $language
 node 11levelClickDataSeparator.js $language
 node 12levelClickIndexMaker.js $language
 node 13levelClickFileMover.js $language
@@ -52,5 +53,3 @@ node 14levelClickPathRemover.js $language
 node 15levelClickIndexSeparator.js 1 $language
 node 16levelClickIndexName.js $language
 
-
-copy "layered_data" folder into "public"

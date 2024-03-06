@@ -1,16 +1,18 @@
 const fs = require('fs');
 const path = require('path');
+
 const args = process.argv.slice(2)
 let lang=args[0]
+const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
 
 
-let groupedList=fs.readFileSync(`layered_data/${lang}/special/aGroupedDataList.json`)
+let groupedList=fs.readFileSync(`${outputbasedir}/layered_data/${lang}/special/aGroupedDataList.json`)
 groupedList=JSON.parse(groupedList)
 let keys=Object.keys(groupedList)
 
 keys.forEach(key=>{
     let keyParts=key.split(",")
-    let sampleOriginalPath = `layered_data/${lang}/special/${keyParts[0]}`
+    let sampleOriginalPath = `${outputbasedir}/layered_data/${lang}/special/${keyParts[0]}`
     deleteFolder(sampleOriginalPath)
     //console.log(sampleOriginalPath)
 })

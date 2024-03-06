@@ -1,11 +1,14 @@
 const fs = require('fs');
+const path = require('path');
 const Decimal = require('./decimal.js')
+
 const args = process.argv.slice(2)
 let blockSize = new Decimal(args[0]);
 let lang = args[1]
+const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
 
 //read index files
-let groupedList=fs.readFileSync(`layered_data/${lang}/special/aGroupedDataList.json`)
+let groupedList=fs.readFileSync(`${outputbasedir}/layered_data/${lang}/special/aGroupedDataList.json`)
 groupedList=JSON.parse(groupedList)
 let keys=Object.keys(groupedList)
 //console.log(keys)
@@ -30,8 +33,8 @@ keys.forEach(key => {
 //console.log(indexSave)
 //let indexSaveJSON=JSON.stringify(indexSave,null,2);
 //fs.writeFileSync('new/special/aindexSave.json',indexSaveJSON)
-if (fs.existsSync(`layered_data/${lang}/special/index`)===false) {
-    fs.mkdirSync(`layered_data/${lang}/special/index`)
+if (fs.existsSync(`${outputbasedir}/layered_data/${lang}/special/index`)===false) {
+    fs.mkdirSync(`${outputbasedir}/layered_data/${lang}/special/index`)
 } 
 //separating the index file according to the block coordinate.
 let indexkeys=Object.keys(indexSave)
@@ -39,7 +42,7 @@ indexkeys.forEach(indexkey =>{
     let SaveTemp=indexSave[indexkey]
     let SaveTempJSON=JSON.stringify(SaveTemp,null,2)
     //console.log(SaveTempJSON)
-    fs.writeFileSync(`layered_data/${lang}/special/index/${indexkey}.json`,SaveTempJSON)
+    fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/special/index/${indexkey}.json`,SaveTempJSON)
 });
 
 

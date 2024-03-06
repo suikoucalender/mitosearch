@@ -4,11 +4,13 @@ const args = process.argv.slice(2)
 const fs = require('fs');
 const path = require('path');
 
-const locationPath = args[0]; //lat-long-data.txt
-const waterPath = args[1]; //mapwater.result.txt
-const imputFolderPath = args[2]; //db_fish_[language]
+const language = args[0] //ja, en, zh
+const locationPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "lat-long-date.txt" //args[0]; //lat-long-date.txt
+const waterPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "mapwater.result.txt" //args[1]; //mapwater.result.txt
+const imputFolderPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "db_fish_" + language //args[2]; //db_fish_[language]
 //let blockSize = new Decimal(args[3]); //ratioAndBlock={"2":45,"3":30,"4":15,"5":5,"6":3,"7":2,"8":1,"9":0.5,"10":0.2,"11":0.1,"12":0.05,"13":0.05,"14":0.02,"15":0.02,"16":0.02,"17":0.01,"18":"special"}
-let lang = imputFolderPath.slice(-2); //最後の2文字を切り出す
+const lang = language //imputFolderPath.slice(-2); //最後の2文字を切り出す
+const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
 
 // read lat-long-date.txt file
 let locationInfo = fs.readFileSync(locationPath, 'utf8');
@@ -125,17 +127,17 @@ for (const blockSizeKey in blockSizes) {
 
         //calcutate the ratio of each species in each block
         if (blockSpeciesKeys.length !== 0) {//some sample is in lat-lng-date.txt file, but there were no input file, remove them in this step.
-            fs.mkdirSync(`layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}`, { recursive: true }, (err) => {
+            fs.mkdirSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}`, { recursive: true }, (err) => {
                 if (err) throw err;
             });
             //円グラフを描く位置とサンプル数を出力
             let pieCoord = [averageLat, averageLong, samplenumber]
             console.log("[pieLat,pieLng,sampleNum]: ", pieCoord)
-            fs.writeFileSync(`layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/pieCoord.json`, JSON.stringify(pieCoord, null, 2), (err) => {
+            fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/pieCoord.json`, JSON.stringify(pieCoord, null, 2), (err) => {
                 if (err) throw err;
                 console.log('Data written to file');
             });
-            fs.writeFileSync(`layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/fishAndRatio.json`, JSON.stringify(pieInputList, null, 2), (err) => {
+            fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/fishAndRatio.json`, JSON.stringify(pieInputList, null, 2), (err) => {
                 if (err) throw err;
                 console.log('Data written to file');
             });
@@ -182,7 +184,7 @@ for (const blockSizeKey in blockSizes) {
         }
         //月ごとの種組成を出力
         if(MonthWholeData.length!=0){
-            fs.writeFileSync(`layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/month.json`,
+            fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/month.json`,
              JSON.stringify({y: blocknamearray[0], x: blocknamearray[1], monthdata: MonthWholeData}, null, 2), (err) => {
                 if (err) throw err;
                 console.log('Data written to file');

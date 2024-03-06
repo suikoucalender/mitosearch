@@ -1,19 +1,25 @@
 const fs = require('fs');
 const Decimal = require('./decimal.js')
+const path = require('path');
+
 const args = process.argv.slice(2)
 let lang=args[0]
+const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
+const basedir = __dirname + path.sep + ".." + path.sep + ".."
+
 // read lat-long-date.txt file
 var locationInfo;
-locationInfo=fs.readFileSync("lat-long-date.txt",'utf8');
+locationInfo=fs.readFileSync(__dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "lat-long-date.txt",'utf8');
 locationInfo=locationInfo.split('\n');
 removeEmptyLastItem(locationInfo);
 for(var i=0;i<locationInfo.length;i++){
     locationInfo[i]=locationInfo[i].split('\t');
     locationInfo[i][1]=locationInfo[i][1].split(' ') 
 }
+//console.log(locationInfo)
 
 //read mapwater.result.txt file
-var aquaDataTemp=fs.readFileSync("mapwater.result.txt",'utf8');
+var aquaDataTemp=fs.readFileSync(__dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "mapwater.result.txt",'utf8');
 aquaDataTemp=aquaDataTemp.split('\n')
 var aquaData={}
 removeEmptyLastItem(aquaDataTemp);
@@ -51,7 +57,7 @@ for(var i=0;i<locationInfo.length;i++){
     var datatemp={}
     var inputFileID=locationInfo[i][0]
     var inputFileName=inputFileID+".input"
-    var inputFilePath=`db_fish_${lang}/${inputFileName}`
+    var inputFilePath=`${basedir}/db_fish_${lang}/${inputFileName}`
     //var species=[]
     var tempSpecies
     if (!fs.existsSync(inputFilePath)) {
@@ -90,7 +96,6 @@ for(var i=0;i<locationInfo.length;i++){
         //datatemp["species"].push(species)
     data.push(datatemp)
 }
-
 //console.log(data)
 
 
@@ -108,8 +113,8 @@ for(i=0;i<data.length;i++){
 //fs.writeFileSync(`new/special/locationlist.json`, JSON.stringify(blocknamelist, null, 2), { recursive: true });
 
 function writeFileOrDirectory(latTemp,longTemp,idTemp,fileTemp) {
-    let filePath = `layered_data/${lang}/special/${latTemp}/${longTemp}`;
- 
+    let filePath = `${outputbasedir}/layered_data/${lang}/special/${latTemp}/${longTemp}`;
+    //console.log(filePath)
     try {
         // check if the path exist
         fs.access(filePath, fs.constants.F_OK);

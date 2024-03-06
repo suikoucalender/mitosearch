@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+
 const args = process.argv.slice(2)
 let lang=args[0]
+const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
 //to recursively read directory contents
 function readDirectory(dir, fileList = []) {
     const files = fs.readdirSync(dir);
@@ -29,7 +31,7 @@ function createIndex(rootDir) {
 }
 
 let filePaths
-filePaths=createIndex(`layered_data/${lang}/special`);
+filePaths=createIndex(`${outputbasedir}/layered_data/${lang}/special`);
 
 let groupedPaths = {};
 
@@ -37,8 +39,8 @@ filePaths.forEach(filePath => {
     //console.log(filePath)
     let parts = filePath.split(path.sep);
     //console.log(parts)
-    let lat = parts[3];
-    let lon = parts[4];
+    let lat = parts[parts.length-3];
+    let lon = parts[parts.length-2];
     let fileName = parts[parts.length - 1];
     let key = `${lat},${lon}`;
     //console.log(key)
@@ -50,5 +52,5 @@ filePaths.forEach(filePath => {
 });
 
 let groupedPathsJSON=JSON.stringify(groupedPaths,null,2);
-fs.writeFileSync(`layered_data/${lang}/special/aGroupedDataList.json`,groupedPathsJSON)
+fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/special/aGroupedDataList.json`,groupedPathsJSON)
 
