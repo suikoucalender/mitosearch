@@ -18,6 +18,10 @@ var pie = d3.pie()
     .value(function (d) { return d.value; })
     .sort(null);
 
+function deletePieChartLoadedData(){
+    loadedData = {}
+}
+
 function readDataAndPlotPieChart() {
     //get the zoom level of map
     ratio = map.getZoom()

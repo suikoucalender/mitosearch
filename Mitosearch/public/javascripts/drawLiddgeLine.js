@@ -1,5 +1,6 @@
 let graphData = {} //{blockSize: {y_x: }} リッジグラフ用のデータをダウンロードした結果の保存場所
 var isMove = false
+let oldZoomSize = map.getZoom()
 
 var dateRangeCheker = false;
 var upperHandleStamp = timestamp(upperHandle);
@@ -25,6 +26,15 @@ map.on("mousedown", setMoveFlag);
 map.on("move", moveFunc)
 
 function moveFunc(){
+    const curZoomSize = map.getZoom()
+    if(curZoomSize !== oldZoomSize){
+        oldZoomSize = curZoomSize;
+        console.log("Zoom Level Changed: ", curZoomSize)
+
+        removeAllPieChart()
+        deletePieChartLoadedData()
+        getCapturedSampleList()
+    }
     if (!isMove) {
         console.log("valid move")
         //getCapturedSampleList()

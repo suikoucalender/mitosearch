@@ -53,3 +53,12 @@ function getTargetBlocks(southWest, northEast, blockSize){
     return listBlocks
     
 }
+
+function removeAllPieChart(){
+    
+    //new added(changed)
+    //  Get all pie chart
+    let elementsToRemove = document.querySelectorAll('#map .leaflet-marker-icon');
+    // And remove all the pie chart, to aviod multiple overlapping drawings
+    elementsToRemove.forEach(element => element.remove());
+}

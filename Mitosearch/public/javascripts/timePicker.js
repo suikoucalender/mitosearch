@@ -150,73 +150,73 @@ function sliderUpdating() {
     sliderLoadChecker = true
 }
 
-//get min and max value of slider
-var tempdateAll = sampleDataSet[0]['date'];
-//Checking time format, if it is zulu time, transform it into the utc time
-if (tempdateAll.indexOf("T") !== -1) {
-    tempdateAll = tempdateAll.toString()
-    var datetransformed = timeTransformer(tempdateAll)
-    //console.log("changed====="+datetransformed)
-    tempdateAll = datetransformed
-}
-//changing the time to timestamp format
-tempdateAll = Date.parse(tempdateAll)
-var maxTimestamp = tempdateAll;
-var minTimestamp = tempdateAll;
+// //get min and max value of slider
+// var tempdateAll = sampleDataSet[0]['date'];
+// //Checking time format, if it is zulu time, transform it into the utc time
+// if (tempdateAll.indexOf("T") !== -1) {
+//     tempdateAll = tempdateAll.toString()
+//     var datetransformed = timeTransformer(tempdateAll)
+//     //console.log("changed====="+datetransformed)
+//     tempdateAll = datetransformed
+// }
+// //changing the time to timestamp format
+// tempdateAll = Date.parse(tempdateAll)
+// var maxTimestamp = tempdateAll;
+// var minTimestamp = tempdateAll;
 
 
 
-//Iterate through the data to get the maximum and minimum time values
-for (var i = 1; i < sampleDataSet.length; i++) {
-    tempdateAll = sampleDataSet[i]['date']
-    if (tempdateAll.indexOf("T") !== -1) {
-        tempdateAll = tempdateAll.toString()
-        var datetransformed = timeTransformer(tempdateAll)
-        tempdateAll = datetransformed
-    }
-    tempdateAll = Date.parse(tempdateAll)
-    if (isNaN(tempdateAll)) {
-        //console.log('date missing '+i)
-    } else {
-        if (tempdateAll >= maxTimestamp) {
-            maxTimestamp = tempdateAll
-        } else if (tempdateAll <= minTimestamp) {
-            minTimestamp = tempdateAll
-        }
-        var maxTime = new Date(maxTimestamp)
-        var minTime = new Date(minTimestamp)
-    }
+// //Iterate through the data to get the maximum and minimum time values
+// for (var i = 1; i < sampleDataSet.length; i++) {
+//     tempdateAll = sampleDataSet[i]['date']
+//     if (tempdateAll.indexOf("T") !== -1) {
+//         tempdateAll = tempdateAll.toString()
+//         var datetransformed = timeTransformer(tempdateAll)
+//         tempdateAll = datetransformed
+//     }
+//     tempdateAll = Date.parse(tempdateAll)
+//     if (isNaN(tempdateAll)) {
+//         //console.log('date missing '+i)
+//     } else {
+//         if (tempdateAll >= maxTimestamp) {
+//             maxTimestamp = tempdateAll
+//         } else if (tempdateAll <= minTimestamp) {
+//             minTimestamp = tempdateAll
+//         }
+//         var maxTime = new Date(maxTimestamp)
+//         var minTime = new Date(minTimestamp)
+//     }
 
-}
+// }
 
-//maximun time value plus 1 day, to prevent error
-maxTimestamp = maxTimestamp + 86399000
-
-
+// //maximun time value plus 1 day, to prevent error
+// maxTimestamp = maxTimestamp + 86399000
 
 
-//create slider
-var formatter = new Intl.DateTimeFormat('ja-JP', {
-    dateStyle: 'medium'
-});
-noUiSlider.create(slider, {
-    start: [minTimestamp, maxTimestamp],
-    connect: true,
-    range: {
-        min: minTimestamp,
-        max: maxTimestamp
-    },
-    step: 1 * 24 * 60 * 60 * 1000,
-    behaviour: 'tap',
-    format: wNumb({
-        decimals: 0
-    }),
-});
 
-var dateValues = [
-    document.getElementById('event-start'),
-    document.getElementById('event-end')
-];
 
-sliderLoadChecker = true;
+// //create slider
+// var formatter = new Intl.DateTimeFormat('ja-JP', {
+//     dateStyle: 'medium'
+// });
+// noUiSlider.create(slider, {
+//     start: [minTimestamp, maxTimestamp],
+//     connect: true,
+//     range: {
+//         min: minTimestamp,
+//         max: maxTimestamp
+//     },
+//     step: 1 * 24 * 60 * 60 * 1000,
+//     behaviour: 'tap',
+//     format: wNumb({
+//         decimals: 0
+//     }),
+// });
+
+// var dateValues = [
+//     document.getElementById('event-start'),
+//     document.getElementById('event-end')
+// ];
+
+// sliderLoadChecker = true;
 

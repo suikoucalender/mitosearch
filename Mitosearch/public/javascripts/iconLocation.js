@@ -81,13 +81,13 @@ function iconLocation() {
 
 //decide icons' position when all content loaded
 window.addEventListener("load", function () {
-    iconLocation();
+    //iconLocation();
 });
 
 
 
 //dicide icons' position when window size changed
 window.addEventListener('resize', function () {
-    iconLocation();
+    //iconLocation();
 });
 
