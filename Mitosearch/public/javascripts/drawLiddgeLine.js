@@ -1,4 +1,5 @@
 let graphData = {} //{blockSize: {y_x: }} リッジグラフ用のデータをダウンロードした結果の保存場所
+var isMove = false
 
 var dateRangeCheker = false;
 var upperHandleStamp = timestamp(upperHandle);
@@ -21,34 +22,35 @@ getCapturedSampleList();
 
 map.on("mouseup", removeMoveFlagAndDraw);
 map.on("mousedown", setMoveFlag);
-map.on("move", getCapturedSampleList);
-map.on("move", sliderUpdating);
-//document.querySelector('#map').onwheel = getCapturedSampleList;
+map.on("move", moveFunc)
 
-mapTest.on("mouseup", removeMoveFlagAndDraw);
-mapTest.on("mousedown", setMoveFlag);
-mapTest.on("move", getCapturedSampleList);
-mapTest.on("move", sliderUpdating);
-
+function moveFunc(){
+    if (!isMove) {
+        console.log("valid move")
+        //getCapturedSampleList()
+        //sliderUpdating()
+    }
+}
 
 function setMoveFlag() {
+    console.log("mouse up")
     isMove = true
 }
 
 function removeMoveFlagAndDraw() {
+    console.log("mouse down")
     if (isMove) {
         isMove = false;
         getCapturedSampleList();
-
     }
     //readDataAndPlotPieChart();
     //getCapturedSampleListChecker=false
-    sliderDisplay;//to solve disappear problem
-    sliderUpdating;
+    //sliderDisplay;//to solve disappear problem
+    //sliderUpdating;
 
-    if (sliderStatusChecker == "non-exist") {
-        slider.noUiSlider.reset();
-    }
+    // if (sliderStatusChecker == "non-exist") {
+    //     slider.noUiSlider.reset();
+    // }
 
 }
 
@@ -57,6 +59,7 @@ function removeMoveFlagAndDraw() {
 dateRangeCheker = false
 //キャプチャエリア内のサンプルの組成を取得
 function getCapturedSampleList() {
+    console.log("getCapturedSampleList")
     //if(getCapturedSampleListChecker===true){
     //    console.log("runed once, CANCELED getCapturedSampleList")
     //    return
@@ -67,8 +70,8 @@ function getCapturedSampleList() {
     var pos = map.getCenter();
     var zoom = map.getZoom();
 
-    var pos = mapTest.getCenter();
-    var zoom = mapTest.getZoom();
+    //var pos = mapTest.getCenter();
+    //var zoom = mapTest.getZoom();
     readDataAndPlotPieChart();
     var coordination = "?taxo=" + taxo + "&lat=" + pos.lat + "&long=" + pos.lng + "&ratio=" + zoom
     history.replaceState(null, "", coordination)
@@ -111,14 +114,14 @@ function getCapturedSampleList() {
         })
 
     } else {
-        sampleDataSet.forEach(sampleData => {
-            if (south < sampleData.latitude && sampleData.latitude < north) {
-                //日本の左右のアメリカ大陸両方にマーカーを表示するため、重複してマーカーを描画していることに注意
-                if ((west < sampleData.longitude && sampleData.longitude < east) || (west < sampleData.longitude + 360 && sampleData.longitude + 360 < east)) {
-                    capturedSampleList.push(sampleData);
-                }
-            }
-        })
+        // sampleDataSet.forEach(sampleData => {
+        //     if (south < sampleData.latitude && sampleData.latitude < north) {
+        //         //日本の左右のアメリカ大陸両方にマーカーを表示するため、重複してマーカーを描画していることに注意
+        //         if ((west < sampleData.longitude && sampleData.longitude < east) || (west < sampleData.longitude + 360 && sampleData.longitude + 360 < east)) {
+        //             capturedSampleList.push(sampleData);
+        //         }
+        //     }
+        // })
     }
 
     //drawLiddgeLineChangeable(capturedSampleList)
@@ -131,11 +134,11 @@ function getCapturedSampleList() {
     getCapturedSampleListChecker = true
 }
 
-
 async function fetchFiles(urls) {
     // 各URLに対してfetchリクエストを作成し、Promise.allSettledに渡す
     const promises = urls.map(url =>
-        fetch(url).then(response => response.ok ? response.json() : Promise.reject(new Error('Failed to load')))
+        fetch(url)
+            .then(response => response.ok ? response.json() : Promise.reject(new Error('Failed to load')))
     );
 
     // すべてのプロミスがsettled（完了）するのを待つ
@@ -160,24 +163,26 @@ function addKeyVal(obj, key, valueToAdd) {
 }
 
 function drawLiddgeLine3(capturedSampleList) {
+    console.log("drawLiddgeLine3")
     // get map boundary
-    let bounds = mapTest.getBounds();
+    let bounds = map.getBounds();
     // get SouthWest and NorthEast coordinate
     let southWest = bounds.getSouthWest();
     let northEast = bounds.getNorthEast();
-    let blockSize = getBlockSize(mapTest.getZoom())
+    let blockSize = getBlockSize(map.getZoom())
     let targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
-    console.log(targetBlocks)
+    //console.log(targetBlocks)
 
     let urls = [];
     for (let y_x of targetBlocks) {
-        console.log(y_x)
-        if(!(blockSize in graphData)){
-            graphData[blockSize]={}
+        //console.log(y_x)
+        if (!(blockSize in graphData)) {
+            graphData[blockSize] = {}
         }
-        if(!(y_x in graphData[blockSize])){
-            graphData[blockSize][y_x]=[] //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
-            urls.push(`layered_data/${language}/${blockSize}/${y_x}/month.json`)
+        if (!(y_x in graphData[blockSize])) {
+            graphData[blockSize][y_x] = [] //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
+            let fileUrl = `layered_data/${language}/${blockSize}/${y_x}/month.json`
+            urls.push(fileUrl)
         }
     }
 
@@ -189,7 +194,7 @@ function drawLiddgeLine3(capturedSampleList) {
         let sumList = {} //{month: {species: sum_percentage}}
         for (let blockTableData of dataList) { //dataList: [x, y, monthdata:[{month, num, data:[{name, value}]}]]<-全ブロック分
             //blockTableData: x, y, monthdata:[{month, num, data:[{name, value}]}]<-1ブロック分
-            graphData[blockSize][blockTableData.y+"/"+blockTableData.x] = blockTableData.monthdata
+            graphData[blockSize][blockTableData.y + "/" + blockTableData.x] = blockTableData.monthdata
         }
         for (let y_x of targetBlocks) { //targetBlocks: 集計対象となる全ブロックの場所情報
             for (let blockMonthTableData of graphData[blockSize][y_x]) {
@@ -206,7 +211,7 @@ function drawLiddgeLine3(capturedSampleList) {
                 }
             }
         }
-        console.log(fishList)
+        //console.log(fishList)
         let averageList = {} //{month: {species: sum_percentage}}
         for (let month in sumList) {
             if (!(month in averageList)) {
@@ -216,7 +221,7 @@ function drawLiddgeLine3(capturedSampleList) {
                 addKeyVal(averageList[month], species, sumList[month][species] / numList[month])
             }
         }
-        console.log(averageList)
+        //console.log(averageList)
 
         let fishArray = Object.keys(fishList)
         let dateArray = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
@@ -241,129 +246,129 @@ function drawLiddgeLine3(capturedSampleList) {
         var graph = d3.select("#graph");
         var bargraph = d3.select("#bargraph")
         graphName.style.display = "block";
-        //サンプルが存在しないときは、グラフを描画しない
-        if (capturedSampleList.length == 0) {
-            //svgタグを削除
-            graph.select("svg").remove();
-            bargraph.select("svg").remove();
-            sliderArea.style.display = "none";
-            lowerHandleNumber.style.display = "none";
-            upperHandleNumber.style.display = "none";
-            graphName.style.display = "none";
-            graphChecker = "nonexist"
-            return;
-        }
+        // //サンプルが存在しないときは、グラフを描画しない
+        // if (capturedSampleList.length == 0) {
+        //     //svgタグを削除
+        //     graph.select("svg").remove();
+        //     bargraph.select("svg").remove();
+        //     sliderArea.style.display = "none";
+        //     lowerHandleNumber.style.display = "none";
+        //     upperHandleNumber.style.display = "none";
+        //     graphName.style.display = "none";
+        //     graphChecker = "nonexist"
+        //     return;
+        // }
 
 
-        //魚種リストと日付のリストを取得
-        var counter = 0
-        capturedSampleList.forEach(sampleData => {
-            var sampleDate = sampleData.date
-            //console.log("readed-----------"+sampleDate)
-            if (sampleData.date.indexOf("T") !== -1) {
-                sampleData.data = sampleData.date.toString()
-                var datetransformed = timeTransformer(sampleData.data)
-                sampleDate = datetransformed
-                sampleDate = Date.parse(sampleDate)
-                sampleDate = new Date(sampleDate)
-                var tempYear = sampleDate.getFullYear()
-                var tempMonth = sampleDate.getMonth() + 1
-                var tempDay = sampleDate.getDate()
-                //console.log("readed month-----------"+tempMonth)
-                if (tempMonth.toString().length === 1) {
-                    tempMonth = "0" + tempMonth
-                }
-                if (tempDay.toString().length === 1) {
-                    tempDay = "0" + tempDay
-                }
-                //console.log("changed month-----------"+tempMonth)
+        // //魚種リストと日付のリストを取得
+        // var counter = 0
+        // capturedSampleList.forEach(sampleData => {
+        //     var sampleDate = sampleData.date
+        //     //console.log("readed-----------"+sampleDate)
+        //     if (sampleData.date.indexOf("T") !== -1) {
+        //         sampleData.data = sampleData.date.toString()
+        //         var datetransformed = timeTransformer(sampleData.data)
+        //         sampleDate = datetransformed
+        //         sampleDate = Date.parse(sampleDate)
+        //         sampleDate = new Date(sampleDate)
+        //         var tempYear = sampleDate.getFullYear()
+        //         var tempMonth = sampleDate.getMonth() + 1
+        //         var tempDay = sampleDate.getDate()
+        //         //console.log("readed month-----------"+tempMonth)
+        //         if (tempMonth.toString().length === 1) {
+        //             tempMonth = "0" + tempMonth
+        //         }
+        //         if (tempDay.toString().length === 1) {
+        //             tempDay = "0" + tempDay
+        //         }
+        //         //console.log("changed month-----------"+tempMonth)
 
-                sampleDate = tempYear + "-" + tempMonth + "-" + tempDay
-            }
-            //console.log("changed-----------"+sampleDate)
-            if (isInvalidDate(sampleDate)) {
-                return;
-            }
+        //         sampleDate = tempYear + "-" + tempMonth + "-" + tempDay
+        //     }
+        //     //console.log("changed-----------"+sampleDate)
+        //     if (isInvalidDate(sampleDate)) {
+        //         return;
+        //     }
 
-            let tempdate = sampleDate;
-            let tempdateTrans = new Date(tempdate);
-            //console.log("tempdate----------------"+tempdate)
-            //console.log("tempdateTrans----------------"+tempdateTrans)//Time with time zones cannot be converted
+        //     let tempdate = sampleDate;
+        //     let tempdateTrans = new Date(tempdate);
+        //     //console.log("tempdate----------------"+tempdate)
+        //     //console.log("tempdateTrans----------------"+tempdateTrans)//Time with time zones cannot be converted
 
-            //console.log(lowerHandleForRange)
-            //console.log(upperHandleForRange)
-            //Determine if the sample is within the date range
-            if (tempdateTrans >= lowerHandleForRange && tempdateTrans <= upperHandleForRange) {
-                dateRangeCheker = true
-                //dateListAlltimeChangeable=true
-            }
-            //console.log(dateRangeCheker)
+        //     //console.log(lowerHandleForRange)
+        //     //console.log(upperHandleForRange)
+        //     //Determine if the sample is within the date range
+        //     if (tempdateTrans >= lowerHandleForRange && tempdateTrans <= upperHandleForRange) {
+        //         dateRangeCheker = true
+        //         //dateListAlltimeChangeable=true
+        //     }
+        //     //console.log(dateRangeCheker)
 
-            if (dateRangeCheker == true) {
-                //console.log("!!!!!!"+tempdate)
+        //     if (dateRangeCheker == true) {
+        //         //console.log("!!!!!!"+tempdate)
 
-                if (timemode === "monthly") {
-                    tempdate = "2017-" + tempdate.substring(5, 7) + "-01";
-                }
-                //console.log("push content------"+tempdate)
-                dateList.push(tempdate)
-                //console.log(dateList)
-                //fishList = fishList.concat(Object.keys(sampleData.fish));
-                //console.log(fishList)
-                if (!(tempdate in numDataInDay)) {
-                    numDataInDay[tempdate] = 1;
-                } else {
-                    numDataInDay[tempdate]++;
-                }
-                Object.keys(sampleData.fish).forEach(sampleFish => {
-                    if (!(sampleFish in timelineData)) {
-                        timelineData[sampleFish] = {};
-                        numtimelineData[sampleFish] = {};
-                    }
-                    if (!(tempdate in timelineData[sampleFish])) {
-                        timelineData[sampleFish][tempdate] = sampleData.fish[sampleFish];
-                        numtimelineData[sampleFish][tempdate] = 1;
-                    } else {
-                        timelineData[sampleFish][tempdate] += sampleData.fish[sampleFish];
-                        numtimelineData[sampleFish][tempdate]++;
-                    }
-                });
-            }
-            dateRangeCheker = false
-        });
+        //         if (timemode === "monthly") {
+        //             tempdate = "2017-" + tempdate.substring(5, 7) + "-01";
+        //         }
+        //         //console.log("push content------"+tempdate)
+        //         dateList.push(tempdate)
+        //         //console.log(dateList)
+        //         //fishList = fishList.concat(Object.keys(sampleData.fish));
+        //         //console.log(fishList)
+        //         if (!(tempdate in numDataInDay)) {
+        //             numDataInDay[tempdate] = 1;
+        //         } else {
+        //             numDataInDay[tempdate]++;
+        //         }
+        //         Object.keys(sampleData.fish).forEach(sampleFish => {
+        //             if (!(sampleFish in timelineData)) {
+        //                 timelineData[sampleFish] = {};
+        //                 numtimelineData[sampleFish] = {};
+        //             }
+        //             if (!(tempdate in timelineData[sampleFish])) {
+        //                 timelineData[sampleFish][tempdate] = sampleData.fish[sampleFish];
+        //                 numtimelineData[sampleFish][tempdate] = 1;
+        //             } else {
+        //                 timelineData[sampleFish][tempdate] += sampleData.fish[sampleFish];
+        //                 numtimelineData[sampleFish][tempdate]++;
+        //             }
+        //         });
+        //     }
+        //     dateRangeCheker = false
+        // });
 
-        var numDataInDaymax = 0;
-        let numDataInDayList = [];
-
-
-        for (var key in numDataInDay) {
-            numDataInDaymax = Math.max(numDataInDaymax, numDataInDay[key]);
-            numDataInDayList.push({ "date": new Date(key), "value": numDataInDay[key] });
-        }
-
-        //console.log(dateList)
-        if (dateList.length == 0) {
-            //svgタグを削除
-            graph.select("svg").remove();
-            bargraph.select("svg").remove();
-            return;
-        }
-
-        //日付リストの要素を積集合をとる。
-        dateList = Array.from(new Set(dateList));
-
-        //魚種リストの積集合をとる。
-        fishList = Array.from(new Set(fishArray));
-
-        //日付の昇順にソートする
-        dateList.sort(function (a, b) {
-            return (a > b ? 1 : -1);
-        });
+        // var numDataInDaymax = 0;
+        // let numDataInDayList = [];
 
 
-        //リスト内の最大・最小の日付を取得
-        var minDate = new Date(dateList[0]);
-        var maxDate = new Date(dateList[dateList.length - 1]);
+        // for (var key in numDataInDay) {
+        //     numDataInDaymax = Math.max(numDataInDaymax, numDataInDay[key]);
+        //     numDataInDayList.push({ "date": new Date(key), "value": numDataInDay[key] });
+        // }
+
+        // //console.log(dateList)
+        // if (dateList.length == 0) {
+        //     //svgタグを削除
+        //     graph.select("svg").remove();
+        //     bargraph.select("svg").remove();
+        //     return;
+        // }
+
+        // //日付リストの要素を積集合をとる。
+        // dateList = Array.from(new Set(dateList));
+
+        // //魚種リストの積集合をとる。
+        // fishList = Array.from(new Set(fishArray));
+
+        // //日付の昇順にソートする
+        // dateList.sort(function (a, b) {
+        //     return (a > b ? 1 : -1);
+        // });
+
+
+        // //リスト内の最大・最小の日付を取得
+        // var minDate = new Date(dateList[0]);
+        // var maxDate = new Date(dateList[dateList.length - 1]);
 
         //x軸の端点の日付を取得
         var scaleMax = new Date("2017-12-31");
@@ -519,21 +524,21 @@ function drawLiddgeLine3(capturedSampleList) {
             formatPower = function (d) { return (d + "").split("").map(function (c) { return superscript[c]; }).join(""); },
             formatTick = function (d) { return 10 + formatPower(Math.round(Math.log(d) / Math.LN10)); };
 
-        var baryScale = d3.scaleLog()
-            .domain([numDataInDaymax, 0.90000000001])
-            .range([0, barheight]);
+        // var baryScale = d3.scaleLog()
+        //     .domain([numDataInDaymax, 0.90000000001])
+        //     .range([0, barheight]);
 
-        //バーの表示
-        svgbar.append("g")
-            .selectAll("rect")
-            .data(numDataInDayList)
-            .enter()
-            .append("rect")
-            .attr("x", function (d) { return barxScale(d.date) - barwidth / 2; })
-            .attr("y", function (d) { return baryScale(d.value); })
-            .attr("width", barwidth)
-            .attr("height", function (d) { return barheight - baryScale(d.value); })
-            .attr("fill", "#27A391");
+        // //バーの表示
+        // svgbar.append("g")
+        //     .selectAll("rect")
+        //     .data(numDataInDayList)
+        //     .enter()
+        //     .append("rect")
+        //     .attr("x", function (d) { return barxScale(d.date) - barwidth / 2; })
+        //     .attr("y", function (d) { return baryScale(d.value); })
+        //     .attr("width", barwidth)
+        //     .attr("height", function (d) { return barheight - baryScale(d.value); })
+        //     .attr("fill", "#27A391");
 
         //x軸を追加する
         if (timemode == "monthly") {
@@ -553,11 +558,11 @@ function drawLiddgeLine3(capturedSampleList) {
                 )
         }
 
-        //y軸を追加する
-        svgbar.append("g")
-            .attr("transform", "translate(0, 0)")
-            .call(d3.axisLeft(baryScale).ticks(10, 0));
-        //console.log(numDataInDayList)
+        // //y軸を追加する
+        // svgbar.append("g")
+        //     .attr("transform", "translate(0, 0)")
+        //     .call(d3.axisLeft(baryScale).ticks(10, 0));
+        // //console.log(numDataInDayList)
         numDataInDayList = []
         graphChecker = "exist"
 

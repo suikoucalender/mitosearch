@@ -27,7 +27,7 @@ slider.noUiSlider.on('update', function (values, handle) {
     upperHandleForRange=new Date(upperHandle);
     lowerHandleForRange=new Date(lowerHandle);
     //Retrieve new data and plot
-    getCapturedSampleList()
+    //getCapturedSampleList()
 });
 
 

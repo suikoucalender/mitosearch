@@ -23,8 +23,8 @@ router.get('/', function (req, res) {
     }
     let language = req.headers["accept-language"]
     language = language[0]+language[1]
-    let sampleDataObjList = getSampleDataObjList(taxo,language);
-    let allFishList = getAllFishList(sampleDataObjList);
+    let sampleDataObjList = [] //getSampleDataObjList(taxo,language);
+    let allFishList = [] //getAllFishList(sampleDataObjList);
     let fishClassifyDataObj = fishClassify(taxo,language);
     let latitude=req.query.lat;
     let longitude=req.query.long;

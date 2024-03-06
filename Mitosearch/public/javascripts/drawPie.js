@@ -1,76 +1,394 @@
-console.log("=====drawPie.js=====")
-
 //地図を描画するDOM要素を選択し、デフォルトの緯度経度、縮尺を設定。
 var map = L.map("map").setView([latitude, longitude], ratio);
 
 //地図データの取得元とZoom範囲を設定する。
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { minZoom: 2, maxZoom: 18 }).addTo(map);
+let tmptest = d3.select("#tmptemp")
 
-//円グラフを一時的に描画するための領域を取得(実際には表示されない)
-var tmp = d3.select("#tmp");
+//new added
+let blockPlotRecorder = {}
+let mapLevelRecoder = map.getZoom()
 
-//MarkerClusterGroupオブジェクトを作成。グラフのアイコンはdefineClusterIcon関数で描画する
-var markers = L.markerClusterGroup({ iconCreateFunction: defineClusterIcon }); //important part 2？
+let loadedData = {}
 
-var radius = 25;
+//readDataAndPlotPieChart()
 
 //pieチャートデータセット用関数の設定
 var pie = d3.pie()
     .value(function (d) { return d.value; })
     .sort(null);
 
-sampleDataSet.forEach(sampleData => {
-    //各サンプルの円グラフが描画されたマーカーアイコンを取得
-    var myIcon = drawPieIcon(radius, sampleData);
+function readDataAndPlotPieChart() {
+    //get the zoom level of map
+    ratio = map.getZoom()
+    console.log("map zoom level", ratio)
+    //this array is {“map zoom level”：blocksize}
+    let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
+    let blockSize = ratioAndBlock[ratio]
 
-    var marker1 = L.marker([sampleData.latitude, sampleData.longitude], { icon: myIcon });
-    //marker1だけだと地図左側のアメリカ大陸にマーカーがマッピングされてしまうので、日本より右側に見えるアメリカ大陸にもマーカーをマッピングする処理
-    var marker2 = L.marker([sampleData.latitude, sampleData.longitude + 360], { icon: myIcon }); 
+    //new added(changed)
+    //  Get all pie chart
+    //var elementsToRemove = document.querySelectorAll('#map .leaflet-marker-icon');
+    // And remove all the pie chart, to aviod multiple overlapping drawings
+    //elementsToRemove.forEach(function(element) {
+    //element.remove();
+    //});
 
-    //popup表示を作成するために円グラフを描画用データ
-    var pieInputList = createPieInput(sampleData);
 
-    //popup表示で使用するHTMLを作成
-    var popupContent = "<table><tr><td><u>sample</u></td><td><a target='_blank' href='https://www.ncbi.nlm.nih.gov/sra/?term=" + sampleData.sample + "'><u>" + sampleData.sample + "</u></a></td></tr><tr><td><u>date</u></td><td><u>" + sampleData.date + "</u></td></tr>";
-    pieInputList.forEach(fishData => {
-        popupContent = popupContent + "<tr><td>" + fishData.name + "</td><td>" + fishData.value.toFixed(2) + "</td></tr>";
-    })
-    popupContent = popupContent + "</table>"
+    let radiusTest = 25;
+    //pieチャートデータセット用関数の設定
+    let pie = d3.pie()
+        .value(function (d) { return d.value; })
+        .sort(null);
+    if (blockSize !== "special") {//this part, map level is 1-17
+        //Avoiding the loss of decimal precision
 
-    //tooltipオブジェクトを作成し、マーカーにバインド
-    marker1.bindTooltip(popupContent, { direction: 'bottom' }).openTooltip();
-    marker2.bindTooltip(popupContent, { direction: 'bottom' }).openTooltip();
+        // get map boundary
+        let bounds = map.getBounds();
+        // get SouthWest and NorthEast coordinate
+        let southWest = bounds.getSouthWest();
+        let northEast = bounds.getNorthEast();
+        console.log("blockSize, southWest, northEast: ",blockSize, southWest, northEast)
+        //get leftlong, rightlong, lowerlat, upperlat, adjust with blocksize
+        let leftlong = Decimal.mul(Decimal.floor(Decimal.div(southWest.lng, blockSize)), blockSize)
+        let rightlong = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lng, blockSize)), blockSize)
+        let lowerlat = Decimal.mul(Decimal.floor(Decimal.div(southWest.lat, blockSize)), blockSize)
+        let upperlat = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lat, blockSize)), blockSize)
+        if (blockSize > 1) {
+            leftlong = Math.floor(southWest.lng / blockSize) * blockSize
+            rightlong = Math.ceil(northEast.lng / blockSize) * blockSize
+            lowerlat = Math.floor(southWest.lat / blockSize) * blockSize
+            upperlat = Math.ceil(northEast.lat / blockSize) * blockSize
+        }
+        console.log("leftlong, rightlong, lowerlat, upperlat", leftlong, rightlong, lowerlat, upperlat)
 
-    //popupオブジェクトを作成し、マーカにバインド
-    var popup = L.popup().setContent(popupContent);
-    marker1.bindPopup(popup);
-    marker2.bindPopup(popup);
+        //decide the data reading range
+        let longStart = Decimal.sub(leftlong, blockSize)
+        let longEnd = Decimal.add(rightlong, blockSize)
+        let latStart = Decimal.sub(lowerlat, blockSize)
+        let latEnd = Decimal.add(upperlat, blockSize)
+        if (blockSize > 1) {
+            longStart = leftlong - blockSize
+            longEnd = rightlong + blockSize
+            latStart = lowerlat - blockSize
+            latEnd = upperlat + blockSize
+        }
+        console.log("longStart, longEnd, latStart, latEnd", longStart, longEnd, latStart, latEnd)
 
-    //マーカーをMarkerClusterGroupオブジェクトレイヤーに追加する
-    markers.addLayer(marker1);
-    markers.addLayer(marker2);
+        //list up the urls
+        let urlsFishAndRatio = []
+        let urlsPieCoord = []
+        let urlsOutput = []
+        let pieDataSetTrial = {}
 
-});
+        for (x = longStart; x <= longEnd; x = Decimal.add(x, blockSize)) {
 
-markers.on('clustermouseover', function (e) { drawClusterPopup(e) }); 
+            let long = x
+            //Ensure readings are within range
+            if (long > 180) {
+                long = Decimal.sub(long, 360)
+            }
+            if (long < -180) {
+                long = Decimal.add(long, 360)
+            }
 
-//MarkerClusterGroupオブジェクトレイヤーをマップオブジェクトレイヤーに追加する
-map.addLayer(markers);
+            for (y = latStart; y <= latEnd; y = Decimal.add(y, blockSize)) {
 
-redrawPolygon();
+                let lat = y
+                let folderPath = `layered_data/${language}/${blockSize}/${lat}/${long}`;
+                let speciesPath = `${folderPath}/fishAndRatio.json`;
+                let coordPath = `${folderPath}/pieCoord.json`;
+                let outputPath = `${folderPath}/output.json`
+                urlsFishAndRatio.push(speciesPath)
+                urlsPieCoord.push(coordPath)
+                urlsOutput.push(outputPath)
+            }
+        }
+        //console.log(urlsFishAndRatio)
+        //console.log(urlsPieCoord)
+        //console.log(urlsOutput)
 
-//半径の情報とサンプルのデータを引数として、円グラフを描画するSVG要素を記述し、Leafletのマーカーアイコンとして返値する関数。
-function drawPieIcon(radius, sampleData) {
-    //グラフ描画用のデータに変換
-    var pieInputList = createPieInput(sampleData);
-    //console.log(pieInputList)
+        for (i = 0; i < urlsFishAndRatio.length; i++) {
+
+            let urlPieCoord = urlsPieCoord[i]
+            if (urlPieCoord in loadedData) {
+                continue //ロードされているデータは飛ばす
+            } else {
+                loadedData[urlPieCoord] = 1
+            }
+
+            let urlFishAndRatio = urlsFishAndRatio[i]
+            let urlOutput = urlsOutput[i]
+            let pieCoorTmp
+            let pieDataTmp
+            //console.log(fetch(urlOutput))
+
+            //new added  not working well
+            //console.log(urlFishAndRatio)
+            let matches = urlFishAndRatio.split('/');
+            //console.log(matches)
+            let firstNumber = matches[3];
+            let secondNumber = matches[4];
+            let combinedString = `${firstNumber},${secondNumber}`;
+            //console.log(combinedString);
+            blockPlotRecorder[combinedString] = 1;
+
+            //new added
+            //if(blockPlotRecorder[combinedString]===1){
+            //return;
+            //}
+
+
+
+            fetch(urlPieCoord)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    //console.log("*******",response.json())
+                    return response.json();
+                })
+                .then(dataCoor => {
+                    pieCoorTmp = dataCoor;
+                    //console.log(`pieCoorTmp`, pieCoorTmp);//OK
+                    //console.log(urlFishAndRatio)
+                    fetch(urlFishAndRatio)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            //console.log("*******",response.json())
+                            return response.json();
+                        })
+                        .then(data => {
+
+
+
+                            pieDataTmp = data;
+                            //console.log(`pieDataTmp`, pieDataTmp);
+
+                            //Ordered from largest to smallest percentage
+                            let pieDataTmpSorted = pieDataTmp.sort(function (a, b) {
+                                return b.value - a.value;
+                            });
+                            //console.log("pie data sorted", pieDataTmpSorted)
+
+                            //preparing the popup content
+                            let htmlStringForPopup = urlPieCoord+"<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
+                            //let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
+                            let i = 0
+                            pieDataTmpSorted.forEach(function (item) {
+                                if (i < 20) {
+                                    htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+                                }
+                                i += 1
+                            });
+                            htmlStringForPopup += '</table>';
+                            //console.log(pieCoorTmp[2])
+                            //draw pie
+                            let customIcon = drawPieIcontest(radiusTest, pieDataTmp, pieCoorTmp[2])
+
+                            //add pie chart//can not get data
+                            let markersTest1 = L.marker([pieCoorTmp[0], pieCoorTmp[1]], { icon: customIcon }).addTo(map);
+                            let markersTest2 = L.marker([pieCoorTmp[0], Decimal.add(pieCoorTmp[1], 360)], { icon: customIcon }).addTo(map);//？
+                            markersTest1.bindPopup(htmlStringForPopup)
+                            //markersTest2.bindPopup(htmlStringForPopup)
+
+                            blockPlotRecorder[combinedString] = 1;
+
+                        })
+                        .catch(error => {
+                            console.error('There was a problem with the fetch operation:', error);
+                        });
+                })
+                .catch(error => {
+                    //データが存在しない場合このエラーになる
+                    //console.error('There was a problem with the fetch operation:', error);
+                });
+        }
+        console.log("blockPlotRecorder: ", blockPlotRecorder)
+
+    } else {//This is when the map zoom level goes to 18
+        //get the center location of map
+        let mapCenter = map.getCenter();
+        console.log("map center location", mapCenter)
+
+        //calculate the block which we need
+        let roundmapCenterLat = Math.floor(mapCenter.lat);
+        let roundmapCenterLng = Math.floor(mapCenter.lng);
+        console.log("map center round lat", roundmapCenterLat)
+        console.log("map center round lng", roundmapCenterLng)
+        let expectedNeededBlock = `${roundmapCenterLat},${roundmapCenterLng}`
+
+        let blockData;
+        //setting the offset of pie chart
+        let offset = 0.0002
+
+        let dataIconSaver
+
+        //read block
+        fetch(`layered_data/${language}/special/index/${expectedNeededBlock}.json`)
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                // data processing
+                blockData = data
+
+                mainLevel18(blockData, offset, radiusTest)
+
+
+            })
+
+
+            .catch(error => {
+                console.error('Fetch error:', error);
+            });
+
+    }
+
+}
+
+
+
+
+function calculatePlotArrangement(sampleNumber) {
+    let rows = 1;
+    let columns = 1;
+
+    while (rows * columns < sampleNumber) {
+        if (rows === columns) {
+            columns++;
+        } else {
+            rows++;
+        }
+    }
+
+    return { rows, columns };
+
+}
+
+
+
+
+function adjustPieChartCenter(index, baseLatitude, baseLongitude, plotArrangement, offset) {
+    const columns = plotArrangement.columns;
+
+    // determinate the columns of plot, calculate the lng of pie
+    const centerLng = baseLongitude + (index % columns) * offset;
+    // determinate the rows of plot, calculate the lat of pie
+    const centerLat = baseLatitude + Math.floor(index / columns) * offset;
+
+    // return the center of pie
+    return { centerLat, centerLng };
+}
+
+
+async function fetchSampleData(urlSample) {
+    try {
+        const response = await fetch(urlSample);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+
+
+// Call fetchSampleData with async/await
+async function plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, offset, radiusTest) {
+    const sampleDataTmp = await fetchSampleData(urlSample);
+    console.log('Data outside fetchData:', sampleDataTmp);
+    let pieDataTmp = sampleDataTmp["species"]
+    console.log(`sample name`, sampleDataTmp["ID"]);
+    console.log(`lat`, sampleDataTmp["lat"]);
+    console.log(`lng`, sampleDataTmp["long"]);
+    console.log(`fish ratio`, pieDataTmp);
+
+
+    let pieCenter = adjustPieChartCenter(j, baseLat, baseLng, plotArrangement, offset)
+
+
+    //preparing the popup content
+    let htmlStringForPopup = "<table><tr><td><u>Sample name</u></td><td><u>" + sampleDataTmp["ID"] + "</u></td></tr>";
+    htmlStringForPopup += '<tr><td><u>Date</u></td><td><u>' + sampleDataTmp["time"] + '</u></td><td>';
+    let k = 0
+    pieDataTmp.forEach(function (item) {
+        if (k < 20) {
+            htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+        }
+        k += 1
+    });
+    htmlStringForPopup += '</table>';
+
+    //draw pie
+    let customIcon = drawPieIcontest(radiusTest, pieDataTmp, 1)
+
+    console.log(pieCenter)
+
+    //add pie chart
+    let markersTest1 = L.marker([pieCenter["centerLat"], pieCenter["centerLng"]], { icon: customIcon }).addTo(map);
+    markersTest1.bindPopup(htmlStringForPopup)
+
+
+
+}
+
+
+async function mainLevel18(blockData, offset, radiusTest) {
+    let dataIconSaver
+    //read data in the block
+    for (i = 0; i < blockData.length; i++) {
+        //get lat,lng
+        let blockDataKeys = Object.keys(blockData[i])
+        //get sample number
+        let sampleNumber = blockData[i][blockDataKeys].length
+
+        console.log("sample number", sampleNumber)
+
+        //decide rows and column of pie chart
+        let plotArrangement = calculatePlotArrangement(sampleNumber)
+        console.log("plot arangement", plotArrangement)
+
+
+
+        //
+        console.log(blockDataKeys)
+        console.log(blockData[i][blockDataKeys])
+
+        let coordinate = blockDataKeys[0]
+        coordinate = coordinate.split(',')
+        //lat
+        let baseLat = parseFloat(coordinate[0])
+        let baseLng = parseFloat(coordinate[1])
+        console.log(baseLat)
+        console.log(baseLng)
+
+        console.log("----------------------------")
+        for (let j = 0; j < sampleNumber; j++) {
+
+            let urlSample = `layered_data/${language}/special/${blockData[i][blockDataKeys][j]}`
+            console.log(urlSample)
+            console.log(j)
+            await plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, offset, radiusTest)
+
+
+        }
+    }
+}
+
+
+function drawPieIcontest(radius, pieInputList, sampleNo) {
+
     //円弧を描画する
+    if (sampleNo < 10) { sampleNo = 10 }
+    radius = radius * (Math.log10(sampleNo))
     var arc = d3.arc()
         .outerRadius(radius)
         .innerRadius(radius / 3);
 
-    //pieチャートSVG要素の設定
-    tmp.append("svg").attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")").attr("height", 2 * radius).attr("width", 2 * radius)
+    tmptest.append("svg").attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")").attr("height", 2 * radius).attr("width", 2 * radius)
         .append("g").attr("transform", "translate(" + radius + "," + radius + ")")
         .selectAll(".pie")
         .data(pie(pieInputList))
@@ -79,48 +397,43 @@ function drawPieIcon(radius, sampleData) {
         .attr("class", "pie")
         .append("path")
         .attr("d", arc)
-        .attr("fill", function (d) { return selectColor(d) })
+        .attr("fill", function (d) { return selectColortest(d) })
         .attr("opacity", 0.9) //透過を指定するプロパティ
         .attr("stroke", "white"); //アウトラインの色を指定するプロパティ
 
-    //マーカ用のdivIconを作成する。
-    var myIcon = L.divIcon({ html: tmp.html(), className: 'marker-cluster' });
-    //console.log(myIcon)
-    //一時描画領域に描画したSVG要素を削除
-    tmp.select("svg").remove();
-
-    return myIcon;
+    var customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster' });
+    //console.log(customIcon)
+    tmptest.select("svg").remove();
+    return customIcon
 }
 
-function selectColor(d) {
+
+function pieChartOverlap(circle1, circle2) {
+    var dx = circle1.centerX - circle2.centerX;
+    var dy = circle1.centerY - circle2.centerY;
+    var distance = Math.sqrt(dx * dx + dy * dy);
+    return distance < circle1.radius + circle2.radius;
+}
+
+function filterInRange(fileLocas, minLat, maxLat, minLon, maxLon) {
+    return fileLocas.filter(Loca => {
+        const parts = Loca.split(',');
+        const lat = parseFloat(parts[0]);
+        const lon = parseFloat(parts[1]);
+
+        return lat >= minLat && lat <= maxLat && lon >= minLon && lon <= maxLon;
+    });
+}
+
+
+function selectColortest(d) {
     var color = d3.scaleLinear()
         .domain([0, 1, 2, 3, 4, 5, 6, 7, 8])
         .range(["#ffffff", "#d9d9d9", "#ffde80", "#92d050", "#c7d0b0", "#c39143", "#ff99ff", "#ea8c8c", "#83d3ff"]);
     return color(fishClassifyDataObj[d.data.name]);
 }
 
-//各サンプルのデータを引数と渡すことでグラフ描画用のデータに変換する関数
-function createPieInput(sampleData) {
-    var fishData = sampleData["fish"];
-    var fishNameList = Object.keys(fishData);
-    var pieInputList = [];
-    fishNameList.forEach(fishName => {
-        var pieInput = { name: fishName, value: fishData[fishName] };
-        pieInputList.push(pieInput);
-    });
 
-    return pieInputList;
-}
-
-//markerClusterGroup用のアイコンの作成
-function defineClusterIcon(cluster) {
-    let { iconRadius, clusterData } = calc_clusterComp(cluster)
-
-    //クラスター内の魚種組成の円グラフが描画されたマーカーアイコンを取得
-    var myClusterIcon = drawPieIcon(iconRadius, clusterData);
-
-    return myClusterIcon;
-}
 
 function drawClusterPopup(e) {
     let cluster = e.layer;
@@ -139,72 +452,4 @@ function drawClusterPopup(e) {
     toolTipContent = toolTipContent + "</table>";
     e.propagatedFrom.bindTooltip(toolTipContent).openTooltip();
 
-}
-
-function calc_clusterComp(cluster) {
-    //クラスターの子要素を取得
-    var children = cluster.getAllChildMarkers();
-
-    //アイコンの半径を算出
-    var iconRadius = radius + 0.05 * children.length;
-
-    //クラスター内の魚種組成を集計(データは各サンプルのpopupから取得している)
-    var clusterData = { fish: {} };
-    var total = 0;
-
-    children.forEach(child => {
-        var sampleData = child._tooltip._content;
-        sampleData = sampleData.split("</tr>");
-        for (var i = 2; i < sampleData.length - 1; i++) {
-            var fishData = sampleData[i].split("</td><td>");
-            var fishName = fishData[0].replace("<tr><td>", "");
-            var fishStock = parseFloat(fishData[1].replace("</td>", ""));
-            if (fishName in clusterData.fish) {
-                clusterData.fish[fishName] += parseFloat(fishStock);
-            } else {
-                clusterData.fish[fishName] = parseFloat(fishStock);
-            }
-            total += parseFloat(fishStock);
-        }
-    })
-
-    //組成をTotal100になるように調整
-    var magnification = 100 / total;
-
-    Object.keys(clusterData.fish).forEach(fishName => {
-        clusterData.fish[fishName] = clusterData.fish[fishName] * magnification;
-    });
-
-    return { iconRadius: iconRadius, clusterData: clusterData };
-}
-
-function object_array_sort(data, key, order) {
-    //デフォは降順(DESC)
-    var num_a = -1;
-    var num_b = 1;
-
-    if (order === 'asc') {//指定があれば昇順(ASC)
-        num_a = 1;
-        num_b = -1;
-    }
-
-    data = data.sort(function (a, b) {
-        var x = a[key];
-        var y = b[key];
-        if (x > y) return num_a;
-        if (x < y) return num_b;
-        return 0;
-    });
-
-    return data; // ソート後の配列を返す
-}
-
-function redrawPolygon(){
-    if(polygoncheker=="exist"){
-        var geoJsonLayer = L.geoJSON(polygonCoordinate).addTo(map);
-        geoJsonLayer.eachLayer(function (layer) {
-          layer._path.id = 'polygonlayer';
-        });
-        polygoncheker="exist"
-    }
 }
