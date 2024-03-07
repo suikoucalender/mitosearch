@@ -1,12 +1,12 @@
 
 //commonMito.js
 
-function getBlockSize(ratio){
+function getBlockSize(ratio) {
     let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
     return ratioAndBlock[ratio]
 }
 
-function getTargetBlocks(southWest, northEast, blockSize){
+function getTargetBlocks(southWest, northEast, blockSize) {
 
     let leftlong = Decimal.mul(Decimal.floor(Decimal.div(southWest.lng, blockSize)), blockSize)
     let rightlong = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lng, blockSize)), blockSize)
@@ -19,7 +19,7 @@ function getTargetBlocks(southWest, northEast, blockSize){
         upperlat = Math.ceil(northEast.lat / blockSize) * blockSize
     }
     console.log("leftlong, rightlong, lowerlat, upperlat", leftlong, rightlong, lowerlat, upperlat)
-    
+
     //decide the data reading range
     let longStart = Decimal.sub(leftlong, blockSize)
     let longEnd = Decimal.add(rightlong, blockSize)
@@ -32,12 +32,12 @@ function getTargetBlocks(southWest, northEast, blockSize){
         latEnd = upperlat + blockSize
     }
     console.log("longStart, longEnd, latStart, latEnd", longStart, longEnd, latStart, latEnd)
-    
+
     //ブロックをすべて列挙する
     let listBlocks = []
-    
+
     for (let x = longStart; x <= longEnd; x = Decimal.add(x, blockSize)) {
-    
+
         let long = x
         //Ensure readings are within range
         //if (long > 180) {
@@ -46,19 +46,19 @@ function getTargetBlocks(southWest, northEast, blockSize){
         //if (long < -180) {
         //    long = Decimal.add(long, 360)
         //}
-    
+
         for (let y = latStart; y <= latEnd; y = Decimal.add(y, blockSize)) {
             //console.log(x,y)
             let lat = y
-            listBlocks.push(lat+"/"+long)
+            listBlocks.push({ y: lat, x: long })
         }
     }
     return listBlocks
-    
+
 }
 
-function removeAllPieChart(){
-    
+function removeAllPieChart() {
+
     //new added(changed)
     //  Get all pie chart
     let elementsToRemove = document.querySelectorAll('#map .leaflet-marker-icon');
@@ -310,20 +310,20 @@ $("#button").click(function () {
         data: { fishList: fishList },
         dataType: "text"
     })
-    .done(function (res) {
-        res = JSON.parse(res);
-        sampleDataSet = res.new_sampleDataObjList;
-        console.log(sampleDataSet)
-        fishClassifyDataObj = res.new_fishClassifyDataObj;
-        console.log(fishClassifyDataObj)
-        map.remove();
+        .done(function (res) {
+            res = JSON.parse(res);
+            sampleDataSet = res.new_sampleDataObjList;
+            console.log(sampleDataSet)
+            fishClassifyDataObj = res.new_fishClassifyDataObj;
+            console.log(fishClassifyDataObj)
+            map.remove();
 
-        //appendScript("javascripts/drawPie.js");
-        //appendScript("javascripts/drawLiddgeLine.js");
+            //appendScript("javascripts/drawPie.js");
+            //appendScript("javascripts/drawLiddgeLine.js");
 
-        load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
+            load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
 
-    })
+        })
 })
 
 function load_sync_js(src_list) {
@@ -372,14 +372,14 @@ const undoBtn = document.getElementById("undo");
 const pointBtn = document.getElementById("point");
 let dotnumber = 0
 
-let functioncheker="off"
+let functioncheker = "off"
 let polygonCoordinate = {
-  "type": "MultiPolygon",
-  "coordinates": [
-    [[]]
-  ]
+    "type": "MultiPolygon",
+    "coordinates": [
+        [[]]
+    ]
 }
-let polygoncheker="nonexist"
+let polygoncheker = "nonexist"
 
 //v2への更新にあたり使用不可能
 // pointBtn.addEventListener("click", e => {
@@ -428,7 +428,7 @@ let polygoncheker="nonexist"
 //     map.off('click');
 //     functioncheker="off"
 //     pointBtn.className="iconPolygon";
-    
+
 //   }
 // });
 
@@ -444,12 +444,12 @@ let polygoncheker="nonexist"
 //     ]
 //   }
 //   polygoncheker="nonexist"
-  
+
 //   //map.off('click');
 //   getCapturedSampleList();
 //   sliderUpdating();
 //   slider.noUiSlider.reset();
-  
+
 // })
 
 
@@ -468,6 +468,7 @@ let blockPlotRecorder = {}
 let mapLevelRecoder = map.getZoom()
 
 let loadedData = {}
+let pieData = {}
 
 //readDataAndPlotPieChart()
 
@@ -476,7 +477,7 @@ let pie = d3.pie()
     .value(function (d) { return d.value; })
     .sort(null);
 
-function deletePieChartLoadedData(){
+function deletePieChartLoadedData() {
     loadedData = {}
 }
 
@@ -485,17 +486,8 @@ function readDataAndPlotPieChart() {
     ratio = map.getZoom()
     console.log("map zoom level", ratio)
     //this array is {“map zoom level”：blocksize}
-    let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
-    let blockSize = ratioAndBlock[ratio]
-
-    //new added(changed)
-    //  Get all pie chart
-    //var elementsToRemove = document.querySelectorAll('#map .leaflet-marker-icon');
-    // And remove all the pie chart, to aviod multiple overlapping drawings
-    //elementsToRemove.forEach(function(element) {
-    //element.remove();
-    //});
-
+    //let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
+    let blockSize = getBlockSize(map.getZoom())
 
     let radiusTest = 25;
     //pieチャートデータセット用関数の設定
@@ -510,54 +502,26 @@ function readDataAndPlotPieChart() {
         // get SouthWest and NorthEast coordinate
         let southWest = bounds.getSouthWest();
         let northEast = bounds.getNorthEast();
-        console.log("blockSize, southWest, northEast: ",blockSize, southWest, northEast)
-        //get leftlong, rightlong, lowerlat, upperlat, adjust with blocksize
-        let leftlong = Decimal.mul(Decimal.floor(Decimal.div(southWest.lng, blockSize)), blockSize)
-        let rightlong = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lng, blockSize)), blockSize)
-        let lowerlat = Decimal.mul(Decimal.floor(Decimal.div(southWest.lat, blockSize)), blockSize)
-        let upperlat = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lat, blockSize)), blockSize)
-        if (blockSize > 1) {
-            leftlong = Math.floor(southWest.lng / blockSize) * blockSize
-            rightlong = Math.ceil(northEast.lng / blockSize) * blockSize
-            lowerlat = Math.floor(southWest.lat / blockSize) * blockSize
-            upperlat = Math.ceil(northEast.lat / blockSize) * blockSize
-        }
-        console.log("leftlong, rightlong, lowerlat, upperlat", leftlong, rightlong, lowerlat, upperlat)
-
-        //decide the data reading range
-        let longStart = Decimal.sub(leftlong, blockSize)
-        let longEnd = Decimal.add(rightlong, blockSize)
-        let latStart = Decimal.sub(lowerlat, blockSize)
-        let latEnd = Decimal.add(upperlat, blockSize)
-        if (blockSize > 1) {
-            longStart = leftlong - blockSize
-            longEnd = rightlong + blockSize
-            latStart = lowerlat - blockSize
-            latEnd = upperlat + blockSize
-        }
-        console.log("longStart, longEnd, latStart, latEnd", longStart, longEnd, latStart, latEnd)
+        //描画範囲の経度緯度情報を取得する
+        let targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
 
         //list up the urls
         let urlsFishAndRatio = []
         let urlsPieCoord = []
         let urlsOutput = []
-        let pieDataSetTrial = {}
 
-        for (x = longStart; x <= longEnd; x = Decimal.add(x, blockSize)) {
-
-            let long = x
-            //Ensure readings are within range
-            if (long > 180) {
-                long = Decimal.sub(long, 360)
+        for (let y_x_map of targetBlocks) {
+            const y_x = y_x_map.y + "/" + y_x_map.x
+            const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360)*360
+            const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
+            const y_x_normalized = y_x_map.y + "/" + x_normalized
+            //console.log(y_x)
+            if (!(blockSize in pieData)) {
+                pieData[blockSize] = {}
             }
-            if (long < -180) {
-                long = Decimal.add(long, 360)
-            }
-
-            for (y = latStart; y <= latEnd; y = Decimal.add(y, blockSize)) {
-
-                let lat = y
-                let folderPath = `layered_data/${language}/${blockSize}/${lat}/${long}`;
+            if (!(y_x_normalized in pieData[blockSize])) {
+                pieData[blockSize][y_x_normalized] = {} //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
+                let folderPath = `layered_data/${language}/${blockSize}/${y_x_normalized}`
                 let speciesPath = `${folderPath}/fishAndRatio.json`;
                 let coordPath = `${folderPath}/pieCoord.json`;
                 let outputPath = `${folderPath}/output.json`
@@ -570,105 +534,81 @@ function readDataAndPlotPieChart() {
         //console.log(urlsPieCoord)
         //console.log(urlsOutput)
 
-        for (i = 0; i < urlsFishAndRatio.length; i++) {
+        // 2つのfetchFiles関数の実行をPromise.allでラップする
+        Promise.all([fetchFiles(urlsPieCoord), fetchFiles(urlsFishAndRatio)])
+            .then(([dataPieCoordArray, dataFishRatioArray]) => {
+                console.log("Downloaded Pie data: ", dataPieCoordArray, dataFishRatioArray)
+                for(let dataPieCoord of dataPieCoordArray){
+                    const items = dataPieCoord.url.split("/")
+                    const y = items[items.length-3]
+                    const x = items[items.length-2]
+                    const y_x = y + "/" + x
+                    //console.log("items: ", items)
+                    pieData[blockSize][y_x]["y"]=dataPieCoord.data[0]
+                    pieData[blockSize][y_x]["x"]=dataPieCoord.data[1]
+                    pieData[blockSize][y_x]["n"]=dataPieCoord.data[2]
+                    //console.log(dataPieCoord.data)
+                }
+                for(let dataFishRatio of dataFishRatioArray){
+                    const items = dataFishRatio.url.split("/")
+                    const y = items[items.length-3]
+                    const x = items[items.length-2]
+                    const y_x = y + "/" + x
+                    //console.log("items: ", items)
+                    pieData[blockSize][y_x]["data"]=dataFishRatio.data
+                }
+                //console.log("pieData: ",pieData)
 
-            let urlPieCoord = urlsPieCoord[i]
-            if (urlPieCoord in loadedData) {
-                continue //ロードされているデータは飛ばす
-            } else {
-                loadedData[urlPieCoord] = 1
-            }
+                targetBlocks.forEach(y_x_map => {
+                    const y_x = y_x_map.y + "/" + y_x_map.x
+                    const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360)*360
+                    const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
+                    const y_x_normalized = y_x_map.y + "/" + x_normalized
+                    //console.log(dx_value, y_x_normalized)
 
-            let urlFishAndRatio = urlsFishAndRatio[i]
-            let urlOutput = urlsOutput[i]
-            let pieCoorTmp
-            let pieDataTmp
-            //console.log(fetch(urlOutput))
-
-            //new added  not working well
-            //console.log(urlFishAndRatio)
-            let matches = urlFishAndRatio.split('/');
-            //console.log(matches)
-            let firstNumber = matches[3];
-            let secondNumber = matches[4];
-            let combinedString = `${firstNumber},${secondNumber}`;
-            //console.log(combinedString);
-            blockPlotRecorder[combinedString] = 1;
-
-            //new added
-            //if(blockPlotRecorder[combinedString]===1){
-            //return;
-            //}
-
-
-
-            fetch(urlPieCoord)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    //console.log("*******",response.json())
-                    return response.json();
-                })
-                .then(dataCoor => {
-                    pieCoorTmp = dataCoor;
-                    //console.log(`pieCoorTmp`, pieCoorTmp);//OK
-                    //console.log(urlFishAndRatio)
-                    fetch(urlFishAndRatio)
-                        .then(response => {
-                            if (!response.ok) {
-                                throw new Error('Network response was not ok');
-                            }
-                            //console.log("*******",response.json())
-                            return response.json();
-                        })
-                        .then(data => {
-
-
-
-                            pieDataTmp = data;
-                            //console.log(`pieDataTmp`, pieDataTmp);
-
+                    if (!(y_x in loadedData)) {
+                        //描画されていないデータが対象
+                        if("data" in pieData[blockSize][y_x_normalized]){
+                            //空でないデータが対象
+                            let pieDataTmp = pieData[blockSize][y_x_normalized]["data"];
+                            let y = pieData[blockSize][y_x_normalized]["y"];
+                            let x = pieData[blockSize][y_x_normalized]["x"];
+                            let n = pieData[blockSize][y_x_normalized]["n"];
+                            //console.log(`pieDataTmp`, y_x, pieDataTmp, x, y, n);
+                            
                             //Ordered from largest to smallest percentage
                             let pieDataTmpSorted = pieDataTmp.sort(function (a, b) {
                                 return b.value - a.value;
                             });
                             //console.log("pie data sorted", pieDataTmpSorted)
-
+    
                             //preparing the popup content
-                            let htmlStringForPopup = urlPieCoord+"<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
+                            let htmlStringForPopup = "block: "+x+","+y
+                             + "<table><tr><td><u>No. of samples</u></td><td><u>" + n + "</u></td></tr>";
                             //let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
-                            let i = 0
-                            pieDataTmpSorted.forEach(function (item) {
-                                if (i < 20) {
-                                    htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
-                                }
-                                i += 1
-                            });
+                            for(let i = 0; i<Math.min(20, pieDataTmpSorted.length); i++){
+                                let item = pieDataTmpSorted[i]
+                                htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+                            }
                             htmlStringForPopup += '</table>';
-                            //console.log(pieCoorTmp[2])
                             //draw pie
-                            let customIcon = drawPieIcontest(radiusTest, pieDataTmp, pieCoorTmp[2])
-
+                            let customIcon = drawPieIcontest(radiusTest, pieDataTmp, n)
+    
                             //add pie chart//can not get data
-                            let markersTest1 = L.marker([pieCoorTmp[0], pieCoorTmp[1]], { icon: customIcon }).addTo(map);
-                            let markersTest2 = L.marker([pieCoorTmp[0], Decimal.add(pieCoorTmp[1], 360)], { icon: customIcon }).addTo(map);//？
+                            let markersTest1 = L.marker([y, new Decimal(x).add(dx_value)], { icon: customIcon }).addTo(map);
+                            //let markersTest2 = L.marker([y, Decimal.add(x, 360)], { icon: customIcon }).addTo(map);//？
                             markersTest1.bindPopup(htmlStringForPopup)
                             //markersTest2.bindPopup(htmlStringForPopup)
-
-                            blockPlotRecorder[combinedString] = 1;
-
-                        })
-                        .catch(error => {
-                            console.error('There was a problem with the fetch operation:', error);
-                        });
+                            
+                        }
+                    } 
                 })
-                .catch(error => {
-                    //データが存在しない場合このエラーになる
-                    //console.error('There was a problem with the fetch operation:', error);
-                });
-        }
-        console.log("blockPlotRecorder: ", blockPlotRecorder)
+            })
+            .catch(error => {
+                // エラー処理
+                console.error('エラーが発生しました:', error);
+            });
+
 
     } else {//This is when the map zoom level goes to 18
         //get the center location of map
@@ -961,8 +901,8 @@ taxonomyLegend.addEventListener("click", e => {
 expansionBtn.addEventListener("click", e => {
     //change the width of map to 100%
     mapArea.style.width = "100%";
-    pointBtn.className="iconPolygon";
-    functioncheker="off";
+    pointBtn.className = "iconPolygon";
+    functioncheker = "off";
     //remove map
     map.remove();
 
@@ -985,10 +925,10 @@ expansionBtn.addEventListener("click", e => {
 
     //Determine which button should be removed 
     //based on the slider's display state
-    if (sliderStatusChecker=="non-exist"){
-        timeFilterOnBtn.style.display="none"
-    }else{
-        timeFilterOffBtn.style.display="none"
+    if (sliderStatusChecker == "non-exist") {
+        timeFilterOnBtn.style.display = "none"
+    } else {
+        timeFilterOffBtn.style.display = "none"
     }
 
     //Determine which button should be removed 
@@ -1006,8 +946,8 @@ expansionBtn.addEventListener("click", e => {
 restoreBtn.addEventListener("click", e => {
     //set mat width to 40%
     mapArea.style.width = "40%";
-    pointBtn.className="iconPolygon";
-    functioncheker="off";
+    pointBtn.className = "iconPolygon";
+    functioncheker = "off";
     map.remove();
 
     //reload map
@@ -1024,10 +964,10 @@ restoreBtn.addEventListener("click", e => {
 
     //Determine which button should be shown
     //based on the slider's display state
-    if (sliderStatusChecker=="non-exist"){
-        timeFilterOnBtn.style.display="block"
-    }else{
-        timeFilterOffBtn.style.display="block"
+    if (sliderStatusChecker == "non-exist") {
+        timeFilterOnBtn.style.display = "block"
+    } else {
+        timeFilterOffBtn.style.display = "block"
     }
 
     //Determine which button should be shown
@@ -1052,7 +992,7 @@ alltimeBtn.addEventListener("click", e => {
     //show monthly button
     monthlyBtn.style.display = "block";
     //reload slider
-    sliderDisplay(); 
+    sliderDisplay();
 });
 
 //if monthly buttion is clicked
@@ -1082,10 +1022,10 @@ timeFilterOnBtn.addEventListener("click", e => {
 //if time filter of button is clicked
 timeFilterOffBtn.addEventListener("click", e => {
     //change slider disply state
-    sliderStatusChecker="non-exist"
+    sliderStatusChecker = "non-exist"
     //reset the slider
     slider.noUiSlider.reset();
-    userTimeSettingChecker=false
+    userTimeSettingChecker = false
     //remove slider related elements
     sliderDisplay()
 });
@@ -1121,9 +1061,9 @@ map.on("mouseup", removeMoveFlagAndDraw);
 map.on("mousedown", setMoveFlag);
 map.on("move", moveFunc)
 
-function moveFunc(){
+function moveFunc() {
     const curZoomSize = map.getZoom()
-    if(curZoomSize !== oldZoomSize){
+    if (curZoomSize !== oldZoomSize) {
         oldZoomSize = curZoomSize;
         console.log("Zoom Level Changed: ", curZoomSize)
 
@@ -1244,7 +1184,17 @@ async function fetchFiles(urls) {
     // 各URLに対してfetchリクエストを作成し、Promise.allSettledに渡す
     const promises = urls.map(url =>
         fetch(url)
-            .then(response => response.ok ? response.json() : Promise.reject(new Error('Failed to load')))
+            .then(response => {
+                if (!response.ok) {
+                    // リクエストが失敗した場合は、Promiseをrejectする
+                    return Promise.reject(new Error('Failed to load'));
+                }
+                // response.json()も非同期操作なので、その結果を待つ必要があります
+                return response.json().then(data => ({
+                    url: url, // 元のURLを含む
+                    data: data // レスポンスのデータ
+                }));
+            })
     );
 
     // すべてのプロミスがsettled（完了）するのを待つ
@@ -1280,30 +1230,38 @@ function drawLiddgeLine3(capturedSampleList) {
     //console.log(targetBlocks)
 
     let urls = [];
-    for (let y_x of targetBlocks) {
+    for (let y_x_map of targetBlocks) {
+        const y_x = y_x_map.y + "/" + y_x_map.x
+        const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360)*360
+        const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
+        const y_x_normalized = y_x_map.y + "/" + x_normalized
         //console.log(y_x)
         if (!(blockSize in graphData)) {
             graphData[blockSize] = {}
         }
         if (!(y_x in graphData[blockSize])) {
-            graphData[blockSize][y_x] = [] //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
-            let fileUrl = `layered_data/${language}/${blockSize}/${y_x}/month.json`
+            graphData[blockSize][y_x_normalized] = [] //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
+            let fileUrl = `layered_data/${language}/${blockSize}/${y_x_normalized}/month.json`
             urls.push(fileUrl)
         }
     }
 
     fetchFiles(urls).then(dataList => {
-        console.log('ダウンロードできたファイルの結果:', dataList);
+        console.log('Downloaded graph data: ', dataList);
 
         let fishList = {} //{fishname:1}
         let numList = {} //{month: num}
         let sumList = {} //{month: {species: sum_percentage}}
         for (let blockTableData of dataList) { //dataList: [x, y, monthdata:[{month, num, data:[{name, value}]}]]<-全ブロック分
             //blockTableData: x, y, monthdata:[{month, num, data:[{name, value}]}]<-1ブロック分
-            graphData[blockSize][blockTableData.y + "/" + blockTableData.x] = blockTableData.monthdata
+            graphData[blockSize][blockTableData.data.y + "/" + blockTableData.data.x] = blockTableData.data.monthdata
         }
-        for (let y_x of targetBlocks) { //targetBlocks: 集計対象となる全ブロックの場所情報
-            for (let blockMonthTableData of graphData[blockSize][y_x]) {
+        for (let y_x_map of targetBlocks) { //targetBlocks: 集計対象となる全ブロックの場所情報
+            const y_x = y_x_map.y + "/" + y_x_map.x
+            const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360)*360
+            const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
+            const y_x_normalized = y_x_map.y + "/" + x_normalized
+            for (let blockMonthTableData of graphData[blockSize][y_x_normalized]) {
                 //blockMonthTableData: {month, num, data:[{name, value}]}<-1月分
                 addKeyVal(numList, blockMonthTableData.month, blockMonthTableData.num)
                 for (let blockMonthSpeciesTableData of blockMonthTableData.data) {
@@ -1352,7 +1310,7 @@ function drawLiddgeLine3(capturedSampleList) {
         var graph = d3.select("#graph");
         var bargraph = d3.select("#bargraph")
         graphName.style.display = "block";
-        
+
         //x軸の端点の日付を取得
         var scaleMax = new Date("2017-12-31");
         var scaleMin = new Date("2016-12-01");
@@ -1673,7 +1631,7 @@ function iconLocation() {
     var graphWidth = graph.offsetWidth;
 
     var iconTop = mapTop + 30
-        //0.02 * mapHeight;
+    //0.02 * mapHeight;
     helpBtn.style.top = iconTop + "px";
     expansionBtn.style.top = iconTop + "px";
     restoreBtn.style.top = iconTop + "px";
@@ -1681,13 +1639,13 @@ function iconLocation() {
     var helpLeft = mapLeft + 50;
     helpBtn.style.left = helpLeft + "px";
 
-    var pointLeft= mapLeft + 10;
+    var pointLeft = mapLeft + 10;
     pointBtn.style.left = pointLeft + "px";
     var pointTop = mapTop + 80;
     pointBtn.style.top = pointTop + "px";
 
 
-    var undoLeft= mapLeft + 10;
+    var undoLeft = mapLeft + 10;
     undoBtn.style.left = undoLeft + "px";
     var undoTop = pointTop + 40;
     undoBtn.style.top = undoTop + "px";
@@ -1710,17 +1668,17 @@ function iconLocation() {
     var monthlyLeft = graphLeft + 0.90 * graphWidth;
     monthlyBtn.style.left = monthlyLeft + "px";
 
-    var graphNameTop=mapTop+30;
-    graphName.style.top=graphNameTop + "px";
+    var graphNameTop = mapTop + 30;
+    graphName.style.top = graphNameTop + "px";
     //console.log(bargraphAlltimexLeft)
     //console.log(bargraphxLeft)
-    if(bargraphxLeft>0){
-        var graphNameLeft=bargraphxLeft-40; 
-    }else{
-        var graphNameLeft=bargraphAlltimexLeft-40; 
+    if (bargraphxLeft > 0) {
+        var graphNameLeft = bargraphxLeft - 40;
+    } else {
+        var graphNameLeft = bargraphAlltimexLeft - 40;
     }
-   
-    graphName.style.left=graphNameLeft+"px";
+
+    graphName.style.left = graphNameLeft + "px";
 
 };
 
@@ -1755,7 +1713,7 @@ window.addEventListener('resize', function () {
 //     //change the date label on the webpage
 //     document.getElementById('lowerHandleNumber').innerHTML=lowerHandle
 //     document.getElementById('upperHandleNumber').innerHTML=upperHandle
-    
+
 //     //change date format
 //     var lowerHandleFormatChange=lowerHandle.split('/')
 //     lowerHandleFormatChange=lowerHandleFormatChange.join('-')
@@ -1780,24 +1738,24 @@ document.getElementById("upperHandleNumberDatePicker").addEventListener("blur", 
 
 
 function dateChangedByLowerCalander() {
-    userLowerCalanderSettingStamp=timestamp(document.getElementById("lowerHandleNumberDatePicker").value);
-    if (userLowerCalanderSettingStamp<minTimestamp){
-        userLowerCalanderSettingStamp=minTimestamp
-        var lowerHandleFormatChange=lowerHandle.split('/')
-        lowerHandleFormatChange=lowerHandleFormatChange.join('-')
-        document.getElementById("lowerHandleNumberDatePicker").value=lowerHandleFormatChange
+    userLowerCalanderSettingStamp = timestamp(document.getElementById("lowerHandleNumberDatePicker").value);
+    if (userLowerCalanderSettingStamp < minTimestamp) {
+        userLowerCalanderSettingStamp = minTimestamp
+        var lowerHandleFormatChange = lowerHandle.split('/')
+        lowerHandleFormatChange = lowerHandleFormatChange.join('-')
+        document.getElementById("lowerHandleNumberDatePicker").value = lowerHandleFormatChange
     }
-    userTimeSettingChecker=true
+    userTimeSettingChecker = true
     sliderUpdating()
 }
 function dateChangedByUpperCalander() {
-    userUpperCalanderSettingStamp=timestamp(document.getElementById("upperHandleNumberDatePicker").value);
-    if (userUpperCalanderSettingStamp>maxTimestamp){
-        userUpperCalanderSettingStamp=maxTimestamp
-        var upperHandleFormatChange=upperHandle.split('/')
-        upperHandleFormatChange=upperHandleFormatChange.join('-')
-        document.getElementById("upperHandleNumberDatePicker").value=upperHandleFormatChange
+    userUpperCalanderSettingStamp = timestamp(document.getElementById("upperHandleNumberDatePicker").value);
+    if (userUpperCalanderSettingStamp > maxTimestamp) {
+        userUpperCalanderSettingStamp = maxTimestamp
+        var upperHandleFormatChange = upperHandle.split('/')
+        upperHandleFormatChange = upperHandleFormatChange.join('-')
+        document.getElementById("upperHandleNumberDatePicker").value = upperHandleFormatChange
     }
-    userTimeSettingChecker=true
+    userTimeSettingChecker = true
     sliderUpdating()
 }
