@@ -2,27 +2,32 @@
 //commonMito.js
 
 function getBlockSize(ratio) {
-    let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
-    return ratioAndBlock[ratio]
+    if(ratio === 18){
+        return "special"
+    }else{
+        //let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
+        //let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
+        //return ratioAndBlock[ratio]
+        const base2 = new Decimal(2);
+        const exponent = 6 - ratio;
+        const myunit = new Decimal(360).div(base2.pow(8))
+        const result = myunit.mul(base2.pow(exponent));
+        return result.toNumber()
+    }
 }
+let specialBlockSize = 0.0001220703125 //0.01
 
-let specialBlockSize = 0.01
-function getTargetBlocks(southWest, northEast, blockSize) {
+function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
     if(blockSize === "special"){
         blockSize = specialBlockSize
     }
+    blockSize = new Decimal(blockSize) //ここで扱う数字は全てDecimalオブジェクトに変換しておく
     //左、下は端数を切った値　右、上は端数を足した値
     let leftlong = Decimal.mul(Decimal.floor(Decimal.div(southWest.lng, blockSize)), blockSize)
     let rightlong = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lng, blockSize)), blockSize)
     let lowerlat = Decimal.mul(Decimal.floor(Decimal.div(southWest.lat, blockSize)), blockSize)
     let upperlat = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lat, blockSize)), blockSize)
-    if (blockSize > 1) {
-        leftlong = Math.floor(southWest.lng / blockSize) * blockSize
-        rightlong = Math.ceil(northEast.lng / blockSize) * blockSize
-        lowerlat = Math.floor(southWest.lat / blockSize) * blockSize
-        upperlat = Math.ceil(northEast.lat / blockSize) * blockSize
-    }
-    console.log("leftlong, rightlong, lowerlat, upperlat", leftlong, rightlong, lowerlat, upperlat)
+    console.log("leftlong, rightlong, lowerlat, upperlat", leftlong.toNumber(), rightlong.toNumber(), lowerlat.toNumber(), upperlat.toNumber())
 
     //上下左右ともにblockSizeだけ大きくしておく
     //decide the data reading range
@@ -30,36 +35,43 @@ function getTargetBlocks(southWest, northEast, blockSize) {
     let longEnd = Decimal.add(rightlong, blockSize)
     let latStart = Decimal.sub(lowerlat, blockSize)
     let latEnd = Decimal.add(upperlat, blockSize)
-    if (blockSize > 1) {
-        longStart = leftlong - blockSize
-        longEnd = rightlong + blockSize
-        latStart = lowerlat - blockSize
-        latEnd = upperlat + blockSize
-    }
-    console.log("longStart, longEnd, latStart, latEnd", longStart, longEnd, latStart, latEnd)
+    console.log("longStart, longEnd, latStart, latEnd", longStart.toNumber(), longEnd.toNumber(), latStart.toNumber(), latEnd.toNumber())
 
     //ブロックをすべて列挙する
     let listBlocks = []
 
-    for (let x = longStart; x <= longEnd; x = Decimal.add(x, blockSize)) {
-
+    mylineLayerGroup.clearLayers(); // グループ内のすべてのレイヤーを削除
+    for (let x = longStart; x.lessThanOrEqualTo(longEnd); x = x.add(blockSize)) {
         let long = x
-        //Ensure readings are within range
-        //if (long > 180) {
-        //    long = Decimal.sub(long, 360)
-        //}
-        //if (long < -180) {
-        //    long = Decimal.add(long, 360)
-        //}
+        addline(new Decimal(latStart).toNumber(), new Decimal(long).toNumber(), new Decimal(latEnd).toNumber(), new Decimal(long).toNumber())
+        //console.log("yline: ", blockSize.toNumber(), new Decimal(latStart).toNumber(), new Decimal(long).toNumber(), new Decimal(latEnd).toNumber(), new Decimal(long).toNumber())
 
-        for (let y = latStart; y <= latEnd; y = Decimal.add(y, blockSize)) {
-            //console.log(x,y)
+        for (let y = latStart; y.lessThanOrEqualTo(latEnd); y = y.add(blockSize)) {
+            //console.log("x,y: ",x,y,new Decimal(x).toNumber(),new Decimal(y).toNumber())
             let lat = y
-            listBlocks.push({ y: lat, x: long })
+            addline(new Decimal(lat).toNumber(), new Decimal(longStart).toNumber(), new Decimal(lat).toNumber(), new Decimal(longEnd).toNumber())
+            //console.log("xline: ", blockSize.toNumber(), new Decimal(lat).toNumber(), new Decimal(longStart).toNumber(), new Decimal(lat).toNumber(), new Decimal(longEnd).toNumber())
+            listBlocks.push({ y: new Decimal(lat).toString(), x: new Decimal(long).toString() })
+            //listBlocks.push({ y: lat, x: long })
         }
     }
     return listBlocks
 
+}
+
+function addline(lat1, long1, lat2, long2){
+    try{
+        // 東経139度に沿う線を描画
+        var polyline = L.polyline([
+            [lat1, long1], // 南緯90度, 東経139度
+            [lat2, long2]   // 北緯90度, 東経139度
+        ], {
+            color: 'red', // 線の色
+            weight: 1, // 線の太さ
+        }).addTo(mylineLayerGroup);
+    }catch(e){
+        console.log(lat1, long1, lat2, long2, e)
+    }
 }
 
 function removeAllPieChart() {
@@ -463,6 +475,7 @@ let polygoncheker = "nonexist"
 
 //地図を描画するDOM要素を選択し、デフォルトの緯度経度、縮尺を設定。
 let map = L.map("map").setView([latitude, longitude], ratio);
+let mylineLayerGroup = L.layerGroup().addTo(map);
 
 //地図データの取得元とZoom範囲を設定する。
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { minZoom: 2, maxZoom: 18 }).addTo(map);
@@ -494,7 +507,7 @@ function readDataAndPlotPieChart() {
     //let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
     let blockSize = getBlockSize(map.getZoom())
 
-    let radiusTest = 25;
+    let radiusTest = 15; //25;
     //pieチャートデータセット用関数の設定
     let pie = d3.pie()
         .value(function (d) { return d.value; })
@@ -520,7 +533,7 @@ function readDataAndPlotPieChart() {
             const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
             const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
             const y_x_normalized = y_x_map.y + "/" + x_normalized
-            //console.log(y_x)
+            //console.log("to be downloaded y_x: ", y_x, y_x_normalized)
             if (!(blockSize in pieData)) {
                 pieData[blockSize] = {}
             }
@@ -569,9 +582,10 @@ function readDataAndPlotPieChart() {
                     const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
                     const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
                     const y_x_normalized = y_x_map.y + "/" + x_normalized
-                    //console.log(dx_value, y_x_normalized)
+                    //console.log("y_x, dx_value, y_x_normalized", y_x, dx_value, y_x_normalized)
 
                     if (!(y_x in loadedData)) {
+                        //console.log("y_x will be shown, ", y_x, blockSize, y_x_normalized, pieData[blockSize]);
                         //描画されていないデータが対象
                         if ("data" in pieData[blockSize][y_x_normalized]) {
                             //空でないデータが対象
@@ -600,7 +614,7 @@ function readDataAndPlotPieChart() {
                             let customIcon = drawPieIcontest(radiusTest, pieDataTmp, n)
 
                             //add pie chart//can not get data
-                            let markersTest1 = L.marker([y, new Decimal(x).add(dx_value)], { icon: customIcon }).addTo(map);
+                            let markersTest1 = L.marker([new Decimal(y).toNumber(), new Decimal(x).add(dx_value).toNumber()], { icon: customIcon }).addTo(map);
                             //let markersTest2 = L.marker([y, Decimal.add(x, 360)], { icon: customIcon }).addTo(map);//？
                             markersTest1.bindPopup(htmlStringForPopup)
                             //markersTest2.bindPopup(htmlStringForPopup)
@@ -855,7 +869,6 @@ const sliderArea = document.getElementById("sliderArea")
 const slider = document.getElementById("slider")
 const lowerHandleNumber = document.getElementById("lowerHandleNumber")
 const upperHandleNumber = document.getElementById("upperHandleNumber")
-const graphName = document.getElementById("graphName")
 
 //buttons and elements status
 let timeBtnChecker = "alltimeBtn"
@@ -873,7 +886,6 @@ helpBtn.addEventListener("click", e => {
     sliderArea.style.display = "none";
     lowerHandleNumber.style.display = "none";
     upperHandleNumber.style.display = "none";
-    graphName.style.display = "none";
     timeFilterOnBtn.style.display = "none"
     timeFilterOffBtn.style.display = "none"
 });
@@ -916,7 +928,6 @@ expansionBtn.addEventListener("click", e => {
     sliderArea.style.display = "none";
     lowerHandleNumber.style.display = "none";
     upperHandleNumber.style.display = "none";
-    graphName.style.display = "none";
 
     //Determine which button should be removed 
     //based on the slider's display state
@@ -1309,7 +1320,6 @@ function drawLiddgeLine3(capturedSampleList) {
         //svgタグを追加し、幅と高さを設定
         var graph = d3.select("#graph");
         var bargraph = d3.select("#bargraph")
-        graphName.style.display = "block";
 
         //x軸の端点の日付を取得
         var scaleMax = new Date("2017-12-31");
@@ -1455,6 +1465,13 @@ function drawLiddgeLine3(capturedSampleList) {
             drawScale(timemode, svg, xScale);
         })
 
+        //データ数を示す棒グラフ作成
+        let numDataInDayList = [];
+        let numDataInMonthMax = 0
+        for (let month in numList) { // numList: {month: sample_n}
+            if(numList[month]>numDataInMonthMax){numDataInMonthMax=numList[month]}
+            numDataInDayList.push({ "date": new Date("2017-" + month + "-01"), "value": numList[month] });
+        }
         //SVG領域の設定
         var svgbar = bargraph.append("svg").attr("width", width + barmargin.left + barmargin.right).attr("height", barheight + barmargin.top + barmargin.bottom)
             .append("g").attr("transform", "translate(" + barmargin.left + "," + barmargin.top + ")");
@@ -1468,21 +1485,21 @@ function drawLiddgeLine3(capturedSampleList) {
             formatPower = function (d) { return (d + "").split("").map(function (c) { return superscript[c]; }).join(""); },
             formatTick = function (d) { return 10 + formatPower(Math.round(Math.log(d) / Math.LN10)); };
 
-        // var baryScale = d3.scaleLog()
-        //     .domain([numDataInDaymax, 0.90000000001])
-        //     .range([0, barheight]);
+        let baryScale = d3.scaleLog()
+             .domain([numDataInMonthMax, 0.90000000001])
+             .range([0, barheight]);
 
-        // //バーの表示
-        // svgbar.append("g")
-        //     .selectAll("rect")
-        //     .data(numDataInDayList)
-        //     .enter()
-        //     .append("rect")
-        //     .attr("x", function (d) { return barxScale(d.date) - barwidth / 2; })
-        //     .attr("y", function (d) { return baryScale(d.value); })
-        //     .attr("width", barwidth)
-        //     .attr("height", function (d) { return barheight - baryScale(d.value); })
-        //     .attr("fill", "#27A391");
+        //バーの表示
+        svgbar.append("g")
+            .selectAll("rect")
+            .data(numDataInDayList)
+            .enter()
+            .append("rect")
+            .attr("x", function (d) { return barxScale(d.date) - barwidth / 2; })
+            .attr("y", function (d) { return baryScale(d.value); })
+            .attr("width", barwidth)
+            .attr("height", function (d) { return barheight - baryScale(d.value); })
+            .attr("fill", "#27A391");
 
         //x軸を追加する
         if (timemode == "monthly") {
@@ -1502,11 +1519,20 @@ function drawLiddgeLine3(capturedSampleList) {
                 )
         }
 
-        // //y軸を追加する
-        // svgbar.append("g")
-        //     .attr("transform", "translate(0, 0)")
-        //     .call(d3.axisLeft(baryScale).ticks(10, 0));
-        // //console.log(numDataInDayList)
+        //y軸を追加する
+        svgbar.append("g")
+            .attr("transform", "translate(0, 0)")
+            .call(d3.axisLeft(baryScale).ticks(10, 0))
+            .append("text")
+            .attr("fill", "black")
+            .attr("text-anchor", "middle")
+            .attr("x", -(barheight - margin.top - margin.bottom) / 2 - margin.top)
+            .attr("y", -35)
+            .attr("transform", "rotate(-90)")
+            .attr("font-weight", "middle")
+            .attr("font-size", "10pt")
+            .text("#Samples");;
+        //console.log(numDataInDayList)
         numDataInDayList = []
         graphChecker = "exist"
 
@@ -1622,7 +1648,6 @@ function iconLocation() {
     var bargraphAlltimex = document.querySelector("#bargraphAlltime > svg > g > g:nth-child(2)")
     var bargraphxLeft = bargraphx.getBoundingClientRect().left;
     var bargraphAlltimexLeft = bargraphAlltimex.getBoundingClientRect().left;
-    var graphName = document.getElementById("graphName");
 
 
     //get the position and size of map and graph
@@ -1670,19 +1695,6 @@ function iconLocation() {
     alltimeBtn.style.left = alltimeLeft + "px";
     var monthlyLeft = graphLeft + 0.90 * graphWidth;
     monthlyBtn.style.left = monthlyLeft + "px";
-
-    var graphNameTop = mapTop + 30;
-    graphName.style.top = graphNameTop + "px";
-    //console.log(bargraphAlltimexLeft)
-    //console.log(bargraphxLeft)
-    if (bargraphxLeft > 0) {
-        var graphNameLeft = bargraphxLeft - 40;
-    } else {
-        var graphNameLeft = bargraphAlltimexLeft - 40;
-    }
-
-    graphName.style.left = graphNameLeft + "px";
-
 };
 
 //decide icons' position when all content loaded

@@ -39,9 +39,18 @@ for(let locationInfoLine of locationInfoLines){
     }
 }
 
-let blockSizes = { "2": "45", "3": "30", "4": "15", "5": "5", "6": "3", "7": "2", "8": "1", "9": "0.5", "10": "0.2", "11": "0.1", "12": "0.05", "14": "0.02", "17": "0.01" }
-for (const blockSizeKey in blockSizes) {
-    const blockSize = new Decimal(blockSizes[blockSizeKey])
+//let blockSizes = { "2": "45", "3": "30", "4": "15", "5": "5", "6": "3", "7": "2", "8": "1", "9": "0.5", "10": "0.2", "11": "0.1", "12": "0.05", "14": "0.02", "17": "0.01" }
+//let blockSizes = { "2": "15", "3": "5", "4": "3", "5": "2", "6": "1", "7": "0.5", "8": "0.2", "9": "0.1", "10": "0.05", "12": "0.02", "14": "0.01", "16": "0.005"}
+//let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
+for(let ratio=2; ratio<=18; ratio++){
+    
+    const base2 = new Decimal(2);
+    const exponent = 6 - ratio;
+    const myunit = new Decimal(360).div(base2.pow(8))
+    const result = myunit.mul(base2.pow(exponent));
+    const blockSize = result.toString();
+//for (const blockSizeKey in blockSizes) {
+    //const blockSize = new Decimal(blockSizes[blockSizeKey])
     console.log("blockSize: ", blockSize)
     //ブロックごとにどのSRR IDが来るかを分別
     //prepare block information
