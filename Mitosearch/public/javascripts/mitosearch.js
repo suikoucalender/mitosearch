@@ -6,8 +6,12 @@ function getBlockSize(ratio) {
     return ratioAndBlock[ratio]
 }
 
+let specialBlockSize = 0.01
 function getTargetBlocks(southWest, northEast, blockSize) {
-
+    if(blockSize === "special"){
+        blockSize = specialBlockSize
+    }
+    //左、下は端数を切った値　右、上は端数を足した値
     let leftlong = Decimal.mul(Decimal.floor(Decimal.div(southWest.lng, blockSize)), blockSize)
     let rightlong = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lng, blockSize)), blockSize)
     let lowerlat = Decimal.mul(Decimal.floor(Decimal.div(southWest.lat, blockSize)), blockSize)
@@ -20,6 +24,7 @@ function getTargetBlocks(southWest, northEast, blockSize) {
     }
     console.log("leftlong, rightlong, lowerlat, upperlat", leftlong, rightlong, lowerlat, upperlat)
 
+    //上下左右ともにblockSizeだけ大きくしておく
     //decide the data reading range
     let longStart = Decimal.sub(leftlong, blockSize)
     let longEnd = Decimal.add(rightlong, blockSize)
@@ -512,7 +517,7 @@ function readDataAndPlotPieChart() {
 
         for (let y_x_map of targetBlocks) {
             const y_x = y_x_map.y + "/" + y_x_map.x
-            const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360)*360
+            const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
             const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
             const y_x_normalized = y_x_map.y + "/" + x_normalized
             //console.log(y_x)
@@ -538,77 +543,76 @@ function readDataAndPlotPieChart() {
         Promise.all([fetchFiles(urlsPieCoord), fetchFiles(urlsFishAndRatio)])
             .then(([dataPieCoordArray, dataFishRatioArray]) => {
                 console.log("Downloaded Pie data: ", dataPieCoordArray, dataFishRatioArray)
-                for(let dataPieCoord of dataPieCoordArray){
+                for (let dataPieCoord of dataPieCoordArray) {
                     const items = dataPieCoord.url.split("/")
-                    const y = items[items.length-3]
-                    const x = items[items.length-2]
+                    const y = items[items.length - 3]
+                    const x = items[items.length - 2]
                     const y_x = y + "/" + x
                     //console.log("items: ", items)
-                    pieData[blockSize][y_x]["y"]=dataPieCoord.data[0]
-                    pieData[blockSize][y_x]["x"]=dataPieCoord.data[1]
-                    pieData[blockSize][y_x]["n"]=dataPieCoord.data[2]
+                    pieData[blockSize][y_x]["y"] = dataPieCoord.data[0]
+                    pieData[blockSize][y_x]["x"] = dataPieCoord.data[1]
+                    pieData[blockSize][y_x]["n"] = dataPieCoord.data[2]
                     //console.log(dataPieCoord.data)
                 }
-                for(let dataFishRatio of dataFishRatioArray){
+                for (let dataFishRatio of dataFishRatioArray) {
                     const items = dataFishRatio.url.split("/")
-                    const y = items[items.length-3]
-                    const x = items[items.length-2]
+                    const y = items[items.length - 3]
+                    const x = items[items.length - 2]
                     const y_x = y + "/" + x
                     //console.log("items: ", items)
-                    pieData[blockSize][y_x]["data"]=dataFishRatio.data
+                    pieData[blockSize][y_x]["data"] = dataFishRatio.data
                 }
                 //console.log("pieData: ",pieData)
 
                 targetBlocks.forEach(y_x_map => {
                     const y_x = y_x_map.y + "/" + y_x_map.x
-                    const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360)*360
+                    const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
                     const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
                     const y_x_normalized = y_x_map.y + "/" + x_normalized
                     //console.log(dx_value, y_x_normalized)
 
                     if (!(y_x in loadedData)) {
                         //描画されていないデータが対象
-                        if("data" in pieData[blockSize][y_x_normalized]){
+                        if ("data" in pieData[blockSize][y_x_normalized]) {
                             //空でないデータが対象
                             let pieDataTmp = pieData[blockSize][y_x_normalized]["data"];
                             let y = pieData[blockSize][y_x_normalized]["y"];
                             let x = pieData[blockSize][y_x_normalized]["x"];
                             let n = pieData[blockSize][y_x_normalized]["n"];
                             //console.log(`pieDataTmp`, y_x, pieDataTmp, x, y, n);
-                            
+
                             //Ordered from largest to smallest percentage
                             let pieDataTmpSorted = pieDataTmp.sort(function (a, b) {
                                 return b.value - a.value;
                             });
                             //console.log("pie data sorted", pieDataTmpSorted)
-    
+
                             //preparing the popup content
-                            let htmlStringForPopup = "block: "+x+","+y
-                             + "<table><tr><td><u>No. of samples</u></td><td><u>" + n + "</u></td></tr>";
+                            let htmlStringForPopup = "block: " + x + "," + y
+                                + "<table><tr><td><u>No. of samples</u></td><td><u>" + n + "</u></td></tr>";
                             //let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
-                            for(let i = 0; i<Math.min(20, pieDataTmpSorted.length); i++){
+                            for (let i = 0; i < Math.min(20, pieDataTmpSorted.length); i++) {
                                 let item = pieDataTmpSorted[i]
                                 htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
                             }
                             htmlStringForPopup += '</table>';
                             //draw pie
                             let customIcon = drawPieIcontest(radiusTest, pieDataTmp, n)
-    
+
                             //add pie chart//can not get data
                             let markersTest1 = L.marker([y, new Decimal(x).add(dx_value)], { icon: customIcon }).addTo(map);
                             //let markersTest2 = L.marker([y, Decimal.add(x, 360)], { icon: customIcon }).addTo(map);//？
                             markersTest1.bindPopup(htmlStringForPopup)
                             //markersTest2.bindPopup(htmlStringForPopup)
-                            
+
                         }
-                    } 
+                    }
                 })
             })
             .catch(error => {
                 // エラー処理
                 console.error('エラーが発生しました:', error);
             });
-
 
     } else {//This is when the map zoom level goes to 18
         //get the center location of map
@@ -639,16 +643,11 @@ function readDataAndPlotPieChart() {
 
                 mainLevel18(blockData, offset, radiusTest)
 
-
             })
-
-
             .catch(error => {
                 console.error('Fetch error:', error);
             });
-
     }
-
 }
 
 function calculatePlotArrangement(sampleNumber) {
@@ -728,35 +727,31 @@ async function plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, o
 async function mainLevel18(blockData, offset, radiusTest) {
     let dataIconSaver
     //read data in the block
-    for (i = 0; i < blockData.length; i++) {
+    console.log("blockData: ",blockData)
+    let baseLat
+    let baseLng
+    for (i = 0; i < blockData.length; i++) { //blockData: [{y_x: input_file}]
         //get lat,lng
         let blockDataKeys = Object.keys(blockData[i])
+        //console.log(blockDataKeys)
         //get sample number
         let sampleNumber = blockData[i][blockDataKeys].length
-
-        console.log("sample number", sampleNumber)
+        //console.log("sample number", sampleNumber)
 
         //decide rows and column of pie chart
         let plotArrangement = calculatePlotArrangement(sampleNumber)
-        console.log("plot arangement", plotArrangement)
-
-
-
-        //
-        console.log(blockDataKeys)
-        console.log(blockData[i][blockDataKeys])
+        console.log("plot arangement", plotArrangement, blockData[i][blockDataKeys])
 
         let coordinate = blockDataKeys[0]
         coordinate = coordinate.split(',')
         //lat
-        let baseLat = parseFloat(coordinate[0])
-        let baseLng = parseFloat(coordinate[1])
+        baseLat = parseFloat(coordinate[0])
+        baseLng = parseFloat(coordinate[1])
         console.log(baseLat)
         console.log(baseLng)
 
         console.log("----------------------------")
         for (let j = 0; j < sampleNumber; j++) {
-
             let urlSample = `layered_data/${language}/special/${blockData[i][blockDataKeys][j]}`
             console.log(urlSample)
             console.log(j)
@@ -1232,7 +1227,7 @@ function drawLiddgeLine3(capturedSampleList) {
     let urls = [];
     for (let y_x_map of targetBlocks) {
         const y_x = y_x_map.y + "/" + y_x_map.x
-        const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360)*360
+        const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
         const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
         const y_x_normalized = y_x_map.y + "/" + x_normalized
         //console.log(y_x)
@@ -1241,7 +1236,12 @@ function drawLiddgeLine3(capturedSampleList) {
         }
         if (!(y_x in graphData[blockSize])) {
             graphData[blockSize][y_x_normalized] = [] //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
-            let fileUrl = `layered_data/${language}/${blockSize}/${y_x_normalized}/month.json`
+            let fileUrl
+            if(blockSize !== "special"){
+                fileUrl = `layered_data/${language}/${blockSize}/${y_x_normalized}/month.json`
+            }else{
+                fileUrl = `layered_data/${language}/${specialBlockSize}/${y_x_normalized}/month.json`
+            }
             urls.push(fileUrl)
         }
     }
@@ -1258,7 +1258,7 @@ function drawLiddgeLine3(capturedSampleList) {
         }
         for (let y_x_map of targetBlocks) { //targetBlocks: 集計対象となる全ブロックの場所情報
             const y_x = y_x_map.y + "/" + y_x_map.x
-            const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360)*360
+            const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
             const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
             const y_x_normalized = y_x_map.y + "/" + x_normalized
             for (let blockMonthTableData of graphData[blockSize][y_x_normalized]) {
@@ -1326,9 +1326,11 @@ function drawLiddgeLine3(capturedSampleList) {
         for (let fishName of fishArray) {
             let fastdensityData = { fish: fishName, density: [] };
             let fastmax = 0;
+            let fastsum = 0;
             fastdensityData.density.push([scaleMin, 0]);
             for (let date of dateArray) {
                 if (date in averageList && fishName in averageList[date]) {
+                    fastsum+=averageList[date][fishName]
                     if (averageList[date][fishName] > fastmax) {
                         fastmax = averageList[date][fishName]
                     }
@@ -1343,12 +1345,13 @@ function drawLiddgeLine3(capturedSampleList) {
             fastdensityData.density = fastdensityData.density.map(data => { return [data[0], data[1] * (40 / fastmax)] })
             //組成の最大値の情報を格納
             fastdensityData["max"] = fastmax;
+            fastdensityData["sum"] = fastsum;
             fastdensityList.push(fastdensityData);
         }
 
         //グラフ描画用リストをMaxでソート
-        densityList = object_array_sort(fastdensityList, "max");
-        densityList = densityList.slice(0, 20)
+        densityList = object_array_sort(fastdensityList, "sum");
+        //densityList = densityList.slice(0, 20)
 
         //魚種リストをソート
         fishList = densityList.map(densityData => {
