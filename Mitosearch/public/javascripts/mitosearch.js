@@ -1,6 +1,14 @@
 
 //commonMito.js
 
+function getBaseUrl(){
+    let topurl = window.location.href
+    topurl = topurl.split("?")[0]
+    let items = topurl.split("/")
+    return "/"+items.slice(3).join("/")
+}
+const baseurl = getBaseUrl() // "/", "/metasearch_dev/"
+
 function getBlockSize(ratio) {
     if(ratio === 18){
         return "special"
@@ -80,7 +88,7 @@ function addline(lat1, long1, lat2, long2){
 async function checkFiles(filePaths) {
 
     try {
-        const response = await fetch('/checkFiles', {
+        const response = await fetch(baseurl+'checkFiles', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
