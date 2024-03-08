@@ -1,8 +1,15 @@
 'use strict';
 const e = require('express');
-var express = require('express');
-var router = express.Router();
-var app = express();
+const express = require('express');
+const router = express.Router();
+const app = express();
+// //Request body size の上限を100mbと大きく変更。デフォルトは100kbらしい。
+// // Express 4.0以上、4.16未満の対応
+// console.log("test")
+// // JSONボディのサイズ制限を設定
+// app.use(express.json({ limit: '50mb' }));
+// // URLエンコードされたボディのサイズ制限を設定
+// app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 //追加モジュール
 const fs = require("fs");
@@ -12,6 +19,8 @@ const { Console } = require('console');
 
 //viewをejsに変更
 app.set('view engine', 'ejs');
+
+
 
 let taxo;
 

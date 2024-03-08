@@ -17,7 +17,7 @@ function getBlockSize(ratio) {
         //let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
         //return ratioAndBlock[ratio]
         const base2 = new Decimal(2);
-        const exponent = 5 - ratio;
+        const exponent = 4 - ratio;
         const myunit = new Decimal(360).div(base2.pow(8))
         const result = myunit.mul(base2.pow(exponent));
         return result.toNumber()
@@ -86,28 +86,43 @@ function addline(lat1, long1, lat2, long2){
 
 
 async function checkFiles(filePaths) {
+    const chunkSize = 100; // 一度に処理するfilePathの数
+    const chunks = []; // filePathsを分割したチャンクの配列
+
+    // filePathsをchunkSizeごとに分割
+    for (let i = 0; i < filePaths.length; i += chunkSize) {
+        const chunk = filePaths.slice(i, i + chunkSize);
+        chunks.push(chunk);
+    }
+
+    const results = []; // 各チャンクのfetch結果を格納する配列
 
     try {
-        const response = await fetch(baseurl+'checkFiles', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ filePaths })
-        });
+        // 各チャンクに対して非同期リクエストを実行
+        for (const chunk of chunks) {
+            const response = await fetch(baseurl + 'checkFiles', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ filePaths: chunk })
+            });
 
-        if (response.ok) {
-            const data = await response.json();
-            const existingFiles = data.existingFiles;
-            console.log(existingFiles)
-            return existingFiles
-        } else {
-            console.error('サーバーエラー:', response.status);
+            if (response.ok) {
+                const data = await response.json();
+                results.push(...data.existingFiles); // 結果をresults配列に追加
+            } else {
+                console.error('サーバーエラー:', response.status);
+            }
         }
+
+        console.log(results);
+        return results;
     } catch (error) {
         console.error('通信エラー:', error);
     }
 }
+
 
 function removeAllPieChart() {
 
