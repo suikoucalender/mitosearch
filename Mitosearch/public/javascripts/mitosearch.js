@@ -1,6 +1,11 @@
 
 //commonMito.js
 
+BigNumber.config({
+    DECIMAL_PLACES: 50,                // 小数部50桁
+    ROUNDING_MODE: BigNumber.ROUND_HALF_UP // 四捨五入
+});
+
 function getBaseUrl(){
     let topurl = window.location.href
     topurl = topurl.split("?")[0]
@@ -10,67 +15,77 @@ function getBaseUrl(){
 const baseurl = getBaseUrl() // "/", "/metasearch_dev/"
 
 function getBlockSize(ratio) {
-    if(ratio === 18){
-        return "special"
-    }else{
+    // if(ratio === 18){
+    //     return "special"
+    // }else{
         //let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
         //let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
         //return ratioAndBlock[ratio]
-        const base2 = new Decimal(2);
+        const base2 = new BigNumber(2);
         const exponent = 4 - ratio;
-        const myunit = new Decimal(360).div(base2.pow(8))
-        const result = myunit.mul(base2.pow(exponent));
+        const myunit = new BigNumber(360).div(base2.pow(8))
+        const result = myunit.times(base2.pow(exponent));
         return result.toNumber()
-    }
+    //}
 }
-let specialBlockSize = 0.000171661376953125
 
+let lineDrawnList = {}
 function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
-    if(blockSize === "special"){
-        blockSize = specialBlockSize
-    }
-    blockSize = new Decimal(blockSize) //ここで扱う数字は全てDecimalオブジェクトに変換しておく
-    //左、下は端数を切った値　右、上は端数を足した値
-    let leftlong = Decimal.mul(Decimal.floor(Decimal.div(southWest.lng, blockSize)), blockSize)
-    let rightlong = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lng, blockSize)), blockSize)
-    let lowerlat = Decimal.mul(Decimal.floor(Decimal.div(southWest.lat, blockSize)), blockSize)
-    let upperlat = Decimal.mul(Decimal.ceil(Decimal.div(northEast.lat, blockSize)), blockSize)
-    console.log("leftlong, rightlong, lowerlat, upperlat", leftlong.toNumber(), rightlong.toNumber(), lowerlat.toNumber(), upperlat.toNumber())
+
+    blockSize = new BigNumber(blockSize) //ここで扱う数字は全てBigNumberオブジェクトに変換しておく
+    //左、下はブロックサイズで割って切り捨ててからブロックサイズを掛け、端数を切った値
+    //右、上はブロックサイズで割って切り上げてからブロックサイズを掛け、端数を足した値
+    let leftlong = BigNumber(Math.floor(BigNumber(southWest.lng).div(blockSize))).times(blockSize)
+    let lowerlat = BigNumber(Math.floor(BigNumber(southWest.lat).div(blockSize))).times(blockSize)
+    let rightlong = BigNumber(Math.ceil(BigNumber(northEast.lng).div(blockSize))).times(blockSize)
+    let upperlat = BigNumber(Math.ceil(BigNumber(northEast.lat).div(blockSize))).times(blockSize)
+    //console.log("leftlong, rightlong, lowerlat, upperlat", leftlong.toString(), rightlong.toString(), lowerlat.toString(), upperlat.toString())
 
     //上下左右ともにblockSizeだけ大きくしておく
     //decide the data reading range
-    let longStart = Decimal.sub(leftlong, blockSize)
-    let longEnd = Decimal.add(rightlong, blockSize)
-    let latStart = Decimal.sub(lowerlat, blockSize)
-    let latEnd = Decimal.add(upperlat, blockSize)
-    console.log("longStart, longEnd, latStart, latEnd", longStart.toNumber(), longEnd.toNumber(), latStart.toNumber(), latEnd.toNumber())
+    let longStart = leftlong.minus(blockSize)
+    let latStart = lowerlat.minus(blockSize)
+    let longEnd = rightlong.plus(blockSize)
+    let latEnd = upperlat.plus(blockSize)
+    //console.log("longStart, longEnd, latStart, latEnd", longStart.toString(), longEnd.toString(), latStart.toString(), latEnd.toString())
 
     //ブロックをすべて列挙する
     let listBlocks = []
 
     //ブロックを列挙しつつ地図上にブロック区切りの線も引く
-    mylineLayerGroup.clearLayers(); // グループ内のすべてのレイヤーを削除
-    for (let x = longStart; x.lessThanOrEqualTo(longEnd); x = x.add(blockSize)) {
-        let long = x
-        addline(new Decimal(latStart).toNumber(), new Decimal(long).toNumber(), new Decimal(latEnd).toNumber(), new Decimal(long).toNumber())
-        //console.log("yline: ", blockSize.toNumber(), new Decimal(latStart).toNumber(), new Decimal(long).toNumber(), new Decimal(latEnd).toNumber(), new Decimal(long).toNumber())
+    for (let x = longStart; x.isLessThanOrEqualTo(longEnd); x = x.plus(blockSize)) {
+        for (let y = latStart; y.isLessThanOrEqualTo(latEnd); y = y.plus(blockSize)) {
+            //線を引く
+            const strx0=x.toString()
+            const strx1=x.plus(blockSize).toString()
+            const stry0=y.toString()
+            const stry1=y.plus(blockSize).toString()
+            addline_step1([stry0, strx0, stry0, strx1])
+            addline_step1([stry1, strx0, stry1, strx1])
+            addline_step1([stry0, strx0, stry1, strx0])
+            addline_step1([stry0, strx1, stry1, strx1])
 
-        for (let y = latStart; y.lessThanOrEqualTo(latEnd); y = y.add(blockSize)) {
-            //console.log("x,y: ",x,y,new Decimal(x).toNumber(),new Decimal(y).toNumber())
-            let lat = y
-            addline(new Decimal(lat).toNumber(), new Decimal(longStart).toNumber(), new Decimal(lat).toNumber(), new Decimal(longEnd).toNumber())
-            //console.log("xline: ", blockSize.toNumber(), new Decimal(lat).toNumber(), new Decimal(longStart).toNumber(), new Decimal(lat).toNumber(), new Decimal(longEnd).toNumber())
-            listBlocks.push({ y: new Decimal(lat).toString(), x: new Decimal(long).toString() })
-            //listBlocks.push({ y: lat, x: long })
+            //ターゲットとして保存
+            listBlocks.push({ y: y.toString(), x: x.toString() })
+            //console.log("y, x: ", y, x)
         }
     }
-
     return listBlocks
 }
 
+function addline_step1(l1){ //    [stry0, strx0, stry0, strx1]
+    if(!(l1.join(",") in lineDrawnList)){
+        lineDrawnList[l1.join(",")]=1
+        addline_step2(...l1)
+    }
+}
 
-function addline(lat1, long1, lat2, long2){
+function addline_step2(lat1, long1, lat2, long2){ //引数は全て文字列
     try{
+        lat1=parseFloat(lat1)
+        long1=parseFloat(long1)
+        lat2=parseFloat(lat2)
+        long2=parseFloat(long2)
         // 東経139度に沿う線を描画
         var polyline = L.polyline([
             [lat1, long1], // 南緯90度, 東経139度
@@ -78,6 +93,7 @@ function addline(lat1, long1, lat2, long2){
         ], {
             color: 'red', // 線の色
             weight: 1, // 線の太さ
+            opacity: 0.15,    // 透明度（0.0 完全に透明, 1.0 完全に不透明）
         }).addTo(mylineLayerGroup);
     }catch(e){
         console.log(lat1, long1, lat2, long2, e)
@@ -116,7 +132,7 @@ async function checkFiles(filePaths) {
             }
         }
 
-        console.log(results);
+        //console.log(results);
         return results;
     } catch (error) {
         console.error('通信エラー:', error);
@@ -560,8 +576,7 @@ async function readDataAndPlotPieChart() {
     let pie = d3.pie()
         .value(function (d) { return d.value; })
         .sort(null);
-    if (blockSize !== "special") {//this part, map level is 1-17
-        //Avoiding the loss of decimal precision
+    if (ratio !== 18) {//this part, map level is 1-17
 
         // get map boundary
         let bounds = map.getBounds();
@@ -578,7 +593,7 @@ async function readDataAndPlotPieChart() {
         for (let y_x_map of targetBlocks) {
             const y_x = y_x_map.y + "/" + y_x_map.x
             const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
-            const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
+            const x_normalized = BigNumber(y_x_map.x).minus(dx_value)
             const y_x_normalized = y_x_map.y + "/" + x_normalized
             //console.log("to be downloaded y_x: ", y_x, y_x_normalized)
             if (!(blockSize in pieData)) {
@@ -627,7 +642,7 @@ async function readDataAndPlotPieChart() {
                 targetBlocks.forEach(y_x_map => {
                     const y_x = y_x_map.y + "/" + y_x_map.x
                     const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
-                    const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
+                    const x_normalized = BigNumber(y_x_map.x).minus(dx_value)
                     const y_x_normalized = y_x_map.y + "/" + x_normalized
                     //console.log("y_x, dx_value, y_x_normalized", y_x, dx_value, y_x_normalized)
 
@@ -661,7 +676,7 @@ async function readDataAndPlotPieChart() {
                             let customIcon = drawPieIcontest(radiusTest, pieDataTmp, n)
 
                             //add pie chart//can not get data
-                            let markersTest1 = L.marker([new Decimal(y).toNumber(), new Decimal(x).add(dx_value).toNumber()], { icon: customIcon }).addTo(map);
+                            let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIcon }).addTo(map);
                             //let markersTest2 = L.marker([y, Decimal.add(x, 360)], { icon: customIcon }).addTo(map);//？
                             markersTest1.bindPopup(htmlStringForPopup)
                             //markersTest2.bindPopup(htmlStringForPopup)
@@ -675,7 +690,7 @@ async function readDataAndPlotPieChart() {
                 console.error('エラーが発生しました:', error);
             });
 
-    } else {//This is when the map zoom level goes to 18
+    } else {//This is when the map zoom level goes to 18 //specialな場合
         //get the center location of map
         let mapCenter = map.getCenter();
         console.log("map center location", mapCenter)
@@ -1120,8 +1135,11 @@ function moveFunc() {
         oldZoomSize = curZoomSize;
         console.log("Zoom Level Changed: ", curZoomSize)
 
-        removeAllPieChart()
-        deletePieChartLoadedData()
+        //zoomレベルが変わったときに色々と初期化
+        removeAllPieChart() //円グラフを全て削除
+        deletePieChartLoadedData() //円グラフを描画したかどうかを記憶するデータを削除。ダウンロードしたデータ自体は消さない
+        lineDrawnList={} //ブロック線を引いたかどうかのデータを初期化
+        mylineLayerGroup.clearLayers(); // ブロック線グループ内のすべてのレイヤー(今回は線)を削除
         getCapturedSampleList()
     }
     if (!isMove) {
@@ -1158,7 +1176,7 @@ function removeMoveFlagAndDraw() {
 dateRangeCheker = false
 //キャプチャエリア内のサンプルの組成を取得
 function getCapturedSampleList() {
-    console.log("getCapturedSampleList")
+    //console.log("getCapturedSampleList")
     //if(getCapturedSampleListChecker===true){
     //    console.log("runed once, CANCELED getCapturedSampleList")
     //    return
@@ -1272,16 +1290,13 @@ function addKeyVal(obj, key, valueToAdd) {
 }
 
 async function drawLiddgeLine3(capturedSampleList) {
-    console.log("drawLiddgeLine3")
+    //console.log("drawLiddgeLine3")
     // get map boundary
     let bounds = map.getBounds();
     // get SouthWest and NorthEast coordinate
     let southWest = bounds.getSouthWest();
     let northEast = bounds.getNorthEast();
     let blockSize = getBlockSize(map.getZoom())
-    if(blockSize === "special"){
-        blockSize = specialBlockSize
-    }
     let targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
     //console.log(targetBlocks)
 
@@ -1289,7 +1304,7 @@ async function drawLiddgeLine3(capturedSampleList) {
     for (let y_x_map of targetBlocks) {
         const y_x = y_x_map.y + "/" + y_x_map.x
         const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
-        const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
+        const x_normalized = BigNumber(y_x_map.x).minus(dx_value)
         const y_x_normalized = y_x_map.y + "/" + x_normalized
         //console.log(y_x)
         if (!(blockSize in graphData)) {
@@ -1298,15 +1313,11 @@ async function drawLiddgeLine3(capturedSampleList) {
         if (!(y_x_normalized in graphData[blockSize])) {
             graphData[blockSize][y_x_normalized] = [] //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
             let fileUrl
-            if(blockSize !== "special"){
-                fileUrl = `layered_data/${language}/${blockSize}/${y_x_normalized}/month.json`
-            }else{
-                fileUrl = `layered_data/${language}/${specialBlockSize}/${y_x_normalized}/month.json`
-            }
+            fileUrl = `layered_data/${language}/${blockSize}/${y_x_normalized}/month.json`
             urls.push(fileUrl)
         }
     }
-    console.log(urls)
+    //console.log(urls)
     urls = await checkFiles(urls)
 
     fetchFiles(urls).then(dataList => {
@@ -1322,7 +1333,7 @@ async function drawLiddgeLine3(capturedSampleList) {
         for (let y_x_map of targetBlocks) { //targetBlocks: 集計対象となる全ブロックの場所情報
             const y_x = y_x_map.y + "/" + y_x_map.x
             const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
-            const x_normalized = new Decimal(y_x_map.x).sub(dx_value)
+            const x_normalized = BigNumber(y_x_map.x).minus(dx_value)
             const y_x_normalized = y_x_map.y + "/" + x_normalized
             for (let blockMonthTableData of graphData[blockSize][y_x_normalized]) {
                 //blockMonthTableData: {month, num, data:[{name, value}]}<-1月分

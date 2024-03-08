@@ -1,10 +1,17 @@
 const { addAbortListener } = require('events');
 const Decimal = require('./decimal.js');
+const BigNumber = require('../../public/bignumber.js/bignumber.js');
+BigNumber.config({
+    DECIMAL_PLACES: 50,                // 小数部50桁
+    ROUNDING_MODE: BigNumber.ROUND_HALF_UP // 四捨五入
+});
+
 const args = process.argv.slice(2)
 const fs = require('fs');
 const path = require('path');
 
 const language = args[0] //ja, en, zh
+//mitosearchフォルダの中のパスを指定している
 const locationPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "lat-long-date.txt" //args[0]; //lat-long-date.txt
 const waterPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "mapwater.result.txt" //args[1]; //mapwater.result.txt
 const imputFolderPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "db_fish_" + language //args[2]; //db_fish_[language]
@@ -18,6 +25,7 @@ let locationInfoLines = locationInfo.split('\n');
 removeEmptyLastItem(locationInfoLines);
 
 //read mapwater.result.txt file
+//海・川・湖などなら追加
 let aquaDataTemp=fs.readFileSync(waterPath,'utf8');
 let aquaDataTempLines = aquaDataTemp.split('\n')
 removeEmptyLastItem(aquaDataTempLines);
@@ -44,10 +52,10 @@ for(let locationInfoLine of locationInfoLines){
 //let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
 for(let ratio=2; ratio<=18; ratio++){
     
-    const base2 = new Decimal(2);
-    const exponent = 5 - ratio;
-    const myunit = new Decimal(360).div(base2.pow(8))
-    const result = myunit.mul(base2.pow(exponent));
+    const base2 = BigNumber(2);
+    const exponent = 4 - ratio;
+    const myunit = BigNumber(360).div(base2.pow(8))
+    const result = myunit.times(base2.pow(exponent));
     const blockSize = result.toString();
 //for (const blockSizeKey in blockSizes) {
     //const blockSize = new Decimal(blockSizes[blockSizeKey])
@@ -59,12 +67,12 @@ for(let ratio=2; ratio<=18; ratio++){
     //Convert latitude and longitude to digital format
     for(let locationInfoItem of locationInfoItems){
         let tempLatLong = locationInfoItem[1].split(' ')
-        let tempLat = new Decimal(tempLatLong[0])
-        let tempLong = new Decimal(tempLatLong[2])
-        if (tempLatLong[1] === "S") { tempLat = tempLat.div(-1) }
-        if (tempLatLong[3] === "W") { tempLong = tempLong.div(-1) }
-        let blocklattemp = Decimal.floor(tempLat.div(blockSize)).mul(blockSize)
-        let blocklongtemp = Decimal.floor(tempLong.div(blockSize)).mul(blockSize)
+        let tempLat = BigNumber(tempLatLong[0])
+        let tempLong = BigNumber(tempLatLong[2])
+        if (tempLatLong[1] === "S") { tempLat = tempLat.negated() } //+-反転させる
+        if (tempLatLong[3] === "W") { tempLong = tempLong.negated() } //+-反転させる
+        let blocklattemp = BigNumber(Math.floor(tempLat.div(blockSize))).times(blockSize)
+        let blocklongtemp = BigNumber(Math.floor(tempLong.div(blockSize))).times(blockSize)
         let key = `${blocklattemp},${blocklongtemp}`
 
         // reading .input files and Integrating location Info
@@ -87,7 +95,7 @@ for(let ratio=2; ratio<=18; ratio++){
         for (let j = 0; j < tempSpeciesLines.length; j++) {
             let tempSpeciesItems = tempSpeciesLines[j].split('\t');
             //console.log(tempSpeciesItems)
-            species[tempSpeciesItems[0]] = new Decimal(tempSpeciesItems[1]);
+            species[tempSpeciesItems[0]] = parseFloat(tempSpeciesItems[1]);
         }
         let datatemp = { time: locationInfoItem[2], lat: tempLat, long: tempLong, species: species }
         data[inputFileID] = datatemp
@@ -106,15 +114,15 @@ for(let ratio=2; ratio<=18; ratio++){
         //follow the block information, prepare pie data
         let blocknamearray = blockname.split(',')
         let samplenumber = blockInfo[blockname].length
-        let sumLat = new Decimal(0)
-        let sumLong = new Decimal(0)
+        let sumLat = BigNumber(0)
+        let sumLong = BigNumber(0)
         let blockSpecies = {}
         console.log("--------------------------(" + blocknamearray + ")--------------------------")
         for(let filename of blockInfo[blockname]){
             let fileSpeciesData = data[filename] //lat, long, time, species{}
             //record pie location
-            sumLat = Decimal.add(sumLat, fileSpeciesData.lat)
-            sumLong = Decimal.add(sumLong, fileSpeciesData.long)
+            sumLat = sumLat.plus(fileSpeciesData.lat)
+            sumLong = sumLong.plus(fileSpeciesData.long)
             let fileSpeciesName = Object.keys(fileSpeciesData.species)
             for (let y = 0; y < fileSpeciesName.length; y++) {//loop for each species
                 if (!(fileSpeciesName[y] in blockSpecies)) {
@@ -125,8 +133,8 @@ for(let ratio=2; ratio<=18; ratio++){
                 //console.log(parseFloat(fileSpeciesData.species[fileSpeciesName[y]]), blockSpecies[fileSpeciesName[y]])
             }
         }
-        let averageLat = Decimal.div(sumLat, samplenumber)//pie chart location
-        let averageLong = Decimal.div(sumLong, samplenumber)
+        let averageLat = sumLat.div(samplenumber)//pie chart location
+        let averageLong = sumLong.div(samplenumber)
 
         let pieInputList = []
         let blockSpeciesKeys = Object.keys(blockSpecies)
