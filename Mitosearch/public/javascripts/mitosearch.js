@@ -9,13 +9,13 @@ function getBlockSize(ratio) {
         //let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
         //return ratioAndBlock[ratio]
         const base2 = new Decimal(2);
-        const exponent = 6 - ratio;
+        const exponent = 5 - ratio;
         const myunit = new Decimal(360).div(base2.pow(8))
         const result = myunit.mul(base2.pow(exponent));
         return result.toNumber()
     }
 }
-let specialBlockSize = 0.0001220703125 //0.01
+let specialBlockSize = 0.000171661376953125
 
 function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
     if(blockSize === "special"){
@@ -40,6 +40,7 @@ function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列�
     //ブロックをすべて列挙する
     let listBlocks = []
 
+    //ブロックを列挙しつつ地図上にブロック区切りの線も引く
     mylineLayerGroup.clearLayers(); // グループ内のすべてのレイヤーを削除
     for (let x = longStart; x.lessThanOrEqualTo(longEnd); x = x.add(blockSize)) {
         let long = x
@@ -55,9 +56,10 @@ function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列�
             //listBlocks.push({ y: lat, x: long })
         }
     }
-    return listBlocks
 
+    return listBlocks
 }
+
 
 function addline(lat1, long1, lat2, long2){
     try{
@@ -71,6 +73,31 @@ function addline(lat1, long1, lat2, long2){
         }).addTo(mylineLayerGroup);
     }catch(e){
         console.log(lat1, long1, lat2, long2, e)
+    }
+}
+
+
+async function checkFiles(filePaths) {
+
+    try {
+        const response = await fetch('/checkFiles', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ filePaths })
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            const existingFiles = data.existingFiles;
+            console.log(existingFiles)
+            return existingFiles
+        } else {
+            console.error('サーバーエラー:', response.status);
+        }
+    } catch (error) {
+        console.error('通信エラー:', error);
     }
 }
 
@@ -488,8 +515,6 @@ let mapLevelRecoder = map.getZoom()
 let loadedData = {}
 let pieData = {}
 
-//readDataAndPlotPieChart()
-
 //pieチャートデータセット用関数の設定
 let pie = d3.pie()
     .value(function (d) { return d.value; })
@@ -499,7 +524,7 @@ function deletePieChartLoadedData() {
     loadedData = {}
 }
 
-function readDataAndPlotPieChart() {
+async function readDataAndPlotPieChart() {
     //get the zoom level of map
     ratio = map.getZoom()
     console.log("map zoom level", ratio)
@@ -526,7 +551,6 @@ function readDataAndPlotPieChart() {
         //list up the urls
         let urlsFishAndRatio = []
         let urlsPieCoord = []
-        let urlsOutput = []
 
         for (let y_x_map of targetBlocks) {
             const y_x = y_x_map.y + "/" + y_x_map.x
@@ -542,15 +566,15 @@ function readDataAndPlotPieChart() {
                 let folderPath = `layered_data/${language}/${blockSize}/${y_x_normalized}`
                 let speciesPath = `${folderPath}/fishAndRatio.json`;
                 let coordPath = `${folderPath}/pieCoord.json`;
-                let outputPath = `${folderPath}/output.json`
                 urlsFishAndRatio.push(speciesPath)
                 urlsPieCoord.push(coordPath)
-                urlsOutput.push(outputPath)
             }
         }
         //console.log(urlsFishAndRatio)
         //console.log(urlsPieCoord)
-        //console.log(urlsOutput)
+        urlsFishAndRatio = await checkFiles(urlsFishAndRatio)
+        //console.log(urlsFishAndRatio)
+        urlsPieCoord = await checkFiles(urlsPieCoord)
 
         // 2つのfetchFiles関数の実行をPromise.allでラップする
         Promise.all([fetchFiles(urlsPieCoord), fetchFiles(urlsFishAndRatio)])
@@ -1224,7 +1248,7 @@ function addKeyVal(obj, key, valueToAdd) {
     obj[key] += valueToAdd;
 }
 
-function drawLiddgeLine3(capturedSampleList) {
+async function drawLiddgeLine3(capturedSampleList) {
     console.log("drawLiddgeLine3")
     // get map boundary
     let bounds = map.getBounds();
@@ -1232,6 +1256,9 @@ function drawLiddgeLine3(capturedSampleList) {
     let southWest = bounds.getSouthWest();
     let northEast = bounds.getNorthEast();
     let blockSize = getBlockSize(map.getZoom())
+    if(blockSize === "special"){
+        blockSize = specialBlockSize
+    }
     let targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
     //console.log(targetBlocks)
 
@@ -1245,7 +1272,7 @@ function drawLiddgeLine3(capturedSampleList) {
         if (!(blockSize in graphData)) {
             graphData[blockSize] = {}
         }
-        if (!(y_x in graphData[blockSize])) {
+        if (!(y_x_normalized in graphData[blockSize])) {
             graphData[blockSize][y_x_normalized] = [] //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
             let fileUrl
             if(blockSize !== "special"){
@@ -1256,17 +1283,19 @@ function drawLiddgeLine3(capturedSampleList) {
             urls.push(fileUrl)
         }
     }
+    console.log(urls)
+    urls = await checkFiles(urls)
 
     fetchFiles(urls).then(dataList => {
         console.log('Downloaded graph data: ', dataList);
-
-        let fishList = {} //{fishname:1}
-        let numList = {} //{month: num}
-        let sumList = {} //{month: {species: sum_percentage}}
         for (let blockTableData of dataList) { //dataList: [x, y, monthdata:[{month, num, data:[{name, value}]}]]<-全ブロック分
             //blockTableData: x, y, monthdata:[{month, num, data:[{name, value}]}]<-1ブロック分
             graphData[blockSize][blockTableData.data.y + "/" + blockTableData.data.x] = blockTableData.data.monthdata
         }
+    }).finally(()=>{
+        let fishList = {} //{fishname:1}
+        let numList = {} //{month: num}
+        let sumList = {} //{month: {species: sum_percentage}}
         for (let y_x_map of targetBlocks) { //targetBlocks: 集計対象となる全ブロックの場所情報
             const y_x = y_x_map.y + "/" + y_x_map.x
             const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360

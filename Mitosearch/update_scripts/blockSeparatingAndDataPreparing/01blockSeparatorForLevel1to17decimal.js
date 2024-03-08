@@ -45,7 +45,7 @@ for(let locationInfoLine of locationInfoLines){
 for(let ratio=2; ratio<=18; ratio++){
     
     const base2 = new Decimal(2);
-    const exponent = 6 - ratio;
+    const exponent = 5 - ratio;
     const myunit = new Decimal(360).div(base2.pow(8))
     const result = myunit.mul(base2.pow(exponent));
     const blockSize = result.toString();

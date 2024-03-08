@@ -116,7 +116,32 @@ router.get('/about', function (req, res) {
 
 });
 
+router.post('/checkFiles', function (req, res) {
+    // ブラウザから送られたファイルパスを取得
+    //console.log(req.body.filePaths.length)
+    const filePaths = req.body.filePaths; //[filePath]
+
+    // ファイルの存在を確認
+    const existingFiles = filePaths.filter(filePath => fileExists("public/"+filePath))
+    //console.log("existingFiles.length: ", existingFiles.length)
+
+    // レスポンスとしてJSONを返す
+    res.json({existingFiles});
+})
+
 module.exports = router;
+
+
+// ファイルの存在を確認する関数
+function fileExists(filePath) {
+    const fs = require('fs');
+    try {
+        fs.accessSync(filePath);
+        return true;
+    } catch (err) {
+        return false;
+    }
+}
 
 function getSampleList(taxo) {
     //緯度経度情報のファイルを読み込み
