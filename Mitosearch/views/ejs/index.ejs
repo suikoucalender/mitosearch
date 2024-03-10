@@ -38,11 +38,9 @@
     <link rel="stylesheet" href="markerClusterGroup/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="markerClusterGroup/dist/MarkerCluster.Default.css" />
 
-    <!-- Select2.css -->
-    <link rel="stylesheet" href="select2/dist/css/select2.min.css">
-
     <!-- Select2 -->
     <script src="select2/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="select2/dist/css/select2.min.css">
 
     <!-- Select2 -->
     <% if (language === "zh"){ %>
@@ -55,9 +53,6 @@
         <% console.log("index.js language=English  "+language) %>
         <script src="select2/dist/js/i18n/en.js"></script>
     <% } %>
-     
-    <!-- Common script of MitoSearch -->
-    <!-- <script src="javascripts/commonMito.js"></script> -->
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -110,15 +105,17 @@
         <div id="form">
             <form style="width: 100%; float: left;">
                 <select id="filter" class="test-select2" multiple="multiple" style="height: 35px;width: 70%">
-                  <% AllFishList.forEach(fishName => { %>
+                  <!-- <% AllFishList.forEach(fishName => { %>
                     <option><%= fishName %></option>
-                  <% }) %>
+                  <% }) %> -->
                 </select>
                 <input id="button" type="button" value="Filter">
+                <!--
                 <button title="Turn on the time filter" class="icon3" id="timeFilterOnBtn" type="button"><img src="img/timeFilterOn.png"></button>
                 <button title="Turn off the time filter" class="icon3" id="timeFilterOffBtn" type="button"><img src="img/timeFilterOff.png"></button>
                 <button title="Show the full period of records" class="icon2" id="alltime" type="button"><img src="img/alltime.png"></button>
                 <button title="Show recent records by month" class="icon2" id="monthly" type="button"><img src="img/monthly.png"></button> 
+                -->
             </form>
            
 
@@ -128,8 +125,8 @@
 
         <div>
             <button title="Legend" class="icon" id="help"><img src="img/help.png"></button>
-            <button title="Map panel expansion" class="icon" id="expansion"><img src="img/expansion.png"></button>
-            <button title="Map panel restoration" class="icon" id="restore"><img src="img/restore.png"></button>
+            <!-- <button title="Map panel expansion" class="icon" id="expansion"><img src="img/expansion.png"></button>
+            <button title="Map panel restoration" class="icon" id="restore"><img src="img/restore.png"></button> -->
 
             <button title="Reset of button status" class="iconPolygon2on" id="undo"><img src="img/reset.png"></button>
             <button title="Vertex point addition" class="iconPolygon" id="point"><img src="img/marker.png"></button>
@@ -137,8 +134,9 @@
          
         </div>
         <div id="content" style="height: 75%; width: 100%;">
-            <div id="map" style="height: 1000px; width: 40%;"></div>
+            <div id="map" style="height: 1000px; width: 70%;"></div>
             <!-- <div id="mapTest" style="height: 1000px; width: 40%;"></div> -->
+            <!--
             <div id="bargraphAlltime" style="height: 100px; width: 60%;"></div>
             <div class="parent" id="sliderArea" style="height: 60px;">
                 <div class="son" id="slider"></div>
@@ -149,26 +147,27 @@
                 <div id="upperHandleNumber" class="handleNumber"></div>
                 <input type="date" id="upperHandleNumberDatePicker" name="upperHandleNumberDatePicker">
             </div>
-            <div id="bargraph" style="height: 80px; width: 60%;"></div>
-            <div id="graph" style="height: 700px; width: 60%;"></div>
+            -->
+            <div id="bargraph" style="height: 80px; width: 30%;"></div>
+            <div id="graph" style="height: 700px; width: 30%;"></div>
         </div>
         <div id="tmp"></div>
         <div id="tmptemp"></div>
         
     </main>
     <script>
-        let capturedSampleList = [];
-        let sampleDataSet =  <%-JSON.stringify(sampleDataObjList)%>;
-        let fishClassifyDataObj =  <%-JSON.stringify(fishClassifyDataObj)%>;
+        //let capturedSampleList = [];
+        //let sampleDataSet =  <%-JSON.stringify(sampleDataObjList)%>;
+        let fishClassifyDataObj =  <%-JSON.stringify(fishClassifyDataObj)%>; //色を付けるために必要
         let taxo =  <%-JSON.stringify(taxo)%>;
-        const sampleLen = sampleDataSet.length;
-        console.log(sampleLen);
-        var latitude = <%-JSON.stringify(latitude)%>;
-        var longitude = <%-JSON.stringify(longitude)%>;
-        var ratio = <%-JSON.stringify(ratio)%>;
+        //const sampleLen = sampleDataSet.length;
+        //console.log(sampleLen);
+        let latitude = <%-JSON.stringify(latitude)%>;
+        let longitude = <%-JSON.stringify(longitude)%>;
+        let ratio = <%-JSON.stringify(ratio)%>;
         //var map;
         //var isMove = false;
-        var language = <%-JSON.stringify(language)%>;
+        let language = <%-JSON.stringify(language)%>;
     </script>
     <script>
         //var sliderStatusChecker = "non-exist";

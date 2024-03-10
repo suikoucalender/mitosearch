@@ -6,11 +6,11 @@ BigNumber.config({
     ROUNDING_MODE: BigNumber.ROUND_HALF_UP // 四捨五入
 });
 
-function getBaseUrl(){
+function getBaseUrl() {
     let topurl = window.location.href
     topurl = topurl.split("?")[0]
     let items = topurl.split("/")
-    return "/"+items.slice(3).join("/")
+    return "/" + items.slice(3).join("/")
 }
 const baseurl = getBaseUrl() // "/", "/metasearch_dev/"
 
@@ -18,14 +18,14 @@ function getBlockSize(ratio) {
     // if(ratio === 18){
     //     return "special"
     // }else{
-        //let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
-        //let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
-        //return ratioAndBlock[ratio]
-        const base2 = new BigNumber(2);
-        const exponent = 4 - ratio;
-        const myunit = new BigNumber(360).div(base2.pow(8))
-        const result = myunit.times(base2.pow(exponent));
-        return result.toNumber()
+    //let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
+    //let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
+    //return ratioAndBlock[ratio]
+    const base2 = new BigNumber(2);
+    const exponent = 4 - ratio;
+    const myunit = new BigNumber(360).div(base2.pow(8))
+    const result = myunit.times(base2.pow(exponent));
+    return result.toNumber()
     //}
 }
 
@@ -56,10 +56,10 @@ function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列�
     for (let x = longStart; x.isLessThanOrEqualTo(longEnd); x = x.plus(blockSize)) {
         for (let y = latStart; y.isLessThanOrEqualTo(latEnd); y = y.plus(blockSize)) {
             //線を引く
-            const strx0=x.toString()
-            const strx1=x.plus(blockSize).toString()
-            const stry0=y.toString()
-            const stry1=y.plus(blockSize).toString()
+            const strx0 = x.toString()
+            const strx1 = x.plus(blockSize).toString()
+            const stry0 = y.toString()
+            const stry1 = y.plus(blockSize).toString()
             addline_step1([stry0, strx0, stry0, strx1])
             addline_step1([stry1, strx0, stry1, strx1])
             addline_step1([stry0, strx0, stry1, strx0])
@@ -73,19 +73,19 @@ function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列�
     return listBlocks
 }
 
-function addline_step1(l1){ //    [stry0, strx0, stry0, strx1]
-    if(!(l1.join(",") in lineDrawnList)){
-        lineDrawnList[l1.join(",")]=1
+function addline_step1(l1) { //    [stry0, strx0, stry0, strx1]
+    if (!(l1.join(",") in lineDrawnList)) {
+        lineDrawnList[l1.join(",")] = 1
         addline_step2(...l1)
     }
 }
 
-function addline_step2(lat1, long1, lat2, long2){ //引数は全て文字列
-    try{
-        lat1=parseFloat(lat1)
-        long1=parseFloat(long1)
-        lat2=parseFloat(lat2)
-        long2=parseFloat(long2)
+function addline_step2(lat1, long1, lat2, long2) { //引数は全て文字列
+    try {
+        lat1 = parseFloat(lat1)
+        long1 = parseFloat(long1)
+        lat2 = parseFloat(lat2)
+        long2 = parseFloat(long2)
         // 東経139度に沿う線を描画
         var polyline = L.polyline([
             [lat1, long1], // 南緯90度, 東経139度
@@ -95,7 +95,7 @@ function addline_step2(lat1, long1, lat2, long2){ //引数は全て文字列
             weight: 1, // 線の太さ
             opacity: 0.15,    // 透明度（0.0 完全に透明, 1.0 完全に不透明）
         }).addTo(mylineLayerGroup);
-    }catch(e){
+    } catch (e) {
         console.log(lat1, long1, lat2, long2, e)
     }
 }
@@ -384,30 +384,85 @@ $(function () {
     });
 })
 
+let fishFilterArray = [] //フィルターに設定された魚種の配列
+let fishFilterColorMap = {}
 $("#button").click(function () {
-    let fishList = $("#filter").val().join(" ,");
-    fishList = fishList + " ,";
+    fishFilterArray = $("#filter").val()
+    let fishList = $("#filter").val().join("###");
+    //fishList = fishList + " ,";
     console.log(fishList)
-    $.ajax({
-        type: "POST",
-        data: { fishList: fishList },
-        dataType: "text"
-    })
-        .done(function (res) {
-            res = JSON.parse(res);
-            sampleDataSet = res.new_sampleDataObjList;
-            console.log(sampleDataSet)
-            fishClassifyDataObj = res.new_fishClassifyDataObj;
-            console.log(fishClassifyDataObj)
-            map.remove();
 
-            //appendScript("javascripts/drawPie.js");
-            //appendScript("javascripts/drawLiddgeLine.js");
+    fishFilterColorMap = {}
+    for (let i = 0; i < fishFilterArray.length; i++) {
+        fishFilterColorMap[fishFilterArray[i]] = (i + 2) % 8
+    }
+    //console.log("fishFilterColorMap: ",fishFilterColorMap)
 
-            load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
+    //ダウンロードした円グラフ情報以外削除
+    resetData()
+    //円グラフ描画
+    readDataAndPlotPieChart();
+    //リッジライングラフ描画
+    drawLiddgeLine()
 
-        })
+    // $.ajax({
+    //     type: "POST",
+    //     data: { fishList: fishList },
+    //     dataType: "text"
+    // })
+    //     .done(function (res) {
+    //         res = JSON.parse(res);
+    //         sampleDataSet = res.new_sampleDataObjList;
+    //         console.log(sampleDataSet)
+    //         fishClassifyDataObj = res.new_fishClassifyDataObj;
+    //         console.log(fishClassifyDataObj)
+    //         map.remove();
+
+    //         load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
+
+    //     })
 })
+
+//セレクトボックスに魚種を設定
+function setFilter(fishList) {
+    let tmpItems = $("#filter").val()
+    console.log(tmpItems)
+    removeAllFilterItems()
+    //let checkFishList = {}
+    for (let fishname of fishList) {
+        addFilterOption(fishname, fishname)
+        //checkFishList[fishname] = 1
+    }
+    for (let fishname of tmpItems) {
+        //if (!(fishname in checkFishList)) {
+        if (!(fishList.includes(fishname))) {
+            addFilterOption(fishname, fishname)
+        }
+    }
+    $("#filter").val(tmpItems)
+}
+
+// 新しいオプションを作成する関数
+function addFilterOption(text, value) {
+    // select要素を取得
+    var selectElement = document.getElementById('filter');
+
+    // 新しいoption要素を作成
+    var option = document.createElement("option");
+    option.text = text;   // 表示テキストを設定
+    option.value = value; // オプションの値を設定
+
+    // select要素にoptionを追加
+    selectElement.appendChild(option);
+}
+
+//フィルターのセレクトボックス要素を全削除
+function removeAllFilterItems() {
+    const selectElement = document.getElementById('filter');
+    while (selectElement.firstChild) {
+        selectElement.removeChild(selectElement.firstChild);
+    }
+}
 
 function load_sync_js(src_list) {
     var rootScript = _create_script(src_list[0]);
@@ -657,6 +712,27 @@ async function readDataAndPlotPieChart() {
                             let n = pieData[blockSize][y_x_normalized]["n"];
                             //console.log(`pieDataTmp`, y_x, pieDataTmp, x, y, n);
 
+                            //フィルターがセットされていたらその魚種に限定
+                            if (fishFilterArray.length > 0) {
+                                //console.log("フィルターあり")
+                                //console.log(pieDataTmp)
+                                let tmpPieData = []
+                                let tmpcnt = 0
+                                for (let itmPieDataTmp of pieDataTmp) {
+                                    if (fishFilterArray.includes(itmPieDataTmp.name)) {
+                                        tmpPieData.push(itmPieDataTmp)
+                                    } else {
+                                        tmpcnt += itmPieDataTmp.value
+                                    }
+                                }
+                                //console.log(tmpcnt, tmpPieData)
+                                if (tmpPieData.length === 0) {
+                                    return //対象種が0の地域は円グラフを描画せずに終了
+                                }
+                                tmpPieData.push({ name: "others", value: tmpcnt })
+                                pieDataTmp = tmpPieData
+                            }
+
                             //Ordered from largest to smallest percentage
                             let pieDataTmpSorted = pieDataTmp.sort(function (a, b) {
                                 return b.value - a.value;
@@ -803,7 +879,7 @@ async function plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, o
 async function mainLevel18(blockData, offset, radiusTest) {
     let dataIconSaver
     //read data in the block
-    console.log("blockData: ",blockData)
+    console.log("blockData: ", blockData)
     let baseLat
     let baseLng
     for (i = 0; i < blockData.length; i++) { //blockData: [{y_x: input_file}]
@@ -842,12 +918,35 @@ function drawPieIcontest(radius, pieInputList, sampleNo) {
     //円弧を描画する
     if (sampleNo < 10) { sampleNo = 10 }
     radius = radius * (Math.log10(sampleNo))
-    var arc = d3.arc()
+    let arc = d3.arc()
         .outerRadius(radius)
         .innerRadius(radius / 3);
+    // let arc2 = d3.arc()
+    //     .outerRadius(radius+1)
+    //     .innerRadius(radius / 3 - 1);
 
-    tmptest.append("svg").attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")").attr("height", 2 * radius).attr("width", 2 * radius)
-        .append("g").attr("transform", "translate(" + radius + "," + radius + ")")
+    // tmptest.append("svg")
+    //     .attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")")
+    //     .attr("height", 2 * radius)
+    //     .attr("width", 2 * radius)
+    //     .append("g")
+    //     .attr("transform", "translate(" + radius + "," + radius + ")")
+    //     .selectAll(".pie")
+    //     .data(pie(pieInputList))
+    //     .enter()
+    //     .append("g")
+    //     .attr("class", "pie")
+    //     .append("path")
+    //     .attr("d", arc2)
+    //     .attr("fill", "white")
+    //     .attr("opacity", 1) //透過を指定するプロパティ
+
+    tmptest.append("svg")
+        .attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")")
+        .attr("height", 2 * radius)
+        .attr("width", 2 * radius)
+        .append("g")
+        .attr("transform", "translate(" + radius + "," + radius + ")")
         .selectAll(".pie")
         .data(pie(pieInputList))
         .enter()
@@ -856,7 +955,7 @@ function drawPieIcontest(radius, pieInputList, sampleNo) {
         .append("path")
         .attr("d", arc)
         .attr("fill", function (d) { return selectColortest(d) })
-        .attr("opacity", 0.9) //透過を指定するプロパティ
+        .attr("opacity", 0.7) //透過を指定するプロパティ
         .attr("stroke", "white"); //アウトラインの色を指定するプロパティ
 
     var customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster' });
@@ -883,10 +982,18 @@ function filterInRange(fileLocas, minLat, maxLat, minLon, maxLon) {
 }
 
 function selectColortest(d) {
-    var color = d3.scaleLinear()
+    let color = d3.scaleLinear()
         .domain([0, 1, 2, 3, 4, 5, 6, 7, 8])
         .range(["#ffffff", "#d9d9d9", "#ffde80", "#92d050", "#c7d0b0", "#c39143", "#ff99ff", "#ea8c8c", "#83d3ff"]);
-    return color(fishClassifyDataObj[d.data.name]);
+
+    //フィルターがセットされていたら色付けを変える
+    if (fishFilterArray.length > 0) {
+        //console.log("色: ",d.data.name, fishFilterColorMap, color(fishFilterColorMap[d.data.name]))
+        return color(fishFilterColorMap[d.data.name]);
+    } else {
+        //console.log("色: ",fishClassifyDataObj[d.data.name], color(fishClassifyDataObj[d.data.name]))    
+        return color(fishClassifyDataObj[d.data.name]);
+    }
 }
 
 function drawClusterPopup(e) {
@@ -966,137 +1073,137 @@ taxonomyLegend.addEventListener("click", e => {
 });
 
 
-//if exansion button of map is clicked
-expansionBtn.addEventListener("click", e => {
-    //change the width of map to 100%
-    mapArea.style.width = "100%";
-    pointBtn.className = "iconPolygon";
-    functioncheker = "off";
-    //remove map
-    map.remove();
+// //if exansion button of map is clicked
+// expansionBtn.addEventListener("click", e => {
+//     //change the width of map to 100%
+//     mapArea.style.width = "100%";
+//     pointBtn.className = "iconPolygon";
+//     functioncheker = "off";
+//     //remove map
+//     map.remove();
 
-    //relocd map
-    appendScript("javascripts/drawPie.js");
+//     //relocd map
+//     appendScript("javascripts/drawPie.js");
 
-    //remove expansion button
-    expansionBtn.style.display = "none";
-    //add restore button
-    restoreBtn.style.display = "block";
-    //remove bargrap related elements
-    liddgeArea.style.display = "none";
-    bargraphAlltimeArea.style.display = "none";
-    bargraphArea.style.display = "none";
-    //remove slider related elements
-    sliderArea.style.display = "none";
-    lowerHandleNumber.style.display = "none";
-    upperHandleNumber.style.display = "none";
+//     //remove expansion button
+//     expansionBtn.style.display = "none";
+//     //add restore button
+//     restoreBtn.style.display = "block";
+//     //remove bargrap related elements
+//     liddgeArea.style.display = "none";
+//     bargraphAlltimeArea.style.display = "none";
+//     bargraphArea.style.display = "none";
+//     //remove slider related elements
+//     sliderArea.style.display = "none";
+//     lowerHandleNumber.style.display = "none";
+//     upperHandleNumber.style.display = "none";
 
-    //Determine which button should be removed 
-    //based on the slider's display state
-    if (sliderStatusChecker == "non-exist") {
-        timeFilterOnBtn.style.display = "none"
-    } else {
-        timeFilterOffBtn.style.display = "none"
-    }
+//     //Determine which button should be removed 
+//     //based on the slider's display state
+//     if (sliderStatusChecker == "non-exist") {
+//         timeFilterOnBtn.style.display = "none"
+//     } else {
+//         timeFilterOffBtn.style.display = "none"
+//     }
 
-    //Determine which button should be removed 
-    //based on the slider's mode
-    if (timeBtnChecker == "alltimeBtn") {
-        alltimeBtn.style.display = "none";
-    }
-    else {
-        monthlyBtn.style.display = "none";
-    }
+//     //Determine which button should be removed 
+//     //based on the slider's mode
+//     if (timeBtnChecker == "alltimeBtn") {
+//         alltimeBtn.style.display = "none";
+//     }
+//     else {
+//         monthlyBtn.style.display = "none";
+//     }
 
-});
+// });
 
-//if restore button is clicked
-restoreBtn.addEventListener("click", e => {
-    //set mat width to 40%
-    mapArea.style.width = "40%";
-    pointBtn.className = "iconPolygon";
-    functioncheker = "off";
-    map.remove();
+// //if restore button is clicked
+// restoreBtn.addEventListener("click", e => {
+//     //set mat width to 40%
+//     mapArea.style.width = "40%";
+//     pointBtn.className = "iconPolygon";
+//     functioncheker = "off";
+//     map.remove();
 
-    //reload map
-    load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
+//     //reload map
+//     load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
 
-    //remove restore button
-    restoreBtn.style.display = "none";
-    //show expansion button
-    expansionBtn.style.display = "block";
-    //show bargraph related button
-    liddgeArea.style.display = "block";
-    bargraphAlltimeArea.style.display = "block";
-    bargraphArea.style.display = "block";
+//     //remove restore button
+//     restoreBtn.style.display = "none";
+//     //show expansion button
+//     expansionBtn.style.display = "block";
+//     //show bargraph related button
+//     liddgeArea.style.display = "block";
+//     bargraphAlltimeArea.style.display = "block";
+//     bargraphArea.style.display = "block";
 
-    //Determine which button should be shown
-    //based on the slider's display state
-    if (sliderStatusChecker == "non-exist") {
-        timeFilterOnBtn.style.display = "block"
-    } else {
-        timeFilterOffBtn.style.display = "block"
-    }
+//     //Determine which button should be shown
+//     //based on the slider's display state
+//     if (sliderStatusChecker == "non-exist") {
+//         timeFilterOnBtn.style.display = "block"
+//     } else {
+//         timeFilterOffBtn.style.display = "block"
+//     }
 
-    //Determine which button should be shown
-    //based on the slider's mode
-    if (timeBtnChecker == "alltimeBtn") {
-        alltimeBtn.style.display = "block";
-    }
-    else {
-        monthlyBtn.style.display = "block";
-    }
-});
+//     //Determine which button should be shown
+//     //based on the slider's mode
+//     if (timeBtnChecker == "alltimeBtn") {
+//         alltimeBtn.style.display = "block";
+//     }
+//     else {
+//         monthlyBtn.style.display = "block";
+//     }
+// });
 
 
-//if all time button is clicked
-alltimeBtn.addEventListener("click", e => {
-    //change the button state
-    timeBtnChecker = "monthlyBtn";
-    //reload liddge graph
-    appendScript("javascripts/drawLiddgeLine.js");
-    //remove alltime button
-    alltimeBtn.style.display = "none";
-    //show monthly button
-    monthlyBtn.style.display = "block";
-    //reload slider
-    sliderDisplay();
-});
+// //if all time button is clicked
+// alltimeBtn.addEventListener("click", e => {
+//     //change the button state
+//     timeBtnChecker = "monthlyBtn";
+//     //reload liddge graph
+//     appendScript("javascripts/drawLiddgeLine.js");
+//     //remove alltime button
+//     alltimeBtn.style.display = "none";
+//     //show monthly button
+//     monthlyBtn.style.display = "block";
+//     //reload slider
+//     sliderDisplay();
+// });
 
-//if monthly buttion is clicked
-monthlyBtn.addEventListener("click", e => {
-    //change the button state
-    timeBtnChecker = "alltimeBtn";
-    //reload liddge graph
-    appendScript("javascripts/drawLiddgeLine.js");
-    //remove monthly button
-    monthlyBtn.style.display = "none";
-    //show all time button
-    alltimeBtn.style.display = "block";
-    //reload slider
-    sliderDisplay();
-});
+// //if monthly buttion is clicked
+// monthlyBtn.addEventListener("click", e => {
+//     //change the button state
+//     timeBtnChecker = "alltimeBtn";
+//     //reload liddge graph
+//     appendScript("javascripts/drawLiddgeLine.js");
+//     //remove monthly button
+//     monthlyBtn.style.display = "none";
+//     //show all time button
+//     alltimeBtn.style.display = "block";
+//     //reload slider
+//     sliderDisplay();
+// });
 
-//if time filter on button is clicked
-timeFilterOnBtn.addEventListener("click", e => {
-    //change slider disply state
-    sliderStatusChecker = "exist"
-    //reload slide, and show it
-    sliderUpdating();
-    sliderDisplay()
-    slidersize();
-});
+// //if time filter on button is clicked
+// timeFilterOnBtn.addEventListener("click", e => {
+//     //change slider disply state
+//     sliderStatusChecker = "exist"
+//     //reload slide, and show it
+//     sliderUpdating();
+//     sliderDisplay()
+//     slidersize();
+// });
 
-//if time filter of button is clicked
-timeFilterOffBtn.addEventListener("click", e => {
-    //change slider disply state
-    sliderStatusChecker = "non-exist"
-    //reset the slider
-    slider.noUiSlider.reset();
-    userTimeSettingChecker = false
-    //remove slider related elements
-    sliderDisplay()
-});
+// //if time filter of button is clicked
+// timeFilterOffBtn.addEventListener("click", e => {
+//     //change slider disply state
+//     sliderStatusChecker = "non-exist"
+//     //reset the slider
+//     slider.noUiSlider.reset();
+//     userTimeSettingChecker = false
+//     //remove slider related elements
+//     sliderDisplay()
+// });
 
 
 
@@ -1129,6 +1236,14 @@ map.on("mouseup", removeMoveFlagAndDraw);
 map.on("mousedown", setMoveFlag);
 map.on("move", moveFunc)
 
+function resetData() {
+    //zoomレベルが変わったときに色々と初期化
+    removeAllPieChart() //円グラフを全て削除
+    deletePieChartLoadedData() //円グラフを描画したかどうかを記憶するデータを削除。ダウンロードしたデータ自体は消さない
+    lineDrawnList = {} //ブロック線を引いたかどうかのデータを初期化
+    mylineLayerGroup.clearLayers(); // ブロック線グループ内のすべてのレイヤー(今回は線)を削除
+
+}
 function moveFunc() {
     const curZoomSize = map.getZoom()
     if (curZoomSize !== oldZoomSize) {
@@ -1136,10 +1251,8 @@ function moveFunc() {
         console.log("Zoom Level Changed: ", curZoomSize)
 
         //zoomレベルが変わったときに色々と初期化
-        removeAllPieChart() //円グラフを全て削除
-        deletePieChartLoadedData() //円グラフを描画したかどうかを記憶するデータを削除。ダウンロードしたデータ自体は消さない
-        lineDrawnList={} //ブロック線を引いたかどうかのデータを初期化
-        mylineLayerGroup.clearLayers(); // ブロック線グループ内のすべてのレイヤー(今回は線)を削除
+        resetData()
+        //キャプチャエリア内のサンプルの組成を取得し、円グラフ、リッジグラフを描く
         getCapturedSampleList()
     }
     if (!isMove) {
@@ -1182,22 +1295,21 @@ function getCapturedSampleList() {
     //    return
     //}
     if (isMove) {
+        console.log("Moving! getCapturedSampleList is canceled.")
         return
     }
-    var pos = map.getCenter();
-    var zoom = map.getZoom();
+    let pos = map.getCenter();
+    let zoom = map.getZoom();
 
-    //var pos = mapTest.getCenter();
-    //var zoom = mapTest.getZoom();
-    readDataAndPlotPieChart();
-    var coordination = "?taxo=" + taxo + "&lat=" + pos.lat + "&long=" + pos.lng + "&ratio=" + zoom
+    //url書き換え
+    let coordination = "?taxo=" + taxo + "&lat=" + pos.lat + "&long=" + pos.lng + "&ratio=" + zoom
     history.replaceState(null, "", coordination)
-    //マップの移動・拡大・縮小時に4隅の緯度経度を取得
-    var bounds = map.getBounds();
-    var north = bounds._northEast.lat;
-    var south = bounds._southWest.lat;
-    var east = bounds._northEast.lng;
-    var west = bounds._southWest.lng;
+    // //マップの移動・拡大・縮小時に4隅の緯度経度を取得
+    // var bounds = map.getBounds();
+    // var north = bounds._northEast.lat;
+    // var south = bounds._southWest.lat;
+    // var east = bounds._northEast.lng;
+    // var west = bounds._southWest.lng;
 
     //キャプチャエリア内のサンプル情報を取得
     capturedSampleList = [];
@@ -1241,13 +1353,14 @@ function getCapturedSampleList() {
         // })
     }
 
-    //drawLiddgeLineChangeable(capturedSampleList)
-    //drawLiddgeLine(capturedSampleList);
-    drawLiddgeLine3(capturedSampleList)
+    //円グラフ描画
+    readDataAndPlotPieChart();
+    //リッジライングラフ描画
+    drawLiddgeLine()
     //slidersize();
-    if (graphChecker !== "nonexist") {
-        sliderDisplay();
-    }
+    // if (graphChecker !== "nonexist") {
+    //     sliderDisplay();
+    // }
     getCapturedSampleListChecker = true
 }
 
@@ -1289,7 +1402,7 @@ function addKeyVal(obj, key, valueToAdd) {
     obj[key] += valueToAdd;
 }
 
-async function drawLiddgeLine3(capturedSampleList) {
+async function drawLiddgeLine() {
     //console.log("drawLiddgeLine3")
     // get map boundary
     let bounds = map.getBounds();
@@ -1326,7 +1439,7 @@ async function drawLiddgeLine3(capturedSampleList) {
             //blockTableData: x, y, monthdata:[{month, num, data:[{name, value}]}]<-1ブロック分
             graphData[blockSize][blockTableData.data.y + "/" + blockTableData.data.x] = blockTableData.data.monthdata
         }
-    }).finally(()=>{
+    }).finally(() => {
         let fishList = {} //{fishname:1}
         let numList = {} //{month: num}
         let sumList = {} //{month: {species: sum_percentage}}
@@ -1361,24 +1474,36 @@ async function drawLiddgeLine3(capturedSampleList) {
         }
         //console.log(averageList)
 
+        //フィルターがセットされていたらその魚種に限定
+        if (fishFilterArray.length > 0) {
+            //console.log("フィルターあり")
+            //console.log("fishList 1: ", fishList)
+            fishList = Object.fromEntries(
+                Object.entries(fishList).filter(([key, value]) => fishFilterArray.includes(key))
+            );
+            //console.log("fishList 2: ", fishList)
+        }
         let fishArray = Object.keys(fishList)
         let dateArray = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
-
+        if (fishFilterArray.length === 0) {
+            //フィルターがない場合のみフィルターの魚種一覧リストを更新
+            setFilter(fishArray)
+        }
 
         dateList = [];
-        var dateListAlltime = [];
         //fishList = [];
         let densityList = [];
         let timemode = "monthly";
-        var alltimeBtn = document.getElementById("alltime");
-        var alltimeBtnStyle = alltimeBtn.style;
-        var alltimeBtnStyleDisplay = alltimeBtnStyle.getPropertyValue('display');
-        let timelineData = {};
-        let numDataInDay = {};
-        let numtimelineData = {};
+        // var dateListAlltime = [];
+        // var alltimeBtn = document.getElementById("alltime");
+        // var alltimeBtnStyle = alltimeBtn.style;
+        // var alltimeBtnStyleDisplay = alltimeBtnStyle.getPropertyValue('display');
+        // let timelineData = {};
+        // let numDataInDay = {};
+        // let numtimelineData = {};
 
-        //console.log(alltimeBtnStyleDisplay);
-        if (alltimeBtnStyleDisplay === "none") { timemode = "alltime" }
+        // //console.log(alltimeBtnStyleDisplay);
+        // if (alltimeBtnStyleDisplay === "none") { timemode = "alltime" }
 
         //svgタグを追加し、幅と高さを設定
         var graph = d3.select("#graph");
@@ -1403,7 +1528,7 @@ async function drawLiddgeLine3(capturedSampleList) {
             fastdensityData.density.push([scaleMin, 0]);
             for (let date of dateArray) {
                 if (date in averageList && fishName in averageList[date]) {
-                    fastsum+=averageList[date][fishName]
+                    fastsum += averageList[date][fishName]
                     if (averageList[date][fishName] > fastmax) {
                         fastmax = averageList[date][fishName]
                     }
@@ -1468,7 +1593,7 @@ async function drawLiddgeLine3(capturedSampleList) {
                 .attr("transform", "translate(0," + height + ")")
                 .call(
                     d3.axisTop(xScale)
-                        .tickFormat(d3.timeFormat("%B"))
+                        .tickFormat(d3.timeFormat("%m"))
                 )
         }
         else {
@@ -1532,7 +1657,7 @@ async function drawLiddgeLine3(capturedSampleList) {
         let numDataInDayList = [];
         let numDataInMonthMax = 0
         for (let month in numList) { // numList: {month: sample_n}
-            if(numList[month]>numDataInMonthMax){numDataInMonthMax=numList[month]}
+            if (numList[month] > numDataInMonthMax) { numDataInMonthMax = numList[month] }
             numDataInDayList.push({ "date": new Date("2017-" + month + "-01"), "value": numList[month] });
         }
         //SVG領域の設定
@@ -1549,8 +1674,8 @@ async function drawLiddgeLine3(capturedSampleList) {
             formatTick = function (d) { return 10 + formatPower(Math.round(Math.log(d) / Math.LN10)); };
 
         let baryScale = d3.scaleLog()
-             .domain([numDataInMonthMax, 0.90000000001])
-             .range([0, barheight]);
+            .domain([numDataInMonthMax, 0.90000000001])
+            .range([0, barheight]);
 
         //バーの表示
         svgbar.append("g")
@@ -1566,12 +1691,22 @@ async function drawLiddgeLine3(capturedSampleList) {
 
         //x軸を追加する
         if (timemode == "monthly") {
+            console.log(barwidth)
             svgbar.append("g")
                 .attr("transform", "translate(0," + barheight + ")")
                 .call(
                     d3.axisTop(barxScale)
-                        .tickFormat(d3.timeFormat("%B"))
+                        .tickFormat(d3.timeFormat("%m"))
                 )
+                .append("text")
+                .attr("fill", "gray")
+                //.attr("transform", `translate(${width}, ${height - 10})`) // 右端に寄せるために調整
+                .attr("text-anchor", "middle") // テキストを右揃え
+                .attr("x", 150)
+                .attr("y", 15)
+                .attr("font-weight", "middle")
+                .attr("font-size", "10pt")
+                .text("Month");
         }
         else {
             svgbar.append("g")
@@ -1587,14 +1722,14 @@ async function drawLiddgeLine3(capturedSampleList) {
             .attr("transform", "translate(0, 0)")
             .call(d3.axisLeft(baryScale).ticks(10, 0))
             .append("text")
-            .attr("fill", "black")
-            .attr("text-anchor", "middle")
-            .attr("x", -(barheight - margin.top - margin.bottom) / 2 - margin.top)
+            .attr("fill", "gray")
+            //.attr("text-anchor", "start")
+            //.attr("x", -(barheight - margin.top - margin.bottom) / 2 - margin.top)
             .attr("y", -35)
             .attr("transform", "rotate(-90)")
             .attr("font-weight", "middle")
             .attr("font-size", "10pt")
-            .text("#Samples");;
+            .text("#Samples");
         //console.log(numDataInDayList)
         numDataInDayList = []
         graphChecker = "exist"
@@ -1617,7 +1752,7 @@ function drawScale(timemode, svg, xScale) {
             .attr("transform", "translate(0," + ($(window).scrollTop()) + ")")
             .call(
                 d3.axisTop(xScale)
-                    .tickFormat(d3.timeFormat("%B"))
+                    .tickFormat(d3.timeFormat("%m"))
             )
     }
     else {
@@ -1659,35 +1794,35 @@ function isInvalidDate(date) {
 }
 
 
-function sliderDisplay() {
-    if (sliderStatusChecker == "exist") {
-        timeFilterOnBtn.style.display = "none";
-        timeFilterOffBtn.style.display = "block";
-        if (timeBtnChecker == "monthlyBtn") {
-            bargraphArea.style.display = "none";
-            bargraphAlltimeArea.style.display = "block";
-        } else {
-            bargraphArea.style.display = "block";
-            bargraphAlltimeArea.style.display = "block";
-        }
-        sliderArea.style.display = "block";
-        lowerHandleNumber.style.display = "block";
-        upperHandleNumber.style.display = "block";
-    } else if (sliderStatusChecker == "non-exist") {
-        timeFilterOnBtn.style.display = "block";
-        timeFilterOffBtn.style.display = "none";
-        if (timeBtnChecker == "monthlyBtn") {
-            bargraphArea.style.display = "none";
-            bargraphAlltimeArea.style.display = "block"
-        } else {
-            bargraphArea.style.display = "block"
-            bargraphAlltimeArea.style.display = "none"
-        }
-        sliderArea.style.display = "none";
-        lowerHandleNumber.style.display = "none";
-        upperHandleNumber.style.display = "none";
-    }
-}
+// function sliderDisplay() {
+//     if (sliderStatusChecker == "exist") {
+//         timeFilterOnBtn.style.display = "none";
+//         timeFilterOffBtn.style.display = "block";
+//         if (timeBtnChecker == "monthlyBtn") {
+//             bargraphArea.style.display = "none";
+//             bargraphAlltimeArea.style.display = "block";
+//         } else {
+//             bargraphArea.style.display = "block";
+//             bargraphAlltimeArea.style.display = "block";
+//         }
+//         sliderArea.style.display = "block";
+//         lowerHandleNumber.style.display = "block";
+//         upperHandleNumber.style.display = "block";
+//     } else if (sliderStatusChecker == "non-exist") {
+//         timeFilterOnBtn.style.display = "block";
+//         timeFilterOffBtn.style.display = "none";
+//         if (timeBtnChecker == "monthlyBtn") {
+//             bargraphArea.style.display = "none";
+//             bargraphAlltimeArea.style.display = "block"
+//         } else {
+//             bargraphArea.style.display = "block"
+//             bargraphAlltimeArea.style.display = "none"
+//         }
+//         sliderArea.style.display = "none";
+//         lowerHandleNumber.style.display = "none";
+//         upperHandleNumber.style.display = "none";
+//     }
+// }
 
 
 
@@ -1809,9 +1944,9 @@ window.addEventListener('resize', function () {
 // });
 
 
-//change the slider with bar
-document.getElementById("lowerHandleNumberDatePicker").addEventListener("blur", dateChangedByLowerCalander);
-document.getElementById("upperHandleNumberDatePicker").addEventListener("blur", dateChangedByUpperCalander);
+// //change the slider with bar
+// document.getElementById("lowerHandleNumberDatePicker").addEventListener("blur", dateChangedByLowerCalander);
+// document.getElementById("upperHandleNumberDatePicker").addEventListener("blur", dateChangedByUpperCalander);
 
 
 
