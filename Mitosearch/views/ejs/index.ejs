@@ -85,15 +85,15 @@
         <ul id="nav">
             <li class="disabled"><a href="./"><%= __('Top') %></a></li>
             <li><a href="./about"><%= __('About') %></a></li>
-            <li></li>
+            <!-- <li></li> -->
             <td><div class="btn-separator"></div></td>
             <div>
             <% if (taxo === 'fish') { %>
                 <button class="data_changer_off" id="fish" disabled="true"><%= __('Fish') %></button>
-                <button class="data_changer_on" id="mollusk"><%= __('Mollusk') %></button>
+                <!-- <button class="data_changer_on" id="mollusk"><%= __('Mollusk') %></button> -->
             <% } else if (taxo === 'mollusk') { %>
                 <button class="data_changer_on" id="fish" ><%= __('Fish') %></button>
-                <button class="data_changer_off" id="mollusk" disabled="true"><%= __('Mollusk') %></button>
+                <!-- <button class="data_changer_off" id="mollusk" disabled="true"><%= __('Mollusk') %></button> -->
             <% } %>
             </div>
         </ul>

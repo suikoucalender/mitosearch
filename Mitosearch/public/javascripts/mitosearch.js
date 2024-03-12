@@ -95,7 +95,7 @@ async function getTargetBlocksGraphMonth(southWest, northEast, blockSize) { //�
     blockSize = new BigNumber(blockSize) //BigNumberオブジェクトに変換しておく
     //ブロックをすべて列挙する
     let listBlocks = []
-    
+
     const response = await fetch(baseurl + 'getTargetBlocks', {
         method: 'POST',
         headers: {
@@ -1556,7 +1556,7 @@ async function drawLiddgeLine() {
         }
 
         //魚種ごとのデータ作成高速化版
-        let fastdensityList = [];
+        let fastdensityList = []; //[{max, sum, fish, density:[]}]
         for (let fishName of fishArray) {
             let fastdensityData = { fish: fishName, density: [] };
             let fastmax = 0;
@@ -1583,14 +1583,24 @@ async function drawLiddgeLine() {
             fastdensityList.push(fastdensityData);
         }
 
-        //グラフ描画用リストをMaxでソート
-        densityList = object_array_sort(fastdensityList, "sum");
+        //グラフ描画用リストをsumでソート
+        densityList = object_array_sort(fastdensityList, "sum"); //[{max, sum, fish, density:[]}]
         //densityList = densityList.slice(0, 20)
 
-        //魚種リストをソート
-        fishList = densityList.map(densityData => {
-            return densityData.fish;
+        //console.log(fishList) //{fishname: 1}
+        //魚種の名前一覧を作成
+        const fishNameArray = densityList.map(densityData => {
+            return densityData.fish
         });
+        //console.log(fishNameArray) //[fishname]
+
+        //魚種ごとの最大頻度リストを作成
+        const fishFreqArray = densityList.map((densityData, i) => {
+            //fastdensityData["fish"] = fastdensityData["fish"]+ " "+ fastmax.toPrecision(2) + "%";
+            return "(" + (i + 1) + ") Max: " + densityData["max"].toPrecision(2) + "%"
+        });
+        //console.log(fishNameArray2)
+
 
         //グラフ全体のサイズとマージンを設定
         var map = document.getElementById("map");
@@ -1599,7 +1609,7 @@ async function drawLiddgeLine() {
 
         var margin = { top: 75, right: mapLeft, bottom: 30, left: 250 },
             width = window.innerWidth - mapWidth - mapLeft - margin.left - margin.right,
-            height = 40 * fishList.length,
+            height = 40 * fishNameArray.length,
             barmargin = { top: 10, right: mapLeft, bottom: margin.bottom, left: margin.left },
             barheight = 100,
             barwidth = width / 20;
@@ -1640,23 +1650,37 @@ async function drawLiddgeLine() {
                         .tickFormat(d3.timeFormat("%y/%m"))
                 )
         }
-        //y軸のスケールを作成する
-        var fishScale = d3.scaleBand()
-            .domain(fishList)
+        //y軸のスケールを作成する（名前を入れると座標を返す関数を作成する）
+        let fishScale = d3.scaleBand()
+            .domain(fishNameArray)
             .range([0, height]);
+
+        //y軸のスケールを作成する for ラベル表示用
+        let fishScaleY = d3.scaleBand()
+            .domain(fishNameArray)
+            .range([-12, height - 12]);
 
         //y軸を追加する
         svg.append("g")
             .attr("transform", "translate(0, 0)")
-            .call(d3.axisLeft(fishScale))
+            .call(d3.axisLeft(fishScaleY))
 
+        //y軸のスケールを作成する for 最大頻度表示用
+        let fishScaleFreqY = d3.scaleBand()
+            .domain(fishFreqArray)
+            .range([0, height]);
+
+        //y軸を追加する2
+        svg.append("g")
+            .attr("transform", "translate(0, 0)")
+            .call(d3.axisLeft(fishScaleFreqY).tickSize(0))
 
 
         //半メモリ分の長さを取得
         var betweenlen;
 
-        if (fishList.length > 1) {
-            betweenlen = fishScale(fishList[1]) / 2;
+        if (fishNameArray.length > 1) {
+            betweenlen = fishScale(fishNameArray[1]) / 2;
         } else {
             betweenlen = height / 2;
         }
