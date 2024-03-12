@@ -1,5 +1,6 @@
 {
-	"MainTitle": "世界の魚種組成を把握するため、eDNA（環境DNA）をMiFishプライマーで増幅して得られた12SリボソームRNA遺伝子4355個の配列データを用いて、魚種組成データベース「MitoSearch」を構築しました。",
+	"MainTitle1": "世界の魚種組成を把握するため、eDNA（環境DNA）をMiFishプライマーで増幅して得られた12SリボソームRNA遺伝子",
+	"MainTitle2": "個の配列データを用いて、魚種組成データベース「MitoSearch」を構築しました。",
 	"headline": "Mitosearchの概要",
 	"helpingParagraph1": "各eDNAサンプルの魚種構成は、地図上のサンプリング地点に円グラフで表示されます。",
 	"helpingParagraph2": "地図を縮小することにより、地理的に近いサンプルを統合した構成円グラフを表示します。",

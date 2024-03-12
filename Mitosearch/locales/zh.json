@@ -1,5 +1,6 @@
 {
-	"MainTitle": "为了解世界鱼种构成，利用通过MiFish引物扩增环境DNA(eDNA)获得的4355条12S核糖体RNA基因的序列数据，构建了MitoSearch鱼种构成数据库。",
+	"MainTitle1": "为了解世界鱼种构成，利用通过MiFish引物扩增环境DNA(eDNA)获得的",
+	"MainTitle2": "条12S核糖体RNA基因的序列数据，构建了MitoSearch鱼种构成数据库。",
 	"headline": "MitoSearch概览",
 	"helpingParagraph1": "每个eDNA数据的鱼种构成以饼状图显示在地图采样点上。",
 	"helpingParagraph2": "缩小地图可合并地理位置相近的数据。",

@@ -31,6 +31,12 @@ app.set('view engine', 'ejs');
 
 let taxo;
 
+function removeEmptyLastItem(arr) {
+    if (arr.length > 0 && arr[arr.length - 1] === '') {
+        arr.pop();
+    }
+}
+
 /* GET home page. */
 router.get('/', function (req, res) {
     taxo = req.query.taxo;
@@ -38,7 +44,7 @@ router.get('/', function (req, res) {
         taxo = "fish"
     }
     let language = req.headers["accept-language"]
-    if(language === undefined){
+    if (language === undefined) {
         language = "en"
     }
     language = language[0] + language[1]
@@ -57,7 +63,38 @@ router.get('/', function (req, res) {
     if (ratio == undefined || ratio == "") {
         ratio = 5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
+
+    //海・川・湖などなら追加
+    const waterPath = "data/fish/mapwater.result.txt"
+    let aquaDataTemp = fs.readFileSync(waterPath, 'utf8');
+    let aquaDataTempLines = aquaDataTemp.split('\n')
+    removeEmptyLastItem(aquaDataTempLines);
+    let aquaData = {}
+    for (let aquaDataTemp of aquaDataTempLines) {
+        let aquaDataTempItems = aquaDataTemp.split('\t');
+        aquaData[aquaDataTempItems[0]] = aquaDataTempItems[1];
+    }
+    //現在のMiFishデータの数を調べる
+    const locationPath = "data/fish/lat-long-date.txt"
+    const locationInfo = fs.readFileSync(locationPath, 'utf8');
+    let locationInfoLines = locationInfo.split('\n');
+    removeEmptyLastItem(locationInfoLines);
+    let locationInfoItems = [];
+    for (let locationInfoLine of locationInfoLines) {
+        let templocationInfoItem = locationInfoLine.split('\t'); //'ERR11637981', '11.84508333 S 96.82013333 E', '2022-12-06'
+        let tempLatLong = templocationInfoItem[1].split(' ')
+        //console.log(templocationInfoItem, tempLatLong[0], aquaData[templocationInfoItem[0]]);
+        if (tempLatLong[0] !== "" && tempLatLong.length === 4 && !isNaN(tempLatLong[0]) && aquaData[templocationInfoItem[0]] === "1") {
+            //経度緯度が記述されていれば追加
+            locationInfoItems.push(templocationInfoItem);
+        }
+    }
+
+    res.render('ejs/index.ejs', {
+        sampleDataObjList: sampleDataObjList, AllFishList: allFishList,
+        fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude,
+        ratio: ratio, language: language, numFish: locationInfoItems.length
+    });
 });
 
 router.get('/fish', function (req, res) {
@@ -214,7 +251,7 @@ router.post('/getTargetBlocks', function (req, res) {
     for (let x = longStart; x.isLessThanOrEqualTo(longEnd); x = x.plus(blockSize)) {
         const dx_value = Math.floor((parseFloat(x.toString()) + 180) / 360) * 360
         const x_normalized = BigNumber(x.toString()).minus(dx_value)
-        
+
         for (let y = latStart; y.isLessThanOrEqualTo(latEnd); y = y.plus(blockSize)) {
             //console.log("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x_normalized.toString() + "/" + filename)
             if (fileExists("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x_normalized.toString() + "/" + filename)) {

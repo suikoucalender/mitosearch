@@ -1,5 +1,6 @@
 {
-	"MainTitle": "We constructed MitoSearch, a fish species composition database, using 4355 sequence data of 12S ribosomal RNA genes obtained by amplifying eDNA (environmental DNA) with MiFish primers in order to understand fish species composition around the world.",
+	"MainTitle1": "We constructed MitoSearch, a fish species composition database, using ",
+	"MainTitle2": "sequence data of 12S ribosomal RNA genes obtained by amplifying eDNA (environmental DNA) with MiFish primers in order to understand fish species composition around the world.",
 	"headline": "Overview of MitoSearch",
 	"helpingParagraph1": "The fish species composition of each eDNA sample is displayed as a pie chart at the sampling point on the map.",
 	"helpingParagraph2": "Display a composition pie chart that merges samples that are geographically close by shrinking the map.",
