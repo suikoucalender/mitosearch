@@ -552,6 +552,8 @@ pointBtn.addEventListener("click", e => {
         // undoBtn.className = "iconPolygon2on";
         // undoBtn.disabled = false;
         pointBtn.className = "iconPolygonon";
+        //console.log("cursor: ", document.getElementById('map').style.cursor)
+        document.getElementById('map').style.cursor = "crosshair"
 
         map.on('click', function (e) {
             //draw polygon fix points on the map by click
@@ -594,6 +596,7 @@ pointBtn.addEventListener("click", e => {
         map.off('click');
         functioncheker = "off"
         pointBtn.className = "iconPolygon";
+        document.getElementById('map').style.cursor = ""
 
         //ポリゴン情報をリセット
         if (polygoncheker == "exist") {

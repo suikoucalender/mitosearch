@@ -38,6 +38,9 @@ router.get('/', function (req, res) {
         taxo = "fish"
     }
     let language = req.headers["accept-language"]
+    if(language === undefined){
+        language = "en"
+    }
     language = language[0] + language[1]
     let sampleDataObjList = [] //getSampleDataObjList(taxo,language);
     let allFishList = [] //getAllFishList(sampleDataObjList);
