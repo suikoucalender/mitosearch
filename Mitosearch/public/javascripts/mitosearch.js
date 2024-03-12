@@ -702,6 +702,7 @@ async function readDataAndPlotPieChart() {
                     //console.log("y_x, dx_value, y_x_normalized", y_x, dx_value, y_x_normalized)
 
                     if (!(y_x in loadedData)) {
+                        loadedData[y_x]=1
                         //console.log("y_x will be shown, ", y_x, blockSize, y_x_normalized, pieData[blockSize]);
                         //描画されていないデータが対象
                         if ("data" in pieData[blockSize][y_x_normalized]) {
@@ -749,9 +750,11 @@ async function readDataAndPlotPieChart() {
                             }
                             htmlStringForPopup += '</table>';
                             //draw pie
-                            let customIcon = drawPieIcontest(radiusTest, pieDataTmp, n)
+                            let customIcon = drawPieIcon(radiusTest, pieDataTmp, n)
+                            let customIconWhite = drawPieIconWhite(radiusTest, pieDataTmp, n) //外枠の白い円用
 
                             //add pie chart//can not get data
+                            let markersTestWhite = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIconWhite }).addTo(map);
                             let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIcon }).addTo(map);
                             //let markersTest2 = L.marker([y, Decimal.add(x, 360)], { icon: customIcon }).addTo(map);//？
                             markersTest1.bindPopup(htmlStringForPopup)
@@ -867,7 +870,7 @@ async function plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, o
     htmlStringForPopup += '</table>';
 
     //draw pie
-    let customIcon = drawPieIcontest(radiusTest, pieDataTmp, 1)
+    let customIcon = drawPieIcon(radiusTest, pieDataTmp, 1)
 
     console.log(pieCenter)
 
@@ -913,7 +916,7 @@ async function mainLevel18(blockData, offset, radiusTest) {
 }
 
 
-function drawPieIcontest(radius, pieInputList, sampleNo) {
+function drawPieIcon(radius, pieInputList, sampleNo) {
 
     //円弧を描画する
     if (sampleNo < 10) { sampleNo = 10 }
@@ -921,25 +924,6 @@ function drawPieIcontest(radius, pieInputList, sampleNo) {
     let arc = d3.arc()
         .outerRadius(radius)
         .innerRadius(radius / 3);
-    // let arc2 = d3.arc()
-    //     .outerRadius(radius+1)
-    //     .innerRadius(radius / 3 - 1);
-
-    // tmptest.append("svg")
-    //     .attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")")
-    //     .attr("height", 2 * radius)
-    //     .attr("width", 2 * radius)
-    //     .append("g")
-    //     .attr("transform", "translate(" + radius + "," + radius + ")")
-    //     .selectAll(".pie")
-    //     .data(pie(pieInputList))
-    //     .enter()
-    //     .append("g")
-    //     .attr("class", "pie")
-    //     .append("path")
-    //     .attr("d", arc2)
-    //     .attr("fill", "white")
-    //     .attr("opacity", 1) //透過を指定するプロパティ
 
     tmptest.append("svg")
         .attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")")
@@ -955,8 +939,39 @@ function drawPieIcontest(radius, pieInputList, sampleNo) {
         .append("path")
         .attr("d", arc)
         .attr("fill", function (d) { return selectColortest(d) })
-        .attr("opacity", 0.7) //透過を指定するプロパティ
-        .attr("stroke", "white"); //アウトラインの色を指定するプロパティ
+        //.attr("opacity", 0.5) //透過を指定するプロパティ
+        //.attr("stroke", "white"); //アウトラインの色を指定するプロパティ
+
+    var customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster' });
+    //console.log(customIcon)
+    tmptest.select("svg").remove();
+    return customIcon
+}
+
+function drawPieIconWhite(radius, pieInputList, sampleNo) {
+
+    //円弧を描画する
+    if (sampleNo < 10) { sampleNo = 10 }
+    radius = radius * (Math.log10(sampleNo)) + 1
+    let arc = d3.arc()
+        .outerRadius(radius)
+        .innerRadius(radius / 3-2);
+
+    tmptest.append("svg")
+        .attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")")
+        .attr("height", 2 * radius)
+        .attr("width", 2 * radius)
+        .append("g")
+        .attr("transform", "translate(" + radius + "," + radius + ")")
+        .selectAll(".pie")
+        .data(pie(pieInputList))
+        .enter()
+        .append("g")
+        .attr("class", "pie")
+        .append("path")
+        .attr("d", arc)
+        .attr("fill", "white")
+        //.attr("opacity", 1) //透過を指定するプロパティ
 
     var customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster' });
     //console.log(customIcon)
