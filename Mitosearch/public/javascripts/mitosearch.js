@@ -1691,7 +1691,7 @@ async function drawLiddgeLine() {
             .enter()
             .append("path")
             .attr("transform", function (d) { return ("translate(0," + (fishScale(d.fish) + betweenlen) + ")") })
-            .attr("fill", function (d) { return "rgb(255,255," + ((100 - d.max) ) + ")" })
+            .attr("fill", function (d) { return "rgb(255,255," + ((30 - Math.min(30, d.max)) * 8) + ")" })
             //.attr("fill", function (d) { return "rgb(255,255,103)" })
             .datum(function (d) { return d.density })
             .attr("stroke", "#000")
@@ -1966,6 +1966,11 @@ window.addEventListener("load", function () {
 //dicide icons' position when window size changed
 window.addEventListener('resize', function () {
     iconLocation();
+    
+    //円グラフ描画
+    readDataAndPlotPieChart();
+    //リッジライングラフ描画
+    drawLiddgeLine()
 });
 
 
