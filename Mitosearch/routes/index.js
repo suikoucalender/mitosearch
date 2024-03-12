@@ -209,9 +209,12 @@ router.post('/getTargetBlocks', function (req, res) {
 
     //ブロックを列挙しつつ地図上にブロック区切りの線も引く
     for (let x = longStart; x.isLessThanOrEqualTo(longEnd); x = x.plus(blockSize)) {
+        const dx_value = Math.floor((parseFloat(x.toString()) + 180) / 360) * 360
+        const x_normalized = BigNumber(x.toString()).minus(dx_value)
+        
         for (let y = latStart; y.isLessThanOrEqualTo(latEnd); y = y.plus(blockSize)) {
-            //console.log("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x.toString() + "/" + filename)
-            if (fileExists("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x.toString() + "/" + filename)) {
+            //console.log("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x_normalized.toString() + "/" + filename)
+            if (fileExists("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x_normalized.toString() + "/" + filename)) {
                 //ターゲットとして保存
                 //console.log(x, y)
                 listBlocks.push({ y: y.toString(), x: x.toString() })

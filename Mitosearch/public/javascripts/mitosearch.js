@@ -28,9 +28,9 @@ function getBlockSize(ratio) {
     return result.toNumber()
 }
 
-let lineDrawnList = {}
+let lineDrawnList = {} //ブロックの線を描いたかどうかを記憶
 async function getTargetBlocksPie(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
-
+    //円グラフはLeafletに一度表示すれば左右にマップを移動しても残るけど、ブロックの線はleafletに描画指示を一度出しても左右移動のたびに再描画されるみたい
     //円グラフ描画のついでにブロックの線も描く
     blockSize = new BigNumber(blockSize) //ここで扱う数字は全てBigNumberオブジェクトに変換しておく
     //左、下はブロックサイズで割って切り捨ててからブロックサイズを掛け、端数を切った値
@@ -81,7 +81,7 @@ async function getTargetBlocksPie(southWest, northEast, blockSize) { //数字or�
 
     if (response.ok) {
         const data = await response.json();
-        console.log(data)
+        //console.log(data)
         listBlocks = data.listBlocks
         //results.push(...data.existingFiles); // 結果をresults配列に追加
     } else {
@@ -106,7 +106,7 @@ async function getTargetBlocksGraphMonth(southWest, northEast, blockSize) { //�
 
     if (response.ok) {
         const data = await response.json();
-        console.log(data)
+        //console.log(data)
         listBlocks = data.listBlocks
         //results.push(...data.existingFiles); // 結果をresults配列に追加
     } else {
@@ -124,6 +124,7 @@ function addline_step1(l1) { //    [stry0, strx0, stry0, strx1]
 
 function addline_step2(lat1, long1, lat2, long2) { //引数は全て文字列
     try {
+        //console.log("line drawing")
         lat1 = parseFloat(lat1)
         long1 = parseFloat(long1)
         lat2 = parseFloat(lat2)
@@ -451,7 +452,7 @@ $("#button").click(function () {
 //セレクトボックスに魚種を設定
 function setFilter(fishList) {
     let tmpItems = $("#filter").val()
-    console.log(tmpItems)
+    //console.log(tmpItems)
     removeAllFilterItems()
     //let checkFishList = {}
     for (let fishname of fishList) {
@@ -583,10 +584,10 @@ pointBtn.addEventListener("click", e => {
             } else {
                 polygonCoordinate.coordinates[0][0].push(tempco);
             }
-            sliderUpdating();//updating the plots and time slider
+            //sliderUpdating();//updating the plots and time slider
             //slider.noUiSlider.reset();
             //getCapturedSampleList();
-            drawLiddgeLine()
+            //drawLiddgeLine() //点を打った時はマウスアップ判定が走るので、ここでdrawLiddgeLineを呼ぶと重複する
         })
     } else if (functioncheker == "on") {
         //Disable the ability to add a fixed point
@@ -710,9 +711,9 @@ async function readDataAndPlotPieChart() {
         }
         //console.log(urlsFishAndRatio)
         //console.log(urlsPieCoord)
-        urlsFishAndRatio = await checkFiles(urlsFishAndRatio)
+        //urlsFishAndRatio = await checkFiles(urlsFishAndRatio)
         //console.log(urlsFishAndRatio)
-        urlsPieCoord = await checkFiles(urlsPieCoord)
+        //urlsPieCoord = await checkFiles(urlsPieCoord)
 
         // 2つのfetchFiles関数の実行をPromise.allでラップする
         Promise.all([fetchFiles(urlsPieCoord), fetchFiles(urlsFishAndRatio)])
@@ -1440,9 +1441,9 @@ async function drawLiddgeLine() {
             if (intersection !== null) {
                 //console.log(block)
                 filterdTargetBlocks.push(block)
-                targetBlocks = filterdTargetBlocks
             }
         })
+        targetBlocks = filterdTargetBlocks
     }
 
     let urls = [];
@@ -1463,7 +1464,7 @@ async function drawLiddgeLine() {
         }
     }
     //console.log(urls)
-    urls = await checkFiles(urls)
+    //urls = await checkFiles(urls)
 
     fetchFiles(urls).then(dataList => {
         console.log('Downloaded graph data: ', dataList);
@@ -1723,7 +1724,7 @@ async function drawLiddgeLine() {
 
         //x軸を追加する
         if (timemode == "monthly") {
-            console.log(barwidth)
+            //console.log(barwidth)
             svgbar.append("g")
                 .attr("transform", "translate(0," + barheight + ")")
                 .call(
