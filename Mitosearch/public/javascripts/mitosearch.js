@@ -86,10 +86,9 @@ function addline_step2(lat1, long1, lat2, long2) { //引数は全て文字列
         long1 = parseFloat(long1)
         lat2 = parseFloat(lat2)
         long2 = parseFloat(long2)
-        // 東経139度に沿う線を描画
-        var polyline = L.polyline([
-            [lat1, long1], // 南緯90度, 東経139度
-            [lat2, long2]   // 北緯90度, 東経139度
+        // 線を描画
+        L.polyline([
+            [lat1, long1], [lat2, long2]
         ], {
             color: 'red', // 線の色
             weight: 1, // 線の太さ
@@ -519,74 +518,94 @@ let polygonCoordinate = {
 }
 let polygoncheker = "nonexist"
 
-//v2への更新にあたり使用不可能
-// pointBtn.addEventListener("click", e => {
-//   if (functioncheker=="off"){
-//     //Activate the function of adding fixed points
-//     functioncheker = "on";
-//     undoBtn.className="iconPolygon2on";
-//     undoBtn.disabled=false;
-//     pointBtn.className="iconPolygonon";
+pointBtn.addEventListener("click", e => {
+    if (functioncheker == "off") {
+        //Activate the function of adding fixed points
+        functioncheker = "on";
+        // undoBtn.className = "iconPolygon2on";
+        // undoBtn.disabled = false;
+        pointBtn.className = "iconPolygonon";
 
-//     map.on('click',function(e){
-//       //draw polygon fix points on the map by click
-//       var dotLayer = L.layerGroup().addTo(map);
-//       var dotmarker = L.circle(e.latlng,{radius:100,color:'red',fillColor:'red',fillOpacity:1}).addTo(dotLayer);
-//       dotLayer.eachLayer(function(layer){
-//         layer._path.class = 'dots';
-//         layer._path.id = 'dots';
-//       });
-//       dotnumber = dotnumber+1;
-//       var tempco = [];
-//       tempco.push(dotmarker.getLatLng().lng,dotmarker.getLatLng().lat);
+        map.on('click', function (e) {
+            //draw polygon fix points on the map by click
+            let dotLayer = L.layerGroup().addTo(map);
+            let dotmarker = L.circle(e.latlng, { radius: 100, color: 'red', fillColor: 'red', fillOpacity: 1 }).addTo(dotLayer);
+            dotLayer.eachLayer(function (layer) {
+                layer._path.class = 'dots';
+                layer._path.id = 'dots';
+            });
+            dotnumber = dotnumber + 1;
+            let tempco = [];
+            tempco.push(dotmarker.getLatLng().lng, dotmarker.getLatLng().lat);
 
-//       if (dotnumber>=3){
-//         //add polygon, when fix points more then 3
-//         if (polygoncheker=="exist"){
-//           $("#polygonlayer").remove();
-//           polygonCoordinate.coordinates[0][0].pop();
-//         }
-//         polygonCoordinate.coordinates[0][0].push(tempco);
-//         polygonCoordinate.coordinates[0][0].push(polygonCoordinate.coordinates[0][0][0]);
-//         var geoJsonLayer = L.geoJSON(polygonCoordinate).addTo(map);
-//         geoJsonLayer.eachLayer(function (layer) {
-//           layer._path.id = 'polygonlayer';
-//         });
-//         polygoncheker="exist"
+            if (dotnumber >= 3) {
+                //add polygon, when fix points more then 3
+                if (polygoncheker == "exist") {
+                    //ポリゴンを描画しているときは、最後に1番目の座標を追加しているから最後を削除
+                    $("#polygonlayer").remove();
+                    polygonCoordinate.coordinates[0][0].pop();
+                }
+                //最後に新規データを追加して、描画用にさらにそのあとに1番目のデータを追加
+                polygonCoordinate.coordinates[0][0].push(tempco);
+                polygonCoordinate.coordinates[0][0].push(polygonCoordinate.coordinates[0][0][0]);
+                var geoJsonLayer = L.geoJSON(polygonCoordinate).addTo(map);
+                geoJsonLayer.eachLayer(function (layer) {
+                    layer._path.id = 'polygonlayer';
+                });
+                polygoncheker = "exist"
 
-//       }else{
-//         polygonCoordinate.coordinates[0][0].push(tempco);
-//       }
-//       sliderUpdating();//updating the plots and time slider
-//       slider.noUiSlider.reset();
-//       getCapturedSampleList();
-//     })
-//   } else if (functioncheker=="on"){
-//     //Disable the ability to add a fixed point
-//     map.off('click');
-//     functioncheker="off"
-//     pointBtn.className="iconPolygon";
+            } else {
+                polygonCoordinate.coordinates[0][0].push(tempco);
+            }
+            sliderUpdating();//updating the plots and time slider
+            //slider.noUiSlider.reset();
+            //getCapturedSampleList();
+            drawLiddgeLine()
+        })
+    } else if (functioncheker == "on") {
+        //Disable the ability to add a fixed point
+        map.off('click');
+        functioncheker = "off"
+        pointBtn.className = "iconPolygon";
 
-//   }
-// });
+        //ポリゴン情報をリセット
+        if (polygoncheker == "exist") {
+            //ポリゴンを描画しているときは、最後に1番目の座標を追加しているから最後を削除
+            $("#polygonlayer").remove();
+            $('#dots*').remove();
+            dotnumber = 0
+            polygonCoordinate = {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [[]]
+                ]
+            }
+            polygoncheker = "nonexist"
+        }
 
-// undoBtn.addEventListener("click", e =>{
-//   //reset the polygon function
-//   $("#polygonlayer").remove();
-//   $('#dots*').remove();
-//   dotnumber=0
-//   polygonCoordinate = {
-//     "type": "MultiPolygon",
-//     "coordinates": [
-//       [[]]
-//     ]
-//   }
-//   polygoncheker="nonexist"
+        //getCapturedSampleList();
+        drawLiddgeLine()
 
-//   //map.off('click');
-//   getCapturedSampleList();
-//   sliderUpdating();
-//   slider.noUiSlider.reset();
+    }
+});
+
+// undoBtn.addEventListener("click", e => {
+//     //reset the polygon function
+//     $("#polygonlayer").remove();
+//     $('#dots*').remove();
+//     dotnumber = 0
+//     polygonCoordinate = {
+//         "type": "MultiPolygon",
+//         "coordinates": [
+//             [[]]
+//         ]
+//     }
+//     polygoncheker = "nonexist"
+
+//     //map.off('click');
+//     getCapturedSampleList();
+//     sliderUpdating();
+//     slider.noUiSlider.reset();
 
 // })
 
@@ -702,7 +721,7 @@ async function readDataAndPlotPieChart() {
                     //console.log("y_x, dx_value, y_x_normalized", y_x, dx_value, y_x_normalized)
 
                     if (!(y_x in loadedData)) {
-                        loadedData[y_x]=1
+                        loadedData[y_x] = 1
                         //console.log("y_x will be shown, ", y_x, blockSize, y_x_normalized, pieData[blockSize]);
                         //描画されていないデータが対象
                         if ("data" in pieData[blockSize][y_x_normalized]) {
@@ -939,8 +958,8 @@ function drawPieIcon(radius, pieInputList, sampleNo) {
         .append("path")
         .attr("d", arc)
         .attr("fill", function (d) { return selectColortest(d) })
-        //.attr("opacity", 0.5) //透過を指定するプロパティ
-        //.attr("stroke", "white"); //アウトラインの色を指定するプロパティ
+    //.attr("opacity", 0.5) //透過を指定するプロパティ
+    //.attr("stroke", "white"); //アウトラインの色を指定するプロパティ
 
     var customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster' });
     //console.log(customIcon)
@@ -955,7 +974,7 @@ function drawPieIconWhite(radius, pieInputList, sampleNo) {
     radius = radius * (Math.log10(sampleNo)) + 1
     let arc = d3.arc()
         .outerRadius(radius)
-        .innerRadius(radius / 3-2);
+        .innerRadius(radius / 3 - 2);
 
     tmptest.append("svg")
         .attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")")
@@ -971,7 +990,7 @@ function drawPieIconWhite(radius, pieInputList, sampleNo) {
         .append("path")
         .attr("d", arc)
         .attr("fill", "white")
-        //.attr("opacity", 1) //透過を指定するプロパティ
+    //.attr("opacity", 1) //透過を指定するプロパティ
 
     var customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster' });
     //console.log(customIcon)
@@ -1329,44 +1348,44 @@ function getCapturedSampleList() {
     //キャプチャエリア内のサンプル情報を取得
     capturedSampleList = [];
 
-    if (polygoncheker == "exist") {
-        var sampledotlayer = L.layerGroup().addTo(map)
-        sampledotlayer.eachLayer(function (layer) {
-            layer._path.id = 'sampledotlayer';
-        });
-        var newpolygon = L.polygon(polygonCoordinate.coordinates[0][0]);
-        sampleDataSet.forEach(sampleData => {
-            var sampleCoTmp = [];
-            sampleCoTmp.push(sampleData.longitude)
-            sampleCoTmp.push(sampleData.latitude)
-            var samplePoint = L.marker(sampleCoTmp);
-            //console.log("hayeswise=" (L.polygon(polygonCoordinate)).contains(L.marker(sampleCoTmp).getLatLng()))
-            //console.log("mapbox="leafletPip.pointInLayer(sampleCoTmp,(L.geoJson(polygonCoordinate))))
-            console.log("sample__________" + sampleCoTmp)
-            console.log(samplePoint)
-            try {
-                if (newpolygon.contains(samplePoint.getLatLng())) {
-                    //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'red',fillColor:'red',fillOpacity:1}).addTo(sampledotlayer);
-                    capturedSampleList.push(sampleData);
-                    //console.log(sampleData)
-                } else {
-                    //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'black',fillColor:'black',fillOpacity:1}).addTo(sampledotlayer);
-                }
-            } catch {
-                console.log("latlngdata is 0")
-            }
-        })
+    // if (polygoncheker == "exist") {
+    //     var sampledotlayer = L.layerGroup().addTo(map)
+    //     sampledotlayer.eachLayer(function (layer) {
+    //         layer._path.id = 'sampledotlayer';
+    //     });
+    //     var newpolygon = L.polygon(polygonCoordinate.coordinates[0][0]);
+    //     sampleDataSet.forEach(sampleData => {
+    //         var sampleCoTmp = [];
+    //         sampleCoTmp.push(sampleData.longitude)
+    //         sampleCoTmp.push(sampleData.latitude)
+    //         var samplePoint = L.marker(sampleCoTmp);
+    //         //console.log("hayeswise=" (L.polygon(polygonCoordinate)).contains(L.marker(sampleCoTmp).getLatLng()))
+    //         //console.log("mapbox="leafletPip.pointInLayer(sampleCoTmp,(L.geoJson(polygonCoordinate))))
+    //         console.log("sample__________" + sampleCoTmp)
+    //         console.log(samplePoint)
+    //         try {
+    //             if (newpolygon.contains(samplePoint.getLatLng())) {
+    //                 //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'red',fillColor:'red',fillOpacity:1}).addTo(sampledotlayer);
+    //                 capturedSampleList.push(sampleData);
+    //                 //console.log(sampleData)
+    //             } else {
+    //                 //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'black',fillColor:'black',fillOpacity:1}).addTo(sampledotlayer);
+    //             }
+    //         } catch {
+    //             console.log("latlngdata is 0")
+    //         }
+    //     })
 
-    } else {
-        // sampleDataSet.forEach(sampleData => {
-        //     if (south < sampleData.latitude && sampleData.latitude < north) {
-        //         //日本の左右のアメリカ大陸両方にマーカーを表示するため、重複してマーカーを描画していることに注意
-        //         if ((west < sampleData.longitude && sampleData.longitude < east) || (west < sampleData.longitude + 360 && sampleData.longitude + 360 < east)) {
-        //             capturedSampleList.push(sampleData);
-        //         }
-        //     }
-        // })
-    }
+    // } else {
+    //     sampleDataSet.forEach(sampleData => {
+    //         if (south < sampleData.latitude && sampleData.latitude < north) {
+    //             //日本の左右のアメリカ大陸両方にマーカーを表示するため、重複してマーカーを描画していることに注意
+    //             if ((west < sampleData.longitude && sampleData.longitude < east) || (west < sampleData.longitude + 360 && sampleData.longitude + 360 < east)) {
+    //                 capturedSampleList.push(sampleData);
+    //             }
+    //         }
+    //     })
+    // }
 
     //円グラフ描画
     readDataAndPlotPieChart();
@@ -1426,7 +1445,30 @@ async function drawLiddgeLine() {
     let northEast = bounds.getNorthEast();
     let blockSize = getBlockSize(map.getZoom())
     let targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
-    //console.log(targetBlocks)
+    console.log("targetBlocks: ", targetBlocks)
+
+    if (polygoncheker == "exist") {
+        const turfUserPolygon = turf.polygon(polygonCoordinate.coordinates[0])
+        console.log("selected area: ", polygonCoordinate.coordinates[0])
+        //console.log(turfUserPolygon)
+        let filterdTargetBlocks = []
+        targetBlocks.forEach(block => {
+            const x = parseFloat(block.x)
+            const y = parseFloat(block.y)
+            const delta = parseFloat(blockSize)
+            //console.log([[[x, y], [x + delta, y], [x + delta, y + delta], [x, y + delta], [x, y]]])
+            const turfPolygon = turf.polygon([[[x, y], [x + delta, y], [x + delta, y + delta], [x, y + delta], [x, y]]])
+            //console.log(turfPolygon)
+
+            // 交差判定
+            const intersection = turf.intersect(turfUserPolygon, turfPolygon);
+            if (intersection !== null) {
+                //console.log(block)
+                filterdTargetBlocks.push(block)
+                targetBlocks = filterdTargetBlocks
+            }
+        })
+    }
 
     let urls = [];
     for (let y_x_map of targetBlocks) {
@@ -1846,10 +1888,10 @@ function isInvalidDate(date) {
 function iconLocation() {
     //read the elements
     var helpBtn = document.getElementById("help");
-    var expansionBtn = document.getElementById("expansion");
+    // var expansionBtn = document.getElementById("expansion");
     var restoreBtn = document.getElementById("restore");
     var alltimeBtn = document.getElementById("alltime");
-    var monthlyBtn = document.getElementById("monthly");
+    // var monthlyBtn = document.getElementById("monthly");
     var undoBtn = document.getElementById("undo");
     var pointBtn = document.getElementById("point");
     var timeFilterOnBtn = document.getElementById("timeFilterOnBtn");
@@ -1859,8 +1901,8 @@ function iconLocation() {
     var graph = document.getElementById("graph");
     var bargraphx = document.querySelector("#bargraph > svg > g > g:nth-child(3)")
     var bargraphAlltimex = document.querySelector("#bargraphAlltime > svg > g > g:nth-child(2)")
-    var bargraphxLeft = bargraphx.getBoundingClientRect().left;
-    var bargraphAlltimexLeft = bargraphAlltimex.getBoundingClientRect().left;
+    // var bargraphxLeft = bargraphx.getBoundingClientRect().left;
+    // var bargraphAlltimexLeft = bargraphAlltimex.getBoundingClientRect().left;
 
 
     //get the position and size of map and graph
@@ -1874,8 +1916,9 @@ function iconLocation() {
     var iconTop = mapTop + 30
     //0.02 * mapHeight;
     helpBtn.style.top = iconTop + "px";
-    expansionBtn.style.top = iconTop + "px";
-    restoreBtn.style.top = iconTop + "px";
+    helpBtn.style.display = "none" //色の意味表示はひとまず非表示にしてみる
+    // expansionBtn.style.top = iconTop + "px";
+    // restoreBtn.style.top = iconTop + "px";
 
     var helpLeft = mapLeft + 50;
     helpBtn.style.left = helpLeft + "px";
@@ -1890,36 +1933,36 @@ function iconLocation() {
     undoBtn.style.left = undoLeft + "px";
     var undoTop = pointTop + 40;
     undoBtn.style.top = undoTop + "px";
-
+    undoBtn.style.display = "none" //リセットボタンは不要なので非表示
 
     //adjust the expention icon position with the map expansion, prevent icon position errors caused by window size changes
     var triger = window.innerWidth - 2 * mapWidth
     if (triger > 1) {
         var expensionLeft = mapLeft + mapWidth - 70;
-        expansionBtn.style.left = expensionLeft + "px";
+        //expansionBtn.style.left = expensionLeft + "px";
     } else {
         var expensionLeft = mapLeft + 0.37 * window.innerWidth - 50;
-        expansionBtn.style.left = expensionLeft + "px";
+        //expansionBtn.style.left = expensionLeft + "px";
     }
     mapWidth = map.offsetWidth;
     var restoreLeft = window.innerWidth - mapLeft - 80
-    restoreBtn.style.left = restoreLeft + "px";
+    //restoreBtn.style.left = restoreLeft + "px";
     var alltimeLeft = graphLeft + 0.90 * graphWidth;
-    alltimeBtn.style.left = alltimeLeft + "px";
+    //alltimeBtn.style.left = alltimeLeft + "px";
     var monthlyLeft = graphLeft + 0.90 * graphWidth;
-    monthlyBtn.style.left = monthlyLeft + "px";
+    //monthlyBtn.style.left = monthlyLeft + "px";
 };
 
 //decide icons' position when all content loaded
 window.addEventListener("load", function () {
-    //iconLocation();
+    iconLocation();
 });
 
 
 
 //dicide icons' position when window size changed
 window.addEventListener('resize', function () {
-    //iconLocation();
+    iconLocation();
 });
 
 
