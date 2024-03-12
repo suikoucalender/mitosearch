@@ -17,6 +17,13 @@ const path = require('path');
 const { route } = require('./users');
 const { Console } = require('console');
 
+const BigNumber = require('bignumber.js');
+BigNumber.config({
+    DECIMAL_PLACES: 50,                // 小数部50桁
+    ROUNDING_MODE: BigNumber.ROUND_HALF_UP // 四捨五入
+});
+
+
 //viewをejsに変更
 app.set('view engine', 'ejs');
 
@@ -27,115 +34,207 @@ let taxo;
 /* GET home page. */
 router.get('/', function (req, res) {
     taxo = req.query.taxo;
-    if (taxo==undefined || taxo==""){
-        taxo="fish"
+    if (taxo == undefined || taxo == "") {
+        taxo = "fish"
     }
     let language = req.headers["accept-language"]
-    language = language[0]+language[1]
+    language = language[0] + language[1]
     let sampleDataObjList = [] //getSampleDataObjList(taxo,language);
     let allFishList = [] //getAllFishList(sampleDataObjList);
-    let fishClassifyDataObj = fishClassify(taxo,language);
-    let latitude=req.query.lat;
-    let longitude=req.query.long;
-    let ratio=req.query.ratio;
-    if(latitude==undefined || latitude==""){
-        latitude=35.7
+    let fishClassifyDataObj = fishClassify(taxo, language);
+    let latitude = req.query.lat;
+    let longitude = req.query.long;
+    let ratio = req.query.ratio;
+    if (latitude == undefined || latitude == "") {
+        latitude = 35.7
     }
-    if (longitude==undefined || longitude==""){
-        longitude=139.7
+    if (longitude == undefined || longitude == "") {
+        longitude = 139.7
     }
-    if (ratio==undefined || ratio==""){
-        ratio=5
+    if (ratio == undefined || ratio == "") {
+        ratio = 5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
 router.get('/fish', function (req, res) {
     taxo = "fish";
     let language = req.headers["accept-language"]
-    language = language[0]+language[1]
+    language = language[0] + language[1]
     //console.log(language)
-    let sampleDataObjList = getSampleDataObjList(taxo,language);
+    let sampleDataObjList = getSampleDataObjList(taxo, language);
     let allFishList = getAllFishList(sampleDataObjList);
-    let fishClassifyDataObj = fishClassify(taxo,language);
-    let latitude=req.query.lat;
-    let longitude=req.query.long;
-    let ratio=req.query.ratio;
-    if(latitude==undefined || latitude==""){
-        latitude=35.7
+    let fishClassifyDataObj = fishClassify(taxo, language);
+    let latitude = req.query.lat;
+    let longitude = req.query.long;
+    let ratio = req.query.ratio;
+    if (latitude == undefined || latitude == "") {
+        latitude = 35.7
     }
-    if (longitude==undefined || longitude==""){
-        longitude=139.7
+    if (longitude == undefined || longitude == "") {
+        longitude = 139.7
     }
-    if (ratio==undefined || ratio==""){
-        ratio=5
+    if (ratio == undefined || ratio == "") {
+        ratio = 5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
 router.get('/mollusk', function (req, res) {
     taxo = "mollusk";
     let language = req.headers["accept-language"]
-    language = language[0]+language[1]
+    language = language[0] + language[1]
     //console.log(language)
-    let sampleDataObjList = getSampleDataObjList(taxo,language);
+    let sampleDataObjList = getSampleDataObjList(taxo, language);
     let allFishList = getAllFishList(sampleDataObjList);
-    let fishClassifyDataObj = fishClassify(taxo,language);
-    let latitude=req.query.lat;
-    let longitude=req.query.long;
-    let ratio=req.query.ratio;
-    if(latitude==undefined || latitude==""){
-        latitude=35.7
+    let fishClassifyDataObj = fishClassify(taxo, language);
+    let latitude = req.query.lat;
+    let longitude = req.query.long;
+    let ratio = req.query.ratio;
+    if (latitude == undefined || latitude == "") {
+        latitude = 35.7
     }
-    if (longitude==undefined || longitude==""){
-        longitude=139.7
+    if (longitude == undefined || longitude == "") {
+        longitude = 139.7
     }
-    if (ratio==undefined || ratio==""){
-        ratio=5
+    if (ratio == undefined || ratio == "") {
+        ratio = 5
     }
-    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
 router.post('/', function (req, res) {
     taxo = "fish";
     let selectedFishList = req.body.fishList;
     let language = req.headers["accept-language"]
-    language = language[0]+language[1]
+    language = language[0] + language[1]
     let { new_sampleDataObjList, new_fishClassifyDataObj } = filterBySelectFish(selectedFishList, taxo, language);
-    let latitude=req.query.lat;
-    let longitude=req.query.long;
-    let ratio=req.query.ratio;
-    if(latitude==undefined || latitude==""){
-        latitude=35.7
+    let latitude = req.query.lat;
+    let longitude = req.query.long;
+    let ratio = req.query.ratio;
+    if (latitude == undefined || latitude == "") {
+        latitude = 35.7
     }
-    if (longitude==undefined || longitude==""){
-        longitude=139.7
+    if (longitude == undefined || longitude == "") {
+        longitude = 139.7
     }
-    if (ratio==undefined || ratio==""){
-        ratio=5
+    if (ratio == undefined || ratio == "") {
+        ratio = 5
     }
-    let pieDataSet=getDataForPieChart(language, ratio, latitude, longitude)
-    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language});
+    let pieDataSet = getDataForPieChart(language, ratio, latitude, longitude)
+    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
 router.get('/about', function (req, res) {
     let language = req.headers["accept-language"]
-    language = language[0]+language[1]
-    res.render('ejs/about.ejs', {language: language});
+    language = language[0] + language[1]
+    res.render('ejs/about.ejs', { language: language });
 
 });
 
+router.post('/getTargetBlocksGraphMonth', function (req, res) {
+    let language = req.headers["accept-language"]
+    language = language[0] + language[1]
+    // ブラウザから送られた情報を取得
+    //console.log(req.body)
+    const southWest = req.body.southWest
+    const northEast = req.body.northEast
+    const blockSize = BigNumber(req.body.blockSize) //もともとBigNumber型で送られてくるはずだけど念のため
+
+    //左、下はブロックサイズで割って切り捨ててからブロックサイズを掛け、端数を切った値
+    //右、上はブロックサイズで割って切り上げてからブロックサイズを掛け、端数を足した値
+    let leftlong = BigNumber(Math.floor(BigNumber(southWest.lng).div(blockSize))).times(blockSize)
+    let lowerlat = BigNumber(Math.floor(BigNumber(southWest.lat).div(blockSize))).times(blockSize)
+    let rightlong = BigNumber(Math.ceil(BigNumber(northEast.lng).div(blockSize))).times(blockSize)
+    let upperlat = BigNumber(Math.ceil(BigNumber(northEast.lat).div(blockSize))).times(blockSize)
+    //console.log("leftlong, rightlong, lowerlat, upperlat", leftlong.toString(), rightlong.toString(), lowerlat.toString(), upperlat.toString())
+
+    //上下左右ともにblockSizeだけ大きくしておく
+    //decide the data reading range
+    let longStart = leftlong.minus(blockSize)
+    let latStart = lowerlat.minus(blockSize)
+    let longEnd = rightlong.plus(blockSize)
+    let latEnd = upperlat.plus(blockSize)
+    //console.log("longStart, longEnd, latStart, latEnd", longStart.toString(), longEnd.toString(), latStart.toString(), latEnd.toString())
+
+    //ブロックをすべて列挙する
+    let listBlocks = []
+
+    //ブロックを列挙しつつ地図上にブロック区切りの線も引く
+    for (let x = longStart; x.isLessThanOrEqualTo(longEnd); x = x.plus(blockSize)) {
+        for (let y = latStart; y.isLessThanOrEqualTo(latEnd); y = y.plus(blockSize)) {
+            //console.log("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x.toString() + "/month.json")
+            if (fileExists("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x.toString() + "/month.json")) {
+                //ターゲットとして保存
+                //console.log(x, y)
+                listBlocks.push({ y: y.toString(), x: x.toString() })
+                //console.log("y, x: ", y, x)
+            }
+        }
+    }
+    //return listBlocks
+
+    // レスポンスとしてJSONを返す
+    res.json({ listBlocks });
+})
+
+router.post('/getTargetBlocks', function (req, res) {
+    let language = req.headers["accept-language"]
+    language = language[0] + language[1]
+    // ブラウザから送られた情報を取得
+    //console.log(req.body)
+    const filename = req.body.filename
+    const southWest = req.body.southWest
+    const northEast = req.body.northEast
+    const blockSize = BigNumber(req.body.blockSize) //もともとBigNumber型で送られてくるはずだけど念のため
+
+    //左、下はブロックサイズで割って切り捨ててからブロックサイズを掛け、端数を切った値
+    //右、上はブロックサイズで割って切り上げてからブロックサイズを掛け、端数を足した値
+    let leftlong = BigNumber(Math.floor(BigNumber(southWest.lng).div(blockSize))).times(blockSize)
+    let lowerlat = BigNumber(Math.floor(BigNumber(southWest.lat).div(blockSize))).times(blockSize)
+    let rightlong = BigNumber(Math.ceil(BigNumber(northEast.lng).div(blockSize))).times(blockSize)
+    let upperlat = BigNumber(Math.ceil(BigNumber(northEast.lat).div(blockSize))).times(blockSize)
+    //console.log("leftlong, rightlong, lowerlat, upperlat", leftlong.toString(), rightlong.toString(), lowerlat.toString(), upperlat.toString())
+
+    //上下左右ともにblockSizeだけ大きくしておく
+    //decide the data reading range
+    let longStart = leftlong.minus(blockSize)
+    let latStart = lowerlat.minus(blockSize)
+    let longEnd = rightlong.plus(blockSize)
+    let latEnd = upperlat.plus(blockSize)
+    //console.log("longStart, longEnd, latStart, latEnd", longStart.toString(), longEnd.toString(), latStart.toString(), latEnd.toString())
+
+    //ブロックをすべて列挙する
+    let listBlocks = []
+
+    //ブロックを列挙しつつ地図上にブロック区切りの線も引く
+    for (let x = longStart; x.isLessThanOrEqualTo(longEnd); x = x.plus(blockSize)) {
+        for (let y = latStart; y.isLessThanOrEqualTo(latEnd); y = y.plus(blockSize)) {
+            //console.log("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x.toString() + "/" + filename)
+            if (fileExists("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x.toString() + "/" + filename)) {
+                //ターゲットとして保存
+                //console.log(x, y)
+                listBlocks.push({ y: y.toString(), x: x.toString() })
+                //console.log("y, x: ", y, x)
+            }
+        }
+    }
+    //return listBlocks
+
+    // レスポンスとしてJSONを返す
+    res.json({ listBlocks });
+})
 router.post('/checkFiles', function (req, res) {
     // ブラウザから送られたファイルパスを取得
     //console.log(req.body.filePaths.length)
     const filePaths = req.body.filePaths; //[filePath]
 
     // ファイルの存在を確認
-    const existingFiles = filePaths.filter(filePath => fileExists("public/"+filePath))
+    const existingFiles = filePaths.filter(filePath => fileExists("public/" + filePath))
     //console.log("existingFiles.length: ", existingFiles.length)
 
     // レスポンスとしてJSONを返す
-    res.json({existingFiles});
+    res.json({ existingFiles });
 })
 
 module.exports = router;
@@ -143,7 +242,6 @@ module.exports = router;
 
 // ファイルの存在を確認する関数
 function fileExists(filePath) {
-    const fs = require('fs');
     try {
         fs.accessSync(filePath);
         return true;
@@ -161,7 +259,7 @@ function getSampleList(taxo) {
     return sampleList;
 }
 
-function getSampleDataObjList(taxo,lang) {
+function getSampleDataObjList(taxo, lang) {
     let sampleDataObjList = [];
     let sampleID;
     let sampleFishCompList;
@@ -224,11 +322,11 @@ function getSampleDataObjList(taxo,lang) {
                 if (sampleLatLng[3] == "W") {
                     sampleLng = sampleLng * -1;
                 }
-                
+
                 //inputファイルからサンプル情報を読み取り
-                if (lang==="zh"){
+                if (lang === "zh") {
                     sampleFishCompList = fs.readFileSync("db_" + taxo + "_zh/" + sampleID + ".input", "utf-8");
-                } else if(lang==="ja"){
+                } else if (lang === "ja") {
                     sampleFishCompList = fs.readFileSync("db_" + taxo + "_ja/" + sampleID + ".input", "utf-8");
                 } else {
                     sampleFishCompList = fs.readFileSync("db_" + taxo + "_en/" + sampleID + ".input", "utf-8");
@@ -260,11 +358,11 @@ function getSampleDataObjList(taxo,lang) {
     return sampleDataObjList;
 }
 
-function fishClassify(taxo,lang) {
+function fishClassify(taxo, lang) {
     let fishClassifyDataList
-    if (lang==="zh"){
+    if (lang === "zh") {
         fishClassifyDataList = fs.readFileSync("data/" + taxo + "/classifylist_zh.txt", "utf-8");
-    } else if(lang==="ja"){
+    } else if (lang === "ja") {
         fishClassifyDataList = fs.readFileSync("data/" + taxo + "/classifylist_ja.txt", "utf-8");
     } else {
         fishClassifyDataList = fs.readFileSync("data/" + taxo + "/classifylist_en.txt", "utf-8");
@@ -302,7 +400,7 @@ function getAllFishList(sampleDataObjList) {
 function filterBySelectFish(selectedFishList, taxo, lang) {
     selectedFishList = selectedFishList.split(",");
     let sampleDataObjList = getSampleDataObjList(taxo, lang);
-    let fishClassifyDataObj = fishClassify(taxo,lang);
+    let fishClassifyDataObj = fishClassify(taxo, lang);
 
     let new_sampleDataObjList = [];
 

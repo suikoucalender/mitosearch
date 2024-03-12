@@ -26,12 +26,12 @@ function getBlockSize(ratio) {
     const myunit = new BigNumber(360).div(base2.pow(8))
     const result = myunit.times(base2.pow(exponent));
     return result.toNumber()
-    //}
 }
 
 let lineDrawnList = {}
-function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
+async function getTargetBlocksPie(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
 
+    //円グラフ描画のついでにブロックの線も描く
     blockSize = new BigNumber(blockSize) //ここで扱う数字は全てBigNumberオブジェクトに変換しておく
     //左、下はブロックサイズで割って切り捨ててからブロックサイズを掛け、端数を切った値
     //右、上はブロックサイズで割って切り上げてからブロックサイズを掛け、端数を足した値
@@ -66,9 +66,51 @@ function getTargetBlocks(southWest, northEast, blockSize) { //数字or文字列�
             addline_step1([stry0, strx1, stry1, strx1])
 
             //ターゲットとして保存
-            listBlocks.push({ y: y.toString(), x: x.toString() })
+            //listBlocks.push({ y: y.toString(), x: x.toString() })
             //console.log("y, x: ", y, x)
         }
+    }
+
+    const response = await fetch(baseurl + 'getTargetBlocks', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ southWest, northEast, blockSize, filename: "pieCoord.json" })
+    });
+
+    if (response.ok) {
+        const data = await response.json();
+        console.log(data)
+        listBlocks = data.listBlocks
+        //results.push(...data.existingFiles); // 結果をresults配列に追加
+    } else {
+        console.error('サーバーエラー:', response.status);
+    }
+    return listBlocks
+}
+
+async function getTargetBlocksGraphMonth(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
+
+    blockSize = new BigNumber(blockSize) //BigNumberオブジェクトに変換しておく
+    //ブロックをすべて列挙する
+    let listBlocks = []
+    
+    const response = await fetch(baseurl + 'getTargetBlocks', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ southWest, northEast, blockSize, filename: "month.json" })
+    });
+
+    if (response.ok) {
+        const data = await response.json();
+        console.log(data)
+        listBlocks = data.listBlocks
+        //results.push(...data.existingFiles); // 結果をresults配列に追加
+    } else {
+        console.error('サーバーエラー:', response.status);
     }
     return listBlocks
 }
@@ -220,10 +262,10 @@ function sliderUpdating() {
     if (isMove) {
         return
     };
-    //get min and max value of sample
-    if (capturedSampleList.length == 0) {
-        return;
-    }
+    // //get min and max value of sample
+    // if (capturedSampleList.length == 0) {
+    //     return;
+    // }
 
     var tempdateAll = sampleDataSet[0]['date'];
     if (tempdateAll.indexOf("T") !== -1) {
@@ -404,22 +446,6 @@ $("#button").click(function () {
     //リッジライングラフ描画
     drawLiddgeLine()
 
-    // $.ajax({
-    //     type: "POST",
-    //     data: { fishList: fishList },
-    //     dataType: "text"
-    // })
-    //     .done(function (res) {
-    //         res = JSON.parse(res);
-    //         sampleDataSet = res.new_sampleDataObjList;
-    //         console.log(sampleDataSet)
-    //         fishClassifyDataObj = res.new_fishClassifyDataObj;
-    //         console.log(fishClassifyDataObj)
-    //         map.remove();
-
-    //         load_sync_js(["javascripts/drawPie.js", "javascripts/drawLiddgeLine.js"]);
-
-    //     })
 })
 
 //セレクトボックスに魚種を設定
@@ -658,7 +684,7 @@ async function readDataAndPlotPieChart() {
         let southWest = bounds.getSouthWest();
         let northEast = bounds.getNorthEast();
         //描画範囲の経度緯度情報を取得する
-        let targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
+        let targetBlocks = await getTargetBlocksPie(southWest, northEast, blockSize)
 
         //list up the urls
         let urlsFishAndRatio = []
@@ -1247,7 +1273,6 @@ let graphData = {} //{blockSize: {y_x: }} リッジグラフ用のデータを�
 let isMove = false
 let oldZoomSize = map.getZoom()
 
-let dateRangeCheker = false;
 let upperHandleStamp = timestamp(upperHandle);
 let lowerHandleStamp = timestamp(lowerHandle);
 //if(upperHandle===lowerHandle){
@@ -1319,8 +1344,6 @@ function removeMoveFlagAndDraw() {
 }
 
 
-
-dateRangeCheker = false
 //キャプチャエリア内のサンプルの組成を取得
 function getCapturedSampleList() {
     //console.log("getCapturedSampleList")
@@ -1338,54 +1361,6 @@ function getCapturedSampleList() {
     //url書き換え
     let coordination = "?taxo=" + taxo + "&lat=" + pos.lat + "&long=" + pos.lng + "&ratio=" + zoom
     history.replaceState(null, "", coordination)
-    // //マップの移動・拡大・縮小時に4隅の緯度経度を取得
-    // var bounds = map.getBounds();
-    // var north = bounds._northEast.lat;
-    // var south = bounds._southWest.lat;
-    // var east = bounds._northEast.lng;
-    // var west = bounds._southWest.lng;
-
-    //キャプチャエリア内のサンプル情報を取得
-    capturedSampleList = [];
-
-    // if (polygoncheker == "exist") {
-    //     var sampledotlayer = L.layerGroup().addTo(map)
-    //     sampledotlayer.eachLayer(function (layer) {
-    //         layer._path.id = 'sampledotlayer';
-    //     });
-    //     var newpolygon = L.polygon(polygonCoordinate.coordinates[0][0]);
-    //     sampleDataSet.forEach(sampleData => {
-    //         var sampleCoTmp = [];
-    //         sampleCoTmp.push(sampleData.longitude)
-    //         sampleCoTmp.push(sampleData.latitude)
-    //         var samplePoint = L.marker(sampleCoTmp);
-    //         //console.log("hayeswise=" (L.polygon(polygonCoordinate)).contains(L.marker(sampleCoTmp).getLatLng()))
-    //         //console.log("mapbox="leafletPip.pointInLayer(sampleCoTmp,(L.geoJson(polygonCoordinate))))
-    //         console.log("sample__________" + sampleCoTmp)
-    //         console.log(samplePoint)
-    //         try {
-    //             if (newpolygon.contains(samplePoint.getLatLng())) {
-    //                 //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'red',fillColor:'red',fillOpacity:1}).addTo(sampledotlayer);
-    //                 capturedSampleList.push(sampleData);
-    //                 //console.log(sampleData)
-    //             } else {
-    //                 //L.circle([sampleData.latitude,sampleData.longitude],{radius:100,color:'black',fillColor:'black',fillOpacity:1}).addTo(sampledotlayer);
-    //             }
-    //         } catch {
-    //             console.log("latlngdata is 0")
-    //         }
-    //     })
-
-    // } else {
-    //     sampleDataSet.forEach(sampleData => {
-    //         if (south < sampleData.latitude && sampleData.latitude < north) {
-    //             //日本の左右のアメリカ大陸両方にマーカーを表示するため、重複してマーカーを描画していることに注意
-    //             if ((west < sampleData.longitude && sampleData.longitude < east) || (west < sampleData.longitude + 360 && sampleData.longitude + 360 < east)) {
-    //                 capturedSampleList.push(sampleData);
-    //             }
-    //         }
-    //     })
-    // }
 
     //円グラフ描画
     readDataAndPlotPieChart();
@@ -1444,7 +1419,7 @@ async function drawLiddgeLine() {
     let southWest = bounds.getSouthWest();
     let northEast = bounds.getNorthEast();
     let blockSize = getBlockSize(map.getZoom())
-    let targetBlocks = getTargetBlocks(southWest, northEast, blockSize)
+    let targetBlocks = await getTargetBlocksGraphMonth(southWest, northEast, blockSize)
     console.log("targetBlocks: ", targetBlocks)
 
     if (polygoncheker == "exist") {
