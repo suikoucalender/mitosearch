@@ -37,6 +37,36 @@ function removeEmptyLastItem(arr) {
     }
 }
 
+function getFishNum(){
+    //海・川・湖などなら追加
+    const waterPath = "data/fish/mapwater.result.txt"
+    let aquaDataTemp = fs.readFileSync(waterPath, 'utf8');
+    let aquaDataTempLines = aquaDataTemp.split('\n')
+    removeEmptyLastItem(aquaDataTempLines);
+    let aquaData = {}
+    for (let aquaDataTemp of aquaDataTempLines) {
+        let aquaDataTempItems = aquaDataTemp.split('\t');
+        aquaData[aquaDataTempItems[0]] = aquaDataTempItems[1];
+    }
+    //現在のMiFishデータの数を調べる
+    const locationPath = "data/fish/lat-long-date.txt"
+    const locationInfo = fs.readFileSync(locationPath, 'utf8');
+    let locationInfoLines = locationInfo.split('\n');
+    removeEmptyLastItem(locationInfoLines);
+    let locationInfoItems = [];
+    for (let locationInfoLine of locationInfoLines) {
+        let templocationInfoItem = locationInfoLine.split('\t'); //'ERR11637981', '11.84508333 S 96.82013333 E', '2022-12-06'
+        let tempLatLong = templocationInfoItem[1].split(' ')
+        //console.log(templocationInfoItem, tempLatLong[0], aquaData[templocationInfoItem[0]]);
+        if (tempLatLong[0] !== "" && tempLatLong.length === 4 && !isNaN(tempLatLong[0]) && aquaData[templocationInfoItem[0]] === "1") {
+            //経度緯度が記述されていれば追加
+            locationInfoItems.push(templocationInfoItem);
+        }
+    }
+    
+    return locationInfoItems.length
+}
+
 /* GET home page. */
 router.get('/', function (req, res) {
     taxo = req.query.taxo;
@@ -64,36 +94,11 @@ router.get('/', function (req, res) {
         ratio = 5
     }
 
-    //海・川・湖などなら追加
-    const waterPath = "data/fish/mapwater.result.txt"
-    let aquaDataTemp = fs.readFileSync(waterPath, 'utf8');
-    let aquaDataTempLines = aquaDataTemp.split('\n')
-    removeEmptyLastItem(aquaDataTempLines);
-    let aquaData = {}
-    for (let aquaDataTemp of aquaDataTempLines) {
-        let aquaDataTempItems = aquaDataTemp.split('\t');
-        aquaData[aquaDataTempItems[0]] = aquaDataTempItems[1];
-    }
-    //現在のMiFishデータの数を調べる
-    const locationPath = "data/fish/lat-long-date.txt"
-    const locationInfo = fs.readFileSync(locationPath, 'utf8');
-    let locationInfoLines = locationInfo.split('\n');
-    removeEmptyLastItem(locationInfoLines);
-    let locationInfoItems = [];
-    for (let locationInfoLine of locationInfoLines) {
-        let templocationInfoItem = locationInfoLine.split('\t'); //'ERR11637981', '11.84508333 S 96.82013333 E', '2022-12-06'
-        let tempLatLong = templocationInfoItem[1].split(' ')
-        //console.log(templocationInfoItem, tempLatLong[0], aquaData[templocationInfoItem[0]]);
-        if (tempLatLong[0] !== "" && tempLatLong.length === 4 && !isNaN(tempLatLong[0]) && aquaData[templocationInfoItem[0]] === "1") {
-            //経度緯度が記述されていれば追加
-            locationInfoItems.push(templocationInfoItem);
-        }
-    }
 
     res.render('ejs/index.ejs', {
         sampleDataObjList: sampleDataObjList, AllFishList: allFishList,
         fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude,
-        ratio: ratio, language: language, numFish: locationInfoItems.length
+        ratio: ratio, language: language, numFish: getFishNum()
     });
 });
 
@@ -143,32 +148,32 @@ router.get('/mollusk', function (req, res) {
     res.render('ejs/index.ejs', { sampleDataObjList: sampleDataObjList, AllFishList: allFishList, fishClassifyDataObj: fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
 });
 
-router.post('/', function (req, res) {
-    taxo = "fish";
-    let selectedFishList = req.body.fishList;
-    let language = req.headers["accept-language"]
-    language = language[0] + language[1]
-    let { new_sampleDataObjList, new_fishClassifyDataObj } = filterBySelectFish(selectedFishList, taxo, language);
-    let latitude = req.query.lat;
-    let longitude = req.query.long;
-    let ratio = req.query.ratio;
-    if (latitude == undefined || latitude == "") {
-        latitude = 35.7
-    }
-    if (longitude == undefined || longitude == "") {
-        longitude = 139.7
-    }
-    if (ratio == undefined || ratio == "") {
-        ratio = 5
-    }
-    let pieDataSet = getDataForPieChart(language, ratio, latitude, longitude)
-    res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
-});
+// router.post('/', function (req, res) {
+//     taxo = "fish";
+//     let selectedFishList = req.body.fishList;
+//     let language = req.headers["accept-language"]
+//     language = language[0] + language[1]
+//     let { new_sampleDataObjList, new_fishClassifyDataObj } = filterBySelectFish(selectedFishList, taxo, language);
+//     let latitude = req.query.lat;
+//     let longitude = req.query.long;
+//     let ratio = req.query.ratio;
+//     if (latitude == undefined || latitude == "") {
+//         latitude = 35.7
+//     }
+//     if (longitude == undefined || longitude == "") {
+//         longitude = 139.7
+//     }
+//     if (ratio == undefined || ratio == "") {
+//         ratio = 5
+//     }
+//     let pieDataSet = getDataForPieChart(language, ratio, latitude, longitude)
+//     res.send({ new_sampleDataObjList: new_sampleDataObjList, new_fishClassifyDataObj: new_fishClassifyDataObj, taxo: taxo, latitude: latitude, longitude: longitude, ratio: ratio, language: language });
+// });
 
 router.get('/about', function (req, res) {
     let language = req.headers["accept-language"]
     language = language[0] + language[1]
-    res.render('ejs/about.ejs', { language: language });
+    res.render('ejs/about.ejs', { language: language, numFish: getFishNum() });
 
 });
 
