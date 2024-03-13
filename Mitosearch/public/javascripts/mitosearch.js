@@ -964,6 +964,25 @@ async function mainLevel18(blockData, offset, radiusTest) {
     }
 }
 
+function detectWebkitBrowser() {
+    const ua = navigator.userAgent;
+
+    // Chromium ベースのブラウザをチェック
+    const isChromium = ua.includes("Chrome") || ua.includes("Chromium");
+    // Firefox ベースのブラウザをチェック
+    const isFirefox = ua.includes("Firefox") && !isChromium;
+    // Edge
+    const isEdge = ua.includes("Edg") && !isChromium && !isFirefox
+
+    if (isChromium || isFirefox || isEdge) {
+        //console.log("ブラウザは Chromium/Gecko ベースです。");
+        return false
+    } else {
+        //console.log("ブラウザは Webkit ベースです。");
+        return true
+    }
+}
+
 
 function drawPieIcon(radius, pieInputList, sampleNo) {
 
@@ -991,7 +1010,9 @@ function drawPieIcon(radius, pieInputList, sampleNo) {
     //.attr("opacity", 0.5) //透過を指定するプロパティ
     //.attr("stroke", "white"); //アウトラインの色を指定するプロパティ
 
-    var customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster' });
+    let anchor = 0
+    if(detectWebkitBrowser()){anchor = radius} //SafariもしくはiOS上の全ブラウザーがこうしないとずれる
+    let customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster', iconAnchor:[anchor, anchor] });
     //console.log(customIcon)
     tmptest.select("svg").remove();
     return customIcon
@@ -1022,7 +1043,9 @@ function drawPieIconWhite(radius, pieInputList, sampleNo) {
         .attr("fill", "white")
     //.attr("opacity", 1) //透過を指定するプロパティ
 
-    var customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster' });
+    let anchor = 0
+    if(detectWebkitBrowser()){anchor = radius}
+    let customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster', iconAnchor:[anchor, anchor] });
     //console.log(customIcon)
     tmptest.select("svg").remove();
     return customIcon
