@@ -806,6 +806,26 @@ async function readDataAndPlotPieChart() {
                 }
                 //console.log("pieData: ",pieData)
 
+                //console.time("フィルター更新")
+                //フィルターの魚種一覧を更新
+                if(dataFishRatioArray.length>0){
+                    let fishAllMap = {}
+                    for(const yx in pieData[blockSize]){
+                        const tempNameArray = pieData[blockSize][yx]["data"]
+                        //console.log(pieData[blockSize], tempNameArray)
+                        for(const i of tempNameArray){
+                            fishAllMap[i.name]=1
+                        }
+                    }
+                    let fishAllArray = Object.keys(fishAllMap)
+                    //console.log(fishAllArray)
+                    if(fishAllArray.length<50000){
+                        setFilter(fishAllArray)
+                    }
+                }
+                //console.timeEnd("フィルター更新")
+
+                //console.time("円グラフ描画")
                 targetBlocks.forEach(y_x_map => {
                     const y_x = y_x_map.y + "/" + y_x_map.x
                     const dx_value = Math.floor((parseFloat(y_x_map.x) + 180) / 360) * 360
@@ -819,7 +839,7 @@ async function readDataAndPlotPieChart() {
                         //描画されていないデータが対象
                         if ("data" in pieData[blockSize][y_x_normalized]) {
                             //空でないデータが対象
-                            let pieDataTmp = pieData[blockSize][y_x_normalized]["data"];
+                            let pieDataTmp = pieData[blockSize][y_x_normalized]["data"]; //[{name, value}]
                             let y = pieData[blockSize][y_x_normalized]["y"];
                             let x = pieData[blockSize][y_x_normalized]["x"];
                             let n = pieData[blockSize][y_x_normalized]["n"];
@@ -834,7 +854,7 @@ async function readDataAndPlotPieChart() {
                                 for (let itmPieDataTmp of pieDataTmp) {
                                     if (fishFilterArray.includes(itmPieDataTmp.name)) {
                                         tmpPieData.push(itmPieDataTmp)
-                                    } else {
+                                    } else { //フィルターに含まれていない魚種のvalue合計
                                         tmpcnt += itmPieDataTmp.value
                                     }
                                 }
@@ -853,25 +873,31 @@ async function readDataAndPlotPieChart() {
                             //console.log("pie data sorted", pieDataTmpSorted)
 
                             //preparing the popup content
-                            let htmlStringForPopup = "block: " + x + "," + y
-                                + "<table><tr><td><u>No. of samples</u></td><td><u>" + n + "</u></td></tr>";
+                            let htmlStringForPopup = //"block: " + x + "," + y + 
+                                "<table><tr><td><u>No. of samples</u></td><td><u>" + n + "</u></td></tr>";
                             //let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
                             for (let i = 0; i < Math.min(20, pieDataTmpSorted.length); i++) {
                                 let item = pieDataTmpSorted[i]
-                                htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+                                let name = item["name"]
+                                if(name.length>44){
+                                    name = "..."+name.substring(name.length-44, name.length)
+                                }
+                                htmlStringForPopup += '<tr><td>' + name + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
                             }
                             htmlStringForPopup += '</table>';
                             //draw pie
-                            let customIcon = drawPieIcon(radiusTest, pieDataTmp, n)
                             let customIconWhite = drawPieIconWhite(radiusTest, pieDataTmp, n) //外枠の白い円用
+                            let customIcon = drawPieIcon(radiusTest, pieDataTmp, n) //25, [{name, value}], 1
 
                             //add pie chart//can not get data
                             let markersTestWhite = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIconWhite }).addTo(map);
+                            //let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()]).addTo(map);
                             let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIcon }).addTo(map);
                             //let markersTest2 = L.marker([y, Decimal.add(x, 360)], { icon: customIcon }).addTo(map);//？
                             markersTest1.bindPopup(htmlStringForPopup)
                             //markersTest2.bindPopup(htmlStringForPopup)
 
+                            //console.timeLog("円グラフ描画")
                         }
                     }
                 })
@@ -1051,11 +1077,25 @@ function drawPieIcon(radius, pieInputList, sampleNo) {
 
     //円弧を描画する
     if (sampleNo < 10) { sampleNo = 10 }
-    radius = radius * (Math.log10(sampleNo))
+    radius = radius * (Math.sqrt(Math.log10(sampleNo)))
     let arc = d3.arc()
         .outerRadius(radius)
         .innerRadius(radius / 3);
 
+    const maxSpecies = 20
+    let tempPieinputMap = []
+    for (let i = 0; i < Math.min(pieInputList.length, maxSpecies); i++) {
+        tempPieinputMap.push(pieInputList[i])
+    }
+    if (pieInputList.length > maxSpecies) {
+        let sum = 0
+        for (let i = maxSpecies; i < pieInputList.length; i++) {
+            sum += Object.values(pieInputList[i])[1]
+            //console.log(pieInputList[i], Object.values(pieInputList[i]), sum)
+        }
+        tempPieinputMap.push({ name: "others", value: sum })
+    }
+    //console.log(tempPieinputMap)
     tmptest.append("svg")
         .attr("transform", "translate(" + (-1 * radius) + "," + (-1 * radius) + ")")
         .attr("height", 2 * radius)
@@ -1063,7 +1103,7 @@ function drawPieIcon(radius, pieInputList, sampleNo) {
         .append("g")
         .attr("transform", "translate(" + radius + "," + radius + ")")
         .selectAll(".pie")
-        .data(pie(pieInputList))
+        .data(pie(tempPieinputMap))
         .enter()
         .append("g")
         .attr("class", "pie")
@@ -1074,18 +1114,18 @@ function drawPieIcon(radius, pieInputList, sampleNo) {
     //.attr("stroke", "white"); //アウトラインの色を指定するプロパティ
 
     let anchor = 0
-    if(detectWebkitBrowser()){anchor = radius} //SafariもしくはiOS上の全ブラウザーがこうしないとずれる
-    let customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster', iconAnchor:[anchor, anchor] });
+    if (detectWebkitBrowser()) { anchor = radius } //SafariもしくはiOS上の全ブラウザーがこうしないとずれる
+    let customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster', iconAnchor: [anchor, anchor] });
     //console.log(customIcon)
     tmptest.select("svg").remove();
     return customIcon
 }
 
-function drawPieIconWhite(radius, pieInputList, sampleNo) {
+function drawPieIconWhite(radius, pieInputList, sampleNo) { // pieInputList: [{name, value}]
 
     //円弧を描画する
     if (sampleNo < 10) { sampleNo = 10 }
-    radius = radius * (Math.log10(sampleNo)) + 1
+    radius = radius * (Math.sqrt(Math.log10(sampleNo))) + 1
     let arc = d3.arc()
         .outerRadius(radius)
         .innerRadius(radius / 3 - 2);
@@ -1097,7 +1137,7 @@ function drawPieIconWhite(radius, pieInputList, sampleNo) {
         .append("g")
         .attr("transform", "translate(" + radius + "," + radius + ")")
         .selectAll(".pie")
-        .data(pie(pieInputList))
+        .data(pie([{ name: "temp", value: 1 }]))
         .enter()
         .append("g")
         .attr("class", "pie")
@@ -1107,8 +1147,8 @@ function drawPieIconWhite(radius, pieInputList, sampleNo) {
     //.attr("opacity", 1) //透過を指定するプロパティ
 
     let anchor = 0
-    if(detectWebkitBrowser()){anchor = radius}
-    let customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster', iconAnchor:[anchor, anchor] });
+    if (detectWebkitBrowser()) { anchor = radius }
+    let customIcon = L.divIcon({ html: tmptest.html(), className: 'marker-cluster', iconAnchor: [anchor, anchor] });
     //console.log(customIcon)
     tmptest.select("svg").remove();
     return customIcon
@@ -1455,7 +1495,7 @@ function getCapturedSampleList() {
     //円グラフ描画
     readDataAndPlotPieChart();
     //リッジライングラフ描画
-    drawLiddgeLine()
+    //////drawLiddgeLine()
     //slidersize();
     // if (graphChecker !== "nonexist") {
     //     sliderDisplay();
@@ -1568,6 +1608,12 @@ async function drawLiddgeLine() {
         }
         //console.log(averageList)
 
+        // //フィルターの魚種一覧を更新
+        // let fishAllArray = Object.keys(fishList)
+        // //if(fishAllArray.length<1000){
+        //     setFilter(fishAllArray)
+        // //}
+
         //フィルターがセットされていたらその魚種に限定
         if (fishFilterArray.length > 0) {
             //console.log("フィルターあり")
@@ -1579,10 +1625,10 @@ async function drawLiddgeLine() {
         }
         let fishArray = Object.keys(fishList)
         let dateArray = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"]
-        if (fishFilterArray.length === 0) {
-            //フィルターがない場合のみフィルターの魚種一覧リストを更新
-            setFilter(fishArray)
-        }
+        //if (fishFilterArray.length === 0) {
+        ////フィルターがない場合のみフィルターの魚種一覧リストを更新
+        //setFilter(fishArray)
+        //}
 
         dateList = [];
         //fishList = [];
@@ -1643,7 +1689,7 @@ async function drawLiddgeLine() {
 
         //グラフ描画用リストをsumでソート
         densityList = object_array_sort(fastdensityList, "sum"); //[{max, sum, fish, density:[]}]
-        //densityList = densityList.slice(0, 20)
+        densityList = densityList.slice(0, 1000) //上位1000種に絞る
 
         //console.log(fishList) //{fishname: 1}
         //魚種の名前一覧を作成
@@ -2024,7 +2070,7 @@ window.addEventListener("load", function () {
 //dicide icons' position when window size changed
 window.addEventListener('resize', function () {
     iconLocation();
-    
+
     //円グラフ描画
     readDataAndPlotPieChart();
     //リッジライングラフ描画

@@ -17,6 +17,7 @@ const locationPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + 
 const waterPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "mapwater.result.txt" //args[1]; //mapwater.result.txt
 const imputFolderPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "db_fish_" + language //args[2]; //db_fish_[language]
 const inputFileLocation = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "input_file_path.txt"
+const inputFileNum = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "sample-num.txt"
 //let blockSize = new Decimal(args[3]); //ratioAndBlock={"2":45,"3":30,"4":15,"5":5,"6":3,"7":2,"8":1,"9":0.5,"10":0.2,"11":0.1,"12":0.05,"13":0.05,"14":0.02,"15":0.02,"16":0.02,"17":0.01,"18":"special"}
 const lang = language //imputFolderPath.slice(-2); //最後の2文字を切り出す
 const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
@@ -60,6 +61,9 @@ for(let locationInfoLine of locationInfoLines){
     }
 }
 //console.log("locationInfoItems: ", locationInfoItems)
+fs.writeFileSync(inputFileNum, String(locationInfoItems.length), (err) => {
+                console.log('number file write error');
+            });
 
 //for(let ratio=2; ratio<=18; ratio++){
     const base2 = BigNumber(2);
@@ -201,7 +205,9 @@ for(let locationInfoLine of locationInfoLines){
             }
             let monthInputList = []
             for(const specname in monthSpeciesData){
-                monthInputList.push({name: specname, value: monthSpeciesData[specname] / sampleNumberInMonth})
+                if(monthSpeciesData[specname] / sampleNumberInMonth > 0.1){
+                    monthInputList.push({name: specname, value: monthSpeciesData[specname] / sampleNumberInMonth})
+                }
             }
             //console.log("### month, sampleNumberInMonth: ", month, sampleNumberInMonth)
             MonthWholeData.push({month: month, num: sampleNumberInMonth, data: monthInputList})
