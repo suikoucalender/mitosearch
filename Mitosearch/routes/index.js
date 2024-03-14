@@ -38,37 +38,44 @@ function removeEmptyLastItem(arr) {
 }
 
 function getFishNum(){
-    //海・川・湖などなら追加
-    const waterPath = "data/fish/mapwater.result.txt"
-    let aquaDataTemp = fs.readFileSync(waterPath, 'utf8');
-    let aquaDataTempLines = aquaDataTemp.split('\n')
-    removeEmptyLastItem(aquaDataTempLines);
-    let aquaData = {}
-    for (let aquaDataTemp of aquaDataTempLines) {
-        let aquaDataTempItems = aquaDataTemp.split('\t');
-        aquaData[aquaDataTempItems[0]] = aquaDataTempItems[1];
+    const sampleNumPath = "data/fish/sample-num.txt"
+    try{
+        return fs.readFileSync(sampleNumPath, 'utf8').split("\n")[0];
+    }catch(e){
+        return 0
     }
-    //現在のMiFishデータの数を調べる
-    const locationPath = "data/fish/lat-long-date.txt"
-    const locationInfo = fs.readFileSync(locationPath, 'utf8');
-    let locationInfoLines = locationInfo.split('\n');
-    removeEmptyLastItem(locationInfoLines);
-    let locationInfoItems = [];
-    for (let locationInfoLine of locationInfoLines) {
-        let templocationInfoItem = locationInfoLine.split('\t'); //'ERR11637981', '11.84508333 S 96.82013333 E', '2022-12-06'
-        let tempLatLong = templocationInfoItem[1].split(' ')
-        //console.log(templocationInfoItem, tempLatLong[0], aquaData[templocationInfoItem[0]]);
-        if (tempLatLong[0] !== "" && tempLatLong.length === 4 && !isNaN(tempLatLong[0]) && aquaData[templocationInfoItem[0]] === "1") {
-            //経度緯度が記述されていれば追加
-            locationInfoItems.push(templocationInfoItem);
-        }
-    }
+    // //海・川・湖などなら追加
+    // const waterPath = "data/fish/mapwater.result.txt"
+    // let aquaDataTemp = fs.readFileSync(waterPath, 'utf8');
+    // let aquaDataTempLines = aquaDataTemp.split('\n')
+    // removeEmptyLastItem(aquaDataTempLines);
+    // let aquaData = {}
+    // for (let aquaDataTemp of aquaDataTempLines) {
+    //     let aquaDataTempItems = aquaDataTemp.split('\t');
+    //     aquaData[aquaDataTempItems[0]] = aquaDataTempItems[1];
+    // }
+    // //現在のMiFishデータの数を調べる
+    // const locationPath = "data/fish/lat-long-date.txt"
+    // const locationInfo = fs.readFileSync(locationPath, 'utf8');
+    // let locationInfoLines = locationInfo.split('\n');
+    // removeEmptyLastItem(locationInfoLines);
+    // let locationInfoItems = [];
+    // for (let locationInfoLine of locationInfoLines) {
+    //     let templocationInfoItem = locationInfoLine.split('\t'); //'ERR11637981', '11.84508333 S 96.82013333 E', '2022-12-06'
+    //     let tempLatLong = templocationInfoItem[1].split(' ')
+    //     //console.log(templocationInfoItem, tempLatLong[0], aquaData[templocationInfoItem[0]]);
+    //     if (tempLatLong[0] !== "" && tempLatLong.length === 4 && !isNaN(tempLatLong[0]) && aquaData[templocationInfoItem[0]] === "1") {
+    //         //経度緯度が記述されていれば追加
+    //         locationInfoItems.push(templocationInfoItem);
+    //     }
+    // }
     
-    return locationInfoItems.length
+    // return locationInfoItems.length
 }
 
 /* GET home page. */
 router.get('/', function (req, res) {
+    //console.log("/ opened")
     taxo = req.query.taxo;
     if (taxo == undefined || taxo == "") {
         taxo = "fish"
@@ -94,6 +101,7 @@ router.get('/', function (req, res) {
         ratio = 5
     }
 
+    //console.log("/ opened 2")
 
     res.render('ejs/index.ejs', {
         sampleDataObjList: sampleDataObjList, AllFishList: allFishList,
@@ -103,6 +111,7 @@ router.get('/', function (req, res) {
 });
 
 router.get('/fish', function (req, res) {
+    //console.log("/fish opened")
     taxo = "fish";
     let language = req.headers["accept-language"]
     language = language[0] + language[1]
@@ -283,6 +292,27 @@ router.post('/checkFiles', function (req, res) {
 
     // レスポンスとしてJSONを返す
     res.json({ existingFiles });
+})
+
+router.post('/fetchFiles', function (req, res) {
+    // ブラウザから送られたファイルパスを取得
+    //console.log(req.body.filePaths.length)
+    const filePaths = req.body.filePaths; //[filePath]
+    
+    let results = []
+    for(const filePath of filePaths){
+        try{
+            let fileContent = {}
+            fileContent["data"] = JSON.parse(fs.readFileSync("public/" + filePath, 'utf8'))
+            fileContent["url"] = filePath
+            results.push(fileContent)
+        }catch(e){
+            console.error(e)
+        }
+    }
+
+    // レスポンスとしてJSONを返す
+    res.json({ results });
 })
 
 module.exports = router;

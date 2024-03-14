@@ -181,6 +181,69 @@ async function checkFiles(filePaths) {
     }
 }
 
+async function fetchFiles(urls) {
+    const chunkSize = 100; // 一度に処理するfilePathの数
+    const chunks = []; // filePathsを分割したチャンクの配列
+
+    // filePathsをchunkSizeごとに分割
+    for (let i = 0; i < urls.length; i += chunkSize) {
+        const chunk = urls.slice(i, i + chunkSize);
+        chunks.push(chunk);
+    }
+
+    const results = []; // 各チャンクのfetch結果を格納する配列
+
+    try {
+        // 各チャンクに対して非同期リクエストを実行
+        for (const chunk of chunks) {
+            const response = await fetch(baseurl + 'fetchFiles', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ filePaths: chunk })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                results.push(...data.results); // 結果をresults配列に追加
+            } else {
+                console.error('サーバーエラー:', response.status);
+            }
+        }
+
+        //console.log(results);
+        return results;
+    } catch (error) {
+        console.error('通信エラー:', error);
+    }
+
+    // // 各URLに対してfetchリクエストを作成し、Promise.allSettledに渡す
+    // const promises = urls.map(url =>
+    //     fetch(url)
+    //         .then(response => {
+    //             if (!response.ok) {
+    //                 // リクエストが失敗した場合は、Promiseをrejectする
+    //                 return Promise.reject(new Error('Failed to load'));
+    //             }
+    //             // response.json()も非同期操作なので、その結果を待つ必要があります
+    //             return response.json().then(data => ({
+    //                 url: url, // 元のURLを含む
+    //                 data: data // レスポンスのデータ
+    //             }));
+    //         })
+    // );
+
+    // // すべてのプロミスがsettled（完了）するのを待つ
+    // const results = await Promise.allSettled(promises);
+
+    // // 成功した結果のみをフィルタリング
+    // const successfulResults = results
+    //     .filter(result => result.status === 'fulfilled')
+    //     .map(result => result.value);
+
+    // return successfulResults;
+}
 
 function removeAllPieChart() {
 
@@ -1398,34 +1461,6 @@ function getCapturedSampleList() {
     //     sliderDisplay();
     // }
     getCapturedSampleListChecker = true
-}
-
-async function fetchFiles(urls) {
-    // 各URLに対してfetchリクエストを作成し、Promise.allSettledに渡す
-    const promises = urls.map(url =>
-        fetch(url)
-            .then(response => {
-                if (!response.ok) {
-                    // リクエストが失敗した場合は、Promiseをrejectする
-                    return Promise.reject(new Error('Failed to load'));
-                }
-                // response.json()も非同期操作なので、その結果を待つ必要があります
-                return response.json().then(data => ({
-                    url: url, // 元のURLを含む
-                    data: data // レスポンスのデータ
-                }));
-            })
-    );
-
-    // すべてのプロミスがsettled（完了）するのを待つ
-    const results = await Promise.allSettled(promises);
-
-    // 成功した結果のみをフィルタリング
-    const successfulResults = results
-        .filter(result => result.status === 'fulfilled')
-        .map(result => result.value);
-
-    return successfulResults;
 }
 
 function addKeyVal(obj, key, valueToAdd) {
