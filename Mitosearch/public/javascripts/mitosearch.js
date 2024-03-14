@@ -1495,7 +1495,7 @@ function getCapturedSampleList() {
     //円グラフ描画
     readDataAndPlotPieChart();
     //リッジライングラフ描画
-    //////drawLiddgeLine()
+    drawLiddgeLine()
     //slidersize();
     // if (graphChecker !== "nonexist") {
     //     sliderDisplay();
