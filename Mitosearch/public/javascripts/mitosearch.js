@@ -992,8 +992,8 @@ async function plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, o
     console.log(`fish ratio`, pieDataTmp);
 
 
-    let pieCenter = adjustPieChartCenter(j, baseLat, baseLng, plotArrangement, offset)
-
+    let pieCenter = adjustPieChartCenter(j, baseLat, baseLng, plotArrangement, offset);
+ 
 
     //preparing the popup content
     let htmlStringForPopup = "<table><tr><td><u>Sample name</u></td><td><u>" + sampleDataTmp["ID"] + "</u></td></tr>";
@@ -1010,11 +1010,25 @@ async function plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, o
     //draw pie
     let customIcon = drawPieIcon(radiusTest, pieDataTmp, 1)
 
-    console.log(pieCenter)
+
+
 
     //add pie chart
     let markersTest1 = L.marker([pieCenter["centerLat"], pieCenter["centerLng"]], { icon: customIcon }).addTo(map);
     markersTest1.bindPopup(htmlStringForPopup)
+    
+
+    let samplePoint=[baseLat,baseLng];
+    let pieCenterPoint=[pieCenter["centerLat"],pieCenter["centerLng"]]
+    let pointLink=[samplePoint,pieCenterPoint];
+    let polyline = L.polyline(pointLink, {  
+        color: '#003B4A',
+        weight: 2,
+        opacity: 0.3,
+        dashArray: '5, 1',
+        dashOffset: '0'
+    }).addTo(map);
+    
 }
 
 async function mainLevel18(blockData, offset, radiusTest) {
