@@ -18,8 +18,14 @@ run code:
     node 01blockSeparatorForLevel1to17decimal.js language(ja/zh/en)  #blocksize 45-0.01までを一度に作成
 
 
+for special
+run code
+    node 02blockSeparatorForSpecial.js language(zh/ja/en) blocksize(0.0000858306884765625[tested])
 
 
+
+
+old code
 for level 18, prepare special data
 run code one by one:
 

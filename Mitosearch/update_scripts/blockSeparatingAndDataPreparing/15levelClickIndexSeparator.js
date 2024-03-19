@@ -1,9 +1,15 @@
 const fs = require('fs');
 const path = require('path');
-const Decimal = require('./decimal.js')
+//const Decimal = require('./decimal.js')
+const BigNumber = require('../../public/bignumber.js/bignumber.js');
+BigNumber.config({
+    DECIMAL_PLACES: 50,                // 小数部50桁
+    ROUNDING_MODE: BigNumber.ROUND_HALF_UP // 四捨五入
+});
+
 
 const args = process.argv.slice(2)
-let blockSize = new Decimal(args[0]);
+let blockSize = new BigNumber(args[0]);
 let lang = args[1]
 const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
 
@@ -17,8 +23,8 @@ let indexSave={}
 keys.forEach(key => {
     console.log("key: ", key)
     let keysplit = key.split(",")
-    let keylat=new Decimal(keysplit[0])
-    let keylng=new Decimal(keysplit[1])
+    let keylat=new BigNumber(keysplit[0])
+    let keylng=new BigNumber(keysplit[1])
     let blocklat=getBlockStartCoord(keylat,blockSize,"lat")
     let blocklng=getBlockStartCoord(keylng,blockSize,"lng")
     let block=`${blocklat},${blocklng}`
@@ -50,14 +56,14 @@ indexkeys.forEach(indexkey =>{
 function getBlockStartCoord(coordinate, blockSize, latORlng) {
     let cons
     if (latORlng==="lat"){
-        cons=new Decimal(90)
+        cons=new BigNumber(90)
     }else if(latORlng==="lng"){
-        cons=new Decimal(180)
+        cons=new BigNumber(180)
     }
     // Convert latitude and longitude into positive ranges to facilitate calculations
-    let offsetFromMin = Decimal.add(coordinate,cons)
+    let offsetFromMin = coordinate.plus(cons)
     // Calculate the number of blocks
-    let blockNumber = Decimal.floor(Decimal.div(offsetFromMin, blockSize))
+    let blockNumber = bigNumberValue.integerValue((offsetFromMin.dividedBy(blockSize)).ROUND_FLOOR)
     // Calculates and returns the starting coordinates of the block
-    return Decimal.sub(Decimal.mul(blockNumber, blockSize),cons)
+    return (blockNumber.multipliedBy(blockSize)).minus(cons)
 }

@@ -1,5 +1,4 @@
 const fs = require('fs');
-const Decimal = require('./decimal.js')
 const path = require('path');
 
 const args = process.argv.slice(2)

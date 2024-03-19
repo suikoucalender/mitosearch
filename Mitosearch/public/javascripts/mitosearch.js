@@ -907,7 +907,7 @@ async function readDataAndPlotPieChart() {
                 console.error('エラーが発生しました:', error);
             });
 
-    } else {//This is when the map zoom level goes to 18 //specialな場合
+    } else {//This is when the map level goes to 18 //specialな場合
         //get the center location of map
         let mapCenter = map.getCenter();
         console.log("map center location", mapCenter)
@@ -1017,7 +1017,7 @@ async function plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, o
     let markersTest1 = L.marker([pieCenter["centerLat"], pieCenter["centerLng"]], { icon: customIcon }).addTo(map);
     markersTest1.bindPopup(htmlStringForPopup)
     
-
+    //draw line between real sample point and pie center
     let samplePoint=[baseLat,baseLng];
     let pieCenterPoint=[pieCenter["centerLat"],pieCenter["centerLng"]]
     let pointLink=[samplePoint,pieCenterPoint];
