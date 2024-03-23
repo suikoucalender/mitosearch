@@ -29,9 +29,10 @@ function getBlockSize(ratio) {
 }
 
 let lineDrawnList = {} //ブロックの線を描いたかどうかを記憶
-async function getTargetBlocksPie(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
+async function getTargetBlocksPie(southWest, northEast, ratio) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
     //円グラフはLeafletに一度表示すれば左右にマップを移動しても残るけど、ブロックの線はleafletに描画指示を一度出しても左右移動のたびに再描画されるみたい
     //円グラフ描画のついでにブロックの線も描く
+    let blockSize = getBlockSize(ratio)
     blockSize = new BigNumber(blockSize) //ここで扱う数字は全てBigNumberオブジェクトに変換しておく
     //左、下はブロックサイズで割って切り捨ててからブロックサイズを掛け、端数を切った値
     //右、上はブロックサイズで割って切り上げてからブロックサイズを掛け、端数を足した値
@@ -71,23 +72,28 @@ async function getTargetBlocksPie(southWest, northEast, blockSize) { //数字or�
         }
     }
 
-    const response = await fetch(baseurl + 'getTargetBlocks', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ southWest, northEast, blockSize, filename: "pieCoord.json" })
-    });
-
-    if (response.ok) {
-        const data = await response.json();
-        //console.log(data)
-        listBlocks = data.listBlocks
-        //results.push(...data.existingFiles); // 結果をresults配列に追加
-    } else {
-        console.error('サーバーエラー:', response.status);
+    if(ratio === 18){
+        //最大倍率の場合は全データを描画
+        console.log(18)
+    }else{
+        const response = await fetch(baseurl + 'getTargetBlocks', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ southWest, northEast, blockSize, filename: "pieCoord.json" })
+        });
+    
+        if (response.ok) {
+            const data = await response.json();
+            //console.log(data)
+            listBlocks = data.listBlocks
+            //results.push(...data.existingFiles); // 結果をresults配列に追加
+        } else {
+            console.error('サーバーエラー:', response.status);
+        }
+        return listBlocks
     }
-    return listBlocks
 }
 
 async function getTargetBlocksGraphMonth(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
@@ -736,7 +742,7 @@ async function readDataAndPlotPieChart() {
     console.log("map zoom level", ratio)
     //this array is {“map zoom level”：blocksize}
     //let ratioAndBlock = { "2": 45, "3": 30, "4": 15, "5": 5, "6": 3, "7": 2, "8": 1, "9": 0.5, "10": 0.2, "11": 0.1, "12": 0.05, "13": 0.05, "14": 0.02, "15": 0.02, "16": 0.02, "17": 0.01, "18": "special" }
-    let blockSize = getBlockSize(map.getZoom())
+    let blockSize = getBlockSize(ratio)
 
     let radiusTest = 15; //25;
     //pieチャートデータセット用関数の設定
@@ -751,7 +757,7 @@ async function readDataAndPlotPieChart() {
         let southWest = bounds.getSouthWest();
         let northEast = bounds.getNorthEast();
         //描画範囲の経度緯度情報を取得する
-        let targetBlocks = await getTargetBlocksPie(southWest, northEast, blockSize)
+        let targetBlocks = await getTargetBlocksPie(southWest, northEast, ratio)
 
         //list up the urls
         let urlsFishAndRatio = []
