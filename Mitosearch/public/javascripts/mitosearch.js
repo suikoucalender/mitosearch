@@ -72,28 +72,23 @@ async function getTargetBlocksPie(southWest, northEast, ratio) { //数字or文�
         }
     }
 
-    if(ratio === 18){
-        //最大倍率の場合は全データを描画
-        console.log(18)
-    }else{
-        const response = await fetch(baseurl + 'getTargetBlocks', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ southWest, northEast, blockSize, filename: "pieCoord.json" })
-        });
-    
-        if (response.ok) {
-            const data = await response.json();
-            //console.log(data)
-            listBlocks = data.listBlocks
-            //results.push(...data.existingFiles); // 結果をresults配列に追加
-        } else {
-            console.error('サーバーエラー:', response.status);
-        }
-        return listBlocks
+    const response = await fetch(baseurl + 'getTargetBlocks', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ southWest, northEast, blockSize, filename: "pieCoord.json" })
+    });
+
+    if (response.ok) {
+        const data = await response.json();
+        //console.log(data)
+        listBlocks = data.listBlocks
+        //results.push(...data.existingFiles); // 結果をresults配列に追加
+    } else {
+        console.error('サーバーエラー:', response.status);
     }
+    return listBlocks
 }
 
 async function getTargetBlocksGraphMonth(southWest, northEast, blockSize) { //数字or文字列を入力として{y:文字列,x:文字列}の配列を返す
@@ -749,7 +744,7 @@ async function readDataAndPlotPieChart() {
     let pie = d3.pie()
         .value(function (d) { return d.value; })
         .sort(null);
-    if (ratio !== 18) {//this part, map level is 1-17
+    if (ratio !== 19) {//this part, map level is 1-17
 
         // get map boundary
         let bounds = map.getBounds();
@@ -762,6 +757,7 @@ async function readDataAndPlotPieChart() {
         //list up the urls
         let urlsFishAndRatio = []
         let urlsPieCoord = []
+        let urlsPieEachData = []
 
         for (let y_x_map of targetBlocks) {
             const y_x = y_x_map.y + "/" + y_x_map.x
@@ -774,11 +770,15 @@ async function readDataAndPlotPieChart() {
             }
             if (!(y_x_normalized in pieData[blockSize])) {
                 pieData[blockSize][y_x_normalized] = {} //ファイルがない場合もあるので、あらかじめ空のデータを突っ込んでおく
-                let folderPath = `layered_data/${language}/${blockSize}/${y_x_normalized}`
-                let speciesPath = `${folderPath}/fishAndRatio.json`;
-                let coordPath = `${folderPath}/pieCoord.json`;
+                const folderPath = `layered_data/${language}/${blockSize}/${y_x_normalized}`
+                const speciesPath = `${folderPath}/fishAndRatio.json`;
+                const coordPath = `${folderPath}/pieCoord.json`;
+                const eachDataPath = `${folderPath}/eachData.json`;
                 urlsFishAndRatio.push(speciesPath)
                 urlsPieCoord.push(coordPath)
+                if (ratio === 18) {
+                    urlsPieEachData.push(eachDataPath)
+                }
             }
         }
         //console.log(urlsFishAndRatio)
@@ -788,9 +788,9 @@ async function readDataAndPlotPieChart() {
         //urlsPieCoord = await checkFiles(urlsPieCoord)
 
         // 2つのfetchFiles関数の実行をPromise.allでラップする
-        Promise.all([fetchFiles(urlsPieCoord), fetchFiles(urlsFishAndRatio)])
-            .then(([dataPieCoordArray, dataFishRatioArray]) => {
-                console.log("Downloaded Pie data: ", dataPieCoordArray, dataFishRatioArray)
+        Promise.all([fetchFiles(urlsPieCoord), fetchFiles(urlsFishAndRatio), fetchFiles(urlsPieEachData)])
+            .then(([dataPieCoordArray, dataFishRatioArray, dataPieEachDataArray]) => {
+                console.log("Downloaded Pie data: ", dataPieCoordArray, dataFishRatioArray, dataPieEachDataArray)
                 for (let dataPieCoord of dataPieCoordArray) {
                     const items = dataPieCoord.url.split("/")
                     const y = items[items.length - 3]
@@ -811,21 +811,29 @@ async function readDataAndPlotPieChart() {
                     pieData[blockSize][y_x]["data"] = dataFishRatio.data
                 }
                 //console.log("pieData: ",pieData)
+                for (let dataPieEachData of dataPieEachDataArray) {
+                    const items = dataPieEachData.url.split("/")
+                    const y = items[items.length - 3]
+                    const x = items[items.length - 2]
+                    const y_x = y + "/" + x
+                    //console.log("items: ", items)
+                    pieData[blockSize][y_x]["eachData"] = dataPieEachData.data //{y_x: [{ID, time, lat, long, species:{name: freq}}]}
+                }
 
                 //console.time("フィルター更新")
                 //フィルターの魚種一覧を更新
-                if(dataFishRatioArray.length>0){
+                if (dataFishRatioArray.length > 0) {
                     let fishAllMap = {}
-                    for(const yx in pieData[blockSize]){
+                    for (const yx in pieData[blockSize]) {
                         const tempNameArray = pieData[blockSize][yx]["data"]
                         //console.log(pieData[blockSize], tempNameArray)
-                        for(const i of tempNameArray){
-                            fishAllMap[i.name]=1
+                        for (const i of tempNameArray) {
+                            fishAllMap[i.name] = 1
                         }
                     }
                     let fishAllArray = Object.keys(fishAllMap)
                     //console.log(fishAllArray)
-                    if(fishAllArray.length<50000){
+                    if (fishAllArray.length < 50000) {
                         setFilter(fishAllArray)
                     }
                 }
@@ -845,65 +853,76 @@ async function readDataAndPlotPieChart() {
                         //描画されていないデータが対象
                         if ("data" in pieData[blockSize][y_x_normalized]) {
                             //空でないデータが対象
-                            let pieDataTmp = pieData[blockSize][y_x_normalized]["data"]; //[{name, value}]
-                            let y = pieData[blockSize][y_x_normalized]["y"];
-                            let x = pieData[blockSize][y_x_normalized]["x"];
-                            let n = pieData[blockSize][y_x_normalized]["n"];
-                            //console.log(`pieDataTmp`, y_x, pieDataTmp, x, y, n);
+                            if (ratio !== 18) {
+                                let pieDataTmp = pieData[blockSize][y_x_normalized]["data"]; //[{name, value}]
+                                let y = pieData[blockSize][y_x_normalized]["y"];
+                                let x = pieData[blockSize][y_x_normalized]["x"];
+                                let n = pieData[blockSize][y_x_normalized]["n"];
+                                //console.log(`pieDataTmp`, y_x, pieDataTmp, x, y, n);
 
-                            //フィルターがセットされていたらその魚種に限定
-                            if (fishFilterArray.length > 0) {
-                                //console.log("フィルターあり")
-                                //console.log(pieDataTmp)
-                                let tmpPieData = []
-                                let tmpcnt = 0
-                                for (let itmPieDataTmp of pieDataTmp) {
-                                    if (fishFilterArray.includes(itmPieDataTmp.name)) {
-                                        tmpPieData.push(itmPieDataTmp)
-                                    } else { //フィルターに含まれていない魚種のvalue合計
-                                        tmpcnt += itmPieDataTmp.value
+                                //フィルターがセットされていたらその魚種に限定
+                                if (fishFilterArray.length > 0) {
+                                    //console.log("フィルターあり")
+                                    //console.log(pieDataTmp)
+                                    let tmpPieData = []
+                                    let tmpcnt = 0
+                                    for (let itmPieDataTmp of pieDataTmp) {
+                                        if (fishFilterArray.includes(itmPieDataTmp.name)) {
+                                            tmpPieData.push(itmPieDataTmp)
+                                        } else { //フィルターに含まれていない魚種のvalue合計
+                                            tmpcnt += itmPieDataTmp.value
+                                        }
+                                    }
+                                    //console.log(tmpcnt, tmpPieData)
+                                    if (tmpPieData.length === 0) {
+                                        return //対象種が0の地域は円グラフを描画せずに終了
+                                    }
+                                    tmpPieData.push({ name: "others", value: tmpcnt })
+                                    pieDataTmp = tmpPieData
+                                }
+
+                                //Ordered from largest to smallest percentage
+                                let pieDataTmpSorted = pieDataTmp.sort(function (a, b) {
+                                    return b.value - a.value;
+                                });
+                                //console.log("pie data sorted", pieDataTmpSorted)
+
+                                //preparing the popup content
+                                let htmlStringForPopup = //"block: " + x + "," + y + 
+                                    "<table><tr><td><u>No. of samples</u></td><td><u>" + n + "</u></td></tr>";
+                                //let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
+                                for (let i = 0; i < Math.min(20, pieDataTmpSorted.length); i++) {
+                                    let item = pieDataTmpSorted[i]
+                                    let name = item["name"]
+                                    if (name.length > 44) {
+                                        name = "..." + name.substring(name.length - 44, name.length)
+                                    }
+                                    htmlStringForPopup += '<tr><td>' + name + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+                                }
+                                htmlStringForPopup += '</table>';
+                                //draw pie
+                                let customIconWhite = drawPieIconWhite(radiusTest, pieDataTmp, n) //外枠の白い円用
+                                let customIcon = drawPieIcon(radiusTest, pieDataTmp, n) //25, [{name, value}], 1
+
+                                //add pie chart//can not get data
+                                let markersTestWhite = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIconWhite }).addTo(map);
+                                //let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()]).addTo(map);
+                                let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIcon }).addTo(map);
+                                //let markersTest2 = L.marker([y, Decimal.add(x, 360)], { icon: customIcon }).addTo(map);//？
+                                markersTest1.bindPopup(htmlStringForPopup)
+                                //markersTest2.bindPopup(htmlStringForPopup)
+
+                                //console.timeLog("円グラフ描画")
+                            } else {
+                                //level 18の場合
+                                const pieDataTmpMap = pieData[blockSize][y_x_normalized]["eachData"]; //{y_x: [{ID, time, lat, long, species:{name: freq}}]}
+                                for (const y_x in pieDataTmpMap) {
+                                    const sampleN = pieDataTmpMap[y_x].length
+                                    for (let i = 0; i < sampleN; i++) {
+                                        plotL18(i, pieDataTmpMap[y_x][i], sampleN, radiusTest)
                                     }
                                 }
-                                //console.log(tmpcnt, tmpPieData)
-                                if (tmpPieData.length === 0) {
-                                    return //対象種が0の地域は円グラフを描画せずに終了
-                                }
-                                tmpPieData.push({ name: "others", value: tmpcnt })
-                                pieDataTmp = tmpPieData
                             }
-
-                            //Ordered from largest to smallest percentage
-                            let pieDataTmpSorted = pieDataTmp.sort(function (a, b) {
-                                return b.value - a.value;
-                            });
-                            //console.log("pie data sorted", pieDataTmpSorted)
-
-                            //preparing the popup content
-                            let htmlStringForPopup = //"block: " + x + "," + y + 
-                                "<table><tr><td><u>No. of samples</u></td><td><u>" + n + "</u></td></tr>";
-                            //let htmlStringForPopup = "<table><tr><td><u>No. of samples</u></td><td><u>" + pieCoorTmp[2] + "</u></td></tr>";
-                            for (let i = 0; i < Math.min(20, pieDataTmpSorted.length); i++) {
-                                let item = pieDataTmpSorted[i]
-                                let name = item["name"]
-                                if(name.length>44){
-                                    name = "..."+name.substring(name.length-44, name.length)
-                                }
-                                htmlStringForPopup += '<tr><td>' + name + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
-                            }
-                            htmlStringForPopup += '</table>';
-                            //draw pie
-                            let customIconWhite = drawPieIconWhite(radiusTest, pieDataTmp, n) //外枠の白い円用
-                            let customIcon = drawPieIcon(radiusTest, pieDataTmp, n) //25, [{name, value}], 1
-
-                            //add pie chart//can not get data
-                            let markersTestWhite = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIconWhite }).addTo(map);
-                            //let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()]).addTo(map);
-                            let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIcon }).addTo(map);
-                            //let markersTest2 = L.marker([y, Decimal.add(x, 360)], { icon: customIcon }).addTo(map);//？
-                            markersTest1.bindPopup(htmlStringForPopup)
-                            //markersTest2.bindPopup(htmlStringForPopup)
-
-                            //console.timeLog("円グラフ描画")
                         }
                     }
                 })
@@ -929,7 +948,7 @@ async function readDataAndPlotPieChart() {
         //setting the offset of pie chart
         let offset = 0.0002
 
-        let dataIconSaver
+        //let dataIconSaver
 
         //read block
         fetch(`layered_data/${language}/special/index/${expectedNeededBlock}.json`)
@@ -949,6 +968,67 @@ async function readDataAndPlotPieChart() {
     }
 }
 
+
+function plotL18(j, sampleDataTmp, sampleNumber, radiusTest) {
+    const offset = 0.0002
+    //decide rows and column of pie chart
+    const plotArrangement = calculatePlotArrangement(sampleNumber)
+    //console.log("j, plotArrangement: ", j, plotArrangement)
+    //console.log('Data outside fetchData:', sampleDataTmp);
+    const pieDataTmpMap = sampleDataTmp["species"]
+    const baseLat = parseFloat(sampleDataTmp["lat"])
+    const baseLng = parseFloat(sampleDataTmp["long"])
+    //console.log(`sample name`, sampleDataTmp["ID"]);
+    //console.log(`fish ratio`, pieDataTmpMap);
+
+    let pieCenter = adjustPieChartCenter(j, baseLat, baseLng, plotArrangement, offset);
+    //console.log("pieCenter: ", pieCenter)
+
+    let pieDataTmp = []
+    for (const tempKey in pieDataTmpMap) {
+        pieDataTmp.push({ name: tempKey, value: pieDataTmpMap[tempKey] })
+    }
+
+    //Ordered from largest to smallest percentage
+    let pieDataTmpSorted = pieDataTmp.sort(function (a, b) {
+        return b.value - a.value;
+    });
+
+    //preparing the popup content
+    let htmlStringForPopup = "<table><tr><td><u>Sample name</u></td><td><u>" + sampleDataTmp["ID"] + "</u></td></tr>";
+    htmlStringForPopup += '<tr><td><u>Date</u></td><td><u>' + sampleDataTmp["time"] + '</u></td><td>';
+    let k = 0
+    pieDataTmpSorted.forEach(function (item) {
+        if (k < 20) {
+            htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+        }
+        k += 1
+    });
+    htmlStringForPopup += '</table>';
+
+    //draw pie
+    let customIconWhite = drawPieIconWhite(radiusTest, pieDataTmpSorted, 1) //外枠の白い円用 サイズは1で
+    let customIcon = drawPieIcon(radiusTest, pieDataTmpSorted, 1) // サイズは1で
+
+    //add pie chart//can not get data
+    let markersTestWhite = L.marker([pieCenter["centerLat"], pieCenter["centerLng"]], { icon: customIconWhite }).addTo(map);
+    let markersTest1 = L.marker([pieCenter["centerLat"], pieCenter["centerLng"]], { icon: customIcon }).addTo(map);
+    markersTest1.bindPopup(htmlStringForPopup)
+
+    //draw line between real sample point and pie center
+    let samplePoint = [baseLat, baseLng];
+    let pieCenterPoint = [pieCenter["centerLat"], pieCenter["centerLng"]]
+    let pointLink = [samplePoint, pieCenterPoint];
+    let polyline = L.polyline(pointLink, {
+        color: '#003B4A',
+        weight: 2,
+        opacity: 0.3,
+        dashArray: '5, 1',
+        dashOffset: '0'
+    }).addTo(map);
+
+}
+
 function calculatePlotArrangement(sampleNumber) {
     let rows = 1;
     let columns = 1;
@@ -962,7 +1042,6 @@ function calculatePlotArrangement(sampleNumber) {
     }
 
     return { rows, columns };
-
 }
 
 function adjustPieChartCenter(index, baseLatitude, baseLongitude, plotArrangement, offset) {
@@ -975,102 +1054,6 @@ function adjustPieChartCenter(index, baseLatitude, baseLongitude, plotArrangemen
 
     // return the center of pie
     return { centerLat, centerLng };
-}
-
-async function fetchSampleData(urlSample) {
-    try {
-        const response = await fetch(urlSample);
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
-
-// Call fetchSampleData with async/await
-async function plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, offset, radiusTest) {
-    const sampleDataTmp = await fetchSampleData(urlSample);
-    console.log('Data outside fetchData:', sampleDataTmp);
-    let pieDataTmp = sampleDataTmp["species"]
-    console.log(`sample name`, sampleDataTmp["ID"]);
-    console.log(`lat`, sampleDataTmp["lat"]);
-    console.log(`lng`, sampleDataTmp["long"]);
-    console.log(`fish ratio`, pieDataTmp);
-
-
-    let pieCenter = adjustPieChartCenter(j, baseLat, baseLng, plotArrangement, offset);
- 
-
-    //preparing the popup content
-    let htmlStringForPopup = "<table><tr><td><u>Sample name</u></td><td><u>" + sampleDataTmp["ID"] + "</u></td></tr>";
-    htmlStringForPopup += '<tr><td><u>Date</u></td><td><u>' + sampleDataTmp["time"] + '</u></td><td>';
-    let k = 0
-    pieDataTmp.forEach(function (item) {
-        if (k < 20) {
-            htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
-        }
-        k += 1
-    });
-    htmlStringForPopup += '</table>';
-
-    //draw pie
-    let customIcon = drawPieIcon(radiusTest, pieDataTmp, 1)
-
-
-
-
-    //add pie chart
-    let markersTest1 = L.marker([pieCenter["centerLat"], pieCenter["centerLng"]], { icon: customIcon }).addTo(map);
-    markersTest1.bindPopup(htmlStringForPopup)
-    
-    //draw line between real sample point and pie center
-    let samplePoint=[baseLat,baseLng];
-    let pieCenterPoint=[pieCenter["centerLat"],pieCenter["centerLng"]]
-    let pointLink=[samplePoint,pieCenterPoint];
-    let polyline = L.polyline(pointLink, {  
-        color: '#003B4A',
-        weight: 2,
-        opacity: 0.3,
-        dashArray: '5, 1',
-        dashOffset: '0'
-    }).addTo(map);
-    
-}
-
-async function mainLevel18(blockData, offset, radiusTest) {
-    let dataIconSaver
-    //read data in the block
-    console.log("blockData: ", blockData)
-    let baseLat
-    let baseLng
-    for (i = 0; i < blockData.length; i++) { //blockData: [{y_x: input_file}]
-        //get lat,lng
-        let blockDataKeys = Object.keys(blockData[i])
-        //console.log(blockDataKeys)
-        //get sample number
-        let sampleNumber = blockData[i][blockDataKeys].length
-        //console.log("sample number", sampleNumber)
-
-        //decide rows and column of pie chart
-        let plotArrangement = calculatePlotArrangement(sampleNumber)
-        console.log("plot arangement", plotArrangement, blockData[i][blockDataKeys])
-
-        let coordinate = blockDataKeys[0]
-        coordinate = coordinate.split(',')
-        //lat
-        baseLat = parseFloat(coordinate[0])
-        baseLng = parseFloat(coordinate[1])
-        console.log(baseLat)
-        console.log(baseLng)
-
-        console.log("----------------------------")
-        for (let j = 0; j < sampleNumber; j++) {
-            let urlSample = `layered_data/${language}/special/${blockData[i][blockDataKeys][j]}`
-            console.log(urlSample)
-            console.log(j)
-            await plotingLevel18(j, urlSample, baseLat, baseLng, plotArrangement, offset, radiusTest)
-        }
-    }
 }
 
 function detectWebkitBrowser() {

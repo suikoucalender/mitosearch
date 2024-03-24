@@ -261,7 +261,6 @@ router.post('/getTargetBlocks', function (req, res) {
     //ブロックをすべて列挙する
     let listBlocks = []
 
-    //ブロックを列挙しつつ地図上にブロック区切りの線も引く
     for (let x = longStart; x.isLessThanOrEqualTo(longEnd); x = x.plus(blockSize)) {
         const dx_value = Math.floor((parseFloat(x.toString()) + 180) / 360) * 360
         const x_normalized = BigNumber(x.toString()).minus(dx_value)
@@ -276,11 +275,58 @@ router.post('/getTargetBlocks', function (req, res) {
             }
         }
     }
-    //return listBlocks
-
     // レスポンスとしてJSONを返す
     res.json({ listBlocks });
 })
+
+
+router.post('/getTargetBlocksL18', function (req, res) {
+    let language = req.headers["accept-language"]
+    language = language[0] + language[1]
+    // ブラウザから送られた情報を取得
+    //console.log(req.body)
+    const filename = req.body.filename
+    const southWest = req.body.southWest
+    const northEast = req.body.northEast
+    const blockSize = BigNumber(req.body.blockSize) //もともとBigNumber型で送られてくるはずだけど念のため
+
+    //左、下はブロックサイズで割って切り捨ててからブロックサイズを掛け、端数を切った値
+    //右、上はブロックサイズで割って切り上げてからブロックサイズを掛け、端数を足した値
+    let leftlong = BigNumber(Math.floor(BigNumber(southWest.lng).div(blockSize))).times(blockSize)
+    let lowerlat = BigNumber(Math.floor(BigNumber(southWest.lat).div(blockSize))).times(blockSize)
+    let rightlong = BigNumber(Math.ceil(BigNumber(northEast.lng).div(blockSize))).times(blockSize)
+    let upperlat = BigNumber(Math.ceil(BigNumber(northEast.lat).div(blockSize))).times(blockSize)
+    //console.log("leftlong, rightlong, lowerlat, upperlat", leftlong.toString(), rightlong.toString(), lowerlat.toString(), upperlat.toString())
+
+    //上下左右ともにblockSizeだけ大きくしておく
+    //decide the data reading range
+    let longStart = leftlong.minus(blockSize)
+    let latStart = lowerlat.minus(blockSize)
+    let longEnd = rightlong.plus(blockSize)
+    let latEnd = upperlat.plus(blockSize)
+    //console.log("longStart, longEnd, latStart, latEnd", longStart.toString(), longEnd.toString(), latStart.toString(), latEnd.toString())
+
+    //ブロックをすべて列挙する
+    let listBlocks = []
+
+    for (let x = longStart; x.isLessThanOrEqualTo(longEnd); x = x.plus(blockSize)) {
+        const dx_value = Math.floor((parseFloat(x.toString()) + 180) / 360) * 360
+        const x_normalized = BigNumber(x.toString()).minus(dx_value)
+
+        for (let y = latStart; y.isLessThanOrEqualTo(latEnd); y = y.plus(blockSize)) {
+            //console.log("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x_normalized.toString() + "/" + filename)
+            if (fileExists("public/layered_data/" + language + "/" + blockSize.toString() + "/" + y.toString() + "/" + x_normalized.toString() + "/" + filename)) {
+                //ターゲットとして保存
+                //console.log(x, y)
+                listBlocks.push({ y: y.toString(), x: x.toString() })
+                //console.log("y, x: ", y, x)
+            }
+        }
+    }
+    // レスポンスとしてJSONを返す
+    res.json({ listBlocks });
+})
+
 router.post('/checkFiles', function (req, res) {
     // ブラウザから送られたファイルパスを取得
     //console.log(req.body.filePaths.length)

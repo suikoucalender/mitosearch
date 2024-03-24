@@ -6,16 +6,22 @@ BigNumber.config({
     ROUNDING_MODE: BigNumber.ROUND_HALF_UP // 四捨五入
 });
 const args = process.argv.slice(2)
-const blockSize = new BigNumber(args[1])
+//const blockSize = new BigNumber(args[1])
 const lang = args[0]
 const language = args[0]
 
+//ブロックサイズを計算
+const ratio = 18
+const base2 = BigNumber(2);
+const exponent = 4 - ratio;
+const myunit = BigNumber(360).div(base2.pow(8))
+const result = myunit.times(base2.pow(exponent));
+const blockSize = result.toString();
 
 //mitosearchフォルダの中のパスを指定している
 const locationPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "lat-long-date.txt" //args[0]; //lat-long-date.txt
 const waterPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "data" + path.sep + "fish" + path.sep + "mapwater.result.txt" //args[1]; //mapwater.result.txt
 const imputFolderPath = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "db_fish_" + language //args[2]; //db_fish_[language]
-//let blockSize = new Decimal(args[3]); //ratioAndBlock={"2":45,"3":30,"4":15,"5":5,"6":3,"7":2,"8":1,"9":0.5,"10":0.2,"11":0.1,"12":0.05,"13":0.05,"14":0.02,"15":0.02,"16":0.02,"17":0.01,"18":"special"}
 const outputbasedir = __dirname + path.sep + ".." + path.sep + ".." + path.sep + "public"
 
 

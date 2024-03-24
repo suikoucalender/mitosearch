@@ -1,5 +1,4 @@
 const { addAbortListener } = require('events');
-const Decimal = require('./decimal.js');
 const BigNumber = require('../../public/bignumber.js/bignumber.js');
 BigNumber.config({
     DECIMAL_PLACES: 50,                // 小数部50桁
@@ -47,9 +46,6 @@ for(let locationInfoLine of locationInfoLines){
     }
 }
 
-//let blockSizes = { "2": "45", "3": "30", "4": "15", "5": "5", "6": "3", "7": "2", "8": "1", "9": "0.5", "10": "0.2", "11": "0.1", "12": "0.05", "14": "0.02", "17": "0.01" }
-//let blockSizes = { "2": "15", "3": "5", "4": "3", "5": "2", "6": "1", "7": "0.5", "8": "0.2", "9": "0.1", "10": "0.05", "12": "0.02", "14": "0.01", "16": "0.005"}
-//let ratioAndBlock = { "2": 8, "3": 4, "4": 2, "5": 1, "6": 0.5, "7": 0.25, "8": 0.125, "9": 0.0625, "10": 0.03125, "11": 0.015625, "12": 0.0078125, "13": 0.00390625, "14": 0.001953125, "15": 0.0009765625, "16": 0.00048828125, "17": 0.000244140625, "18": "special" }
 for(let ratio=2; ratio<=18; ratio++){
     
     const base2 = BigNumber(2);
@@ -57,8 +53,7 @@ for(let ratio=2; ratio<=18; ratio++){
     const myunit = BigNumber(360).div(base2.pow(8))
     const result = myunit.times(base2.pow(exponent));
     const blockSize = result.toString();
-//for (const blockSizeKey in blockSizes) {
-    //const blockSize = new Decimal(blockSizes[blockSizeKey])
+
     console.log("blockSize: ", blockSize)
     //ブロックごとにどのSRR IDが来るかを分別
     //prepare block information
@@ -66,6 +61,16 @@ for(let ratio=2; ratio<=18; ratio++){
     let data = {}
     //Convert latitude and longitude to digital format
     for(let locationInfoItem of locationInfoItems){
+        // reading .input files and Integrating location Info
+        const inputFileID = locationInfoItem[0] //SRR24416895など
+        let inputFileName = inputFileID + ".input"
+        const inputFilePath = imputFolderPath + "/" + inputFileName
+        //console.log(inputFilePath)
+        if (!fs.existsSync(inputFilePath)) {
+            continue; // Skip to next iteration if file does not exist
+        }
+        let species = {}
+
         let tempLatLong = locationInfoItem[1].split(' ')
         let tempLat = BigNumber(tempLatLong[0])
         let tempLong = BigNumber(tempLatLong[2])
@@ -76,16 +81,7 @@ for(let ratio=2; ratio<=18; ratio++){
         let key = `${blocklattemp},${blocklongtemp}`
 
         // reading .input files and Integrating location Info
-        let inputFileID = locationInfoItem[0] //SRR24416895など
-        let inputFileName = inputFileID + ".input"
-        let inputFilePath = `${imputFolderPath}/${inputFileName}`
-        let species = {}
-        let tempSpecies
-        if (!fs.existsSync(inputFilePath)) {
-            continue; // Skip to next iteration if file does not exist
-        }
-        //read files
-        tempSpecies = fs.readFileSync(inputFilePath, 'utf8');
+        const tempSpecies = fs.readFileSync(inputFilePath, 'utf8');
         //convert to array
         let tempSpeciesLines = tempSpecies.split('\n');
         //remove the first item and empty last item
@@ -97,7 +93,7 @@ for(let ratio=2; ratio<=18; ratio++){
             //console.log(tempSpeciesItems)
             species[tempSpeciesItems[0]] = parseFloat(tempSpeciesItems[1]);
         }
-        let datatemp = { time: locationInfoItem[2], lat: tempLat, long: tempLong, species: species }
+        let datatemp = { ID: inputFileID, time: locationInfoItem[2], lat: tempLat, long: tempLong, species: species }
         data[inputFileID] = datatemp
 
         if (!(key in blockInfo)) {
@@ -109,7 +105,7 @@ for(let ratio=2; ratio<=18; ratio++){
     //console.log(blockInfo)//looks like {`blocklat,blocklng`:fileName}
     //console.log(data)
 
-    for(let blockname in blockInfo){ //blockname: lat,long 39,140など, blockInfo: {key(lat-long): [fileID]}
+    for(let blockname in blockInfo){ //blockname: lat: 39,long: 140など, blockInfo: {key(lat-long): [fileID]}
         //円グラフを作成
         //follow the block information, prepare pie data
         let blocknamearray = blockname.split(',')
@@ -118,8 +114,9 @@ for(let ratio=2; ratio<=18; ratio++){
         let sumLong = BigNumber(0)
         let blockSpecies = {}
         console.log("--------------------------(" + blocknamearray + ")--------------------------")
+        let eachData = {}
         for(let filename of blockInfo[blockname]){
-            let fileSpeciesData = data[filename] //lat, long, time, species{}
+            const fileSpeciesData = data[filename] //lat, long, time, species{}
             //record pie location
             sumLat = sumLat.plus(fileSpeciesData.lat)
             sumLong = sumLong.plus(fileSpeciesData.long)
@@ -131,6 +128,16 @@ for(let ratio=2; ratio<=18; ratio++){
                     blockSpecies[fileSpeciesName[y]] += parseFloat(fileSpeciesData.species[fileSpeciesName[y]])
                 }
                 //console.log(parseFloat(fileSpeciesData.species[fileSpeciesName[y]]), blockSpecies[fileSpeciesName[y]])
+            }
+
+            //各データを表示する用 ratio=18
+            if(ratio===18){
+                keySP = fileSpeciesData.lat + "," + fileSpeciesData.long
+                if (!(keySP in eachData)) {
+                    eachData[keySP] = [fileSpeciesData];
+                } else {
+                    eachData[keySP].push(fileSpeciesData);
+                }
             }
         }
         let averageLat = sumLat.div(samplenumber)//pie chart location
@@ -150,14 +157,30 @@ for(let ratio=2; ratio<=18; ratio++){
             //円グラフを描く位置とサンプル数を出力
             let pieCoord = [averageLat, averageLong, samplenumber]
             console.log("[pieLat,pieLng,sampleNum]: ", pieCoord)
-            fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/pieCoord.json`, JSON.stringify(pieCoord, null, 2), (err) => {
+            fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/pieCoord.json`,
+             JSON.stringify(pieCoord, null, 2), (err) => {
                 if (err) throw err;
                 console.log('Data written to file');
             });
-            fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/fishAndRatio.json`, JSON.stringify(pieInputList, null, 2), (err) => {
+            fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/fishAndRatio.json`,
+             JSON.stringify(pieInputList, null, 2), (err) => {
                 if (err) throw err;
                 console.log('Data written to file');
             });
+
+            //レベル18限定処理
+            if(ratio===18){
+                //もとのlatlong.txtファイルが日付ソートされている場合はソートを省略
+                //for(const i in eachData){
+                //    eachData[i].sort((a, b) => a.time.localeCompare(b.time));
+                //}
+                fs.writeFileSync(`${outputbasedir}/layered_data/${lang}/${blockSize}/${blocknamearray[0]}/${blocknamearray[1]}/eachData.json`,
+                 JSON.stringify(eachData, null, 2), (err) => {
+                    if (err) throw err;
+                    console.log('Data written to file');
+                });
+            }
+
         }
 
         //月ごとにデータを集約したファイルを作成
