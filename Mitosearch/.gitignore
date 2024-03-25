@@ -4,3 +4,4 @@ update_scripts/singularity_image
 db_fish_en
 db_fish_ja
 db_fish_zh
+data/fish

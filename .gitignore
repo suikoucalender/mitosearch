@@ -1,2 +1,4 @@
-public/layered_data/*
 .vscode
+err.log
+forever.log
+out.log
