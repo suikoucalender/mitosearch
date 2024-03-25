@@ -921,7 +921,7 @@ async function readDataAndPlotPieChart() {
                             for (const y_x in pieDataTmpMap) {
                                 const sampleN = pieDataTmpMap[y_x].length
                                 for (let i = 0; i < sampleN; i++) {
-                                    plotL18(i, pieDataTmpMap[y_x][i], sampleN, radiusTest)
+                                    plotL18(i, pieDataTmpMap[y_x][i], sampleN, radiusTest, dx_value)
                                 }
                             }
                         }
@@ -937,7 +937,7 @@ async function readDataAndPlotPieChart() {
 }
 
 
-function plotL18(j, sampleDataTmp, sampleNumber, radiusTest) {
+function plotL18(j, sampleDataTmp, sampleNumber, radiusTest, dx_value) {
     //decide rows and column of pie chart
     const plotArrangement = calculatePlotArrangement(sampleNumber)
     //console.log("j, plotArrangement: ", j, plotArrangement)
@@ -999,14 +999,14 @@ function plotL18(j, sampleDataTmp, sampleNumber, radiusTest) {
     let customIcon = drawPieIcon(radiusTest, pieDataTmpSorted, 1) // サイズは1で
 
     //add pie chart//can not get data
-    let markersTestWhite = L.marker([pieCenter["centerLat"], pieCenter["centerLng"]], { icon: customIconWhite }).addTo(map);
-    let markersTest1 = L.marker([pieCenter["centerLat"], pieCenter["centerLng"]], { icon: customIcon }).addTo(map);
+    let markersTestWhite = L.marker([pieCenter["centerLat"], BigNumber(pieCenter["centerLng"]).plus(dx_value).toNumber()], { icon: customIconWhite }).addTo(map);
+    let markersTest1 = L.marker([pieCenter["centerLat"], BigNumber(pieCenter["centerLng"]).plus(dx_value).toNumber()], { icon: customIcon }).addTo(map);
     markersTest1.bindPopup(htmlStringForPopup)
     markersTest1.bindTooltip(htmlStringForPopup, { direction: 'bottom' })
 
     //draw line between real sample point and pie center
-    let samplePoint = [baseLat, baseLng];
-    let pieCenterPoint = [pieCenter["centerLat"], pieCenter["centerLng"]]
+    let samplePoint = [baseLat, BigNumber(baseLng).plus(dx_value).toNumber()];
+    let pieCenterPoint = [pieCenter["centerLat"], BigNumber(pieCenter["centerLng"]).plus(dx_value).toNumber()]
     let pointLink = [samplePoint, pieCenterPoint];
     L.polyline(pointLink, {
         color: '#003B4A',
