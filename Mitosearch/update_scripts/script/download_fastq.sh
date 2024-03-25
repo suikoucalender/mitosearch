@@ -19,6 +19,7 @@ set -ex
 set -o pipefail
 
 # FASTQダウンロード
+mkdir -p ${workdir}/fastq
 ${singularity_path} run -B ${workdir}/fastq/ ${workdir}/singularity_image/sratoolkit.sif fastq-dump ${id} --gzip --split-files --outdir ${workdir}/fastq/
 
 # 新しく取得したSRA番号のメタデータを取得
@@ -54,7 +55,8 @@ fi
 set -x
 
 # 同一マシン内での排他制御をしつつ経度緯度を書き込む
-flock -x /tmp/mitolock bash -c "echo '$str' >> ${workdir}/data/lat-long-date.txt"
+flock -x /tmp/mitolock bash -c "echo '$str' >> ${mitosearch_path}/data/fish/lat-long-date.txt"
 
 # inputFile作成
-qsub -j Y -N mitoupda -o $workdir/tmp/$id.log "$sdir"/qsubsh8 bash "$sdir"/create_input.sh ${id}
+mkdir -p ${workdir}/qsublog
+qsub -j Y -N mitoupda -o $workdir/qsublog/$id.log "$sdir"/qsubsh8 bash "$sdir"/create_input.sh ${id}

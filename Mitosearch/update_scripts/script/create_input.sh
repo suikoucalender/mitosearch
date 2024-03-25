@@ -165,41 +165,43 @@ cat "$logfile"
 #出力が0でなければ続行
 if [ -s ${tmpdir}/${prefix}/${prefix}.input.temp ]; then
 
-#ヒットが100リード以上なら続行
-if [ `awk -F'\t' '{a+=$1} END{print a}' ${tmpdir}/${prefix}/${prefix}.input.temp` -gt 99 ]; then
+    #ヒットが100リード以上なら続行
+    if [ `awk -F'\t' '{a+=$1} END{print a}' ${tmpdir}/${prefix}/${prefix}.input.temp` -gt 99 ]; then
 
-#合計を100%にする
-cat ${tmpdir}/${prefix}/${prefix}.input.temp|
- awk -F'\t' '{if(FNR==1){print "id\t'${prefix}'"}; n[NR]=$2; v[NR]=$1; cnt+=$1} END{for(i=1;i<=NR;i++){print n[i]"\t"v[i]/cnt*100}}' > "${tmpdir}/${prefix}/${prefix}.input"
+        #合計を100%にする
+        cat ${tmpdir}/${prefix}/${prefix}.input.temp|
+        awk -F'\t' '{if(FNR==1){print "id\t'${prefix}'"}; n[NR]=$2; v[NR]=$1; cnt+=$1} END{for(i=1;i<=NR;i++){print n[i]"\t"v[i]/cnt*100}}' > "${tmpdir}/${prefix}/${prefix}.input"
 
-# 和名変換。まず、データベース内で学名が完全に一致する種を探す。これでヒットしなかった場合、属名が同じ種の科名を返す。
-awk -F'\t' '
- FILENAME==ARGV[1]{data[$2]=$1; split($2,arr, " "); data2[arr[1]]=$3}
- FILENAME==ARGV[2]{
-  if(FNR==1){print $0}
-  else{str=""; for(i in data){if(i~$1){str=data[i]; break}}; OFS="\t";
-   if(str!=""){$1=str":"$1}else{split($1,arr," "); if(arr[1] in data2){$1=data2[arr[1]]":"$1}};
-   print $0;
-  }
- }
-' "$workdir/db/scientificname2japanesename_complete.csv" "${tmpdir}/${prefix}/${prefix}.input" > "${tmpdir}/${prefix}/${prefix}.input2"
+        # 和名変換。まず、データベース内で学名が完全に一致する種を探す。これでヒットしなかった場合、属名が同じ種の科名を返す。
+        awk -F'\t' '
+        FILENAME==ARGV[1]{data[$2]=$1; split($2,arr, " "); data2[arr[1]]=$3}
+        FILENAME==ARGV[2]{
+            if(FNR==1){print $0}
+            else{
+                str=""; for(i in data){if(i~$1){str=data[i]; break}}; OFS="\t";
+                if(str!=""){$1=str":"$1}else{split($1,arr," "); if(arr[1] in data2){$1=data2[arr[1]]":"$1}};
+                print $0;
+            }
+        }
+        ' "$workdir/db/scientificname2japanesename_complete.csv" "${tmpdir}/${prefix}/${prefix}.input" > "${tmpdir}/${prefix}/${prefix}.input2"
 
-# 中国語に変換
-node ${workdir}/filesForAddingChinese/createFiles.js "${tmpdir}/${prefix}/${prefix}.input" > "${tmpdir}/${prefix}/${prefix}.input2.zh"
+        # 中国語に変換
+        node ${workdir}/filesForAddingChinese/createFiles.js "${tmpdir}/${prefix}/${prefix}.input" > "${tmpdir}/${prefix}/${prefix}.input2.zh"
 
-# 英語のcommon nameに変換
-awk -F'\t' '
- FILENAME==ARGV[1]{name[$2]=$3}
- FILENAME==ARGV[2]{OFS="\t"; if($1 in name){$1="["name[$1]"]: "$1}; print $0}
-' "$workdir"/db/names.dmp.sname-common_name "${tmpdir}/${prefix}/${prefix}.input" > "${tmpdir}/${prefix}/${prefix}.input2.en"
+        # 英語のcommon nameに変換
+        awk -F'\t' '
+        FILENAME==ARGV[1]{name[$2]=$3}
+        FILENAME==ARGV[2]{OFS="\t"; if($1 in name){$1="["name[$1]"]: "$1}; print $0}
+        ' "$workdir"/db/names.dmp.sname-common_name "${tmpdir}/${prefix}/${prefix}.input" > "${tmpdir}/${prefix}/${prefix}.input2.en"
 
-mv "${tmpdir}/${prefix}/${prefix}.input2" "${workdir}/inputFiles/db_fish_ja/${prefix}.input"
-mv "${tmpdir}/${prefix}/${prefix}.input2.zh" "${workdir}/inputFiles/db_fish_zh/${prefix}.input"
-mv "${tmpdir}/${prefix}/${prefix}.input2.en" "${workdir}/inputFiles/db_fish_en/${prefix}.input"
-gzip ${tmpdir}/${prefix}/$prefix.blast.txt
-mv ${tmpdir}/${prefix}/$prefix.blast.txt.gz "$workdir"/blastresult/
+        mv "${tmpdir}/${prefix}/${prefix}.input2" "${mitosearch_path}/db_fish_ja/${prefix}.input"
+        mv "${tmpdir}/${prefix}/${prefix}.input2.zh" "${mitosearch_path}/db_fish_zh/${prefix}.input"
+        mv "${tmpdir}/${prefix}/${prefix}.input2.en" "${mitosearch_path}/db_fish_en/${prefix}.input"
+        gzip ${tmpdir}/${prefix}/$prefix.blast.txt
+        mkdir -p ${workdir}/blastresult
+        mv ${tmpdir}/${prefix}/$prefix.blast.txt.gz "$workdir"/blastresult/
 
-fi
+    fi
 fi
 
 #結果ファイルが空っぽなら消す
