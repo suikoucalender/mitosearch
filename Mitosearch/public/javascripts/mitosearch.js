@@ -913,7 +913,7 @@ async function readDataAndPlotPieChart() {
                             let markersTest1 = L.marker([BigNumber(y).toNumber(), BigNumber(x).plus(dx_value).toNumber()], { icon: customIcon }).addTo(map);
                             markersTest1.bindPopup(htmlStringForPopup)
                             markersTest1.bindTooltip(htmlStringForPopup, { direction: 'bottom' })
-                            
+
                             //console.timeLog("円グラフ描画")
                         } else {
                             //level 18の場合
@@ -954,6 +954,27 @@ function plotL18(j, sampleDataTmp, sampleNumber, radiusTest) {
     let pieDataTmp = []
     for (const tempKey in pieDataTmpMap) {
         pieDataTmp.push({ name: tempKey, value: pieDataTmpMap[tempKey] })
+    }
+
+    //フィルターがセットされていたらその魚種に限定
+    if (fishFilterArray.length > 0) {
+        //console.log("フィルターあり")
+        //console.log(pieDataTmp)
+        let tmpPieData = []
+        let tmpcnt = 0
+        for (let itmPieDataTmp of pieDataTmp) {
+            if (fishFilterArray.includes(itmPieDataTmp.name)) {
+                tmpPieData.push(itmPieDataTmp)
+            } else { //フィルターに含まれていない魚種のvalue合計
+                tmpcnt += itmPieDataTmp.value
+            }
+        }
+        //console.log(tmpcnt, tmpPieData)
+        if (tmpPieData.length === 0) {
+            return //対象種が0の地域は円グラフを描画せずに終了
+        }
+        tmpPieData.push({ name: "others", value: tmpcnt })
+        pieDataTmp = tmpPieData
     }
 
     //Ordered from largest to smallest percentage
