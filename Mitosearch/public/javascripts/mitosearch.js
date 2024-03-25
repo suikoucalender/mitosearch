@@ -1034,18 +1034,28 @@ function calculatePlotArrangement(sampleNumber) {
 }
 
 function adjustPieChartCenter(index, baseLatitude, baseLongitude, plotArrangement) {
-    const offset = 0.0002
+    //const offset = 0.0002
+    const delta_pixel = 40 //このpixel単位で円グラフをずらす
     const columns = plotArrangement.columns;
     const centerLngBlock = (plotArrangement.columns - 1) / 2
     const centerLatBlock = (plotArrangement.rows - 1) / 2
 
-    // determinate the columns of plot, calculate the lng of pie
-    const centerLng = baseLongitude + (index % columns - centerLngBlock) * offset;
-    // determinate the rows of plot, calculate the lat of pie
-    const centerLat = baseLatitude - (Math.floor(index / columns) - centerLatBlock) * offset;
+    //経度緯度からXYピクセル座標に変換してからdelta_pixelだけ移動させた後で経度緯度に戻す
+    //console.log("baseLatitude, baseLongitude: ",baseLatitude, baseLongitude)
+    const latlng = L.latLng(baseLatitude, baseLongitude);
+    const currentPoint = map.latLngToContainerPoint(latlng);
+    const targetPoint = L.point(currentPoint.x + (index % columns - centerLngBlock) * delta_pixel,
+                                   currentPoint.y + (Math.floor(index / columns) - centerLatBlock) * delta_pixel );
+    const targetLatLng = map.containerPointToLatLng(targetPoint);
+    //console.log("targetLatLng: ", targetLatLng)
+
+    //// determinate the columns of plot, calculate the lng of pie
+    //const centerLng = baseLongitude + (index % columns - centerLngBlock) * offset;
+    //// determinate the rows of plot, calculate the lat of pie
+    //const centerLat = baseLatitude - (Math.floor(index / columns) - centerLatBlock) * offset;
 
     // return the center of pie
-    return { centerLat, centerLng };
+    return { centerLat: targetLatLng.lat, centerLng: targetLatLng.lng };
 }
 
 function detectWebkitBrowser() {
