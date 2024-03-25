@@ -205,6 +205,7 @@ fs.writeFileSync(inputFileNum, String(locationInfoItems.length), (err) => {
             }
             let monthInputList = []
             for(const specname in monthSpeciesData){
+                //平均頻度が0.1%以下の種は表示しない
                 if(monthSpeciesData[specname] / sampleNumberInMonth > 0.1){
                     monthInputList.push({name: specname, value: monthSpeciesData[specname] / sampleNumberInMonth})
                 }

@@ -83,16 +83,20 @@ adapter=`${singularity_path} run -B "$workdir" ${workdir}/singularity_image/seqk
 ${singularity_path} run -B "$workdir" ${workdir}/singularity_image/cutadapt.sif cutadapt --overlap 10 ${adapter} -j 8 -o ${tmpdir}/${prefix}/out.extendedFrags_trimed.fastq ${tmpdir}/${prefix}/out.extendedFrags.fastq
 awk 'END{print "after cutadapt: "NR/4}' ${tmpdir}/${prefix}/out.extendedFrags_trimed.fastq >> "$logfile"
 
-# FASTQからFATSTAファイルに変換。N以外に30bp以上の塩基がなければ削除。シャッフルして100万リードまで使用する。
-cat "${tmpdir}/${prefix}/out.extendedFrags_trimed.fastq"|paste - - - - |shuf|awk -F'\t' '{n=split($2,arr,"N"); if(n<=length($2)-29){print ">"substr($1,2); print $2}}'|
- awk 'NR<=2*1000*1000{print $0}' > ${tmpdir}/${prefix}/out.extendedFrags_trimed.fasta
+# FASTQからFATSTAファイルに変換。N以外に30bp以上の塩基がなければ削除。シャッフルして2000リードまで使用する。
+# mitosearch DBで集計時に0.1%以下を切り捨てるので、1000ヒット以上は取得したい
+cat "${tmpdir}/${prefix}/out.extendedFrags_trimed.fastq"|paste - - - - |shuf|
+ awk -F'\t' '{
+    n=split($2,arr,"N"); #nは"N"の数+1
+    if(length($2)>=n-1+30){print ">"substr($1,2); print $2}
+ }'| awk 'NR<=2*2000{print $0}' > ${tmpdir}/${prefix}/out.extendedFrags_trimed.fasta
 awk 'END{print "after remove N reads: "NR/2}' ${tmpdir}/${prefix}/out.extendedFrags_trimed.fasta >> "$logfile"
 
 #【cutadapt検証用】cutadaptされたリードの元の配列と処理後の配列を比較する。解析フローには不要。
 # awk '(NR - 1) % 4 < 2' ${tmpdir}/${prefix}/out.extendedFrags.fastq | sed 's/@/>/' > ${tmpdir}/${prefix}/out.extendedFrags.fasta
 # awk -F"\t" '{if(FILENAME==ARGV[1]){list[$1]=$2;}if(FILENAME==ARGV[2]&&list[$1]!=$2){a=list[$1];sub($2,"",a);print list[$1]"\t"$2"\t"a;}}' <(seqkit fx2tab ${tmpdir}/${prefix}/out.extendedFrags.fasta <(seqkit fx2tab ${tmpdir}/${prefix}/out.extendedFrags_trimed.fasta) > ../inputFiles/${prefix}.adapters
 
-# データベースに対してBlastnで相同性検索を行う。
+# データベースに対してBlastnで相同性検索を行う。トップヒットのみ抽出。
 $singularity_path exec -B "$workdir" -B ${tmpdir} ${workdir}/singularity_image/ncbi_blast:2.13.0.sif blastn -num_threads 8 -db ${blastdb} -query ${tmpdir}/${prefix}/out.extendedFrags_trimed.fasta -outfmt "6 qseqid sseqid qlen slen pident length mismatch gapopen qstart qend sstart send evalue bitscore staxids stitle" -max_target_seqs 10 | awk -F'\t' 'a[$1]!=1{a[$1]=1; print $0}' > ${tmpdir}/${prefix}/blast.result
 awk 'END{print "blast hits: "NR}' ${tmpdir}/${prefix}/blast.result >> "$logfile"
 
@@ -101,6 +105,33 @@ awk 'END{print "blast hits: "NR}' ${tmpdir}/${prefix}/blast.result >> "$logfile"
 cat ${tmpdir}/${prefix}/blast.result | awk '$3 > 100 && $5 > 90 && ($6/$3 > 0.9 || $6/$4 > 0.9)' |
  awk -F"\t" '{if(substr($2,1,1)=="g"){split($2,array,"|");{print array[2]"\t"$0;}}else{split($2,array,".");{print array[1]"\t"$0;}}}' > ${tmpdir}/${prefix}/blast.result2
 awk 'END{print "after blast hits filtering: "NR}' ${tmpdir}/${prefix}/blast.result2 >> "$logfile"
+
+#ヒット数が1000未満であればリードを増やして再実行
+if [ `cat ${tmpdir}/${prefix}/blast.result2 | wc -l` -lt 1000 ]; then
+ #シャッフルしてヒット数1000になりそうなリード数を抽出する。
+ cat "${tmpdir}/${prefix}/out.extendedFrags_trimed.fastq"|paste - - - - |shuf|
+ awk -F'\t' '
+  {
+    n=split($2,arr,"N"); #nは"N"の数+1
+    if(length($2)>=n-1+30){print ">"substr($1,2); print $2}
+  }'| awk -v Nreads=`cat ${tmpdir}/${prefix}/blast.result2 | wc -l` '
+  BEGIN{
+    Maxreads=2*1000*1000; #最大200万リード
+    if(Nreads>0){Maxreads=1000*2000/Nreads}; #何リード使うとヒット数1000になりそうか計算
+  }
+  NR<=2*Maxreads{print $0}' > ${tmpdir}/${prefix}/out.extendedFrags_trimed.fasta
+ awk 'END{print "after remove N reads: "NR/2}' ${tmpdir}/${prefix}/out.extendedFrags_trimed.fasta >> "$logfile"
+
+ # データベースに対してBlastnで相同性検索を行う。トップヒットのみ抽出。
+ $singularity_path exec -B "$workdir" -B ${tmpdir} ${workdir}/singularity_image/ncbi_blast:2.13.0.sif blastn -num_threads 8 -db ${blastdb} -query ${tmpdir}/${prefix}/out.extendedFrags_trimed.fasta -outfmt "6 qseqid sseqid qlen slen pident length mismatch gapopen qstart qend sstart send evalue bitscore staxids stitle" -max_target_seqs 10 | awk -F'\t' 'a[$1]!=1{a[$1]=1; print $0}' > ${tmpdir}/${prefix}/blast.result
+ awk 'END{print "blast hits: "NR}' ${tmpdir}/${prefix}/blast.result >> "$logfile"
+
+ # ハイスコアなblast結果のトップヒットを抽出し、アクセッションIDのリストに変換
+ # リード長が100bpより大きく、一致率が90%より上、アライメントの長さがリードの90%もしくはDBの90%より大きいヒットを抽出
+ cat ${tmpdir}/${prefix}/blast.result | awk '$3 > 100 && $5 > 90 && ($6/$3 > 0.9 || $6/$4 > 0.9)' |
+  awk -F"\t" '{if(substr($2,1,1)=="g"){split($2,array,"|");{print array[2]"\t"$0;}}else{split($2,array,".");{print array[1]"\t"$0;}}}' > ${tmpdir}/${prefix}/blast.result2
+ awk 'END{print "after blast hits filtering: "NR}' ${tmpdir}/${prefix}/blast.result2 >> "$logfile"
+fi
 
 # アクセッションIDをtaxonomyに変換、ヒット数集計。魚類のみを抽出し、全体リードの1%未満のヒットは消去。taxonomyを学名に変換（交雑種は母方の学名のみ抽出）し、inputファイルの完成。
 awk -F"\t" '

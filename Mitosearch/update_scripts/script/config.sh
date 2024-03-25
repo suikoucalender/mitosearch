@@ -2,7 +2,8 @@
 
 #projectのPATH
 #mitosearch_path=/home/yoshitake/mitosearch/Mitosearch
-mitosearch_path=/suikou/download9-v251/mitosearch/mitosearch/Mitosearch
+#mitosearch_path=/suikou/download9-v251/mitosearch/mitosearch/Mitosearch
+mitosearch_path="$sdir"/../..
 #mitosearch_dev_path=/home/yoshitake/mitosearch_dev/mitosearch/Mitosearch
 
 # 作業ディレクトリを指定
@@ -31,7 +32,7 @@ blastdb="${workdir}"/db/database.fasta
 
 # metadataを格納しているディレクトリ
 metadataDir="$mitosearch_path"/data/fish
-metadataDir_dev="$mitosearch_dev_path"/data/fish
+#metadataDir_dev="$mitosearch_dev_path"/data/fish
 
 # Scriptが配置されているディレクトリ
 scriptdir="${workdir}"/script
