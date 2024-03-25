@@ -200,14 +200,13 @@ if [ -s ${tmpdir}/${prefix}/${prefix}.input.temp ]; then
         gzip ${tmpdir}/${prefix}/$prefix.blast.txt
         mkdir -p ${workdir}/blastresult
         mv ${tmpdir}/${prefix}/$prefix.blast.txt.gz "$workdir"/blastresult/
-
     fi
 fi
 
 #結果ファイルが空っぽなら消す
-if [ ! -s "${workdir}"/inputFiles/db_fish_ja/${prefix}.input ]; then rm -f "${workdir}"/inputFiles/db_fish_ja/${prefix}.input; fi
-if [ ! -s "${workdir}"/inputFiles/db_fish_zh/${prefix}.input ]; then rm -f "${workdir}"/inputFiles/db_fish_zh/${prefix}.input; fi
-if [ ! -s "${workdir}"/inputFiles/db_fish_en/${prefix}.input ]; then rm -f "${workdir}"/inputFiles/db_fish_en/${prefix}.input; fi
+if [ ! -s "${mitosearch_path}"/db_fish_ja/${prefix}.input ]; then rm -f "${mitosearch_path}"/db_fish_ja/${prefix}.input; fi
+if [ ! -s "${mitosearch_path}"/db_fish_zh/${prefix}.input ]; then rm -f "${mitosearch_path}"/db_fish_zh/${prefix}.input; fi
+if [ ! -s "${mitosearch_path}"/db_fish_en/${prefix}.input ]; then rm -f "${mitosearch_path}"/db_fish_en/${prefix}.input; fi
 
 #一時ディレクトリ内の中間ファイルを消去
 rm -rf ${tmpdir}/${prefix}
