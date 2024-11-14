@@ -983,16 +983,23 @@ function plotL18(j, sampleDataTmp, sampleNumber, radiusTest, dx_value) {
     });
 
     //preparing the popup content
-    let htmlStringForPopup = "<table><tr><td><u>Sample name</u></td><td><u>" + sampleDataTmp["ID"] + "</u></td></tr>";
+    let htmlStringForPopup = "<table><tr><td><u>Sample name</u></td><td><u><a href=\"https://www.ncbi.nlm.nih.gov/sra/?term="+sampleDataTmp["ID"]+"\" target=\"_blank\">" + sampleDataTmp["ID"] + "</a></u></td></tr>";
     htmlStringForPopup += '<tr><td><u>Date</u></td><td><u>' + sampleDataTmp["time"] + '</u></td><td>';
+    let htmlStringForPopupTooltip = htmlStringForPopup
     let k = 0
     pieDataTmpSorted.forEach(function (item) {
         if (k < 20) {
             htmlStringForPopup += '<tr><td>' + item["name"] + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
+            let name = item["name"]
+            if (name.length > 44) {
+                name = "..." + name.substring(name.length - 44, name.length)
+            }
+            htmlStringForPopupTooltip += '<tr><td>' + name + '</td><td>' + item["value"].toFixed(2) + '</td></tr>';
         }
         k += 1
     });
     htmlStringForPopup += '</table>';
+    htmlStringForPopupTooltip += '</table>';
 
     //draw pie
     let customIconWhite = drawPieIconWhite(radiusTest, pieDataTmpSorted, 1) //外枠の白い円用 サイズは1で
@@ -1001,7 +1008,7 @@ function plotL18(j, sampleDataTmp, sampleNumber, radiusTest, dx_value) {
     //add pie chart//can not get data
     let markersTestWhite = L.marker([pieCenter["centerLat"], BigNumber(pieCenter["centerLng"]).plus(dx_value).toNumber()], { icon: customIconWhite }).addTo(map);
     let markersTest1 = L.marker([pieCenter["centerLat"], BigNumber(pieCenter["centerLng"]).plus(dx_value).toNumber()], { icon: customIcon }).addTo(map);
-    markersTest1.bindPopup(htmlStringForPopup)
+    markersTest1.bindPopup(htmlStringForPopupTooltip)
     markersTest1.bindTooltip(htmlStringForPopup, { direction: 'bottom' })
 
     //draw line between real sample point and pie center
