@@ -4,6 +4,10 @@
 
 下記のコマンドはLinuxで動かすことを想定しています。Windows Subsystem for Linuxでも可能です。WSLのセットアップ手順は、https://learn.microsoft.com/ja-jp/windows/wsl/install 参照。
 
+もしubuntu、wslでnodejsをインストールしていないなら、
+`sudo apt update && sudo apt install -y nodejs`
+を実行してインストールしておく。
+
 ```
 git clone https://github.com/suikoucalender/mitosearch.git
 cd mitosearch
