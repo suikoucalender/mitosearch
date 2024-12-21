@@ -45,11 +45,16 @@ Bacteria;Firmicutes     30
 ```
 
 idから始まる行は、ファイルの区切りを表していて、上の例だと`id      SRR19632221`からSRR19632221の解析結果が入っていて、次の`id      SRR19632222`からSRR19632222の解析結果が入っている。
+
 `Bacteria;Proteobacteria;Gammaproteobacteria     136`などとあるのは、そのデータリードを解析したら`Bacteria;Proteobacteria;Gammaproteobacteria`が136リードあったという意味になっている。基本的には1サンプル当たり合計300リード以上のヒットがあるように調整しており、元ファイルからランダムに数百から数万リードを抜き出して解析していて、全リードを解析しているわけではない。
+
 メタゲノムの種類(https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock )を限定したい場合は、2024-05-03_output.txtのファイルを見て、`mitosearch-bacteria`の中のtsvファイルの中の必要なSRR IDのみを残して、新しいtsvファイルを`mitosearch-bacteria-new`に保存する。
+
 例えば、2024-05-03_output.txtの4行目の#の前までが`marine metagenome`のSRR IDの解析結果だけをmitosearch-bacteria/db3-105.db.tsvから抜き出して、mitosearch-bacteria-new/db3-105.db.tsvに保存する。同じ処理を他のmitosearch-bacteria内のtsvファイルに対しても行う。
+
 または、解析結果で`Bacteria;Cyanobacteria`から始まる行のみを残し、それ以外の結果はまとめて`Others`にしてしまい、`Bacteria;Cyanobacteria`の数が一つもないSRR IDは削除してしまうなどを行って、着目するバクテリアを限定するなども解析結果を見るうえで有効でしょう。
-以上のようなフィルタリングを行った新しいtsvファイルがmitosearch-bacteria-newにあるとします。あとは、下記のコマンドでmitosearchに表示できます。
+
+以上のようなフィルタリングを行った新しいtsvファイルがmitosearch-bacteria-newにあるとします。あとは、下記のコマンドでmitosearchに表示できます。(テストで下記の手順をとりあえず行ってみたいなら、`mitosearch-bacteria/db3-105.db.tsv`だけを`mitosearch-bacteria-new`にコピーして下記のコマンドを実行すれば良いです)
 
 ```
 cd mitosearch-bacteria-new
@@ -65,20 +70,9 @@ cd ../update_scripts/blockSeparatingAndDataPreparing
 for i in `seq 2 18`; do node --max-old-space-size=204800 01blockSeparatorForLevel2to18meta.js ja $i & done; wait
 #このコマンドで../../public/layered_data/ja/の中にmitosearchで表示するために必要なファイルがおおよそ作られる。
 
-cat /yoshitake/mitosearch-bacteria-verrucomicrobiota/*.tsv|awk -F'\t' '{if($0~"^id"){id=$2}else{print id"\t"$0}}' > db5-2-merge-merge2.tsv
-
-sqlite3 mito.db
-CREATE TABLE IF NOT EXISTS data (srr_id TEXT, sp_name TEXT, count REAL);
-.mode tab
-.import db5-2-merge-merge2.tsv data
-CREATE INDEX index_sp_name ON data(srr_id);
-.quit
-
-a="SRR20208365"
-echo -e '.mode tabs\nselect * from data where srr_id = "'"$a"'" order by count desc' |sqlite3 mito.db
-
-
+awk -F'\t' '{if($0~"^id"){id=$2}else{print id"\t"$0}}' ../../mitosearch-bacteria-new/*.tsv > merge.tsv
 node 02blockSeparatorForLevel18.js ja > srr-block.txt
+
 awk -F'\t' -v path=../../public/layered_data/ja/0.0000858306884765625/ '
  FILENAME==ARGV[1]{for(i=1;i<=5;i++){a[$1][i]=$(i+1)}; a2[$7][$8][$1]=$2}
  FILENAME==ARGV[2]{b[$1][$2]=$3}
@@ -108,20 +102,16 @@ awk -F'\t' -v path=../../public/layered_data/ja/0.0000858306884765625/ '
    print "}" > file
    close(file)
   }
- }' srr-block.txt db5-2-merge-merge2.tsv
+ }' srr-block.txt merge.tsv
 
-cd /yoshitake/mitosearch_verru/Mitosearch/update_scripts/script
-more ../blockSeparatingAndDataPreparing/db5-2-merge-merge2.tsv |cut -f 2|sort|uniq > species.list
+#円グラフの色分けの定義ファイルを作成する
+cd ../script
+more ../blockSeparatingAndDataPreparing/merge.tsv |cut -f 2|sort|uniq > species.list
 node grouping.js species.list
 mv classifylist.txt ../../data/fish/classifylist_ja.txt
 
-
-more ~/work3/metasearch/2023/sra-20240219/downloaded_fasta_list.db3-db4.sort.txt.with-latlon|awk -F'\t' '{split($4,arr,"###"); print $1"\t"arr[5]"\t"arr[4]}' > ../mitosearch/Mitosearch/data/fish/lat-long-date.txt
-more ../mitosearch/Mitosearch/data/fish/lat-long-date.txt|awk -F'\t' '{print $1"\t1"}' > ../mitosearch/Mitosearch/data/fish/mapwater.result.txt
-#node --max-old-space-size=204800 01blockSeparatorForLevel1to17meta.js ja
-cd /yoshitake/mitosearch/Mitosearch/update_scripts/blockSeparatingAndDataPreparing
-for i in `seq 2 18`; do node --max-old-space-size=204800 01blockSeparatorForLevel2to18meta.js ja $i & done; wait
-
-cd  /yoshitake/mitosearch/Mitosearch
+cd ../.. #mitosearch/Mitosearchフォルダに移動
 npm start
 ```
+
+以上のコマンドでmitosearchが起動する。http://localhost:3003/ でアクセス可能
