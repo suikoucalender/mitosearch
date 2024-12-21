@@ -2,6 +2,8 @@
 
 - 必要ファイルのダウンロード
 
+下記のコマンドはLinuxで動かすことを想定しています。Windows Subsystem for Linuxでも可能です。その場合のセットアップ手順は、https://learn.microsoft.com/ja-jp/windows/wsl/install 参照。
+
 ```
 git clone https://github.com/suikoucalender/mitosearch.git
 cd mitosearch
